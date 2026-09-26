@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Jacob’s Ladder · סולם יעקב</title>
+<meta name="description" content="A Talmud-page slide of Genesis 28:10–18: six key phrases, how twelve translations render them, and the AI images each wording produced.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+<style>
+:root{
+  color-scheme:light;
+  --paper:#EEE9DE; --paper-2:#E3DCCC; --ink:#1D1A15; --ink-2:#433D33; --muted:#655D50;
+  --rule:#9F9582; --rule-soft:#CBC1AE; --gold:#B7862B; --gold-wash:#EDD7A0; --gold-deep:#6B4E0E;
+  --surround:#15130F; --scrim:rgba(21,19,15,.94);
+  --he:"Frank Ruhl Libre","Times New Roman",serif;
+  --text:"Frank Ruhl Libre",Georgia,serif;
+  --comm:"Source Serif 4",Georgia,serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;background:var(--surround);color:var(--ink);overflow:hidden}
+.view{position:fixed;left:0;right:0;top:env(safe-area-inset-top,0px);bottom:env(safe-area-inset-bottom,0px);overflow:hidden}
+.stage{position:absolute;left:0;top:0;width:1920px;height:1080px;transform-origin:0 0;
+  background:radial-gradient(ellipse 70% 60% at 50% 45%,rgba(255,252,244,.55),rgba(255,252,244,0) 70%),var(--paper);
+  box-shadow:0 30px 90px rgba(0,0,0,.55);font-family:var(--comm);color:var(--ink)}
+button{font:inherit;color:inherit}
+[lang="he"]{direction:rtl;unicode-bidi:isolate}
+
+/* running head, like the top of a daf */
+.head{position:absolute;left:60px;right:60px;top:24px;height:96px;display:grid;grid-template-columns:520px 1fr 400px;column-gap:40px;align-items:end;border-bottom:3px double var(--ink);padding-bottom:10px}
+.h-cell{display:grid;gap:4px}
+.h-left{justify-items:start}
+.h-mid{justify-items:center;text-align:center}
+.h-right{justify-items:end;text-align:right}
+.big{font:700 36px/1 var(--he)}
+.title{font:700 50px/1 var(--he);letter-spacing:.01em}
+.h-en{font:600 14px/1.2 var(--comm);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+
+/* three columns: images | text | renderings */
+.body{position:absolute;left:60px;right:60px;top:138px;height:786px;display:grid;grid-template-columns:520px 1fr 400px;column-gap:40px}
+.col{min-width:0;display:flex;flex-direction:column;gap:14px}
+.col-label{margin:0;display:flex;align-items:baseline;gap:10px;border-bottom:1px solid var(--rule-soft);padding-bottom:6px;font:600 13px/1.2 var(--comm);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.col-label .heb{font:700 21px/1 var(--he);letter-spacing:0;text-transform:none;color:var(--ink-2)}
+
+.col-text{border-left:1px solid var(--rule);border-right:1px solid var(--rule);padding:4px 32px 0}
+.opener{float:left;margin:6px 20px 8px 0;padding:10px 18px 9px;border:3px double var(--ink);display:grid;justify-items:center;gap:4px;background:rgba(255,252,244,.45)}
+.opener span{font:700 62px/1 var(--he)}
+.opener small{font:600 11.5px/1.2 var(--comm);letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.gemara{margin:0;font:400 24px/1.52 var(--text);text-align:justify;hyphens:auto;color:var(--ink)}
+.vn{font:600 13px/0 var(--comm);color:var(--muted);margin:0 4px 0 6px;vertical-align:super}
+.sc{font-size:.8em;letter-spacing:.06em;text-transform:uppercase}
+.hot{all:unset;cursor:pointer;border-bottom:2px solid var(--gold);background:linear-gradient(transparent 60%,var(--gold-wash) 60%);border-radius:1px;transition:background-color .2s ease,box-shadow .2s ease}
+.hot:hover{background:linear-gradient(transparent 25%,var(--gold-wash) 25%)}
+.hot[aria-pressed="true"]{background:var(--gold-wash);border-bottom-color:var(--gold-deep);box-shadow:0 0 0 3px var(--gold-wash)}
+.hot:focus-visible{outline:2px solid var(--gold-deep);outline-offset:3px}
+.mk{font:700 15px/0 var(--he);color:var(--gold-deep);margin-left:3px;vertical-align:super}
+
+/* renderings, where Rashi would sit */
+.dh{display:grid;grid-template-columns:auto 1fr auto;column-gap:12px;row-gap:2px;align-items:baseline}
+.dh .l{grid-row:span 2;font:700 44px/1 var(--he);color:var(--gold-deep);align-self:start}
+.dh .h{font:500 27px/1.3 var(--he);color:var(--ink);justify-self:start}
+.dh .r{font:600 13px/1 var(--comm);letter-spacing:.1em;color:var(--muted)}
+.dh .e{grid-column:2 / span 2;font:600 21px/1.3 var(--text)}
+.rend{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.rend li{display:grid;gap:1px;padding-left:12px;border-left:3px solid transparent}
+.rend li.base{border-left-color:var(--gold)}
+.rend q{font:italic 400 21.5px/1.3 var(--comm);quotes:"“" "”"}
+.rend .who{font:400 16.5px/1.3 var(--comm);font-variant-caps:all-small-caps;letter-spacing:.05em;color:var(--muted)}
+.rend .who b{font-weight:600;color:var(--gold-deep)}
+.note{margin:0;border-top:1px solid var(--rule-soft);padding-top:10px;font:400 19.5px/1.45 var(--comm);color:var(--ink-2);text-align:justify;hyphens:auto}
+
+/* images, where Tosafot would sit */
+.main{all:unset;cursor:zoom-in;display:block;width:520px;aspect-ratio:1376/768;background:var(--paper-2);box-shadow:0 1px 0 var(--rule),0 10px 24px rgba(40,30,10,.2)}
+.main img{display:block;width:100%;height:100%;object-fit:cover}
+.main:focus-visible{outline:3px solid var(--gold-deep);outline-offset:3px}
+.cap{margin:0;font:400 20px/1.4 var(--comm);color:var(--ink-2)}
+.cap b{font-weight:600;color:var(--ink)}
+.cap .arrow{color:var(--gold-deep);margin:0 6px}
+.strip{display:grid;gap:10px}
+.strip button{all:unset;cursor:pointer;display:grid;gap:5px;min-width:0}
+.strip img{display:block;width:100%;aspect-ratio:1376/768;object-fit:cover;opacity:.62;outline:3px solid transparent;outline-offset:2px;transition:opacity .2s ease}
+.strip button:hover img{opacity:.9}
+.strip button[aria-pressed="true"] img{opacity:1;outline-color:var(--gold)}
+.strip button:focus-visible img{outline-color:var(--gold-deep)}
+.strip span{font:600 13px/1.2 var(--comm);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.res{margin:0;border-top:1px solid var(--rule-soft);padding-top:10px;font:400 20.5px/1.45 var(--comm);color:var(--ink-2);text-align:justify;hyphens:auto}
+.res .lab{font:600 12.5px/1 var(--comm);letter-spacing:.14em;text-transform:uppercase;color:var(--gold-deep);margin-right:8px}
+.fade{animation:fade .28s ease}
+@keyframes fade{from{opacity:.25}to{opacity:1}}
+
+/* glosses along the bottom, like the outer notes of a daf */
+.foot{position:absolute;left:60px;right:60px;top:938px;bottom:22px;display:grid;grid-template-columns:1.3fr 1fr 1.45fr .95fr;column-gap:30px;border-top:3px double var(--ink);padding-top:10px}
+.gl{margin:0;font:400 15px/1.42 var(--comm);color:var(--ink-2);text-align:justify;hyphens:auto}
+.gl .heb{font:700 17px/1 var(--he);color:var(--ink);margin-right:6px}
+.gl b{font:600 12px/1 var(--comm);letter-spacing:.14em;text-transform:uppercase;color:var(--ink);margin-right:6px}
+.gl a{color:var(--gold-deep)}
+.fsb{all:unset;cursor:pointer;margin-top:6px;display:inline-block;font:600 12px/1 var(--comm);letter-spacing:.12em;text-transform:uppercase;color:var(--gold-deep);border:1px solid var(--gold);padding:6px 9px;border-radius:2px}
+.fsb:hover{background:var(--gold-wash)}
+.fsb:focus-visible{outline:2px solid var(--gold-deep);outline-offset:2px}
+
+/* enlarged image */
+.ov{position:absolute;inset:0;background:var(--scrim);display:grid;place-items:center;z-index:5}
+.ov[hidden]{display:none}
+.ov figure{margin:0;display:grid;gap:16px;justify-items:center}
+.ov img{display:block;width:1500px;max-height:840px;object-fit:contain;box-shadow:0 24px 70px rgba(0,0,0,.6)}
+.ov figcaption{font:400 24px/1.4 var(--comm);color:#EEE9DE;text-align:center}
+.ov figcaption b{font-weight:600}
+.ov .x{all:unset;cursor:pointer;position:absolute;right:48px;top:36px;font:600 14px/1 var(--comm);letter-spacing:.14em;text-transform:uppercase;color:#EEE9DE;border:1px solid rgba(238,233,222,.4);padding:10px 14px;border-radius:2px}
+.ov .x:hover{background:rgba(238,233,222,.12)}
+.ov .x:focus-visible{outline:2px solid var(--gold-wash);outline-offset:2px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+<div class="view" id="view">
+<div class="stage" id="stage">
+  <header class="head">
+    <div class="h-cell h-left"><span class="big" lang="he">כח</span><span class="h-en">Genesis 28:10–18</span></div>
+    <div class="h-cell h-mid"><span class="title" lang="he">פָּרָשַׁת וַיֵּצֵא</span><span class="h-en">Parashat Vayeitzei · one text, twelve translations</span></div>
+    <div class="h-cell h-right"><span class="big" lang="he">בְּרֵאשִׁית</span><span class="h-en">Base text: the Revised JPS, 2023</span></div>
+  </header>
+
+  <div class="body">
+    <aside class="col col-img" aria-label="The images">
+      <p class="col-label"><span class="heb" lang="he">תְּמוּנוֹת</span>The images</p>
+      <div id="imgPane" class="col" aria-live="polite"></div>
+    </aside>
+    <article class="col-text" aria-label="Genesis 28:10–18, Revised JPS">
+      <div class="opener"><span lang="he">וַיֵּצֵא</span><small>Vayeitzei · he went out</small></div>
+      <p class="gemara"><sup class="vn">10</sup>Jacob left Beer-sheba, and set out for Haran. <sup class="vn">11</sup>He came upon <span role="button" tabindex="0" class="hot" data-key="place" aria-pressed="false">a certain place</span><sup class="mk" aria-hidden="true">א</sup> and stopped there for the night, for the sun had set. Taking <span role="button" tabindex="0" class="hot" data-key="stones" aria-pressed="false">one of the stones</span> of that place, he put it <span role="button" tabindex="0" class="hot" data-key="stones" aria-pressed="false">under his head</span><sup class="mk" aria-hidden="true">ב</sup> and lay down in that place. <sup class="vn">12</sup>He had a dream; <span role="button" tabindex="0" class="hot" data-key="stairway" aria-pressed="false">a stairway</span><sup class="mk" aria-hidden="true">ג</sup> was set on the ground and its top reached to the sky, and <span role="button" tabindex="0" class="hot" data-key="angels" aria-pressed="false">angels of God</span><sup class="mk" aria-hidden="true">ד</sup> were going up and down on it. <sup class="vn">13</sup>And <span role="button" tabindex="0" class="hot" data-key="beside" aria-pressed="false">standing beside him</span><sup class="mk" aria-hidden="true">ה</sup> was <span class="sc">God</span>, who said, “I am the <span class="sc">Eternal</span>, the God of your father Abraham and the God of Isaac: <span role="button" tabindex="0" class="hot" data-key="ground" aria-pressed="false">the ground on which you are lying</span><sup class="mk" aria-hidden="true">ו</sup> I will assign to you and to your offspring. <sup class="vn">14</sup>Your descendants shall be as the dust of the earth; you shall spread out to the west and to the east, to the north and to the south. All the families of the earth shall bless themselves by you and your descendants. <sup class="vn">15</sup>Remember, I am with you: I will protect you wherever you go and will bring you back to this land. I will not leave you until I have done what I have promised you.” <sup class="vn">16</sup>Jacob awoke from his sleep and said, “Surely <span class="sc">God</span> is present in this place, and I did not know it!” <sup class="vn">17</sup>Shaken, he said, “How awesome is this place! This is none other than the abode of God, and that is the gateway to heaven.” <sup class="vn">18</sup>Early in the morning, Jacob took the stone that he had put under his head and set it up as a pillar and poured oil on the top of it.</p>
+    </article>
+    <aside class="col col-rend" aria-label="The renderings">
+      <p class="col-label"><span class="heb" lang="he">פֵּרוּשׁ</span>The renderings</p>
+      <div id="rendPane" class="col" aria-live="polite"></div>
+    </aside>
+  </div>
+
+  <footer class="foot">
+    <p class="gl"><span class="heb" lang="he">הַשֵּׁם</span><b>The name of God</b>Every rendering of the divine name, from <span class="sc">God</span> and the <span class="sc">Eternal</span> to YHWH and <span lang="he">יהוה</span>, produced a man in robes, in forty-eight of forty-eight translation images. Only the instruction changed that: “Do not depict God as a person” produced light.</p>
+    <p class="gl"><span class="heb" lang="he">מַצֵּבָה</span><b>The pillar, 28:18</b>Alter, following Gerhard von Rad, notes that a cultic pillar stood several feet high, so setting one up would take Herculean strength. It prepares for Jacob rolling the great stone off the well in the next episode.</p>
+    <p class="gl"><span class="heb" lang="he">מְקוֹרוֹת</span><b>Sources</b>Base text: The JPS Tanakh: Gender-Sensitive Edition (Revised JPS, 2023), CC BY-NC, via Sefaria. B’reishit Rabbah 68:12 and 69:3; Vayikra Rabbah 29:2; Rashi on Genesis 28:11–13; <i>Talmud Chullin 91b</i>; Robert Alter, <i>The Hebrew Bible</i> (2018). Images: Google’s gemini-3-pro-image model, September 2026.</p>
+    <p class="gl"><span class="heb" lang="he">כֵּיצַד</span><b>How to use</b>Click a highlighted phrase, or press ← and →. The letters א to ו mark the six phrases. Click the large image to enlarge it.<br><button type="button" class="fsb" id="fs">Full screen</button></p>
+  </footer>
+
+  <div class="ov" id="ov" hidden role="dialog" aria-modal="true" aria-label="Enlarged image">
+    <button type="button" class="x" id="ovClose">Close</button>
+    <figure><img id="ovImg" alt=""><figcaption id="ovCap"></figcaption></figure>
+  </div>
+</div>
+</div>
+
+<script>
+(function(){
+  var D = {"place": {"ref": "28:11", "he": "בַּמָּקוֹם", "en": "a certain place", "rend": [{"q": "a certain place", "who": "RJPS · NJPS · Contemporary Torah · KJV · YLT · BBE · Fox · Alter", "base": true}, {"q": "the place", "who": "JPS 1917, as in the Hebrew", "base": false}, {"q": "the place, Mount Moriah", "who": "Kehot", "base": false}, {"q": "the place where Abraham had bound his son on the altar", "who": "Torah Yesharah", "base": false}], "note": "The Hebrew says <i>bamakom<\/i>, “the place,” as if we already know it. Rashi does: Mount Moriah, the place Abraham saw from afar (Genesis 22:4). Alter counts “place” six times in the story, as an anonymous spot becomes Bethel.", "res": "Only the renderings that name the place changed the scene. One Torah Yesharah image puts a stone altar on the ridge.", "imgs": [{"src": "img/11_rjps_2.jpg", "who": "RJPS", "what": "“a certain place”", "shows": "Open, empty country."}, {"src": "img/09_yesharah_1.jpg", "who": "Torah Yesharah", "what": "“where Abraham had bound his son”", "shows": "A stone altar on the ridge."}], "letter": "א"}, "stones": {"ref": "28:11", "he": "מֵאַבְנֵי הַמָּקוֹם", "en": "one of the stones … under his head", "rend": [{"q": "one of the stones … under his head", "who": "RJPS · NJPS · Contemporary Torah · JPS 1917 · BBE · Torah Yesharah", "base": true}, {"q": "one of the stones … at his head", "who": "Fox · Alter", "base": false}, {"q": "of the stones … for his pillows", "who": "KJV · YLT", "base": false}, {"q": "stones … around his body and head", "who": "Kehot, after Rashi", "base": false}], "note": "The Hebrew reads “from the stones of the place,” and verse 18 speaks of “the stone.” Rashi has the stones quarrel over which would pillow the righteous man until God made them one (<i>Talmud Chullin 91b<\/i>). Alter adds that stones follow Jacob through his whole story.", "res": "“One of the stones” drew a single rock in sixteen of sixteen images. “Stones … for his pillows” drew a heap in four of four. “Around his body and head” drew stones ringing Jacob in two of two.", "imgs": [{"src": "img/11_rjps_2.jpg", "who": "RJPS", "what": "“one of the stones”", "shows": "A single rock."}, {"src": "img/02_kjv_1.jpg", "who": "KJV", "what": "“for his pillows”", "shows": "A heap of stones."}, {"src": "img/08_kehot_1.jpg", "who": "Kehot", "what": "“around his body and head”", "shows": "A ring of stones."}], "letter": "ב"}, "stairway": {"ref": "28:12", "he": "סֻלָּם", "en": "a stairway", "rend": [{"q": "a stairway", "who": "RJPS · NJPS · Contemporary Torah", "base": true}, {"q": "steps", "who": "BBE", "base": false}, {"q": "a ladder", "who": "JPS 1917 · KJV · YLT · Fox · Kehot · Torah Yesharah", "base": false}, {"q": "a ramp", "who": "Alter", "base": false}], "note": "<i>Sulam<\/i> appears nowhere else in the Bible. Alter hears the language of a Mesopotamian ziggurat and proposes “a vast ramp with terraced landings.” Bar Kappara reads it as the ramp of the altar, and the Rabbis as Sinai (B’reishit Rabbah 68:12).", "res": "With verses 12–13 alone, “stairway” or “steps” drew stairs in seven of eight images, and “ladder” drew a ladder in thirteen of fourteen. Alter’s “ramp” drew a ramp in one of two. With his ziggurat note added, both images became ziggurats.", "imgs": [{"src": "img/d_rjps_2.jpg", "who": "RJPS", "what": "“a stairway”", "shows": "Stairs."}, {"src": "img/d_hebrew_1.jpg", "who": "Hebrew", "what": "סֻלָּם", "shows": "A wooden ladder."}, {"src": "img/d_alter_1.jpg", "who": "Alter", "what": "“a ramp”", "shows": "A stone ramp."}, {"src": "img/l_alterNote_2.jpg", "who": "Alter + note", "what": "a ziggurat", "shows": "Terraced landings."}], "letter": "ג"}, "angels": {"ref": "28:12", "he": "מַלְאֲכֵי אֱלֹהִים", "en": "angels of God", "rend": [{"q": "angels of God", "who": "RJPS · NJPS · JPS 1917 · KJV · BBE", "base": true}, {"q": "messengers of God", "who": "Fox · Contemporary Torah · YLT · Alter", "base": false}, {"q": "angels who had accompanied him … other angels", "who": "Kehot, after Rashi", "base": false}, {"q": "prayers … ascending, and salvation descending", "who": "Torah Yesharah", "base": false}], "note": "<i>Mal’ach<\/i> means messenger. The midrash offers other climbers: High Priests on the altar ramp, Moses and Aaron on Sinai, angels going up and down on Jacob himself (B’reishit Rabbah 68:12), and the guardian angels of four kingdoms (Vayikra Rabbah 29:2).", "res": "“Messengers” grew wings anyway, eight of eight. With the short passage, Torah Yesharah’s prayers became doves and a scroll. Alter’s ziggurat shrank the climbers to shadowy figures, wingless in one image.", "imgs": [{"src": "img/d_ct_1.jpg", "who": "Contemporary Torah", "what": "“messengers”", "shows": "Winged anyway."}, {"src": "img/d_yesharah_1.jpg", "who": "Torah Yesharah", "what": "“prayers … ascending”", "shows": "Doves, a scroll, and ribbons of light."}, {"src": "img/l_alterNote_1.jpg", "who": "Alter + note", "what": "a ziggurat", "shows": "Shadowy, wingless climbers."}], "letter": "ד"}, "beside": {"ref": "28:13", "he": "נִצָּב עָלָיו", "en": "standing beside him", "rend": [{"q": "beside him", "who": "RJPS · NJPS · Contemporary Torah · JPS 1917", "base": true}, {"q": "by his side", "who": "BBE", "base": false}, {"q": "above it", "who": "KJV", "base": false}, {"q": "upon it", "who": "YLT", "base": false}, {"q": "over against him", "who": "Fox", "base": false}, {"q": "over him, to guard him", "who": "Kehot", "base": false}, {"q": "guarding him", "who": "Torah Yesharah", "base": false}, {"q": "poised over him", "who": "Alter", "base": false}], "note": "<i>Alav<\/i> can mean “over it” or “over him.” Rabbi Chiya Rabbah and Rabbi Yannai disagree on exactly this (B’reishit Rabbah 69:3). Rashi reads it as over Jacob, to guard him. Alter says “over him” could equally mean “on it.”", "res": "With verses 12–13 alone, “beside” and “by his side” put God at Jacob’s side in ten of ten images. “Above it,” “upon it,” and “over against him” put God at the top in eight of eight. Alter’s “poised over him” drew one of each.", "imgs": [{"src": "img/d_njps_1.jpg", "who": "NJPS", "what": "“beside him”", "shows": "God at Jacob’s side."}, {"src": "img/d_kjv_1.jpg", "who": "KJV", "what": "“above it”", "shows": "God at the top."}, {"src": "img/d_alter_2.jpg", "who": "Alter", "what": "“poised over him”", "shows": "God hovering over the sleeper."}], "letter": "ה"}, "ground": {"ref": "28:13", "he": "הָאָרֶץ אֲשֶׁר אַתָּה שֹׁכֵב עָלֶיהָ", "en": "the ground on which you are lying", "rend": [{"q": "the ground on which you are lying", "who": "RJPS · NJPS · Contemporary Torah", "base": true}, {"q": "the land whereon thou liest", "who": "JPS 1917 · KJV", "base": false}, {"q": "the land on which you lie", "who": "Fox · Alter", "base": false}, {"q": "this land on which you are sleeping", "who": "BBE", "base": false}, {"q": "contracted the entire Land of Israel … under Jacob’s body", "who": "Kehot, after Rashi", "base": false}], "note": "Rashi reads the promise physically: God rolled the whole Land of Israel up beneath Jacob, a sign that his descendants would take it as easily as four cubits of ground (<i>Talmud Chullin 91b<\/i>).", "res": "Kehot’s folded Land appeared in all four of its images. Asked to illustrate the verses as Rashi interprets them, the model laid Jacob on an unrolled map.", "imgs": [{"src": "img/08_kehot_2.jpg", "who": "Kehot", "what": "full passage", "shows": "A map with people and flocks."}, {"src": "img/d_kehot_2.jpg", "who": "Kehot", "what": "verses 12–13", "shows": "Jacob on a slab of land."}, {"src": "img/l_rashi_1.jpg", "who": "“As Rashi interprets it”", "what": "lens", "shows": "Jacob on an unrolled map."}], "letter": "ו"}};
+  var ORDER = ["place", "stones", "stairway", "angels", "beside", "ground"];
+  var stage = document.getElementById('stage'), view = document.getElementById('view');
+  var imgPane = document.getElementById('imgPane'), rendPane = document.getElementById('rendPane');
+  var ov = document.getElementById('ov'), ovImg = document.getElementById('ovImg'), ovCap = document.getElementById('ovCap');
+  var hots = Array.prototype.slice.call(document.querySelectorAll('.hot'));
+  var cur = 'stairway', pic = 0, opener = null;
+
+  function fit(){
+    var vw = view.clientWidth, vh = view.clientHeight;
+    var s = Math.min(vw / 1920, vh / 1080);
+    stage.style.transform = 'translate(' + ((vw - 1920 * s) / 2) + 'px,' + ((vh - 1080 * s) / 2) + 'px) scale(' + s + ')';
+  }
+  window.addEventListener('resize', fit);
+  fit();
+
+  function esc(s){ return String(s).replace(/[&<>"]/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); }
+  function capHTML(im){ return '<b>' + esc(im.who) + '</b> · ' + esc(im.what) + '<span class="arrow">→</span>' + esc(im.shows); }
+
+  function renderRend(){
+    var d = D[cur];
+    var rows = d.rend.map(function(r){
+      return '<li' + (r.base ? ' class="base"' : '') + '><q>' + esc(r.q) + '</q><span class="who">' + (r.base ? '<b>This text</b> · ' : '') + esc(r.who) + '</span></li>';
+    }).join('');
+    rendPane.innerHTML =
+      '<div class="dh"><span class="l" lang="he">' + d.letter + '</span><span class="h" lang="he">' + esc(d.he) + '</span><span class="r">' + d.ref + '</span>' +
+      '<span class="e">“' + esc(d.en) + '”</span></div>' +
+      '<ul class="rend">' + rows + '</ul><p class="note">' + d.note + '</p>';
+    rendPane.classList.remove('fade'); void rendPane.offsetWidth; rendPane.classList.add('fade');
+  }
+  function renderImg(){
+    var d = D[cur], im = d.imgs[pic];
+    var strip = d.imgs.map(function(x, i){
+      return '<button type="button" data-i="' + i + '" aria-pressed="' + (i === pic) + '" aria-label="Show ' + esc(x.who + ', ' + x.what) + '"><img src="' + x.src + '" alt=""><span>' + esc(x.who) + '</span></button>';
+    }).join('');
+    imgPane.innerHTML =
+      '<button type="button" class="main" id="mainImg" aria-label="Enlarge: ' + esc(im.who + ', ' + im.what + '. ' + im.shows) + '"><img src="' + im.src + '" alt="' + esc(im.who + ', ' + im.what + ': ' + im.shows) + '"></button>' +
+      '<p class="cap">' + capHTML(im) + '</p>' +
+      '<div class="strip" style="grid-template-columns:repeat(' + d.imgs.length + ',minmax(0,1fr))">' + strip + '</div>' +
+      '<p class="res"><span class="lab">What the images did</span>' + d.res + '</p>';
+    imgPane.classList.remove('fade'); void imgPane.offsetWidth; imgPane.classList.add('fade');
+    document.getElementById('mainImg').addEventListener('click', function(e){ openOv(e.currentTarget); });
+    Array.prototype.forEach.call(imgPane.querySelectorAll('.strip button'), function(b){
+      b.addEventListener('click', function(){ pic = +b.dataset.i; renderImg(); var nb = imgPane.querySelector('.strip button[data-i="' + pic + '"]'); if (nb) nb.focus(); });
+    });
+  }
+  function select(key){
+    cur = key; pic = 0;
+    hots.forEach(function(h){ h.setAttribute('aria-pressed', h.dataset.key === key ? 'true' : 'false'); });
+    renderRend(); renderImg();
+  }
+  hots.forEach(function(h){ h.addEventListener('click', function(){ select(h.dataset.key); }); });
+
+  function openOv(from){
+    opener = from;
+    var im = D[cur].imgs[pic];
+    ovImg.src = im.src; ovImg.alt = im.who + ', ' + im.what + ': ' + im.shows; ovCap.innerHTML = capHTML(im);
+    ov.hidden = false; document.getElementById('ovClose').focus();
+  }
+  function closeOv(){ ov.hidden = true; if (opener && document.body.contains(opener)) opener.focus(); }
+  document.getElementById('ovClose').addEventListener('click', closeOv);
+  ov.addEventListener('click', function(e){ if (e.target === ov) closeOv(); });
+
+  document.addEventListener('keydown', function(e){
+    if (!ov.hidden) {
+      if (e.key === 'Escape') closeOv();
+      else if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+        var n = D[cur].imgs.length; pic = (pic + (e.key === 'ArrowRight' ? 1 : -1) + n) % n;
+        renderImg(); var im = D[cur].imgs[pic]; ovImg.src = im.src; ovImg.alt = im.who + ', ' + im.what + ': ' + im.shows; ovCap.innerHTML = capHTML(im);
+      }
+      return;
+    }
+    if (e.target && e.target.classList && e.target.classList.contains('hot') && (e.key === 'Enter' || e.key === ' ')) { e.preventDefault(); select(e.target.dataset.key); return; }
+    if (e.target && /^(INPUT|TEXTAREA|SELECT)$/.test(e.target.tagName)) return;
+    var i = ORDER.indexOf(cur);
+    if (e.key === 'ArrowRight' || e.key === 'ArrowDown' || e.key === 'PageDown') { e.preventDefault(); select(ORDER[(i + 1) % ORDER.length]); }
+    else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp' || e.key === 'PageUp') { e.preventDefault(); select(ORDER[(i - 1 + ORDER.length) % ORDER.length]); }
+    else if (/^[1-6]$/.test(e.key)) select(ORDER[+e.key - 1]);
+  });
+
+  var fs = document.getElementById('fs');
+  if (!document.fullscreenEnabled) fs.hidden = true;
+  fs.addEventListener('click', function(){
+    try {
+      if (document.fullscreenElement) document.exitFullscreen();
+      else { var p = document.documentElement.requestFullscreen(); if (p && p.catch) p.catch(function(){ fs.hidden = true; }); }
+    } catch (err) { fs.hidden = true; }
+  });
+
+  select(cur);
+})();
+</script>
+</body>
+</html>
