@@ -8,6 +8,8 @@ produced (Google’s gemini-3-pro-image model), with notes from Rashi, the midra
 
 Single-file webpage (`index.html`) with images in `img/`, sized as a 16:9 slide that scales to any screen.
 Present it full screen: click a phrase or use the arrow keys (or 1–6), and click the large image to enlarge it.
+Hover over or click any source’s name (a translation, Rashi, or a midrash) for a card on who made it, when,
+its approach, and its worldview.
 Live at techrabbi.org/jacobs-ladder.
 
 The companion page, `eleven-ladders/`, holds the full experiment behind the slide: twelve translations sent word for word
