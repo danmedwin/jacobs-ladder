@@ -218,6 +218,24 @@ footer{border-top:1px solid var(--rule);padding-block:28px 48px;color:var(--mute
 .b-actions{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
 #bMsg{font-size:.9rem;color:var(--ink-2)}
 .fine{font-size:.82rem;color:var(--muted)}
+/* source names and their background cards */
+.sref{cursor:help;border-bottom:1px dotted var(--oil-fill);border-radius:1px;transition:background-color .15s ease,color .15s ease}
+.sref:hover,.sref[aria-expanded="true"]{background:var(--oil-wash);color:var(--ink)}
+.sref:focus-visible{outline:2px solid var(--oil);outline-offset:2px}
+.spop{position:absolute;z-index:20;background:var(--surface);color:var(--ink);border:1px solid var(--rule);border-top:3px solid var(--oil-fill);border-radius:3px;box-shadow:0 18px 50px var(--shade);padding:16px 20px;display:grid;gap:8px;max-height:calc(100vh - 32px);overflow:auto}
+.spop[hidden]{display:none}
+.spop .k{margin:0;font:500 .72rem/1.3 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--oil);padding-right:72px}
+.spop h4{margin:0 0 2px;font:500 1.45rem/1.15 var(--serif);padding-right:72px;text-wrap:balance}
+.spop dl{margin:0;display:grid;grid-template-columns:7.4rem 1fr;gap:8px 12px}
+.spop dt{font:500 .68rem/1.5 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted);padding-top:.25em}
+.spop dd{margin:0;font-size:.95rem;line-height:1.45;color:var(--ink-2)}
+.spop .sc{font-size:.8em;letter-spacing:.06em;text-transform:uppercase}
+.spop .px{position:absolute;right:12px;top:12px;cursor:pointer;background:none;border:1px solid var(--rule);color:var(--muted);font:500 .7rem/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;padding:6px 8px;border-radius:2px}
+.spop .px:hover{color:var(--ink)}
+.spop .px:focus-visible{outline:2px solid var(--oil);outline-offset:2px}
+.spop:not(.pinned) .px{display:none}
+.spop.sheet{position:fixed;left:0;right:0;bottom:0;top:auto;width:auto;max-height:72vh;border-radius:10px 10px 0 0;padding-bottom:calc(16px + env(safe-area-inset-bottom,0px))}
+@media (max-width:640px){.spop dl{grid-template-columns:1fr;gap:2px 0}.spop dd{margin-bottom:6px}}
 
 /* resets the artifact viewer used to supply */
 [hidden]{display:none!important}
@@ -260,7 +278,7 @@ html{-webkit-text-size-adjust:100%}
 <div class="panel" id="p-full" data-panel="full" role="tabpanel" aria-labelledby="t-full">
 <section class="intro">
   <h2>Round one: the full passage</h2>
-  <p class="lede">Genesis 28:10–18 in twelve translations, each sent unchanged with the same short instruction. Jump to a translation:</p>
+  <p class="lede">Genesis 28:10–18 in twelve translations, each sent word for word, without its footnotes, with the same short instruction. Jump to a translation:</p>
   <nav class="mosaic" aria-label="Jump to a translation"><a href="#hebrew" class="tile"><img src="../img/10_hebrew_1.jpg" alt="" width="1376" height="768"><span>Hebrew</span></a><a href="#kjv" class="tile"><img src="../img/02_kjv_1.jpg" alt="" width="1376" height="768"><span>KJV</span></a><a href="#ylt" class="tile"><img src="../img/06_ylt_1.jpg" alt="" width="1376" height="768"><span>YLT</span></a><a href="#jps1917" class="tile"><img src="../img/01_jps1917_1.jpg" alt="" width="1376" height="768"><span>JPS 1917</span></a><a href="#bbe" class="tile"><img src="../img/07_bbe_1.jpg" alt="" width="1376" height="768"><span>BBE</span></a><a href="#njps" class="tile"><img src="../img/03_njps1985_1.jpg" alt="" width="1376" height="768"><span>NJPS</span></a><a href="#fox" class="tile"><img src="../img/04_fox_1.jpg" alt="" width="1376" height="768"><span>Fox</span></a><a href="#ct" class="tile"><img src="../img/05_contemp_1.jpg" alt="" width="1376" height="768"><span>CT</span></a><a href="#alter" class="tile"><img src="../img/12_alter_1.jpg" alt="" width="1376" height="768"><span>Alter</span></a><a href="#rjps" class="tile"><img src="../img/11_rjps_1.jpg" alt="" width="1376" height="768"><span>RJPS</span></a><a href="#yesharah" class="tile"><img src="../img/09_yesharah_1.jpg" alt="" width="1376" height="768"><span>Yesharah</span></a><a href="#kehot" class="tile"><img src="../img/08_kehot_1.jpg" alt="" width="1376" height="768"><span>Kehot</span></a></nav>
 </section>
 <section id="method" class="method">
@@ -268,6 +286,8 @@ html{-webkit-text-size-adjust:100%}
   <dl>
     <dt class="label">Instruction</dt>
     <dd><p class="prompt">Create a single illustration of the following passage. Depict only what this text describes. Do not include any words, captions, or lettering in the image.<br><em>[the full text of Genesis 28:10–18 in one translation]</em></p></dd>
+    <dt class="label">Text</dt>
+    <dd>Each translation’s own words for the verses, as published, with the edition’s apparatus removed: footnotes and their markers, verse numbers, Kehot’s page references, and Torah Yesharah’s Hebrew source citations. The model never saw the footnote that NJPS, the Contemporary Torah, and the Revised JPS attach to “stairway” (“Or ‘ramp’; others ‘ladder’”), Fox’s note that others say “ramp” or “stairway,” or the Revised JPS note that “angels” is literally “messengers.”</dd>
     <dt class="label">Model</dt>
     <dd>Google’s <code>gemini-3-pro-image</code>, called through the Gemini API</dd>
     <dt class="label">Held constant</dt>
@@ -309,7 +329,7 @@ html{-webkit-text-size-adjust:100%}
   <div class="finding" id="f-ladder">
     <div class="f-text">
       <h3>Ladder or stairway</h3>
-      <p><i>Sulam</i> appears nowhere else in the Bible. The older translations say “ladder.” NJPS and the translations built on it say “stairway,” Basic English says “steps,” and Robert Alter says “a ramp.” “Stairway” works almost every time. “Ladder” works about two times in three; the rest drift into grand staircases, probably because Western art has so often painted this scene that way. Alter’s “ramp” became a staircase both times.</p>
+      <p><i>Sulam</i> appears nowhere else in the Bible. The older translations say “ladder.” NJPS and the translations built on it say “stairway,” Basic English says “steps,” and Robert Alter says “a ramp.” “Stairway” works almost every time. “Ladder” works about two times in three; the rest drift into grand staircases, probably because Western art has so often painted this scene that way. Alter’s “ramp” became a staircase both times. NJPS, the Contemporary Torah, and the Revised JPS each hedge in a footnote, “Or ‘ramp’; others ‘ladder,’” and Fox notes that others say “ramp” or “stairway.” The prompts carried only each translation’s first choice.</p>
       <p class="aside"><b>Two ramps.</b> Alter argues that “its top reaching the heavens” and “the gate of the heavens” echo the Mesopotamian ziggurat, so the sulam is probably “a vast ramp with terraced landings.” The midrash reached a ramp first: Bar Kappara reads the sulam as the ramp of the altar (B’reishit Rabbah 68:12).</p>
     </div>
     <div class="f-data"><div class="tally"><div class="t-words"><q>stairway,” “steps</q><span>BBE, NJPS, Contemporary Torah, RJPS</span></div><div class="t-res"><span class="dots" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></span><span class="t-count"><b>7 of 8</b> drawn as stairs</span></div></div><div class="tally"><div class="t-words"><q>ladder</q><span>KJV, YLT, JPS 1917, Fox, Torah Yesharah, Kehot, and סֻלָּם in the Hebrew</span></div><div class="t-res"><span class="dots" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i></span><span class="t-count"><b>9 of 14</b> drawn as a ladder</span></div></div><div class="tally"><div class="t-words"><q>a ramp</q><span>Alter</span></div><div class="t-res"><span class="dots" aria-hidden="true"><i class=""></i><i class=""></i></span><span class="t-count"><b>0 of 2</b> drawn as a ramp</span></div></div></div>
@@ -604,6 +624,126 @@ html{-webkit-text-size-adjust:100%}
     try { navigator.clipboard.writeText(bOut.value).then(done, fallback); } catch (e) { fallback(); }
   });
   build();
+})();
+</script>
+
+<script>
+(function(){
+  var SRC = {"rjps": {"name": "The Revised JPS", "kind": "Translation · 2023 · the base text", "who": "The Jewish Publication Society, edited by Rabbi David E. S. Stein with Rabbi Beth Lieberman and Dr. Hilary Lipka. Its full title is <i>The JPS Tanakh: Gender-Sensitive Edition<\/i>.", "when": "2023, revising the 1985 NJPS.", "approach": "Translates meaning rather than word order, as NJPS did, and updates it for recent scholarship and today’s English. Language about people is gender-inclusive where the Hebrew allows it.", "view": "A mainstream Jewish translation grounded in modern scholarship, and wary of letting gendered English add meaning the Hebrew does not carry. It renders God’s name as <span class=\"sc\">God<\/span> in small capitals rather than “the Lord.”", "here": "Keeps NJPS’s “stairway,” uses “angels,” and puts God “beside” Jacob."}, "njps": {"name": "NJPS Tanakh", "kind": "Translation · 1985", "who": "A Jewish Publication Society committee led by Harry M. Orlinsky, with scholars and rabbis from the Reform, Conservative, and Orthodox movements.", "when": "The Torah appeared in 1962; the complete Tanakh in 1985.", "approach": "Idiomatic: it translates the sense of a phrase rather than its word order, drawing on ancient Near Eastern studies and on the medieval Jewish commentators.", "view": "A Jewish translation “according to the traditional Hebrew text,” confident that modern scholarship and Jewish tradition can work together. It broke with the King James style that JPS 1917 had kept.", "here": "Makes the sulam “a stairway” and puts God “beside” Jacob."}, "ct": {"name": "The Contemporary Torah", "kind": "Translation · 2006", "who": "The Jewish Publication Society, edited by Rabbi David E. S. Stein.", "when": "2006, the Torah only.", "approach": "An adaptation of the NJPS Torah that revisits every reference to gender, asking what an ancient audience would have understood.", "view": "Gender-sensitive within the same scholarly Jewish frame as NJPS. It leaves God’s name untranslated, printed in Hebrew letters as <span lang=\"he\">יהוה<\/span>.", "here": "“Messengers” for the climbers and <span lang=\"he\">יהוה<\/span> for God; the stairway and God “beside” Jacob come from NJPS."}, "jps1917": {"name": "JPS 1917", "kind": "Translation · 1917", "who": "The Jewish Publication Society, with Max L. Margolis as editor-in-chief and a board of rabbis and scholars.", "when": "1917.", "approach": "A revision of the King James and English Revised Versions that keeps their “thee” and “thou” style while correcting them against the Hebrew and Jewish interpretation.", "view": "The Society’s first Bible, meant to give American Jews a dignified English Bible of their own that did not read the Hebrew Scriptures through Christian eyes.", "here": "“A ladder,” “the angels of God,” and God “beside” Jacob, where the King James has “above it.”"}, "kjv": {"name": "The King James Version", "kind": "Translation · 1611", "who": "A team of about fifty scholars of the Church of England, commissioned by King James I.", "when": "1611.", "approach": "As word-for-word as the translators could make it, in a rhythmic English meant to be read aloud in church.", "view": "Protestant Christian. It reads the Hebrew Bible as the Old Testament, whose stories point toward the New; Christian readers linked Jacob’s ladder to Jesus (John 1:51).", "here": "“Stones … for his pillows” and God standing “above it.”"}, "ylt": {"name": "Young’s Literal Translation", "kind": "Translation · 1862", "who": "Robert Young, a Scottish Bible scholar best known for <i>Young’s Analytical Concordance<\/i>.", "when": "1862.", "approach": "As literal as English allows. It keeps Hebrew word order and renders Hebrew verb forms by rule, which is why the story runs in the present tense (“Jacob goeth out”).", "view": "Protestant Christian, with a conviction that the most literal rendering is the most faithful one, even at the cost of natural English.", "here": "“Messengers,” “Jehovah,” and God “standing upon it.”"}, "bbe": {"name": "The Bible in Basic English", "kind": "Translation · 1949", "who": "A committee led by S. H. Hooke of the University of London, using C. K. Ogden’s Basic English.", "when": "1949, the complete Bible.", "approach": "Limits itself to about a thousand English words so that learners and readers of English as a second language can follow it.", "view": "Christian, and written for readers around the world. Clarity for new readers comes first, even when nuance is lost.", "here": "“Steps stretching from earth to heaven” and “the Lord by his side.”"}, "fox": {"name": "Everett Fox, The Five Books of Moses", "kind": "Translation · 1995", "who": "Everett Fox, a Jewish Bible scholar who taught at Clark University.", "when": "1995; his Genesis first appeared in 1983.", "approach": "Follows Martin Buber and Franz Rosenzweig’s German Bible: it keeps the Hebrew names, rhythms, and repeated key words, and sets the text in lines meant to be read aloud.", "view": "The Bible is first an oral text, and English readers should hear the Hebrew through the translation rather than a smoothed-over paraphrase.", "here": "“Yaakov,” “messengers,” “YHWH,” and God “standing over against him.”"}, "alter": {"name": "Robert Alter, The Hebrew Bible", "kind": "Translation with commentary · 2018", "who": "Robert Alter, professor of Hebrew and comparative literature at the University of California, Berkeley.", "when": "2018; his Genesis first appeared in 1996.", "approach": "A literary translation that keeps the Hebrew’s repetitions, its “and … and” rhythm, and its concrete words. He faults modern versions for what he calls “the heresy of explanation.”", "view": "Reads the Bible as great literature, with modern scholarship and a literary critic’s ear, from an academic rather than a devotional stance.", "here": "“A ramp,” “messengers,” and God “poised over him,” with a note that the phrase could equally mean “on it.”"}, "kehot": {"name": "The Kehot Chumash", "kind": "Interpolated translation · 2004 onward", "who": "Chabad-Lubavitch. Kehot Publication Society began the series under Rabbi Moshe Yaakov Wisnefsky; the edition on Sefaria is from Chabad House Publications in Los Angeles, with Rabbi Chaim Nochum Cunin as general editor.", "when": "Kehot was publishing its volumes by 2004 (Numbers appeared that June); Sefaria’s edition is dated 2015–2024.", "approach": "An interpolated translation: the verse and Rashi’s commentary run together as one text, as Rashi is read in the teachings of the Lubavitcher Rebbe.", "view": "Chasidic and Orthodox. It treats Rashi as the key to the plain meaning, the Rebbe, Rabbi Menachem Mendel Schneerson, as his authoritative reader, and every detail of the Torah as carrying a spiritual lesson.", "here": "Mount Moriah, stones around Jacob’s body, two shifts of angels, and the whole Land folded beneath him."}, "yesharah": {"name": "Torah Yesharah", "kind": "Interpretive translation · 1963", "who": "Rabbi Charles Kahane (1905–1978), born in Safed and for most of his career rabbi of Congregation Shaarei Tefiloh in Brooklyn. <i>Yesharah<\/i> is an acronym of his Hebrew name, Yechezkel Shraga HaKohen.", "when": "1963, in two volumes.", "approach": "A “traditional interpretive translation,” written for adult learners, that folds explanations from the Talmud, midrash, Rashi, Ibn Ezra, and other commentators into the verses without marking where they begin.", "view": "Orthodox. Kahane held that the Torah must never be translated literally apart from the Oral Torah, so the tradition’s reading is presented as the text itself.", "here": "The place where Abraham bound Isaac, Jacob reciting the evening service, and “prayers … ascending, and salvation descending” in place of angels."}, "hebrew": {"name": "The Hebrew (Masoretic text)", "kind": "Source text", "who": "The Masoretes, scribes in Tiberias who fixed the text’s spelling, vowels, and cantillation. Sefaria’s edition, <i>Miqra according to the Masorah<\/i>, follows the Aleppo Codex.", "when": "The consonants are ancient; the vowels and accents were added between the seventh and tenth centuries CE. The Aleppo Codex dates to about 930 CE.", "approach": "No translation at all, though the vowels and accents are already a first layer of interpretation.", "view": "The received text of Jewish tradition, still read aloud in synagogue.", "here": "<span lang=\"he\">סֻלָּם<\/span>, <span lang=\"he\">מַלְאֲכֵי אֱלֹהִים<\/span>, and <span lang=\"he\">נִצָּב עָלָיו<\/span>: the words every translation here is trying to carry."}, "rashi": {"name": "Rashi", "kind": "Commentary · 11th century", "who": "Rabbi Shlomo Yitzchaki of Troyes, France.", "when": "1040–1105.", "approach": "Short notes that explain the plain sense of the verse and draw on midrash wherever the text raises a question. It is the most widely studied commentary on the Torah.", "view": "Every word and every oddity in the text is meaningful, and the Sages’ midrash often supplies the answer. His reading became the default for traditional Jewish learners.", "here": "Stones arranged around Jacob’s head, the place as Mount Moriah, God standing over Jacob to guard him, and the Land folded beneath him."}, "br": {"name": "B’reishit Rabbah", "kind": "Midrash · about the 5th century CE", "who": "The Sages of the Land of Israel, collected by later editors.", "when": "Compiled around the fifth century CE.", "approach": "Verse-by-verse midrash on Genesis that often sets several readings side by side (“another interpretation”).", "view": "The Torah’s words hold many meanings at once, and disagreement among the Sages is preserved rather than resolved.", "here": "The sulam as the altar ramp (Bar Kappara) and as Sinai, angels going up and down on Jacob himself, and God standing over Jacob."}, "vr": {"name": "Vayikra Rabbah", "kind": "Midrash · about the 5th century CE", "who": "The Sages of the Land of Israel, collected by later editors.", "when": "Compiled around the fifth century CE.", "approach": "Sermon-like midrash on Leviticus, whose sections usually open with a verse from elsewhere in the Bible.", "view": "Scripture speaks to the history of Israel, including the rise and fall of the empires that ruled it.", "here": "The climbers become the guardian angels of Babylon, Media, Greece, and Edom."}, "bk": {"name": "Bar Kappara", "kind": "Sage · early 3rd century CE", "who": "A sage of the Land of Israel and a student of Rabbi Judah HaNasi, quoted in B’reishit Rabbah 68:12.", "when": "Early third century CE.", "approach": "“There is no dream that does not have an interpretation.” He decodes the dream piece by piece.", "view": "Reads the dream through the Temple: its ramp, its altar, its offerings, and its High Priests.", "here": "The sulam is the ramp of the altar, and the angels are the High Priests going up and down it."}};
+  var NAMES = [["The JPS Tanakh: Gender-Sensitive Edition","rjps"],["Young’s Literal Translation","ylt"],["Bible in Basic English","bbe"],["The Contemporary Torah","ct"],
+    ["King James Version","kjv"],["Contemporary Torah","ct"],["Masoretic text","hebrew"],["Torah Yesharah","yesharah"],["Basic English","bbe"],["Robert Alter","alter"],
+    ["Everett Fox","fox"],["Bar Kappara","bk"],["King James","kjv"],["Revised JPS","rjps"],["JPS 1917","jps1917"],["NJPS","njps"],["RJPS","rjps"],["KJV","kjv"],
+    ["YLT","ylt"],["BBE","bbe"],["Kehot","kehot"],["Alter","alter"],["Fox","fox"]];
+  function escRe(s){ return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); }
+  var PAT = ['B’reishit Rabbah(?: \\d+:\\d+(?:, \\d+:\\d+)?)?', 'Vayikra Rabbah(?: \\d+:\\d+)?', 'Rashi(?: on (?:Genesis )?\\d+:\\d+(?:–\\d+)?)?']
+    .concat(NAMES.map(function(n){ return escRe(n[0]); }));
+  function keyFor(m){
+    if (m.indexOf('B’reishit') === 0) return 'br';
+    if (m.indexOf('Vayikra') === 0) return 'vr';
+    if (m.indexOf('Rashi') === 0) return 'rashi';
+    if (m === 'the Hebrew') return 'hebrew';
+    for (var i = 0; i < NAMES.length; i++) if (NAMES[i][0] === m) return NAMES[i][1];
+    return null;
+  }
+  function mk(key, text){
+    var s = document.createElement('span');
+    s.className = 'sref'; s.setAttribute('role', 'button'); s.tabIndex = 0; s.dataset.src = key;
+    s.setAttribute('aria-haspopup', 'dialog'); s.setAttribute('aria-expanded', 'false'); s.textContent = text;
+    return s;
+  }
+  var SKIP = 'q, a, button, select, option, textarea, script, style, .sref, [lang="he"], .prompt, .keys, .dc-key, .plines, .chips, .src';
+  function linkify(root, withHebrew){
+    var re = new RegExp('(?<![\\w’])(' + PAT.concat(withHebrew ? ['the Hebrew'] : []).join('|') + ')(?![\\w])', 'g');
+    var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null), nodes = [], n;
+    while ((n = walker.nextNode())) { if (n.parentElement && !n.parentElement.closest(SKIP) && re.test(n.nodeValue)) nodes.push(n); re.lastIndex = 0; }
+    nodes.forEach(function(t){
+      var v = t.nodeValue, frag = document.createDocumentFragment(), last = 0, m;
+      re.lastIndex = 0;
+      while ((m = re.exec(v))) {
+        var key = keyFor(m[1]); if (!key || !SRC[key]) continue;
+        if (m.index > last) frag.appendChild(document.createTextNode(v.slice(last, m.index)));
+        frag.appendChild(mk(key, m[1])); last = m.index + m[1].length;
+      }
+      if (last === 0) return;
+      if (last < v.length) frag.appendChild(document.createTextNode(v.slice(last)));
+      t.parentNode.replaceChild(frag, t);
+    });
+  }
+  // card titles carry their source in the card's id
+  document.querySelectorAll('article.tr[id] h3, article.dc[id] h3').forEach(function(h){
+    var key = h.closest('article').id.replace(/^dream-/, ''), t = h.firstChild;
+    if (SRC[key] && t && t.nodeType === 3 && t.nodeValue.trim()) h.replaceChild(mk(key, t.nodeValue), t);
+  });
+  document.querySelectorAll('.learned, .lede, #method dd, .f-text, .notes, .verdict, .about, .mid .label, .lens h3, .pcol h3, footer').forEach(function(el){ linkify(el, false); });
+  document.querySelectorAll('.t-words span').forEach(function(el){ linkify(el, true); });
+
+  var pop = document.createElement('div');
+  pop.className = 'spop'; pop.hidden = true; pop.setAttribute('role', 'dialog'); pop.setAttribute('aria-labelledby', 'spopName');
+  pop.innerHTML = '<button type="button" class="px">Close</button><p class="k"></p><h4 id="spopName"></h4><dl></dl>';
+  document.body.appendChild(pop);
+  var popFor = null, pinned = false, showT = null, hideT = null;
+  var canHover = window.matchMedia && window.matchMedia('(hover: hover)').matches;
+  function fill(key){
+    var c = SRC[key];
+    pop.querySelector('.k').textContent = c.kind; pop.querySelector('h4').textContent = c.name;
+    pop.querySelector('dl').innerHTML = '<dt>Who</dt><dd>' + c.who + '</dd><dt>When</dt><dd>' + c.when + '</dd><dt>Approach</dt><dd>' + c.approach + '</dd><dt>Worldview</dt><dd>' + c.view + '</dd><dt>This passage</dt><dd>' + c.here + '</dd>';
+  }
+  function place(el){
+    if (window.innerWidth < 640) { pop.classList.add('sheet'); pop.style.left = pop.style.top = pop.style.width = ''; return; }
+    pop.classList.remove('sheet');
+    var W = Math.min(560, window.innerWidth - 32); pop.style.width = W + 'px';
+    var r = el.getBoundingClientRect(), H = pop.offsetHeight;
+    var left = Math.max(16, Math.min(window.innerWidth - 16 - W, r.left + r.width / 2 - W / 2));
+    var below = r.bottom + 10, above = r.top - 10 - H, top;
+    if (below + H <= window.innerHeight - 8) top = below;
+    else if (above >= 8) top = above;
+    else {
+      // no room above or below: sit beside the name if there is room, and keep the card on screen
+      if (r.left - 16 - W >= 16) left = r.left - 16 - W;
+      else if (r.right + 16 + W <= window.innerWidth - 16) left = r.right + 16;
+      top = Math.max(8, Math.min(window.innerHeight - 8 - H, r.top + r.height / 2 - H / 2));
+    }
+    pop.style.left = (left + window.scrollX) + 'px'; pop.style.top = (top + window.scrollY) + 'px';
+  }
+  function show(el, pin){
+    clearTimeout(hideT);
+    if (popFor && popFor !== el) popFor.setAttribute('aria-expanded', 'false');
+    popFor = el; pinned = !!pin; pop.classList.toggle('pinned', pinned);
+    fill(el.dataset.src); pop.hidden = false; place(el);
+    el.setAttribute('aria-expanded', 'true');
+  }
+  function hide(){
+    clearTimeout(showT); clearTimeout(hideT);
+    pop.hidden = true; pinned = false; pop.classList.remove('pinned');
+    if (popFor) popFor.setAttribute('aria-expanded', 'false');
+    popFor = null;
+  }
+  function refOf(t){ return t && t.closest ? t.closest('.sref') : null; }
+  document.addEventListener('mouseover', function(e){
+    var el = refOf(e.target); if (!el || pinned || !canHover) return;
+    clearTimeout(hideT); clearTimeout(showT);
+    showT = setTimeout(function(){ show(el, false); }, 120);
+  });
+  document.addEventListener('mouseout', function(e){
+    var el = refOf(e.target); if (!el || pinned || !canHover) return;
+    clearTimeout(showT);
+    hideT = setTimeout(function(){ if (!pinned && !pop.matches(':hover')) hide(); }, 200);
+  });
+  pop.addEventListener('mouseenter', function(){ clearTimeout(hideT); });
+  pop.addEventListener('mouseleave', function(){ if (!pinned) hideT = setTimeout(hide, 200); });
+  document.addEventListener('click', function(e){
+    var el = refOf(e.target);
+    if (el) { e.preventDefault(); if (pinned && popFor === el) hide(); else show(el, true); return; }
+    if (!pop.hidden && !pop.contains(e.target)) hide();
+  });
+  pop.querySelector('.px').addEventListener('click', function(){ var el = popFor; hide(); if (el && document.body.contains(el)) el.focus(); });
+  document.addEventListener('keydown', function(e){
+    if (!pop.hidden && e.key === 'Escape') { var el = popFor; hide(); if (el && document.body.contains(el)) el.focus(); return; }
+    var r = refOf(e.target);
+    if (r && (e.key === 'Enter' || e.key === ' ')) { e.preventDefault(); if (pinned && popFor === r) hide(); else show(r, true); }
+  });
+  window.addEventListener('resize', function(){ if (!pop.hidden && popFor) place(popFor); });
+  document.querySelectorAll('[role="tab"]').forEach(function(t){ t.addEventListener('click', hide); });
 })();
 </script>
 </body>

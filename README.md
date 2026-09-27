@@ -13,7 +13,7 @@ its approach, and its worldview.
 Live at techrabbi.org/jacobs-ladder.
 
 The companion page, `eleven-ladders/`, holds the full experiment behind the slide: twelve translations sent word for word
-to the image model, the dream verses alone, instruction lenses, midrash as the prompt, eleven public-domain artworks
+(without their footnotes) to the image model, the dream verses alone, instruction lenses, midrash as the prompt, eleven public-domain artworks
 from Wikimedia Commons, and a chevrutah prompt lab with a prompt builder. Each phrase on the slide links to its section,
 and the QR code in the slide’s bottom band opens it on a phone. Live at techrabbi.org/jacobs-ladder/eleven-ladders.
 
