@@ -1,0 +1,851 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Jacob’s Dream</title>
+<meta name="description" content="Genesis 28:11–12 in eighteen art styles, each with a looping animation and a fullscreen viewer.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500;700&family=IBM+Plex+Mono&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+<style>
+  :root {
+    color-scheme: dark;
+    --night: #0c0e1a;
+    --night-raised: #151828;
+    --night-deep: #07080f;
+    --line: rgba(236, 228, 212, 0.13);
+    --line-strong: rgba(236, 228, 212, 0.3);
+    --parchment: #ece4d4;
+    --stone: #aba392;
+    --gold: #e2b563;
+    --gold-ink: #1c1505;
+    --gold-wash: rgba(226, 181, 99, 0.16);
+    --radius: 6px;
+    --display: "Frank Ruhl Libre", "Noto Serif Hebrew", "Times New Roman", Georgia, serif;
+    --sans: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    --mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  }
+  [hidden] { display: none !important; }
+  html { background: var(--night); }
+  body {
+    margin: 0;
+    background: var(--night);
+    color: var(--parchment);
+    font: 400 16px/1.55 var(--sans);
+    -webkit-font-smoothing: antialiased;
+  }
+  body.no-scroll { overflow: hidden; }
+  button { font: inherit; color: inherit; }
+  :focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
+
+  .page { max-width: 1320px; margin: 0 auto; padding-inline: clamp(16px, 4vw, 48px); }
+
+  /* Masthead */
+  .masthead {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: end;
+    gap: 28px 56px;
+    padding-block: clamp(36px, 6vw, 76px) 32px;
+  }
+  .eyebrow {
+    margin: 0 0 14px;
+    font: 500 0.78rem/1 var(--sans);
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--gold);
+  }
+  h1 {
+    margin: 0 0 22px;
+    font: 500 clamp(2.6rem, 6.4vw, 4.8rem)/0.98 var(--display);
+    letter-spacing: -0.01em;
+    text-wrap: balance;
+  }
+  .verse {
+    margin: 0;
+    max-width: 60ch;
+    font: 400 clamp(1.08rem, 1.5vw, 1.28rem)/1.6 var(--display);
+  }
+  .hebrew { margin-top: 18px; max-width: 60ch; display: grid; gap: 10px; }
+  .verse-he {
+    margin: 0;
+    font: 400 clamp(1.3rem, 2vw, 1.6rem)/1.9 var(--display);
+    text-align: right;
+  }
+  .verse-tr { margin: 0; font: italic 400 0.95rem/1.6 var(--sans); color: var(--stone); }
+  .text-btn {
+    margin-top: 14px;
+    padding: 0;
+    border: 0;
+    background: none;
+    cursor: pointer;
+    font: 500 0.88rem/1.4 var(--sans);
+    color: var(--gold);
+    text-decoration: underline;
+    text-decoration-color: rgba(226, 181, 99, 0.45);
+    text-underline-offset: 4px;
+  }
+  .text-btn:hover { text-decoration-color: var(--gold); }
+  .note {
+    margin: 22px 0 0;
+    max-width: 62ch;
+    font: 400 0.95rem/1.6 var(--sans);
+    color: var(--stone);
+  }
+  .sulam { margin: 0; text-align: center; }
+  .sulam-word {
+    display: block;
+    font: 500 clamp(5rem, 12vw, 10.5rem)/1.05 var(--display);
+    color: var(--gold);
+  }
+  .sulam figcaption {
+    margin: 6px auto 0;
+    max-width: 21ch;
+    font: 400 0.82rem/1.45 var(--sans);
+    color: var(--stone);
+  }
+  .sulam figcaption i { color: var(--parchment); }
+
+  /* Toolbar */
+  .toolbar {
+    position: sticky;
+    top: env(safe-area-inset-top, 0px);
+    z-index: 5;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px 20px;
+    margin-bottom: 24px;
+    padding-block: 12px;
+    background: rgba(12, 14, 26, 0.92);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--line);
+  }
+  .toolbar-count { margin: 0; font: 400 0.9rem/1.3 var(--sans); color: var(--stone); }
+  .toolbar-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+  .segmented {
+    display: inline-flex;
+    gap: 2px;
+    padding: 3px;
+    border: 1px solid var(--line-strong);
+    border-radius: 999px;
+  }
+  .segmented button, .pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    padding: 8px 15px;
+    border: 0;
+    border-radius: 999px;
+    background: transparent;
+    cursor: pointer;
+    font: 500 0.86rem/1 var(--sans);
+    color: var(--stone);
+  }
+  .segmented button:hover { color: var(--parchment); }
+  .segmented button[aria-pressed="true"] { background: var(--gold); color: var(--gold-ink); }
+  .pill { border: 1px solid var(--line-strong); color: var(--parchment); padding: 10px 16px; }
+  .pill:hover { border-color: var(--gold); color: var(--gold); }
+  .segmented svg, .pill svg { width: 15px; height: 15px; flex: none; }
+
+  /* Grid */
+  .grid {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 290px), 1fr));
+    gap: 30px 20px;
+  }
+  .card {
+    display: grid;
+    gap: 12px;
+    width: 100%;
+    padding: 0;
+    border: 0;
+    background: none;
+    text-align: left;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+  .card:focus-visible { outline-offset: 6px; }
+  .media {
+    position: relative;
+    display: block;
+    aspect-ratio: 16 / 9;
+    max-width: 100%;
+    overflow: hidden;
+    border-radius: var(--radius);
+    background: var(--night-raised);
+    box-shadow: 0 0 0 1px var(--line);
+    transition: box-shadow 0.25s;
+  }
+  .card:hover .media { box-shadow: 0 0 0 1px var(--gold); }
+  .media img, .media video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .media video { opacity: 0; transition: opacity 0.5s; }
+  .media video.is-playing { opacity: 1; }
+  .meta { display: grid; gap: 4px; }
+  .card-title { font: 500 1.24rem/1.2 var(--display); color: var(--parchment); }
+  .label { font: 400 0.74rem/1.45 var(--mono); color: var(--stone); }
+
+  footer {
+    margin-top: 64px;
+    padding-block: 28px 44px;
+    border-top: 1px solid var(--line);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 12px 32px;
+    font: 400 0.84rem/1.55 var(--sans);
+    color: var(--stone);
+  }
+  footer p { margin: 0; max-width: 70ch; }
+  footer a { color: var(--parchment); text-decoration-color: rgba(226, 181, 99, 0.5); text-underline-offset: 3px; }
+  footer a:hover { color: var(--gold); }
+  kbd {
+    font: 400 0.78rem/1 var(--mono);
+    padding: 2px 6px;
+    border: 1px solid var(--line-strong);
+    border-radius: 4px;
+    color: var(--parchment);
+  }
+
+  /* Viewer */
+  .viewer {
+    position: fixed;
+    inset: 0;
+    z-index: 50;
+    display: grid;
+    grid-template-rows: minmax(0, 1fr) auto;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+    background: var(--night-deep);
+  }
+  .stage {
+    position: relative;
+    min-height: 0;
+    display: grid;
+    place-items: center;
+    padding: clamp(8px, 2.2vw, 28px);
+  }
+  .stage video {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    display: block;
+    cursor: pointer;
+  }
+  .progress {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2px;
+    width: 0;
+    background: var(--gold);
+  }
+  .bar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px 28px;
+    padding: 14px clamp(16px, 3vw, 32px) 18px;
+    border-top: 1px solid var(--line);
+    transition: opacity 0.4s;
+  }
+  .bar-text { min-width: 0; flex: 1 1 380px; }
+  .viewer-title { margin: 0; font: 500 1.55rem/1.15 var(--display); }
+  .viewer-label { margin: 4px 0 0; font: 400 0.75rem/1.45 var(--mono); color: var(--stone); }
+  .viewer-caption { margin: 8px 0 0; max-width: 72ch; font: 400 0.93rem/1.55 var(--sans); color: var(--parchment); }
+  .controls { display: flex; flex-wrap: wrap; gap: 8px; }
+  .icon-btn {
+    width: 44px;
+    height: 44px;
+    display: inline-grid;
+    place-items: center;
+    padding: 0;
+    border: 1px solid var(--line-strong);
+    border-radius: 50%;
+    background: transparent;
+    color: var(--parchment);
+    cursor: pointer;
+  }
+  .icon-btn:hover { border-color: var(--gold); color: var(--gold); }
+  .icon-btn[aria-pressed="true"] { background: var(--gold-wash); border-color: var(--gold); color: var(--gold); }
+  .icon-btn svg { width: 20px; height: 20px; }
+  .viewer.is-fullscreen { grid-template-rows: minmax(0, 1fr); }
+  .viewer.is-fullscreen .stage { padding: 0; }
+  .viewer.is-fullscreen .bar {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-top: 0;
+    background: linear-gradient(to top, rgba(7, 8, 15, 0.92) 40%, rgba(7, 8, 15, 0));
+    padding-top: 48px;
+  }
+  .viewer.is-fullscreen.is-idle { cursor: none; }
+  .viewer.is-fullscreen.is-idle .bar { opacity: 0; pointer-events: none; }
+
+  .prompts {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    width: min(470px, 100%);
+    overflow-y: auto;
+    padding: 24px clamp(16px, 3vw, 28px) 32px;
+    background: var(--night-raised);
+    border-left: 1px solid var(--line);
+    box-shadow: -24px 0 48px rgba(0, 0, 0, 0.35);
+  }
+  .prompts-head { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 18px; }
+  .prompts-head h2 { margin: 0; font: 500 1.3rem/1.2 var(--display); }
+  .prompt-block { margin-bottom: 22px; }
+  .prompt-block h3 {
+    margin: 0 0 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+    font: 500 0.74rem/1.3 var(--sans);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--gold);
+  }
+  .prompt-block h3 span { letter-spacing: 0; text-transform: none; font: 400 0.74rem/1.3 var(--mono); color: var(--stone); }
+  .prompt-block pre {
+    margin: 0 0 8px;
+    padding: 14px;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    font: 400 0.8rem/1.6 var(--mono);
+    color: var(--parchment);
+    background: var(--night-deep);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+  }
+  .prompt-block p { margin: 0; font: 400 0.9rem/1.55 var(--sans); color: var(--parchment); }
+  .copy-btn {
+    padding: 6px 12px;
+    border: 1px solid var(--line-strong);
+    border-radius: 999px;
+    background: transparent;
+    cursor: pointer;
+    font: 500 0.8rem/1 var(--sans);
+    color: var(--parchment);
+  }
+  .copy-btn:hover { border-color: var(--gold); color: var(--gold); }
+
+  @media (max-width: 760px) {
+    .masthead { grid-template-columns: minmax(0, 1fr); }
+    .sulam { order: -1; display: flex; align-items: center; gap: 16px; text-align: left; }
+    .sulam-word { font-size: 4.2rem; }
+    .sulam figcaption { margin: 0; }
+    .bar { padding-bottom: 14px; }
+    .viewer-caption { font-size: 0.88rem; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .media, .media video, .bar { transition: none; }
+  }
+</style>
+<link rel="canonical" href="https://techrabbi.org/jacobs-ladder/dream/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Jacob’s Dream">
+<meta property="og:description" content="Genesis 28:11–12 in eighteen art styles, each with a looping animation.">
+<meta property="og:url" content="https://techrabbi.org/jacobs-ladder/dream/">
+<meta property="og:image" content="https://techrabbi.org/jacobs-ladder/dream/media/poster/manuscript.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230c0e1a'/%3E%3Cpath d='M12 52h10v-9h9v-9h9v-9h9v-9h5' fill='none' stroke='%23e2b563' stroke-width='5' stroke-linejoin='round'/%3E%3C/svg%3E">
+</head>
+<body>
+
+<div class="page">
+  <header class="masthead">
+    <div>
+      <p class="eyebrow">Genesis 28:11–12</p>
+      <h1>Jacob’s Dream</h1>
+      <p class="verse">He came upon a certain place and stopped there for the night, for the sun had set. Taking one of the stones of that place, he put it under his head and lay down in that place. He had a dream; a stairway was set on the ground and its top reached to the sky, and angels of God were going up and down on it.</p>
+      <div class="hebrew" id="hebrew" hidden>
+        <p class="verse-he" lang="he" dir="rtl">וַיִּפְגַּע בַּמָּקוֹם וַיָּלֶן שָׁם כִּי־בָא הַשֶּׁמֶשׁ וַיִּקַּח מֵאַבְנֵי הַמָּקוֹם וַיָּשֶׂם מְרַאֲשֹׁתָיו וַיִּשְׁכַּב בַּמָּקוֹם הַהוּא׃ וַיַּחֲלֹם וְהִנֵּה סֻלָּם מֻצָּב אַרְצָה וְרֹאשׁוֹ מַגִּיעַ הַשָּׁמָיְמָה וְהִנֵּה מַלְאֲכֵי אֱלֹהִים עֹלִים וְיֹרְדִים בּוֹ׃</p>
+        <p class="verse-tr">Vayifga bamakom vayalen sham ki va hashemesh, vayikach mei'avnei hamakom vayasem m'ra'ashotav, vayishkav bamakom hahu. Vayachalom v'hineih sulam mutzav artzah v'rosho magia hashamaymah, v'hineih malachei Elohim olim v'yordim bo.</p>
+      </div>
+      <button class="text-btn" id="hebrew-toggle" type="button" aria-expanded="false" aria-controls="hebrew">Show the Hebrew</button>
+      <p class="note">None of these images show God, per Jewish practice. Each stairway rises into sky and light. The Hebrew word for angels, <i>malachim</i>, also means messengers, so here they take the form of flames, birds, and light.</p>
+    </div>
+    <figure class="sulam">
+      <span class="sulam-word" lang="he" dir="rtl">סֻלָּם</span>
+      <figcaption><i>Sulam</i>, stairway. The word appears only here in the Hebrew Bible.</figcaption>
+    </figure>
+  </header>
+
+  <div class="toolbar">
+    <p class="toolbar-count" id="count">Eighteen ways to see the dream</p>
+    <div class="toolbar-actions">
+      <div class="segmented" role="group" aria-label="Motion">
+        <button type="button" data-motion="loop" aria-pressed="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 2l4 4-4 4"/><path d="M3 11v-1a4 4 0 0 1 4-4h14"/><path d="M7 22l-4-4 4-4"/><path d="M21 13v1a4 4 0 0 1-4 4H3"/></svg>
+          Loop
+        </button>
+        <button type="button" data-motion="still" aria-pressed="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+          Still
+        </button>
+      </div>
+      <button type="button" class="pill" id="start-show">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+        Slideshow
+      </button>
+    </div>
+  </div>
+
+  <main>
+    <ul class="grid" id="grid"></ul>
+  </main>
+
+  <footer>
+    <p>Stills made with Gemini 3 Pro Image (Nano Banana Pro). Motion made with Veo 3.1 Fast: each eight-second loop begins and ends on its still, so it repeats without a seam.</p>
+    <p>Part of <a href="https://techrabbi.org/jacobs-ladder/">Jacob’s Ladder</a>, with the Talmud-page slide and <a href="https://techrabbi.org/jacobs-ladder/eleven-ladders/">Eleven Ladders</a>.</p>
+    <p>Select a picture to open it. <kbd>←</kbd> <kbd>→</kbd> move between pictures, <kbd>Space</kbd> switches loop and still, <kbd>F</kbd> goes fullscreen, <kbd>Esc</kbd> closes.</p>
+  </footer>
+</div>
+
+<div class="viewer" id="viewer" role="dialog" aria-modal="true" aria-labelledby="viewer-title" hidden>
+  <div class="stage" id="stage">
+    <div class="progress" id="progress"></div>
+    <video id="viewer-video" muted playsinline loop preload="auto"></video>
+  </div>
+  <div class="bar">
+    <div class="bar-text">
+      <h2 class="viewer-title" id="viewer-title"></h2>
+      <p class="viewer-label" id="viewer-label"></p>
+      <p class="viewer-caption" id="viewer-caption"></p>
+    </div>
+    <div class="controls">
+      <button type="button" class="icon-btn" id="prev" aria-label="Previous picture" title="Previous (←)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
+      </button>
+      <button type="button" class="icon-btn" id="play" aria-label="Show still" title="Loop or still (Space)">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-icon="pause"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-icon="play" hidden><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.5-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z"/></svg>
+      </button>
+      <button type="button" class="icon-btn" id="next" aria-label="Next picture" title="Next (→)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+      </button>
+      <button type="button" class="icon-btn" id="show" aria-label="Slideshow" aria-pressed="false" title="Slideshow (S)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+      </button>
+      <button type="button" class="icon-btn" id="info" aria-label="How it was made" aria-expanded="false" aria-controls="prompts" title="Prompts (I)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg>
+      </button>
+      <button type="button" class="icon-btn" id="fs" aria-label="Fullscreen" aria-pressed="false" title="Fullscreen (F)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg>
+      </button>
+      <button type="button" class="icon-btn" id="close" aria-label="Close" title="Close (Esc)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+  </div>
+  <section class="prompts" id="prompts" aria-labelledby="prompts-title" hidden>
+    <div class="prompts-head">
+      <h2 id="prompts-title">How it was made</h2>
+      <button type="button" class="icon-btn" id="prompts-close" aria-label="Close prompts">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+    <div class="prompt-block">
+      <h3>Image prompt <span>gemini-3-pro-image</span></h3>
+      <pre id="prompt-image"></pre>
+      <button type="button" class="copy-btn" data-copy="prompt-image">Copy</button>
+    </div>
+    <div class="prompt-block">
+      <h3>Motion prompt <span>veo-3.1-fast</span></h3>
+      <pre id="prompt-motion"></pre>
+      <button type="button" class="copy-btn" data-copy="prompt-motion">Copy</button>
+    </div>
+    <div class="prompt-block" id="touchup-block" hidden>
+      <h3>Touch-up</h3>
+      <p id="touchup"></p>
+    </div>
+  </section>
+</div>
+
+<script type="application/json" id="gallery-data">[{"id": "manuscript", "title": "Illuminated Manuscript", "image_prompt": "Wide 16:9 landscape composition. A miniature painting in the style of a 14th-century Sephardic Hebrew Bible from medieval Spain: flat jewel-toned pigments (lapis blue, vermilion, malachite green) with burnished gold leaf, fine black ink outlines, and a wide ornamental border of interlaced geometric Mudejar patterns, knotwork and small fanciful beasts. Inside the border: a rocky wilderness under a deep blue night sky patterned with small gold stars. In the lower left, a young traveler in a patterned cloak sleeps on the ground, his head resting on a stone. From the ground beside him a golden stairway rises diagonally to the top of the picture, where it disappears into the starry sky. Small gilded winged messengers, each a pair of wings folded around a small flame, climb and descend the steps. The painted miniature is wide and fills most of the frame, with only a thin margin of vellum around its border. The sleeping man has no halo and no gold disc behind his head. No beam of light. Aged vellum texture, slightly cracked gold. The only person anywhere in the picture is the sleeping traveler. The top of the stairway simply dissolves into open starry sky and soft light: nothing and no one stands at the top. No figure, no face, no hand, no eye, no throne, no shape suggesting a person up there. The winged messengers must not look like people, angels, fairies or cherubs in any way: no heads, no faces, no arms, no legs, no torsos, no robes, no halos. No halo or glowing disc behind anyone's head. No crosses or cross shapes, no halos, no doves, no church or chapel architecture, no clouds-and-sunbeams sky, no gates, no radiating sunburst rays. The light is soft and glows from the stairway, the winged messengers and the stars. ABSOLUTELY NO words, letters, numbers, captions, titles or writing of any kind anywhere; purely pictorial; no signature, no initials, no date, no watermark.", "motion_prompt": "The illuminated page comes gently alive: the gold leaf shimmers, the small gold stars twinkle, and the winged golden flames slowly climb and descend the golden stairway, some rising and some coming down, their flames flickering. The border and the vellum page stay perfectly still. The sleeping man breathes slowly. Locked-off static camera: no zoom, no pan, no cut. The sleeping traveler stays asleep. No new people, figures or creatures appear, and nothing appears at the top of the stairway. No text. The last frame returns exactly to the first frame so the clip loops seamlessly.", "label": "Pigment and gold leaf on vellum · after fourteenth-century Spain", "caption": "Lapis, vermilion, and gold in the manner of the Hebrew Bibles made in medieval Spain. Each messenger is a pair of wings folded around a flame."}, {"id": "stained-glass", "title": "Stained Glass", "image_prompt": "Wide 16:9 landscape composition. A luminous modernist stained glass panel in the manner of mid-20th-century synagogue windows, filling the entire frame edge to edge (no architectural window frame, no arches): bold abstract shapes of hand-blown antique glass in deep cobalt, violet and midnight blue with bursts of amber, gold and ruby, joined by thick dark lead lines, with light shining through from behind. Along the bottom, a stylized young man lies asleep, his head on a rounded stone. From beside him a stairway of amber glass rises through a field of star shapes to the top edge, where it opens into pale gold glass. Abstract winged flame shapes of white and gold glass move up and down the stairway. Seeded and streaky glass textures, minimal painted detail. The only person anywhere in the picture is the sleeping traveler. The top of the stairway simply dissolves into open starry sky and soft light: nothing and no one stands at the top. No figure, no face, no hand, no eye, no throne, no shape suggesting a person up there. The winged messengers have no faces, no human bodies and no halos; they are not cherubs. No crosses or cross shapes, no halos, no doves, no church or chapel architecture, no clouds-and-sunbeams sky, no gates, no radiating sunburst rays. The light is soft and glows from the stairway, the winged messengers and the stars. ABSOLUTELY NO words, letters, numbers, captions, titles or writing of any kind anywhere; purely pictorial; no signature, no watermark.", "motion_prompt": "Only the daylight behind the stained glass changes: individual pieces of glass slowly brighten and dim, as if sun and clouds were moving behind the window, and the amber stairway and the white and gold winged flame shapes glow a little brighter, then softer. No sparkles, no glitter, no light trails, no glowing particles; nothing moves in front of the glass. The lead lines, the glass shapes and the sleeping figure stay exactly in place. Locked-off static camera: no zoom, no pan, no cut. The sleeping traveler stays asleep. No new people, figures or creatures appear, and nothing appears at the top of the stairway. No text. The last frame returns exactly to the first frame so the clip loops seamlessly.", "label": "Antique glass and lead · after mid-century synagogue windows", "caption": "Cobalt and amber glass in the spirit of modern synagogue windows. In the loop, daylight moves behind the glass."}, {"id": "hieroglyphics", "title": "Hieroglyphics", "image_prompt": "Wide 16:9 landscape composition. An ancient Egyptian tomb wall painting on smooth plaster, in flat mineral colors (ochre, red earth, Egyptian blue, malachite green, black and white) arranged in bordered registers, drawn in strict Egyptian profile convention. In the bottom register a young man, drawn the way Egyptian painters showed travelers from Canaan (dark hair, short beard, a long tunic woven with bright red, white and blue patterns), sleeps on his side with his head resting on a stone headrest. From beside him a stepped stairway drawn in profile climbs diagonally to the top border, which is painted as a deep blue night sky full of yellow five-pointed stars like a tomb ceiling. Along the stairway, stylized pairs of outstretched wings, without heads or bodies, ascend and descend in orderly procession. Seen straight on as one flat painted wall (not a room, no ceiling, no corners). There is exactly one stairway: it starts on the ground at the sleeper's feet and climbs to the upper right. His short beard is natural, not a pharaoh's false beard. Do not include the ankh symbol anywhere. Gentle wear, faded patches and hairline cracks in the plaster. The only person anywhere in the picture is the sleeping traveler. The top of the stairway simply dissolves into open starry sky and soft light: nothing and no one stands at the top. No figure, no face, no hand, no eye, no throne, no shape suggesting a person up there. The winged messengers must not look like people, angels, fairies or cherubs in any way: no heads, no faces, no arms, no legs, no torsos, no robes, no halos. No halo or glowing disc behind anyone's head. No crosses or cross shapes, no halos, no doves, no church or chapel architecture, no clouds-and-sunbeams sky, no gates, no radiating sunburst rays. The light is soft and glows from the stairway, the winged messengers and the stars. No Latin, Hebrew or other alphabet letters and no numbers; the only glyphs are small decorative Egyptian-style pictograms (reeds, water ripples, birds, stars) in columns at the edges. No eye symbols, no ankh symbols, no deities, no animal-headed figures, no sun disks; purely pictorial; no signature, no initials, no date, no watermark.", "motion_prompt": "The painted wall stays still while the painted pairs of wings glide slowly along the stairway, some upward and some downward, keeping the flat Egyptian style; the yellow stars twinkle softly; warm flickering lamplight plays across the plaster. Locked-off static camera: no zoom, no pan, no cut. The sleeping traveler stays asleep. No new people, figures or creatures appear, and nothing appears at the top of the stairway. No text. The last frame returns exactly to the first frame so the clip loops seamlessly.", "label": "Mineral paint on plaster · after Middle Kingdom Egypt", "caption": "Jacob appears the way Egyptian painters drew travelers from Canaan: a patterned wool tunic, a short beard, and his head on a stone headrest.", "touchup": "Edited to replace eye-shaped glyphs and a small seated figure in the side columns."}, {"id": "3d-animated", "title": "3D Animated", "image_prompt": "Wide 16:9 landscape composition. A still frame from a modern 3D animated feature film: appealing stylized character design, soft global illumination, painterly textured environments, cinematic depth of field. Night in a rocky hill-country wilderness just after sunset, the last teal and apricot glow fading on the horizon, the sky filling with stars. In the lower left foreground, a young traveler with tousled dark hair and a simple striped wool cloak sleeps curled on the ground, his head resting on a smooth stone, a walking staff beside him. From the ground beside him a stairway of floating, softly glowing sandstone steps curves gently upward into the starry sky and fades into warm light at the top edge. The winged messengers are tiny glowing orbs of warm light, each with a pair of translucent gossamer wings like a firefly or moth, with no head, arms, legs or body; they are not fairies. They glide up and down the steps. Warm gold light from the stairway against the cool blue night. The only person anywhere in the picture is the sleeping traveler. The top of the stairway simply dissolves into open starry sky and soft light: nothing and no one stands at the top. No figure, no face, no hand, no eye, no throne, no shape suggesting a person up there. The winged messengers must not look like people, angels, fairies or cherubs in any way: no heads, no faces, no arms, no legs, no torsos, no robes, no halos. No halo or glowing disc behind anyone's head. No crosses or cross shapes, no halos, no doves, no church or chapel architecture, no clouds-and-sunbeams sky, no gates, no radiating sunburst rays. The light is soft and glows from the stairway, the winged messengers and the stars. ABSOLUTELY NO words, letters, numbers, captions, titles or writing of any kind anywhere; purely pictorial; no signature, no initials, no date, no watermark.", "motion_prompt": "Gentle animated motion: the glowing firefly-like winged lights drift up and down beside the floating stairway, leaving faint sparkling trails; the floating steps bob very slightly; the stars twinkle; the traveler breathes slowly and peacefully in his sleep while a soft breeze stirs his hair and cloak. Locked-off static camera: no zoom, no pan, no cut. The sleeping traveler stays asleep. No new people, figures or creatures appear, and nothing appears at the top of the stairway. No text. The last frame returns exactly to the first frame so the clip loops seamlessly.", "label": "Computer animation · after feature films", "caption": "Floating sandstone steps in the style of an animated film, with fireflies for messengers.", "touchup": "Cropped to remove a thin black band along the top."}, {"id": "classical", "title": "Classical Painting", "image_prompt": "Wide 16:9 landscape composition. A museum oil painting combining the chiaroscuro of a 17th-century Dutch master with the luminous atmosphere of early-19th-century Romantic landscape painting: rich glazes, visible brushwork, fine craquelure, warm umber shadows. A rugged rocky hillside at nightfall under a vast deep-blue sky. In the lower left, a young shepherd-traveler in a heavy earth-toned cloak lies asleep on the ground, his head on a rough stone, his face lit softly by a golden glow. He wears an ancient Near Eastern shepherd's wool mantle and head cloth, no hat. From the ground near him a long stairway of pale stone steps, glowing softly, rises diagonally into the starry sky and fades into darkness near the top of the canvas. The winged messengers are small tongues of golden flame, each with a pair of translucent feathered wings; they have no heads, arms, bodies or robes and must not resemble people. They rise and descend along the steps. The light comes from the stairway and the flames themselves: no shaft or beam of light from the sky, no clouds, no putti. The only person anywhere in the picture is the sleeping traveler. The top of the stairway simply dissolves into open starry sky and soft light: nothing and no one stands at the top. No figure, no face, no hand, no eye, no throne, no shape suggesting a person up there. The winged messengers must not look like people, angels, fairies or cherubs in any way: no heads, no faces, no arms, no legs, no torsos, no robes, no halos. No halo or glowing disc behind anyone's head. No crosses or cross shapes, no halos, no doves, no church or chapel architecture, no clouds-and-sunbeams sky, no gates, no radiating sunburst rays. The light is soft and glows from the stairway, the winged messengers and the stars. ABSOLUTELY NO words, letters, numbers, captions, titles or writing of any kind anywhere; purely pictorial; no signature, no initials, no date, no watermark.", "motion_prompt": "Subtle motion in the oil painting: the small winged golden flames stay visible the whole time and drift slowly up and down along the glowing stairway, flickering; they never vanish and never turn into birds. The stars twinkle. The sleeping man does not move, and no glow, halo, aura, mist or light ever appears around his head or body. The painterly brushwork and craquelure are preserved. Locked-off static camera: no zoom, no pan, no cut. The sleeping traveler stays asleep. No new people, figures or creatures appear, and nothing appears at the top of the stairway. No text. The last frame returns exactly to the first frame so the clip loops seamlessly.", "label": "Oil on canvas · after the Dutch Golden Age", "caption": "Old-master light and shadow. The messengers are small winged flames, and the glow comes from the stairway itself.", "touchup": "Cropped to remove a painted picture frame."}, {"id": "origami", "title": "Origami", "image_prompt": "Wide 16:9 landscape composition. A macro photograph of an intricate origami diorama in which everything is folded paper: faceted paper rocks and hills in warm sand and slate tones under a night sky of deep indigo paper with tiny folded paper stars hanging on invisible threads. In the lower left, a clearly readable folded paper figure of a young traveler in a cloak lies on his side, asleep, his head resting on a small folded paper stone. Beside him a stairway of crisp folded ivory and gold paper steps rises in a graceful curve toward the top of the frame. Classic origami cranes with long necks and pointed tails, folded from gold and ivory paper, fly up and down alongside the steps. Soft studio lighting, a warm glow from a light hidden inside the stairway, visible creases and paper fibers, shallow depth of field. The only person anywhere in the picture is the sleeping traveler. The top of the stairway simply dissolves into open starry sky and soft light: nothing and no one stands at the top. No figure, no face, no hand, no eye, no throne, no shape suggesting a person up there. The winged messengers must not look like people, angels, fairies or cherubs in any way: no heads, no faces, no arms, no legs, no torsos, no robes, no halos. No halo or glowing disc behind anyone's head. No crosses or cross shapes, no halos, no doves, no church or chapel architecture, no clouds-and-sunbeams sky, no gates, no radiating sunburst rays. The light is soft and glows from the stairway, the winged messengers and the stars. ABSOLUTELY NO words, letters, numbers, captions, titles or writing of any kind anywhere; purely pictorial; no signature, no initials, no date, no watermark.", "motion_prompt": "Paper animation: the origami cranes flap their paper wings and fly slowly up and down beside the paper stairway; the hanging paper stars sway gently on their threads; the warm light inside the stairway glows softly. The paper figure sleeps without moving. Locked-off static camera: no zoom, no pan, no cut. The sleeping traveler stays asleep. No new people, figures or creatures appear, and nothing appears at the top of the stairway. No text. The last frame returns exactly to the first frame so the clip loops seamlessly.", "label": "Folded paper · diorama", "caption": "Everything is folded: paper hills, hanging stars, and cranes flying beside the steps."}, {"id": "junk-sculpture", "title": "Junk Sculpture", "image_prompt": "Wide 16:9 landscape composition. A photograph of a large found-object assemblage sculpture installed outdoors on rocky desert ground at dusk. The stairway is welded from salvaged metal (old ladder rails, bicycle chains, rusted gears, bent forks, keys and pipe fittings) rising in a tall zigzag toward the evening sky, with strings of tiny warm lights woven through it so it glows. A sleeping traveler assembled from scrap (a body of hammered tin cans, a cloak of rusty chain) lies on the ground in the lower left, its head resting on a real stone. Winged messengers made from spoons, bottle caps, old keys and scraps of copper, with no faces, are mounted climbing and descending the stairway. Deep blue twilight sky with the first stars, warm light on rust, patina and verdigris. The only person anywhere in the picture is the sleeping traveler. The top of the stairway simply dissolves into open starry sky and soft light: nothing and no one stands at the top. No figure, no face, no hand, no eye, no throne, no shape suggesting a person up there. The winged messengers have no faces, no human bodies and no halos; they are not cherubs. No crosses or cross shapes, no halos, no doves, no church or chapel architecture, no clouds-and-sunbeams sky, no gates, no radiating sunburst rays. The light is soft and glows from the stairway, the winged messengers and the stars. ABSOLUTELY NO words, letters, numbers, captions, titles or writing of any kind anywhere; purely pictorial; no signature, no watermark.", "motion_prompt": "Kinetic sculpture at twilight: the tiny string lights stay fixed along the rails of the welded stairway and only twinkle on and off in sequence; no light leaves the stairway, and there are no rings, circles or spirals of light. The scrap-metal winged sculptures of spoons and bottle caps stay mounted where they are and spin slowly like wind sculptures. A light desert breeze moves the dry brush; the first stars twinkle. The top of the stairway does not change. Locked-off static camera: no zoom, no pan, no cut. The sleeping traveler stays asleep. No new people, figures or creatures appear, and nothing appears at the top of the stairway. No text. The last frame returns exactly to the first frame so the clip loops seamlessly.", "label": "Welded found objects · outdoor installation", "caption": "Old ladders, chains, gears, forks, and keys welded into a stairway, with spoon-winged messengers that spin in the wind."}, {"id": "blown-glass", "title": "Blown Glass", "image_prompt": "Wide 16:9 landscape composition. A photograph of a hand-blown art glass installation on a dark stage against a black background, lit from within. The ground is a cluster of dark smoky glass boulders. In the lower left, a stylized frosted-glass figure of a grown man (not a child), wrapped in a cloak, with smooth simplified features, sleeps with his head on a glass stone. From beside it a spiraling stairway of twisted translucent amber and gold glass rises into a canopy of glowing cobalt and violet glass orbs like a night sky. The winged messengers are abstract glass flames: tapered flame-shaped forms of swirling amber, gold and clear glass, each with two swept-back smooth glass fins; no feathers, no feathered wings, no heads, no human shapes. They hang on fine wires up and down the stairway. Glowing saturated color, caustic light patterns, reflections, tiny bubbles in the glass. The only person anywhere in the picture is the sleeping traveler. The top of the stairway simply dissolves into open starry sky and soft light: nothing and no one stands at the top. No figure, no face, no hand, no eye, no throne, no shape suggesting a person up there. The winged messengers must not look like people, angels, fairies or cherubs in any way: no heads, no faces, no arms, no legs, no torsos, no robes, no halos. No halo or glowing disc behind anyone's head. No crosses or cross shapes, no halos, no doves, no church or chapel architecture, no clouds-and-sunbeams sky, no gates, no radiating sunburst rays. The light is soft and glows from the stairway, the winged messengers and the stars. ABSOLUTELY NO words, letters, numbers, captions, titles or writing of any kind anywhere; purely pictorial; no signature, no initials, no date, no watermark.", "motion_prompt": "The glass installation glows and breathes with shifting light: color pulses slowly up and down the twisted amber stairway, caustic reflections ripple, the glass orbs above twinkle, and the glass flame shapes turn slowly on their wires and drift up and down along the stairway. Locked-off static camera: no zoom, no pan, no cut. The sleeping traveler stays asleep. No new people, figures or creatures appear, and nothing appears at the top of the stairway. No text. The last frame returns exactly to the first frame so the clip loops seamlessly.", "label": "Hand-blown glass · gallery installation", "caption": "A spiral of amber glass rising into a canopy of cobalt orbs, hung with glass flames."}, {"id": "holographic", "title": "Holographic", "image_prompt": "Wide 16:9 landscape composition. A volumetric hologram projected in a dark room. On the floor sits one real, rough stone. The projection lies on the floor beside it: a young traveler rendered in glowing translucent wireframe light, asleep with his head resting on the real stone. From beside him a stairway of stacked translucent light planes rises diagonally into a field of holographic stars, fading out gradually with no bright glare at the top. The winged messengers are comet-like streams of prismatic light particles, each ending in a faint pair of wing-shaped arcs of light, with no humanoid shape, head or body. They flow up and down the stairway. Cyan, magenta, violet and gold light, fine scanlines, subtle glitch shimmer, iridescent rainbow diffraction, deep black background. The only person anywhere in the picture is the sleeping traveler. The top of the stairway simply dissolves into open starry sky and soft light: nothing and no one stands at the top. No figure, no face, no hand, no eye, no throne, no shape suggesting a person up there. The winged messengers must not look like people, angels, fairies or cherubs in any way: no heads, no faces, no arms, no legs, no torsos, no robes, no halos. No halo or glowing disc behind anyone's head. No crosses or cross shapes, no halos, no doves, no church or chapel architecture, no clouds-and-sunbeams sky, no gates, no radiating sunburst rays. The light is soft and glows from the stairway, the winged messengers and the stars. ABSOLUTELY NO words, letters, numbers, captions, titles or writing of any kind anywhere; purely pictorial; no signature, no initials, no date, no watermark.", "motion_prompt": "The hologram flickers subtly with fine scanlines. The wireframe sleeper does not move at all: he keeps lying with his cheek on the real stone and his eyes closed. Streams of prismatic particles travel in straight diagonal lines up and down beside the stairway, like slow comets; there are no rings, circles or spirals. The light planes of the steps pulse gently in sequence. Locked-off static camera: no zoom, no pan, no cut. The sleeping traveler stays asleep. No new people, figures or creatures appear, and nothing appears at the top of the stairway. No text. The last frame returns exactly to the first frame so the clip loops seamlessly.", "label": "Projected light · hologram", "caption": "A projected dreamer rests his head on a real stone while streams of light travel the stairs."}, {"id": "mosaic", "title": "Synagogue Mosaic", "image_prompt": "Wide 16:9 landscape composition. An ancient floor mosaic from a 6th-century synagogue in the Galilee, photographed from directly above: small irregular stone and glass tesserae in a limited earthy palette (ochre, terracotta, cream, charcoal, olive and muted blue), a naive folk-art drawing style with bold outlines, and a border of interlaced vines and geometric braids. Worn and uneven, a few tesserae missing. In the lower left, a simply drawn young man in a tunic sleeps with his head on a stone. A stairway drawn as a band of steps rises diagonally to the top border into a dark field scattered with star-shaped tesserae. Winged messengers drawn as simple winged flames in gold glass tesserae, faceless, climb and descend. The only person anywhere in the picture is the sleeping traveler. The top of the stairway simply dissolves into open starry sky and soft light: nothing and no one stands at the top. No figure, no face, no hand, no eye, no throne, no shape suggesting a person up there. The winged messengers have no faces, no human bodies and no halos; they are not cherubs. No crosses or cross shapes, no halos, no doves, no church or chapel architecture, no clouds-and-sunbeams sky, no gates, no radiating sunburst rays. The light is soft and glows from the stairway, the winged messengers and the stars. ABSOLUTELY NO words, letters, numbers, captions, titles or writing of any kind anywhere; purely pictorial; no signature, no watermark.", "motion_prompt": "The ancient mosaic comes subtly alive: the gold glass tesserae glint as the winged gold flames glide slowly up and down beside the stairway; the star tesserae twinkle; soft light moves across the worn stone surface. The mosaic stays flat, seen from directly above. Locked-off static camera: no zoom, no pan, no cut. The sleeping traveler stays asleep. No new people, figures or creatures appear, and nothing appears at the top of the stairway. No text. The last frame returns exactly to the first frame so the clip loops seamlessly.", "label": "Stone and glass tesserae · after sixth-century Galilee", "caption": "Stone tesserae in the style of the sixth-century synagogue floors of the Galilee, worn and missing a few pieces."}, {"id": "papercut", "title": "Jewish Papercut", "image_prompt": "Wide 16:9 landscape composition. A traditional Eastern European Jewish folk papercut, cut from a single sheet of white paper with intricate lace-like detail and mirror symmetry, mounted over layered backgrounds of deep indigo and gold paper so the colors show through the cutouts. In the center a stairway rises from the bottom edge to the top, framed by symmetrical columns of vines, pomegranates, grape clusters, and pairs of lions and deer. Along the bottom edge in front of the stairway (not sitting and not on the steps), a small cut-paper figure of a young traveler lies stretched out horizontally on the ground, asleep, his head on a stone. Pairs of cut-paper swallows with forked tails ascend and descend on either side of the stairway. Small stars cut into the sky. Photographed flat in soft even light, with slight shadows showing the paper's depth. The only person anywhere in the picture is the sleeping traveler. The top of the stairway simply dissolves into open starry sky and soft light: nothing and no one stands at the top. No figure, no face, no hand, no eye, no throne, no shape suggesting a person up there. The winged messengers must not look like people, angels, fairies or cherubs in any way: no heads, no faces, no arms, no legs, no torsos, no robes, no halos. No halo or glowing disc behind anyone's head. No crosses or cross shapes, no halos, no doves, no church or chapel architecture, no clouds-and-sunbeams sky, no gates, no radiating sunburst rays. The light is soft and glows from the stairway, the winged messengers and the stars. ABSOLUTELY NO words, letters, numbers, captions, titles or writing of any kind anywhere; purely pictorial; no signature, no initials, no date, no watermark.", "motion_prompt": "The papercut comes gently alive: the cut-paper swallows flutter up and down beside the stairway; warm light moves slowly behind the cutouts so the indigo and gold papers glow; the tiny cut stars twinkle; the paper sheet sways very slightly. Locked-off static camera: no zoom, no pan, no cut. The sleeping traveler stays asleep. No new people, figures or creatures appear, and nothing appears at the top of the stairway. No text. The last frame returns exactly to the first frame so the clip loops seamlessly.", "label": "Cut paper · after Eastern European folk art", "caption": "An Eastern European folk papercut with lions, deer, pomegranates, grapevines, and swallows. The arch at the top recalls Jacob's words in Genesis 28:17: this is the gateway to heaven.", "touchup": "Edited so Jacob wears a plain robe and head cloth instead of a cap, a bag, and modern clothes, then animated again with the same motion prompt."}, {"id": "embroidery", "title": "Goldwork Embroidery", "image_prompt": "Wide 16:9 landscape composition. Ornate goldwork embroidery on deep midnight-blue velvet, in the tradition of Jewish ceremonial textiles: raised couched gold and silver metallic threads, padded satin stitch, seed pearls, small sequins and silk floss in muted jewel tones. The embroidered image: a rocky hillside along the bottom worked in bronze and olive threads; a single smooth stone in silver thread with a folded traveler's cloak and a walking staff laid beside it on the ground; a stairway of gold thread rising from beside the stone to the top edge through a sky of embroidered silver stars. The winged messengers are embroidered as flames of gold thread, each with a pair of silver-thread wings and nothing else: no heads, arms, legs or bodies, not angels. They ascend and descend beside the stairway. A narrow border of vines. Photographed straight on, the velvet filling the entire frame, showing thread texture and velvet pile under soft raking light. There are no people anywhere in the picture. The top of the stairway simply dissolves into open starry sky and soft light: nothing and no one stands at the top. No figure, no face, no hand, no eye, no throne, no shape suggesting a person up there. The winged messengers must not look like people, angels, fairies or cherubs in any way: no heads, no faces, no arms, no legs, no torsos, no robes, no halos. No halo or glowing disc behind anyone's head. No crosses or cross shapes, no halos, no doves, no church or chapel architecture, no clouds-and-sunbeams sky, no gates, no radiating sunburst rays. The light is soft and glows from the stairway, the winged messengers and the stars. ABSOLUTELY NO words, letters, numbers, captions, titles or writing of any kind anywhere; purely pictorial; no signature, no initials, no date, no watermark.", "motion_prompt": "Soft raking light moves slowly across the embroidery so the gold and silver threads glint and shimmer; the embroidered winged flames flicker as if alive and drift slightly up and down beside the golden ladder; the sequins and seed pearls sparkle. Locked-off static camera: no zoom, no pan, no cut. The sleeping traveler stays asleep. No new people, figures or creatures appear, and nothing appears at the top of the stairway. No text. The last frame returns exactly to the first frame so the clip loops seamlessly.", "label": "Metal thread on velvet · after ceremonial textiles", "caption": "Gold and silver thread on velvet. Like many ceremonial textiles, it leaves out the human figure and shows only his stone, cloak, and staff."}, {"id": "woodcut", "title": "Expressionist Woodcut", "image_prompt": "Wide 16:9 landscape composition. A black-and-white expressionist woodcut print in the tradition of early-20th-century Jewish expressionist printmakers: bold gouged lines, raw wood-grain texture, stark contrast and angular distorted forms, black ink on off-white handmade paper with slightly uneven inking. A jagged rocky night landscape. In the lower left, a young man wrapped in a cloak sleeps on the ground, his head on a large stone, his body carved in heavy angular strokes. A steep stairway, carved as white lines cut out of the black, rises from beside him to the top edge into a black sky pierced by carved white stars. Winged messengers carved as white flame-like slashes with wing shapes ascend and descend. The only light is the paper showing through. The only person anywhere in the picture is the sleeping traveler. The top of the stairway simply dissolves into open starry sky and soft light: nothing and no one stands at the top. No figure, no face, no hand, no eye, no throne, no shape suggesting a person up there. The winged messengers have no faces, no human bodies and no halos; they are not cherubs. No crosses or cross shapes, no halos, no doves, no church or chapel architecture, no clouds-and-sunbeams sky, no gates, no radiating sunburst rays. The light is soft and glows from the stairway, the winged messengers and the stars. ABSOLUTELY NO words, letters, numbers, captions, titles or writing of any kind anywhere; purely pictorial; no signature, no watermark.", "motion_prompt": "The black-and-white woodcut comes alive: the carved white winged flames flicker and rise and descend along the stairway; the swirling opening in the sky turns slowly; the carved stars pulse; the sleeping man breathes. The carved print texture and paper grain are preserved. Locked-off static camera: no zoom, no pan, no cut. The sleeping traveler stays asleep. No new people, figures or creatures appear, and nothing appears at the top of the stairway. No text. The last frame returns exactly to the first frame so the clip loops seamlessly.", "label": "Woodcut on paper · after 1920s Jewish expressionism", "caption": "Black ink and white paper in the tradition of the Jewish expressionist printmakers of the 1920s."}, {"id": "tapestry", "title": "Woven Tapestry", "image_prompt": "Wide 16:9 landscape composition. A handwoven wool tapestry in the manner of the bold modernist tapestries made for synagogues and public buildings in the mid-twentieth century, photographed straight on and filling the entire frame: flat simplified shapes; saturated wool colors of indigo, madder red, ochre, saffron and cream with touches of gold thread; visible warp and weft, hatched color blending, small slits where colors meet, and a nubby handspun texture. A night sky of deep indigo with woven stars. In the lower left, a young traveler lies asleep on the ground, his head resting on a stone. He wears an ancient Near Eastern shepherd's long plain wool robe and a head cloth, with sandals: no hat, no cap, no bag, nothing modern. From beside him a stairway woven in saffron and gold rises diagonally to the top edge and disappears among the stars. The winged messengers are six small, separate woven motifs spaced along the stairway: each is a single saffron flame with two small gold wings, and nothing else. No birds, no doves, no white wings, no heads, no bodies, and no large fire. Some face up the stairway and some face down. The tapestry fills the whole frame edge to edge, with no wall visible around it; a narrow woven border runs just inside the edges. The only person anywhere in the picture is the sleeping traveler. The top of the stairway simply dissolves into open starry sky and soft light: nothing and no one stands at the top. No figure, no face, no hand, no eye, no throne, no shape suggesting a person up there. The winged messengers must not look like people, angels, fairies or cherubs in any way: no heads, no faces, no arms, no legs, no torsos, no robes, no halos. No halo or glowing disc behind anyone's head. No crosses or cross shapes, no halos, no doves, no church or chapel architecture, no clouds-and-sunbeams sky, no gates, no radiating sunburst rays. The light is soft and glows from the stairway, the winged messengers and the stars. ABSOLUTELY NO words, letters, numbers, captions, titles or writing of any kind anywhere; purely pictorial; no signature, no initials, no date, no watermark.", "motion_prompt": "The woven tapestry comes gently alive: the woven winged flames drift up and down beside the saffron stairway, the woven stars glint as the gold threads catch the light, and soft light moves slowly across the wool. The tapestry hangs flat and does not ripple; the weave texture and colors are preserved. The sleeping traveler does not move. Locked-off static camera: no zoom, no pan, no cut. The sleeping traveler stays asleep. No new people, figures or creatures appear, and nothing appears at the top of the stairway. No text. The last frame returns exactly to the first frame so the clip loops seamlessly.", "label": "Handwoven wool · after mid-century modernist tapestries", "caption": "Wool and gold thread woven in flat, bold shapes, in the spirit of the modernist tapestries made for synagogues and public buildings."}, {"id": "persian-miniature", "title": "Persian Miniature", "image_prompt": "Wide 16:9 landscape composition. A Persian miniature painting in the style of 16th-century Safavid manuscript illustration, like the paintings made for Judeo-Persian illustrated manuscripts: jewel-bright opaque watercolor and gold, a high horizon, a lapis-lazuli night sky strewn with gold stars, fantastical pastel rock formations outlined in gold, flowering plants and a slender cypress. In the lower left, a young man in a patterned robe and turban sleeps on the ground, his head resting on a stone. A golden stairway rises from beside him to the top of the painting and disappears into the starry lapis sky. Winged messengers drawn as delicate gold flames with long feathered wings, with no faces and no flame haloes, ascend and descend along it. Fine detail, flat perspective, a narrow illuminated arabesque border. No calligraphy panels or text boxes. The only person anywhere in the picture is the sleeping traveler. The top of the stairway simply dissolves into open starry sky and soft light: nothing and no one stands at the top. No figure, no face, no hand, no eye, no throne, no shape suggesting a person up there. The winged messengers have no faces, no human bodies and no halos; they are not cherubs. No crosses or cross shapes, no halos, no doves, no church or chapel architecture, no clouds-and-sunbeams sky, no gates, no radiating sunburst rays. The light is soft and glows from the stairway, the winged messengers and the stars. ABSOLUTELY NO words, letters, numbers, captions, titles or writing of any kind anywhere; purely pictorial; no signature, no watermark.", "motion_prompt": "The miniature painting comes gently alive: the golden winged messengers glide up and down the golden stairway, the gold stars twinkle, the cypress sways slightly and the flowers nod in a breeze. The flat painted style and gold outlines are preserved. Locked-off static camera: no zoom, no pan, no cut. The sleeping traveler stays asleep. No new people, figures or creatures appear, and nothing appears at the top of the stairway. No text. The last frame returns exactly to the first frame so the clip loops seamlessly.", "label": "Watercolor and gold · after Safavid Persia", "caption": "Jewel colors and gold in the manner of Safavid painting, the style of the illustrated Judeo-Persian manuscripts."}, {"id": "modernist-dream", "title": "Modernist Dream", "image_prompt": "Wide 16:9 landscape composition. A dreamlike modernist oil painting in the spirit of early-20th-century Jewish painters of the School of Paris: saturated cobalt and ultramarine blues with crimson and emerald accents, naive poetic distortions, floating elements, loose expressive brushwork and visible canvas texture. A tiny village of crooked wooden houses sits far below on a hill. In the foreground a young man in a green coat sleeps on the ground, his head on a stone. From beside him a crooked, luminous yellow stairway rises into a deep blue night sky full of large stars and a pale moon. The winged messengers are ribbons of white and gold light, each with a pair of wing-shaped brushstrokes; no heads, faces or bodies, not ghosts or angels. They float upward and downward along the stairway. Flat areas of intense color rather than swirling strokes. No other people or animals. No signature, initials or date in any corner. The only person anywhere in the picture is the sleeping traveler. The top of the stairway simply dissolves into open starry sky and soft light: nothing and no one stands at the top. No figure, no face, no hand, no eye, no throne, no shape suggesting a person up there. The winged messengers must not look like people, angels, fairies or cherubs in any way: no heads, no faces, no arms, no legs, no torsos, no robes, no halos. No halo or glowing disc behind anyone's head. No crosses or cross shapes, no halos, no doves, no church or chapel architecture, no clouds-and-sunbeams sky, no gates, no radiating sunburst rays. The light is soft and glows from the stairway, the winged messengers and the stars. ABSOLUTELY NO words, letters, numbers, captions, titles or writing of any kind anywhere; purely pictorial; no signature, no initials, no date, no watermark.", "motion_prompt": "Dreamlike motion: the ribbons of white and gold light float and swirl up and down the luminous yellow stairway; the stars pulse and the pale moon glows; the brushstrokes of the sky flow slowly. The young man sleeps peacefully. Locked-off static camera: no zoom, no pan, no cut. The sleeping traveler stays asleep. No new people, figures or creatures appear, and nothing appears at the top of the stairway. No text. The last frame returns exactly to the first frame so the clip loops seamlessly.", "label": "Oil on canvas · after the School of Paris", "caption": "A shtetl on the hill and a crooked yellow stairway, in the spirit of the Jewish painters of the School of Paris.", "touchup": "Edited to remove a faint face from the moon."}, {"id": "pixel-art", "title": "Pixel Art", "image_prompt": "Wide 16:9 landscape composition. A 16-bit era video game scene in detailed pixel art: limited palette, crisp square pixels, dithering, layered backgrounds. A night wilderness of rocky hills and boulders in the Middle East (no mesas or buttes) under a starry indigo sky. In the lower left, a small pixel-art character of a young traveler in a cloak lies flat on the ground on his side (not sitting), asleep, his head resting on a stone, his staff beside him. A glowing stairway of golden pixel blocks rises diagonally from beside him to the top of the screen. The winged messengers are small glowing orbs of light with tiny pixel wings, no heads or bodies, not cherubs. They fly up and down the steps. No HUD, no score, no interface. The only person anywhere in the picture is the sleeping traveler. The top of the stairway simply dissolves into open starry sky and soft light: nothing and no one stands at the top. No figure, no face, no hand, no eye, no throne, no shape suggesting a person up there. The winged messengers must not look like people, angels, fairies or cherubs in any way: no heads, no faces, no arms, no legs, no torsos, no robes, no halos. No halo or glowing disc behind anyone's head. No crosses or cross shapes, no halos, no doves, no church or chapel architecture, no clouds-and-sunbeams sky, no gates, no radiating sunburst rays. The light is soft and glows from the stairway, the winged messengers and the stars. ABSOLUTELY NO words, letters, numbers, captions, titles or writing of any kind anywhere; purely pictorial; no signature, no initials, no date, no watermark.", "motion_prompt": "16-bit game animation: the glowing winged orbs flap their pixel wings and fly up and down the golden block stairway; the stars twinkle; the sleeping traveler breathes slowly. Crisp pixel art throughout. Locked-off static camera: no zoom, no pan, no cut. The sleeping traveler stays asleep. No new people, figures or creatures appear, and nothing appears at the top of the stairway. No text. The last frame returns exactly to the first frame so the clip loops seamlessly.", "label": "Pixels · after 1990s video games", "caption": "A retro video game scene. The messengers are glowing sprites flying beside golden blocks."}, {"id": "claymation", "title": "Claymation", "image_prompt": "Wide 16:9 landscape composition. A still from a handmade stop-motion claymation film: plasticine characters and sets with visible fingerprints and tool marks, miniature practical lighting, slightly shallow depth of field. A miniature set of lumpy clay rocks and hills in warm terracotta and sand colors in front of a painted backdrop of a deep blue night sky with little clay stars on wires. In the lower left, a cheerful clay figure of a young traveler with a round friendly face and a striped cloak sleeps soundly, his head on a clay stone. Beside him a wobbly clay stairway painted gold, with tiny warm lights tucked into the steps, rises toward the top of the frame. Little clay winged messengers, round glowing shapes with small wings and no faces, climb and descend. Warm, whimsical and handcrafted. The only person anywhere in the picture is the sleeping traveler. The top of the stairway simply dissolves into open starry sky and soft light: nothing and no one stands at the top. No figure, no face, no hand, no eye, no throne, no shape suggesting a person up there. The winged messengers have no faces, no human bodies and no halos; they are not cherubs. No crosses or cross shapes, no halos, no doves, no church or chapel architecture, no clouds-and-sunbeams sky, no gates, no radiating sunburst rays. The light is soft and glows from the stairway, the winged messengers and the stars. ABSOLUTELY NO words, letters, numbers, captions, titles or writing of any kind anywhere; purely pictorial; no signature, no watermark.", "motion_prompt": "Stop-motion claymation animation: the little glowing clay orbs flap their small wings and bob up and down the gold clay stairway; the tiny lights in the steps flicker; the clay stars sway on their wires; the bearded clay man sleeps peacefully. Locked-off static camera: no zoom, no pan, no cut. The sleeping traveler stays asleep. No new people, figures or creatures appear, and nothing appears at the top of the stairway. No text. The last frame returns exactly to the first frame so the clip loops seamlessly.", "label": "Plasticine · stop-motion", "caption": "Handmade clay with the fingerprints left in, tiny lights in the steps, and glowing winged orbs.", "touchup": "Edited to give the sleeper a beard. Veo declined the first version, likely because the clay figure looked like a child."}]</script>
+<script>
+(function () {
+  document.documentElement.lang = "en";
+  var DATA = JSON.parse(document.getElementById("gallery-data").textContent);
+  var grid = document.getElementById("grid");
+  var viewer = document.getElementById("viewer");
+  var stage = document.getElementById("stage");
+  var video = document.getElementById("viewer-video");
+  var progress = document.getElementById("progress");
+  var prompts = document.getElementById("prompts");
+  var reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  function readPref() { try { return localStorage.getItem("stairway-motion"); } catch (e) { return null; } }
+  function writePref(v) { try { localStorage.setItem("stairway-motion", v); } catch (e) {} }
+
+  var motion = readPref() || (reduced ? "still" : "loop");
+  var current = -1;
+  var open = false;
+  var slideshow = false;
+  var slideTimer = null;
+  var idleTimer = null;
+  var lastFocus = null;
+
+  function media(kind, id) {
+    var ext = kind === "loop" || kind === "loop-sm" ? ".mp4" : ".jpg";
+    return "media/" + kind + "/" + id + ext;
+  }
+  function tryPlay(v) {
+    var p = v.play();
+    if (p && p.catch) p.catch(function () {});
+  }
+
+  // Cards
+  DATA.forEach(function (item, i) {
+    var li = document.createElement("li");
+    var btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "card";
+    btn.setAttribute("aria-label", "Open " + item.title);
+    btn.dataset.index = i;
+    var box = document.createElement("span");
+    box.className = "media";
+    var img = document.createElement("img");
+    img.src = media("thumb", item.id);
+    img.alt = "";
+    img.width = 640;
+    img.height = 360;
+    img.loading = i < 6 ? "eager" : "lazy";
+    var v = document.createElement("video");
+    v.muted = true;
+    v.loop = true;
+    v.playsInline = true;
+    v.setAttribute("playsinline", "");
+    v.preload = "none";
+    v.setAttribute("aria-hidden", "true");
+    v.dataset.index = i;
+    box.appendChild(img);
+    box.appendChild(v);
+    var meta = document.createElement("span");
+    meta.className = "meta";
+    var t = document.createElement("span");
+    t.className = "card-title";
+    t.textContent = item.title;
+    var l = document.createElement("span");
+    l.className = "label";
+    l.textContent = item.label;
+    meta.appendChild(t);
+    meta.appendChild(l);
+    btn.appendChild(box);
+    btn.appendChild(meta);
+    btn.addEventListener("click", function () { openViewer(i); });
+    li.appendChild(btn);
+    grid.appendChild(li);
+  });
+
+  var cardVideos = Array.prototype.slice.call(grid.querySelectorAll("video"));
+  cardVideos.forEach(function (v) {
+    v.addEventListener("playing", function () { v.classList.add("is-playing"); });
+  });
+
+  function syncCard(v) {
+    var wanted = motion === "loop" && v.dataset.visible === "1" && !open;
+    if (wanted) {
+      if (!v.getAttribute("src")) v.src = media("loop-sm", DATA[+v.dataset.index].id);
+      tryPlay(v);
+    } else if (!v.paused) {
+      v.pause();
+    }
+    if (motion === "still") {
+      v.classList.remove("is-playing");
+      if (v.getAttribute("src") && v.currentTime) v.currentTime = 0;
+    }
+  }
+
+  if ("IntersectionObserver" in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        e.target.dataset.visible = e.isIntersecting ? "1" : "0";
+        syncCard(e.target);
+      });
+    }, { rootMargin: "200px 0px" });
+    cardVideos.forEach(function (v) { io.observe(v); });
+  } else {
+    cardVideos.forEach(function (v) { v.dataset.visible = "1"; syncCard(v); });
+  }
+
+  // Motion
+  var playBtn = document.getElementById("play");
+  function updatePlayButton() {
+    var looping = motion === "loop";
+    playBtn.querySelector('[data-icon="pause"]').hidden = !looping;
+    playBtn.querySelector('[data-icon="play"]').hidden = looping;
+    playBtn.setAttribute("aria-label", looping ? "Show still" : "Play loop");
+  }
+  function setMotion(m) {
+    motion = m;
+    writePref(m);
+    document.querySelectorAll("[data-motion]").forEach(function (b) {
+      b.setAttribute("aria-pressed", String(b.dataset.motion === m));
+    });
+    cardVideos.forEach(syncCard);
+    if (open) {
+      if (m === "loop") tryPlay(video); else video.pause();
+    }
+    updatePlayButton();
+    restartSlideTimer();
+  }
+  document.querySelectorAll("[data-motion]").forEach(function (b) {
+    b.addEventListener("click", function () { setMotion(b.dataset.motion); });
+  });
+  playBtn.addEventListener("click", function () { setMotion(motion === "loop" ? "still" : "loop"); });
+
+  // Viewer
+  var titleEl = document.getElementById("viewer-title");
+  var labelEl = document.getElementById("viewer-label");
+  var captionEl = document.getElementById("viewer-caption");
+  var promptImage = document.getElementById("prompt-image");
+  var promptMotion = document.getElementById("prompt-motion");
+  var touchupBlock = document.getElementById("touchup-block");
+  var touchup = document.getElementById("touchup");
+
+  function show(i) {
+    current = (i + DATA.length) % DATA.length;
+    var item = DATA[current];
+    video.poster = media("poster", item.id);
+    video.src = media("loop", item.id);
+    video.setAttribute("aria-label", item.title + ", " + (motion === "loop" ? "looping animation" : "still"));
+    titleEl.textContent = item.title;
+    labelEl.textContent = item.label;
+    captionEl.textContent = item.caption;
+    promptImage.textContent = item.image_prompt;
+    promptMotion.textContent = item.motion_prompt;
+    touchupBlock.hidden = !item.touchup;
+    touchup.textContent = item.touchup || "";
+    if (motion === "loop") tryPlay(video); else video.pause();
+    [current + 1, current - 1].forEach(function (n) {
+      var pre = new Image();
+      pre.src = media("poster", DATA[(n + DATA.length) % DATA.length].id);
+    });
+    restartSlideTimer();
+    try { history.replaceState(null, "", "#" + item.id); } catch (e) {}
+  }
+
+  function openViewer(i) {
+    lastFocus = document.activeElement;
+    open = true;
+    viewer.hidden = false;
+    document.body.classList.add("no-scroll");
+    cardVideos.forEach(syncCard);
+    updatePlayButton();
+    show(i);
+    document.getElementById("close").focus();
+  }
+
+  function closeViewer() {
+    if (isFullscreen()) exitFullscreen();
+    open = false;
+    setSlideshow(false);
+    togglePrompts(false);
+    video.pause();
+    video.removeAttribute("src");
+    video.load();
+    viewer.hidden = true;
+    document.body.classList.remove("no-scroll");
+    cardVideos.forEach(syncCard);
+    try { history.replaceState(null, "", location.pathname + location.search); } catch (e) {}
+    if (lastFocus && lastFocus.focus) lastFocus.focus();
+  }
+
+  document.getElementById("prev").addEventListener("click", function () { show(current - 1); });
+  document.getElementById("next").addEventListener("click", function () { show(current + 1); });
+  document.getElementById("close").addEventListener("click", closeViewer);
+
+  // Slideshow: two loops per picture, or eight seconds per still
+  var showBtn = document.getElementById("show");
+  function restartSlideTimer() {
+    clearTimeout(slideTimer);
+    progress.style.transition = "none";
+    progress.style.width = "0";
+    if (!slideshow || !open) return;
+    var ms = motion === "loop" ? 16000 : 8000;
+    if (!reduced) {
+      requestAnimationFrame(function () {
+        requestAnimationFrame(function () {
+          progress.style.transition = "width " + ms + "ms linear";
+          progress.style.width = "100%";
+        });
+      });
+    }
+    slideTimer = setTimeout(function () { show(current + 1); }, ms);
+  }
+  function setSlideshow(on) {
+    slideshow = on;
+    showBtn.setAttribute("aria-pressed", String(on));
+    showBtn.setAttribute("aria-label", on ? "Stop slideshow" : "Slideshow");
+    restartSlideTimer();
+  }
+  showBtn.addEventListener("click", function () { setSlideshow(!slideshow); });
+  document.getElementById("start-show").addEventListener("click", function () {
+    openViewer(current >= 0 ? current : 0);
+    setSlideshow(true);
+  });
+
+  // Prompts drawer
+  var infoBtn = document.getElementById("info");
+  function togglePrompts(on) {
+    prompts.hidden = !on;
+    infoBtn.setAttribute("aria-expanded", String(on));
+    if (on) document.getElementById("prompts-close").focus();
+  }
+  infoBtn.addEventListener("click", function () { togglePrompts(prompts.hidden); });
+  document.getElementById("prompts-close").addEventListener("click", function () {
+    togglePrompts(false);
+    infoBtn.focus();
+  });
+  document.querySelectorAll("[data-copy]").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      var pre = document.getElementById(btn.dataset.copy);
+      function done(msg) {
+        btn.textContent = msg;
+        setTimeout(function () { btn.textContent = "Copy"; }, 1800);
+      }
+      function selectIt() {
+        var r = document.createRange();
+        r.selectNodeContents(pre);
+        var s = window.getSelection();
+        s.removeAllRanges();
+        s.addRange(r);
+        done("Text selected");
+      }
+      try {
+        navigator.clipboard.writeText(pre.textContent).then(function () { done("Copied"); }, selectIt);
+      } catch (e) {
+        selectIt();
+      }
+    });
+  });
+
+  // Fullscreen
+  var fsBtn = document.getElementById("fs");
+  function isFullscreen() { return !!(document.fullscreenElement || document.webkitFullscreenElement); }
+  function exitFullscreen() {
+    var exit = document.exitFullscreen || document.webkitExitFullscreen;
+    try {
+      var p = exit.call(document);
+      if (p && p.catch) p.catch(function () {});
+    } catch (e) {}
+  }
+  if (!(document.fullscreenEnabled || document.webkitFullscreenEnabled)) fsBtn.hidden = true;
+  fsBtn.addEventListener("click", function () {
+    if (isFullscreen()) { exitFullscreen(); return; }
+    var req = viewer.requestFullscreen || viewer.webkitRequestFullscreen;
+    try {
+      var p = req.call(viewer);
+      if (p && p.catch) p.catch(function () { fsBtn.hidden = true; });
+    } catch (e) {
+      fsBtn.hidden = true;
+    }
+  });
+  function onFullscreenChange() {
+    var on = isFullscreen();
+    viewer.classList.toggle("is-fullscreen", on);
+    fsBtn.setAttribute("aria-pressed", String(on));
+    fsBtn.setAttribute("aria-label", on ? "Exit fullscreen" : "Fullscreen");
+    wake();
+  }
+  document.addEventListener("fullscreenchange", onFullscreenChange);
+  document.addEventListener("webkitfullscreenchange", onFullscreenChange);
+
+  // In fullscreen, the controls fade after a few quiet seconds
+  function wake() {
+    viewer.classList.remove("is-idle");
+    clearTimeout(idleTimer);
+    if (viewer.classList.contains("is-fullscreen") && prompts.hidden) {
+      idleTimer = setTimeout(function () { viewer.classList.add("is-idle"); }, 2500);
+    }
+  }
+  viewer.addEventListener("pointermove", wake);
+  viewer.addEventListener("pointerdown", wake);
+
+  // Click the picture to switch loop and still; swipe to move between pictures
+  var startX = null, startY = null;
+  stage.addEventListener("pointerdown", function (e) { startX = e.clientX; startY = e.clientY; });
+  stage.addEventListener("pointerup", function (e) {
+    if (startX === null) return;
+    var dx = e.clientX - startX, dy = e.clientY - startY;
+    startX = null;
+    if (Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy) * 1.5) {
+      show(current + (dx < 0 ? 1 : -1));
+    } else if (Math.abs(dx) < 8 && Math.abs(dy) < 8 && e.target === video) {
+      setMotion(motion === "loop" ? "still" : "loop");
+    }
+  });
+
+  // Keyboard
+  document.addEventListener("keydown", function (e) {
+    if (!open || e.metaKey || e.ctrlKey || e.altKey) return;
+    wake();
+    var onButton = e.target && e.target.tagName === "BUTTON";
+    switch (e.key) {
+      case "Escape":
+        if (!prompts.hidden) { togglePrompts(false); infoBtn.focus(); }
+        else if (!isFullscreen()) closeViewer();
+        e.preventDefault();
+        break;
+      case "ArrowRight": show(current + 1); e.preventDefault(); break;
+      case "ArrowLeft": show(current - 1); e.preventDefault(); break;
+      case " ":
+        if (onButton) return;
+        setMotion(motion === "loop" ? "still" : "loop");
+        e.preventDefault();
+        break;
+      case "k": case "K": setMotion(motion === "loop" ? "still" : "loop"); break;
+      case "f": case "F": if (!fsBtn.hidden) fsBtn.click(); break;
+      case "i": case "I": togglePrompts(prompts.hidden); break;
+      case "s": case "S": setSlideshow(!slideshow); break;
+      case "Tab": {
+        var items = Array.prototype.filter.call(
+          viewer.querySelectorAll("button"),
+          function (el) { return !el.hidden && el.offsetParent !== null; }
+        );
+        if (!items.length) break;
+        var first = items[0], last = items[items.length - 1];
+        if (e.shiftKey && document.activeElement === first) { last.focus(); e.preventDefault(); }
+        else if (!e.shiftKey && document.activeElement === last) { first.focus(); e.preventDefault(); }
+        break;
+      }
+    }
+  });
+
+  // Hebrew
+  var hebrewBtn = document.getElementById("hebrew-toggle");
+  hebrewBtn.addEventListener("click", function () {
+    var hebrew = document.getElementById("hebrew");
+    hebrew.hidden = !hebrew.hidden;
+    hebrewBtn.setAttribute("aria-expanded", String(!hebrew.hidden));
+    hebrewBtn.textContent = hebrew.hidden ? "Show the Hebrew" : "Hide the Hebrew";
+  });
+
+  setMotion(motion);
+  var start = location.hash.slice(1);
+  DATA.forEach(function (item, i) { if (item.id === start) openViewer(i); });
+})();
+</script>
+</body>
+</html>

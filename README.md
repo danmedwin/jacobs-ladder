@@ -21,7 +21,14 @@ Source names link to the same background cards as the slide, shown as a bottom s
 Each phrase on the slide links to its section, and the QR code in the slide’s bottom band opens the page on a
 phone. Live at techrabbi.org/jacobs-ladder/eleven-ladders.
 
-Images are shared by both pages: seventy AI images in `img/` and eleven artworks in `art/`.
+The third page, `dream/`, is Jacob’s Dream: Genesis 28:11–12 in eighteen art styles, from a Sephardic
+illuminated manuscript to claymation, each with an eight-second looping animation. The stills come from
+gemini-3-pro-image and the loops from Veo 3.1 Fast; each loop begins and ends on its still. Selecting a picture
+opens a large view with fullscreen, a slideshow, and the prompts behind it. None of the images show God.
+Live at techrabbi.org/jacobs-ladder/dream. Its media is in `dream/media/`. The scripts, full-size stills, and
+original clips are kept locally in `dream-source/`, which is not committed because of its size.
+
+The slide and Eleven Ladders share seventy AI images in `img/` and eleven artworks in `art/`.
 
 The source cards’ text lives in two places, the `SRC` object in each page’s script, so a correction to a card
 has to be made in both.
