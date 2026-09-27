@@ -4,7 +4,7 @@ An interactive Talmud-page (daf) slide for a scholar-in-residence session on Par
 
 Genesis 28:10–18 in the Revised JPS sits in the center, where the Gemara would be. Six key phrases are
 highlighted. Selecting one shows how eleven translations render it and the AI images those wordings
-produced (Google’s gemini-3-pro-image model), with notes from Rashi, the midrash, and Robert Alter.
+produced (Google’s gemini-3-pro-image model), with notes from Rashi, the midrash, the Talmud, and Robert Alter.
 
 Single-file webpage (`index.html`) with images in `img/`, sized as a 16:9 slide that scales to any screen.
 Present it full screen: click a phrase or use the arrow keys (or 1–6), and click the large image to enlarge it.
@@ -12,12 +12,20 @@ Hover over or click any source’s name (a translation, Rashi, or a midrash) for
 its approach, and its worldview.
 Live at techrabbi.org/jacobs-ladder.
 
-The companion page, `eleven-ladders/`, holds the full experiment behind the slide: the Hebrew and eleven translations sent word for word
-(without their footnotes) to the image model, the dream verses alone, instruction lenses, midrash as the prompt, eleven public-domain artworks
-from Wikimedia Commons, and a chevrutah prompt lab with a prompt builder. Each phrase on the slide links to its section,
-and the QR code in the slide’s bottom band opens it on a phone. Live at techrabbi.org/jacobs-ladder/eleven-ladders.
+The companion page, `eleven-ladders/`, holds the full experiment behind the slide: the Hebrew and eleven
+translations sent word for word to the image model, without footnotes, verse numbers, or source citations;
+the dream verses alone; instruction lenses; midrash as the prompt; eleven public-domain artworks from
+Wikimedia Commons, 1150 to 1866; and a chevrutah prompt lab with a prompt builder. Tallies count what each
+wording produced, and notes set the results beside Rashi, the midrash, the Talmud, the Mishnah, and Robert Alter.
+Source names link to the same background cards as the slide, shown as a bottom sheet on phones.
+Each phrase on the slide links to its section, and the QR code in the slide’s bottom band opens the page on a
+phone. Live at techrabbi.org/jacobs-ladder/eleven-ladders.
 
-Images are shared by both pages: AI images in `img/`, artworks in `art/`.
+Images are shared by both pages: seventy AI images in `img/` and eleven artworks in `art/`.
+
+The source cards’ text lives in two places, the `SRC` object in each page’s script, so a correction to a card
+has to be made in both.
 
 Base text: The JPS Tanakh: Gender-Sensitive Edition (Revised JPS, 2023), CC BY-NC, via Sefaria.
-Other translations are quoted only in short phrases.
+Other translations are quoted only in short phrases. Midrash translations are from The Sefaria Midrash Rabbah
+(2022, CC BY), and the rabbinic citations were checked on Sefaria.
