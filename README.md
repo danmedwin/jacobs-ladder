@@ -28,10 +28,22 @@ opens a large view with fullscreen, a slideshow, and the prompts behind it. None
 Live at techrabbi.org/jacobs-ladder/dream. Its media is in `dream/media/`. The scripts, full-size stills, and
 original clips are kept locally in `dream-source/`, which is not committed because of its size.
 
+The fourth page, `voices/`, is Voices of the Ladder, a teacher-driven conversation tool for a family learning
+morning. A group chooses a character (Jacob, Esau, Rebekah, Isaac, an angel, the stone, Rashi, the Sages, Ramban,
+or Rambam), who tells their side of the night at Bethel, answers the group’s questions, asks the group questions,
+and ends with a rung: one line to carry back to the family. There are four versions, each at its own link:
+`voices/#k2`, `#g34`, `#g57`, and `#parents`, plus `#opening` for the TV. The teacher moves the conversation with the
+space bar or arrow keys, and any line drawn from a text opens a card with the Hebrew and the Revised JPS. Scripts live
+in `voices/data/`, one file per character; `voices/review/` holds readable copies for review, `voices/PLAN.md` the plan
+for the morning, and `voices/PORTRAITS.md` the prompts for the character portraits. `voices/tools/` keeps the Sefaria
+texts behind the cards, a report checking every claim the scripts make against them, and the two scripts that rebuild
+the source cards and the review copies. Only Jacob’s visit is written so far.
+
 The slide and Eleven Ladders share seventy AI images in `img/` and eleven artworks in `art/`.
 
 The source cards’ text lives in two places, the `SRC` object in each page’s script, so a correction to a card
-has to be made in both.
+has to be made in both. Voices of the Ladder keeps its cards in `voices/data/sources.js`, generated from Sefaria’s
+export; its cards for the Revised JPS, the King James, and Robert Alter copy the slide’s text.
 
 Base text: The JPS Tanakh: Gender-Sensitive Edition (Revised JPS, 2023), CC BY-NC, via Sefaria.
 Other translations are quoted only in short phrases. Midrash translations are from The Sefaria Midrash Rabbah
