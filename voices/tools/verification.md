@@ -1094,3 +1094,10 @@ The source cards changed too:
 Two passages were added to texts.json: Numbers 20:14 (Revised JPS; Miqra according to the Masorah) and Rashi on Genesis 32:4:1 (Rosenbaum–Silbermann, public domain). Rashi on Genesis 28:11:5 and 28:22:1 were already in the packet and are now cited.
 
 Other checks: 94 of 102 natural phrasings typed into the 5–7 and parents visits reach a prepared answer (the rest get the “Ask anything” message), and a browser walk of all thirty visits, pressing every choice and question button, reached the end of each visit with no errors.
+
+## Cuts for the audience
+
+At Rabbi Medwin’s request, two accurate teachings were removed from the parents visits, and the source cards now stop before them (each card ends with “The comment goes on”):
+
+- Ramban on Genesis 28:21, the Talmud’s saying that one who lives outside the Land of Israel is like one who has no God (Ketubot 110b). Ramban’s visit now asks its question about place and faith from his reading of the vow itself.
+- Rashi on Genesis 35:8, that the Torah kept Rebekah’s death quiet so that people would not curse the mother of Esau. Removed from Rashi’s and Rebekah’s visits.

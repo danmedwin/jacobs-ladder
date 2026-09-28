@@ -178,6 +178,8 @@ RASHI = "Commentary · 11th century"
 COMMENTARY = {
     "Rashi on Genesis 35:8": {
         "label": "Rashi on Genesis 35:8", "kind": RASHI, "n": "Under the oak",
+        "he_until": "ואלון בלשון יוני אחר", "en_until": "In Greek allon means “another”.",   # cut at Rabbi Medwin's request
+        "add": " <i>[The comment goes on.]</i>",
         "credit": "English: <i>Pentateuch with Rashi’s Commentary</i>, translated by M. Rosenbaum and A. M. Silbermann (1929–1934), public domain. Hebrew: Sefaria’s merged text of Rashi on Genesis. Both via Sefaria."},
     "Bereshit Rabbah 68:9": {
         "label": "B’reishit Rabbah 68:9", "kind": MIDRASH, "n": "On “he came upon the place”",
@@ -275,7 +277,10 @@ COMMENTARY = {
         "he_from": "לְשׁוֹן רַשִׁ\"י", "en_from": "Rashi comments:", "credit": "ramban"},
     "Ramban on Genesis 28:21:1": {
         "label": "Ramban on Genesis 28:21", "kind": RAMBAN, "n": "Then the Eternal shall be my God",
-        "he_from": "אֵינֶנּוּ תְּנַאי", "en_from": "This is not a condition", "credit": "ramban"},
+        "he_from": "אֵינֶנּוּ תְּנַאי", "en_from": "This is not a condition",
+        "he_until": "ושם אוציא את המעשר", "en_until": "and there I will set aside the tithe.”",   # cut at Rabbi Medwin's request
+        "he_strip": r"\s*\(רש[״\"]י על בראשית[^)]*\)",
+        "add": " <i>[The comment goes on.]</i>", "credit": "ramban"},
     "Guide 1:15": {
         "from": "Guide for the Perplexed 1:15", "label": "Guide for the Perplexed 1:15", "kind": GUIDE, "n": "Natsav and yatsav: to stand", "credit": "guide"},
     "Guide, Introduction": {

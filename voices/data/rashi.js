@@ -127,7 +127,7 @@ VOICES.scripts.rashi = {
         { say: 'On the place, he thought I stretched the midrash. The Rabbis said the land contracted for Jacob, as it did for Abraham’s servant, who reached Haran in a day. They never said Mount Moriah moved.', src: 'Ramban on Genesis 28:17 (Rashi)' },
         { say: 'On the vow, he read “then the Eternal shall be my God” as a vow, not a condition.', src: 'Ramban on Genesis 28:21:1' } ] },
       { q: 'What happened to Rebekah?', keys: 'rebekah mother happen happened die died death', a: [
-        { say: 'I say she sent her nurse Deborah to call Jacob home, and that Deborah died on the way. At the oak where they buried her, Jacob learned that his mother had died too. The Torah kept her death quiet, so that people would not curse the mother who gave birth to Esau.', src: ['Rashi on Genesis 35:8:1', 'Rashi on Genesis 35:8'] } ] },
+        { say: 'I say she sent her nurse Deborah to call Jacob home, and that Deborah died on the way. At the oak where they buried her, Jacob learned that his mother had died too.', src: ['Rashi on Genesis 35:8:1', 'Rashi on Genesis 35:8'] } ] },
       { q: 'What did God promise Jacob?', keys: 'promise promised god land folded protect', a: [
         { say: 'Protection, because he was afraid of Esau and of Laban. And the land: God folded the whole Land of Israel under him, a sign that his children would take it easily.', src: ['Rashi on Genesis 28:15:1', 'Rashi on Genesis 28:13:3'] } ] },
       { q: 'Who were your teachers?', keys: 'teachers studied study learn yeshiva mainz worms school', a: [

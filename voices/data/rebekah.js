@@ -165,7 +165,6 @@ VOICES.scripts.rebekah = {
       tip: 'This one is for pairs, with no need to share with the room. Then tap to hear Rebekah.',
       reveal: [{ say: 'I sent mine with a promise: “Then I will fetch you from there.” I hope he heard the love in it.', src: 'Genesis 27:45' }] },
     { say: 'The Torah never shows me with Jacob again, and never records my death. Rashi says I sent my nurse Deborah to call him home, that she died on the way, and that under the oak where they buried her, Jacob learned I had died too.', src: ['Genesis 35:8', 'Rashi on Genesis 35:8:1', 'Rashi on Genesis 35:8'] },
-    { say: 'Rashi also says why the Torah keeps quiet about my death: so that people would not curse the mother who gave birth to Esau.', src: 'Rashi on Genesis 35:8' },
     { prompt: 'Ask Rebekah anything. Choose a question, or type your own.', typing: true, questions: [
       { q: 'Did you ever see Jacob again?', keys: 'see again jacob come back return home reunion saw', a: [
         { say: 'The Torah never shows it. Rashi says my nurse Deborah died on the way to bring him home, and that at her grave Jacob learned I had died too.', src: ['Genesis 35:8', 'Rashi on Genesis 35:8:1', 'Rashi on Genesis 35:8'] } ] },

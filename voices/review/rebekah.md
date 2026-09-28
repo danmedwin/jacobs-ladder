@@ -138,8 +138,7 @@ Small gray references are the source cards a teacher can open during the visit. 
    - *Teacher: This one is for pairs, with no need to share with the room. Then tap to hear Rebekah.*
    - Then Rebekah answers: I sent mine with a promise: “Then I will fetch you from there.” I hope he heard the love in it. <sub>Genesis 27:45</sub>
 15. The Torah never shows me with Jacob again, and never records my death. Rashi says I sent my nurse Deborah to call him home, that she died on the way, and that under the oak where they buried her, Jacob learned I had died too. <sub>Genesis 35:8; Rashi on Genesis 35:8 · Deborah; Rashi on Genesis 35:8 · the oak</sub>
-16. Rashi also says why the Torah keeps quiet about my death: so that people would not curse the mother who gave birth to Esau. <sub>Rashi on Genesis 35:8 · the oak</sub>
-17. **Rebekah:** Ask Rebekah anything. Choose a question, or type your own. *(Typing is on: typed questions are matched to these.)*
+16. **Rebekah:** Ask Rebekah anything. Choose a question, or type your own. *(Typing is on: typed questions are matched to these.)*
    1. *Did you ever see Jacob again?* → The Torah never shows it. Rashi says my nurse Deborah died on the way to bring him home, and that at her grave Jacob learned I had died too. <sub>Genesis 35:8; Rashi on Genesis 35:8 · Deborah; Rashi on Genesis 35:8 · the oak</sub>
    2. *Why did you favor Jacob?* → The Torah gives no reason, only the present tense: I love him. And there was what God told me before my sons were born. <sub>Genesis 25:28; Genesis 25:23</sub>
    3. *Did you tell Isaac what God told you?* → The Torah never says. It never shows Isaac and me talking about our sons’ futures at all, until the day I sent Jacob away.
@@ -149,6 +148,6 @@ Small gray references are the source cards a teacher can open during the visit. 
    7. *Why did Isaac love Esau?* → The Torah says, “because he had a taste for game,” literally, because game was in his mouth. Rashi gives two readings: the Targum’s, that the game was in Isaac’s mouth, and a midrash: there was “hunting in Esau’s mouth,” words he used “to entrap and deceive” his father. <sub>Genesis 25:28; Rashi on Genesis 25:28</sub>
    8. *Who was Deborah?* → My nurse. When I left home, “they sent off their sister Rebekah and her nurse.” The Torah names her only when she dies, near Beit El. <sub>Genesis 24:59; Genesis 35:8</sub>
    9. *Where are you buried?* → In the cave of Machpelah. Jacob says it at the end of his life: “there Isaac and his wife Rebekah were buried.” <sub>Genesis 49:29–31</sub>
-18. **The rung:** “I said “a few days.” It became twenty years.” יָמִים אֲחָדִים
+17. **The rung:** “I said “a few days.” It became twenty years.” יָמִים אֲחָדִים
    - **Ask your child:** What do you want to take with you when you leave home someday?
-19. Now visit Isaac, who blessed our son twice, the second time knowing exactly who he was. *(Suggests: Isaac, Jacob, Esau.)*
+18. Now visit Isaac, who blessed our son twice, the second time knowing exactly who he was. *(Suggests: Isaac, Jacob, Esau.)*

@@ -2379,8 +2379,8 @@ Object.assign(VOICES.sources, {
   "verses": [
    {
     "n": "Under the oak",
-    "he": "תחת האלון. בְּשִׁפּוּלֵי מֵישְׁרָא, שֶׁהָיָה מִישׁוֹר מִלְמַעְלָה בְּשִׁפּוּעַ הָהָר וְהַקְּבוּרָה מִלְּמַטָּה, וּמִישׁוֹר שֶׁל בֵּית אֵל הָיוּ קוֹרִין לוֹ אַלּוֹן. וְאַגָּדָה, נִתְבַּשֵּׂר שָׁם בְּאֵבֶל שֵׁנִי, שֶׁהֻגַּד לוֹ עַל אִמּוֹ שֶׁמֵּתָה (בראשית רבה), וְאַלּוֹן בִּלְשׁוֹן יְוָנִי אַחֵר, וּלְפִי שֶׁהֶעֱלִימוּ אֶת יוֹם מוֹתָהּ שֶׁלֹּא יְקַלְּלוּ הַבְּרִיּוֹת כֶּרֶס שֶׁיָּצָא מִמֶּנּוּ עֵשָׂו, אַף הַכָּתוּב לֹא פִרְסְמָהּ:",
-    "en": "The Targum renders it by “on the lower part of the plain” because there was some level ground above on the slope of the hill and her grave was beneath this. The plain of Bethel bore the name of Allon (cf. Rashi on Genesis 14:6). An Agada (Genesis Rabbah 81:5) states that he there received news of another mourning for he was informed that his mother had died. — In Greek allon means “another”. — Because the time of her death was kept secret in order that people might not curse the mother who gave birth to Esau, Scripture also does not make open mention of her death (Midrash Tanchuma, Ki Teitzei 4)."
+    "he": "תחת האלון. בְּשִׁפּוּלֵי מֵישְׁרָא, שֶׁהָיָה מִישׁוֹר מִלְמַעְלָה בְּשִׁפּוּעַ הָהָר וְהַקְּבוּרָה מִלְּמַטָּה, וּמִישׁוֹר שֶׁל בֵּית אֵל הָיוּ קוֹרִין לוֹ אַלּוֹן. וְאַגָּדָה, נִתְבַּשֵּׂר שָׁם בְּאֵבֶל שֵׁנִי, שֶׁהֻגַּד לוֹ עַל אִמּוֹ שֶׁמֵּתָה (בראשית רבה), וְאַלּוֹן בִּלְשׁוֹן יְוָנִי אַחֵר",
+    "en": "The Targum renders it by “on the lower part of the plain” because there was some level ground above on the slope of the hill and her grave was beneath this. The plain of Bethel bore the name of Allon (cf. Rashi on Genesis 14:6). An Agada (Genesis Rabbah 81:5) states that he there received news of another mourning for he was informed that his mother had died. — In Greek allon means “another”. <i>[The comment goes on.]</i>"
    }
   ],
   "credit": "English: <i>Pentateuch with Rashi’s Commentary</i>, translated by M. Rosenbaum and A. M. Silbermann (1929–1934), public domain. Hebrew: Sefaria’s merged text of Rashi on Genesis. Both via Sefaria."
@@ -2483,8 +2483,8 @@ Object.assign(VOICES.sources, {
   "verses": [
    {
     "n": "Then the Eternal shall be my God",
-    "he": "אֵינֶנּוּ תְּנַאי כְּדִבְרֵי רַשִׁ״י (רש״י על בראשית כ״ח:כ״א), אֲבָל הוּא נֶדֶר, וְעִנְיָנוֹ אִם אָשׁוּב אֶל בֵּית אָבִי אֶעֱבֹד הַשֵּׁם הַמְיֻחָד בָּאָרֶץ הַנִּבְחֶרֶת בִּמְקוֹם הָאֶבֶן הַזֹּאת שֶׁתִּהְיֶה לִי לְבֵית אֱלֹהִים, וְשָׁם אוֹצִיא אֶת הַמַּעֲשֵׂר. וְיֵשׁ בָּעִנְיָן סוֹד מִמָּה שֶׁאָמְרוּ (כתובות קי), כָּל הַדָּר בְּחוּצָה לָאָרֶץ דּוֹמֶה כְּמִי שֶׁאֵין לוֹ אֱלוֹהַּ:",
-    "en": "This is not a condition, as Rashi would have it. It is rather a vow, and its purport is as follows: “If I will return to my father’s house, I will worship the proper Name of the Eternal in the Chosen Land at the location of this stone which will be for me a house of G-d, and there I will set aside the tithe.” There is in this matter a secret relating to that which the Rabbis have said: “He who dwells outside the Land of Israel is like one who has no G-d.” [Thus, according to the meaning of the above quotation, the Eternal will be Jacob’s G-d only when he returns to the Land of Israel.]"
+    "he": "אֵינֶנּוּ תְּנַאי כְּדִבְרֵי רַשִׁ״י, אֲבָל הוּא נֶדֶר, וְעִנְיָנוֹ אִם אָשׁוּב אֶל בֵּית אָבִי אֶעֱבֹד הַשֵּׁם הַמְיֻחָד בָּאָרֶץ הַנִּבְחֶרֶת בִּמְקוֹם הָאֶבֶן הַזֹּאת שֶׁתִּהְיֶה לִי לְבֵית אֱלֹהִים, וְשָׁם אוֹצִיא אֶת הַמַּעֲשֵׂר",
+    "en": "This is not a condition, as Rashi would have it. It is rather a vow, and its purport is as follows: “If I will return to my father’s house, I will worship the proper Name of the Eternal in the Chosen Land at the location of this stone which will be for me a house of G-d, and there I will set aside the tithe.” <i>[The comment goes on.]</i>"
    }
   ],
   "credit": "ramban"

@@ -57,8 +57,8 @@ Small gray references are the source cards a teacher can open during the visit. 
 10. **Ramban asks the group to discuss:** Which “if” do you live with: the “if” of doubt, or the “if” that means “when”?
    - *Teacher: Let people answer for themselves. Then tap to hear Ramban.*
    - Then Ramban answers: I held both. I wrote a commentary full of God’s promises, and I lived through a disputation and an exile.
-11. “Then the Eternal shall be my God,” Rashi read as part of the condition. I read it as a vow: to serve God in the Land, at the stone of Beit El. And I added a secret, from the Talmud: כָּל הַדָּר בְּחוּצָה לָאָרֶץ דּוֹמֶה כְּמִי שֶׁאֵין לוֹ אֱלוֹהַּ  “He who dwells outside the Land of Israel is like one who has no God.” <sub>Genesis 28:21; Rashi on Genesis 28:21; Rashi on Genesis 28:22; Ramban on Genesis 28:21</sub>
-12. **Ramban asks the group to discuss:** Ramban believed that, and near the end of his life he went. Is God more present in some places than in others? What is the relationship between a place and faith?
+11. “Then the Eternal shall be my God,” Rashi read as part of the condition. I read it as a vow: to serve God in the Land, at the stone of Beit El. <sub>Genesis 28:21; Rashi on Genesis 28:21; Rashi on Genesis 28:22; Ramban on Genesis 28:21</sub>
+12. **Ramban asks the group to discuss:** Ramban read Jacob’s vow as a promise to serve God in the Land, and near the end of his life he went there himself. Is God more present in some places than in others? What is the relationship between a place and faith?
    - *Teacher: Take a few answers. Then tap to hear Ramban.*
    - Then Ramban answers: Jacob’s own words may be the best answer: “Surely God is present in this place, and I did not know it!” And God had just told him, “I will protect you wherever you go.” This place, and wherever you go: Jacob heard both that night. <sub>Genesis 28:16; Genesis 28:15</sub>
 13. **Ramban:** Ask Ramban anything. Choose a question, or type your own. *(Typing is on: typed questions are matched to these.)*
