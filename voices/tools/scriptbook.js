@@ -11,7 +11,7 @@ const md = h => String(h)
   .replace(/<span[^>]*lang="he"[^>]*>(.*?)<\/span>/g, '$1 ').replace(/<[^>]+>/g, '').replace(/&amp;/g, '&');
 const inText = c => c.ref || c.name, whose = c => inText(c) + (c.plural ? '’' : '’s');
 const atStart = t => t.charAt(0).toUpperCase() + t.slice(1), verb = (c, v) => c.plural ? v : v + 's';
-const refs = src => src ? ' <sub>' + [].concat(src).map(r => (V.sources[r] && V.sources[r].label) || r).join(' · ') + '</sub>' : '';
+const refs = src => src ? ' <sub>' + [].concat(src).map(r => (V.sources[r] && V.sources[r].label) || r).join('; ') + '</sub>' : '';
 const reply = (x, who) => typeof x === 'string' ? md(x)
   : x.gallery ? '*[Pictures: ' + x.gallery.map(s => V.styles[s] || s).join(', ') + '.]* ' + md(x.caption || '')
   : md(x.say) + refs(x.src);

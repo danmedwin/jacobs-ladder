@@ -137,7 +137,7 @@ Object.assign(VOICES.sources, {
   "credit": "tanakh"
  },
  "Bereshit Rabbah 68:12 (on Jacob)": {
-  "label": "B’reishit Rabbah 68:12",
+  "label": "B’reishit Rabbah 68:12 · on Jacob",
   "title": "B’reishit Rabbah 68:12",
   "kind": "Midrash · about the 5th century CE",
   "verses": [
@@ -176,7 +176,7 @@ Object.assign(VOICES.sources, {
   "credit": "tanakh"
  },
  "Chullin 91b (the ladder)": {
-  "label": "Chullin 91b",
+  "label": "Chullin 91b · the ladder",
   "title": "Chullin 91b",
   "kind": "Babylonian Talmud · about the 6th century CE",
   "verses": [
@@ -202,7 +202,7 @@ Object.assign(VOICES.sources, {
   "credit": "rashi"
  },
  "Chullin 91b (the fan)": {
-  "label": "Chullin 91b",
+  "label": "Chullin 91b · the fan",
   "title": "Chullin 91b",
   "kind": "Babylonian Talmud · about the 6th century CE",
   "verses": [
@@ -227,15 +227,15 @@ Object.assign(VOICES.sources, {
   ],
   "credit": "Hebrew: Rashi on Chullin, Vilna edition, public domain, via Sefaria. The translation is ours."
  },
- "Genesis 32:4": {
-  "label": "Genesis 32:4",
-  "title": "Genesis 32:4",
+ "Numbers 20:14": {
+  "label": "Numbers 20:14",
+  "title": "Numbers 20:14",
   "kind": "Torah",
   "verses": [
    {
-    "n": "32:4",
-    "he": "וַיִּשְׁלַח יַעֲקֹב מַלְאָכִים לְפָנָיו אֶל־עֵשָׂו אָחִיו אַרְצָה שֵׂעִיר שְׂדֵה אֱדוֹם׃",
-    "en": "Jacob sent messengers ahead to his brother Esau in the land of Seir, the country of Edom,"
+    "n": "Numbers 20:14",
+    "he": "וַיִּשְׁלַח מֹשֶׁה מַלְאָכִים מִקָּדֵשׁ אֶל־מֶלֶךְ אֱדוֹם כֹּה אָמַר אָחִיךָ יִשְׂרָאֵל אַתָּה יָדַעְתָּ אֵת כׇּל־הַתְּלָאָה אֲשֶׁר מְצָאָתְנוּ׃",
+    "en": "From Kadesh, Moses sent messengers to the king of Edom: “Thus says your brother Israel: You know all the hardships that have befallen us;"
    }
   ],
   "credit": "tanakh"
@@ -248,7 +248,7 @@ Object.assign(VOICES.sources, {
    {
     "n": "And behold a ladder",
     "he": "הֶרְאָהוּ בַּחֲלוֹם הַנְּבוּאָה כִּי כָל הַנַּעֲשֶׂה בָּאָרֶץ נַעֲשֶׂה עַל יְדֵי הַמַּלְאָכִים, וְהַכֹּל בִּגְזֵרַת עֶלְיוֹן עֲלֵיהֶם, כִּי מַלְאֲכֵי אֱלֹהִים אֲשֶׁר שָׁלַח ה׳ לְהִתְהַלֵּךְ בָּאָרֶץ לֹא יַעֲשׂוּ קְטַנָּה אוֹ גְּדוֹלָה עַד שׁוּבָם לְהִתְיַצֵּב עַל אֲדוֹן כָּל הָאָרֶץ לֵאמֹר לְפָנָיו, הִתְהַלַּכְנוּ בָּאָרֶץ וְהִנֵּה יוֹשֶׁבֶת בְּשַׁלְוָה אוֹ מְלֵאָה חֶרֶב וָדָם, וְהוּא יְצַוֶּה עֲלֵיהֶם לָשׁוּב לָרֶדֶת בָּאָרֶץ וְלַעֲשׂוֹת דְּבָרוֹ. וְהֶרְאָהוּ כִּי הוּא יִתְבָּרַךְ נִצָּב עַל הַסֻּלָּם וּמַבְטִיחוֹ לְיַעֲקֹב בְּהַבְטָחָה גְּדוֹלָה לְהוֹדִיעַ שֶׁהוּא לֹא יִהְיֶה בְּיַד הַמַּלְאָכִים, אֲבָל יִהְיֶה חֵלֶק ה׳ וְיִהְיֶה עִמּוֹ תָּמִיד, כְּמוֹ שֶׁאָמַר \"וְהִנֵּה אָנֹכִי עִמָּךְ וּשְׁמַרְתִּיךָ בְּכֹל אֲשֶׁר תֵּלֵךְ\", כִּי מַעֲלָתוֹ גְּדוֹלָה מִשְּׁאָר הַצַּדִּיקִים שֶׁנֶּאֱמַר בָּהֶם (תהלים צא יא) \"כִּי מַלְאָכָיו יְצַוֶּה לָּךְ לִשְׁמָרְךָ בְּכָל דְּרָכֶיךָ\"",
-    "en": "In a prophetic dream, He showed Jacob that whatever is done on earth is effected by means of the angels, and everything is by decree given to them by the Supreme One. The angels of G-d, whom the Eternal hath sent to walk to and fro through the earth, would not do anything minor or major until they return to present themselves before the Master of the whole earth, saying before Him, “We have traversed the earth, and behold it dwells in peace, or is steeped in war and blood,” and He commands them to return, to descend to the earth and fulfill His charge. And He further showed him [Jacob] that He, blessed be He, stands above the ladder, and promises Jacob with supreme assurance to inform him that he will not be under the power of the angels, but he will be G-d’s portion, and that He will be with him always, as He said, And, behold, I am with thee, and will keep thee wherever thou goest for his [Jacob’s] excellence is superior to that of the other righteous ones of whom it is said, For He will give His angels charge over thee, to keep thee in all thy ways. <i>[Ramban then brings Rabbi Eliezer’s reading: the ladder showed Jacob four empires rising and falling.]</i>"
+    "en": "In a prophetic dream, He showed Jacob that whatever is done on earth is effected by means of the angels, and everything is by decree given to them by the Supreme One. The angels of G-d, whom the Eternal hath sent to walk to and fro through the earth, would not do anything minor or major until they return to present themselves before the Master of the whole earth, saying before Him, “We have traversed the earth, and behold it dwells in peace, or is steeped in war and blood,” and He commands them to return, to descend to the earth and fulfill His charge. And He further showed him [Jacob] that He, blessed be He, stands above the ladder, and promises Jacob with supreme assurance to inform him that he will not be under the power of the angels, but he will be G-d’s portion, and that He will be with him always, as He said, And, behold, I am with thee, and will keep thee wherever thou goest for his [Jacob’s] excellence is superior to that of the other righteous ones of whom it is said, For He will give His angels charge over thee, to keep thee in all thy ways. <i>[Ramban then brings Rabbi Eliezer’s reading: the ladder showed Jacob four empires rising and falling, and God promised to be with him wherever he went among the nations, to guard him and rescue him from them.]</i>"
    }
   ],
   "credit": "ramban"
@@ -330,8 +330,34 @@ Object.assign(VOICES.sources, {
   ],
   "credit": "rashi"
  },
+ "Genesis 32:4": {
+  "label": "Genesis 32:4",
+  "title": "Genesis 32:4",
+  "kind": "Torah",
+  "verses": [
+   {
+    "n": "32:4",
+    "he": "וַיִּשְׁלַח יַעֲקֹב מַלְאָכִים לְפָנָיו אֶל־עֵשָׂו אָחִיו אַרְצָה שֵׂעִיר שְׂדֵה אֱדוֹם׃",
+    "en": "Jacob sent messengers ahead to his brother Esau in the land of Seir, the country of Edom,"
+   }
+  ],
+  "credit": "tanakh"
+ },
+ "Rashi on Genesis 32:4:1": {
+  "label": "Rashi on Genesis 32:4",
+  "title": "Rashi on Genesis 32:4",
+  "kind": "Commentary · 11th century",
+  "verses": [
+   {
+    "n": "And Jacob sent messengers",
+    "he": "וישלח יעקב מלאכים. מַלְאָכִים מַמָּשׁ (בראשית רבה):",
+    "en": "(Heb. מלאכים angels) — actually angels (Genesis Rabbah 75:4)."
+   }
+  ],
+  "credit": "rashi"
+ },
  "Bereshit Rabbah 68:12 (his guardians)": {
-  "label": "B’reishit Rabbah 68:12",
+  "label": "B’reishit Rabbah 68:12 · his guardians",
   "title": "B’reishit Rabbah 68:12",
   "kind": "Midrash · about the 5th century CE",
   "verses": [
@@ -1214,6 +1240,19 @@ Object.assign(VOICES.sources, {
   ],
   "credit": "rashi"
  },
+ "Genesis 33:11": {
+  "label": "Genesis 33:11",
+  "title": "Genesis 33:11",
+  "kind": "Torah",
+  "verses": [
+   {
+    "n": "33:11",
+    "he": "קַח־נָא אֶת־בִּרְכָתִי אֲשֶׁר הֻבָאת לָךְ כִּי־חַנַּנִי אֱלֹהִים וְכִי יֶשׁ־לִי־כֹל וַיִּפְצַר־בּוֹ וַיִּקָּח׃",
+    "en": "Please accept my present that has been brought to you, for God has favored me and I have plenty.” And when he urged him, he accepted."
+   }
+  ],
+  "credit": "tanakh"
+ },
  "Genesis 32:7–8": {
   "label": "Genesis 32:7–8",
   "title": "Genesis 32:7–8",
@@ -1354,7 +1393,7 @@ Object.assign(VOICES.sources, {
   "credit": "rashi"
  },
  "Rashi on Genesis 25:22:1": {
-  "label": "Rashi on Genesis 25:22",
+  "label": "Rashi on Genesis 25:22 · the struggle",
   "title": "Rashi on Genesis 25:22",
   "kind": "Commentary · 11th century",
   "verses": [
@@ -1760,7 +1799,7 @@ Object.assign(VOICES.sources, {
   "credit": "tanakh"
  },
  "Rashi on Genesis 27:33:4": {
-  "label": "Rashi on Genesis 27:33",
+  "label": "Rashi on Genesis 27:33 · the blessing stands",
   "title": "Rashi on Genesis 27:33",
   "kind": "Commentary · 11th century",
   "verses": [
@@ -1812,7 +1851,7 @@ Object.assign(VOICES.sources, {
   "credit": "rashi"
  },
  "Rashi on Genesis 28:13:2": {
-  "label": "Rashi on Genesis 28:13",
+  "label": "Rashi on Genesis 28:13 · the God of Isaac",
   "title": "Rashi on Genesis 28:13",
   "kind": "Commentary · 11th century",
   "verses": [
@@ -1838,7 +1877,7 @@ Object.assign(VOICES.sources, {
   "credit": "tanakh"
  },
  "Rashi on Genesis 27:33:1": {
-  "label": "Rashi on Genesis 27:33",
+  "label": "Rashi on Genesis 27:33 · the trembling",
   "title": "Rashi on Genesis 27:33",
   "kind": "Commentary · 11th century",
   "verses": [
@@ -2334,7 +2373,7 @@ Object.assign(VOICES.sources, {
   "credit": "tanakh"
  },
  "Rashi on Genesis 35:8": {
-  "label": "Rashi on Genesis 35:8",
+  "label": "Rashi on Genesis 35:8 · the oak",
   "title": "Rashi on Genesis 35:8",
   "kind": "Commentary · 11th century",
   "verses": [
@@ -2360,7 +2399,7 @@ Object.assign(VOICES.sources, {
   "credit": "guide"
  },
  "Rashi on Genesis 28:17:1": {
-  "label": "Rashi on Genesis 28:17",
+  "label": "Rashi on Genesis 28:17 · the house of God",
   "title": "Rashi on Genesis 28:17",
   "kind": "Commentary · 11th century",
   "verses": [
@@ -2379,8 +2418,8 @@ Object.assign(VOICES.sources, {
   "verses": [
    {
     "n": "Ramban reads Rashi, and disagrees",
-    "he": "וְכָתַב רַשִׁ״י (רש״י על בראשית כ״ח:י״ז), אָמַר רַבִּי אֶלְעָזָר בְּשֵׁם ר׳ יוֹסֵי בֶּן זִמְרָא (ב״ר סט ה), הַסֻּלָּם הַזֶּה עוֹמֵד בִּבְאֵר שֶׁבַע וְשִׁפּוּעוֹ מַגִּיעַ עַד בֵּית הַמִּקְדָּשׁ, שֶׁבְּאֵר שֶׁבַע עוֹמֵד בִּדְרוֹמוֹ שֶׁל יְהוּדָה וִירוּשָׁלִַם בִּצְפוֹנוֹ, בַּגְּבוּל שֶׁבֵּין יְהוּדָה וּבִנְיָמִין, וּבֵית אֵל הָיָה בַּצָּפוֹן שֶׁל נַחֲלַת בִּנְיָמִין, בַּגְּבוּל שֶׁבֵּין בִּנְיָמִין וּבֵין בְּנֵי יוֹסֵף, נִמְצָא סֻלָּם רַגְלָיו בִּבְאֵר שֶׁבַע וְרֹאשׁוֹ בְּבֵית אֵל מַגִּיעַ שִׁפּוּעוֹ כְּנֶגֶד יְרוּשָׁלִָם. וְשֶׁאָמְרוּ רַבּוֹתֵינוּ (חולין צא) צַדִּיק זֶה בָּא לְבֵית מְלוֹנִי, וְעוֹד אָמְרוּ (פסחים פח) יַעֲקֹב קְרָאוֹ בֵּית אֵל, וְזוֹ לוּז הִיא וְלֹא יְרוּשָׁלִָם, וּמֵהֵיכָן לָמְדוּ לוֹמַר כֵּן, אֲנִי אוֹמֵר שֶׁנֶּעֱקַר הַר הַמּוֹרִיָּה וּבָא לְכָאן, וְזוֹ הִיא קְפִיצַת הָאָרֶץ הָאֲמוּרָה בִּשְׁחִיטַת חֻלִּין (חולין צא), שֶׁבָּא בֵּית הַמִּקְדָּשׁ לִקְרָאתוֹ עַד בֵּית אֵל, וְזֶהוּ \"וַיִּפְגַּע בַּמָּקוֹם\". וְאִם תֹּאמַר כְּשֶׁעָבַר יַעֲקֹב אָבִינוּ עַל בֵּית הַמִּקְדָּשׁ מַדּוּעַ לֹא עִכְּבוּהוּ שָׁם, אִיהוּ לָא יְהַב דַּעְתֵּהּ לְהִתְפַּלֵּל בַּמָּקוֹם שֶׁהִתְפַּלְּלוּ אֲבוֹתָיו וּמִן הַשָּׁמַיִם יְעַכְּבוּהוּ, אִיהוּ עַד חָרָן אֲזַל כִּדְאָמְרִינַן בְּפֶרֶק גִּיד הַנָּשֶׁה (שם), וּקְרָא מְסַיֵּעַ לָן, \"וַיֵּלֶךְ חָרָנָה\", כִּי מְטָא לְחָרָן אָמַר, אֶפְשָׁר עָבַרְתִּי עַל מָקוֹם שֶׁהִתְפַּלְּלוּ בּוֹ אֲבוֹתַי וְלֹא הִתְפַּלַּלְתִּי בּוֹ, יְהַב דַּעְתֵּיהּ לְמֶהֱדַר וְחָזַר עַד בֵּית אֵל, קָפְצָה לֵיהּ אַרְעָא עַד בֵּית אֵל. כָּל אֵלּוּ דִּבְרֵי הָרַב, וְלֹא נִרְאֶה לִי כְּלָל, שֶׁאֵין קְפִיצַת הָאָרֶץ שֶׁהִזְכִּירוּ בְּיַעֲקֹב אֶלָּא כְּאוֹתָהּ שֶׁאָמְרוּ בֶּאֱלִיעֶזֶר עֶבֶד אַבְרָהָם שֶׁבָּא בְּיוֹם אֶחָד לְחָרָן, כְּמוֹ שֶׁאָמְרוּ בְּסַנְהֶדְרִין (צה), שְׁלֹשָׁה קָפְצָה לָהֶם הָאָרֶץ, אֱלִיעֶזֶר עֶבֶד אַבְרָהָם, וְיַעֲקֹב אָבִינוּ, וַאֲבִישַׁי בֶּן צְרוּיָה, וּפֵרְשׁוּ אֱלִיעֶזֶר עֶבֶד אַבְרָהָם דִּכְתִיב (בראשית כ״ד:מ״ב) \"וָאָבֹא הַיּוֹם אֶל הָעָיִן\", לְמֵימְרָא דְּהַהוּא יוֹמָא נְפַק, יַעֲקֹב דִּכְתִיב \"וַיִּפְגַּע בַּמָּקוֹם\", כִּי מְטָא לְחָרָן אָמַר, אֶפְשָׁר שֶׁעָבַרְתִּי עַל מָקוֹם שֶׁהִתְפַּלְּלוּ אֲבוֹתַי וְלֹא הִתְפַּלַּלְתִּי בּוֹ, כֵּיוָן דְּהִרְהֵר בְּדַעְתֵּהּ לְמִהְדַּר קָפְצָה לֵהּ אַרְעָא, מִיָּד \"וַיִּפְגַּע בַּמָּקוֹם\". הִנֵּה בְּפֵרוּשׁ אוֹמְרִים שֶׁכֵּיוָן שֶׁעָלָה בְּלִבּוֹ בְּחָרָן לַחְזֹר קָפְצָה לוֹ הָאָרֶץ וּפָגַע בַּמָּקוֹם שֶׁהִתְפַּלְּלוּ בּוֹ אֲבוֹתָיו, לֹא שֶׁחָזַר לְבֵית אֵל וְלֹא שֶׁקָּפַץ הַר הַמּוֹרִיָּה וּבָא לְשָׁם. וּבִבְרֵאשִׁית רַבָּה (בראשית רבה נ״ט:י״א) עוֹד עָשׂוּ שְׁנֵיהֶם שָׁוִים בַּקְּפִיצָה, אָמְרוּ \"וַיָּקָם וַיֵּלֶךְ אֶל אֲרַם נַהֲרַיִם\" (בראשית כ״ד:י׳), בַּר יוֹמוֹ, \"וָאָבֹא הַיּוֹם אֶל הָעָיִן\", הַיּוֹם יָצָאתִי וְהַיּוֹם בָּאתִי. וּבְיַעֲקֹב דָּרְשׁוּ (ב״ר סח ח) כֵּן, \"וַיֵּלֶךְ חָרָנָה\", רַבָּנִין אָמְרִין בַּר יוֹמוֹ. וּמָה טַעַם שֶׁיִּקְפֹּץ הַר הַמּוֹרִיָּה וְיָבֹא עַד בֵּית אֵל אַחַר שֶׁטָּרַח יַעֲקֹב לַחֲזֹר מֵחָרָן וְעַד בֵּית אֵל מַהֲלַךְ כַּמָּה יָמִים, וְעוֹד כִּי בֵּית אֵל אֵינֶנּוּ סוֹף גְּבוּל אֶרֶץ יִשְׂרָאֵל מִפְּאַת חָרָן, כִּי חָרָן אֶרֶץ קֶדֶם הוּא, וְעוֹד שֶׁאֵין הָאֶמְצָעוּת נִקְרָא שִׁפּוּעַ הַסֻּלָּם, וְעוֹד מָה טַעַם לִהְיוֹתוֹ כְּנֶגֶד בֵּית אֵל וְהָאֶמְצַע אֵינֶנּוּ מוֹרֶה עַל דָּבָר יוֹתֵר מִכֻּלּוֹ",
-    "en": "Rashi comments, Rabbi Elazar the son of Rabbi Yosei the son of Zimra said, ‘This ladder stood in Beer-sheba and its slope reached unto the Sanctuary in Jerusalem. Beer-sheba is situated in the southern part of Judah, and Jerusalem is to its north on the boundary between Judah and Benjamin, and Beth-el was in the northern portion of Benjamin’s territory, on the boundary between Benjamin’s territory and that of the children of Joseph. It follows, therefore, that a ladder whose base is in Beer-sheba and whose top is in Beth-el has its slope reaching opposite Jerusalem. Now regarding the statement of our Rabbis that the Holy One, blessed be He, said, ‘This righteous man has come to the place where I dwell, [namely, the Sanctuary in Jerusalem, and shall he depart without spending the night?’], and with regard to what they also said, ‘Jacob gave the name Beth-el to Jerusalem’ this place which he called Beth-el was Luz and not Jerusalem! And whence did they learn to say so, [implying that Luz is identical with Jerusalem]? I therefore say that Mount Moriah [the Temple site in Jerusalem] was forcibly removed from its place and came here to Luz, and this movement of the Temple site is ‘the springing of the earth’ which is mentioned in Tractate Shechitath Chullin. It means that the site on which the Sanctuary was later to stand came towards Jacob to Beth-el. And this too is what is meant by vayiphga bamakom (and he met the place): [as two people meet, who are moving towards each other]. If you should ask, ‘When our father Jacob passed the site of the Sanctuary [on his way from Beer-sheba to Haran] why did He not detain him there?’ The answer is: If it never entered his mind to pray at the place where his fathers had prayed, should Heaven make him stop there? He had journeyed as far as Haran, as we say in the chapter of Gid Hanasheh, and Scripture itself helps us clarify this point by saying, And he went to Haran. When he arrived at Haran he said, ‘Is it possible that I have passed the place where my fathers prayed without praying there myself?’ He decided to return and had returned as far as Beth-el, whereupon the ground of the Temple site sprang for him until Beth-el.” All these are the words of the Rabbi. But I do not agree with them at all for ‘the springing of the earth’ which the Rabbis mention in connection with Jacob is like that which they have said happened to Eliezer, the servant of Abraham, namely, that he reached Haran in one day. As they have said in Tractate Sanhedrin, “The earth sprang for three persons: Eliezer, the servant of Abraham, our father Jacob, and Abishai the son of Zeruiah.” And the Rabbis explained: “Eliezer, the servant of Abraham — for it is written, And I came this day unto the fountain, which teaches that on that very day he embarked on his journey. Jacob — for it is written, And he met the place. When he arrived at Haran he said, ‘Is it possible that I have passed the place where my fathers prayed without praying there myself?’ As soon as the thought of returning occurred to him, the earth sprang for him, and immediately he met the place.” Thus the Rabbis explicitly say that as soon as the thought to return occurred to him in Haran, the earth sprang for him and he met the place where his fathers prayed, but not that he returned to Beth-el, nor that Mount Moriah sprang and came there to Beth-el. In Bereshith Rabbah the Rabbis further equated them both [Eliezer and Jacob] with respect to “the springing of the earth.” Thus they said: “And he arose, and went to Aram-naharaim — on the very same day. And I came this day unto the fountain — this day I embarked on the journey, and this day I arrived.” With respect to Jacob the Rabbis interpreted in a similar vein: “And he went to Haran — the Rabbis say on the very same day.” And furthermore, what reason is there for Mount Moriah to “spring” and come to Beth-el, as Rashi claims, after Jacob had troubled himself to return from Haran to Beth-el, a journey of many days? Moreover, Beth-el does not lie on the border of the Land of Israel which faces towards Haran for Haran is a land which lies to the east [of the Land of Israel while Beth-el lies in its western part]. Additionally, the middle part of a ladder is not referred to as its “slope.” And, finally, what reason is there for the middle of the ladder to be opposite Beth-el, [where, according to Rashi, the side of the Sanctuary had been transported], when the middle part of an object does not possess significance beyond that of its whole? <i>[He goes on to offer his own reading of the midrashim, and ends: no midrash says, as Rashi did, that Mount Moriah moved.]</i>"
+    "he": "וְכָתַב רַשִׁ״י, אָמַר רַבִּי אֶלְעָזָר בְּשֵׁם ר׳ יוֹסֵי בֶּן זִמְרָא (ב״ר סט ה), הַסֻּלָּם הַזֶּה עוֹמֵד בִּבְאֵר שֶׁבַע וְשִׁפּוּעוֹ מַגִּיעַ עַד בֵּית הַמִּקְדָּשׁ, שֶׁבְּאֵר שֶׁבַע עוֹמֵד בִּדְרוֹמוֹ שֶׁל יְהוּדָה וִירוּשָׁלִַם בִּצְפוֹנוֹ, בַּגְּבוּל שֶׁבֵּין יְהוּדָה וּבִנְיָמִין, וּבֵית אֵל הָיָה בַּצָּפוֹן שֶׁל נַחֲלַת בִּנְיָמִין, בַּגְּבוּל שֶׁבֵּין בִּנְיָמִין וּבֵין בְּנֵי יוֹסֵף, נִמְצָא סֻלָּם רַגְלָיו בִּבְאֵר שֶׁבַע וְרֹאשׁוֹ בְּבֵית אֵל מַגִּיעַ שִׁפּוּעוֹ כְּנֶגֶד יְרוּשָׁלִָם. וְשֶׁאָמְרוּ רַבּוֹתֵינוּ (חולין צא) צַדִּיק זֶה בָּא לְבֵית מְלוֹנִי, וְעוֹד אָמְרוּ (פסחים פח) יַעֲקֹב קְרָאוֹ בֵּית אֵל, וְזוֹ לוּז הִיא וְלֹא יְרוּשָׁלִָם, וּמֵהֵיכָן לָמְדוּ לוֹמַר כֵּן, אֲנִי אוֹמֵר שֶׁנֶּעֱקַר הַר הַמּוֹרִיָּה וּבָא לְכָאן, וְזוֹ הִיא קְפִיצַת הָאָרֶץ הָאֲמוּרָה בִּשְׁחִיטַת חֻלִּין (חולין צא), שֶׁבָּא בֵּית הַמִּקְדָּשׁ לִקְרָאתוֹ עַד בֵּית אֵל, וְזֶהוּ \"וַיִּפְגַּע בַּמָּקוֹם\". וְאִם תֹּאמַר כְּשֶׁעָבַר יַעֲקֹב אָבִינוּ עַל בֵּית הַמִּקְדָּשׁ מַדּוּעַ לֹא עִכְּבוּהוּ שָׁם, אִיהוּ לָא יְהַב דַּעְתֵּהּ לְהִתְפַּלֵּל בַּמָּקוֹם שֶׁהִתְפַּלְּלוּ אֲבוֹתָיו וּמִן הַשָּׁמַיִם יְעַכְּבוּהוּ, אִיהוּ עַד חָרָן אֲזַל כִּדְאָמְרִינַן בְּפֶרֶק גִּיד הַנָּשֶׁה (שם), וּקְרָא מְסַיֵּעַ לָן, \"וַיֵּלֶךְ חָרָנָה\", כִּי מְטָא לְחָרָן אָמַר, אֶפְשָׁר עָבַרְתִּי עַל מָקוֹם שֶׁהִתְפַּלְּלוּ בּוֹ אֲבוֹתַי וְלֹא הִתְפַּלַּלְתִּי בּוֹ, יְהַב דַּעְתֵּיהּ לְמֶהֱדַר וְחָזַר עַד בֵּית אֵל, קָפְצָה לֵיהּ אַרְעָא עַד בֵּית אֵל. כָּל אֵלּוּ דִּבְרֵי הָרַב, וְלֹא נִרְאֶה לִי כְּלָל, שֶׁאֵין קְפִיצַת הָאָרֶץ שֶׁהִזְכִּירוּ בְּיַעֲקֹב אֶלָּא כְּאוֹתָהּ שֶׁאָמְרוּ בֶּאֱלִיעֶזֶר עֶבֶד אַבְרָהָם שֶׁבָּא בְּיוֹם אֶחָד לְחָרָן, כְּמוֹ שֶׁאָמְרוּ בְּסַנְהֶדְרִין (צה), שְׁלֹשָׁה קָפְצָה לָהֶם הָאָרֶץ, אֱלִיעֶזֶר עֶבֶד אַבְרָהָם, וְיַעֲקֹב אָבִינוּ, וַאֲבִישַׁי בֶּן צְרוּיָה, וּפֵרְשׁוּ אֱלִיעֶזֶר עֶבֶד אַבְרָהָם דִּכְתִיב (בראשית כ״ד:מ״ב) \"וָאָבֹא הַיּוֹם אֶל הָעָיִן\", לְמֵימְרָא דְּהַהוּא יוֹמָא נְפַק, יַעֲקֹב דִּכְתִיב \"וַיִּפְגַּע בַּמָּקוֹם\", כִּי מְטָא לְחָרָן אָמַר, אֶפְשָׁר שֶׁעָבַרְתִּי עַל מָקוֹם שֶׁהִתְפַּלְּלוּ אֲבוֹתַי וְלֹא הִתְפַּלַּלְתִּי בּוֹ, כֵּיוָן דְּהִרְהֵר בְּדַעְתֵּהּ לְמִהְדַּר קָפְצָה לֵהּ אַרְעָא, מִיָּד \"וַיִּפְגַּע בַּמָּקוֹם\". הִנֵּה בְּפֵרוּשׁ אוֹמְרִים שֶׁכֵּיוָן שֶׁעָלָה בְּלִבּוֹ בְּחָרָן לַחְזֹר קָפְצָה לוֹ הָאָרֶץ וּפָגַע בַּמָּקוֹם שֶׁהִתְפַּלְּלוּ בּוֹ אֲבוֹתָיו, לֹא שֶׁחָזַר לְבֵית אֵל וְלֹא שֶׁקָּפַץ הַר הַמּוֹרִיָּה וּבָא לְשָׁם. וּבִבְרֵאשִׁית רַבָּה (בראשית רבה נ״ט:י״א) עוֹד עָשׂוּ שְׁנֵיהֶם שָׁוִים בַּקְּפִיצָה, אָמְרוּ \"וַיָּקָם וַיֵּלֶךְ אֶל אֲרַם נַהֲרַיִם\" (בראשית כ״ד:י׳), בַּר יוֹמוֹ, \"וָאָבֹא הַיּוֹם אֶל הָעָיִן\", הַיּוֹם יָצָאתִי וְהַיּוֹם בָּאתִי. וּבְיַעֲקֹב דָּרְשׁוּ (ב״ר סח ח) כֵּן, \"וַיֵּלֶךְ חָרָנָה\", רַבָּנִין אָמְרִין בַּר יוֹמוֹ. וּמָה טַעַם שֶׁיִּקְפֹּץ הַר הַמּוֹרִיָּה וְיָבֹא עַד בֵּית אֵל אַחַר שֶׁטָּרַח יַעֲקֹב לַחֲזֹר מֵחָרָן וְעַד בֵּית אֵל מַהֲלַךְ כַּמָּה יָמִים, וְעוֹד כִּי בֵּית אֵל אֵינֶנּוּ סוֹף גְּבוּל אֶרֶץ יִשְׂרָאֵל מִפְּאַת חָרָן, כִּי חָרָן אֶרֶץ קֶדֶם הוּא, וְעוֹד שֶׁאֵין הָאֶמְצָעוּת נִקְרָא שִׁפּוּעַ הַסֻּלָּם, וְעוֹד מָה טַעַם לִהְיוֹתוֹ כְּנֶגֶד בֵּית אֵל וְהָאֶמְצַע אֵינֶנּוּ מוֹרֶה עַל דָּבָר יוֹתֵר מִכֻּלּוֹ",
+    "en": "Rashi comments, Rabbi Elazar the son of Rabbi Yosei the son of Zimra said, ‘This ladder stood in Beer-sheba and its slope reached unto the Sanctuary in Jerusalem. Beer-sheba is situated in the southern part of Judah, and Jerusalem is to its north on the boundary between Judah and Benjamin, and Beth-el was in the northern portion of Benjamin’s territory, on the boundary between Benjamin’s territory and that of the children of Joseph. It follows, therefore, that a ladder whose base is in Beer-sheba and whose top is in Beth-el has its slope reaching opposite Jerusalem. Now regarding the statement of our Rabbis that the Holy One, blessed be He, said, ‘This righteous man has come to the place where I dwell, [namely, the Sanctuary in Jerusalem, and shall he depart without spending the night?’], and with regard to what they also said, ‘Jacob gave the name Beth-el to Jerusalem’ this place which he called Beth-el was Luz and not Jerusalem! And whence did they learn to say so, [implying that Luz is identical with Jerusalem]? I therefore say that Mount Moriah [the Temple site in Jerusalem] was forcibly removed from its place and came here to Luz, and this movement of the Temple site is ‘the springing of the earth’ which is mentioned in Tractate Shechitath Chullin. It means that the site on which the Sanctuary was later to stand came towards Jacob to Beth-el. And this too is what is meant by vayiphga bamakom (and he met the place): [as two people meet, who are moving towards each other]. If you should ask, ‘When our father Jacob passed the site of the Sanctuary [on his way from Beer-sheba to Haran] why did He not detain him there?’ The answer is: If it never entered his mind to pray at the place where his fathers had prayed, should Heaven make him stop there? He had journeyed as far as Haran, as we say in the chapter of Gid Hanasheh, and Scripture itself helps us clarify this point by saying, And he went to Haran. When he arrived at Haran he said, ‘Is it possible that I have passed the place where my fathers prayed without praying there myself?’ He decided to return and had returned as far as Beth-el, whereupon the ground of the Temple site sprang for him until Beth-el.” All these are the words of the Rabbi. But I do not agree with them at all for ‘the springing of the earth’ which the Rabbis mention in connection with Jacob is like that which they have said happened to Eliezer, the servant of Abraham, namely, that he reached Haran in one day. As they have said in Tractate Sanhedrin, “The earth sprang for three persons: Eliezer, the servant of Abraham, our father Jacob, and Abishai the son of Zeruiah.” And the Rabbis explained: “Eliezer, the servant of Abraham — for it is written, And I came this day unto the fountain, which teaches that on that very day he embarked on his journey. Jacob — for it is written, And he met the place. When he arrived at Haran he said, ‘Is it possible that I have passed the place where my fathers prayed without praying there myself?’ As soon as the thought of returning occurred to him, the earth sprang for him, and immediately he met the place.” Thus the Rabbis explicitly say that as soon as the thought to return occurred to him in Haran, the earth sprang for him and he met the place where his fathers prayed, but not that he returned to Beth-el, nor that Mount Moriah sprang and came there to Beth-el. In Bereshith Rabbah the Rabbis further equated them both [Eliezer and Jacob] with respect to “the springing of the earth.” Thus they said: “And he arose, and went to Aram-naharaim — on the very same day. And I came this day unto the fountain — this day I embarked on the journey, and this day I arrived.” With respect to Jacob the Rabbis interpreted in a similar vein: “And he went to Haran — the Rabbis say on the very same day.” And furthermore, what reason is there for Mount Moriah to “spring” and come to Beth-el, as Rashi claims, after Jacob had troubled himself to return from Haran to Beth-el, a journey of many days? Moreover, Beth-el does not lie on the border of the Land of Israel which faces towards Haran for Haran is a land which lies to the east [of the Land of Israel while Beth-el lies in its western part]. Additionally, the middle part of a ladder is not referred to as its “slope.” And, finally, what reason is there for the middle of the ladder to be opposite Beth-el, [where, according to Rashi, the side of the Sanctuary had been transported], when the middle part of an object does not possess significance beyond that of its whole? <i>[He goes on to offer his own reading of the midrashim, and ends: no midrash says, as Rashi did, that Mount Moriah moved.]</i> <i>[On the translation: where Chavel has “Rabbi Elazar the son of Rabbi Yosei the son of Zimra,” the Hebrew reads “Rabbi Elazar in the name of (בְּשֵׁם) Rabbi Yosei ben Zimra.”]</i>"
    }
   ],
   "credit": "ramban"
@@ -2484,13 +2523,26 @@ Object.assign(VOICES.sources, {
    {
     "n": "",
     "he": "והיה ה׳ לי לאלהים. שֶׁיָּחוּל שְׁמוֹ עָלַי מִתְּחִלָּה וְעַד סוֹף, שֶׁלֹּא יִמָּצֵא פְּסוּל בְּזַרְעִי, כְּמוֹ שֶׁנֶּאֱמַר אֲשֶׁר דִּבַּרְתִּי לָךְ; וְהַבְטָחָה זוֹ הִבְטִיחַ לְאַבְרָהָם, שֶׁנֶּאֱמַר לִהְיוֹת לְךָ לֵאלֹהִים וּלְזַרְעֲךָ אַחֲרֶיךָ (בראשית י״ז:ז׳):",
-    "en": "והיה ה' לי לאלהים AND IF THE <span class=\"sc\">Lord</span> WILL BE MY <span class=\"sc\">God</span>, in that His Name shall rest upon me from the beginning to the end: that no unworthy person shall be found in my descendants (Sifré, ואתחנן 31) — just as it is said (v. 15), “I will do that which I spake concerning thee”; and this promise He made to Abraham, as it is said (17:7) “To be a God unto thee and unto thy seed after thee”,"
+    "en": "And if the Lord will be my God, in that His Name shall rest upon me from the beginning to the end: that no unworthy person shall be found in my descendants (Sifré, ואתחנן 31) — just as it is said (v. 15), “I will do that which I spake concerning thee”; and this promise He made to Abraham, as it is said (17:7) “To be a God unto thee and unto thy seed after thee”…"
+   }
+  ],
+  "credit": "rashi"
+ },
+ "Rashi on Genesis 28:22:1": {
+  "label": "Rashi on Genesis 28:22",
+  "title": "Rashi on Genesis 28:22",
+  "kind": "Commentary · 11th century",
+  "verses": [
+   {
+    "n": "Then this stone",
+    "he": "והאבן הזאת. כָּךְ תְּפָרֵשׁ וָי״ו זוֹ שֶׁל וְהָאֶבֶן: אִם תַּעֲשֶׂה לִי אֶת אֵלֶּה, אֲנִי אֶעֱשֶׂה זֹאת:",
+    "en": "This is how you should explain the ו of והאבן: if He will do these things mentioned in Genesis 28:15 as He promised, then I, also, will do this: <i>[The verse goes on: “this stone, which I have set up as a pillar, shall be God’s abode.”]</i>"
    }
   ],
   "credit": "rashi"
  },
  "Vayikra Rabbah 29:2 (four kingdoms)": {
-  "label": "Vayikra Rabbah 29:2",
+  "label": "Vayikra Rabbah 29:2 · four kingdoms",
   "title": "Vayikra Rabbah 29:2",
   "kind": "Midrash · about the 5th century CE",
   "verses": [
@@ -2503,7 +2555,7 @@ Object.assign(VOICES.sources, {
   "credit": "midrash"
  },
  "Chullin 91b (the stones)": {
-  "label": "Chullin 91b",
+  "label": "Chullin 91b · the stones",
   "title": "Chullin 91b",
   "kind": "Babylonian Talmud · about the 6th century CE",
   "verses": [
@@ -2516,7 +2568,7 @@ Object.assign(VOICES.sources, {
   "credit": "talmud"
  },
  "Rashi on Genesis 28:11:4": {
-  "label": "Rashi on Genesis 28:11",
+  "label": "Rashi on Genesis 28:11 · the stones",
   "title": "Rashi on Genesis 28:11",
   "kind": "Commentary · 11th century",
   "verses": [
@@ -2542,7 +2594,7 @@ Object.assign(VOICES.sources, {
   "credit": "rashi"
  },
  "Rashi on Genesis 28:11:3": {
-  "label": "Rashi on Genesis 28:11",
+  "label": "Rashi on Genesis 28:11 · the sunset",
   "title": "Rashi on Genesis 28:11",
   "kind": "Commentary · 11th century",
   "verses": [
@@ -2568,7 +2620,7 @@ Object.assign(VOICES.sources, {
   "credit": "rashi"
  },
  "Rashi on Genesis 28:11:2": {
-  "label": "Rashi on Genesis 28:11",
+  "label": "Rashi on Genesis 28:11 · prayer",
   "title": "Rashi on Genesis 28:11",
   "kind": "Commentary · 11th century",
   "verses": [
@@ -2581,7 +2633,7 @@ Object.assign(VOICES.sources, {
   "credit": "rashi"
  },
  "Rashi on Genesis 28:17:3": {
-  "label": "Rashi on Genesis 28:17",
+  "label": "Rashi on Genesis 28:17 · the gate of heaven",
   "title": "Rashi on Genesis 28:17",
   "kind": "Commentary · 11th century",
   "verses": [
@@ -2594,7 +2646,7 @@ Object.assign(VOICES.sources, {
   "credit": "rashi"
  },
  "Rashi on Genesis 28:11:1": {
-  "label": "Rashi on Genesis 28:11",
+  "label": "Rashi on Genesis 28:11 · the place",
   "title": "Rashi on Genesis 28:11",
   "kind": "Commentary · 11th century",
   "verses": [
@@ -2652,11 +2704,24 @@ Object.assign(VOICES.sources, {
   "verses": [
    {
     "n": "The patriarchs and the three daily prayers",
-    "he": "תַּנְיָא כְּווֹתֵיהּ דְּרַבִּי יוֹסֵי בְּרַבִּי חֲנִינָא, וְתַנְיָא כְּווֹתֵיהּ דְּרַבִּי יְהוֹשֻׁעַ בֶּן לֵוִי. תַּנְיָא כְּווֹתֵיהּ דְּרַבִּי יוֹסֵי בְּרַבִּי חֲנִינָא: אַבְרָהָם תִּקֵּן תְּפִלַּת שַׁחֲרִית, שֶׁנֶּאֱמַר: ״וַיַּשְׁכֵּם אַבְרָהָם בַּבֹּקֶר אֶל הַמָּקוֹם אֲשֶׁר עָמַד שָׁם״, וְאֵין ״עֲמִידָה״ אֶלָּא תְּפִלָּה, שֶׁנֶּאֱמַר: ״וַיַּעֲמֹד פִּינְחָס וַיְפַלֵּל״. יִצְחָק תִּקֵּן תְּפִלַּת מִנְחָה, שֶׁנֶּאֱמַר ״וַיֵּצֵא יִצְחָק לָשׂוּחַ בַּשָּׂדֶה לִפְנוֹת עָרֶב״, וְאֵין ״שִׂיחָה״ אֶלָּא תְּפִלָּה, שֶׁנֶּאֱמַר ״תְּפִלָּה לְעָנִי כִי יַעֲטֹף וְלִפְנֵי ה׳ יִשְׁפֹּךְ שִׂיחוֹ״. יַעֲקֹב תִּקֵּן תְּפִלַּת עַרְבִית, שֶׁנֶּאֱמַר: ״וַיִּפְגַּע בַּמָּקוֹם וַיָּלֶן שָׁם״, וְאֵין ״פְּגִיעָה״ אֶלָּא תְּפִלָּה, שֶׁנֶּאֱמַר: ״וְאַתָּה אַל תִּתְפַּלֵּל בְּעַד הָעָם הַזֶּה וְאַל תִּשָּׂא בַעֲדָם רִנָּה וּתְפִלָּה וְאַל תִּפְגַּע בִּי״",
-    "en": "The Gemara comments: <b>It was taught</b> in a <i>baraita</i> <b>in accordance with</b> the opinion of <b>Rabbi Yosei, son of Rabbi Ḥanina, and it was taught</b> in a <i>baraita</i> <b>in accordance with</b> the opinion of <b>Rabbi Yehoshua ben Levi.</b> The Gemara elaborates: <b>It was taught</b> in a <i>baraita</i> <b>in accordance with</b> the opinion of <b>Rabbi Yosei, son of Rabbi Ḥanina: Abraham instituted the morning prayer, as it is stated</b> when Abraham came to look out over Sodom the day after he had prayed on its behalf: <b>“And Abraham rose early in the morning to the place where he had stood</b> before the Lord” (Genesis 19:27), <b>and</b> from the context as well as the language utilized in the verse, the verb <b>standing</b> means <b>nothing other than prayer,</b> as this language is used to describe Pinehas’ prayer after the plague, <b>as it is stated: “And Pinehas stood up and prayed</b> and the plague ended” (Psalms 106:30). Clearly, Abraham was accustomed to stand in prayer in the morning. <b>Isaac instituted the afternoon prayer, as it is stated: “And Isaac went out to converse [<i>lasuaḥ</i>] in the field toward evening”</b> (Genesis 24:63), <b>and conversation</b> means <b>nothing other than prayer, as it is stated: “A prayer of the afflicted when he is faint and pours out his complaint [<i>siḥo</i>] before the Lord”</b> (Psalms 102:1). Obviously, Isaac was the first to pray as evening approached, at the time of the afternoon prayer. <b>Jacob instituted the evening prayer, as it is stated: “And he encountered [<i>vayifga</i>] the place and he slept there</b> for the sun had set” (Genesis 28:11). The word <b>encounter</b> means <b>nothing other than prayer, as it is stated</b> when God spoke to Jeremiah: <b>“And you, do not pray on behalf of this nation and do not raise on their behalf song and prayer, and do not encounter [<i>tifga</i>] Me</b> for I do not hear you” (Jeremiah 7:16). Jacob prayed during the evening, after the sun had set."
+    "he": "אִיתְּמַר, רַבִּי יוֹסֵי בְּרַבִּי חֲנִינָא אָמַר: תְּפִלּוֹת אָבוֹת תִּקְּנוּם. רַבִּי יְהוֹשֻׁעַ בֶּן לֵוִי אָמַר: תְּפִלּוֹת כְּנֶגֶד תְּמִידִין תִּקְּנוּם. תַּנְיָא כְּווֹתֵיהּ דְּרַבִּי יוֹסֵי בְּרַבִּי חֲנִינָא, וְתַנְיָא כְּווֹתֵיהּ דְּרַבִּי יְהוֹשֻׁעַ בֶּן לֵוִי. תַּנְיָא כְּווֹתֵיהּ דְּרַבִּי יוֹסֵי בְּרַבִּי חֲנִינָא: אַבְרָהָם תִּקֵּן תְּפִלַּת שַׁחֲרִית, שֶׁנֶּאֱמַר: ״וַיַּשְׁכֵּם אַבְרָהָם בַּבֹּקֶר אֶל הַמָּקוֹם אֲשֶׁר עָמַד שָׁם״, וְאֵין ״עֲמִידָה״ אֶלָּא תְּפִלָּה, שֶׁנֶּאֱמַר: ״וַיַּעֲמֹד פִּינְחָס וַיְפַלֵּל״. יִצְחָק תִּקֵּן תְּפִלַּת מִנְחָה, שֶׁנֶּאֱמַר ״וַיֵּצֵא יִצְחָק לָשׂוּחַ בַּשָּׂדֶה לִפְנוֹת עָרֶב״, וְאֵין ״שִׂיחָה״ אֶלָּא תְּפִלָּה, שֶׁנֶּאֱמַר ״תְּפִלָּה לְעָנִי כִי יַעֲטֹף וְלִפְנֵי ה׳ יִשְׁפֹּךְ שִׂיחוֹ״. יַעֲקֹב תִּקֵּן תְּפִלַּת עַרְבִית, שֶׁנֶּאֱמַר: ״וַיִּפְגַּע בַּמָּקוֹם וַיָּלֶן שָׁם״, וְאֵין ״פְּגִיעָה״ אֶלָּא תְּפִלָּה, שֶׁנֶּאֱמַר: ״וְאַתָּה אַל תִּתְפַּלֵּל בְּעַד הָעָם הַזֶּה וְאַל תִּשָּׂא בַעֲדָם רִנָּה וּתְפִלָּה וְאַל תִּפְגַּע בִּי״",
+    "en": "The dispute between the Rabbis and Rabbi Yehuda with regard to the times beyond which the different prayers may not be recited is rooted in a profound disagreement, also manifest in a later amoraic dispute. <b>It was stated: Rabbi Yosei, son of Rabbi Ḥanina, said:</b> The practice of praying three times daily is ancient, albeit not in its present form; <b>prayers were instituted by the Patriarchs.</b> However, <b>Rabbi Yehoshua ben Levi said</b> that the <b>prayers were instituted based on the daily offerings</b> sacrificed in the Holy Temple, and the prayers parallel the offerings, in terms of both time and characteristics. The Gemara comments: <b>It was taught</b> in a <i>baraita</i> <b>in accordance with</b> the opinion of <b>Rabbi Yosei, son of Rabbi Ḥanina, and it was taught</b> in a <i>baraita</i> <b>in accordance with</b> the opinion of <b>Rabbi Yehoshua ben Levi.</b> The Gemara elaborates: <b>It was taught</b> in a <i>baraita</i> <b>in accordance with</b> the opinion of <b>Rabbi Yosei, son of Rabbi Ḥanina: Abraham instituted the morning prayer, as it is stated</b> when Abraham came to look out over Sodom the day after he had prayed on its behalf: <b>“And Abraham rose early in the morning to the place where he had stood</b> before the Lord” (Genesis 19:27), <b>and</b> from the context as well as the language utilized in the verse, the verb <b>standing</b> means <b>nothing other than prayer,</b> as this language is used to describe Pinehas’ prayer after the plague, <b>as it is stated: “And Pinehas stood up and prayed</b> and the plague ended” (Psalms 106:30). Clearly, Abraham was accustomed to stand in prayer in the morning. <b>Isaac instituted the afternoon prayer, as it is stated: “And Isaac went out to converse [<i>lasuaḥ</i>] in the field toward evening”</b> (Genesis 24:63), <b>and conversation</b> means <b>nothing other than prayer, as it is stated: “A prayer of the afflicted when he is faint and pours out his complaint [<i>siḥo</i>] before the Lord”</b> (Psalms 102:1). Obviously, Isaac was the first to pray as evening approached, at the time of the afternoon prayer. <b>Jacob instituted the evening prayer, as it is stated: “And he encountered [<i>vayifga</i>] the place and he slept there</b> for the sun had set” (Genesis 28:11). The word <b>encounter</b> means <b>nothing other than prayer, as it is stated</b> when God spoke to Jeremiah: <b>“And you, do not pray on behalf of this nation and do not raise on their behalf song and prayer, and do not encounter [<i>tifga</i>] Me</b> for I do not hear you” (Jeremiah 7:16). Jacob prayed during the evening, after the sun had set."
    }
   ],
   "credit": "talmud"
+ },
+ "Rashi on Genesis 28:11:5": {
+  "label": "Rashi on Genesis 28:11 · fourteen years",
+  "title": "Rashi on Genesis 28:11",
+  "kind": "Commentary · 11th century",
+  "verses": [
+   {
+    "n": "And [he] lay down in that place",
+    "he": "וישכב במקום ההוא. לְשׁוֹן מִעוּט; בְּאוֹתוֹ מָקוֹם שָׁכַב אֲבָל י״ד שָׁנִים שֶׁשִּׁמֵּשׁ בְּבֵית עֵבֶר לֹא שָׁכַב בַּלַּיְלָה, שֶׁהָיָה עוֹסֵק בַּתּוֹרָה:",
+    "en": "The word ההוא, that, has a limitative force: in that place he lay down to sleep, but during the previous fourteen years when he sat under his teachers in the School of Eber he never slept at night for he was incessantly engaged in the study of the Torah (Genesis Rabbah 68:11)."
+   }
+  ],
+  "credit": "rashi"
  },
  "Rashi on Genesis 28:20:1": {
   "label": "Rashi on Genesis 28:20",
@@ -2666,13 +2731,13 @@ Object.assign(VOICES.sources, {
    {
     "n": "If God will be with me",
     "he": "אם יהיה אלהים עמדי. אִם יִשְׁמֹר לִי הַבְטָחוֹת הַלָּלוּ שֶׁהִבְטִיחַנִי לִהְיוֹת עִמָּדִי, כְּמוֹ שֶׁאָמַר לִי וְהִנֵּה אָנֹכִי עִמָּךְ:",
-    "en": "if He will keep for me these promises which He has made me that He would be with me, even as He said to me (v. 15), “Behold, I am with thee” (Genesis Rabbah 70:4),"
+    "en": "if He will keep for me these promises which He has made me that He would be with me, even as He said to me (v. 15), “Behold, I am with thee” (Genesis Rabbah 70:4)…"
    }
   ],
   "credit": "rashi"
  },
  "Rashi on Genesis 35:8:1": {
-  "label": "Rashi on Genesis 35:8",
+  "label": "Rashi on Genesis 35:8 · Deborah",
   "title": "Rashi on Genesis 35:8",
   "kind": "Commentary · 11th century",
   "verses": [
@@ -2685,7 +2750,7 @@ Object.assign(VOICES.sources, {
   "credit": "rashi"
  },
  "Rashi on Genesis 28:13:3": {
-  "label": "Rashi on Genesis 28:13",
+  "label": "Rashi on Genesis 28:13 · the folded land",
   "title": "Rashi on Genesis 28:13",
   "kind": "Commentary · 11th century",
   "verses": [
@@ -3232,7 +3297,7 @@ Object.assign(VOICES.sources, {
   "credit": "tanakh"
  },
  "Rashi on Genesis 25:22 (why do I exist)": {
-  "label": "Rashi on Genesis 25:22",
+  "label": "Rashi on Genesis 25:22 · why do I exist",
   "title": "Rashi on Genesis 25:22",
   "kind": "Commentary · 11th century",
   "verses": [
@@ -3336,13 +3401,13 @@ Object.assign(VOICES.sources, {
    {
     "n": "",
     "he": "ויאמר ה׳ לה. עַל יְדֵי שָׁלִיחַ; לְשֵׁם נֶאֱמַר בְּרוּחַ הַקֹּדֶשׁ וְהוּא אָמַר לָהּ (בראשית רבה):",
-    "en": "And the eternal said unto her through a messenger: it was told to Shem by holy inspiration and he told it to her (Genesis Rabbah 63:7)."
+    "en": "And the Eternal said unto her through a messenger: it was told to Shem by holy inspiration and he told it to her (Genesis Rabbah 63:7)."
    }
   ],
   "credit": "rashi"
  },
  "Bereshit Rabbah 68:12 (Bar Kappara)": {
-  "label": "B’reishit Rabbah 68:12",
+  "label": "B’reishit Rabbah 68:12 · Bar Kappara",
   "title": "B’reishit Rabbah 68:12",
   "kind": "Midrash · about the 5th century CE",
   "verses": [
@@ -3355,7 +3420,7 @@ Object.assign(VOICES.sources, {
   "credit": "midrash"
  },
  "Bereshit Rabbah 68:12 (Sinai)": {
-  "label": "B’reishit Rabbah 68:12",
+  "label": "B’reishit Rabbah 68:12 · Sinai",
   "title": "B’reishit Rabbah 68:12",
   "kind": "Midrash · about the 5th century CE",
   "verses": [
@@ -3368,7 +3433,7 @@ Object.assign(VOICES.sources, {
   "credit": "midrash"
  },
  "Kitzur Baal HaTurim on Genesis 28:12:6": {
-  "label": "Ba’al HaTurim on Genesis 28:12",
+  "label": "Ba’al HaTurim on Genesis 28:12 · ladder and Sinai",
   "title": "Ba’al HaTurim on Genesis 28:12",
   "kind": "Commentary · Rabbi Jacob ben Asher, 14th century",
   "verses": [
@@ -3381,7 +3446,7 @@ Object.assign(VOICES.sources, {
   "credit": "turim"
  },
  "Vayikra Rabbah 29:2 (Rabbi Meir)": {
-  "label": "Vayikra Rabbah 29:2",
+  "label": "Vayikra Rabbah 29:2 · Rabbi Meir",
   "title": "Vayikra Rabbah 29:2",
   "kind": "Midrash · about the 5th century CE",
   "verses": [
@@ -3394,7 +3459,7 @@ Object.assign(VOICES.sources, {
   "credit": "midrash"
  },
  "Kitzur Baal HaTurim on Genesis 28:12:3": {
-  "label": "Ba’al HaTurim on Genesis 28:12",
+  "label": "Ba’al HaTurim on Genesis 28:12 · ladder and voice",
   "title": "Ba’al HaTurim on Genesis 28:12",
   "kind": "Commentary · Rabbi Jacob ben Asher, 14th century",
   "verses": [

@@ -210,7 +210,7 @@ VOICES.characters.sages = {
            extra: 'Sulam (ladder) and Sinai add up to the same number: 130!' },
     g57: { line: 'Would you have climbed?',
            extra: 'Would you have climbed? Why or why not?' },
-    parents: { line: 'Would you have climbed?', he: 'אַף אַתָּה עוֹלֶה',
+    parents: { line: 'Would you have climbed?',
                extra: 'Would you have climbed? What would have held you back?' }
   }
 };
@@ -226,7 +226,7 @@ VOICES.characters.ramban = {
   rung: {
     g57: { line: 'You are in God’s own care.',
            extra: 'When have you felt taken care of by something bigger than you?' },
-    parents: { line: 'You will be God’s own portion.', he: 'כִּי חֵלֶק ה׳ עַמּוֹ, יַעֲקֹב חֶבֶל נַחֲלָתוֹ',
+    parents: { line: 'You will be God’s own portion.',
                extra: 'When do you feel protected?' }
   }
 };
@@ -234,7 +234,7 @@ VOICES.characters.ramban = {
 VOICES.characters.rambam = {
   name: 'Rambam', he: 'רַמְבַּ״ם',
   color: { room: '#232010', room2: '#4b4420', accent: '#e6d47e' },
-  role: { g57: 'Maimonides · Spain and Egypt, 1138–1204', parents: 'Maimonides · Spain and Egypt, 1138–1204' },
+  role: { g57: 'Maimonides · Spain and Egypt, about 1138–1204', parents: 'Maimonides · Spain and Egypt, about 1138–1204' },
   tease: {
     g57: 'The ladder is a path you can climb too.',
     parents: 'The angels are prophets: up to learn, down to teach.'

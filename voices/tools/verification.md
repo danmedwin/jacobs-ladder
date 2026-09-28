@@ -1049,3 +1049,48 @@ Checked 28 September 2026: every line of `voices/data/esau.js`, `rebekah.js`, `i
 | Rebekah, 3–4 | “Did you ever see Jacob again?” left the question open | Rashi on 35:8: at that oak Jacob learned his mother had died | Says so, gently, after Rashi’s story of Deborah |
 
 Two passages were added to texts.json for this: Rashi on Chullin 91b:11 (Vilna edition, public domain; no English in the export, so the card’s translation is ours) and Rashi on Genesis 3:8:1 (Rosenbaum–Silbermann, public domain).
+
+## Third check: the 5–7 and parents scripts
+
+Checked 28 September 2026: every line of the 5–7 and parents visits for Esau, Rebekah, Isaac, the angel, Rashi, the Sages, Ramban, and Rambam, read against texts.json and the built cards. A script then compared every quotation in all thirty visits with the cards its line cites: English word for word, Hebrew by consonants. Every Hebrew span matches. The English quotes it cannot match are literal glosses of a Hebrew word that the line presents as a gloss (“a few days,” “on him,” “from the stones of the place”), or quotes that a translator’s bracket interrupts on the card. These lines were corrected:
+
+| Script | Was | Why | Now |
+|---|---|---|---|
+| Rambam, 5–7 and parents | “Consider this well” came after the seven parts of the ladder | In the Introduction it ends the paragraph on the two kinds of parable, before the ladder example | Both visits explain the two kinds of parable in the right order; the typed question “What does ‘Consider this well’ mean?” is now “What are the two kinds of parable?” |
+| Rambam, 5–7 | “Can anyone be a prophet?” | Rambam says anyone who wishes may climb the ladder, not that anyone can become a prophet | “Can anyone climb the ladder?”, answered with the full sentence from 1:15 |
+| Rambam, 5–7 | A prophet climbs, “learning all that a person can understand” | 1:15 says “arriving at a certain height of the ladder” | Quotes 1:15 |
+| Rambam, 5–7 | “the Lord stood above it,” cited to 1:15 | That is the Introduction’s wording; 1:15 has “stood upon it” | “the Lord stood upon it” |
+| Rambam, both | Born “in 1138”; the family went “through Spain, Morocco, and the Land of Israel” | The year is uncertain (1135 or 1138). The family moved to Fez when he was in his twenties, then to the Land of Israel, Alexandria, and Fustat | “around 1138”; the role line reads “about 1138–1204”; both answers give the route |
+| Ramban, 5–7 and parents | “Beit El is not on the way to Haran” | Ramban says Beit El is not at the edge of the Land on the Haran side | Says that |
+| Ramban, parents | Jacob “found God on the road, far from any holy city” | In the tradition Ramban and Rashi share, Beit El is holy ground | Pairs 28:16 with 28:15, “I will protect you wherever you go” |
+| Ramban, parents | The Hebrew stopped at “by means of the angels” | The English went on to “everything is by decree” | The Hebrew adds וְהַכֹּל בִּגְזֵרַת עֶלְיוֹן עֲלֵיהֶם |
+| Rashi and Ramban, parents | Rashi’s vow-as-condition cited to his notes on 28:20 and 28:21 | He says it outright on 28:22: “if He will do these things… then I, also, will do this” | Cites Rashi on 28:22 |
+| Rashi, parents | “At that age [63] he still needed to hear God say, ‘I am with you’” | By Rashi’s count Jacob reached Beit El after fourteen years with Eber, at 77 (Rashi on 28:11) | Says seventy-seven, citing Rashi on 28:11 |
+| Rashi, 5–7 | “Many of my notes say where the idea comes from” | Rashi names his source only some of the time | “Some of my notes” |
+| Esau, both | “I refused his gifts” | 33:11: “And when he urged him, he accepted” | “At first I refused… He urged me, and I accepted” |
+| Esau, parents | The Rabbis call Esau wicked “mostly because I came to stand for Rome” | Overstated: the Torah’s own “Thus did Esau spurn the birthright” counts too | “Partly… Partly…,” citing 25:34 |
+| Esau, parents | Mahalath, “the child of Abraham’s other son” | Abraham had other sons too (25:1–2) | “Abraham’s elder son” |
+| Esau, 5–7 | “Did you ever see your father again?”, answered with Isaac’s burial | The answer didn’t fit the question | “Did you and Jacob meet again?” |
+| Esau, 5–7 | “The Torah’s own story ends with a hug” | Esau’s story goes on (Genesis 35–36) | “In the Torah’s own story, I’m the one who runs to hug my brother” |
+| Esau and angel | “The Torah says only ‘a man’” | RJPS 32:25 reads “a figure”; the Hebrew is *ish* | “The Hebrew says only *ish*, ‘a man’” |
+| Esau, Isaac, Rebekah, parents | Esau “hunted” his father with words | Rashi on 25:28: “there was hunting in Esau’s mouth,” he used “to entrap and deceive him” | Quotes Rashi |
+| Angel, 5–7 and parents | *Malachim* as human messengers: Jacob’s messengers to Esau | Rashi on 32:4 says Jacob’s were “actually angels” | Moses’ messengers to the king of Edom (Numbers 20:14); the parents line adds Rashi’s reading of 32:4 |
+| Angel, 5–7 and parents | “The Talmud’s jealous angels” | The Talmud says they wanted to endanger him; the jealousy is Rashi’s | Credits Rashi, with his card |
+| Angel, parents | After Mahanaim, “the next day” Jacob split his camp | The Torah gives no interval (32:3–8) | “Soon after” |
+| Isaac, parents | “You first met me as a child, bound on an altar” | By Rashi’s count (on 25:20) Isaac was 37 at the binding | “You may remember me bound on an altar” |
+| Isaac, parents | וְיִתֶּן־לְךָ אֶת־בִּרְכַּת אַבְרָהָם under “May you and your offspring…” | The English said more than the Hebrew | The Hebrew runs on to לְךָ וּלְזַרְעֲךָ אִתָּךְ |
+| Sages, 5–7 | Each new reading “begins *davar acher*” | Many do, not all | “often introduced with” |
+| Sages, parents | “four ways in a row” | The midrash offers more readings than these four | “many ways. Here are four.” |
+| Ramban and Sages, parents rungs | Hebrew under the rung (Deuteronomy 32:9; “You, too, will ascend”) | Neither said what the rung’s English says | Removed |
+
+The source cards changed too:
+
+- When two cards share a chip label (two Rashi comments on one verse, or two passages on one page of midrash or Talmud), each chip now carries a short tag, such as “Rashi on Genesis 28:11 · the place.” On a phone the tag drops to its own line as a unit.
+- Rashi headings that run into the comment after a comma are now read correctly, and “Eternal” and “Lord” keep their capitals in headings. A Rashi comment that stops mid-sentence (it continues in the next comment) now ends with “…”.
+- Berakhot 26b starts one segment earlier, where Rabbi Yosei son of Rabbi Chanina’s view is first stated.
+- Ramban on 28:17: Sefaria’s link text “(רש״י על בראשית כ״ח:י״ז)” is removed from the Hebrew, and a note corrects Chavel’s “the son of Rabbi Yosei” to “in the name of” (בְּשֵׁם).
+- Ramban on 28:12: the closing note now includes God’s promise to guard Jacob among the nations.
+
+Two passages were added to texts.json: Numbers 20:14 (Revised JPS; Miqra according to the Masorah) and Rashi on Genesis 32:4:1 (Rosenbaum–Silbermann, public domain). Rashi on Genesis 28:11:5 and 28:22:1 were already in the packet and are now cited.
+
+Other checks: 94 of 102 natural phrasings typed into the 5–7 and parents visits reach a prepared answer (the rest get the “Ask anything” message), and a browser walk of all thirty visits, pressing every choice and question button, reached the end of each visit with no errors.

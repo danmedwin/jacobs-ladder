@@ -48,6 +48,6 @@ Each visit ends with a rung: one line to carry back to the family, plus a motion
 | Isaac | May God give you the blessing of Abraham.<br>וְיִתֶּן־לְךָ אֶת־בִּרְכַּת אַבְרָהָם | What blessing would you want from me? |
 | An angel | They looked for his face in heaven and found him asleep on earth.<br>עֹלִים לְמַעְלָה וְרוֹאִים אִיקוֹנִין שֶׁלּוֹ, וְיֹרְדִים לְמַטָּה וּמוֹצְאִים אוֹתוֹ יָשֵׁן | Where do you feel closest to God? |
 | Rashi | Every oddity in the text is a question waiting for you. | What’s a question you have about the story? |
-| The Sages | Would you have climbed?<br>אַף אַתָּה עוֹלֶה | Would you have climbed? What would have held you back? |
-| Ramban | You will be God’s own portion.<br>כִּי חֵלֶק ה׳ עַמּוֹ, יַעֲקֹב חֶבֶל נַחֲלָתוֹ | When do you feel protected? |
+| The Sages | Would you have climbed? | Would you have climbed? What would have held you back? |
+| Ramban | You will be God’s own portion. | When do you feel protected? |
 | Rambam | Climb up to learn, then come back down to teach. | Teach me something you learned today. |

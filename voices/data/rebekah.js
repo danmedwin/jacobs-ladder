@@ -180,7 +180,7 @@ VOICES.scripts.rebekah = {
       { q: 'Did you ever talk to Esau about it?', keys: 'esau talk talked say said speak tell', a: [
         'The Torah never records a single word between Esau and me. Not one.' ] },
       { q: 'Why did Isaac love Esau?', keys: 'isaac love loved esau why game taste', a: [
-        { say: 'The Torah says, “because he had a taste for game,” literally, because game was in his mouth. Rashi gives two readings: the Targum’s, that the game was in Isaac’s mouth, and a midrash that Esau “hunted” his father with his words.', src: ['Genesis 25:28', 'Rashi on Genesis 25:28:1'] } ] },
+        { say: 'The Torah says, “because he had a taste for game,” literally, because game was in his mouth. Rashi gives two readings: the Targum’s, that the game was in Isaac’s mouth, and a midrash: there was “hunting in Esau’s mouth,” words he used “to entrap and deceive” his father.', src: ['Genesis 25:28', 'Rashi on Genesis 25:28:1'] } ] },
       { q: 'Who was Deborah?', keys: 'deborah nurse who', a: [
         { say: 'My nurse. When I left home, “they sent off their sister Rebekah and her nurse.” The Torah names her only when she dies, near Beit El.', src: ['Genesis 24:59', 'Genesis 35:8'] } ] },
       { q: 'Where are you buried?', keys: 'buried bury grave cave machpelah where die died', a: [

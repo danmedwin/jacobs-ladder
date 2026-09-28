@@ -109,7 +109,7 @@ VOICES.scripts.isaac = {
   ] },
 
   parents: { beats: [
-    { say: 'I’m Isaac. You first met me as a child, bound on an altar by my own father. In this story I am the father: old, blind, and holding a blessing.' },
+    { say: 'I’m Isaac. You may remember me bound on an altar by my own father. In this story I am the father: old, blind, and holding a blessing.' },
     { say: 'Rashi gives three reasons my eyes grew dim. The one people remember: when I lay bound on the altar, the heavens opened, the angels wept, and their tears fell into my eyes.', src: 'Rashi on Genesis 27:1:1' },
     { ask: 'Rashi’s other two reasons: the smoke of my daughters-in-law’s idols, or so that Jacob could receive the blessing. Which explanation speaks to you, and why?', discuss: true,
       tip: 'Pairs first. Then tap to hear Isaac.',
@@ -125,7 +125,7 @@ VOICES.scripts.isaac = {
       tip: 'Let people disagree. Then tap to hear Isaac.',
       reveal: ['Maybe I understood that the blessing had found the son who would carry it. Maybe I simply couldn’t take my own words back. The Torah lets you decide.'] },
     { say: 'Esau cried out, and I asked him the saddest question a father can ask: “What, then, can I still do for you, my son?” Then I blessed him too.', src: ['Genesis 27:37', 'Genesis 27:39–40'] },
-    { say: 'When Jacob left, I called him in and blessed him again, by his own name, with the blessing of Abraham: <span class="he-inline" lang="he" dir="rtl">וְיִתֶּן־לְךָ אֶת־בִּרְכַּת אַבְרָהָם</span> “May you and your offspring be granted the blessing of Abraham.”', src: ['Genesis 28:1', 'Genesis 28:3–4'] },
+    { say: 'When Jacob left, I called him in and blessed him again, by his own name, with the blessing of Abraham: <span class="he-inline" lang="he" dir="rtl">וְיִתֶּן־לְךָ אֶת־בִּרְכַּת אַבְרָהָם לְךָ וּלְזַרְעֲךָ אִתָּךְ</span> “May you and your offspring be granted the blessing of Abraham.”', src: ['Genesis 28:1', 'Genesis 28:3–4'] },
     { ask: 'What blessing did your parents give you, spoken or unspoken? What blessing do you want to give your child before they leave home?', discuss: true,
       tip: 'Pairs only, with no need to share with the room. Then tap to hear Isaac.',
       reveal: ['Later this morning, you’ll have a chance to say it out loud.'] },
@@ -137,7 +137,7 @@ VOICES.scripts.isaac = {
       { q: 'Were you angry at Rebekah?', keys: 'angry rebekah wife anger blame', a: [
         'The Torah never says. It never shows Rebekah and me speaking about the blessing at all.' ] },
       { q: 'Why did you love Esau more?', keys: 'love loved esau more favorite why game', a: [
-        { say: 'The Torah says, “because he had a taste for game,” literally, because game was in my mouth. Rashi also brings a midrash: that Esau “hunted” me with his words.', src: ['Genesis 25:28', 'Rashi on Genesis 25:28:1'] } ] },
+        { say: 'The Torah says, “because he had a taste for game,” literally, because game was in my mouth. Rashi also brings a midrash: there was “hunting in Esau’s mouth,” words he used “to entrap and deceive” me.', src: ['Genesis 25:28', 'Rashi on Genesis 25:28:1'] } ] },
       { q: 'Why were your eyes dim?', keys: 'eyes blind dim see sight why', a: [
         { say: 'Rashi’s three reasons: the smoke of the incense Esau’s wives burned to idols; the angels’ tears at the altar; or so that Jacob could receive the blessing.', src: 'Rashi on Genesis 27:1:1' } ] },
       { q: 'What did you give Esau?', keys: 'esau blessing give gave what', a: [

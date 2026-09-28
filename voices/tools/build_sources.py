@@ -126,8 +126,8 @@ def slice_en(text, start=None, until=None):
 HEB_LEAD = r"^[\u0590-\u05FF\s\"'״׳.,()…]+?\s*"
 CAPS = r"(\[?[A-Z][A-Z0-9\s,;’'\-\[\]()…]*?)"
 RASHI_HEAD = re.compile(HEB_LEAD + CAPS + r"\s*[—–]\s*(.*)$", re.S)             # heading, dash, comment
-RASHI_RUN = re.compile(HEB_LEAD + CAPS + r"(?<=[A-Z\]])\s+(?=[a-z(“])(.*)$", re.S)  # heading runs into the comment
-PROPER = {"god", "jacob", "esau", "laban", "israel", "isaac", "abraham", "haran", "deborah", "beersheba", "rebekah", "i"}
+RASHI_RUN = re.compile(HEB_LEAD + CAPS + r"(?<=[A-Z\]])(,?)\s+(?=[a-z(“])(.*)$", re.S)  # heading runs into the comment
+PROPER = {"god", "jacob", "esau", "laban", "israel", "isaac", "abraham", "haran", "deborah", "beersheba", "rebekah", "i", "eternal", "lord"}
 def heading_case(caps):
     out, first = [], True
     for w in caps.lower().split():
@@ -145,7 +145,7 @@ def rashi_en(en):
         return heading_case(m.group(1)), m.group(2)
     m = RASHI_RUN.match(en)
     if m:
-        return "", heading_case(m.group(1)) + " " + m.group(2)
+        return "", heading_case(m.group(1)) + m.group(2) + " " + m.group(3)
     return "", en
 
 # 3. Verse and commentary cards from the packet
@@ -253,17 +253,20 @@ COMMENTARY = {
         "he_from": "אָמַר רַבִּי שְׁמוּאֵל בַּר נַחְמָן אֵלּוּ שָׂרֵי", "he_until": "וְאִם בֵּין כּוֹכָבִים שִׂים קִנֶּךָ",
         "en_from": "Rabbi Shmuel bar Naḥman said: These are the guardian angels", "en_until": "(Obadiah 1:4).", "credit": "midrash"},
     "Berakhot 26b (Jacob’s prayer)": {
-        "from": "Berakhot 26b", "segments": [5, 6, 7], "label": "Berakhot 26b", "kind": TALMUD, "n": "The patriarchs and the three daily prayers", "credit": "talmud"},
+        "from": "Berakhot 26b", "segments": [4, 5, 6, 7], "label": "Berakhot 26b", "kind": TALMUD, "n": "The patriarchs and the three daily prayers", "credit": "talmud"},
     "Ramban on Genesis 28:12:1": {
         "label": "Ramban on Genesis 28:12", "kind": RAMBAN, "n": "And behold a ladder",
         "he_from": "הֶרְאָהוּ בַּחֲלוֹם הַנְּבוּאָה", "he_until": "לשמרך בכל דרכיך\"",
         "en_from": "In a prophetic dream", "en_until": "to keep thee in all thy ways.",
-        "add": " <i>[Ramban then brings Rabbi Eliezer’s reading: the ladder showed Jacob four empires rising and falling.]</i>", "credit": "ramban"},
+        "add": " <i>[Ramban then brings Rabbi Eliezer’s reading: the ladder showed Jacob four empires rising and falling, and God promised to be with him wherever he went among the nations, to guard him and rescue him from them.]</i>", "credit": "ramban"},
     "Ramban on Genesis 28:17 (Rashi)": {
         "from": "Ramban on Genesis 28:17:1", "label": "Ramban on Genesis 28:17", "kind": RAMBAN, "n": "Ramban reads Rashi, and disagrees",
         "he_from": "וְכָתַב רַשִׁ\"י", "he_until": "והאמצע איננו מורה על דבר יותר מכלו",
         "en_from": "Rashi comments,", "en_until": "beyond that of its whole?",
-        "add": " <i>[He goes on to offer his own reading of the midrashim, and ends: no midrash says, as Rashi did, that Mount Moriah moved.]</i>", "credit": "ramban"},
+        "he_strip": r"\s*\(רש[״\"]י על בראשית[^)]*\)",   # Sefaria's link to the Rashi comment, not part of Ramban's text
+        "add": " <i>[He goes on to offer his own reading of the midrashim, and ends: no midrash says, as Rashi did, that Mount Moriah moved.]</i>"
+               " <i>[On the translation: where Chavel has “Rabbi Elazar the son of Rabbi Yosei the son of Zimra,” the Hebrew reads “Rabbi Elazar in the name of (בְּשֵׁם) Rabbi Yosei ben Zimra.”]</i>",
+        "credit": "ramban"},
     "Ramban on Genesis 28:18:1": {
         "label": "Ramban on Genesis 28:18", "kind": RAMBAN, "n": "And he set it up for a pillar",
         "he_from": "כְּבָר פֵּרְשׁוּ", "en_from": "Our Rabbis have explained", "credit": "ramban"},
@@ -278,6 +281,12 @@ COMMENTARY = {
     "Guide, Introduction": {
         "from": "Guide for the Perplexed, Introduction (Sefaria: Prefatory Remarks 22-23)", "label": "Guide for the Perplexed, Introduction", "kind": GUIDE,
         "n": "Two kinds of prophetic parable", "credit": "guide"},
+    "Rashi on Genesis 28:22:1": {
+        "label": "Rashi on Genesis 28:22", "kind": RASHI,
+        "add": " <i>[The verse goes on: “this stone, which I have set up as a pillar, shall be God’s abode.”]</i>", "credit": "rashi"},
+    "Rashi on Genesis 32:4:1": {
+        "label": "Rashi on Genesis 32:4", "kind": RASHI, "n": "And Jacob sent messengers",
+        "en": "(Heb. מלאכים angels) — actually angels (Genesis Rabbah 75:4).", "credit": "rashi"},
     "Rashi on Genesis 3:8:1": {
         "label": "Rashi on Genesis 3:8", "kind": RASHI, "n": "Rashi on his own method, at Genesis 3:8",
         "he_until": "דָבָר דָּבוּר עַל אׇפְנָיו", "en_until": "in a manner that fits in with them.",
@@ -320,14 +329,43 @@ for ref in refs:
         he, en = e.get("he", ""), e.get("en") or ""
         if meta.get("he_from") or meta.get("he_until"): he = slice_he(he, meta.get("he_from"), meta.get("he_until"))
         if meta.get("en_from") or meta.get("en_until"): en = slice_en(en, meta.get("en_from"), meta.get("en_until"))
+        if meta.get("he_strip"): he = re.sub(meta["he_strip"], "", he)
     n = meta.get("n", "")
     if ref.startswith("Rashi on") and not meta.get("parts"):
         head, en = rashi_en(en)
         n = n or head
     en = meta.get("en") or norm_en(en.replace("\n", " ").replace("return journey I learnt", "return journey. I learnt"))
+    if ref.startswith("Rashi on"):
+        en = re.sub(r",\s*$", "…", en)   # a comment that ends mid-sentence continues in the next one
     cards[ref] = {"label": meta["label"], "title": meta["label"], "kind": meta["kind"],
                   "verses": [{"n": n, "he": norm_he(he), "en": en + meta.get("add", "")}],
                   "credit": meta["credit"]}
+
+# Some cards share a chip label: two comments on one verse, or two passages on one page. Those chips get a short tag,
+# from TAGS or from the reference's own parenthesis, so a teacher can tell them apart.
+TAGS = {
+    "Rashi on Genesis 25:22:1": "the struggle", "Rashi on Genesis 25:22 (why do I exist)": "why do I exist",
+    "Rashi on Genesis 27:33:1": "the trembling", "Rashi on Genesis 27:33:4": "the blessing stands",
+    "Rashi on Genesis 28:11:1": "the place", "Rashi on Genesis 28:11:2": "prayer", "Rashi on Genesis 28:11:3": "the sunset",
+    "Rashi on Genesis 28:11:4": "the stones", "Rashi on Genesis 28:11:5": "fourteen years",
+    "Rashi on Genesis 28:13:2": "the God of Isaac", "Rashi on Genesis 28:13:3": "the folded land",
+    "Rashi on Genesis 28:17:1": "the house of God", "Rashi on Genesis 28:17:3": "the gate of heaven",
+    "Rashi on Genesis 35:8": "the oak", "Rashi on Genesis 35:8:1": "Deborah",
+    "Kitzur Baal HaTurim on Genesis 28:12:3": "ladder and voice", "Kitzur Baal HaTurim on Genesis 28:12:6": "ladder and Sinai",
+}
+shared, untagged = {}, []
+for ref, c in cards.items():
+    shared.setdefault(c["label"], []).append(ref)
+for label, group in shared.items():
+    if len(group) < 2:
+        continue
+    for ref in group:
+        paren = re.search(r"\(([^)]+)\)$", ref)
+        tag = TAGS.get(ref) or (paren and paren.group(1))
+        if tag:
+            cards[ref]["label"] = label + " · " + tag
+        else:
+            untagged.append(ref)
 
 out = ["/* Source cards for Voices of the Ladder. Generated by voices/tools/build_sources.py from Sefaria texts; edit the generator or tools/texts.json, not this file. */",
        "window.VOICES = window.VOICES || { characters: {}, scripts: {}, sources: {}, credits: {} };",
@@ -337,3 +375,4 @@ open(os.path.join(REPO, "voices", "data", "sources.js"), "w", encoding="utf-8").
 print("refs used:", len(refs))
 print("cards written:", len(cards))
 print("missing:", missing)
+print("shared labels without a tag:", untagged)

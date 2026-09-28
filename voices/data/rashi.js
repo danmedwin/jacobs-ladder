@@ -90,7 +90,7 @@ VOICES.scripts.rashi = {
       { q: 'What did Jacob mean by “I did not know it”?', keys: 'know knew surely god present place did not', a: [
         { say: 'I hear: had I known, I would not have slept in such a holy place.', src: ['Genesis 28:16', 'Rashi on Genesis 28:16:1'] } ] },
       { q: 'Where did your answers come from?', keys: 'sources where answers learn learned books from midrash talmud use study studied teachers', a: [
-        'Mostly from the Talmud and the midrash, often word for word. Many of my notes say where the idea comes from, so you can check me.' ] },
+        'Mostly from the Talmud and the midrash, often word for word. Some of my notes say where the idea comes from, so you can check me.' ] },
       { q: 'Did you have children?', keys: 'children kids family daughters grandsons', a: [
         'Three daughters. Two of my grandsons became great teachers themselves: Rashbam, who read the Torah even more plainly than I did, and Rabbeinu Tam.' ] }
     ] },
@@ -108,9 +108,9 @@ VOICES.scripts.rashi = {
     { say: 'I also did the arithmetic. Working from the verses, Jacob was sixty-three when he left home, and he spent fourteen years studying in the school of Eber before he reached Laban.', src: 'Rashi on Genesis 28:9:1' },
     { ask: 'Does it change how you read Jacob, to picture a man of sixty-three running from his brother?', discuss: true,
       tip: 'Take a few reactions. Then tap to hear Rashi.',
-      reveal: [{ say: 'For me it makes his fear more striking, and his faith too. At that age he still needed to hear God say, “I am with you.”', src: 'Genesis 28:15' }] },
-    { say: 'On Jacob’s vow, I read the whole “if” as a request that God keep promises already made, down to “then the Eternal shall be my God.” Ramban disagreed: “This is not a condition, as Rashi would have it. It is rather a vow.”', src: ['Genesis 28:20–22', 'Rashi on Genesis 28:20:1', 'Rashi on Genesis 28:21:3', 'Ramban on Genesis 28:21:1'] },
-    { say: 'He also rejected my reading that Mount Moriah itself came to meet Jacob at Beit El: “I do not agree with them at all.” A reader I never met, arguing with me by name. That is how Torah stays alive.', src: ['Rashi on Genesis 28:17:1', 'Ramban on Genesis 28:17 (Rashi)'] },
+      reveal: [{ say: 'For me it makes his fear more striking, and his faith too. And by my count, after those fourteen years of study, he was seventy-seven when he lay down at Beit El. Even then, he needed to hear God say, “I am with you.”', src: ['Rashi on Genesis 28:11:5', 'Genesis 28:15'] }] },
+    { say: 'On Jacob’s vow, I read everything through “the Eternal shall be my God” as the “if”: a request that God keep promises already made. The “then” comes with the stone: “if He will do these things… then I, also, will do this.”', src: ['Genesis 28:20–22', 'Rashi on Genesis 28:20:1', 'Rashi on Genesis 28:21:3', 'Rashi on Genesis 28:22:1'] },
+    { say: 'Ramban disagreed: “This is not a condition, as Rashi would have it. It is rather a vow.” He also rejected my reading that Mount Moriah itself came to meet Jacob at Beit El: “I do not agree with them at all.” A reader I never met, arguing with me by name. That is how Torah stays alive.', src: ['Ramban on Genesis 28:21:1', 'Rashi on Genesis 28:17:1', 'Ramban on Genesis 28:17 (Rashi)'] },
     { say: 'And sometimes I simply didn’t know. When Jacob leaves, the Torah calls Rebekah <span class="he-inline" lang="he" dir="rtl">אֵם יַעֲקֹב וְעֵשָׂו</span> “mother of Jacob and Esau.” I wrote, “I do not know what the addition of these words is intended to tell us.”', src: ['Genesis 28:5', 'Rashi on Genesis 28:5:1'] },
     { ask: 'What do you think those words teach? And what does it take for a teacher to write “I do not know”?', discuss: true,
       tip: 'Take a few answers. Then tap to hear Rashi.',

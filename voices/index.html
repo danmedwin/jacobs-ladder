@@ -208,7 +208,9 @@
     background: rgba(27, 24, 18, 0.06); border: 1px solid rgba(27, 24, 18, 0.18); border-radius: 99px; padding: 0.42em 0.72em;
   }
   .src:hover { background: rgba(27, 24, 18, 0.12); }
-  .src svg { width: 12px; height: 12px; stroke: currentColor; }
+  .src svg { flex: none; width: 12px; height: 12px; stroke: currentColor; }
+  .src > span { text-align: left; line-height: 1.25; }
+  .src .tag { white-space: nowrap; color: var(--ink-3); }
   .b-group { align-self: flex-end; max-width: min(34em, 88%); text-align: right; }
   .b-group .label { font: 600 0.68rem/1 var(--ui); letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); margin-bottom: 6px; }
   .b-group .bubble { display: inline-block; text-align: left; background: rgba(11, 13, 25, 0.45); color: var(--parchment); border: 1.5px solid var(--accent); border-radius: 20px 20px 6px 20px; box-shadow: none; }
@@ -1009,7 +1011,10 @@
   function sheetOpen() { return !!sheetNode; }
   function srcLabel(ref) { var s = V.sources[ref]; return (s && s.label) || ref; }
   function srcChip(ref) {
-    return el('button', { class: 'src', type: 'button', onclick: function (e) { e.stopPropagation(); openSheet(ref); } }, icon('book', '0 0 24 24'), srcLabel(ref));
+    // A tagged label ("Rashi on Genesis 28:11 · the place") keeps its tag on one line when the chip wraps.
+    var label = srcLabel(ref), cut = label.indexOf(' · ');
+    var text = cut < 0 ? label : [label.slice(0, cut) + ' ', el('span', { class: 'tag', text: '· ' + label.slice(cut + 3) })];
+    return el('button', { class: 'src', type: 'button', onclick: function (e) { e.stopPropagation(); openSheet(ref); } }, icon('book', '0 0 24 24'), el('span', {}, text));
   }
   function openSheet(ref) {
     closeSheet();

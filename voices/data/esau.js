@@ -127,19 +127,19 @@ VOICES.scripts.esau = {
     { prompt: 'Ask me anything about that week, or the twenty years after. Choose a question, or type your own.', typing: true, questions: [
       { q: 'Did you forgive Jacob?', keys: 'forgive forgave forgiveness sorry angry still mad make up', a: [
         { say: 'The Torah never says I forgave him. But when he pushed his gifts on me, I said, “I have enough, my brother; let what you have remain yours.”', src: 'Genesis 33:9' },
-        { say: 'He answered, “to see your face is like seeing the face of God.” What do you think happened between us?', src: 'Genesis 33:10' } ] },
+        { say: 'He answered, “to see your face is like seeing the face of God.” He kept urging, and in the end I accepted. What do you think happened between us?', src: ['Genesis 33:10', 'Genesis 33:11'] } ] },
       { q: 'What blessing did your father give you?', keys: 'blessing father isaac give gave you your say said tell told', a: [
         { say: '“See, your abode shall enjoy the fat of the earth And the dew of heaven above. Yet by your sword you shall live, And you shall serve your brother; But when you grow restive, You shall break his yoke from your neck.”', src: 'Genesis 27:39–40' } ] },
       { q: 'Why is your other name Edom?', keys: 'edom red name called nickname', a: [
         { say: 'Edom sounds like <i>adom</i>, red. I was born red, and I asked for “that red stuff,” which is why I was named Edom.', src: ['Genesis 25:25', 'Genesis 25:30'] } ] },
       { q: 'Were you a bad person?', keys: 'bad evil villain wicked good person mean', a: [
-        'The Torah never calls me wicked. I lost a birthright and a blessing, I was furious, and in the end I ran to hug my brother.',
-        'Many later stories about me are much harsher. The Torah’s own story ends with a hug.' ] },
+        'The Torah never calls me wicked. I lost a birthright and a blessing, and I was furious.',
+        'Many later stories about me are much harsher. But in the Torah’s own story, I’m the one who runs to hug my brother.' ] },
       { q: 'Why did you bring four hundred men?', keys: 'four hundred 400 men army soldiers why bring', a: [
         { say: 'The Torah doesn’t say. Jacob assumed the worst and split his camp in two. Then I ran to hug him, and I went home to Seir that same day.', src: ['Genesis 32:7–8', 'Genesis 33:16'] } ] },
       { q: 'Did you want the birthright back?', keys: 'birthright back want regret sold stew', a: [
         { say: 'By the time I understood what it meant, it was gone. That’s why I said he took it from me “these two times.”', src: 'Genesis 27:36' } ] },
-      { q: 'Did you ever see your father again?', keys: 'father isaac again die died bury buried', a: [
+      { q: 'Did you and Jacob meet again?', keys: 'meet again see saw jacob brother later father isaac die died bury buried', a: [
         { say: 'Yes. When our father died, the Torah says, “he was buried by his sons Esau and Jacob.”', src: 'Genesis 35:29' } ] }
     ] },
     { rung: true },
@@ -158,7 +158,7 @@ VOICES.scripts.esau = {
         { say: 'In our family there was. The blessing of Abraham went to one son.', src: 'Genesis 28:4' },
         'Under my question was another one, and I think every child asks it: Was there enough of you for me?' ] },
     { say: 'I said to myself, “Let but the mourning period of my father come, and I will kill my brother Jacob.” My mother heard of it, and Jacob fled.', src: ['Genesis 27:41', 'Genesis 27:42–45'] },
-    { say: 'When I saw that my Canaanite wives displeased my father, I married Mahalath, Ishmael’s daughter: a cousin, the child of Abraham’s other son. The Torah sets that in the middle of Jacob’s journey, between his leaving and his dream.', src: 'Genesis 28:6–9' },
+    { say: 'When I saw that my Canaanite wives displeased my father, I married Mahalath, Ishmael’s daughter: a cousin, the child of Abraham’s elder son. The Torah sets that in the middle of Jacob’s journey, between his leaving and his dream.', src: 'Genesis 28:6–9' },
     { say: 'Twenty years later, Jacob sent word ahead, calling me “my lord” and himself “your servant.” I came with four hundred men. He bowed to the ground seven times.', src: ['Genesis 32:4–7', 'Genesis 33:3'] },
     { say: '“Esau ran to greet him. He embraced him and, falling on his neck, he kissed him; and they wept.” When he pressed his gifts on me, I said, <span class="he-inline" lang="he" dir="rtl">יֶשׁ־לִי רָב אָחִי</span> “I have enough, my brother; let what you have remain yours.”', src: ['Genesis 33:4', 'Genesis 33:9'] },
     { say: 'Now something you may not know. The Rabbis lived under Rome, the empire that destroyed the Temple, and they began to call Rome by my other name, Edom. Rashi says it outright about one of my descendants: “Magdiel: this is Rome.”', src: 'Rashi on Genesis 36:43:1' },
@@ -170,17 +170,17 @@ VOICES.scripts.esau = {
         { say: 'And the Torah itself says, <span class="he-inline" lang="he" dir="rtl">לֹא־תְתַעֵב אֲדֹמִי כִּי אָחִיךָ הוּא</span> “You shall not abhor an Edomite, for they are your kin.”', src: 'Deuteronomy 23:8' } ] },
     { prompt: 'Ask Esau anything. Choose a question, or type your own.', typing: true, questions: [
       { q: 'Did you forgive Jacob?', keys: 'forgive forgave forgiveness reconcile reconciliation sorry angry', a: [
-        { say: 'The Torah never says I forgave him. It says I ran, embraced him, kissed him, and wept, and that I refused his gifts: “I have enough, my brother.”', src: ['Genesis 33:4', 'Genesis 33:9'] },
-        { say: 'Jacob answered, “to see your face is like seeing the face of God.” When he fled from me, he met God at Beit El. Twenty years later, he said he saw God in my face.', src: 'Genesis 33:10' } ] },
+        { say: 'The Torah never says I forgave him. It says I ran, embraced him, kissed him, and wept. At first I refused his gifts: “I have enough, my brother.”', src: ['Genesis 33:4', 'Genesis 33:9'] },
+        { say: 'Jacob answered, “to see your face is like seeing the face of God.” He urged me, and I accepted. When he fled from me, he met God at Beit El. Twenty years later, he said he saw God in my face.', src: ['Genesis 33:10', 'Genesis 33:11'] } ] },
       { q: 'What blessing did your father give you?', keys: 'blessing father isaac give gave you your say said tell told', a: [
         { say: '“See, your abode shall enjoy the fat of the earth And the dew of heaven above. Yet by your sword you shall live, And you shall serve your brother; But when you grow restive, You shall break his yoke from your neck.”', src: 'Genesis 27:39–40' } ] },
       { q: 'Why do the Rabbis call you wicked?', keys: 'wicked evil villain rabbis midrash bad rome rashi esau edom', a: [
-        { say: 'Mostly because I came to stand for Rome. Rashi even reads my father’s love that way: the midrash says I “hunted” him with my words, to deceive him.', src: ['Rashi on Genesis 36:43:1', 'Rashi on Genesis 25:28:1'] },
+        { say: 'Partly because I came to stand for Rome. Partly because of what the Torah does say: “Thus did Esau spurn the birthright.” Rashi even reads my father’s love against me: in the midrash, there was “hunting in Esau’s mouth,” words I used “to entrap and deceive” him.', src: ['Rashi on Genesis 36:43:1', 'Genesis 25:34', 'Rashi on Genesis 25:28:1'] },
         'The Torah itself never calls me wicked.' ] },
       { q: 'Why did you sell your birthright?', keys: 'birthright sell sold stew lentil why first-born firstborn', a: [
         { say: '“I am at the point of death, so of what use is my birthright to me?” I was starving, and tomorrow felt very far away. The Torah’s verdict is short: “Thus did Esau spurn the birthright.”', src: ['Genesis 25:32', 'Genesis 25:34'] } ] },
       { q: 'Who wrestled with Jacob?', keys: 'wrestle wrestled wrestling angel night man', a: [
-        { say: 'The Torah says only “a man.” Rashi says the Rabbis identified him as my guardian angel. Even on the night before our meeting, the tradition put me in the ring.', src: ['Genesis 32:25–29', 'Rashi on Genesis 32:25:2'] } ] },
+        { say: 'The Hebrew says only <i>ish</i>, “a man.” Rashi says the Rabbis identified him as my guardian angel. Even on the night before our meeting, the tradition put me in the ring.', src: ['Genesis 32:25–29', 'Rashi on Genesis 32:25:2'] } ] },
       { q: 'Why did you bring four hundred men?', keys: 'four hundred 400 men army why bring', a: [
         { say: 'The Torah doesn’t say. Jacob assumed the worst and split his camp in two. After we met, I went home to Seir that same day.', src: ['Genesis 32:7–8', 'Genesis 33:16'] } ] },
       { q: 'Did you and Jacob meet again?', keys: 'meet again later father death bury buried', a: [

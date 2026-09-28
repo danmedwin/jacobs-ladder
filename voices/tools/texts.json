@@ -4507,5 +4507,34 @@
   "notes": [
    "Added for the 5–7 and parents scripts."
   ]
+ },
+ "Numbers 20:14": {
+  "sefaria_ref": "Numbers 20:14",
+  "he": "וַיִּשְׁלַ֨ח מֹשֶׁ֧ה מַלְאָכִ֛ים מִקָּדֵ֖שׁ אֶל־מֶ֣לֶךְ אֱד֑וֹם כֹּ֤ה אָמַר֙ אָחִ֣יךָ יִשְׂרָאֵ֔ל אַתָּ֣ה יָדַ֔עְתָּ אֵ֥ת כׇּל־הַתְּלָאָ֖ה אֲשֶׁ֥ר מְצָאָֽתְנוּ׃",
+  "en": "From Kadesh, Moses sent messengers to the king of Edom: “Thus says your brother Israel: You know all the hardships that have befallen us; ",
+  "he_version": "Miqra according to the Masorah",
+  "en_version": "THE JPS TANAKH: Gender-Sensitive Edition [Revised JPS, 2023]",
+  "license": {
+   "he": "CC-BY-SA",
+   "en": "CC-BY-NC"
+  },
+  "notes": [
+   "Added after the second source check: Moses' messengers (malachim) to the king of Edom, an unambiguous human use of the word. Raw markup kept; the card builder strips footnotes and cantillation."
+  ]
+ },
+ "Rashi on Genesis 32:4:1": {
+  "sefaria_ref": "Rashi on Genesis 32:4:1",
+  "he": "<b>וישלח יעקב מלאכים.</b> מַלְאָכִים מַמָּשׁ (בראשית רבה):",
+  "en": "וישלח יעקב מלאכים AND JACOB SENT MESSENGERS (Heb. מלאכים angels) — actually angels (Genesis Rabbah 75:4).",
+  "he_version": "Pentateuch with Rashi's commentary by M. Rosenbaum and A.M. Silbermann, 1929-1934",
+  "en_version": "Pentateuch with Rashi's commentary by M. Rosenbaum and A.M. Silbermann, 1929-1934",
+  "license": {
+   "he": "Public Domain",
+   "en": "Public Domain"
+  },
+  "notes": [
+   "Added after the second source check: Rashi reads Jacob's malachim as actual angels.",
+   "Parenthetical source citations and bracketed/parenthetical glosses in the English are the Rosenbaum–Silbermann translators' additions, not Rashi's words."
+  ]
  }
 }

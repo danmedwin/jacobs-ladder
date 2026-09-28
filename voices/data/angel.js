@@ -84,7 +84,7 @@ VOICES.scripts.angel = {
   ] },
 
   g57: { beats: [
-    { say: 'I’m a <i>malach</i>. The word means “messenger,” and the Torah uses it for human messengers too. When Jacob sends messengers to Esau, the Hebrew calls them <i>malachim</i>.', src: 'Genesis 32:4' },
+    { say: 'I’m a <i>malach</i>. The word means “messenger,” and the Torah uses it for human messengers too. When Moses sends messengers to the king of Edom, the Hebrew calls them <i>malachim</i>.', src: 'Numbers 20:14' },
     { say: 'In Jacob’s dream, “a stairway was set on the ground and its top reached to the sky, and angels of God were going up and down on it.” That was us.', src: 'Genesis 28:12' },
     { picture: { style: 'blown-glass' } },
     { say: 'What were we doing? There are at least three answers, and each comes from a different teacher.' },
@@ -106,7 +106,7 @@ VOICES.scripts.angel = {
         { gallery: ['manuscript', 'tapestry', 'classical', 'modernist-dream'], caption: 'Four artists, four answers.' } ] },
       { q: 'Do angels have free will?', keys: 'free will choose choice decide obey orders', a: [
         { say: 'Ramban says we do nothing, great or small, without orders from above.', src: 'Ramban on Genesis 28:12:1' },
-        { say: 'But the Talmud’s jealous angels seem to have minds of their own. You decide.', src: 'Chullin 91b (the fan)' } ] },
+        { say: 'But in the Talmud, some angels wanted to endanger Jacob, and Rashi says they were jealous. That sounds like minds of their own. You decide.', src: ['Chullin 91b (the fan)', 'Rashi on Chullin 91b'] } ] },
       { q: 'Are angels real?', keys: 'real exist believe true', a: [
         { say: 'Rambam said the angels in this dream stand for prophets: people who climb up to understand and then come down to teach. Visit him to hear more.', src: 'Guide 1:15' } ] },
       { q: 'How big was the ladder?', keys: 'big wide size tall ladder huge', a: [
@@ -114,7 +114,7 @@ VOICES.scripts.angel = {
       { q: 'Why did the angels go up first?', keys: 'up first down order why', a: [
         { say: 'Rashi’s answer: the angels of the Land of Israel went up, and new ones came down. The midrash has another: we went up first to see his image.', src: ['Rashi on Genesis 28:12:1', 'Bereshit Rabbah 68:12 (on Jacob)'] } ] },
       { q: 'Who wrestled with Jacob?', keys: 'wrestle wrestled wrestling fight man angel night', a: [
-        { say: 'The Torah says “a man.” Rashi says the Rabbis identified him as Esau’s guardian angel.', src: ['Genesis 32:25–29', 'Rashi on Genesis 32:25:2'] } ] },
+        { say: 'The Hebrew says only <i>ish</i>, “a man.” Rashi says the Rabbis identified him as Esau’s guardian angel.', src: ['Genesis 32:25–29', 'Rashi on Genesis 32:25:2'] } ] },
       { q: 'Do angels watch over us?', keys: 'watch protect guardian bedtime night sleep', a: [
         { say: 'Many families say a bedtime prayer asking for four of us: Michael on your right, Gabriel on your left, Uriel in front of you, Raphael behind you, and above your head, God’s presence.', src: 'bedtime' } ] }
     ] },
@@ -123,7 +123,7 @@ VOICES.scripts.angel = {
   ] },
 
   parents: { beats: [
-    { say: 'I’m a <i>malach</i>, a messenger. The Torah uses the same word when Jacob sends messengers to Esau. Angel or human, a malach is defined by the errand.', src: 'Genesis 32:4' },
+    { say: 'I’m a <i>malach</i>, a messenger. The Torah uses the same word for people: Moses sends <i>malachim</i> to the king of Edom. When Jacob sends <i>malachim</i> to Esau, Rashi says they were actual angels. Angel or human, a malach is defined by the errand.', src: ['Numbers 20:14', 'Genesis 32:4', 'Rashi on Genesis 32:4:1'] },
     { say: 'The verse about us ends with a small word: <span class="he-inline" lang="he" dir="rtl">וְהִנֵּה מַלְאֲכֵי אֱלֹהִים עֹלִים וְיֹרְדִים בּוֹ</span> The angels go up and down <i>bo</i>: “on it,” or “on him.”', src: 'Genesis 28:12' },
     { picture: { style: 'embroidery' } },
     { say: 'Rabbi Chiya and Rabbi Yannai split on it. One read “on the ladder.” The other read “on Jacob.” The midrash doesn’t say which rabbi held which view.', src: 'Bereshit Rabbah 68:12 (on Jacob)' },
@@ -149,11 +149,11 @@ VOICES.scripts.angel = {
       { q: 'What does ikonin mean?', keys: 'ikonin icon image likeness greek word', a: [
         { say: 'It’s the Greek <i>eikon</i>, an image or portrait, borrowed into the Rabbis’ Hebrew: Jacob’s likeness, engraved on high.', src: 'Bereshit Rabbah 68:12 (on Jacob)' } ] },
       { q: 'Do angels have wills of their own?', keys: 'free will choose independent orders obey jealous', a: [
-        { say: 'Ramban says we do nothing, great or small, without orders. The Talmud’s jealous angels suggest otherwise.', src: ['Ramban on Genesis 28:12:1', 'Chullin 91b (the fan)'] } ] },
+        { say: 'Ramban says we do nothing, great or small, without orders. But the Talmud’s angels wanted to endanger Jacob, and Rashi calls it jealousy. That suggests wills of their own.', src: ['Ramban on Genesis 28:12:1', 'Chullin 91b (the fan)', 'Rashi on Chullin 91b'] } ] },
       { q: 'Who wrestled with Jacob?', keys: 'wrestle wrestled wrestling fight man angel night', a: [
-        { say: 'The Torah says “a man.” Rashi says the Rabbis identified him as Esau’s guardian angel.', src: ['Genesis 32:25–29', 'Rashi on Genesis 32:25:2'] } ] },
+        { say: 'The Hebrew says only <i>ish</i>, “a man.” Rashi says the Rabbis identified him as Esau’s guardian angel.', src: ['Genesis 32:25–29', 'Rashi on Genesis 32:25:2'] } ] },
       { q: 'What does Mahanaim mean?', keys: 'mahanaim camp camps name place', a: [
-        { say: 'Jacob said, “This is God’s camp,” and named the place Mahanaim. The name comes from <i>machaneh</i>, “camp,” and its form suggests two camps. The next day, afraid of Esau, Jacob split his own people into two camps.', src: ['Genesis 32:2–3', 'Genesis 32:8'] } ] },
+        { say: 'Jacob said, “This is God’s camp,” and named the place Mahanaim. The name comes from <i>machaneh</i>, “camp,” and its form suggests two camps. Soon after, afraid of Esau, Jacob split his own people into two camps.', src: ['Genesis 32:2–3', 'Genesis 32:8'] } ] },
       { q: 'Where are angels in our prayers?', keys: 'prayer pray siddur liturgy kedushah bedtime', a: [
         'In the Kedushah, the congregation repeats the angels’ words from Isaiah: “Holy, holy, holy.”',
         { say: 'And at bedtime, many families ask for four angels to surround them.', src: 'bedtime' } ] },
