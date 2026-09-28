@@ -6,7 +6,7 @@ Small gray references are the source cards a teacher can open during the visit. 
 
 ## Grades K–2
 
-*Four or five students. Short lines, pictures, and moving around. The teacher reads aloud.*
+*Short lines, pictures, and moving around. The teacher reads aloud.*
 
 1. Hi! I’m Jacob. I had the most amazing dream. Do you want to hear about it?
 2. First, I had to leave home. My brother Esau was very, very angry with me. <sub>Genesis 27:41</sub>
@@ -41,7 +41,7 @@ Small gray references are the source cards a teacher can open during the visit. 
 
 ## Grades 3–4
 
-*About seven students. Short lines, choices, and puzzles. Students read along.*
+*Short lines, choices, and puzzles. Students read along.*
 
 1. Shalom! I’m Jacob. You’ve probably heard about my dream. But do you know why I was sleeping outside on a rock?
 2. I had tricked my father, Isaac, into giving me the blessing he meant for my twin brother, Esau. Esau was furious. <sub>Genesis 27:30–41</sub>
@@ -87,7 +87,7 @@ Small gray references are the source cards a teacher can open during the visit. 
 
 ## Grades 5–7
 
-*About twelve students. The fuller story, the sources, debate, and typed questions.*
+*The fuller story, the sources, debate, and typed questions.*
 
 1. I’m Jacob, Ya’akov in Hebrew. Let me tell you about the worst night of my life. It turned out to be one of the best.
 2. Some background. My twin brother Esau was born first, so the birthright should have been his. One day he came in from the field starving, and I sold him a bowl of stew in exchange for it. <sub>Genesis 25:29–34</sub>
@@ -127,7 +127,7 @@ Small gray references are the source cards a teacher can open during the visit. 
 
 ## Parents
 
-*The adult session. Adult depth, with the Hebrew and the commentators.*
+*Adult depth, with the Hebrew and the commentators.*
 
 1. I’m Jacob. You’re parents, so let me start with mine.
 2. The Torah says it plainly: Isaac loved Esau, and Rebekah loved me. <sub>Genesis 25:28</sub>

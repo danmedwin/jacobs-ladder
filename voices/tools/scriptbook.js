@@ -16,7 +16,7 @@ const reply = (x, who) => typeof x === 'string' ? md(x)
 
 function level(id, lv) {
   const c = V.characters[id], L = V.levels[lv], beats = V.scripts[id][lv].beats, out = [];
-  out.push(`## ${L.label}`, '', `*${L.group}. ${L.how}*`, '');
+  out.push(`## ${L.label}`, '', `*${L.how}*`, '');
   let n = 0;
   for (const b of beats) {
     n++;

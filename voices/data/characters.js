@@ -5,25 +5,21 @@ window.VOICES = window.VOICES || { characters: {}, scripts: {}, sources: {}, cre
 VOICES.levels = {
   k2: {
     label: 'Grades K–2', short: 'K–2',
-    group: 'Four or five students',
     how: 'Short lines, pictures, and moving around. The teacher reads aloud.',
     extraLabel: 'The motion'
   },
   g34: {
     label: 'Grades 3–4', short: '3–4',
-    group: 'About seven students',
     how: 'Short lines, choices, and puzzles. Students read along.',
     extraLabel: 'The secret'
   },
   g57: {
     label: 'Grades 5–7', short: '5–7',
-    group: 'About twelve students',
     how: 'The fuller story, the sources, debate, and typed questions.',
     extraLabel: 'Ask your parents'
   },
   parents: {
     label: 'Parents', short: 'Parents',
-    group: 'The adult session',
     how: 'Adult depth, with the Hebrew and the commentators.',
     extraLabel: 'Ask your child'
   }
