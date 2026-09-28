@@ -1,5 +1,6 @@
 /* Voices of the Ladder: the cast, the four versions, and each character's rung.
-   Scripts live in one file per character (jacob.js, ...). Source cards live in sources.js. */
+   Scripts live in one file per character (jacob.js, ...). Source cards live in sources.js.
+   ref is how a name reads inside a sentence ("the angel"); plural marks a name that takes a plural verb. */
 window.VOICES = window.VOICES || { characters: {}, scripts: {}, sources: {}, credits: {} };
 
 VOICES.levels = {
@@ -35,16 +36,26 @@ VOICES.cast = {
 /* Everyone, for the opening screen. */
 VOICES.everyone = ['jacob', 'esau', 'rebekah', 'isaac', 'angel', 'stone', 'rashi', 'sages', 'ramban', 'rambam'];
 
-/* Titles of the Jacob's Dream gallery styles used in the visits. */
+/* Titles of the Jacob's Dream gallery styles, in gallery order. */
 VOICES.styles = {
-  'claymation': 'Claymation',
-  'papercut': 'Jewish Papercut',
-  'woodcut': 'Expressionist Woodcut',
   'manuscript': 'Illuminated Manuscript',
   'stained-glass': 'Stained Glass',
+  'hieroglyphics': 'Hieroglyphics',
+  '3d-animated': '3D Animated',
+  'classical': 'Classical Painting',
   'origami': 'Origami',
+  'junk-sculpture': 'Junk Sculpture',
+  'blown-glass': 'Blown Glass',
+  'holographic': 'Holographic',
+  'mosaic': 'Synagogue Mosaic',
+  'papercut': 'Jewish Papercut',
+  'embroidery': 'Goldwork Embroidery',
+  'woodcut': 'Expressionist Woodcut',
+  'tapestry': 'Woven Tapestry',
+  'persian-miniature': 'Persian Miniature',
+  'modernist-dream': 'Modernist Dream',
   'pixel-art': 'Pixel Art',
-  'persian-miniature': 'Persian Miniature'
+  'claymation': 'Claymation'
 };
 
 VOICES.characters.jacob = {
@@ -76,7 +87,7 @@ VOICES.characters.esau = {
   role: { all: 'Jacob’s twin brother' },
   tease: {
     k2: 'My brother tricked me!',
-    g34: 'I never saw any ladder. I was home, crying.',
+    g34: 'I never saw any ladder. I was busy crying over a lost blessing.',
     g57: 'Everyone knows Jacob’s dream. Nobody asks about my week.',
     parents: 'A son who wept for a blessing, and a brother who ran to embrace.'
   },
@@ -106,7 +117,7 @@ VOICES.characters.rebekah = {
     k2: { line: 'I sent you away because I love you.',
           extra: 'Give yourself a hug. Then wave goodbye.' },
     g34: { line: 'Sometimes loving someone means letting them go.',
-           extra: 'I told Jacob to stay away “a few days.” It became twenty years.' },
+           extra: 'In Hebrew, I told Jacob to stay away “a few days.” It became twenty years.' },
     g57: { line: 'I sent him away to keep him safe.',
            extra: 'What’s the hardest thing you’ve ever done because you love someone?' },
     parents: { line: 'I said “a few days.” It became twenty years.',
@@ -134,7 +145,7 @@ VOICES.characters.isaac = {
 };
 
 VOICES.characters.angel = {
-  name: 'An angel', he: 'מַלְאָךְ',
+  name: 'An angel', ref: 'the angel', he: 'מַלְאָךְ',
   color: { room: '#0c1836', room2: '#22407e', accent: '#f6dc8b' },
   role: { all: 'On the ladder' },
   tease: {
@@ -156,7 +167,7 @@ VOICES.characters.angel = {
 };
 
 VOICES.characters.stone = {
-  name: 'The stone', he: 'הָאֶבֶן',
+  name: 'The stone', ref: 'the stone', he: 'הָאֶבֶן',
   color: { room: '#212429', room2: '#3d424b', accent: '#cdc4b0' },
   role: { all: 'Jacob’s pillow' },
   tease: { k2: 'I was Jacob’s pillow!' },
@@ -186,7 +197,7 @@ VOICES.characters.rashi = {
 };
 
 VOICES.characters.sages = {
-  name: 'The Sages', he: 'חֲכָמֵי הַמִּדְרָשׁ',
+  name: 'The Sages', ref: 'the Sages', plural: true, he: 'חֲכָמֵי הַמִּדְרָשׁ',
   color: { room: '#1d1830', room2: '#3a2f5c', accent: '#cbb6f2' },
   role: { g34: 'Rabbis who loved to argue', g57: 'The Midrash · about 1,500 years ago', parents: 'B’reishit Rabbah and Vayikra Rabbah' },
   tease: {

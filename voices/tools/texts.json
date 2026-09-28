@@ -3463,5 +3463,735 @@
   "he_version": "Rashi on Genesis (Sefaria merged Hebrew)",
   "en_version": "Pentateuch with Rashi's commentary by M. Rosenbaum and A.M. Silbermann, 1929-1934",
   "license": "Public Domain"
+ },
+ "Genesis 24:10": {
+  "he": "וַיִּקַּ֣ח הָ֠עֶ֠בֶד עֲשָׂרָ֨ה גְמַלִּ֜ים מִגְּמַלֵּ֤י אֲדֹנָיו֙ וַיֵּ֔לֶךְ וְכׇל־ט֥וּב אֲדֹנָ֖יו בְּיָד֑וֹ וַיָּ֗קׇם וַיֵּ֛לֶךְ אֶל־אֲרַ֥ם נַֽהֲרַ֖יִם אֶל־עִ֥יר נָחֽוֹר׃",
+  "en": "Then the servant took ten of his master’s camels and set out, taking with him all the bounty of his master; and he made his way to Aram-naharaim, to the city of Nahor. ",
+  "he_version": "Miqra according to the Masorah",
+  "en_version": "THE JPS TANAKH: Gender-Sensitive Edition",
+  "license": {
+   "he": "CC-BY-SA",
+   "en": "CC-BY-NC"
+  }
+ },
+ "Genesis 24:11": {
+  "he": "וַיַּבְרֵ֧ךְ הַגְּמַלִּ֛ים מִח֥וּץ לָעִ֖יר אֶל־בְּאֵ֣ר הַמָּ֑יִם לְעֵ֣ת עֶ֔רֶב לְעֵ֖ת צֵ֥את הַשֹּׁאֲבֹֽת׃",
+  "en": "He made the camels kneel down by the well outside the city, at evening time, the time when women come out to draw water. ",
+  "he_version": "Miqra according to the Masorah",
+  "en_version": "THE JPS TANAKH: Gender-Sensitive Edition",
+  "license": {
+   "he": "CC-BY-SA",
+   "en": "CC-BY-NC"
+  }
+ },
+ "Genesis 24:12": {
+  "he": "וַיֹּאמַ֓ר&thinsp;<b>׀</b> יְהֹוָ֗ה אֱלֹהֵי֙ אֲדֹנִ֣י אַבְרָהָ֔ם הַקְרֵה־נָ֥א לְפָנַ֖י הַיּ֑וֹם וַעֲשֵׂה־חֶ֕סֶד עִ֖ם אֲדֹנִ֥י אַבְרָהָֽם׃",
+  "en": "And he said, “O E<small>TERNAL</small> One, God of my master Abraham, grant me good fortune this day, and deal graciously with my master Abraham: ",
+  "he_version": "Miqra according to the Masorah",
+  "en_version": "THE JPS TANAKH: Gender-Sensitive Edition",
+  "license": {
+   "he": "CC-BY-SA",
+   "en": "CC-BY-NC"
+  }
+ },
+ "Genesis 24:13": {
+  "he": "הִנֵּ֛ה אָנֹכִ֥י נִצָּ֖ב עַל־עֵ֣ין הַמָּ֑יִם וּבְנוֹת֙ אַנְשֵׁ֣י הָעִ֔יר יֹצְאֹ֖ת לִשְׁאֹ֥ב מָֽיִם׃",
+  "en": "Here I stand by the spring as the daughters of the townspeople come out to draw water;",
+  "he_version": "Miqra according to the Masorah",
+  "en_version": "THE JPS TANAKH: Gender-Sensitive Edition",
+  "license": {
+   "he": "CC-BY-SA",
+   "en": "CC-BY-NC"
+  }
+ },
+ "Genesis 24:14": {
+  "he": "וְהָיָ֣ה הַֽנַּעֲרָ֗ אֲשֶׁ֨ר אֹמַ֤ר אֵלֶ֙יהָ֙ הַטִּי־נָ֤א כַדֵּךְ֙ וְאֶשְׁתֶּ֔ה וְאָמְרָ֣ה שְׁתֵ֔ה וְגַם־גְּמַלֶּ֖יךָ אַשְׁקֶ֑ה אֹתָ֤הּ הֹכַ֙חְתָּ֙ לְעַבְדְּךָ֣ לְיִצְחָ֔ק וּבָ֣הּ אֵדַ֔ע כִּי־עָשִׂ֥יתָ חֶ֖סֶד עִם־אֲדֹנִֽי׃",
+  "en": "let the maiden to whom I say, ‘Please, lower your jar that I may drink,’ and who replies, ‘Drink, and I will also water your camels’—let her be the one whom You have decreed for Your servant Isaac. Thereby shall I know that You have dealt graciously with my master.”",
+  "he_version": "Miqra according to the Masorah",
+  "en_version": "THE JPS TANAKH: Gender-Sensitive Edition",
+  "license": {
+   "he": "CC-BY-SA",
+   "en": "CC-BY-NC"
+  }
+ },
+ "Genesis 24:15": {
+  "he": "וַֽיְהִי־ה֗וּא טֶ֘רֶם֮ כִּלָּ֣ה לְדַבֵּר֒ וְהִנֵּ֧ה רִבְקָ֣ה יֹצֵ֗את אֲשֶׁ֤ר יֻלְּדָה֙ לִבְתוּאֵ֣ל בֶּן־מִלְכָּ֔ה אֵ֥שֶׁת נָח֖וֹר אֲחִ֣י אַבְרָהָ֑ם וְכַדָּ֖הּ עַל־שִׁכְמָֽהּ׃",
+  "en": "He had scarcely finished speaking, when Rebekah, who was born to Bethuel, the son of Milcah the wife of Abraham’s brother Nahor, came out with her jar on her shoulder. ",
+  "he_version": "Miqra according to the Masorah",
+  "en_version": "THE JPS TANAKH: Gender-Sensitive Edition",
+  "license": {
+   "he": "CC-BY-SA",
+   "en": "CC-BY-NC"
+  }
+ },
+ "Genesis 24:16": {
+  "he": "וְהַֽנַּעֲרָ֗ טֹבַ֤ת מַרְאֶה֙ מְאֹ֔ד בְּתוּלָ֕ה וְאִ֖ישׁ לֹ֣א יְדָעָ֑הּ וַתֵּ֣רֶד הָעַ֔יְנָה וַתְּמַלֵּ֥א כַדָּ֖הּ וַתָּֽעַל׃",
+  "en": "The maiden was very beautiful, a virgin whom no man had known.<sup class=\"footnote-marker\">b</sup><i class=\"footnote\"><b>virgin </b>Or “young woman.”</i> She went down to the spring, filled her jar, and came up. ",
+  "he_version": "Miqra according to the Masorah",
+  "en_version": "THE JPS TANAKH: Gender-Sensitive Edition",
+  "license": {
+   "he": "CC-BY-SA",
+   "en": "CC-BY-NC"
+  }
+ },
+ "Genesis 24:17": {
+  "he": "וַיָּ֥רׇץ הָעֶ֖בֶד לִקְרָאתָ֑הּ וַיֹּ֕אמֶר הַגְמִיאִ֥ינִי נָ֛א מְעַט־מַ֖יִם מִכַּדֵּֽךְ׃",
+  "en": "The servant ran toward her and said, “Please, let me sip a little water from your jar.” ",
+  "he_version": "Miqra according to the Masorah",
+  "en_version": "THE JPS TANAKH: Gender-Sensitive Edition",
+  "license": {
+   "he": "CC-BY-SA",
+   "en": "CC-BY-NC"
+  }
+ },
+ "Genesis 24:18": {
+  "he": "וַתֹּ֖אמֶר שְׁתֵ֣ה אֲדֹנִ֑י וַתְּמַהֵ֗ר וַתֹּ֧רֶד כַּדָּ֛הּ עַל־יָדָ֖הּ וַתַּשְׁקֵֽהוּ׃",
+  "en": "“Drink, my lord,” she said, and she quickly lowered her jar upon her hand and let him drink. ",
+  "he_version": "Miqra according to the Masorah",
+  "en_version": "THE JPS TANAKH: Gender-Sensitive Edition",
+  "license": {
+   "he": "CC-BY-SA",
+   "en": "CC-BY-NC"
+  }
+ },
+ "Genesis 24:19": {
+  "he": "וַתְּכַ֖ל לְהַשְׁקֹת֑וֹ וַתֹּ֗אמֶר גַּ֤ם לִגְמַלֶּ֙יךָ֙ אֶשְׁאָ֔ב עַ֥ד אִם־כִּלּ֖וּ לִשְׁתֹּֽת׃",
+  "en": "When she had let him drink his fill, she said, “I will also draw for your camels, until they finish drinking.” ",
+  "he_version": "Miqra according to the Masorah",
+  "en_version": "THE JPS TANAKH: Gender-Sensitive Edition",
+  "license": {
+   "he": "CC-BY-SA",
+   "en": "CC-BY-NC"
+  }
+ },
+ "Genesis 24:20": {
+  "he": "וַתְּמַהֵ֗ר וַתְּעַ֤ר כַּדָּהּ֙ אֶל־הַשֹּׁ֔קֶת וַתָּ֥רׇץ ע֛וֹד אֶֽל־הַבְּאֵ֖ר לִשְׁאֹ֑ב וַתִּשְׁאַ֖ב לְכׇל־גְּמַלָּֽיו׃",
+  "en": "Quickly emptying her jar into the trough, she ran back to the well to draw, and she drew for all his camels.",
+  "he_version": "Miqra according to the Masorah",
+  "en_version": "THE JPS TANAKH: Gender-Sensitive Edition",
+  "license": {
+   "he": "CC-BY-SA",
+   "en": "CC-BY-NC"
+  }
+ },
+ "Genesis 24:21": {
+  "he": "וְהָאִ֥ישׁ מִשְׁתָּאֵ֖ה לָ֑הּ מַחֲרִ֕ישׁ לָדַ֗עַת הַֽהִצְלִ֧יחַ יְהֹוָ֛ה דַּרְכּ֖וֹ אִם־לֹֽא׃",
+  "en": "The man, meanwhile, stood gazing at her, silently wondering whether G<small>OD</small> had made his errand successful or not. ",
+  "he_version": "Miqra according to the Masorah",
+  "en_version": "THE JPS TANAKH: Gender-Sensitive Edition",
+  "license": {
+   "he": "CC-BY-SA",
+   "en": "CC-BY-NC"
+  }
+ },
+ "Genesis 24:22": {
+  "he": "וַיְהִ֗י כַּאֲשֶׁ֨ר כִּלּ֤וּ הַגְּמַלִּים֙ לִשְׁתּ֔וֹת וַיִּקַּ֤ח הָאִישׁ֙ נֶ֣זֶם זָהָ֔ב בֶּ֖קַע מִשְׁקָל֑וֹ וּשְׁנֵ֤י צְמִידִים֙ עַל־יָדֶ֔יהָ עֲשָׂרָ֥ה זָהָ֖ב מִשְׁקָלָֽם׃",
+  "en": "When the camels had finished drinking, the man took a gold nose-ring weighing a half-shekel,<sup class=\"footnote-marker\">c</sup><i class=\"footnote\"><b>half-shekel </b>Heb. <i>beqaʻ</i>.</i> and two gold bands for her arms, ten shekels in weight. ",
+  "he_version": "Miqra according to the Masorah",
+  "en_version": "THE JPS TANAKH: Gender-Sensitive Edition",
+  "license": {
+   "he": "CC-BY-SA",
+   "en": "CC-BY-NC"
+  }
+ },
+ "Genesis 24:23": {
+  "he": "וַיֹּ֙אמֶר֙ בַּת־מִ֣י אַ֔תְּ הַגִּ֥ידִי נָ֖א לִ֑י הֲיֵ֧שׁ בֵּית־אָבִ֛יךְ מָק֥וֹם לָ֖נוּ לָלִֽין׃",
+  "en": "“Pray tell me,” he said, “whose daughter are you? Is there room in your father’s house for us to spend the night?” ",
+  "he_version": "Miqra according to the Masorah",
+  "en_version": "THE JPS TANAKH: Gender-Sensitive Edition",
+  "license": {
+   "he": "CC-BY-SA",
+   "en": "CC-BY-NC"
+  }
+ },
+ "Genesis 24:24": {
+  "he": "וַתֹּ֣אמֶר אֵלָ֔יו בַּת־בְּתוּאֵ֖ל אָנֹ֑כִי בֶּן־מִלְכָּ֕ה אֲשֶׁ֥ר יָלְדָ֖ה לְנָחֽוֹר׃",
+  "en": "She replied, “I am the daughter of Bethuel the son of Milcah, whom she bore to Nahor.” ",
+  "he_version": "Miqra according to the Masorah",
+  "en_version": "THE JPS TANAKH: Gender-Sensitive Edition",
+  "license": {
+   "he": "CC-BY-SA",
+   "en": "CC-BY-NC"
+  }
+ },
+ "Genesis 24:25": {
+  "he": "וַתֹּ֣אמֶר אֵלָ֔יו גַּם־תֶּ֥בֶן גַּם־מִסְפּ֖וֹא רַ֣ב עִמָּ֑נוּ גַּם־מָק֖וֹם לָלֽוּן׃",
+  "en": "And she went on, “There is plenty of straw<sup class=\"footnote-marker\">d</sup><i class=\"footnote\"><b>straw </b>Heb. <i>teben</i>, shredded straw, which normally was mixed with feed; cf. v. <a class=\"refLink\" data-ref=\"Genesis 24:32\" href=\"Genesis.24.32\">32</a>.</i> and feed at home, and also room to spend the night.” ",
+  "he_version": "Miqra according to the Masorah",
+  "en_version": "THE JPS TANAKH: Gender-Sensitive Edition",
+  "license": {
+   "he": "CC-BY-SA",
+   "en": "CC-BY-NC"
+  }
+ },
+ "Genesis 24:26": {
+  "he": "וַיִּקֹּ֣ד הָאִ֔ישׁ וַיִּשְׁתַּ֖חוּ לַֽיהֹוָֽה׃",
+  "en": "The man bowed low in homage to G<small>OD</small>",
+  "he_version": "Miqra according to the Masorah",
+  "en_version": "THE JPS TANAKH: Gender-Sensitive Edition",
+  "license": {
+   "he": "CC-BY-SA",
+   "en": "CC-BY-NC"
+  }
+ },
+ "Genesis 24:27": {
+  "he": "וַיֹּ֗אמֶר בָּר֤וּךְ יְהֹוָה֙ אֱלֹהֵי֙ אֲדֹנִ֣י אַבְרָהָ֔ם אֲ֠שֶׁ֠ר לֹֽא־עָזַ֥ב חַסְדּ֛וֹ וַאֲמִתּ֖וֹ מֵעִ֣ם אֲדֹנִ֑י אָנֹכִ֗י בַּדֶּ֙רֶךְ֙ נָחַ֣נִי יְהֹוָ֔ה בֵּ֖ית אֲחֵ֥י אֲדֹנִֽי׃",
+  "en": "and said, “Blessed be the E<small>TERNAL</small>, the God of my master Abraham,<sup class=\"footnote-marker\">e</sup><i class=\"footnote\"><b>my master Abraham </b>I.e., Abraham and his household.</i> who has not withheld steadfast faithfulness from my master. For I have been guided on my errand by G<small>OD</small>, to the house of my master’s kin.”",
+  "he_version": "Miqra according to the Masorah",
+  "en_version": "THE JPS TANAKH: Gender-Sensitive Edition",
+  "license": {
+   "he": "CC-BY-SA",
+   "en": "CC-BY-NC"
+  }
+ },
+ "Genesis 24:50": {
+  "he": "וַיַּ֨עַן לָבָ֤ן וּבְתוּאֵל֙ וַיֹּ֣אמְר֔וּ מֵיְהֹוָ֖ה יָצָ֣א הַדָּבָ֑ר לֹ֥א נוּכַ֛ל דַּבֵּ֥ר אֵלֶ֖יךָ רַ֥ע אוֹ־טֽוֹב׃",
+  "en": "Then Laban and Bethuel answered, “The matter was decreed by G<small>OD</small>; we cannot speak to you bad or good. ",
+  "he_version": "Miqra according to the Masorah",
+  "en_version": "THE JPS TANAKH: Gender-Sensitive Edition",
+  "license": {
+   "he": "CC-BY-SA",
+   "en": "CC-BY-NC"
+  }
+ },
+ "Genesis 24:51": {
+  "he": "הִנֵּֽה־רִבְקָ֥ה לְפָנֶ֖יךָ קַ֣ח וָלֵ֑ךְ וּתְהִ֤י אִשָּׁה֙ לְבֶן־אֲדֹנֶ֔יךָ כַּאֲשֶׁ֖ר דִּבֶּ֥ר יְהֹוָֽה׃",
+  "en": "Here is Rebekah before you; take her and go, and let her be a wife to your master’s son, as G<small>OD</small> has spoken.” ",
+  "he_version": "Miqra according to the Masorah",
+  "en_version": "THE JPS TANAKH: Gender-Sensitive Edition",
+  "license": {
+   "he": "CC-BY-SA",
+   "en": "CC-BY-NC"
+  }
+ },
+ "Genesis 24:52": {
+  "he": "וַיְהִ֕י כַּאֲשֶׁ֥ר שָׁמַ֛ע עֶ֥בֶד אַבְרָהָ֖ם אֶת־דִּבְרֵיהֶ֑ם וַיִּשְׁתַּ֥חוּ אַ֖רְצָה לַֽיהֹוָֽה׃",
+  "en": "When Abraham’s servant heard their words, he bowed low to the ground before G<small>OD</small>. ",
+  "he_version": "Miqra according to the Masorah",
+  "en_version": "THE JPS TANAKH: Gender-Sensitive Edition",
+  "license": {
+   "he": "CC-BY-SA",
+   "en": "CC-BY-NC"
+  }
+ },
+ "Genesis 24:53": {
+  "he": "וַיּוֹצֵ֨א הָעֶ֜בֶד כְּלֵי־כֶ֨סֶף וּכְלֵ֤י זָהָב֙ וּבְגָדִ֔ים וַיִּתֵּ֖ן לְרִבְקָ֑ה וּמִ֨גְדָּנֹ֔ת נָתַ֥ן לְאָחִ֖יהָ וּלְאִמָּֽהּ׃",
+  "en": "The servant brought out objects of silver and gold, and garments, and gave them to Rebekah; and he gave presents to her brother and her mother. ",
+  "he_version": "Miqra according to the Masorah",
+  "en_version": "THE JPS TANAKH: Gender-Sensitive Edition",
+  "license": {
+   "he": "CC-BY-SA",
+   "en": "CC-BY-NC"
+  }
+ },
+ "Genesis 24:54": {
+  "he": "וַיֹּאכְל֣וּ וַיִּשְׁתּ֗וּ ה֛וּא וְהָאֲנָשִׁ֥ים אֲשֶׁר־עִמּ֖וֹ וַיָּלִ֑ינוּ וַיָּק֣וּמוּ בַבֹּ֔קֶר וַיֹּ֖אמֶר שַׁלְּחֻ֥נִי לַֽאדֹנִֽי׃",
+  "en": "Then he and those [who came] with him ate and drank, and they spent the night. When they arose next morning, he said, “Give me leave to go to my master.” ",
+  "he_version": "Miqra according to the Masorah",
+  "en_version": "THE JPS TANAKH: Gender-Sensitive Edition",
+  "license": {
+   "he": "CC-BY-SA",
+   "en": "CC-BY-NC"
+  }
+ },
+ "Genesis 24:55": {
+  "he": "וַיֹּ֤אמֶר אָחִ֙יהָ֙ וְאִמָּ֔הּ תֵּשֵׁ֨ב הַנַּעֲרָ֥ אִתָּ֛נוּ יָמִ֖ים א֣וֹ עָשׂ֑וֹר אַחַ֖ר תֵּלֵֽךְ׃",
+  "en": "But her brother and her mother said, “Let the maiden remain with us some ten days;<sup class=\"footnote-marker\">f</sup><i class=\"footnote\"><b>some ten days </b>Lit. “days or ten.”</i> then you may go.” ",
+  "he_version": "Miqra according to the Masorah",
+  "en_version": "THE JPS TANAKH: Gender-Sensitive Edition",
+  "license": {
+   "he": "CC-BY-SA",
+   "en": "CC-BY-NC"
+  }
+ },
+ "Genesis 24:56": {
+  "he": "וַיֹּ֤אמֶר אֲלֵהֶם֙ אַל־תְּאַחֲר֣וּ אֹתִ֔י וַֽיהֹוָ֖ה הִצְלִ֣יחַ דַּרְכִּ֑י שַׁלְּח֕וּנִי וְאֵלְכָ֖ה לַֽאדֹנִֽי׃",
+  "en": "He said to them, “Do not delay me, now that G<small>OD</small> has made my errand successful. Give me leave that I may go to my master.” ",
+  "he_version": "Miqra according to the Masorah",
+  "en_version": "THE JPS TANAKH: Gender-Sensitive Edition",
+  "license": {
+   "he": "CC-BY-SA",
+   "en": "CC-BY-NC"
+  }
+ },
+ "Genesis 24:57": {
+  "he": "וַיֹּאמְר֖וּ נִקְרָ֣א לַֽנַּעֲרָ֑ וְנִשְׁאֲלָ֖ה אֶת־פִּֽיהָ׃",
+  "en": "And they said, “Let us call the girl and ask for her reply.” ",
+  "he_version": "Miqra according to the Masorah",
+  "en_version": "THE JPS TANAKH: Gender-Sensitive Edition",
+  "license": {
+   "he": "CC-BY-SA",
+   "en": "CC-BY-NC"
+  }
+ },
+ "Genesis 24:58": {
+  "he": "וַיִּקְרְא֤וּ לְרִבְקָה֙ וַיֹּאמְר֣וּ אֵלֶ֔יהָ הֲתֵלְכִ֖י עִם־הָאִ֣ישׁ הַזֶּ֑ה וַתֹּ֖אמֶר אֵלֵֽךְ׃",
+  "en": "They called Rebekah and said to her, “Will you go with this man?” And she said, “I will.” ",
+  "he_version": "Miqra according to the Masorah",
+  "en_version": "THE JPS TANAKH: Gender-Sensitive Edition",
+  "license": {
+   "he": "CC-BY-SA",
+   "en": "CC-BY-NC"
+  }
+ },
+ "Genesis 24:59": {
+  "he": "וַֽיְשַׁלְּח֛וּ אֶת־רִבְקָ֥ה אֲחֹתָ֖ם וְאֶת־מֵנִקְתָּ֑הּ וְאֶת־עֶ֥בֶד אַבְרָהָ֖ם וְאֶת־אֲנָשָֽׁיו׃",
+  "en": "So they sent off their sister Rebekah and her nurse along with Abraham’s servant and his entourage.",
+  "he_version": "Miqra according to the Masorah",
+  "en_version": "THE JPS TANAKH: Gender-Sensitive Edition",
+  "license": {
+   "he": "CC-BY-SA",
+   "en": "CC-BY-NC"
+  }
+ },
+ "Genesis 24:60": {
+  "he": "וַיְבָרְכ֤וּ אֶת־רִבְקָה֙ וַיֹּ֣אמְרוּ לָ֔הּ אֲחֹתֵ֕נוּ אַ֥תְּ הֲיִ֖י לְאַלְפֵ֣י רְבָבָ֑ה וְיִירַ֣שׁ זַרְעֵ֔ךְ אֵ֖ת שַׁ֥עַר שֹׂנְאָֽיו׃",
+  "en": "And they blessed Rebekah and said to her,<br><span class=\"poetry indentAll\">“O sister!</span><br><span class=\"poetry indentAll\">May you grow</span><br><span class=\"poetry indentAll\">Into thousands of myriads;</span><br><span class=\"poetry indentAll\">May your descendants seize</span><br><span class=\"poetry indentAll\">The gates of their foes.”</span>",
+  "he_version": "Miqra according to the Masorah",
+  "en_version": "THE JPS TANAKH: Gender-Sensitive Edition",
+  "license": {
+   "he": "CC-BY-SA",
+   "en": "CC-BY-NC"
+  }
+ },
+ "Genesis 24:61": {
+  "he": "וַתָּ֨קׇם רִבְקָ֜ה וְנַעֲרֹתֶ֗יהָ וַתִּרְכַּ֙בְנָה֙ עַל־הַגְּמַלִּ֔ים וַתֵּלַ֖כְנָה אַחֲרֵ֣י הָאִ֑ישׁ וַיִּקַּ֥ח הָעֶ֛בֶד אֶת־רִבְקָ֖ה וַיֵּלַֽךְ׃",
+  "en": "Then Rebekah and her maids arose, mounted the camels, and followed the man. So the servant took Rebekah and went his way.",
+  "he_version": "Miqra according to the Masorah",
+  "en_version": "THE JPS TANAKH: Gender-Sensitive Edition",
+  "license": {
+   "he": "CC-BY-SA",
+   "en": "CC-BY-NC"
+  }
+ },
+ "Genesis 24:64": {
+  "he": "וַתִּשָּׂ֤א רִבְקָה֙ אֶת־עֵינֶ֔יהָ וַתֵּ֖רֶא אֶת־יִצְחָ֑ק וַתִּפֹּ֖ל מֵעַ֥ל הַגָּמָֽל׃",
+  "en": "Raising her eyes, Rebekah saw Isaac. She alighted from the camel ",
+  "he_version": "Miqra according to the Masorah",
+  "en_version": "THE JPS TANAKH: Gender-Sensitive Edition",
+  "license": {
+   "he": "CC-BY-SA",
+   "en": "CC-BY-NC"
+  }
+ },
+ "Genesis 24:65": {
+  "he": "וַתֹּ֣אמֶר אֶל־הָעֶ֗בֶד מִֽי־הָאִ֤ישׁ הַלָּזֶה֙ הַהֹלֵ֤ךְ בַּשָּׂדֶה֙ לִקְרָאתֵ֔נוּ וַיֹּ֥אמֶר הָעֶ֖בֶד ה֣וּא אֲדֹנִ֑י וַתִּקַּ֥ח הַצָּעִ֖יף וַתִּתְכָּֽס׃",
+  "en": "and said to the servant, “Who is that man walking in the field toward us?” And the servant said, “That is my master.” So she took her veil and covered herself. ",
+  "he_version": "Miqra according to the Masorah",
+  "en_version": "THE JPS TANAKH: Gender-Sensitive Edition",
+  "license": {
+   "he": "CC-BY-SA",
+   "en": "CC-BY-NC"
+  }
+ },
+ "Genesis 24:66": {
+  "he": "וַיְסַפֵּ֥ר הָעֶ֖בֶד לְיִצְחָ֑ק אֵ֥ת כׇּל־הַדְּבָרִ֖ים אֲשֶׁ֥ר עָשָֽׂה׃",
+  "en": "The servant told Isaac all the things that he had done.",
+  "he_version": "Miqra according to the Masorah",
+  "en_version": "THE JPS TANAKH: Gender-Sensitive Edition",
+  "license": {
+   "he": "CC-BY-SA",
+   "en": "CC-BY-NC"
+  }
+ },
+ "Genesis 24:67": {
+  "he": "וַיְבִאֶ֣הָ יִצְחָ֗ק הָאֹ֙הֱלָה֙ שָׂרָ֣ה אִמּ֔וֹ וַיִּקַּ֧ח אֶת־רִבְקָ֛ה וַתְּהִי־ל֥וֹ לְאִשָּׁ֖ה וַיֶּאֱהָבֶ֑הָ וַיִּנָּחֵ֥ם יִצְחָ֖ק אַחֲרֵ֥י אִמּֽוֹ׃&nbsp;<span class=\"mam-spi-pe\">{פ}</span><br>",
+  "en": "Isaac then brought her into the tent of his mother Sarah, and he took Rebekah as his wife. Isaac loved her, and thus found comfort after his mother’s death.",
+  "he_version": "Miqra according to the Masorah",
+  "en_version": "THE JPS TANAKH: Gender-Sensitive Edition",
+  "license": {
+   "he": "CC-BY-SA",
+   "en": "CC-BY-NC"
+  }
+ },
+ "Genesis 25:19": {
+  "he": "וְאֵ֛לֶּה תּוֹלְדֹ֥ת יִצְחָ֖ק בֶּן־אַבְרָהָ֑ם אַבְרָהָ֖ם הוֹלִ֥יד אֶת־יִצְחָֽק׃",
+  "en": "This is the story of Isaac, son of Abraham. Abraham begot Isaac. ",
+  "he_version": "Miqra according to the Masorah",
+  "en_version": "THE JPS TANAKH: Gender-Sensitive Edition",
+  "license": {
+   "he": "CC-BY-SA",
+   "en": "CC-BY-NC"
+  }
+ },
+ "Genesis 25:20": {
+  "he": "וַיְהִ֤י יִצְחָק֙ בֶּן־אַרְבָּעִ֣ים שָׁנָ֔ה בְּקַחְתּ֣וֹ אֶת־רִבְקָ֗ה בַּת־בְּתוּאֵל֙ הָֽאֲרַמִּ֔י מִפַּדַּ֖ן אֲרָ֑ם אֲח֛וֹת לָבָ֥ן הָאֲרַמִּ֖י ל֥וֹ לְאִשָּֽׁה׃",
+  "en": "Isaac was forty years old when he took to wife Rebekah, daughter of Bethuel the Aramean of Paddan-aram, sister of Laban the Aramean. ",
+  "he_version": "Miqra according to the Masorah",
+  "en_version": "THE JPS TANAKH: Gender-Sensitive Edition",
+  "license": {
+   "he": "CC-BY-SA",
+   "en": "CC-BY-NC"
+  }
+ },
+ "Genesis 25:21": {
+  "he": "וַיֶּעְתַּ֨ר יִצְחָ֤ק לַֽיהֹוָה֙ לְנֹ֣כַח אִשְׁתּ֔וֹ כִּ֥י עֲקָרָ֖ה הִ֑וא וַיֵּעָ֤תֶר לוֹ֙ יְהֹוָ֔ה וַתַּ֖הַר רִבְקָ֥ה אִשְׁתּֽוֹ׃",
+  "en": "Isaac pleaded with G<small>OD</small> on behalf of his wife, because she was infertile; and G<small>OD</small> responded to his plea, and his wife Rebekah conceived. ",
+  "he_version": "Miqra according to the Masorah",
+  "en_version": "THE JPS TANAKH: Gender-Sensitive Edition",
+  "license": {
+   "he": "CC-BY-SA",
+   "en": "CC-BY-NC"
+  }
+ },
+ "Genesis 25:22": {
+  "he": "וַיִּתְרֹֽצְצ֤וּ הַבָּנִים֙ בְּקִרְבָּ֔הּ וַתֹּ֣אמֶר אִם־כֵּ֔ן לָ֥מָּה זֶּ֖ה אָנֹ֑כִי וַתֵּ֖לֶךְ לִדְרֹ֥שׁ אֶת־יְהֹוָֽה׃",
+  "en": "But the children struggled in her womb, and she said, “If so, why do I exist?”<sup class=\"footnote-marker\">b</sup><i class=\"footnote\"><b>why do I exist? </b>Meaning of Heb. uncertain.</i> She went to inquire of G<small>OD</small>, ",
+  "he_version": "Miqra according to the Masorah",
+  "en_version": "THE JPS TANAKH: Gender-Sensitive Edition",
+  "license": {
+   "he": "CC-BY-SA",
+   "en": "CC-BY-NC"
+  }
+ },
+ "Genesis 26:34": {
+  "he": "וַיְהִ֤י עֵשָׂו֙ בֶּן־אַרְבָּעִ֣ים שָׁנָ֔ה וַיִּקַּ֤ח אִשָּׁה֙ אֶת־יְהוּדִ֔ית בַּת־בְּאֵרִ֖י הַֽחִתִּ֑י וְאֶת־בָּ֣שְׂמַ֔ת בַּת־אֵילֹ֖ן הַֽחִתִּֽי׃",
+  "en": "When Esau was forty years old, he took to wife Judith daughter of Beeri the Hittite, and Basemath daughter of Elon the Hittite; ",
+  "he_version": "Miqra according to the Masorah",
+  "en_version": "THE JPS TANAKH: Gender-Sensitive Edition",
+  "license": {
+   "he": "CC-BY-SA",
+   "en": "CC-BY-NC"
+  }
+ },
+ "Genesis 26:35": {
+  "he": "וַתִּהְיֶ֖יןָ מֹ֣רַת ר֑וּחַ לְיִצְחָ֖ק וּלְרִבְקָֽה׃&nbsp;<span class=\"mam-spi-samekh\">{ס}</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+  "en": "and they were a source of bitterness to Isaac and Rebekah.",
+  "he_version": "Miqra according to the Masorah",
+  "en_version": "THE JPS TANAKH: Gender-Sensitive Edition",
+  "license": {
+   "he": "CC-BY-SA",
+   "en": "CC-BY-NC"
+  }
+ },
+ "Genesis 27:1": {
+  "he": "וַֽיְהִי֙ כִּֽי־זָקֵ֣ן יִצְחָ֔ק וַתִּכְהֶ֥יןָ עֵינָ֖יו מֵרְאֹ֑ת וַיִּקְרָ֞א אֶת־עֵשָׂ֣ו&thinsp;<b>׀</b> בְּנ֣וֹ הַגָּדֹ֗ל וַיֹּ֤אמֶר אֵלָיו֙ בְּנִ֔י וַיֹּ֥אמֶר אֵלָ֖יו הִנֵּֽנִי׃",
+  "en": "When Isaac was old and his eyes were too dim to see, he called his older son Esau and said to him, “My son.” He answered, “Here I am.” ",
+  "he_version": "Miqra according to the Masorah",
+  "en_version": "THE JPS TANAKH: Gender-Sensitive Edition",
+  "license": {
+   "he": "CC-BY-SA",
+   "en": "CC-BY-NC"
+  }
+ },
+ "Genesis 27:2": {
+  "he": "וַיֹּ֕אמֶר הִנֵּה־נָ֖א זָקַ֑נְתִּי לֹ֥א יָדַ֖עְתִּי י֥וֹם מוֹתִֽי׃",
+  "en": "And he said, “I am old now, and I do not know how soon I may die. ",
+  "he_version": "Miqra according to the Masorah",
+  "en_version": "THE JPS TANAKH: Gender-Sensitive Edition",
+  "license": {
+   "he": "CC-BY-SA",
+   "en": "CC-BY-NC"
+  }
+ },
+ "Genesis 27:3": {
+  "he": "וְעַתָּה֙ שָׂא־נָ֣א כֵלֶ֔יךָ תֶּלְיְךָ֖ וְקַשְׁתֶּ֑ךָ וְצֵא֙ הַשָּׂדֶ֔ה וְצ֥וּדָה לִּ֖י <span class=\"mam-kq\"><span class=\"mam-kq-k\">(צידה)</span> <span class=\"mam-kq-q\">[צָֽיִד]</span></span>׃",
+  "en": "Take your gear, your quiver and bow, and go out into the open and hunt me some game. ",
+  "he_version": "Miqra according to the Masorah",
+  "en_version": "THE JPS TANAKH: Gender-Sensitive Edition",
+  "license": {
+   "he": "CC-BY-SA",
+   "en": "CC-BY-NC"
+  }
+ },
+ "Genesis 27:4": {
+  "he": "וַעֲשֵׂה־לִ֨י מַטְעַמִּ֜ים כַּאֲשֶׁ֥ר אָהַ֛בְתִּי וְהָבִ֥יאָה לִּ֖י וְאֹכֵ֑לָה בַּעֲב֛וּר תְּבָרֶכְךָ֥ נַפְשִׁ֖י בְּטֶ֥רֶם אָמֽוּת׃",
+  "en": "Then prepare a dish for me such as I like, and bring it to me to eat, so that I may give you my innermost blessing before I die.”",
+  "he_version": "Miqra according to the Masorah",
+  "en_version": "THE JPS TANAKH: Gender-Sensitive Edition",
+  "license": {
+   "he": "CC-BY-SA",
+   "en": "CC-BY-NC"
+  }
+ },
+ "Genesis 27:14": {
+  "he": "וַיֵּ֙לֶךְ֙ וַיִּקַּ֔ח וַיָּבֵ֖א לְאִמּ֑וֹ וַתַּ֤עַשׂ אִמּוֹ֙ מַטְעַמִּ֔ים כַּאֲשֶׁ֖ר אָהֵ֥ב אָבִֽיו׃",
+  "en": "He got them and brought them to his mother, and his mother prepared a dish such as his father liked. ",
+  "he_version": "Miqra according to the Masorah",
+  "en_version": "THE JPS TANAKH: Gender-Sensitive Edition",
+  "license": {
+   "he": "CC-BY-SA",
+   "en": "CC-BY-NC"
+  }
+ },
+ "Genesis 27:15": {
+  "he": "וַתִּקַּ֣ח רִ֠בְקָ֠ה אֶת־בִּגְדֵ֨י עֵשָׂ֜ו בְּנָ֤הּ הַגָּדֹל֙ הַחֲמֻדֹ֔ת אֲשֶׁ֥ר אִתָּ֖הּ בַּבָּ֑יִת וַתַּלְבֵּ֥שׁ אֶֽת־יַעֲקֹ֖ב בְּנָ֥הּ הַקָּטָֽן׃",
+  "en": "Rebekah then took the best clothes of her older son Esau, which were there<sup class=\"footnote-marker\">a</sup><i class=\"footnote\"><b>there </b>Or “in her charge.”</i> in the house, and had her younger son Jacob put them on; ",
+  "he_version": "Miqra according to the Masorah",
+  "en_version": "THE JPS TANAKH: Gender-Sensitive Edition",
+  "license": {
+   "he": "CC-BY-SA",
+   "en": "CC-BY-NC"
+  }
+ },
+ "Genesis 27:16": {
+  "he": "וְאֵ֗ת עֹרֹת֙ גְּדָיֵ֣י הָֽעִזִּ֔ים הִלְבִּ֖ישָׁה עַל־יָדָ֑יו וְעַ֖ל חֶלְקַ֥ת צַוָּארָֽיו׃",
+  "en": "and she covered his hands and the hairless part of his neck with the skins of the kids.",
+  "he_version": "Miqra according to the Masorah",
+  "en_version": "THE JPS TANAKH: Gender-Sensitive Edition",
+  "license": {
+   "he": "CC-BY-SA",
+   "en": "CC-BY-NC"
+  }
+ },
+ "Genesis 27:17": {
+  "he": "וַתִּתֵּ֧ן אֶת־הַמַּטְעַמִּ֛ים וְאֶת־הַלֶּ֖חֶם אֲשֶׁ֣ר עָשָׂ֑תָה בְּיַ֖ד יַעֲקֹ֥ב בְּנָֽהּ׃",
+  "en": "Then she put in the hands of her son Jacob the dish and the bread that she had prepared.",
+  "he_version": "Miqra according to the Masorah",
+  "en_version": "THE JPS TANAKH: Gender-Sensitive Edition",
+  "license": {
+   "he": "CC-BY-SA",
+   "en": "CC-BY-NC"
+  }
+ },
+ "Genesis 32:4": {
+  "he": "וַיִּשְׁלַ֨ח יַעֲקֹ֤ב מַלְאָכִים֙ לְפָנָ֔יו אֶל־עֵשָׂ֖ו אָחִ֑יו אַ֥רְצָה שֵׂעִ֖יר שְׂדֵ֥ה אֱדֽוֹם׃",
+  "en": "Jacob sent messengers ahead to his brother Esau in the land of Seir, the country of Edom, ",
+  "he_version": "Miqra according to the Masorah",
+  "en_version": "THE JPS TANAKH: Gender-Sensitive Edition",
+  "license": {
+   "he": "CC-BY-SA",
+   "en": "CC-BY-NC"
+  }
+ },
+ "Genesis 32:5": {
+  "he": "וַיְצַ֤ו אֹתָם֙ לֵאמֹ֔ר כֹּ֣ה תֹאמְר֔וּן לַֽאדֹנִ֖י לְעֵשָׂ֑ו כֹּ֤ה אָמַר֙ עַבְדְּךָ֣ יַעֲקֹ֔ב עִם־לָבָ֣ן גַּ֔רְתִּי וָאֵחַ֖ר עַד־עָֽתָּה׃",
+  "en": "and instructed them as follows, “Thus shall you say, ‘To my lord Esau, thus says your servant Jacob:<sup class=\"footnote-marker\">e</sup><i class=\"footnote\"><b>Thus shall you say, ‘To my lord Esau, thus says your servant Jacob…’ </b>Or “Thus you shall say to my lord Esau, ‘Thus says your servant Jacob…’”</i> I stayed with Laban and remained until now; ",
+  "he_version": "Miqra according to the Masorah",
+  "en_version": "THE JPS TANAKH: Gender-Sensitive Edition",
+  "license": {
+   "he": "CC-BY-SA",
+   "en": "CC-BY-NC"
+  }
+ },
+ "Genesis 32:6": {
+  "he": "וַֽיְהִי־לִי֙ שׁ֣וֹר וַחֲמ֔וֹר צֹ֖אן וְעֶ֣בֶד וְשִׁפְחָ֑ה וָֽאֶשְׁלְחָה֙ לְהַגִּ֣יד לַֽאדֹנִ֔י לִמְצֹא־חֵ֖ן בְּעֵינֶֽיךָ׃",
+  "en": "I have acquired cattle, donkeys, sheep, and male and female slaves; and I send this message to my lord in the hope of gaining your favor.’” ",
+  "he_version": "Miqra according to the Masorah",
+  "en_version": "THE JPS TANAKH: Gender-Sensitive Edition",
+  "license": {
+   "he": "CC-BY-SA",
+   "en": "CC-BY-NC"
+  }
+ },
+ "Genesis 32:7": {
+  "he": "וַיָּשֻׁ֙בוּ֙ הַמַּלְאָכִ֔ים אֶֽל־יַעֲקֹ֖ב לֵאמֹ֑ר בָּ֤אנוּ אֶל־אָחִ֙יךָ֙ אֶל־עֵשָׂ֔ו וְגַם֙ הֹלֵ֣ךְ לִקְרָֽאתְךָ֔ וְאַרְבַּע־מֵא֥וֹת אִ֖ישׁ עִמּֽוֹ׃",
+  "en": "The messengers returned to Jacob, saying, “We came to your brother Esau; he himself is coming to meet you, and there are four hundred men with him.” ",
+  "he_version": "Miqra according to the Masorah",
+  "en_version": "THE JPS TANAKH: Gender-Sensitive Edition",
+  "license": {
+   "he": "CC-BY-SA",
+   "en": "CC-BY-NC"
+  }
+ },
+ "Genesis 32:8": {
+  "he": "וַיִּירָ֧א יַעֲקֹ֛ב מְאֹ֖ד וַיֵּ֣צֶר ל֑וֹ וַיַּ֜חַץ אֶת־הָעָ֣ם אֲשֶׁר־אִתּ֗וֹ וְאֶת־הַצֹּ֧אן וְאֶת־הַבָּקָ֛ר וְהַגְּמַלִּ֖ים לִשְׁנֵ֥י מַחֲנֽוֹת׃",
+  "en": "Jacob was greatly frightened; in his anxiety, he divided the people with him, and the flocks and herds and camels, into two camps, ",
+  "he_version": "Miqra according to the Masorah",
+  "en_version": "THE JPS TANAKH: Gender-Sensitive Edition",
+  "license": {
+   "he": "CC-BY-SA",
+   "en": "CC-BY-NC"
+  }
+ },
+ "Genesis 33:5": {
+  "he": "וַיִּשָּׂ֣א אֶת־עֵינָ֗יו וַיַּ֤רְא אֶת־הַנָּשִׁים֙ וְאֶת־הַיְלָדִ֔ים וַיֹּ֖אמֶר מִי־אֵ֣לֶּה לָּ֑ךְ וַיֹּאמַ֕ר הַיְלָדִ֕ים אֲשֶׁר־חָנַ֥ן אֱלֹהִ֖ים אֶת־עַבְדֶּֽךָ׃",
+  "en": "Looking about, he saw the women and the children. “Who,” he asked, “are these with you?” He answered, “The children with whom God has favored your servant.” ",
+  "he_version": "Miqra according to the Masorah",
+  "en_version": "THE JPS TANAKH: Gender-Sensitive Edition",
+  "license": {
+   "he": "CC-BY-SA",
+   "en": "CC-BY-NC"
+  }
+ },
+ "Genesis 33:6": {
+  "he": "וַתִּגַּ֧שְׁןָ הַשְּׁפָח֛וֹת הֵ֥נָּה וְיַלְדֵיהֶ֖ן וַתִּֽשְׁתַּחֲוֶֽיןָ׃",
+  "en": "Then the maids, with their children, came forward and bowed low; ",
+  "he_version": "Miqra according to the Masorah",
+  "en_version": "THE JPS TANAKH: Gender-Sensitive Edition",
+  "license": {
+   "he": "CC-BY-SA",
+   "en": "CC-BY-NC"
+  }
+ },
+ "Genesis 33:7": {
+  "he": "וַתִּגַּ֧שׁ גַּם־לֵאָ֛ה וִילָדֶ֖יהָ וַיִּֽשְׁתַּחֲו֑וּ וְאַחַ֗ר נִגַּ֥שׁ יוֹסֵ֛ף וְרָחֵ֖ל וַיִּֽשְׁתַּחֲוֽוּ׃",
+  "en": "next Leah, with her children, came forward and bowed low; and last, Joseph and Rachel came forward and bowed low. ",
+  "he_version": "Miqra according to the Masorah",
+  "en_version": "THE JPS TANAKH: Gender-Sensitive Edition",
+  "license": {
+   "he": "CC-BY-SA",
+   "en": "CC-BY-NC"
+  }
+ },
+ "Genesis 33:8": {
+  "he": "וַיֹּ֕אמֶר מִ֥י לְךָ֛ כׇּל־הַמַּחֲנֶ֥ה הַזֶּ֖ה אֲשֶׁ֣ר פָּגָ֑שְׁתִּי וַיֹּ֕אמֶר לִמְצֹא־חֵ֖ן בְּעֵינֵ֥י אֲדֹנִֽי׃",
+  "en": "And he asked, “What do you mean by all this company that I have met?” He answered, “To gain my lord’s favor.” ",
+  "he_version": "Miqra according to the Masorah",
+  "en_version": "THE JPS TANAKH: Gender-Sensitive Edition",
+  "license": {
+   "he": "CC-BY-SA",
+   "en": "CC-BY-NC"
+  }
+ },
+ "Genesis 33:9": {
+  "he": "וַיֹּ֥אמֶר עֵשָׂ֖ו יֶשׁ־לִ֣י רָ֑ב אָחִ֕י יְהִ֥י לְךָ֖ אֲשֶׁר־לָֽךְ׃",
+  "en": "Esau said, “I have enough, my brother; let what you have remain yours.” ",
+  "he_version": "Miqra according to the Masorah",
+  "en_version": "THE JPS TANAKH: Gender-Sensitive Edition",
+  "license": {
+   "he": "CC-BY-SA",
+   "en": "CC-BY-NC"
+  }
+ },
+ "Genesis 33:10": {
+  "he": "וַיֹּ֣אמֶר יַעֲקֹ֗ב אַל־נָא֙ אִם־נָ֨א מָצָ֤אתִי חֵן֙ בְּעֵינֶ֔יךָ וְלָקַחְתָּ֥ מִנְחָתִ֖י מִיָּדִ֑י כִּ֣י עַל־כֵּ֞ן רָאִ֣יתִי פָנֶ֗יךָ כִּרְאֹ֛ת פְּנֵ֥י אֱלֹהִ֖ים וַתִּרְצֵֽנִי׃",
+  "en": "But Jacob said, “No, I pray you; if you would do me this favor, accept from me this gift; for to see your face is like seeing the face of God, and you have received me favorably. ",
+  "he_version": "Miqra according to the Masorah",
+  "en_version": "THE JPS TANAKH: Gender-Sensitive Edition",
+  "license": {
+   "he": "CC-BY-SA",
+   "en": "CC-BY-NC"
+  }
+ },
+ "Genesis 33:11": {
+  "he": "קַח־נָ֤א אֶת־בִּרְכָתִי֙ אֲשֶׁ֣ר הֻבָ֣את לָ֔ךְ כִּֽי־חַנַּ֥נִי אֱלֹהִ֖ים וְכִ֣י יֶשׁ־לִי־כֹ֑ל וַיִּפְצַר־בּ֖וֹ וַיִּקָּֽח׃",
+  "en": "Please accept my present that has been brought to you, for God has favored me and I have plenty.” And when he urged him, he accepted.",
+  "he_version": "Miqra according to the Masorah",
+  "en_version": "THE JPS TANAKH: Gender-Sensitive Edition",
+  "license": {
+   "he": "CC-BY-SA",
+   "en": "CC-BY-NC"
+  }
+ },
+ "Genesis 33:12": {
+  "he": "וַיֹּ֖אמֶר נִסְעָ֣ה וְנֵלֵ֑כָה וְאֵלְכָ֖ה לְנֶגְדֶּֽךָ׃",
+  "en": "And [Esau] said, “Let us start on our journey, and I will proceed at your pace.” ",
+  "he_version": "Miqra according to the Masorah",
+  "en_version": "THE JPS TANAKH: Gender-Sensitive Edition",
+  "license": {
+   "he": "CC-BY-SA",
+   "en": "CC-BY-NC"
+  }
+ },
+ "Genesis 33:13": {
+  "he": "וַיֹּ֣אמֶר אֵלָ֗יו אֲדֹנִ֤י יֹדֵ֙עַ֙ כִּֽי־הַיְלָדִ֣ים רַכִּ֔ים וְהַצֹּ֥אן וְהַבָּקָ֖ר עָל֣וֹת עָלָ֑י וּדְפָקוּם֙ י֣וֹם אֶחָ֔ד וָמֵ֖תוּ כׇּל־הַצֹּֽאן׃",
+  "en": "But he said to him, “My lord knows that the children are frail and that the flocks and herds, which are nursing, are a care to me; if they are driven hard a single day, all the flocks will die. ",
+  "he_version": "Miqra according to the Masorah",
+  "en_version": "THE JPS TANAKH: Gender-Sensitive Edition",
+  "license": {
+   "he": "CC-BY-SA",
+   "en": "CC-BY-NC"
+  }
+ },
+ "Genesis 33:14": {
+  "he": "יַעֲבׇר־נָ֥א אֲדֹנִ֖י לִפְנֵ֣י עַבְדּ֑וֹ וַאֲנִ֞י אֶֽתְנָהֲלָ֣ה לְאִטִּ֗י לְרֶ֨גֶל הַמְּלָאכָ֤ה אֲשֶׁר־לְפָנַי֙ וּלְרֶ֣גֶל הַיְלָדִ֔ים עַ֛ד אֲשֶׁר־אָבֹ֥א אֶל־אֲדֹנִ֖י שֵׂעִֽירָה׃",
+  "en": "Let my lord go on ahead of his servant, while I travel slowly, at the pace of the cattle before me and at the pace of the children, until I come to my lord in Seir.”",
+  "he_version": "Miqra according to the Masorah",
+  "en_version": "THE JPS TANAKH: Gender-Sensitive Edition",
+  "license": {
+   "he": "CC-BY-SA",
+   "en": "CC-BY-NC"
+  }
+ },
+ "Genesis 33:15": {
+  "he": "וַיֹּ֣אמֶר עֵשָׂ֔ו אַצִּֽיגָה־נָּ֣א עִמְּךָ֔ מִן־הָעָ֖ם אֲשֶׁ֣ר אִתִּ֑י וַיֹּ֙אמֶר֙ לָ֣מָּה זֶּ֔ה אֶמְצָא־חֵ֖ן בְּעֵינֵ֥י אֲדֹנִֽי׃",
+  "en": "Then Esau said, “Let me assign to you some of the people who are with me.” But he said, “Oh no, my lord is too kind to me!” ",
+  "he_version": "Miqra according to the Masorah",
+  "en_version": "THE JPS TANAKH: Gender-Sensitive Edition",
+  "license": {
+   "he": "CC-BY-SA",
+   "en": "CC-BY-NC"
+  }
+ },
+ "Genesis 33:16": {
+  "he": "וַיָּ֩שׇׁב֩ בַּיּ֨וֹם הַה֥וּא עֵשָׂ֛ו לְדַרְכּ֖וֹ שֵׂעִֽירָה׃",
+  "en": "So Esau started back that day on his way to Seir.",
+  "he_version": "Miqra according to the Masorah",
+  "en_version": "THE JPS TANAKH: Gender-Sensitive Edition",
+  "license": {
+   "he": "CC-BY-SA",
+   "en": "CC-BY-NC"
+  }
+ },
+ "Genesis 33:17": {
+  "he": "וְיַעֲקֹב֙ נָסַ֣ע סֻכֹּ֔תָה וַיִּ֥בֶן ל֖וֹ בָּ֑יִת וּלְמִקְנֵ֙הוּ֙ עָשָׂ֣ה סֻכֹּ֔ת עַל־כֵּ֛ן קָרָ֥א שֵׁם־הַמָּק֖וֹם סֻכּֽוֹת׃&nbsp;<span class=\"mam-spi-samekh\">{ס}</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+  "en": "But Jacob journeyed on to Succoth, and built a house for himself and made stalls for his cattle; that is why the place was called Succoth.<sup class=\"footnote-marker\">b</sup><i class=\"footnote\"><b>Succoth </b>Meaning “stalls,” “huts,” “booths.”</i> ",
+  "he_version": "Miqra according to the Masorah",
+  "en_version": "THE JPS TANAKH: Gender-Sensitive Edition",
+  "license": {
+   "he": "CC-BY-SA",
+   "en": "CC-BY-NC"
+  }
+ },
+ "Genesis 35:27": {
+  "he": "וַיָּבֹ֤א יַעֲקֹב֙ אֶל־יִצְחָ֣ק אָבִ֔יו מַמְרֵ֖א קִרְיַ֣ת הָֽאַרְבַּ֑ע הִ֣וא חֶבְר֔וֹן אֲשֶׁר־גָּֽר־שָׁ֥ם אַבְרָהָ֖ם וְיִצְחָֽק׃",
+  "en": "And Jacob came to his father Isaac at Mamre, at Kiriath-arba—now Hebron—where Abraham and Isaac had sojourned. ",
+  "he_version": "Miqra according to the Masorah",
+  "en_version": "THE JPS TANAKH: Gender-Sensitive Edition",
+  "license": {
+   "he": "CC-BY-SA",
+   "en": "CC-BY-NC"
+  }
+ },
+ "Genesis 35:28": {
+  "he": "וַיִּֽהְי֖וּ יְמֵ֣י יִצְחָ֑ק מְאַ֥ת שָׁנָ֖ה וּשְׁמֹנִ֥ים שָׁנָֽה׃",
+  "en": "Isaac was a hundred and eighty years old",
+  "he_version": "Miqra according to the Masorah",
+  "en_version": "THE JPS TANAKH: Gender-Sensitive Edition",
+  "license": {
+   "he": "CC-BY-SA",
+   "en": "CC-BY-NC"
+  }
+ },
+ "Genesis 35:29": {
+  "he": "וַיִּגְוַ֨ע יִצְחָ֤ק וַיָּ֙מׇת֙ וַיֵּאָ֣סֶף אֶל־עַמָּ֔יו זָקֵ֖ן וּשְׂבַ֣ע יָמִ֑ים וַיִּקְבְּר֣וּ אֹת֔וֹ עֵשָׂ֥ו וְיַעֲקֹ֖ב בָּנָֽיו׃&nbsp;<span class=\"mam-spi-pe\">{פ}</span><br>",
+  "en": "when he<sup class=\"footnote-marker\">k</sup><i class=\"footnote\"><b>he </b>Heb. “Isaac.”</i> breathed his last and died. He was gathered to his kin in ripe old age; and he was buried by his sons Esau and Jacob.",
+  "he_version": "Miqra according to the Masorah",
+  "en_version": "THE JPS TANAKH: Gender-Sensitive Edition",
+  "license": {
+   "he": "CC-BY-SA",
+   "en": "CC-BY-NC"
+  }
+ },
+ "Genesis 49:29": {
+  "he": "וַיְצַ֣ו אוֹתָ֗ם וַיֹּ֤אמֶר אֲלֵהֶם֙ אֲנִי֙ נֶאֱסָ֣ף אֶל־עַמִּ֔י קִבְר֥וּ אֹתִ֖י אֶל־אֲבֹתָ֑י אֶ֨ל־הַמְּעָרָ֔ה אֲשֶׁ֥ר בִּשְׂדֵ֖ה עֶפְר֥וֹן הַֽחִתִּֽי׃",
+  "en": "Then he instructed them, saying to them, “I am about to be gathered to my kin. Bury me with my ancestors in the cave that is in the field of Ephron the Hittite, ",
+  "he_version": "Miqra according to the Masorah",
+  "en_version": "THE JPS TANAKH: Gender-Sensitive Edition",
+  "license": {
+   "he": "CC-BY-SA",
+   "en": "CC-BY-NC"
+  }
+ },
+ "Genesis 49:30": {
+  "he": "בַּמְּעָרָ֞ה אֲשֶׁ֨ר בִּשְׂדֵ֧ה הַמַּכְפֵּלָ֛ה אֲשֶׁ֥ר עַל־פְּנֵי־מַמְרֵ֖א בְּאֶ֣רֶץ כְּנָ֑עַן אֲשֶׁר֩ קָנָ֨ה אַבְרָהָ֜ם אֶת־הַשָּׂדֶ֗ה מֵאֵ֛ת עֶפְרֹ֥ן הַחִתִּ֖י לַאֲחֻזַּת־קָֽבֶר׃",
+  "en": "the cave that is in the field of Machpelah, facing Mamre, in the land of Canaan, the field that Abraham bought from Ephron the Hittite for a burial site— ",
+  "he_version": "Miqra according to the Masorah",
+  "en_version": "THE JPS TANAKH: Gender-Sensitive Edition",
+  "license": {
+   "he": "CC-BY-SA",
+   "en": "CC-BY-NC"
+  }
+ },
+ "Genesis 49:31": {
+  "he": "שָׁ֣מָּה קָֽבְר֞וּ אֶת־אַבְרָהָ֗ם וְאֵת֙ שָׂרָ֣ה אִשְׁתּ֔וֹ שָׁ֚מָּה קָבְר֣וּ אֶת־יִצְחָ֔ק וְאֵ֖ת רִבְקָ֣ה אִשְׁתּ֑וֹ וְשָׁ֥מָּה קָבַ֖רְתִּי אֶת־לֵאָֽה׃",
+  "en": "there Abraham and his wife Sarah were buried; there Isaac and his wife Rebekah were buried; and there I buried Leah—",
+  "he_version": "Miqra according to the Masorah",
+  "en_version": "THE JPS TANAKH: Gender-Sensitive Edition",
+  "license": {
+   "he": "CC-BY-SA",
+   "en": "CC-BY-NC"
+  }
+ },
+ "Rashi on Genesis 35:8:1": {
+  "he": "<b>ותמת דבורה.</b> מָה עִנְיַן דְּבוֹרָה בְּבֵית יַעֲקֹב? אֶלָּא לְפִי שֶׁאָמְרָה רִבְקָה לְיַעֲקֹב וְשָׁלַחְתִּי וּלְקַחְתִּיךָ מִשָּׁם, שָׁלְחָה דְבוֹרָה אֶצְלוֹ לְפַדַּן אֲרָם לָצֵאת מִשָּׁם, וּמֵתָה בַדֶּרֶךְ; מִדִּבְרֵי רַבִּי מֹשֶׁה הַדַּרְשָׁן לְמַדְתִּיהָ:",
+  "en": "ותמת דבורה AND DEBORAH DIED — How came Deborah to be in Jacob’s house? But the explanation is: because Rebékah had promised Jacob (Gen. 27:45) “then I will send and fetch thee from thence”, she sent Deborah to him to Padan-aram to tell him to leave that place, and she died on the return journey I learnt this from a comment of R. Moses Ha-darshan.",
+  "he_version": "Pentateuch with Rashi's commentary by M. Rosenbaum and A.M. Silbermann, 1929-1934 (Hebrew identical to Sefaria merged)",
+  "en_version": "Pentateuch with Rashi's commentary by M. Rosenbaum and A.M. Silbermann, 1929-1934",
+  "license": {
+   "he": "Public Domain",
+   "en": "Public Domain"
+  }
  }
 }

@@ -228,6 +228,28 @@
   .b-motion svg { width: clamp(52px, 6vw, 76px); height: clamp(52px, 6vw, 76px); stroke: var(--accent); fill: none; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
   .b-motion .mt { font: 700 calc(var(--speech) * 1.02)/1.1 var(--kid); color: var(--accent); }
   .b-motion .mx { margin-top: 4px; font: 400 var(--speech)/1.35 var(--kid); color: var(--parchment); }
+  /* Count it: a gematria card, read right to left */
+  .b-count { align-self: center; width: min(40em, 100%); margin-block: 6px; padding: 18px 22px 20px; border: 2px dashed var(--accent); border-radius: 18px; background: rgba(0, 0, 0, 0.2); }
+  .b-count .mt { font: 700 calc(var(--speech) * 1.02)/1.1 var(--kid); color: var(--accent); }
+  .b-count .mx { margin-top: 4px; font: 400 calc(var(--speech) * 0.86)/1.35 var(--kid); color: var(--parchment); }
+  .count-rows { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 14px 18px; align-items: center; margin-top: 16px; }
+  .count-row { display: contents; }
+  .cw { display: grid; gap: 4px; justify-items: start; }
+  .cw [lang="he"] { font: 500 calc(var(--speech) * 1.5)/1 var(--display); color: var(--parchment); }
+  .cw small { font: 500 0.8rem/1.2 var(--ui); letter-spacing: 0.04em; color: var(--stone); }
+  .lts { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+  .lt { display: grid; justify-items: center; gap: 2px; min-width: 2.7em; padding: 7px 8px 6px; border-radius: 10px; background: var(--parchment); color: var(--ink); }
+  .lt b { font: 500 calc(var(--speech) * 1.2)/1 var(--display); }
+  .lt i { font: 600 0.82rem/1.1 var(--ui); font-style: normal; color: var(--ink-2); }
+  .lt.sum { background: transparent; color: var(--accent); border: 2px solid var(--accent); padding-block: 12px; }
+  .op { font: 600 calc(var(--speech) * 0.9)/1 var(--ui); color: var(--accent); }
+  @media (max-width: 560px) {
+    .count-rows { grid-template-columns: 1fr; gap: 6px; }
+    .count-row .lts { margin-bottom: 10px; }
+    .lts { gap: 5px; }
+    .lt { min-width: 0; padding: 6px 7px 5px; }
+    .lt b { font-size: calc(var(--speech) * 1.05); }
+  }
   .b-rung {
     align-self: stretch; position: relative; margin-block: 10px;
     padding: 20px clamp(26px, 4vw, 48px) 22px; border-radius: 6px;
@@ -348,6 +370,13 @@
 <script src="data/characters.js"></script>
 <script src="data/sources.js"></script>
 <script src="data/jacob.js"></script>
+<script src="data/esau.js"></script>
+<script src="data/rebekah.js"></script>
+<script src="data/isaac.js"></script>
+<script src="data/angel.js"></script>
+<script src="data/stone.js"></script>
+<script src="data/rashi.js"></script>
+<script src="data/sages.js"></script>
 <script>
 (function () {
   'use strict';
@@ -396,6 +425,10 @@
     return { '--room': c.color.room, '--room-2': c.color.room2, '--accent': c.color.accent };
   }
   function roleFor(c, lv) { return (c.role && (c.role[lv] || c.role.all)) || ''; }
+  /* Names inside a sentence: "the angel", "the Sages’ answer" */
+  function inText(c) { return c.ref || c.name; }
+  function whose(c) { return inText(c) + (c.plural ? '’' : '’s'); }
+  function atStart(s) { return s.charAt(0).toUpperCase() + s.slice(1); }
   function hasScript(id, lv) { return !!(V.scripts[id] && V.scripts[id][lv]); }
 
   function medal(c) {
@@ -412,6 +445,14 @@
     reach: '<path d="M32 54V11"/><path d="M18 25 32 11l14 14"/><path d="M12 57h40"/>',
     updown: '<path d="M21 52V12"/><path d="M11 22 21 12l10 10"/><path d="M43 12v40"/><path d="M33 42l10 10 10-10"/>',
     ladder: '<path d="M20 5v54"/><path d="M44 5v54"/><path d="M20 14h24"/><path d="M20 26h24"/><path d="M20 38h24"/><path d="M20 50h24"/>',
+    heart: '<path d="M32 54C16 43 8 33 8 23a12 12 0 0 1 24-6a12 12 0 0 1 24 6c0 10-8 20-24 31z"/>',
+    moon: '<path d="M38 8a24 24 0 1 0 18 34A20 20 0 0 1 38 8z"/><path d="M50 10v8M46 14h8"/>',
+    water: '<path d="M32 7C25 20 15 29 15 40a17 17 0 0 0 34 0c0-11-10-20-17-33z"/><path d="M24 41a9 9 0 0 0 7 9"/>',
+    bag: '<path d="M13 25h38l-4 31H17z"/><path d="M23 25v-5a9 9 0 0 1 18 0v5"/><path d="M13 36h38"/>',
+    stones: '<ellipse cx="19" cy="45" rx="12" ry="8"/><ellipse cx="45" cy="45" rx="12" ry="8"/><ellipse cx="32" cy="27" rx="12" ry="8"/>',
+    stone: '<path d="M9 45c0-13 10-22 24-22 13 0 22 8 22 18 0 6-4 10-10 10H15c-4 0-6-2-6-6z"/><path d="M20 32c4-3 9-4 14-3"/><path d="M5 57h54"/>',
+    pillar: '<path d="M21 56l2-31c1-10 4-17 9-17s9 7 9 17l2 31"/><path d="M10 56h44"/><path d="M28 17c2-2 6-2 8 0"/>',
+    voice: '<path d="M9 26h10l13-11v34L19 38H9z"/><path d="M42 24a11 11 0 0 1 0 16"/><path d="M49 17a20 20 0 0 1 0 30"/>',
     book: '<path d="M4 3h6a3 3 0 0 1 3 3v14a2 2 0 0 0-2-2H4z"/><path d="M20 3h-6a3 3 0 0 0-3 3v14a2 2 0 0 1 2-2h7z"/>'
   };
   function icon(name, viewBox) {
@@ -574,6 +615,7 @@
       else if (b.picture) st.items.push(toItem(b));
       else if (b.gallery) st.items.push(toItem(b));
       else if (b.motion) st.items.push({ k: 'motion', title: b.motion.title, text: b.motion.text, icon: b.motion.icon });
+      else if (b.count) st.items.push({ k: 'count', count: b.count });
       else if (b.ask) {
         st.items.push({ k: 'char', html: b.ask, asking: true });
         if (b.tip) st.items.push({ k: 'tip', text: b.tip });
@@ -671,7 +713,7 @@
         el('section', { class: 'soon-room' },
           el('p', { class: 'eyebrow', text: 'Coming soon' }),
           el('h2', { text: '“' + (c.tease[lv] || '') + '”' }),
-          el('p', { class: 'desc', text: c.name + '’s ' + L.short + ' visit is still being written. Here is the rung it will end with.' }),
+          el('p', { class: 'desc', text: atStart(whose(c)) + ' ' + L.short + ' visit is still being written. Here is the rung it will end with.' }),
           rungCard(r, lv))));
       room.appendChild(el('footer', { class: 'dock' }, el('span', { class: 'spacer' }), el('a', { class: 'btn primary', href: '#' + lv }, 'Back to all characters')));
       return;
@@ -682,7 +724,7 @@
     var inputs = session.get(key, []);
     var shown = 0;
     var rungs = el('div', { class: 'rungs' });
-    var convo = el('section', { class: 'convo', 'aria-live': 'polite', 'aria-label': 'Conversation with ' + c.name });
+    var convo = el('section', { class: 'convo', 'aria-live': 'polite', 'aria-label': 'Conversation with ' + inText(c) });
     var dock = el('footer', { class: 'dock' });
     room.appendChild(top);
     room.appendChild(el('div', { class: 'vmain' }, portrait, el('div', { class: 'rail', 'aria-hidden': 'true' }, rungs), convo));
@@ -727,7 +769,7 @@
         })));
         return card;
       }
-      card.appendChild(el('div', { class: 'label', text: 'Ask ' + c.name + ' a question' }));
+      card.appendChild(el('div', { class: 'label', text: 'Ask ' + inText(c) + ' a question' }));
       card.appendChild(el('div', { class: 'reply-grid' }, b.questions.map(function (q, i) {
         return el('button', { class: 'chip' + (st.used[i] ? ' used' : ''), type: 'button', onclick: function () { act({ t: 'q', i: i }); } },
           el('span', { class: 'n', text: String(i + 1) }), q.q);
@@ -756,6 +798,20 @@
         node = el('div', { class: 'item b-tip' }, el('b', { text: 'Teacher' }), it.text);
       } else if (it.k === 'motion') {
         node = el('div', { class: 'item b-motion' }, icon(it.icon), el('div', {}, el('div', { class: 'mt', text: it.title }), el('div', { class: 'mx', text: it.text })));
+      } else if (it.k === 'count') {
+        node = el('div', { class: 'item b-count' }, el('div', { class: 'mt', text: it.count.title }),
+          it.count.text ? el('div', { class: 'mx', text: it.count.text }) : null,
+          el('div', { class: 'count-rows', dir: 'rtl' }, it.count.rows.map(function (r) {
+            var tiles = [];
+            r.letters.forEach(function (l, i) {
+              if (i) tiles.push(el('span', { class: 'op', text: '+' }));
+              tiles.push(el('span', { class: 'lt' }, el('b', { lang: 'he', text: l[0] }), el('i', { text: String(l[1]) })));
+            });
+            tiles.push(el('span', { class: 'op', text: '=' }), el('span', { class: 'lt sum' }, el('b', { text: '?' })));
+            return el('div', { class: 'count-row' },
+              el('div', { class: 'cw' }, el('span', { lang: 'he', text: r.he }), el('small', { dir: 'ltr', text: r.en })),
+              el('div', { class: 'lts' }, tiles));
+          })));
       } else if (it.k === 'media') {
         node = el('figure', { class: 'item b-media' }, media(it.style), el('figcaption', { class: 'cap', text: (V.styles[it.style] || it.style) + ' · from the Jacob’s Dream gallery' }));
       } else if (it.k === 'gallery') {
@@ -809,7 +865,7 @@
       } else if (m === 'reveal') {
         dock.appendChild(el('span', { class: 'hint', text: 'Talk it over first.' }));
         dock.appendChild(spacer());
-        dock.appendChild(el('button', { class: 'btn primary', type: 'button', 'data-primary': 'reveal', onclick: function () { act({ t: 'next' }); } }, 'Hear ' + c.name + '’s answer', el('span', { class: 'kbd', text: 'Space' })));
+        dock.appendChild(el('button', { class: 'btn primary', type: 'button', 'data-primary': 'reveal', onclick: function () { act({ t: 'next' }); } }, 'Hear ' + whose(c) + ' answer', el('span', { class: 'kbd', text: 'Space' })));
       } else if (m === 'questions') {
         dock.appendChild(el('span', { class: 'hint', text: 'Choose a question above, or press 1–' + st.wait.b.questions.length + '.' }));
         dock.appendChild(spacer());
@@ -823,7 +879,7 @@
     /* Typed questions (5–7 and parents) are matched to the prepared ones, inside the reply card */
     function askForm(b) {
       var results = el('div', { class: 'ask-results', hidden: true });
-      var input = el('input', { id: 'ask-' + lv + '-' + id, type: 'text', placeholder: 'Or type your own question…', autocomplete: 'off', 'aria-label': 'Type a question for ' + c.name });
+      var input = el('input', { id: 'ask-' + lv + '-' + id, type: 'text', placeholder: 'Or type your own question…', autocomplete: 'off', 'aria-label': 'Type a question for ' + inText(c) });
       var form = el('form', { class: 'ask-row', onsubmit: function (e) {
         e.preventDefault();
         var text = input.value.trim();
@@ -837,8 +893,8 @@
           })));
         }
         results.appendChild(el('p', { text: found.length ?
-          'Choose the closest question, and ' + c.name + ' will answer it.' :
-          c.name + ' doesn’t have a prepared answer for that yet. When Ask anything is set up, it will answer questions like this one, marked as an imagined answer.' }));
+          'Choose the closest question, and ' + inText(c) + ' will answer it.' :
+          atStart(inText(c)) + (c.plural ? ' don’t' : ' doesn’t') + ' have a prepared answer for that yet. When Ask anything is set up, it will answer questions like this one, marked as an imagined answer.' }));
         results.hidden = false;
         stick(true);
       } }, input, el('button', { class: 'btn', type: 'submit' }, 'Ask'));

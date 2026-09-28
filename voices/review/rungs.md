@@ -1,28 +1,28 @@
 # Every rung, draft
 
-Each visit ends with a rung: one line to carry back to the family, plus a motion (K–2), a secret (3–4), a question for parents (5–7), or a question for your child (parents). Only Jacob’s visit is written so far; the rest are drafts to steer the scripts.
+Each visit ends with a rung: one line to carry back to the family, plus a motion (K–2), a secret (3–4), a question for parents (5–7), or a question for your child (parents). Rungs marked *(draft)* belong to visits that are not written yet.
 
 ## Grades K–2
 
 | Character | Rung | The motion |
 |---|---|---|
 | Jacob | God was here, and I didn’t even know it! | Hands on your cheeks like you’re surprised. Then open your arms wide: here! |
-| Esau *(draft)* | I was so angry… but one day I hugged my brother again. | Cross your arms and make an angry face. Then open your arms for a big hug. |
-| Rebekah *(draft)* | I sent you away because I love you. | Give yourself a hug. Then wave goodbye. |
-| An angel *(draft)* | Up and down, God is all around! | Climb with your hands: up, up, up… and down, down, down. |
-| The stone *(draft)* | We all wanted to help Jacob, so God made us one. | Make two fists and press them together into one. |
+| Esau | I was so angry… but one day I hugged my brother again. | Cross your arms and make an angry face. Then open your arms for a big hug. |
+| Rebekah | I sent you away because I love you. | Give yourself a hug. Then wave goodbye. |
+| An angel | Up and down, God is all around! | Climb with your hands: up, up, up… and down, down, down. |
+| The stone | We all wanted to help Jacob, so God made us one. | Make two fists and press them together into one. |
 
 ## Grades 3–4
 
 | Character | Rung | The secret |
 |---|---|---|
 | Jacob | God was in this place, and I didn’t know it. | I gave the place a new name: Beit El, House of God. Its old name was Luz. |
-| Esau *(draft)* | Don’t you have a blessing for me too? | Twenty years later, I ran to hug my brother, and we both cried. |
-| Rebekah *(draft)* | Sometimes loving someone means letting them go. | I told Jacob to stay away “a few days.” It became twenty years. |
-| Isaac *(draft)* | I gave you the blessing of Abraham. Take it with you. | I blessed Jacob twice: once when he tricked me, and once when he left home. |
-| An angel *(draft)* | Your face is known in heaven. | The Sages said the angels went up to look at Jacob’s picture in heaven, then came down and found him sleeping. |
-| Rashi *(draft)* | Look closely. Every word is a clue. | The angels changed shifts! The angels of the Land of Israel went up, and new angels came down to go with Jacob. |
-| The Sages *(draft)* | The ladder could be many things. | Sulam (ladder) and Sinai add up to the same number: 130! |
+| Esau | Don’t you have a blessing for me too? | Twenty years later, I ran to hug my brother, and we both cried. |
+| Rebekah | Sometimes loving someone means letting them go. | In Hebrew, I told Jacob to stay away “a few days.” It became twenty years. |
+| Isaac | I gave you the blessing of Abraham. Take it with you. | I blessed Jacob twice: once when he tricked me, and once when he left home. |
+| An angel | Your face is known in heaven. | The Sages said the angels went up to look at Jacob’s picture in heaven, then came down and found him sleeping. |
+| Rashi | Look closely. Every word is a clue. | The angels changed shifts! The angels of the Land of Israel went up, and new angels came down to go with Jacob. |
+| The Sages | The ladder could be many things. | Sulam (ladder) and Sinai add up to the same number: 130! |
 
 ## Grades 5–7
 
