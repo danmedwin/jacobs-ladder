@@ -212,6 +212,19 @@ Object.assign(VOICES.sources, {
   ],
   "credit": "talmud"
  },
+ "Rashi on Chullin 91b": {
+  "label": "Rashi on Chullin 91b",
+  "title": "Rashi on Chullin 91b",
+  "kind": "Commentary on the Talmud · 11th century",
+  "verses": [
+   {
+    "n": "Four short notes",
+    "he": "בדיוקנו של מעלה - פרצוף אדם שבארבע חיות בדמות יעקב: בעו לסכוניה - מחמת קנאה: נצב עליו - לשמרו: שמניף על בנו - במניפה להצילו מן השרב:",
+    "en": "<b>His image above:</b> the human face among the four living creatures [that carry God’s throne] is in Jacob’s likeness. <b>They wanted to endanger him:</b> out of jealousy. <b>Stood over him:</b> to guard him. <b>Who waves over his son:</b> with a fan, to save him from the heat."
+   }
+  ],
+  "credit": "Hebrew: Rashi on Chullin, Vilna edition, public domain, via Sefaria. The translation is ours."
+ },
  "Genesis 25:24": {
   "label": "Genesis 25:24",
   "title": "Genesis 25:24",
@@ -1870,6 +1883,19 @@ Object.assign(VOICES.sources, {
   ],
   "credit": "rashi"
  },
+ "Rashi on Genesis 3:8:1": {
+  "label": "Rashi on Genesis 3:8",
+  "title": "Rashi on Genesis 3:8",
+  "kind": "Commentary · 11th century",
+  "verses": [
+   {
+    "n": "Rashi on his own method, at Genesis 3:8",
+    "he": "וישמעו. יֵשׁ מִדְרְשֵׁי אַגָּדָה רַבִּים וּכְבָר סִדְּרוּם רַבּוֹתֵינוּ עַל מְכוֹנָם בִּבְ״רַ וּבִשְׁאָר מִדְרָשׁוֹת; וַאֲנִי לֹא בָאתִי אֶלָּא לִפְשׁוּטוֹ שֶׁל מִקְרָא וּלְאַגָּדָה הַמְיַשֶּׁבֶת דִּבְרֵי הַמִּקְרָא דָבָר דָּבוּר עַל אׇפְנָיו",
+    "en": "There are many Midrashic explanations and our Teachers have already collected them in their appropriate places in Genesis Rabbah and in other Midrashim. I, however, am only concerned with the plain sense of Scripture and with such Agadoth that explain the words of Scripture in a manner that fits in with them. <i>[The comment goes on to explain the verse, where Adam and Eve hear God in the garden.]</i>"
+   }
+  ],
+  "credit": "rashi"
+ },
  "Genesis 24:10–11": {
   "label": "Genesis 24:10–11",
   "title": "Genesis 24:10–11",
@@ -2384,6 +2410,19 @@ Object.assign(VOICES.sources, {
    }
   ],
   "credit": "turim"
+ },
+ "Bereshit Rabbah 68:11 (the stones)": {
+  "label": "B’reishit Rabbah 68:11",
+  "title": "B’reishit Rabbah 68:11",
+  "kind": "Midrash · about the 5th century CE",
+  "verses": [
+   {
+    "n": "The stones under Jacob’s head",
+    "he": "רַבִּי לֵוִי וְרַבִּי אֶלְעָזָר בְּשֵׁם רַבִּי יוֹסֵי בַּר זִמְרָא אָמַר עֲשָׂאָן כְּמִין מַרְזֵב וְנָתַן תַּחַת רֹאשׁוֹ, שֶׁהָיָה מִתְיָרֵא מִן הַחַיּוֹת. רַבִּי בֶּרֶכְיָה וְרַבִּי לֵוִי בְּשֵׁם רַבִּי חָמָא בַּר חֲנִינָא אָמַר כְּתִיב (מיכה א, ג): כִּי הִנֵּה ה׳ יֹצֵא מִמְּקוֹמוֹ וְיָרַד וְדָרַךְ עַל בָּמֳתֵי אָרֶץ וגו׳, מִי שֶׁנִּגְלָה עָלָיו הַקָּדוֹשׁ בָּרוּךְ הוּא עַל אַחַת כַּמָּה וְכַמָּה. רַבִּי בֶּרֶכְיָה בְּשֵׁם רַבִּי לֵוִי אָמַר אוֹתָן הָאֲבָנִים שֶׁנָּתַן יַעֲקֹב אָבִינוּ תַּחַת רֹאשׁוֹ נַעֲשׂוּ תַּחְתָּיו כְּמִטָּה וּכְפַרְנוֹס",
+    "en": "Rabbi Levi and Rabbi Elazar said in the name of Rabbi Yosei bar Zimra: He made them in the shape of a roof gutter and placed it beneath his head because he feared the beasts. Rabbi Berekhya and Rabbi Levi said in the name of Rabbi Ḥama bar Ḥanina: It is written: “For, behold, the Lord emerges from His place, and will descend and tread on the heights of the earth. [The mountains will melt under Him, and the valleys will burst like wax before the fire, like waters poured down a slope]” (Micah 1:3–4). All the more so for one in a place where the Holy One blessed be He has revealed Himself. Rabbi Berekhya said in the name of Rabbi Levi: Those stones that Jacob placed under his head became like a bed and a feather pillow under him."
+   }
+  ],
+  "credit": "midrash"
  },
  "Genesis 35:14": {
   "label": "Genesis 35:14",

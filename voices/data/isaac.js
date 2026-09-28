@@ -11,9 +11,9 @@ VOICES.scripts.isaac = {
     { say: 'So I said, “Come closer that I may feel you, my son.”', src: 'Genesis 27:21' },
     { motion: { title: 'Guess the voice!', text: 'Everyone close your eyes. The teacher taps one person, who says “Shalom!” Can you guess who it was, just from the voice?', icon: 'voice' } },
     { say: 'His arms felt hairy, like Esau’s. But his voice… I said, “The voice is the voice of Jacob, yet the hands are the hands of Esau.”', src: 'Genesis 27:22' },
-    { say: 'Then I kissed him and smelled his clothes. They smelled like Esau, like the fields. So I blessed him.', src: 'Genesis 27:26–29' },
-    { say: 'A little later, Esau came in with his food. I asked, “Who are you?” He said, “I am your son, Esau, your first-born!”', src: 'Genesis 27:30–32' },
-    { say: 'I was seized with very violent trembling. I had blessed the wrong son! But I said, “Now he must remain blessed!”', src: 'Genesis 27:33' },
+    { say: 'I said, “Come close and kiss me, my son.” When he kissed me, I smelled his clothes. They smelled like the fields, like Esau. So I blessed him.', src: 'Genesis 27:26–29' },
+    { say: 'Right after Jacob left, Esau came in with his food. I asked, “Who are you?” He said, “I am your son, Esau, your first-born!”', src: 'Genesis 27:30–32' },
+    { say: 'I was seized with very violent trembling. I had blessed someone else! But I said, “Now he must remain blessed!”', src: 'Genesis 27:33' },
     { ask: 'Why do you think I didn’t take the blessing back?',
       choices: [
         { label: 'A blessing can’t be taken back', reply: ['That’s how it felt to me. Once words are spoken, they’re out in the world.'] },
@@ -29,7 +29,7 @@ VOICES.scripts.isaac = {
       reveal: [
         'The first blessing was for someone pretending to be Esau. This one was for Jacob, as himself.',
         'And a blessing is a way to say goodbye. He was leaving home, and I wanted him to carry something from me.' ] },
-    { say: 'That night, in Jacob’s dream, God said, “I am the Eternal, the God of your father Abraham and the God of Isaac.” That’s me! Jacob heard my name in his dream.', src: 'Genesis 28:13' },
+    { say: 'Later, in Jacob’s dream, God said, “I am the Eternal, the God of your father Abraham and the God of Isaac.” That’s me! Jacob heard my name in his dream.', src: 'Genesis 28:13' },
     { prompt: 'What do you want to ask me?', questions: [
       { q: 'Were you angry at Jacob?', keys: 'angry mad upset jacob trick', a: [
         { say: 'I told Esau, “Your brother came with guile and took away your blessing.” Guile means sneaky tricks.', src: 'Genesis 27:35' },

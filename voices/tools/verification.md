@@ -1021,3 +1021,31 @@ What the codes mean in general (a summary of the license terms, not legal advice
 - Each entry has he, en, he_version, en_version, license (for Hebrew and English separately) and sefaria_ref. Where they apply, it also has he_lemma (the dibbur ha-matchil), en_footnotes (marker, lemma, text), en_html / he_html (the original markup: small capitals, bold, footnotes), segments or paragraphs, and notes.
 - Plain text: HTML removed, footnotes moved out of the running text, line breaks kept (poetry, midrash sub-paragraphs), MAM parashah markers {פ}/{ס} dropped. Nothing else is changed: vowels, cantillation, curly quotes and brackets are all as published.
 - The _meta key holds the full version table (title, versionTitle, license, source URL, JSON URL) and the list of versions checked but not used.
+
+## Second check: the K–2 and 3–4 scripts for seven characters
+
+Checked 28 September 2026: every line of `voices/data/esau.js`, `rebekah.js`, `isaac.js`, `angel.js`, `stone.js`, `rashi.js`, and `sages.js`, read against texts.json and the built cards. Every Torah phrase the 3–4 scripts put in quotation marks was also compared by script with the Revised JPS. Ages, numbers, family ties, places, gematria sums, and the rabbis named all held up. These lines were corrected:
+
+| Script | Was | Why | Now |
+|---|---|---|---|
+| Isaac, 3–4 | “Then I kissed him” | 27:26–27: Isaac asks, and Jacob kisses him | Quotes “Come close and kiss me, my son” |
+| Isaac, 3–4 | “A little later, Esau came in” | 27:30: “No sooner had Jacob left” | “Right after Jacob left” |
+| Isaac, 3–4 | “I had blessed the wrong son!” | A verdict the text and Rashi on 27:33 resist | “I had blessed someone else!” |
+| Esau, K–2 | “Jacob covered his arms with goat fur” | 27:16: Rebekah did | “Our mother covered Jacob’s arms” |
+| Rebekah, K–2 | “Jacob tricked his father… and I helped him” | 27:6–13: the plan was hers, over Jacob’s worry | “I made a plan so that Jacob would get his father’s special blessing” |
+| Rebekah, Isaac, Esau | “That very first night,” “That night,” “The night Jacob ran away” | The Torah doesn’t date the dream; 35:7 says only “when he was fleeing” | “On his way,” “Later,” “When Jacob was running away” |
+| Angel, 3–4 | The fan and the cooling, credited to the Talmud | The Talmud says only “like a man who waves over his son”; the fan and the jealousy are Rashi’s notes on Chullin 91b | Credits Rashi, adds Reish Lakish’s “if the Torah didn’t say it, we would never dare,” and admits the jealous angels are the same ones who looked at the picture |
+| Sages, 3–4 | “Is there a ladder we can climb?” … the voice of prayer is a ladder | The Ba’al HaTurim: prayer is a ladder for the angels to go up on | “Is there a ladder today?” … a ladder for the angels to climb |
+| Esau, 3–4 | Ishmael “didn’t get the big blessing” | 17:20: God does bless Ishmael; the covenant goes to Isaac (17:21) | “didn’t carry on Abraham’s covenant with God” |
+| Esau, 3–4 | “The Torah never uses the word ‘forgive’” | 50:17 does | “The Torah never says I forgave him” |
+| Rashi, 3–4 | “The Torah says ‘the place’” | RJPS 28:11 reads “a certain place”; *bamakom* is the Hebrew | “The Hebrew says *bamakom*, ‘the place’” |
+| Rashi, 3–4 | Clue two cited Chullin and 28:18 only | Needs 28:11, whose RJPS reading (“one of the stones”) is the answer Rashi disputes | Adds 28:11 and a teacher’s note |
+| Rashi, 3–4 | “for the sun had set” … “That sounds extra” | Rashi’s point is the “because”: the sunset seems to surprise him | “as if the sunset took him by surprise” |
+| Rashi, 3–4 | Short notes “are easy to carry” | Invented motive | Rashi’s own words on 3:8: the plain sense, and the aggadah that explains the words |
+| Angel, K–2 | Two midrash lines had no card | | Cite B’reishit Rabbah 68:12; Rashi’s “at home” is now “in the Land of Israel” |
+| Stone, K–2 | Rashi learned it “from the Talmud” | The stones around his head come from B’reishit Rabbah 68:11 | “from the Talmud and the midrash,” with a card |
+| Stone, K–2 | “Were you comfy? … Not very soft.” | B’reishit Rabbah 68:11: the stones “became like a bed and a feather pillow under him” | Uses that line; “like a tower” is now “like a pillar” (28:18) |
+| Angel, K–2 and 3–4 | “The Torah doesn’t say what we look like” | The angels who visit Abraham look like people (18:2, 19:1) | “what the angels on the ladder looked like” |
+| Rebekah, 3–4 | “Did you ever see Jacob again?” left the question open | Rashi on 35:8: at that oak Jacob learned his mother had died | Says so, gently, after Rashi’s story of Deborah |
+
+Two passages were added to texts.json for this: Rashi on Chullin 91b:11 (Vilna edition, public domain; no English in the export, so the card’s translation is ours) and Rashi on Genesis 3:8:1 (Rosenbaum–Silbermann, public domain).

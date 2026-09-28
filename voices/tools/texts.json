@@ -4193,5 +4193,39 @@
    "he": "Public Domain",
    "en": "Public Domain"
   }
+ },
+ "Rashi on Genesis 3:8:1": {
+  "sefaria_ref": "Rashi on Genesis 3:8:1",
+  "he": "וישמעו. יֵשׁ מִדְרְשֵׁי אַגָּדָה רַבִּים וּכְבָר סִדְּרוּם רַבּוֹתֵינוּ עַל מְכוֹנָם בִּבְ\"רַ וּבִשְׁאָר מִדְרָשׁוֹת; וַאֲנִי לֹא בָאתִי אֶלָּא לִפְשׁוּטוֹ שֶׁל מִקְרָא וּלְאַגָּדָה הַמְיַשֶּׁבֶת דִּבְרֵי הַמִּקְרָא דָבָר דָּבוּר עַל אׇפְנָיו: וישמעו. מַה שָּׁמְעוּ? שָׁמְעוּ אֶת קוֹל הַקָּבָּ\"ה שֶׁהָיָה מִתְהַלֵּךְ בַּגַּן:",
+  "en": "וישמעו AND THEY HEARD — There are many Midrashic explanations and our Teachers have already collected them in their appropriate places in Genesis Rabbah and in other Midrashim. I, however, am only concerned with the plain sense of Scripture and with such Agadoth that explain the words of Scripture in a manner that fits in with them. וישמעו AND THEY HEARD — What did they hear? They heard the sound of the Holy One, blessed be He, as He walked in the garden (see Genesis Rabbah 19:12).",
+  "he_version": "Pentateuch with Rashi's commentary by M. Rosenbaum and A.M. Silbermann, 1929-1934",
+  "en_version": "Pentateuch with Rashi's commentary by M. Rosenbaum and A.M. Silbermann, 1929-1934",
+  "license": {
+   "he": "Public Domain",
+   "en": "Public Domain"
+  },
+  "notes": [
+   "Added for Rashi's own statement of his method (plain sense and the aggadah that settles the words of the verse). The comment then begins a second heading, which the card leaves out."
+  ]
+ },
+ "Rashi on Chullin 91b:11": {
+  "sefaria_ref": "Rashi on Chullin 91b:11",
+  "he": "בדיוקנו של מעלה - פרצוף אדם שבארבע חיות בדמות יעקב: בעו לסכוניה - מחמת קנאה: נצב עליו - לשמרו: שמניף על בנו - במניפה להצילו מן השרב:",
+  "he_comments": [
+   "בדיוקנו של מעלה - פרצוף אדם שבארבע חיות בדמות יעקב:",
+   "בעו לסכוניה - מחמת קנאה:",
+   "נצב עליו - לשמרו:",
+   "שמניף על בנו - במניפה להצילו מן השרב:"
+  ],
+  "en": null,
+  "he_version": "Vilna Edition",
+  "en_version": null,
+  "license": {
+   "he": "Public Domain",
+   "en": null
+  },
+  "notes": [
+   "Rashi's four comments on Chullin 91b:11 (Sefaria numbers them 91b:11:1-4). The export has no published English used here; the card gives our translation. Rashi supplies the two details the Talmud's own words leave out: the angels' jealousy (מחמת קנאה) and the fan (במניפה)."
+  ]
  }
 }

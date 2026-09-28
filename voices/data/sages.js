@@ -44,9 +44,9 @@ VOICES.scripts.sages = {
       { q: 'Why did the angels go up first?', keys: 'up first down order why', a: [
         { say: 'We had an answer for that too. The angels who went with Jacob in the Land of Israel went up, and the angels who would go with him outside the Land came down.', src: 'Bereshit Rabbah 68:12 (his guardians)' },
         'Rashi learned that from us!' ] },
-      { q: 'Is there a ladder we can climb?', keys: 'ladder climb us today prayer voice', a: [
+      { q: 'Is there a ladder today?', keys: 'ladder climb us today now prayer pray voice', a: [
         { say: 'The Ba’al HaTurim counted letters, too. He spelled <i>sulam</i> with a vav, סולם, and got 136. That’s the same as <i>kol</i>, קול, “voice.”', src: 'Kitzur Baal HaTurim on Genesis 28:12:3' },
-        'He said the voice of prayer is a ladder. When you pray with all your heart, every rung is there.' ] }
+        'He said that when good people pray, their voices make a ladder for the angels to climb. When you pray with all your heart, every rung is there.' ] }
     ] },
     { rung: true },
     { next: { say: '<i>Davar acher</i>: another visit! Rashi learned from us, and the angel has a story about Jacob’s picture in heaven.', ids: ['rashi', 'angel', 'jacob'] } }

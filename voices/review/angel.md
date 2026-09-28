@@ -13,12 +13,12 @@ Small gray references are the source cards a teacher can open during the visit. 
 3. *[Animation: Stained Glass, from the Jacob’s Dream gallery.]*
 4. Lots of angels were going up and down, up and down. <sub>Genesis 28:12</sub>
 5. **Everybody moves: Fly like an angel!** Stretch your arms out like wings. Float up high on your tiptoes… now float down low. Up… and down!
-6. Do you know why we were going up and down? We wanted to see Jacob!
+6. Do you know why we were going up and down? We wanted to see Jacob! <sub>B’reishit Rabbah 68:12</sub>
 7. First, we went up to heaven to look at a picture of Jacob there. <sub>B’reishit Rabbah 68:12</sub>
 8. Then we came down the ladder to see the real Jacob. And there he was… fast asleep! <sub>B’reishit Rabbah 68:12</sub>
 9. **Everybody moves: Shh! He’s sleeping!** Finger on your lips: shhh! Tiptoe down the ladder, very, very quietly.
 10. **The angel asks:** Why do you think the angels wanted to see Jacob?
-   - Button **“He was special”** → Yes! The Sages said Jacob’s picture was up in heaven because God was so proud of him.
+   - Button **“He was special”** → Yes! The Sages said Jacob’s picture was up in heaven because God was so proud of him. <sub>B’reishit Rabbah 68:12</sub>
    - Button **“To keep him safe”** → We did want him to be safe. And God was right there with him, too.
    - Button **“They were curious”** → We were! We wanted to see the real Jacob, not just his picture.
    - *Teacher: Let everyone answer out loud. Then choose what most of the group said.*
@@ -27,10 +27,10 @@ Small gray references are the source cards a teacher can open during the visit. 
    - *Teacher: Take a few answers out loud. Then tap to hear the angel.*
    - Then the angel answers: Your grown-ups, your teachers, your friends… And Jacob learned that God is with you, too, wherever you go.
 13. **The angel:** What would you like to ask me?
-   1. *Do you have wings?* → The Torah doesn’t say what we look like! Artists have imagined us in lots of ways. / *[Pictures: Origami, Blown Glass, 3D Animated, Goldwork Embroidery.]* Here’s how some artists pictured us.
+   1. *Do you have wings?* → The Torah doesn’t say what the angels on the ladder looked like! Artists have imagined us in lots of ways. / *[Pictures: Origami, Blown Glass, 3D Animated, Goldwork Embroidery.]* Here’s how some artists pictured us.
    2. *How many angels were there?* → The Torah just says “angels.” The Talmud says there were at least four: two going up and two coming down, all at the same time! <sub>Chullin 91b</sub>
    3. *How big was the ladder?* → Enormous! The Talmud says angels are huge, and the ladder was wide enough for four of us to pass each other. <sub>Chullin 91b</sub>
-   4. *Why did you go up first?* → Good question! A teacher named Rashi noticed that too. He said the angels who took care of Jacob at home went up, and new angels came down to take care of him on his trip. <sub>Rashi on Genesis 28:12</sub>
+   4. *Why did you go up first?* → Good question! A teacher named Rashi noticed that too. He said the angels who took care of Jacob in the Land of Israel went up, and new angels came down to take care of him on his trip. <sub>Rashi on Genesis 28:12</sub>
 14. **The rung:** “Up and down, God is all around!”
    - **The motion:** Climb with your hands: up, up, up… and down, down, down.
 15. Thanks for visiting me! Who do you want to meet next? *(Suggests: Jacob, The stone, Rebekah.)*
@@ -54,13 +54,13 @@ Small gray references are the source cards a teacher can open during the visit. 
    - *Teacher: Take a few answers. Then tap to hear the angel.*
    - Then the angel answers: The Sages quoted God’s words in the book of Isaiah: “Israel, in whom I glory.” God was proud of Jacob, even on his worst night. <sub>B’reishit Rabbah 68:12</sub> / Maybe God could see who Jacob would become, not just what he had done.
 9. Then God was standing beside Jacob, and said, “Remember, I am with you: I will protect you wherever you go.” <sub>Genesis 28:13 · Genesis 28:15</sub>
-10. The Talmud tells one more story. Some angels were not so friendly. They wanted to harm Jacob! So right away, God stood over him to protect him. <sub>Chullin 91b</sub>
-11. Rabbi Shimon ben Lakish said God was like a parent standing over their child, waving a fan to keep them cool. <sub>Chullin 91b</sub>
+10. The Talmud tells the story a little differently, and we angels don’t look so good in it. The angels who looked at Jacob’s picture wanted to harm him! Rashi says they were jealous. So right away, God stood over Jacob to protect him. <sub>Chullin 91b · Rashi on Chullin 91b</sub>
+11. Rabbi Shimon ben Lakish said that if the Torah didn’t say it, we would never dare to: God stood over Jacob like a parent waving over their child. Rashi explains that the parent is waving a fan, to protect the child from the heat. <sub>Chullin 91b · Rashi on Chullin 91b</sub>
 12. **The angel asks the group to discuss:** When have you felt like someone was watching over you?
    - *Teacher: Take a few answers. Then tap to hear the angel.*
    - Then the angel answers: Jacob felt all alone that night. He didn’t know that God, and a whole ladder full of angels, were right there with him.
 13. **The angel:** What do you want to ask me?
-   1. *What do angels look like?* → The Torah doesn’t say. Artists have imagined us in many different ways. / *[Pictures: Illuminated Manuscript, Synagogue Mosaic, Blown Glass, Holographic.]* Four artists, four ideas.
+   1. *What do angels look like?* → The Torah doesn’t say what the angels on the ladder looked like. Artists have imagined us in many different ways. / *[Pictures: Illuminated Manuscript, Synagogue Mosaic, Blown Glass, Holographic.]* Four artists, four ideas.
    2. *Why did the angels go up first?* → Good eye! Rashi noticed that too. He said the angels who guarded Jacob in the Land of Israel went up, and new angels came down to go with him outside the Land. Like changing shifts! <sub>Rashi on Genesis 28:12</sub>
    3. *How many angels were there?* → The Talmud counts at least four: two going up and two coming down, passing each other on the ladder. <sub>Chullin 91b</sub>
    4. *How wide was the ladder?* → The Talmud says eight thousand parasangs! A parasang is a few miles, so that’s thousands and thousands of miles wide. <sub>Chullin 91b</sub> / Why so wide? Four angels had to fit, and the Talmud says each of us is gigantic!

@@ -6,7 +6,7 @@ VOICES.scripts.stone = {
   k2: { beats: [
     { say: 'Hi! I’m the stone. I’m just one stone now. But I used to be lots of stones!' },
     { say: 'One night, Jacob came to our place. The sun had gone down, and he needed somewhere to sleep.', src: 'Genesis 28:11' },
-    { say: 'He was all alone, and he was afraid of wild animals. So he put us stones all around his head, to keep him safe.', src: 'Rashi on Genesis 28:11:4' },
+    { say: 'He was all alone, and he was afraid of wild animals. So he put us stones all around his head, to keep him safe.', src: ['Rashi on Genesis 28:11:4', 'Bereshit Rabbah 68:11 (the stones)'] },
     { motion: { title: 'Be the stones!', text: 'Curl up small and round, like a stone. Now everybody, all together: “Pick me! Pick me!”', icon: 'stones' } },
     { say: 'Then we started to argue! Every stone said, “Let this good man put his head on me!”', src: 'Rashi on Genesis 28:11:4' },
     { ask: 'Why did we all want to help Jacob?',
@@ -20,19 +20,19 @@ VOICES.scripts.stone = {
     { motion: { title: 'Become one stone!', text: 'Everybody squeeze in close together… closer… closer! Now you’re all one big stone.', icon: 'stone' } },
     { say: 'Jacob put his head on me and fell asleep. And right on top of me, he had his dream!', src: 'Genesis 28:12' },
     { picture: { style: '3d-animated' } },
-    { say: 'In the morning, Jacob stood me up tall, like a tower. And he poured oil on top of me, to show that this place was special.', src: 'Genesis 28:18' },
-    { motion: { title: 'Stand up tall!', text: 'Stand up straight and tall, like a tower of stone. Now hold very, very still!', icon: 'pillar' } },
+    { say: 'In the morning, Jacob stood me up tall, like a pillar. And he poured oil on top of me, to show that this place was special.', src: 'Genesis 28:18' },
+    { motion: { title: 'Stand up tall!', text: 'Stand up straight and tall, like a stone pillar. Now hold very, very still!', icon: 'pillar' } },
     { say: 'Jacob gave our place a new name: Beit El. That means “House of God.”', src: 'Genesis 28:19' },
     { ask: 'What helps you feel safe when you go to sleep?', discuss: true,
       tip: 'Take a few answers out loud. Then tap to hear the stone.',
       reveal: [{ say: 'For Jacob, it was me! And God, who told him, “I am with you.”', src: 'Genesis 28:15' }] },
     { prompt: 'What would you like to ask me?', questions: [
       { q: 'Were you comfy?', a: [
-        'Well… I’m a stone! Not very soft. But Jacob was tired from walking all day, and I did my best.' ] },
+        { say: 'Yes! The Sages said that under Jacob, we stones became as soft as a bed and a feather pillow.', src: 'Bereshit Rabbah 68:11 (the stones)' } ] },
       { q: 'Can stones really talk?', a: [
         { say: 'Not really! This is a midrash, a story our teachers told about the Torah. It shows that everything wanted to help Jacob, even the stones.', src: 'Rashi on Genesis 28:11:4' } ] },
       { q: 'Who told your story?', a: [
-        { say: 'A teacher named Rashi wrote it down, about a thousand years ago. He learned it from the Talmud, an even older book.', src: ['Rashi on Genesis 28:11:4', 'Chullin 91b (the stones)'] } ] },
+        { say: 'A teacher named Rashi wrote it down, about a thousand years ago. He learned it from even older books: the Talmud and the midrash.', src: ['Rashi on Genesis 28:11:4', 'Chullin 91b (the stones)', 'Bereshit Rabbah 68:11 (the stones)'] } ] },
       { q: 'Where are you now?', a: [
         { say: 'Nobody knows! But many years later, Jacob came back to Beit El and set up a stone there again.', src: 'Genesis 35:14' } ] }
     ] },

@@ -185,6 +185,19 @@ COMMENTARY = {
         "from": "Kitzur Ba'al HaTurim on Genesis 28:12:6", "label": "Ba’al HaTurim on Genesis 28:12", "kind": TURIM, "n": "Ladder and Sinai",
         "en": "<i>Sulam</i> (סלם), “ladder,” has the numerical value of <i>Sinai</i> (סיני): God showed him the standing at Mount Sinai. <i>[Both come to 130: 60 + 30 + 40, and 60 + 10 + 50 + 10.]</i>",
         "credit": "turim"},
+    "Bereshit Rabbah 68:11 (the stones)": {
+        "from": "Bereshit Rabbah 68:11", "label": "B’reishit Rabbah 68:11", "kind": MIDRASH, "n": "The stones under Jacob’s head",
+        "he_from": "רַבִּי לֵוִי וְרַבִּי אֶלְעָזָר בְּשֵׁם רַבִּי יוֹסֵי בַּר זִמְרָא", "he_until": "נַעֲשׂוּ תַּחְתָּיו כְּמִטָּה וּכְפַרְנוֹס",
+        "en_from": "Rabbi Levi and Rabbi Elazar said in the name of Rabbi Yosei bar Zimra:", "en_until": "became like a bed and a feather pillow under him.",
+        "credit": "midrash"},
+    "Rashi on Chullin 91b": {
+        "from": "Rashi on Chullin 91b:11", "label": "Rashi on Chullin 91b", "kind": "Commentary on the Talmud · 11th century", "n": "Four short notes",
+        "en": "<b>His image above:</b> the human face among the four living creatures [that carry God’s throne] is in Jacob’s likeness. <b>They wanted to endanger him:</b> out of jealousy. <b>Stood over him:</b> to guard him. <b>Who waves over his son:</b> with a fan, to save him from the heat.",
+        "credit": "Hebrew: Rashi on Chullin, Vilna edition, public domain, via Sefaria. The translation is ours."},
+    "Rashi on Genesis 3:8:1": {
+        "label": "Rashi on Genesis 3:8", "kind": RASHI, "n": "Rashi on his own method, at Genesis 3:8",
+        "he_until": "דָבָר דָּבוּר עַל אׇפְנָיו", "en_until": "in a manner that fits in with them.",
+        "add": " <i>[The comment goes on to explain the verse, where Adam and Eve hear God in the garden.]</i>", "credit": "rashi"},
 }
 missing = []
 for ref in refs:

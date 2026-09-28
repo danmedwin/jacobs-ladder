@@ -31,7 +31,7 @@ VOICES.scripts.esau = {
     { prompt: 'What would you like to ask me?', questions: [
       { q: 'Were you really that hairy?', a: [
         { say: 'Yes! Hairy all over. Jacob’s skin was smooth.', src: ['Genesis 25:25', 'Genesis 27:11'] },
-        { say: 'That’s how the trick worked. Jacob covered his arms with goat fur, so he would feel hairy like me!', src: 'Genesis 27:16' } ] },
+        { say: 'That’s how the trick worked. Our mother covered Jacob’s arms with goat fur, so he would feel hairy like me!', src: 'Genesis 27:16' } ] },
       { q: 'What’s your favorite food?', a: [
         { say: 'Once I came home SO hungry that I traded something very important for a bowl of red lentil stew!', src: 'Genesis 25:29–34' },
         { say: 'That’s why people call me Edom. Edom means “red.”', src: 'Genesis 25:30' } ] },
@@ -69,14 +69,14 @@ VOICES.scripts.esau = {
       choices: [
         { label: 'To make his parents happy', reply: [{ say: 'I think so. The Torah says I realized that the Canaanite women displeased my father. Maybe I was still trying to win his blessing.', src: 'Genesis 28:8' }] },
         { label: 'To get a blessing too', reply: ['Maybe. My brother had just left with our father’s blessing. Maybe I hoped there was still some left for me.'] },
-        { label: 'To be more like Jacob', reply: ['Maybe. Jacob was sent to marry into the family, so I did too. And look who I married: the daughter of Ishmael. Ishmael was Abraham’s son too, and like me, he was the brother who didn’t get the big blessing.'] }
+        { label: 'To be more like Jacob', reply: ['Maybe. Jacob was sent to marry into the family, so I did too. And look who I married: the daughter of Ishmael. Ishmael was Abraham’s son too. God blessed him, but like me, he was the brother who didn’t carry on Abraham’s covenant with God.'] }
       ],
       tip: 'Then ask: Why would the Torah put Esau’s story right in the middle of Jacob’s?' },
     { say: 'Twenty years later, Jacob came home. I went out to meet him with four hundred men. He was terrified.', src: ['Genesis 32:7', 'Genesis 32:8'] },
     { say: 'But when I saw him, I ran to greet him. I hugged him and kissed him, and we both cried.', src: 'Genesis 33:4' },
     { prompt: 'What do you want to ask me?', questions: [
       { q: 'Did you forgive Jacob?', keys: 'forgive forgave sorry angry still mad', a: [
-        { say: 'The Torah never uses the word “forgive.” But when Jacob tried to give me hundreds of animals, I said, “I have enough, my brother; let what you have remain yours.”', src: ['Genesis 32:14–16', 'Genesis 33:9'] },
+        { say: 'The Torah never says I forgave him. But when Jacob tried to give me hundreds of animals, I said, “I have enough, my brother; let what you have remain yours.”', src: ['Genesis 32:14–16', 'Genesis 33:9'] },
         'What do you think? Is that forgiveness?' ] },
       { q: 'Why are you called Edom?', keys: 'edom red name called nickname', a: [
         { say: 'Edom means “red.” I was born red, and I asked for “that red stuff,” the lentil stew. The name stuck.', src: ['Genesis 25:25', 'Genesis 25:30'] } ] },
@@ -85,7 +85,7 @@ VOICES.scripts.esau = {
         { say: 'My father loved it. The Torah says he favored me because he had a taste for game.', src: 'Genesis 25:28' } ] },
       { q: 'What did Jacob say when he saw you?', keys: 'jacob say said saw meet face god', a: [
         { say: 'He said, “To see your face is like seeing the face of God.”', src: 'Genesis 33:10' },
-        'Think about that. The night Jacob ran away, he met God at Beit El. Twenty years later, he said he saw God in my face.' ] },
+        'Think about that. When Jacob was running away from me, he met God at Beit El. Twenty years later, he said he saw God in my face.' ] },
       { q: 'Did you ever see your father again?', keys: 'father isaac again die died bury', a: [
         { say: 'Yes. When our father Isaac died, Jacob and I buried him together.', src: 'Genesis 35:29' } ] }
     ] },

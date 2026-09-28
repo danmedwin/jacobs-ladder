@@ -11,7 +11,7 @@ VOICES.scripts.rebekah = {
     { say: 'That man had come a long way to find a wife for Isaac. My family asked me, “Will you go with this man?” And I said, “I will.”', src: ['Genesis 24:14', 'Genesis 24:58'] },
     { say: 'So I rode a camel all the way to my new home, and I married Isaac.', src: ['Genesis 24:61', 'Genesis 24:67'] },
     { say: 'Later, I had twin boys: Esau and Jacob! Esau loved to be outside. Jacob liked to stay home, near the tents.', src: ['Genesis 25:24–26', 'Genesis 25:27'] },
-    { say: 'When they grew up, Jacob tricked his father to get a special blessing, and I helped him. But the trick made Esau very, very angry.', src: ['Genesis 27:5–17', 'Genesis 27:41'] },
+    { say: 'When the boys grew up, I made a plan so that Jacob would get his father’s special blessing. Jacob tricked his father, and the trick made Esau very, very angry.', src: ['Genesis 27:5–17', 'Genesis 27:41'] },
     { say: 'I was scared for Jacob. So I told him, “Go far away to my brother Laban. Stay there until Esau isn’t angry anymore.”', src: 'Genesis 27:42–45' },
     { motion: { title: 'Pack a bag!', text: 'Let’s help Jacob pack. Put in some bread… a warm blanket… and a big hug from Mom. Zip it up!', icon: 'bag' } },
     { ask: 'How do you think I felt when Jacob left?',
@@ -21,14 +21,14 @@ VOICES.scripts.rebekah = {
         { label: 'Hopeful', reply: ['Yes! I hoped he would be safe, and that one day he would come home.'] }
       ],
       tip: 'Let everyone answer out loud. Then choose what most of the group said.' },
-    { say: 'Jacob was gone for a long, long time. But he wasn’t alone. That very first night, God told him, “I am with you.”', src: 'Genesis 28:15' },
+    { say: 'Jacob was gone for a long, long time. But he wasn’t alone. On his way, God told him, “I am with you.”', src: 'Genesis 28:15' },
     { ask: 'Have you ever said goodbye to someone you love? What helped?', discuss: true,
       tip: 'Take a few answers out loud. Then tap to hear Rebekah.',
       reveal: ['A hug helps. So do the words you say. I wanted Jacob to know that I sent him away because I love him.'] },
     { prompt: 'What would you like to ask me?', questions: [
       { q: 'Did you ride a camel?', a: [
         { say: 'I did! When I first saw Isaac, walking in a field, I got down off my camel to meet him.', src: ['Genesis 24:61', 'Genesis 24:64–65'] } ] },
-      { q: 'Why did you help with the trick?', a: [
+      { q: 'Why did you make that plan?', a: [
         { say: 'Before my boys were born, God told me that the older one would serve the younger one. I thought I was helping that happen.', src: 'Genesis 25:23' },
         'But the trick hurt people I loved. What do you think I should have done?' ] },
       { q: 'Were you brave?', a: [
@@ -78,7 +78,7 @@ VOICES.scripts.rebekah = {
       { q: 'Did you ever see Jacob again?', keys: 'see again jacob come back return home reunion', a: [
         'The Torah never tells us. It doesn’t even tell us when I died.',
         { say: 'But Rashi noticed something. When Jacob was on his way home, my old nurse Deborah was with him. Why? Rashi says I kept my promise: I sent Deborah to tell Jacob it was time to come home.', src: ['Genesis 35:8', 'Rashi on Genesis 35:8:1'] },
-        { say: 'Deborah died on the way, near Beit El. They buried her under an oak tree and named it Allon-bacuth, the Oak of Weeping.', src: 'Genesis 35:8' } ] },
+        { say: 'Deborah died on the way, near Beit El. They buried her under an oak and named it Allon-bacuth, the Oak of Weeping. Rashi says that there, Jacob also learned that I had died.', src: ['Genesis 35:8', 'Rashi on Genesis 35:8'] } ] },
       { q: 'Why did you love Jacob more?', keys: 'love loved favorite favor more why', a: [
         { say: 'The Torah doesn’t say why. It tells us that Isaac favored Esau because of the game Esau hunted, and that I favored Jacob.', src: 'Genesis 25:28' },
         { say: 'Maybe it was because of what God told me before my boys were born.', src: 'Genesis 25:23' } ] },

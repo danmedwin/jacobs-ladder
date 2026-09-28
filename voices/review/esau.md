@@ -31,7 +31,7 @@ Small gray references are the source cards a teacher can open during the visit. 
    - *Teacher: Take a few answers out loud. Then tap to hear Esau.*
    - Then Esau answers: For me, it took a long time. But when I saw my brother again, I told him, “I have enough, my brother.” I didn’t need to stay angry anymore. <sub>Genesis 33:9</sub>
 17. **Esau:** What would you like to ask me?
-   1. *Were you really that hairy?* → Yes! Hairy all over. Jacob’s skin was smooth. <sub>Genesis 25:25 · Genesis 27:11</sub> / That’s how the trick worked. Jacob covered his arms with goat fur, so he would feel hairy like me! <sub>Genesis 27:16</sub>
+   1. *Were you really that hairy?* → Yes! Hairy all over. Jacob’s skin was smooth. <sub>Genesis 25:25 · Genesis 27:11</sub> / That’s how the trick worked. Our mother covered Jacob’s arms with goat fur, so he would feel hairy like me! <sub>Genesis 27:16</sub>
    2. *What’s your favorite food?* → Once I came home SO hungry that I traded something very important for a bowl of red lentil stew! <sub>Genesis 25:29–34</sub> / That’s why people call me Edom. Edom means “red.” <sub>Genesis 25:30</sub>
    3. *What did you hunt?* → The Torah doesn’t say exactly. I took my bow and arrows out into the fields, and I brought back food for my father. <sub>Genesis 27:3</sub>
    4. *Are you still angry at Jacob?* → Not anymore! When he came back, I ran to give him a big hug. We were brothers again. <sub>Genesis 33:4</sub>
@@ -64,15 +64,15 @@ Small gray references are the source cards a teacher can open during the visit. 
 15. **Esau asks:** The Torah tells this right between Jacob leaving home and Jacob’s dream. Why do you think I married Mahalath?
    - Button **“To make his parents happy”** → I think so. The Torah says I realized that the Canaanite women displeased my father. Maybe I was still trying to win his blessing. <sub>Genesis 28:8</sub>
    - Button **“To get a blessing too”** → Maybe. My brother had just left with our father’s blessing. Maybe I hoped there was still some left for me.
-   - Button **“To be more like Jacob”** → Maybe. Jacob was sent to marry into the family, so I did too. And look who I married: the daughter of Ishmael. Ishmael was Abraham’s son too, and like me, he was the brother who didn’t get the big blessing.
+   - Button **“To be more like Jacob”** → Maybe. Jacob was sent to marry into the family, so I did too. And look who I married: the daughter of Ishmael. Ishmael was Abraham’s son too. God blessed him, but like me, he was the brother who didn’t carry on Abraham’s covenant with God.
    - *Teacher: Then ask: Why would the Torah put Esau’s story right in the middle of Jacob’s?*
 16. Twenty years later, Jacob came home. I went out to meet him with four hundred men. He was terrified. <sub>Genesis 32:7 · Genesis 32:8</sub>
 17. But when I saw him, I ran to greet him. I hugged him and kissed him, and we both cried. <sub>Genesis 33:4</sub>
 18. **Esau:** What do you want to ask me?
-   1. *Did you forgive Jacob?* → The Torah never uses the word “forgive.” But when Jacob tried to give me hundreds of animals, I said, “I have enough, my brother; let what you have remain yours.” <sub>Genesis 32:14–16 · Genesis 33:9</sub> / What do you think? Is that forgiveness?
+   1. *Did you forgive Jacob?* → The Torah never says I forgave him. But when Jacob tried to give me hundreds of animals, I said, “I have enough, my brother; let what you have remain yours.” <sub>Genesis 32:14–16 · Genesis 33:9</sub> / What do you think? Is that forgiveness?
    2. *Why are you called Edom?* → Edom means “red.” I was born red, and I asked for “that red stuff,” the lentil stew. The name stuck. <sub>Genesis 25:25 · Genesis 25:30</sub>
    3. *What did you hunt?* → The Torah just calls it “game,” wild animals from the fields. I took my quiver and bow and went out into the open. <sub>Genesis 27:3</sub> / My father loved it. The Torah says he favored me because he had a taste for game. <sub>Genesis 25:28</sub>
-   4. *What did Jacob say when he saw you?* → He said, “To see your face is like seeing the face of God.” <sub>Genesis 33:10</sub> / Think about that. The night Jacob ran away, he met God at Beit El. Twenty years later, he said he saw God in my face.
+   4. *What did Jacob say when he saw you?* → He said, “To see your face is like seeing the face of God.” <sub>Genesis 33:10</sub> / Think about that. When Jacob was running away from me, he met God at Beit El. Twenty years later, he said he saw God in my face.
    5. *Did you ever see your father again?* → Yes. When our father Isaac died, Jacob and I buried him together. <sub>Genesis 35:29</sub>
 19. **The rung:** “Don’t you have a blessing for me too?”
    - **The secret:** Twenty years later, I ran to hug my brother, and we both cried.

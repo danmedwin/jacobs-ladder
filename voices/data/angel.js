@@ -9,13 +9,13 @@ VOICES.scripts.angel = {
     { picture: { style: 'stained-glass' } },
     { say: 'Lots of angels were going up and down, up and down.', src: 'Genesis 28:12' },
     { motion: { title: 'Fly like an angel!', text: 'Stretch your arms out like wings. Float up high on your tiptoes… now float down low. Up… and down!', icon: 'updown' } },
-    { say: 'Do you know why we were going up and down? We wanted to see Jacob!' },
+    { say: 'Do you know why we were going up and down? We wanted to see Jacob!', src: 'Bereshit Rabbah 68:12 (on Jacob)' },
     { say: 'First, we went up to heaven to look at a picture of Jacob there.', src: 'Bereshit Rabbah 68:12 (on Jacob)' },
     { say: 'Then we came down the ladder to see the real Jacob. And there he was… fast asleep!', src: 'Bereshit Rabbah 68:12 (on Jacob)' },
     { motion: { title: 'Shh! He’s sleeping!', text: 'Finger on your lips: shhh! Tiptoe down the ladder, very, very quietly.', icon: 'moon' } },
     { ask: 'Why do you think the angels wanted to see Jacob?',
       choices: [
-        { label: 'He was special', reply: ['Yes! The Sages said Jacob’s picture was up in heaven because God was so proud of him.'] },
+        { label: 'He was special', reply: [{ say: 'Yes! The Sages said Jacob’s picture was up in heaven because God was so proud of him.', src: 'Bereshit Rabbah 68:12 (on Jacob)' }] },
         { label: 'To keep him safe', reply: ['We did want him to be safe. And God was right there with him, too.'] },
         { label: 'They were curious', reply: ['We were! We wanted to see the real Jacob, not just his picture.'] }
       ],
@@ -26,14 +26,14 @@ VOICES.scripts.angel = {
       reveal: ['Your grown-ups, your teachers, your friends… And Jacob learned that God is with you, too, wherever you go.'] },
     { prompt: 'What would you like to ask me?', questions: [
       { q: 'Do you have wings?', a: [
-        'The Torah doesn’t say what we look like! Artists have imagined us in lots of ways.',
+        'The Torah doesn’t say what the angels on the ladder looked like! Artists have imagined us in lots of ways.',
         { gallery: ['origami', 'blown-glass', '3d-animated', 'embroidery'], caption: 'Here’s how some artists pictured us.' } ] },
       { q: 'How many angels were there?', a: [
         { say: 'The Torah just says “angels.” The Talmud says there were at least four: two going up and two coming down, all at the same time!', src: 'Chullin 91b (the ladder)' } ] },
       { q: 'How big was the ladder?', a: [
         { say: 'Enormous! The Talmud says angels are huge, and the ladder was wide enough for four of us to pass each other.', src: 'Chullin 91b (the ladder)' } ] },
       { q: 'Why did you go up first?', a: [
-        { say: 'Good question! A teacher named Rashi noticed that too. He said the angels who took care of Jacob at home went up, and new angels came down to take care of him on his trip.', src: 'Rashi on Genesis 28:12:1' } ] }
+        { say: 'Good question! A teacher named Rashi noticed that too. He said the angels who took care of Jacob in the Land of Israel went up, and new angels came down to take care of him on his trip.', src: 'Rashi on Genesis 28:12:1' } ] }
     ] },
     { rung: true },
     { next: { say: 'Thanks for visiting me! Who do you want to meet next?', ids: ['jacob', 'stone', 'rebekah'] } }
@@ -59,14 +59,14 @@ VOICES.scripts.angel = {
         { say: 'The Sages quoted God’s words in the book of Isaiah: “Israel, in whom I glory.” God was proud of Jacob, even on his worst night.', src: 'Bereshit Rabbah 68:12 (on Jacob)' },
         'Maybe God could see who Jacob would become, not just what he had done.' ] },
     { say: 'Then God was standing beside Jacob, and said, “Remember, I am with you: I will protect you wherever you go.”', src: ['Genesis 28:13', 'Genesis 28:15'] },
-    { say: 'The Talmud tells one more story. Some angels were not so friendly. They wanted to harm Jacob! So right away, God stood over him to protect him.', src: 'Chullin 91b (the fan)' },
-    { say: 'Rabbi Shimon ben Lakish said God was like a parent standing over their child, waving a fan to keep them cool.', src: 'Chullin 91b (the fan)' },
+    { say: 'The Talmud tells the story a little differently, and we angels don’t look so good in it. The angels who looked at Jacob’s picture wanted to harm him! Rashi says they were jealous. So right away, God stood over Jacob to protect him.', src: ['Chullin 91b (the fan)', 'Rashi on Chullin 91b'] },
+    { say: 'Rabbi Shimon ben Lakish said that if the Torah didn’t say it, we would never dare to: God stood over Jacob like a parent waving over their child. Rashi explains that the parent is waving a fan, to protect the child from the heat.', src: ['Chullin 91b (the fan)', 'Rashi on Chullin 91b'] },
     { ask: 'When have you felt like someone was watching over you?', discuss: true,
       tip: 'Take a few answers. Then tap to hear the angel.',
       reveal: ['Jacob felt all alone that night. He didn’t know that God, and a whole ladder full of angels, were right there with him.'] },
     { prompt: 'What do you want to ask me?', questions: [
       { q: 'What do angels look like?', keys: 'look like wings face body see', a: [
-        'The Torah doesn’t say. Artists have imagined us in many different ways.',
+        'The Torah doesn’t say what the angels on the ladder looked like. Artists have imagined us in many different ways.',
         { gallery: ['manuscript', 'mosaic', 'blown-glass', 'holographic'], caption: 'Four artists, four ideas.' } ] },
       { q: 'Why did the angels go up first?', keys: 'up first down order why', a: [
         { say: 'Good eye! Rashi noticed that too. He said the angels who guarded Jacob in the Land of Israel went up, and new angels came down to go with him outside the Land. Like changing shifts!', src: 'Rashi on Genesis 28:12:1' } ] },
