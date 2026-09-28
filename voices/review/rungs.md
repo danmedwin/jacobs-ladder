@@ -1,6 +1,6 @@
-# Every rung, draft
+# Every rung
 
-Each visit ends with a rung: one line to carry back to the family, plus a motion (K–2), a secret (3–4), a question for parents (5–7), or a question for your child (parents). Rungs marked *(draft)* belong to visits that are not written yet.
+Each visit ends with a rung: one line to carry back to the family, plus a motion (K–2), a secret (3–4), a question for parents (5–7), or a question for your child (parents). Any rung marked *(draft)* belongs to a visit that is not written yet.
 
 ## Grades K–2
 
@@ -29,25 +29,25 @@ Each visit ends with a rung: one line to carry back to the family, plus a motion
 | Character | Rung | Ask your parents |
 |---|---|---|
 | Jacob | God was in this place, and I didn’t know it. | When have you been somewhere ordinary and only later realized it was special? |
-| Esau *(draft)* | Have you only one blessing? | Is there enough blessing in our family for everyone? |
-| Rebekah *(draft)* | I sent him away to keep him safe. | What’s the hardest thing you’ve ever done because you love someone? |
-| Isaac *(draft)* | The second blessing was the one he didn’t have to steal. | What blessing would you give me as I grow up? |
-| An angel *(draft)* | We went up and down to look at him. | Where do you see a little bit of God in me? |
-| Rashi *(draft)* | Every word is a clue. | What’s a small detail about our family that tells a big story? |
-| The Sages *(draft)* | Would you have climbed? | Would you have climbed? Why or why not? |
-| Ramban *(draft)* | You are in God’s own care. | When have you felt taken care of by something bigger than you? |
-| Rambam *(draft)* | Climb up to learn, then come back down to teach. | What’s something you learned today that you could teach me? |
+| Esau | Have you only one blessing? | Is there enough blessing in our family for everyone? |
+| Rebekah | I sent him away to keep him safe. | What’s the hardest thing you’ve ever done because you love someone? |
+| Isaac | The second blessing was the one he didn’t have to steal. | What blessing would you give me as I grow up? |
+| An angel | We went up and down to look at him. | Where do you see a little bit of God in me? |
+| Rashi | Every word is a clue. | What’s a small detail about our family that tells a big story? |
+| The Sages | Would you have climbed? | Would you have climbed? Why or why not? |
+| Ramban | You are in God’s own care. | When have you felt taken care of by something bigger than you? |
+| Rambam | Climb up to learn, then come back down to teach. | What’s something you learned today that you could teach me? |
 
 ## Parents
 
 | Character | Rung | Ask your child |
 |---|---|---|
 | Jacob | Surely God is present in this place, and I did not know it!<br>אָכֵן יֵשׁ ה׳ בַּמָּקוֹם הַזֶּה וְאָנֹכִי לֹא יָדָעְתִּי | Where is a place that feels special to you? Did you know it was special the first time you were there? |
-| Esau *(draft)* | Have you but one blessing, Father? | Do you ever feel like there isn’t enough of me to go around? |
-| Rebekah *(draft)* | I said “a few days.” It became twenty years. | What do you want to take with you when you leave home someday? |
-| Isaac *(draft)* | May God give you the blessing of Abraham. | What blessing would you want from me? |
-| An angel *(draft)* | They looked for his face in heaven and found him asleep on earth. | Where do you feel closest to God? |
-| Rashi *(draft)* | Every oddity in the text is a question waiting for you. | What’s a question you have about the story? |
-| The Sages *(draft)* | Would you have climbed? | Would you have climbed? What would have held you back? |
-| Ramban *(draft)* | You will be God’s own portion. | When do you feel protected? |
-| Rambam *(draft)* | Climb up to learn, then come back down to teach. | Teach me something you learned today. |
+| Esau | Have you but one blessing, Father?<br>הַבְרָכָה אַחַת הִוא־לְךָ אָבִי | Do you ever feel like there isn’t enough of me to go around? |
+| Rebekah | I said “a few days.” It became twenty years.<br>יָמִים אֲחָדִים | What do you want to take with you when you leave home someday? |
+| Isaac | May God give you the blessing of Abraham.<br>וְיִתֶּן־לְךָ אֶת־בִּרְכַּת אַבְרָהָם | What blessing would you want from me? |
+| An angel | They looked for his face in heaven and found him asleep on earth.<br>עֹלִים לְמַעְלָה וְרוֹאִים אִיקוֹנִין שֶׁלּוֹ, וְיֹרְדִים לְמַטָּה וּמוֹצְאִים אוֹתוֹ יָשֵׁן | Where do you feel closest to God? |
+| Rashi | Every oddity in the text is a question waiting for you. | What’s a question you have about the story? |
+| The Sages | Would you have climbed?<br>אַף אַתָּה עוֹלֶה | Would you have climbed? What would have held you back? |
+| Ramban | You will be God’s own portion.<br>כִּי חֵלֶק ה׳ עַמּוֹ, יַעֲקֹב חֶבֶל נַחֲלָתוֹ | When do you feel protected? |
+| Rambam | Climb up to learn, then come back down to teach. | Teach me something you learned today. |

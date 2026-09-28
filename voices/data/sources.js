@@ -5,7 +5,9 @@ Object.assign(VOICES.credits, {
  "rashi": "English: <i>Pentateuch with Rashi’s Commentary</i>, translated by M. Rosenbaum and A. M. Silbermann (1929–1934), public domain. Hebrew: the same edition. Both via Sefaria.",
  "midrash": "English: <i>The Sefaria Midrash Rabbah</i> (2022), CC BY. Hebrew: Midrash Rabbah, Torat Emet edition. Both via Sefaria.",
  "talmud": "The William Davidson Talmud (Koren Noé), English with the explanation of Rabbi Adin Even-Israel Steinsaltz, CC BY-NC, via Sefaria. In the English, bold type translates the Talmud’s own words; plain type is Rabbi Steinsaltz’s explanation.",
- "turim": "Hebrew: <i>Kitzur Ba’al HaTurim</i>, public domain, via Sefaria. Sefaria has no English for this comment; the translation is ours."
+ "turim": "Hebrew: <i>Kitzur Ba’al HaTurim</i>, public domain, via Sefaria. Sefaria has no English for this comment; the translation is ours.",
+ "ramban": "English: <i>Commentary on the Torah by Ramban</i>, translated and annotated by Charles B. Chavel (1971–1976), CC BY. Hebrew: Vocalized Edition, CC BY. Both via Sefaria.",
+ "guide": "English: <i>The Guide for the Perplexed</i>, translated from Maimonides’ Arabic by M. Friedlander (1903), public domain. Hebrew: the medieval translation by Samuel ibn Tibbon, public domain. Both via Sefaria."
 });
 Object.assign(VOICES.sources, {
  "rjps": {
@@ -224,6 +226,135 @@ Object.assign(VOICES.sources, {
    }
   ],
   "credit": "Hebrew: Rashi on Chullin, Vilna edition, public domain, via Sefaria. The translation is ours."
+ },
+ "Genesis 32:4": {
+  "label": "Genesis 32:4",
+  "title": "Genesis 32:4",
+  "kind": "Torah",
+  "verses": [
+   {
+    "n": "32:4",
+    "he": "וַיִּשְׁלַח יַעֲקֹב מַלְאָכִים לְפָנָיו אֶל־עֵשָׂו אָחִיו אַרְצָה שֵׂעִיר שְׂדֵה אֱדוֹם׃",
+    "en": "Jacob sent messengers ahead to his brother Esau in the land of Seir, the country of Edom,"
+   }
+  ],
+  "credit": "tanakh"
+ },
+ "Ramban on Genesis 28:12:1": {
+  "label": "Ramban on Genesis 28:12",
+  "title": "Ramban on Genesis 28:12",
+  "kind": "Commentary · Nachmanides, 13th century",
+  "verses": [
+   {
+    "n": "And behold a ladder",
+    "he": "הֶרְאָהוּ בַּחֲלוֹם הַנְּבוּאָה כִּי כָל הַנַּעֲשֶׂה בָּאָרֶץ נַעֲשֶׂה עַל יְדֵי הַמַּלְאָכִים, וְהַכֹּל בִּגְזֵרַת עֶלְיוֹן עֲלֵיהֶם, כִּי מַלְאֲכֵי אֱלֹהִים אֲשֶׁר שָׁלַח ה׳ לְהִתְהַלֵּךְ בָּאָרֶץ לֹא יַעֲשׂוּ קְטַנָּה אוֹ גְּדוֹלָה עַד שׁוּבָם לְהִתְיַצֵּב עַל אֲדוֹן כָּל הָאָרֶץ לֵאמֹר לְפָנָיו, הִתְהַלַּכְנוּ בָּאָרֶץ וְהִנֵּה יוֹשֶׁבֶת בְּשַׁלְוָה אוֹ מְלֵאָה חֶרֶב וָדָם, וְהוּא יְצַוֶּה עֲלֵיהֶם לָשׁוּב לָרֶדֶת בָּאָרֶץ וְלַעֲשׂוֹת דְּבָרוֹ. וְהֶרְאָהוּ כִּי הוּא יִתְבָּרַךְ נִצָּב עַל הַסֻּלָּם וּמַבְטִיחוֹ לְיַעֲקֹב בְּהַבְטָחָה גְּדוֹלָה לְהוֹדִיעַ שֶׁהוּא לֹא יִהְיֶה בְּיַד הַמַּלְאָכִים, אֲבָל יִהְיֶה חֵלֶק ה׳ וְיִהְיֶה עִמּוֹ תָּמִיד, כְּמוֹ שֶׁאָמַר \"וְהִנֵּה אָנֹכִי עִמָּךְ וּשְׁמַרְתִּיךָ בְּכֹל אֲשֶׁר תֵּלֵךְ\", כִּי מַעֲלָתוֹ גְּדוֹלָה מִשְּׁאָר הַצַּדִּיקִים שֶׁנֶּאֱמַר בָּהֶם (תהלים צא יא) \"כִּי מַלְאָכָיו יְצַוֶּה לָּךְ לִשְׁמָרְךָ בְּכָל דְּרָכֶיךָ\"",
+    "en": "In a prophetic dream, He showed Jacob that whatever is done on earth is effected by means of the angels, and everything is by decree given to them by the Supreme One. The angels of G-d, whom the Eternal hath sent to walk to and fro through the earth, would not do anything minor or major until they return to present themselves before the Master of the whole earth, saying before Him, “We have traversed the earth, and behold it dwells in peace, or is steeped in war and blood,” and He commands them to return, to descend to the earth and fulfill His charge. And He further showed him [Jacob] that He, blessed be He, stands above the ladder, and promises Jacob with supreme assurance to inform him that he will not be under the power of the angels, but he will be G-d’s portion, and that He will be with him always, as He said, And, behold, I am with thee, and will keep thee wherever thou goest for his [Jacob’s] excellence is superior to that of the other righteous ones of whom it is said, For He will give His angels charge over thee, to keep thee in all thy ways. <i>[Ramban then brings Rabbi Eliezer’s reading: the ladder showed Jacob four empires rising and falling.]</i>"
+   }
+  ],
+  "credit": "ramban"
+ },
+ "Genesis 32:25–29": {
+  "label": "Genesis 32:25–29",
+  "title": "Genesis 32:25–29",
+  "kind": "Torah",
+  "verses": [
+   {
+    "n": "32:25",
+    "he": "וַיִּוָּתֵר יַעֲקֹב לְבַדּוֹ וַיֵּאָבֵק אִישׁ עִמּוֹ עַד עֲלוֹת הַשָּׁחַר׃",
+    "en": "Jacob was left alone. And a figure wrestled with him until the break of dawn."
+   },
+   {
+    "n": "32:26",
+    "he": "וַיַּרְא כִּי לֹא יָכֹל לוֹ וַיִּגַּע בְּכַף־יְרֵכוֹ וַתֵּקַע כַּף־יֶרֶךְ יַעֲקֹב בְּהֵאָבְקוֹ עִמּוֹ׃",
+    "en": "When he saw that he had not prevailed against him, he wrenched Jacob’s hip at its socket, so that the socket of his hip was strained as he wrestled with him."
+   },
+   {
+    "n": "32:27",
+    "he": "וַיֹּאמֶר שַׁלְּחֵנִי כִּי עָלָה הַשָּׁחַר וַיֹּאמֶר לֹא אֲשַׁלֵּחֲךָ כִּי אִם־בֵּרַכְתָּנִי׃",
+    "en": "Then he said, “Let me go, for dawn is breaking.” But he answered, “I will not let you go, unless you bless me.”"
+   },
+   {
+    "n": "32:28",
+    "he": "וַיֹּאמֶר אֵלָיו מַה־שְּׁמֶךָ וַיֹּאמֶר יַעֲקֹב׃",
+    "en": "Said the other, “What is your name?” He replied, “Jacob.”"
+   },
+   {
+    "n": "32:29",
+    "he": "וַיֹּאמֶר לֹא יַעֲקֹב יֵאָמֵר עוֹד שִׁמְךָ כִּי אִם־יִשְׂרָאֵל כִּי־שָׂרִיתָ עִם־אֱלֹהִים וְעִם־אֲנָשִׁים וַתּוּכָל׃",
+    "en": "Said he, “Your name shall no longer be Jacob, but Israel, for you have striven with beings divine and human, and have prevailed.”"
+   }
+  ],
+  "credit": "tanakh"
+ },
+ "Genesis 32:2–3": {
+  "label": "Genesis 32:2–3",
+  "title": "Genesis 32:2–3",
+  "kind": "Torah",
+  "verses": [
+   {
+    "n": "32:2",
+    "he": "וְיַעֲקֹב הָלַךְ לְדַרְכּוֹ וַיִּפְגְּעוּ־בוֹ מַלְאֲכֵי אֱלֹהִים׃",
+    "en": "Jacob went on his way, and angels of God encountered him."
+   },
+   {
+    "n": "32:3",
+    "he": "וַיֹּאמֶר יַעֲקֹב כַּאֲשֶׁר רָאָם מַחֲנֵה אֱלֹהִים זֶה וַיִּקְרָא שֵׁם־הַמָּקוֹם הַהוּא מַחֲנָיִם׃",
+    "en": "When he saw them, Jacob said, “This is God’s camp.” So he named that place Mahanaim."
+   }
+  ],
+  "credit": "tanakh"
+ },
+ "Guide 1:15": {
+  "label": "Guide for the Perplexed 1:15",
+  "title": "Guide for the Perplexed 1:15",
+  "kind": "Philosophy · Maimonides, about 1190",
+  "verses": [
+   {
+    "n": "Natsav and yatsav: to stand",
+    "he": "׳נצב׳ או ׳יצב׳ – ואף על פי שנשתנו שני השרשים – הענין אחד כמו שידעת בכל שמושיהם. וזה השם משתתף. פעמים יהיה בענין הקימה וההתיצבות: ״ותתצב אחותו מרחוק״, ״יתיצבו מלכי ארץ״, ״יצאו נצבים״. ויהיה בענין הקיום וההתמדה: ״דברך נצב בשמים״ – כלומר: קיים עומד. וכל מה שבא מזה השם בחק הבורא הוא מזה הענין: ״והנה יי נצב עליו״ – קיים עומד עליו – כלומר: על ה׳סולם׳ אשר קצהו הראשון בשמים וקצהו האחרון בארץ, ובו יעלה כל מי שיעלה, עד שישיג מי שעליו בהכרח, אחר שהוא עומד קיים על ראש ה׳סולם׳. ומבואר הוא שמאמרי הנה ׳עליו׳ הוא כפי זה המשל הנשוא. ו׳מלאכי אלהים׳ הם הנביאים, שנאמר בהם בפרוש ״וישלח מלאך״, ״ויעל מלאך יי מן הגלגל אל הבוכים״. ומה טוב אמרו: ״עולים ויורדים״ – ה׳עליה׳ קודם ה׳ירידה׳ – כי אחר ה׳עליה׳ וההגעה אל מעלות ידועות מן ה׳סולם׳ תהיה ה׳ירידה׳ במה שפגש מן הענין – להנהגת אנשי הארץ ולמודם, אשר בעבור זה כנה ב׳ירידה׳ כמו שבארנו. ואשוב אל עניננו כי ׳נצב עליו׳ – מתמיד קיים נשאר – לא שהוא התיצבות גשם. ומזה הענין ״ונצבת על הצור״. כבר התבאר לך כי ׳נצב׳ ו׳עמד׳ ענינם אחד בזה הענין. וכבר אמר: ״הנני עומד לפניך שם על הצור בחורב״.",
+    "en": "ALTHOUGH the two roots naẓab and yaẓab are distinct, yet their meaning is, as you know, identical in all their various forms. The verb has several meanings: in some instances it signifies “to stand or “to place oneself,” as “And his sister stood (va-tetaẓẓab) afar off” (Exod. 2:4); “The kings of the earth set themselves” (yiyaẓẓebu) (Ps. 2:2); “They came out and stood” (niẓẓabim) (Num. 16:27). In other instances it denotes continuance and permanence, as, “Thy word is established (niẓẓab) in Heaven” (Ps. 119:89), i.e., it remains for ever. Whenever this term is applied to God it must be understood in the latter sense, as, “And, behold, the Lord stood (niẓẓab) upon it” (Gen. 28:13), i.e., appeared as eternal and everlasting “upon it,” namely, upon the ladder, the upper end of which reached to heaven, while the lower end touched the earth. This ladder all may climb up who wish to do so, and they must ultimately attain to a knowledge of Him who is above the summit of the ladder, because He remains upon it permanently. It must be well understood that the term “upon it” is employed by me in harmony with this metaphor. “Angels of God” who were going up represent the prophets. That the term “angel” was applied to prophets may clearly be seen in the following passages: “He sent an angel” (Num. 20:16); “And an angel of the Lord came up from Gilgal to Bochim” (Judges 2:1). How suggestive, too, is the expression “ascending and descending on it”! The ascent is mentioned before the descent, inasmuch as the “ascending” and arriving at a certain height of the ladder precedes the “descending,” i.e., the application of the knowledge acquired in the ascent for the training and instruction of mankind. This application is termed “descent,” in accordance with our explanation of the term yarad (chapter x.). To return to our subject. The phrase “stood upon it” indicates the permanence and constancy of God, and does not imply the idea of physical position. This is also the sense of the phrase “Thou shalt stand upon the rock” (Exod. 33:21). It is therefore clear that niẓẓab and ‘amad are identical in this figurative signification. Comp. “Behold, I will stand (‘omed) before thee there upon the rock in Horeb” (Exod. 17:6)."
+   }
+  ],
+  "credit": "guide"
+ },
+ "Rashi on Genesis 32:25:2": {
+  "label": "Rashi on Genesis 32:25",
+  "title": "Rashi on Genesis 32:25",
+  "kind": "Commentary · 11th century",
+  "verses": [
+   {
+    "n": "And a man wrestled",
+    "he": "ויאבק איש. מְנַחֵם פֵּי׳ וַיִּתְעַפֵּר אִישׁ, לְשׁוֹן אָבָק, שֶׁהָיוּ מַעֲלִים עָפָר בְּרַגְלֵיהֶם עַ״י נִעְנוּעָם. וְלִי נִרְאֶה שֶׁהוּא לְשׁוֹן וַיִּתְקַשֵּׁר, וְלָשׁוֹן אֲרַמִּי הוּא, בָּתַר דַּאֲבִיקוּ בֵיהּ, וַאֲבֵיק לֵיהּ מֵיבַק – לְשׁוֹן עֲנִיבָה, שֶׁכֵּן דֶּרֶךְ שְׁנַיִם שֶׁמִּתְעַצְּמִים לְהַפִּיל אִישׁ אֶת רֵעֵהוּ, שֶׁחוֹבְקוֹ וְאוֹבְקוֹ בִּזְרוֹעוֹתָיו. וּפֵרְשׁוּ רַזִ״לִ שֶׁהוּא שָׂרוֹ שֶׁל עֵשָׂו (בראשית רבה):",
+    "en": "Menachem (ben Seruk) explains: “a man covered himself with dust”, taking the verb as connected in sense with אבק “dust”. It would mean that they were raising the dust with their feet through their movements. I, however, am of opinion that it means “he fastened himself on”, and that it is an Aramaic word, as (Sanhedrin 63b) “after they have joined (אביקו) it\", and (Menachot 42a) “and he twined (the “Fringes”) with loops”. It denotes “intertwining”, for such is the manner of two people who make strong efforts to throw each other — one clasps the other and twines himself round him with his arms. Our Rabbis of blessed memory explained that he was Esau’s guardian angel (Genesis Rabbah 77:3)."
+   }
+  ],
+  "credit": "rashi"
+ },
+ "Bereshit Rabbah 68:12 (his guardians)": {
+  "label": "B’reishit Rabbah 68:12",
+  "title": "B’reishit Rabbah 68:12",
+  "kind": "Midrash · about the 5th century CE",
+  "verses": [
+   {
+    "n": "The angels who went with him",
+    "he": "דָּבָר אַחֵר, עֹלִים וְיֹרְדִים בּוֹ, עֹלִים אוֹתָם שֶׁלִּוּוּ אוֹתוֹ בְּאֶרֶץ יִשְׂרָאֵל, יֹרְדִים, אֵלּוּ שֶׁלִּוּוּ אוֹתוֹ בְּחוּצָה לָאָרֶץ",
+    "en": "Another matter, “ascending and descending on it” – those who accompanied him in the Land of Israel were ascending; “descending” – those who would accompany him outside the Land of Israel."
+   }
+  ],
+  "credit": "midrash"
+ },
+ "Genesis 32:8": {
+  "label": "Genesis 32:8",
+  "title": "Genesis 32:8",
+  "kind": "Torah",
+  "verses": [
+   {
+    "n": "32:8",
+    "he": "וַיִּירָא יַעֲקֹב מְאֹד וַיֵּצֶר לוֹ וַיַּחַץ אֶת־הָעָם אֲשֶׁר־אִתּוֹ וְאֶת־הַצֹּאן וְאֶת־הַבָּקָר וְהַגְּמַלִּים לִשְׁנֵי מַחֲנוֹת׃",
+    "en": "Jacob was greatly frightened; in his anxiety, he divided the people with him, and the flocks and herds and camels, into two camps,"
+   }
+  ],
+  "credit": "tanakh"
  },
  "Genesis 25:24": {
   "label": "Genesis 25:24",
@@ -824,19 +955,6 @@ Object.assign(VOICES.sources, {
   ],
   "credit": "tanakh"
  },
- "Genesis 32:8": {
-  "label": "Genesis 32:8",
-  "title": "Genesis 32:8",
-  "kind": "Torah",
-  "verses": [
-   {
-    "n": "32:8",
-    "he": "וַיִּירָא יַעֲקֹב מְאֹד וַיֵּצֶר לוֹ וַיַּחַץ אֶת־הָעָם אֲשֶׁר־אִתּוֹ וְאֶת־הַצֹּאן וְאֶת־הַבָּקָר וְהַגְּמַלִּים לִשְׁנֵי מַחֲנוֹת׃",
-    "en": "Jacob was greatly frightened; in his anxiety, he divided the people with him, and the flocks and herds and camels, into two camps,"
-   }
-  ],
-  "credit": "tanakh"
- },
  "Genesis 32:14–16": {
   "label": "Genesis 32:14–16",
   "title": "Genesis 32:14–16",
@@ -885,6 +1003,407 @@ Object.assign(VOICES.sources, {
    }
   ],
   "credit": "tanakh"
+ },
+ "Genesis 25:22": {
+  "label": "Genesis 25:22",
+  "title": "Genesis 25:22",
+  "kind": "Torah",
+  "verses": [
+   {
+    "n": "25:22",
+    "he": "וַיִּתְרֹצְצוּ הַבָּנִים בְּקִרְבָּהּ וַתֹּאמֶר אִם־כֵּן לָמָּה זֶּה אָנֹכִי וַתֵּלֶךְ לִדְרֹשׁ אֶת־ה׳׃",
+    "en": "But the children struggled in her womb, and she said, “If so, why do I exist?” She went to inquire of <span class=\"sc\">God</span>,"
+   }
+  ],
+  "credit": "tanakh"
+ },
+ "Genesis 25:29–31": {
+  "label": "Genesis 25:29–31",
+  "title": "Genesis 25:29–31",
+  "kind": "Torah",
+  "verses": [
+   {
+    "n": "25:29",
+    "he": "וַיָּזֶד יַעֲקֹב נָזִיד וַיָּבֹא עֵשָׂו מִן־הַשָּׂדֶה וְהוּא עָיֵף׃",
+    "en": "Once when Jacob was cooking a stew, Esau came in from the open, famished."
+   },
+   {
+    "n": "25:30",
+    "he": "וַיֹּאמֶר עֵשָׂו אֶל־יַעֲקֹב הַלְעִיטֵנִי נָא מִן־הָאָדֹם הָאָדֹם הַזֶּה כִּי עָיֵף אָנֹכִי עַל־כֵּן קָרָא־שְׁמוֹ אֱדוֹם׃",
+    "en": "And Esau said to Jacob, “Give me some of that red stuff to gulp down, for I am famished”—which is why he was named Edom."
+   },
+   {
+    "n": "25:31",
+    "he": "וַיֹּאמֶר יַעֲקֹב מִכְרָה כַיּוֹם אֶת־בְּכֹרָתְךָ לִי׃",
+    "en": "Jacob said, “First sell me your birthright.”"
+   }
+  ],
+  "credit": "tanakh"
+ },
+ "Genesis 25:32–34": {
+  "label": "Genesis 25:32–34",
+  "title": "Genesis 25:32–34",
+  "kind": "Torah",
+  "verses": [
+   {
+    "n": "25:32",
+    "he": "וַיֹּאמֶר עֵשָׂו הִנֵּה אָנֹכִי הוֹלֵךְ לָמוּת וְלָמָּה־זֶּה לִי בְּכֹרָה׃",
+    "en": "And Esau said, “I am at the point of death, so of what use is my birthright to me?”"
+   },
+   {
+    "n": "25:33",
+    "he": "וַיֹּאמֶר יַעֲקֹב הִשָּׁבְעָה לִּי כַּיּוֹם וַיִּשָּׁבַע לוֹ וַיִּמְכֹּר אֶת־בְּכֹרָתוֹ לְיַעֲקֹב׃",
+    "en": "But Jacob said, “Swear to me first.” So he swore to him, and sold his birthright to Jacob."
+   },
+   {
+    "n": "25:34",
+    "he": "וְיַעֲקֹב נָתַן לְעֵשָׂו לֶחֶם וּנְזִיד עֲדָשִׁים וַיֹּאכַל וַיֵּשְׁתְּ וַיָּקׇם וַיֵּלַךְ וַיִּבֶז עֵשָׂו אֶת־הַבְּכֹרָה׃",
+    "en": "Jacob then gave Esau bread and lentil stew; he ate and drank, and he rose and went away. Thus did Esau spurn the birthright."
+   }
+  ],
+  "credit": "tanakh"
+ },
+ "Genesis 27:15–19": {
+  "label": "Genesis 27:15–19",
+  "title": "Genesis 27:15–19",
+  "kind": "Torah",
+  "verses": [
+   {
+    "n": "27:15",
+    "he": "וַתִּקַּח רִבְקָה אֶת־בִּגְדֵי עֵשָׂו בְּנָהּ הַגָּדֹל הַחֲמֻדֹת אֲשֶׁר אִתָּהּ בַּבָּיִת וַתַּלְבֵּשׁ אֶת־יַעֲקֹב בְּנָהּ הַקָּטָן׃",
+    "en": "Rebekah then took the best clothes of her older son Esau, which were there in the house, and had her younger son Jacob put them on;"
+   },
+   {
+    "n": "27:16",
+    "he": "וְאֵת עֹרֹת גְּדָיֵי הָעִזִּים הִלְבִּישָׁה עַל־יָדָיו וְעַל חֶלְקַת צַוָּארָיו׃",
+    "en": "and she covered his hands and the hairless part of his neck with the skins of the kids."
+   },
+   {
+    "n": "27:17",
+    "he": "וַתִּתֵּן אֶת־הַמַּטְעַמִּים וְאֶת־הַלֶּחֶם אֲשֶׁר עָשָׂתָה בְּיַד יַעֲקֹב בְּנָהּ׃",
+    "en": "Then she put in the hands of her son Jacob the dish and the bread that she had prepared."
+   },
+   {
+    "n": "27:18",
+    "he": "וַיָּבֹא אֶל־אָבִיו וַיֹּאמֶר אָבִי וַיֹּאמֶר הִנֶּנִּי מִי אַתָּה בְּנִי׃",
+    "en": "He went to his father and said, “Father.” And he said, “Yes, which of my sons are you?”"
+   },
+   {
+    "n": "27:19",
+    "he": "וַיֹּאמֶר יַעֲקֹב אֶל־אָבִיו אָנֹכִי עֵשָׂו בְּכֹרֶךָ עָשִׂיתִי כַּאֲשֶׁר דִּבַּרְתָּ אֵלָי קוּם־נָא שְׁבָה וְאׇכְלָה מִצֵּידִי בַּעֲבוּר תְּבָרְכַנִּי נַפְשֶׁךָ׃",
+    "en": "Jacob said to his father, “I am Esau, your first-born; I have done as you told me. Pray sit up and eat of my game, that you may give me your innermost blessing.”"
+   }
+  ],
+  "credit": "tanakh"
+ },
+ "Genesis 27:39–40": {
+  "label": "Genesis 27:39–40",
+  "title": "Genesis 27:39–40",
+  "kind": "Torah",
+  "verses": [
+   {
+    "n": "27:39",
+    "he": "וַיַּעַן יִצְחָק אָבִיו וַיֹּאמֶר אֵלָיו הִנֵּה מִשְׁמַנֵּי הָאָרֶץ יִהְיֶה מוֹשָׁבֶךָ וּמִטַּל הַשָּׁמַיִם מֵעָל׃",
+    "en": "And his father Isaac answered, saying to him, “See, your abode shall enjoy the fat of the earth And the dew of heaven above."
+   },
+   {
+    "n": "27:40",
+    "he": "וְעַל־חַרְבְּךָ תִחְיֶה וְאֶת־אָחִיךָ תַּעֲבֹד וְהָיָה כַּאֲשֶׁר תָּרִיד וּפָרַקְתָּ עֻלּוֹ מֵעַל צַוָּארֶךָ׃",
+    "en": "Yet by your sword you shall live, And you shall serve your brother; But when you grow restive, You shall break his yoke from your neck.”"
+   }
+  ],
+  "credit": "tanakh"
+ },
+ "Genesis 27:41": {
+  "label": "Genesis 27:41",
+  "title": "Genesis 27:41",
+  "kind": "Torah",
+  "verses": [
+   {
+    "n": "27:41",
+    "he": "וַיִּשְׂטֹם עֵשָׂו אֶת־יַעֲקֹב עַל־הַבְּרָכָה אֲשֶׁר בֵּרְכוֹ אָבִיו וַיֹּאמֶר עֵשָׂו בְּלִבּוֹ יִקְרְבוּ יְמֵי אֵבֶל אָבִי וְאַהַרְגָה אֶת־יַעֲקֹב אָחִי׃",
+    "en": "Now Esau harbored a grudge against Jacob because of the blessing that his father had given him, and Esau said to himself, “Let but the mourning period of my father come, and I will kill my brother Jacob.”"
+   }
+  ],
+  "credit": "tanakh"
+ },
+ "Genesis 28:6–9": {
+  "label": "Genesis 28:6–9",
+  "title": "Genesis 28:6–9",
+  "kind": "Torah",
+  "verses": [
+   {
+    "n": "28:6",
+    "he": "וַיַּרְא עֵשָׂו כִּי־בֵרַךְ יִצְחָק אֶת־יַעֲקֹב וְשִׁלַּח אֹתוֹ פַּדֶּנָה אֲרָם לָקַחַת־לוֹ מִשָּׁם אִשָּׁה בְּבָרְכוֹ אֹתוֹ וַיְצַו עָלָיו לֵאמֹר לֹא־תִקַּח אִשָּׁה מִבְּנוֹת כְּנָעַן׃",
+    "en": "When Esau saw that Isaac had blessed Jacob and sent him off to Paddan-aram to take a wife from there, charging him, as he blessed him, “You shall not take a wife from among the Canaanite women,”"
+   },
+   {
+    "n": "28:7",
+    "he": "וַיִּשְׁמַע יַעֲקֹב אֶל־אָבִיו וְאֶל־אִמּוֹ וַיֵּלֶךְ פַּדֶּנָה אֲרָם׃",
+    "en": "and that Jacob had obeyed his father and mother and gone to Paddan-aram,"
+   },
+   {
+    "n": "28:8",
+    "he": "וַיַּרְא עֵשָׂו כִּי רָעוֹת בְּנוֹת כְּנָעַן בְּעֵינֵי יִצְחָק אָבִיו׃",
+    "en": "Esau realized that the Canaanite women displeased his father Isaac."
+   },
+   {
+    "n": "28:9",
+    "he": "וַיֵּלֶךְ עֵשָׂו אֶל־יִשְׁמָעֵאל וַיִּקַּח אֶת־מָחֲלַת בַּת־יִשְׁמָעֵאל בֶּן־אַבְרָהָם אֲחוֹת נְבָיוֹת עַל־נָשָׁיו לוֹ לְאִשָּׁה׃",
+    "en": "So Esau went to Ishmael and took to wife, in addition to the wives he had, Mahalath the daughter of Ishmael son of Abraham, sister of Nebaioth."
+   }
+  ],
+  "credit": "tanakh"
+ },
+ "Genesis 32:4–8": {
+  "label": "Genesis 32:4–8",
+  "title": "Genesis 32:4–8",
+  "kind": "Torah",
+  "verses": [
+   {
+    "n": "32:4",
+    "he": "וַיִּשְׁלַח יַעֲקֹב מַלְאָכִים לְפָנָיו אֶל־עֵשָׂו אָחִיו אַרְצָה שֵׂעִיר שְׂדֵה אֱדוֹם׃",
+    "en": "Jacob sent messengers ahead to his brother Esau in the land of Seir, the country of Edom,"
+   },
+   {
+    "n": "32:5",
+    "he": "וַיְצַו אֹתָם לֵאמֹר כֹּה תֹאמְרוּן לַאדֹנִי לְעֵשָׂו כֹּה אָמַר עַבְדְּךָ יַעֲקֹב עִם־לָבָן גַּרְתִּי וָאֵחַר עַד־עָתָּה׃",
+    "en": "and instructed them as follows, “Thus shall you say, ‘To my lord Esau, thus says your servant Jacob: I stayed with Laban and remained until now;"
+   },
+   {
+    "n": "32:6",
+    "he": "וַיְהִי־לִי שׁוֹר וַחֲמוֹר צֹאן וְעֶבֶד וְשִׁפְחָה וָאֶשְׁלְחָה לְהַגִּיד לַאדֹנִי לִמְצֹא־חֵן בְּעֵינֶיךָ׃",
+    "en": "I have acquired cattle, donkeys, sheep, and male and female slaves; and I send this message to my lord in the hope of gaining your favor.’”"
+   },
+   {
+    "n": "32:7",
+    "he": "וַיָּשֻׁבוּ הַמַּלְאָכִים אֶל־יַעֲקֹב לֵאמֹר בָּאנוּ אֶל־אָחִיךָ אֶל־עֵשָׂו וְגַם הֹלֵךְ לִקְרָאתְךָ וְאַרְבַּע־מֵאוֹת אִישׁ עִמּוֹ׃",
+    "en": "The messengers returned to Jacob, saying, “We came to your brother Esau; he himself is coming to meet you, and there are four hundred men with him.”"
+   },
+   {
+    "n": "32:8",
+    "he": "וַיִּירָא יַעֲקֹב מְאֹד וַיֵּצֶר לוֹ וַיַּחַץ אֶת־הָעָם אֲשֶׁר־אִתּוֹ וְאֶת־הַצֹּאן וְאֶת־הַבָּקָר וְהַגְּמַלִּים לִשְׁנֵי מַחֲנוֹת׃",
+    "en": "Jacob was greatly frightened; in his anxiety, he divided the people with him, and the flocks and herds and camels, into two camps,"
+   }
+  ],
+  "credit": "tanakh"
+ },
+ "Genesis 33:3": {
+  "label": "Genesis 33:3",
+  "title": "Genesis 33:3",
+  "kind": "Torah",
+  "verses": [
+   {
+    "n": "33:3",
+    "he": "וְהוּא עָבַר לִפְנֵיהֶם וַיִּשְׁתַּחוּ אַרְצָה שֶׁבַע פְּעָמִים עַד־גִּשְׁתּוֹ עַד־אָחִיו׃",
+    "en": "He himself went on ahead and bowed low to the ground seven times until he was near his brother."
+   }
+  ],
+  "credit": "tanakh"
+ },
+ "Rashi on Genesis 33:4:2": {
+  "label": "Rashi on Genesis 33:4",
+  "title": "Rashi on Genesis 33:4",
+  "kind": "Commentary · 11th century",
+  "verses": [
+   {
+    "n": "And he kissed him",
+    "he": "וישקהו. נָקוּד עָלָיו; וְיֵשׁ חוֹלְקִין בַּדָּבָר הַזֶּה בַּבָּרַיְתָא דְּסִפְרֵי, יֵשׁ שֶׁדָּרְשׁוּ נְקֻדָּה זוֹ שֶׁלֹּא נְשָׁקוֹ בְּכָל לִבּוֹ, אָמַר רַבִּי שִׁמְעוֹן בֶּן יוֹחַאי, הֲלָכָה הִיא בְּיָדוּעַ שֶׁעֵשָׂו שׂוֹנֵא לְיַעֲקֹב, אֶלָּא שֶׁנִּכְמְרוּ רַחֲמָיו בְּאוֹתָהּ שָׁעָה וּנְשָׁקוֹ בְּכָל לִבּוֹ (ספרי במדבר):",
+    "en": "Dots are placed above the letters of this word, and a difference of opinion is expressed in the Baraitha of Sifré (בהעלותך) as to what these dots are intended to suggest: some explain the dotting as meaning that he did not kiss him with his whole heart, whereas R Simeon the son of Johai said: Is it not well-known that Esau hated Jacob? But at that moment his pity was really aroused and he kissed him with his whole heart. (Sifrei Bamidbar 69.2)"
+   }
+  ],
+  "credit": "rashi"
+ },
+ "Genesis 32:7–8": {
+  "label": "Genesis 32:7–8",
+  "title": "Genesis 32:7–8",
+  "kind": "Torah",
+  "verses": [
+   {
+    "n": "32:7",
+    "he": "וַיָּשֻׁבוּ הַמַּלְאָכִים אֶל־יַעֲקֹב לֵאמֹר בָּאנוּ אֶל־אָחִיךָ אֶל־עֵשָׂו וְגַם הֹלֵךְ לִקְרָאתְךָ וְאַרְבַּע־מֵאוֹת אִישׁ עִמּוֹ׃",
+    "en": "The messengers returned to Jacob, saying, “We came to your brother Esau; he himself is coming to meet you, and there are four hundred men with him.”"
+   },
+   {
+    "n": "32:8",
+    "he": "וַיִּירָא יַעֲקֹב מְאֹד וַיֵּצֶר לוֹ וַיַּחַץ אֶת־הָעָם אֲשֶׁר־אִתּוֹ וְאֶת־הַצֹּאן וְאֶת־הַבָּקָר וְהַגְּמַלִּים לִשְׁנֵי מַחֲנוֹת׃",
+    "en": "Jacob was greatly frightened; in his anxiety, he divided the people with him, and the flocks and herds and camels, into two camps,"
+   }
+  ],
+  "credit": "tanakh"
+ },
+ "Genesis 33:16": {
+  "label": "Genesis 33:16",
+  "title": "Genesis 33:16",
+  "kind": "Torah",
+  "verses": [
+   {
+    "n": "33:16",
+    "he": "וַיָּשׇׁב בַּיּוֹם הַהוּא עֵשָׂו לְדַרְכּוֹ שֵׂעִירָה׃",
+    "en": "So Esau started back that day on his way to Seir."
+   }
+  ],
+  "credit": "tanakh"
+ },
+ "Genesis 27:5": {
+  "label": "Genesis 27:5",
+  "title": "Genesis 27:5",
+  "kind": "Torah",
+  "verses": [
+   {
+    "n": "27:5",
+    "he": "וְרִבְקָה שֹׁמַעַת בְּדַבֵּר יִצְחָק אֶל־עֵשָׂו בְּנוֹ וַיֵּלֶךְ עֵשָׂו הַשָּׂדֶה לָצוּד צַיִד לְהָבִיא׃",
+    "en": "Rebekah had been listening as Isaac spoke to his son Esau. When Esau had gone out into the open to hunt game to bring home,"
+   }
+  ],
+  "credit": "tanakh"
+ },
+ "Genesis 27:38": {
+  "label": "Genesis 27:38",
+  "title": "Genesis 27:38",
+  "kind": "Torah",
+  "verses": [
+   {
+    "n": "27:38",
+    "he": "וַיֹּאמֶר עֵשָׂו אֶל־אָבִיו הַבְרָכָה אַחַת הִוא־לְךָ אָבִי בָּרְכֵנִי גַם־אָנִי אָבִי וַיִּשָּׂא עֵשָׂו קֹלוֹ וַיֵּבְךְּ׃",
+    "en": "And Esau said to his father, “Have you but one blessing, Father? Bless me too, Father!” And Esau wept aloud."
+   }
+  ],
+  "credit": "tanakh"
+ },
+ "Genesis 28:4": {
+  "label": "Genesis 28:4",
+  "title": "Genesis 28:4",
+  "kind": "Torah",
+  "verses": [
+   {
+    "n": "28:4",
+    "he": "וְיִתֶּן־לְךָ אֶת־בִּרְכַּת אַבְרָהָם לְךָ וּלְזַרְעֲךָ אִתָּךְ לְרִשְׁתְּךָ אֶת־אֶרֶץ מְגֻרֶיךָ אֲשֶׁר־נָתַן אֱלֹהִים לְאַבְרָהָם׃",
+    "en": "May you and your offspring be granted the blessing of Abraham, that you may possess the land where you are sojourning, which God assigned to Abraham.”"
+   }
+  ],
+  "credit": "tanakh"
+ },
+ "Genesis 27:42–45": {
+  "label": "Genesis 27:42–45",
+  "title": "Genesis 27:42–45",
+  "kind": "Torah",
+  "verses": [
+   {
+    "n": "27:42",
+    "he": "וַיֻּגַּד לְרִבְקָה אֶת־דִּבְרֵי עֵשָׂו בְּנָהּ הַגָּדֹל וַתִּשְׁלַח וַתִּקְרָא לְיַעֲקֹב בְּנָהּ הַקָּטָן וַתֹּאמֶר אֵלָיו הִנֵּה עֵשָׂו אָחִיךָ מִתְנַחֵם לְךָ לְהׇרְגֶךָ׃",
+    "en": "When the words of her older son Esau were reported to Rebekah, she sent for her younger son Jacob and said to him, “Your brother Esau is consoling himself by planning to kill you."
+   },
+   {
+    "n": "27:43",
+    "he": "וְעַתָּה בְנִי שְׁמַע בְּקֹלִי וְקוּם בְּרַח־לְךָ אֶל־לָבָן אָחִי חָרָנָה׃",
+    "en": "Now, my son, listen to me. Flee at once to Haran, to my brother Laban."
+   },
+   {
+    "n": "27:44",
+    "he": "וְיָשַׁבְתָּ עִמּוֹ יָמִים אֲחָדִים עַד אֲשֶׁר־תָּשׁוּב חֲמַת אָחִיךָ׃",
+    "en": "Stay with him awhile, until your brother’s fury subsides—"
+   },
+   {
+    "n": "27:45",
+    "he": "עַד־שׁוּב אַף־אָחִיךָ מִמְּךָ וְשָׁכַח אֵת אֲשֶׁר־עָשִׂיתָ לּוֹ וְשָׁלַחְתִּי וּלְקַחְתִּיךָ מִשָּׁם לָמָה אֶשְׁכַּל גַּם־שְׁנֵיכֶם יוֹם אֶחָד׃",
+    "en": "until your brother’s anger against you subsides—and he forgets what you have done to him. Then I will fetch you from there. Let me not lose you both in one day!”"
+   }
+  ],
+  "credit": "tanakh"
+ },
+ "Genesis 32:4–7": {
+  "label": "Genesis 32:4–7",
+  "title": "Genesis 32:4–7",
+  "kind": "Torah",
+  "verses": [
+   {
+    "n": "32:4",
+    "he": "וַיִּשְׁלַח יַעֲקֹב מַלְאָכִים לְפָנָיו אֶל־עֵשָׂו אָחִיו אַרְצָה שֵׂעִיר שְׂדֵה אֱדוֹם׃",
+    "en": "Jacob sent messengers ahead to his brother Esau in the land of Seir, the country of Edom,"
+   },
+   {
+    "n": "32:5",
+    "he": "וַיְצַו אֹתָם לֵאמֹר כֹּה תֹאמְרוּן לַאדֹנִי לְעֵשָׂו כֹּה אָמַר עַבְדְּךָ יַעֲקֹב עִם־לָבָן גַּרְתִּי וָאֵחַר עַד־עָתָּה׃",
+    "en": "and instructed them as follows, “Thus shall you say, ‘To my lord Esau, thus says your servant Jacob: I stayed with Laban and remained until now;"
+   },
+   {
+    "n": "32:6",
+    "he": "וַיְהִי־לִי שׁוֹר וַחֲמוֹר צֹאן וְעֶבֶד וְשִׁפְחָה וָאֶשְׁלְחָה לְהַגִּיד לַאדֹנִי לִמְצֹא־חֵן בְּעֵינֶיךָ׃",
+    "en": "I have acquired cattle, donkeys, sheep, and male and female slaves; and I send this message to my lord in the hope of gaining your favor.’”"
+   },
+   {
+    "n": "32:7",
+    "he": "וַיָּשֻׁבוּ הַמַּלְאָכִים אֶל־יַעֲקֹב לֵאמֹר בָּאנוּ אֶל־אָחִיךָ אֶל־עֵשָׂו וְגַם הֹלֵךְ לִקְרָאתְךָ וְאַרְבַּע־מֵאוֹת אִישׁ עִמּוֹ׃",
+    "en": "The messengers returned to Jacob, saying, “We came to your brother Esau; he himself is coming to meet you, and there are four hundred men with him.”"
+   }
+  ],
+  "credit": "tanakh"
+ },
+ "Rashi on Genesis 36:43:1": {
+  "label": "Rashi on Genesis 36:43",
+  "title": "Rashi on Genesis 36:43",
+  "kind": "Commentary · 11th century",
+  "verses": [
+   {
+    "n": "Magdiel",
+    "he": "מגדיאל. הִיא רוֹמִי:",
+    "en": "This is Rome (Pirkei D'Rabbi Eliezer 38)."
+   }
+  ],
+  "credit": "rashi"
+ },
+ "Rashi on Genesis 25:22:1": {
+  "label": "Rashi on Genesis 25:22",
+  "title": "Rashi on Genesis 25:22",
+  "kind": "Commentary · 11th century",
+  "verses": [
+   {
+    "n": "And [the children] struggled",
+    "he": "ויתרוצצו. עַ״כָּ הַמִּקְרָא הַזֶּה אוֹמֵר דָּרְשֵׁנִי, שֶׁסָּתַם מַה הִיא רְצִיצָה זוֹ וְכָתַב אִם כֵּן לָמָּה זֶּה אָנֹכִי? רַבּוֹתֵינוּ דְּרָשׁוּהוּ לְשׁוֹן רִיצָה; כְּשֶׁהָיְתָה עוֹבֶרֶת עַל פִּתְחֵי תּוֹרָה שֶׁל שֵׁם וָעֵבֶר יַעֲקֹב רָץ וּמְפַרְכֵּס לָצֵאת, עוֹבֶרֶת עַל פֶּתַח עֲבוֹדַת אֱלִילִים, עֵשָׂו מְפַרְכֵּס לָצֵאת. דָּבָר אַחֵר מִתְרוֹצְצִים זֶה עִם זֶה וּמְרִיבִים בְּנַחֲלַת שְׁנֵי עוֹלָמוֹת.",
+    "en": "You must admit that this verse calls for a Midrashic interpretation since it leaves unexplained what this struggling was about and it states that she exclaimed “If it be so, wherefore did I desire this” (i.e. she asked whether this was the normal course of child-bearing, feeling that something extraordinary was happening). Our Rabbis explain that the word ויתרוצצו has the meaning of running, moving quickly: whenever she passed by the doors of the Torah (i. e. the Schools of Shem and Eber) Jacob moved convulsively in his efforts to come to birth, but whenever she passed by the gate of a pagan temple Esau moved convulsively in his efforts to come to birth (Genesis Rabbah 63:6). Another explanation is: they struggled with one another and quarrelled as to how they should divide the two worlds as their inheritance (Yalkut Shimoni on Torah 111:2)."
+   }
+  ],
+  "credit": "rashi"
+ },
+ "Rashi on Genesis 25:27:1": {
+  "label": "Rashi on Genesis 25:27",
+  "title": "Rashi on Genesis 25:27",
+  "kind": "Commentary · 11th century",
+  "verses": [
+   {
+    "n": "And they grew … and Esau was",
+    "he": "ויגדלו … ויהי עשו. כָּל זְמַן שֶׁהָיוּ קְטַנִּים, לֹא הָיוּ נִכָּרִים בְּמַעֲשֵׂיהֶם, וְאֵין אָדָם מְדַקְדֵּק בָּהֶם מַה טִּיבָם; כֵּיוָן שֶׁנַּעֲשׂוּ בְנֵי שְׁלשׁ עֶשְׂרֵה שָׁנָה, זֶה פֵּרֵשׁ לְבָתֵּי מִדְרָשׁוֹת וְזֶה פֵּרֵשׁ לַעֲ״זָ:",
+    "en": "So long as they were young they could not be distinguished by what they did and no one paid much attention to their characters, but when they reached the age of thirteen, one went his way to the houses of learning and the other went his way to the idolatrous temples (Genesis Rabbah 63:10)."
+   }
+  ],
+  "credit": "rashi"
+ },
+ "Deuteronomy 23:8": {
+  "label": "Deuteronomy 23:8",
+  "title": "Deuteronomy 23:8",
+  "kind": "Torah",
+  "verses": [
+   {
+    "n": "Deuteronomy 23:8",
+    "he": "לֹא־תְתַעֵב אֲדֹמִי כִּי אָחִיךָ הוּא לֹא־תְתַעֵב מִצְרִי כִּי־גֵר הָיִיתָ בְאַרְצוֹ׃",
+    "en": "You shall not abhor an Edomite, for they are your kin. You shall not abhor an Egyptian, for you were a stranger in their land."
+   }
+  ],
+  "credit": "tanakh"
+ },
+ "Rashi on Genesis 25:28:1": {
+  "label": "Rashi on Genesis 25:28",
+  "title": "Rashi on Genesis 25:28",
+  "kind": "Commentary · 11th century",
+  "verses": [
+   {
+    "n": "[There was hunting] in his mouth",
+    "he": "בפיו. כְּתַרְגּוּמוֹ בְּפִיו שֶׁל יִצְחָק. וּמִדְרָשׁוֹ בְּפִיו שֶׁל עֵשָׂו, שֶׁהָיָה צָד אוֹתוֹ וּמְרַמֵּהוּ בִדְבָרָיו:",
+    "en": "Understand this as the Targum renders it: in Isaac’s mouth (i. e. Isaac ate the venison he brought home). But its Midrashic explanation is: there was hunting in Esau’s mouth, meaning that he used to entrap and deceive him by his words (Genesis Rabbah 63:10)."
+   }
+  ],
+  "credit": "rashi"
  },
  "Genesis 27:1": {
   "label": "Genesis 27:1",
@@ -1024,37 +1543,6 @@ Object.assign(VOICES.sources, {
     "n": "25:23",
     "he": "וַיֹּאמֶר ה׳ לָהּ שְׁנֵי גוֹיִם בְּבִטְנֵךְ וּשְׁנֵי לְאֻמִּים מִמֵּעַיִךְ יִפָּרֵדוּ וּלְאֹם מִלְאֹם יֶאֱמָץ וְרַב יַעֲבֹד צָעִיר׃",
     "en": "and <span class=\"sc\">God</span> answered her,<br>“Two nations are in your womb,<br>Two separate peoples shall issue from your body;<br>One people shall be mightier than the other,<br>And the older shall serve the younger.”"
-   }
-  ],
-  "credit": "tanakh"
- },
- "Genesis 27:38": {
-  "label": "Genesis 27:38",
-  "title": "Genesis 27:38",
-  "kind": "Torah",
-  "verses": [
-   {
-    "n": "27:38",
-    "he": "וַיֹּאמֶר עֵשָׂו אֶל־אָבִיו הַבְרָכָה אַחַת הִוא־לְךָ אָבִי בָּרְכֵנִי גַם־אָנִי אָבִי וַיִּשָּׂא עֵשָׂו קֹלוֹ וַיֵּבְךְּ׃",
-    "en": "And Esau said to his father, “Have you but one blessing, Father? Bless me too, Father!” And Esau wept aloud."
-   }
-  ],
-  "credit": "tanakh"
- },
- "Genesis 27:39–40": {
-  "label": "Genesis 27:39–40",
-  "title": "Genesis 27:39–40",
-  "kind": "Torah",
-  "verses": [
-   {
-    "n": "27:39",
-    "he": "וַיַּעַן יִצְחָק אָבִיו וַיֹּאמֶר אֵלָיו הִנֵּה מִשְׁמַנֵּי הָאָרֶץ יִהְיֶה מוֹשָׁבֶךָ וּמִטַּל הַשָּׁמַיִם מֵעָל׃",
-    "en": "And his father Isaac answered, saying to him, “See, your abode shall enjoy the fat of the earth And the dew of heaven above."
-   },
-   {
-    "n": "27:40",
-    "he": "וְעַל־חַרְבְּךָ תִחְיֶה וְאֶת־אָחִיךָ תַּעֲבֹד וְהָיָה כַּאֲשֶׁר תָּרִיד וּפָרַקְתָּ עֻלּוֹ מֵעַל צַוָּארֶךָ׃",
-    "en": "Yet by your sword you shall live, And you shall serve your brother; But when you grow restive, You shall break his yoke from your neck.”"
    }
   ],
   "credit": "tanakh"
@@ -1209,46 +1697,158 @@ Object.assign(VOICES.sources, {
   ],
   "credit": "tanakh"
  },
- "Genesis 27:41": {
-  "label": "Genesis 27:41",
-  "title": "Genesis 27:41",
+ "Genesis 27:23": {
+  "label": "Genesis 27:23",
+  "title": "Genesis 27:23",
   "kind": "Torah",
   "verses": [
    {
-    "n": "27:41",
-    "he": "וַיִּשְׂטֹם עֵשָׂו אֶת־יַעֲקֹב עַל־הַבְּרָכָה אֲשֶׁר בֵּרְכוֹ אָבִיו וַיֹּאמֶר עֵשָׂו בְּלִבּוֹ יִקְרְבוּ יְמֵי אֵבֶל אָבִי וְאַהַרְגָה אֶת־יַעֲקֹב אָחִי׃",
-    "en": "Now Esau harbored a grudge against Jacob because of the blessing that his father had given him, and Esau said to himself, “Let but the mourning period of my father come, and I will kill my brother Jacob.”"
+    "n": "27:23",
+    "he": "וְלֹא הִכִּירוֹ כִּי־הָיוּ יָדָיו כִּידֵי עֵשָׂו אָחִיו שְׂעִרֹת וַיְבָרְכֵהוּ׃",
+    "en": "He did not recognize him, because his hands were hairy like those of his brother Esau; and so he blessed him."
    }
   ],
   "credit": "tanakh"
  },
- "Genesis 27:42–45": {
-  "label": "Genesis 27:42–45",
-  "title": "Genesis 27:42–45",
+ "Genesis 27:24": {
+  "label": "Genesis 27:24",
+  "title": "Genesis 27:24",
   "kind": "Torah",
   "verses": [
    {
-    "n": "27:42",
-    "he": "וַיֻּגַּד לְרִבְקָה אֶת־דִּבְרֵי עֵשָׂו בְּנָהּ הַגָּדֹל וַתִּשְׁלַח וַתִּקְרָא לְיַעֲקֹב בְּנָהּ הַקָּטָן וַתֹּאמֶר אֵלָיו הִנֵּה עֵשָׂו אָחִיךָ מִתְנַחֵם לְךָ לְהׇרְגֶךָ׃",
-    "en": "When the words of her older son Esau were reported to Rebekah, she sent for her younger son Jacob and said to him, “Your brother Esau is consoling himself by planning to kill you."
-   },
-   {
-    "n": "27:43",
-    "he": "וְעַתָּה בְנִי שְׁמַע בְּקֹלִי וְקוּם בְּרַח־לְךָ אֶל־לָבָן אָחִי חָרָנָה׃",
-    "en": "Now, my son, listen to me. Flee at once to Haran, to my brother Laban."
-   },
-   {
-    "n": "27:44",
-    "he": "וְיָשַׁבְתָּ עִמּוֹ יָמִים אֲחָדִים עַד אֲשֶׁר־תָּשׁוּב חֲמַת אָחִיךָ׃",
-    "en": "Stay with him awhile, until your brother’s fury subsides—"
-   },
-   {
-    "n": "27:45",
-    "he": "עַד־שׁוּב אַף־אָחִיךָ מִמְּךָ וְשָׁכַח אֵת אֲשֶׁר־עָשִׂיתָ לּוֹ וְשָׁלַחְתִּי וּלְקַחְתִּיךָ מִשָּׁם לָמָה אֶשְׁכַּל גַּם־שְׁנֵיכֶם יוֹם אֶחָד׃",
-    "en": "until your brother’s anger against you subsides—and he forgets what you have done to him. Then I will fetch you from there. Let me not lose you both in one day!”"
+    "n": "27:24",
+    "he": "וַיֹּאמֶר אַתָּה זֶה בְּנִי עֵשָׂו וַיֹּאמֶר אָנִי׃",
+    "en": "He asked, “Are you really my son Esau?” And when he said, “I am,”"
    }
   ],
   "credit": "tanakh"
+ },
+ "Genesis 27:26–27": {
+  "label": "Genesis 27:26–27",
+  "title": "Genesis 27:26–27",
+  "kind": "Torah",
+  "verses": [
+   {
+    "n": "27:26",
+    "he": "וַיֹּאמֶר אֵלָיו יִצְחָק אָבִיו גְּשָׁה־נָּא וּשְׁקָה־לִּי בְּנִי׃",
+    "en": "Then his father Isaac said to him, “Come close and kiss me, my son”;"
+   },
+   {
+    "n": "27:27",
+    "he": "וַיִּגַּשׁ וַיִּשַּׁק־לוֹ וַיָּרַח אֶת־רֵיחַ בְּגָדָיו וַיְבָרְכֵהוּ וַיֹּאמֶר רְאֵה רֵיחַ בְּנִי כְּרֵיחַ שָׂדֶה אֲשֶׁר בֵּרְכוֹ ה׳׃",
+    "en": "and he went up and kissed him. And he smelled his clothes and he blessed him, saying, “Ah, the smell of my son is like the smell of the fields that <span class=\"sc\">God</span> has blessed."
+   }
+  ],
+  "credit": "tanakh"
+ },
+ "Genesis 27:28–29": {
+  "label": "Genesis 27:28–29",
+  "title": "Genesis 27:28–29",
+  "kind": "Torah",
+  "verses": [
+   {
+    "n": "27:28",
+    "he": "וְיִתֶּן־לְךָ הָאֱלֹהִים מִטַּל הַשָּׁמַיִם וּמִשְׁמַנֵּי הָאָרֶץ וְרֹב דָּגָן וְתִירֹשׁ׃",
+    "en": "“May God give you<br>Of the dew of heaven and the fat of the earth,<br>Abundance of new grain and wine."
+   },
+   {
+    "n": "27:29",
+    "he": "יַעַבְדוּךָ עַמִּים וְיִשְׁתַּחֲווּ לְךָ לְאֻמִּים הֱוֵה גְבִיר לְאַחֶיךָ וְיִשְׁתַּחֲווּ לְךָ בְּנֵי אִמֶּךָ אֹרְרֶיךָ אָרוּר וּמְבָרְכֶיךָ בָּרוּךְ׃",
+    "en": "Let peoples serve you,<br>And nations bow to you;<br>Be master over your brothers,<br>And let your mother’s sons bow to you.<br>Cursed be they who curse you,<br>Blessed they who bless you.”"
+   }
+  ],
+  "credit": "tanakh"
+ },
+ "Rashi on Genesis 27:33:4": {
+  "label": "Rashi on Genesis 27:33",
+  "title": "Rashi on Genesis 27:33",
+  "kind": "Commentary · 11th century",
+  "verses": [
+   {
+    "n": "Yea, and he shall be blessed",
+    "he": "גם ברוך יהיה. שֶׁלֹּא תֹאמַר אִלּוּלֵי שֶׁרִמָּה יַעֲקֹב לְאָבִיו לֹא נָטַל אֶת הַבְּרָכוֹת, לְכָךְ הִסְכִּים וּבֵרְכוֹ מִדַּעְתּוֹ (בראשית רבה):",
+    "en": "In order that you may not say “If Jacob had not deceived his father he would never have received the blessing”, he, therefore, confirmed it, blessing him now of his own free will (Genesis Rabbah 67:2)."
+   }
+  ],
+  "credit": "rashi"
+ },
+ "Genesis 27:37": {
+  "label": "Genesis 27:37",
+  "title": "Genesis 27:37",
+  "kind": "Torah",
+  "verses": [
+   {
+    "n": "27:37",
+    "he": "וַיַּעַן יִצְחָק וַיֹּאמֶר לְעֵשָׂו הֵן גְּבִיר שַׂמְתִּיו לָךְ וְאֶת־כׇּל־אֶחָיו נָתַתִּי לוֹ לַעֲבָדִים וְדָגָן וְתִירֹשׁ סְמַכְתִּיו וּלְכָה אֵפוֹא מָה אֶעֱשֶׂה בְּנִי׃",
+    "en": "Isaac answered, saying to Esau, “But I have made him master over you: I have given him all his brothers for servants, and sustained him with grain and wine. What, then, can I still do for you, my son?”"
+   }
+  ],
+  "credit": "tanakh"
+ },
+ "Genesis 28:5": {
+  "label": "Genesis 28:5",
+  "title": "Genesis 28:5",
+  "kind": "Torah",
+  "verses": [
+   {
+    "n": "28:5",
+    "he": "וַיִּשְׁלַח יִצְחָק אֶת־יַעֲקֹב וַיֵּלֶךְ פַּדֶּנָה אֲרָם אֶל־לָבָן בֶּן־בְּתוּאֵל הָאֲרַמִּי אֲחִי רִבְקָה אֵם יַעֲקֹב וְעֵשָׂו׃",
+    "en": "Then Isaac sent Jacob off, and he went to Paddan-aram, to Laban the son of Bethuel the Aramean, the brother of Rebekah, mother of Jacob and Esau."
+   }
+  ],
+  "credit": "tanakh"
+ },
+ "Rashi on Genesis 27:1:1": {
+  "label": "Rashi on Genesis 27:1",
+  "title": "Rashi on Genesis 27:1",
+  "kind": "Commentary · 11th century",
+  "verses": [
+   {
+    "n": "",
+    "he": "ותכהין. בַּעֲשָׁנָן שֶׁל אֵלּוּ. דָּ״אַ כְּשֶׁנֶּעֱקַד עַ״גַּ הַמִּזְבֵּחַ וְהָיָה אָבִיו רוֹצֶה לְשָׁחֳטוֹ, בְּאוֹתָהּ שָׁעָה נִפְתְּחוּ הַשָּׁמַיִם וְרָאוּ מַלְאֲכֵי הַשָּׁרֵת וְהָיוּ בוֹכִים, וְיָרְדוּ דִמְעוֹתֵיהֶם וְנָפְלוּ עַל עֵינָיו, לְפִיכָךְ כָּהוּ עֵינָיו. דָּ״אַ כְּדֵי שֶׁיִּטֹּל יַעֲקֹב אֶת הַבְּרָכוֹת:",
+    "en": "His eyes were dim through the smoke raised by these women in offering incense to idols (Midrash Tanchuma, Toldot 8). Another explanation is: When Isaac was bound upon the altar and his father was about to slay him, at that very moment the heavens opened, the ministering angels saw it and wept, and their tears flowed and fell upon Isaac’s eyes which thus became dim (Genesis Rabbah 65:10). Another explanation is: They became dim just in order that Jacob might receive the blessings (Genesis Rabbah 65:8)."
+   }
+  ],
+  "credit": "rashi"
+ },
+ "Rashi on Genesis 28:13:2": {
+  "label": "Rashi on Genesis 28:13",
+  "title": "Rashi on Genesis 28:13",
+  "kind": "Commentary · 11th century",
+  "verses": [
+   {
+    "n": "And the God of Isaac",
+    "he": "ואלהי יצחק. אַעַ״פִּ שֶׁלֹּא מָצִינוּ בַּמִּקְרָא שֶׁיִּחֵד הַקָּבָּ״ה שְׁמוֹ עַל הַצַּדִּיקִים בְּחַיֵּיהֶם לִכְתֹּב אֱלֹהֵי פְּלוֹנִי, מִשּׁוּם שֶׁנֶּאֱמַר הֵן בִּקְדֹשָׁו לֹא יַאֲמִין (איוב ט״ו), כָּאן יִחֵד שְׁמוֹ עַל יִצְחָק, לְפִי שֶׁכָּהוּ עֵינָיו וְכָלוּא בַבַּיִת, וַהֲרֵי הוּא כְמֵת וְיֵצֶר הָרָע פָּסַק מִמֶּנּוּ, תַּנְחוּמָא:",
+    "en": "Although we do not find in the Scriptures that God associates his Name with that of the righteous whilst they are yet alive by writing, “The God of so-and-so”, — because it is said (Job 15:15) “Behold He putteth no trust even in His holy ones” — here, however, He associated his Name with that of Isaac because his eyes had become dim and he was confined to the house, so that he might be regarded as dead and as though the evil inclination had already passed away from him and he was unlikely to sin any more (Midrash Tanchuma, Toldot 7)."
+   }
+  ],
+  "credit": "rashi"
+ },
+ "Genesis 27:4": {
+  "label": "Genesis 27:4",
+  "title": "Genesis 27:4",
+  "kind": "Torah",
+  "verses": [
+   {
+    "n": "27:4",
+    "he": "וַעֲשֵׂה־לִי מַטְעַמִּים כַּאֲשֶׁר אָהַבְתִּי וְהָבִיאָה לִּי וְאֹכֵלָה בַּעֲבוּר תְּבָרֶכְךָ נַפְשִׁי בְּטֶרֶם אָמוּת׃",
+    "en": "Then prepare a dish for me such as I like, and bring it to me to eat, so that I may give you my innermost blessing before I die.”"
+   }
+  ],
+  "credit": "tanakh"
+ },
+ "Rashi on Genesis 27:33:1": {
+  "label": "Rashi on Genesis 27:33",
+  "title": "Rashi on Genesis 27:33",
+  "kind": "Commentary · 11th century",
+  "verses": [
+   {
+    "n": "[And Isaac] trembled",
+    "he": "ויחרד. כְּתַרְגּוּמוֹ וּתְוַהּ, לְשׁוֹן תְּמִיהָ. וּמִדְרָשׁוֹ רָאָה גֵּיהִנֹּם פְּתוּחָה מִתַּחְתָּיו:",
+    "en": "Explain it as the Targum renders it ותוה, which means he was perplexed. The Midrashic explanation (Midrash Tanchuma, Toldot 11) is that he saw Gehinnom opening beneath him (Esau)."
+   }
+  ],
+  "credit": "rashi"
  },
  "Genesis 28:16": {
   "label": "Genesis 28:16",
@@ -1571,39 +2171,6 @@ Object.assign(VOICES.sources, {
   ],
   "credit": "tanakh"
  },
- "Genesis 32:25–29": {
-  "label": "Genesis 32:25–29",
-  "title": "Genesis 32:25–29",
-  "kind": "Torah",
-  "verses": [
-   {
-    "n": "32:25",
-    "he": "וַיִּוָּתֵר יַעֲקֹב לְבַדּוֹ וַיֵּאָבֵק אִישׁ עִמּוֹ עַד עֲלוֹת הַשָּׁחַר׃",
-    "en": "Jacob was left alone. And a figure wrestled with him until the break of dawn."
-   },
-   {
-    "n": "32:26",
-    "he": "וַיַּרְא כִּי לֹא יָכֹל לוֹ וַיִּגַּע בְּכַף־יְרֵכוֹ וַתֵּקַע כַּף־יֶרֶךְ יַעֲקֹב בְּהֵאָבְקוֹ עִמּוֹ׃",
-    "en": "When he saw that he had not prevailed against him, he wrenched Jacob’s hip at its socket, so that the socket of his hip was strained as he wrestled with him."
-   },
-   {
-    "n": "32:27",
-    "he": "וַיֹּאמֶר שַׁלְּחֵנִי כִּי עָלָה הַשָּׁחַר וַיֹּאמֶר לֹא אֲשַׁלֵּחֲךָ כִּי אִם־בֵּרַכְתָּנִי׃",
-    "en": "Then he said, “Let me go, for dawn is breaking.” But he answered, “I will not let you go, unless you bless me.”"
-   },
-   {
-    "n": "32:28",
-    "he": "וַיֹּאמֶר אֵלָיו מַה־שְּׁמֶךָ וַיֹּאמֶר יַעֲקֹב׃",
-    "en": "Said the other, “What is your name?” He replied, “Jacob.”"
-   },
-   {
-    "n": "32:29",
-    "he": "וַיֹּאמֶר לֹא יַעֲקֹב יֵאָמֵר עוֹד שִׁמְךָ כִּי אִם־יִשְׂרָאֵל כִּי־שָׂרִיתָ עִם־אֱלֹהִים וְעִם־אֲנָשִׁים וַתּוּכָל׃",
-    "en": "Said he, “Your name shall no longer be Jacob, but Israel, for you have striven with beings divine and human, and have prevailed.”"
-   }
-  ],
-  "credit": "tanakh"
- },
  "Genesis 27:5–13": {
   "label": "Genesis 27:5–13",
   "title": "Genesis 27:5–13",
@@ -1779,6 +2346,162 @@ Object.assign(VOICES.sources, {
   ],
   "credit": "English: <i>Pentateuch with Rashi’s Commentary</i>, translated by M. Rosenbaum and A. M. Silbermann (1929–1934), public domain. Hebrew: Sefaria’s merged text of Rashi on Genesis. Both via Sefaria."
  },
+ "Guide, Introduction": {
+  "label": "Guide for the Perplexed, Introduction",
+  "title": "Guide for the Perplexed, Introduction",
+  "kind": "Philosophy · Maimonides, about 1190",
+  "verses": [
+   {
+    "n": "Two kinds of prophetic parable",
+    "he": "ודע – כי משלי הנבואה יש בהם שני דרכים. מהם – משלים שכל מלה שבמשל ההוא יש בה ענין; ומהם – מה שיהיה כל המשל מגיד על כל הענין ההוא ויבאו במשל ההוא הנמשל דברים רבים מאד אין כל מלה מהם מוספת ענין בענין ההוא הנמשל אבל הם ליפות המשל וסדר הדברים בו או להפליג בהסתיר הענין הנמשל וימשכו הדברים כפי כל מה שראוי בגלויו של המשל ההוא. והבן זה מאד: אמנם דמיון המין הראשון ממשלי הנבואה – אמרו ״והנה סלם מצב ארצה וגו׳״; כי אמרו ׳סלם׳ יורה על ענין אחד ואמרו ׳מצב ארצה׳ יורה על ענין שני ואמרו ׳וראשו מגיע השמימה׳ יורה על ענין שלישי ואמרו ׳והנה מלאכי אלקים׳ יורה על ענין רביעי ואמרו ׳עלים׳ יורה על ענין חמישי ואמרו ׳וירדים׳ יורה על ענין ששי ואמרו ׳והנה יי נצב עליו׳ יורה על ענין שביעי – הנה כל מלה שבאה בזה המשל היא לענין מוסיף בכלל הנמשל.",
+    "en": "Know that the figures employed by prophets are of two kinds: first, where every word which occurs in the simile represents a certain idea; and secondly, where the simile, as a whole, represents a general idea, but has a great many points which have no reference whatever to that idea: they are simply required to give to the simile its proper form and order, or better to conceal the idea: the simile is therefore continued as far as necessary, according to its literal sense. Consider this well. An example of the first class of prophetic figures is to be found in Genesis:—“And, behold, a ladder set up on the earth, and the top of it reached to heaven; and, behold, the angels of God ascending and descending on it” (Gen. 28:12). The word “ladder” refers to one idea: “set up on the earth” to another: “and the top of it reached to heaven” to a third: “angels of God” to a fourth: “ascending” to a fifth; “descending” to a sixth; “the Lord stood above it” (ver. 13) to a seventh. Every word in this figure introduces a fresh element into the idea represented by the figure."
+   }
+  ],
+  "credit": "guide"
+ },
+ "Rashi on Genesis 28:17:1": {
+  "label": "Rashi on Genesis 28:17",
+  "title": "Rashi on Genesis 28:17",
+  "kind": "Commentary · 11th century",
+  "verses": [
+   {
+    "n": "This is none other than the house of God",
+    "he": "כי אם בית אלהים. אָ״רַ אֶלְעָזָר בְּשֵׁם רַבִּי יוֹסֵי בֶּן זִמְרָא, הַסֻּלָּם הַזֶּה עוֹמֵד בִּבְאֵר שֶׁבַע וְאֶמְצַע שִׁפּוּעוֹ מַגִּיעַ כְּנֶגֶד בֵּית הַמִּקְדָשׁ, שֶׁבְּאֵר שֶׁבַע עוֹמֵד בִּדְרוֹמָהּ שֶׁל יְהוּדָה, וִירוּשָׁלַיִם בִּצְפוֹנָהּ, בַּגְּבוּל שֶׁבֵּין יְהוּדָה וּבִנְיָמִין, וּבֵית אֵל הָיָה בַּצָּפוֹן שֶׁל נַחֲלַת בִּנְיָמִין, בַּגְּבוּל שֶׁבֵּין בִּנְיָמִין וּבֵין בְּנֵי יוֹסֵף; נִמְצָא סֻלָּם שֶׁרַגְלָיו בִּבְאֵר שֶׁבַע וְרֹאשׁוֹ בְּבֵית אֵל מַגִּיעַ אֶמְצַע שִׁפּוּעוֹ נֶגֶד יְרוּשָׁלַיִם; וּכְלַפֵּי שֶׁאָמְרוּ רַבּוֹתֵינוּ שֶׁאָמַר הַקָּבָּ״ה צַדִּיק זֶה בָּא לְבֵית מְלוֹנִי וְיִפָּטֵר בְּלֹא לִינָה, וְאָמְרוּ יַעֲקֹב קְרָאָהּ לִירוּשָׁלַיִם בֵּית אֵל וְזוֹ לוּז הִיא וְלֹא יְרוּשָׁלַיִם, וּמֵהֵיכָן לָמְדוּ לוֹמַר כֵּן? אֲנִי אוֹמֵר שֶׁנֶּעֱקַר הַר הַמּוֹרִיָה וּבָא לְכָאן, וְזוֹ הִיא קְפִיצַת הָאָרֶץ הָאֲמוּרָה בִּשְׁחִיטַת חֻלִּין, שֶׁבָּא בֵּית הַמִּקְדָשׁ לִקְרָאתוֹ עַד בֵּית אֵל, וְזֶהוּ וַיִּפְגַּע בַּמָּקוֹם. וְאִם תֹּאמַר כְּשֶׁעָבַר יַעֲקֹב עַל בֵּית הַמִּקְדָשׁ, מַדּוּעַ לֹא עִכְּבוֹ שָׁם? אִיהוּ לָא יְהַב לִבֵּיהּ לְהִתְפַּלֵּל בַּמָּקוֹם שֶׁהִתְפַּלְּלוּ אֲבוֹתָיו, וּמִן הַשָּׁמַיִם יְעַכְּבוּהוּ? אִיהוּ עַד חָרָן אֲזַל, כִּדְאָמְרִינַן בְּפֶרֶק גִּיד הַנָּשֶׁה; וּקְרָא מוֹכִיחַ וַיֵּלֶךְ חָרָנָה; כִּי מְטָא לְחָרָן אָמַר, אֶפְשָׁר שֶׁעָבַרְתִּי עַל מָקוֹם שֶׁהִתְפַּלְּלוּ אֲבוֹתַי וְלֹא הִתְפַּלַּלְתִּי בּוֹ? יְהַב דַּעְתֵּיהּ לְמֶהֱדַר וְחָזַר עַד בֵּית אֵל וְקָפְצָה לוֹ הָאָרֶץ. הַאי בֵּית אֵל לֹא הַסָּמוּךְ לָעַי אֶלָּא לִירוּשָׁלַיִם, וְעַל שֵׁם יִהְיֶה בֵּית אֱלֹהִים קְרָאוֹ בֵּית אֵל, וְהוּא הַר הַמּוֹרִיָה שֶׁהִתְפַּלֵּל בּוֹ אַבְרָהָם, וְהוּא שָׂדֶה שֶׁהִתְפַּלֵּל בּוֹ יִצְחָק, כְּדִכְתִיב לָשׂוּחַ בַּשָּׂדֶה; דְּהָכִי אָמְרִינַן בִּפְסָחִים \"אֶל הַר ד׳ וְאֶל בֵּית אֱלֹהֵי יַעֲקֹב\" – מַאי שְׁנָא יַעֲקֹב? אֶלָּא לֹא כְּאַבְרָהָם שֶׁקְּרָאוֹ הַר, דִּכְתִיב בְּהַר ד׳ יֵרָאֶה, וְלֹא כְּיִצְחָק שֶׁקְּרָאוֹ שָׂדֶה, דִּכְתִיב לָשׂוּחַ בַּשָּׂדֶה, אֶלָּא כְּיַעֲקֹב שֶׁקְּרָאוֹ בַּיִת (עַ״כַּ פֵּרַשִׁ״י מְדֻיָּק):",
+    "en": "R. Eleazar said in the name of R. José the son of Zimra: “This ladder stood in Beersheba and [the middle of]) its slope reached opposite the Temple” (Genesis Rabbah 69:7). For Beersheba is situated in the South of Judah, Jerusalem in the North of it on the boundary between Judah and Benjamin and Bethel in the North of Benjamin’s territory, on the border between the land of Benjamin and that of the children of Joseph. It follows, therefore, that a ladder whose foot is in Beersheba and whose top is in Bethel has the middle of its slope reaching opposite Jerusalem. Now as regards what our Rabbis stated (Chullin 91b) that the Holy One, blessed be He, said, “This righteous man has came to the place where I dwell (i.e., the Temple at Jerusalem, whilst from here it is evident that he had come to Luz) and shall he depart without staying here over night?”, and with regard to what they also said, (Pesachim 88a) “Jacob gave the name Bethel to Jerusalem”, whereas this place which he called Bethel was Luz and not Jerusalem, whence did they learn to make this statement (which implies that Luz is identical with Jerusalem)? I say that Mount Moriah was forcibly removed from its locality and came hither (to Luz), and that this is what is meant by the “shrinking” of the ground that is mentioned in the Treatise (Chullin 91b) — that the site of the Temple came towards him (Jacob) as far as Bethel and this too is what is meant by ויפגע במקום, “he lighted upon the place” (i.e., he “met” the place, as two people meet who are moving towards each other; cf. Rashi on Genesis 5:11). Now, since Jacob’s route must have been from Beersheba to Jerusalem and thence to Luz and Haran and consequently when he reached Luz he had passed Jerusalem, if you should ask, “When Jacob passed the Temple why did He not make him stop there?” — If it never entered his mind to pray at the spot where his fathers had prayed should Heaven force him to stop there to do so? Really he had reached as far as Haran as we say in the Chapter גיד הנשה (Chullin 91b), and Scripture itself proves this since it states, “And he went to Haran”. When he arrived at Haran he said, “Is it possible that I have passed the place where my fathers prayed without myself praying there?” He decided to return and got as far as Bethel where the ground \"shrank” for him. This Bethel is not the Bethel that is near Ai (cf. Genesis 12:8) but that which is near Jerusalem, and because he said of it, “It shall be the House of God”, he called it Bethel. This, too, is Mount Moriah, where Abraham prayed, and it is also the field in which Isaac offered prayer as it is written, “[Isaac went out] to meditate (i. e., to pray; cf. Genesis 24:63) in the field”. Thus, too, do we read in the Treatise (Pesachim 88a) in a comment on the verse Micah 4:2: “[O come ye and let us go up] to the mountain of the Lord (i.e. the mountain upon which the Temple is built) and to the house of the God of Jacob”. What particular reason is there for mentioning Jacob? But the text calls the Temple not as Abraham did who called it a mount, and not as Isaac did, who called it a field, but as Jacob did who called it Beth[el]—the House of God. (To here from “This Bethel” is to be found in a certain correct Rashi-text)"
+   }
+  ],
+  "credit": "rashi"
+ },
+ "Ramban on Genesis 28:17 (Rashi)": {
+  "label": "Ramban on Genesis 28:17",
+  "title": "Ramban on Genesis 28:17",
+  "kind": "Commentary · Nachmanides, 13th century",
+  "verses": [
+   {
+    "n": "Ramban reads Rashi, and disagrees",
+    "he": "וְכָתַב רַשִׁ״י (רש״י על בראשית כ״ח:י״ז), אָמַר רַבִּי אֶלְעָזָר בְּשֵׁם ר׳ יוֹסֵי בֶּן זִמְרָא (ב״ר סט ה), הַסֻּלָּם הַזֶּה עוֹמֵד בִּבְאֵר שֶׁבַע וְשִׁפּוּעוֹ מַגִּיעַ עַד בֵּית הַמִּקְדָּשׁ, שֶׁבְּאֵר שֶׁבַע עוֹמֵד בִּדְרוֹמוֹ שֶׁל יְהוּדָה וִירוּשָׁלִַם בִּצְפוֹנוֹ, בַּגְּבוּל שֶׁבֵּין יְהוּדָה וּבִנְיָמִין, וּבֵית אֵל הָיָה בַּצָּפוֹן שֶׁל נַחֲלַת בִּנְיָמִין, בַּגְּבוּל שֶׁבֵּין בִּנְיָמִין וּבֵין בְּנֵי יוֹסֵף, נִמְצָא סֻלָּם רַגְלָיו בִּבְאֵר שֶׁבַע וְרֹאשׁוֹ בְּבֵית אֵל מַגִּיעַ שִׁפּוּעוֹ כְּנֶגֶד יְרוּשָׁלִָם. וְשֶׁאָמְרוּ רַבּוֹתֵינוּ (חולין צא) צַדִּיק זֶה בָּא לְבֵית מְלוֹנִי, וְעוֹד אָמְרוּ (פסחים פח) יַעֲקֹב קְרָאוֹ בֵּית אֵל, וְזוֹ לוּז הִיא וְלֹא יְרוּשָׁלִָם, וּמֵהֵיכָן לָמְדוּ לוֹמַר כֵּן, אֲנִי אוֹמֵר שֶׁנֶּעֱקַר הַר הַמּוֹרִיָּה וּבָא לְכָאן, וְזוֹ הִיא קְפִיצַת הָאָרֶץ הָאֲמוּרָה בִּשְׁחִיטַת חֻלִּין (חולין צא), שֶׁבָּא בֵּית הַמִּקְדָּשׁ לִקְרָאתוֹ עַד בֵּית אֵל, וְזֶהוּ \"וַיִּפְגַּע בַּמָּקוֹם\". וְאִם תֹּאמַר כְּשֶׁעָבַר יַעֲקֹב אָבִינוּ עַל בֵּית הַמִּקְדָּשׁ מַדּוּעַ לֹא עִכְּבוּהוּ שָׁם, אִיהוּ לָא יְהַב דַּעְתֵּהּ לְהִתְפַּלֵּל בַּמָּקוֹם שֶׁהִתְפַּלְּלוּ אֲבוֹתָיו וּמִן הַשָּׁמַיִם יְעַכְּבוּהוּ, אִיהוּ עַד חָרָן אֲזַל כִּדְאָמְרִינַן בְּפֶרֶק גִּיד הַנָּשֶׁה (שם), וּקְרָא מְסַיֵּעַ לָן, \"וַיֵּלֶךְ חָרָנָה\", כִּי מְטָא לְחָרָן אָמַר, אֶפְשָׁר עָבַרְתִּי עַל מָקוֹם שֶׁהִתְפַּלְּלוּ בּוֹ אֲבוֹתַי וְלֹא הִתְפַּלַּלְתִּי בּוֹ, יְהַב דַּעְתֵּיהּ לְמֶהֱדַר וְחָזַר עַד בֵּית אֵל, קָפְצָה לֵיהּ אַרְעָא עַד בֵּית אֵל. כָּל אֵלּוּ דִּבְרֵי הָרַב, וְלֹא נִרְאֶה לִי כְּלָל, שֶׁאֵין קְפִיצַת הָאָרֶץ שֶׁהִזְכִּירוּ בְּיַעֲקֹב אֶלָּא כְּאוֹתָהּ שֶׁאָמְרוּ בֶּאֱלִיעֶזֶר עֶבֶד אַבְרָהָם שֶׁבָּא בְּיוֹם אֶחָד לְחָרָן, כְּמוֹ שֶׁאָמְרוּ בְּסַנְהֶדְרִין (צה), שְׁלֹשָׁה קָפְצָה לָהֶם הָאָרֶץ, אֱלִיעֶזֶר עֶבֶד אַבְרָהָם, וְיַעֲקֹב אָבִינוּ, וַאֲבִישַׁי בֶּן צְרוּיָה, וּפֵרְשׁוּ אֱלִיעֶזֶר עֶבֶד אַבְרָהָם דִּכְתִיב (בראשית כ״ד:מ״ב) \"וָאָבֹא הַיּוֹם אֶל הָעָיִן\", לְמֵימְרָא דְּהַהוּא יוֹמָא נְפַק, יַעֲקֹב דִּכְתִיב \"וַיִּפְגַּע בַּמָּקוֹם\", כִּי מְטָא לְחָרָן אָמַר, אֶפְשָׁר שֶׁעָבַרְתִּי עַל מָקוֹם שֶׁהִתְפַּלְּלוּ אֲבוֹתַי וְלֹא הִתְפַּלַּלְתִּי בּוֹ, כֵּיוָן דְּהִרְהֵר בְּדַעְתֵּהּ לְמִהְדַּר קָפְצָה לֵהּ אַרְעָא, מִיָּד \"וַיִּפְגַּע בַּמָּקוֹם\". הִנֵּה בְּפֵרוּשׁ אוֹמְרִים שֶׁכֵּיוָן שֶׁעָלָה בְּלִבּוֹ בְּחָרָן לַחְזֹר קָפְצָה לוֹ הָאָרֶץ וּפָגַע בַּמָּקוֹם שֶׁהִתְפַּלְּלוּ בּוֹ אֲבוֹתָיו, לֹא שֶׁחָזַר לְבֵית אֵל וְלֹא שֶׁקָּפַץ הַר הַמּוֹרִיָּה וּבָא לְשָׁם. וּבִבְרֵאשִׁית רַבָּה (בראשית רבה נ״ט:י״א) עוֹד עָשׂוּ שְׁנֵיהֶם שָׁוִים בַּקְּפִיצָה, אָמְרוּ \"וַיָּקָם וַיֵּלֶךְ אֶל אֲרַם נַהֲרַיִם\" (בראשית כ״ד:י׳), בַּר יוֹמוֹ, \"וָאָבֹא הַיּוֹם אֶל הָעָיִן\", הַיּוֹם יָצָאתִי וְהַיּוֹם בָּאתִי. וּבְיַעֲקֹב דָּרְשׁוּ (ב״ר סח ח) כֵּן, \"וַיֵּלֶךְ חָרָנָה\", רַבָּנִין אָמְרִין בַּר יוֹמוֹ. וּמָה טַעַם שֶׁיִּקְפֹּץ הַר הַמּוֹרִיָּה וְיָבֹא עַד בֵּית אֵל אַחַר שֶׁטָּרַח יַעֲקֹב לַחֲזֹר מֵחָרָן וְעַד בֵּית אֵל מַהֲלַךְ כַּמָּה יָמִים, וְעוֹד כִּי בֵּית אֵל אֵינֶנּוּ סוֹף גְּבוּל אֶרֶץ יִשְׂרָאֵל מִפְּאַת חָרָן, כִּי חָרָן אֶרֶץ קֶדֶם הוּא, וְעוֹד שֶׁאֵין הָאֶמְצָעוּת נִקְרָא שִׁפּוּעַ הַסֻּלָּם, וְעוֹד מָה טַעַם לִהְיוֹתוֹ כְּנֶגֶד בֵּית אֵל וְהָאֶמְצַע אֵינֶנּוּ מוֹרֶה עַל דָּבָר יוֹתֵר מִכֻּלּוֹ",
+    "en": "Rashi comments, Rabbi Elazar the son of Rabbi Yosei the son of Zimra said, ‘This ladder stood in Beer-sheba and its slope reached unto the Sanctuary in Jerusalem. Beer-sheba is situated in the southern part of Judah, and Jerusalem is to its north on the boundary between Judah and Benjamin, and Beth-el was in the northern portion of Benjamin’s territory, on the boundary between Benjamin’s territory and that of the children of Joseph. It follows, therefore, that a ladder whose base is in Beer-sheba and whose top is in Beth-el has its slope reaching opposite Jerusalem. Now regarding the statement of our Rabbis that the Holy One, blessed be He, said, ‘This righteous man has come to the place where I dwell, [namely, the Sanctuary in Jerusalem, and shall he depart without spending the night?’], and with regard to what they also said, ‘Jacob gave the name Beth-el to Jerusalem’ this place which he called Beth-el was Luz and not Jerusalem! And whence did they learn to say so, [implying that Luz is identical with Jerusalem]? I therefore say that Mount Moriah [the Temple site in Jerusalem] was forcibly removed from its place and came here to Luz, and this movement of the Temple site is ‘the springing of the earth’ which is mentioned in Tractate Shechitath Chullin. It means that the site on which the Sanctuary was later to stand came towards Jacob to Beth-el. And this too is what is meant by vayiphga bamakom (and he met the place): [as two people meet, who are moving towards each other]. If you should ask, ‘When our father Jacob passed the site of the Sanctuary [on his way from Beer-sheba to Haran] why did He not detain him there?’ The answer is: If it never entered his mind to pray at the place where his fathers had prayed, should Heaven make him stop there? He had journeyed as far as Haran, as we say in the chapter of Gid Hanasheh, and Scripture itself helps us clarify this point by saying, And he went to Haran. When he arrived at Haran he said, ‘Is it possible that I have passed the place where my fathers prayed without praying there myself?’ He decided to return and had returned as far as Beth-el, whereupon the ground of the Temple site sprang for him until Beth-el.” All these are the words of the Rabbi. But I do not agree with them at all for ‘the springing of the earth’ which the Rabbis mention in connection with Jacob is like that which they have said happened to Eliezer, the servant of Abraham, namely, that he reached Haran in one day. As they have said in Tractate Sanhedrin, “The earth sprang for three persons: Eliezer, the servant of Abraham, our father Jacob, and Abishai the son of Zeruiah.” And the Rabbis explained: “Eliezer, the servant of Abraham — for it is written, And I came this day unto the fountain, which teaches that on that very day he embarked on his journey. Jacob — for it is written, And he met the place. When he arrived at Haran he said, ‘Is it possible that I have passed the place where my fathers prayed without praying there myself?’ As soon as the thought of returning occurred to him, the earth sprang for him, and immediately he met the place.” Thus the Rabbis explicitly say that as soon as the thought to return occurred to him in Haran, the earth sprang for him and he met the place where his fathers prayed, but not that he returned to Beth-el, nor that Mount Moriah sprang and came there to Beth-el. In Bereshith Rabbah the Rabbis further equated them both [Eliezer and Jacob] with respect to “the springing of the earth.” Thus they said: “And he arose, and went to Aram-naharaim — on the very same day. And I came this day unto the fountain — this day I embarked on the journey, and this day I arrived.” With respect to Jacob the Rabbis interpreted in a similar vein: “And he went to Haran — the Rabbis say on the very same day.” And furthermore, what reason is there for Mount Moriah to “spring” and come to Beth-el, as Rashi claims, after Jacob had troubled himself to return from Haran to Beth-el, a journey of many days? Moreover, Beth-el does not lie on the border of the Land of Israel which faces towards Haran for Haran is a land which lies to the east [of the Land of Israel while Beth-el lies in its western part]. Additionally, the middle part of a ladder is not referred to as its “slope.” And, finally, what reason is there for the middle of the ladder to be opposite Beth-el, [where, according to Rashi, the side of the Sanctuary had been transported], when the middle part of an object does not possess significance beyond that of its whole? <i>[He goes on to offer his own reading of the midrashim, and ends: no midrash says, as Rashi did, that Mount Moriah moved.]</i>"
+   }
+  ],
+  "credit": "ramban"
+ },
+ "Rashi on Genesis 28:5:1": {
+  "label": "Rashi on Genesis 28:5",
+  "title": "Rashi on Genesis 28:5",
+  "kind": "Commentary · 11th century",
+  "verses": [
+   {
+    "n": "Mother of Jacob and Esau",
+    "he": "אם יעקב ועשו. אֵינִי יוֹדֵעַ מַה מְּלַמְּדֵנוּ:",
+    "en": "I do not know what the addition of these words is intended to tell us."
+   }
+  ],
+  "credit": "rashi"
+ },
+ "Genesis 28:20": {
+  "label": "Genesis 28:20",
+  "title": "Genesis 28:20",
+  "kind": "Torah",
+  "verses": [
+   {
+    "n": "28:20",
+    "he": "וַיִּדַּר יַעֲקֹב נֶדֶר לֵאמֹר אִם־יִהְיֶה אֱלֹהִים עִמָּדִי וּשְׁמָרַנִי בַּדֶּרֶךְ הַזֶּה אֲשֶׁר אָנֹכִי הוֹלֵךְ וְנָתַן־לִי לֶחֶם לֶאֱכֹל וּבֶגֶד לִלְבֹּשׁ׃",
+    "en": "Jacob then made a vow, saying, “If God remains with me, protecting me on this journey that I am making, and giving me bread to eat and clothing to wear,"
+   }
+  ],
+  "credit": "tanakh"
+ },
+ "Ramban on Genesis 28:20:1": {
+  "label": "Ramban on Genesis 28:20",
+  "title": "Ramban on Genesis 28:20",
+  "kind": "Commentary · Nachmanides, 13th century",
+  "verses": [
+   {
+    "n": "If God will be with me",
+    "he": "לְשׁוֹן רַשִׁ״י (רש״י על בראשית כ״ח:כ׳) אִם יִשְׁמֹר לִי הַבְטָחוֹת הַלָּלוּ שֶׁהִבְטִיחַנִי. וְטַעַם הַתְּנַאי, שֶׁלֹּא יִגְרֹם הַחֵטְא. וְכָךְ אָמְרוּ בִּבְרֵאשִׁית רַבָּה (בראשית רבה ע״ו:ב׳), רַב הוּנָא בְּשֵׁם ר׳ אַחָא, כְּתִיב \"הִנֵּה אָנֹכִי עִמָּךְ\" וּכְתִיב \"אִם יִהְיֶה אֱלֹהִים עִמָּדִי\", אֶלָּא מִכָּאן שֶׁאֵין הַבְטָחָה לַצַּדִּיקִים בָּעוֹלָם הַזֶּה. וְיִתָּכֵן עוֹד עַל דֶּרֶךְ הַפְּשָׁט שֶׁאֵין הַסָּפֵק בַּדָּבָר, אֲבָל בְּכָל הֶעָתִיד יֹאמַר הַכָּתוּב כֵּן, כְּמוֹ \"עַד אֲשֶׁר אִם עָשִׂיתִי\", וְכֵן \"וְאִם יִהְיֶה הַיֹּבֵל לִבְנֵי יִשְׂרָאֵל\" (במדבר לו ד), אִם יָבֹא הָעֵת שֶׁיִּהְיֶה הַתְּנַאי אָז יִתְקַיֵּם הַמַּעֲשֶׂה, כְּלוֹמַר בְּבוֹאוֹ:",
+    "en": "Rashi comments: “If He will keep for me these promises which He made to me.” The reason for the condition is lest the sin cause the abrogation of the promises. And so the Rabbis said in Bereshith Rabbah, “Rabbi Huna said in the name of Rabbi Acha, ‘And behold, I am with thee, and yet it is written, If G-d will be with me! However, from here you infer that there is no assurance to the righteous in this world.’” In line with the simple meaning of Scripture it is further possible that the word im does not indicate a doubt in the matter, but such is the way of Scripture when referring to future events, such as: until ‘im asithi’ (I have done). And so also: ‘Ve’im’ there shall be the jubilee of the children of Israel. In all these cases it means if there will come a time when the condition is satisfied, then the deed will be fulfilled, that is to say, ve’im does not mean “if it occurs,” but rather “when it occurs.”"
+   }
+  ],
+  "credit": "ramban"
+ },
+ "Genesis 28:21": {
+  "label": "Genesis 28:21",
+  "title": "Genesis 28:21",
+  "kind": "Torah",
+  "verses": [
+   {
+    "n": "28:21",
+    "he": "וְשַׁבְתִּי בְשָׁלוֹם אֶל־בֵּית אָבִי וְהָיָה ה׳ לִי לֵאלֹהִים׃",
+    "en": "and I return safe to my father’s house—the <span class=\"sc\">Eternal</span> shall be my God."
+   }
+  ],
+  "credit": "tanakh"
+ },
+ "Ramban on Genesis 28:21:1": {
+  "label": "Ramban on Genesis 28:21",
+  "title": "Ramban on Genesis 28:21",
+  "kind": "Commentary · Nachmanides, 13th century",
+  "verses": [
+   {
+    "n": "Then the Eternal shall be my God",
+    "he": "אֵינֶנּוּ תְּנַאי כְּדִבְרֵי רַשִׁ״י (רש״י על בראשית כ״ח:כ״א), אֲבָל הוּא נֶדֶר, וְעִנְיָנוֹ אִם אָשׁוּב אֶל בֵּית אָבִי אֶעֱבֹד הַשֵּׁם הַמְיֻחָד בָּאָרֶץ הַנִּבְחֶרֶת בִּמְקוֹם הָאֶבֶן הַזֹּאת שֶׁתִּהְיֶה לִי לְבֵית אֱלֹהִים, וְשָׁם אוֹצִיא אֶת הַמַּעֲשֵׂר. וְיֵשׁ בָּעִנְיָן סוֹד מִמָּה שֶׁאָמְרוּ (כתובות קי), כָּל הַדָּר בְּחוּצָה לָאָרֶץ דּוֹמֶה כְּמִי שֶׁאֵין לוֹ אֱלוֹהַּ:",
+    "en": "This is not a condition, as Rashi would have it. It is rather a vow, and its purport is as follows: “If I will return to my father’s house, I will worship the proper Name of the Eternal in the Chosen Land at the location of this stone which will be for me a house of G-d, and there I will set aside the tithe.” There is in this matter a secret relating to that which the Rabbis have said: “He who dwells outside the Land of Israel is like one who has no G-d.” [Thus, according to the meaning of the above quotation, the Eternal will be Jacob’s G-d only when he returns to the Land of Israel.]"
+   }
+  ],
+  "credit": "ramban"
+ },
+ "Ramban on Genesis 28:18:1": {
+  "label": "Ramban on Genesis 28:18",
+  "title": "Ramban on Genesis 28:18",
+  "kind": "Commentary · Nachmanides, 13th century",
+  "verses": [
+   {
+    "n": "And he set it up for a pillar",
+    "he": "כְּבָר פֵּרְשׁוּ רַבּוֹתֵינוּ (ע״ז נג) הַהֶפְרֵשׁ שֶׁבֵּין הַמַּצֵּבָה לַמִּזְבֵּחַ, שֶׁהַמַּצֵּבָה אֶבֶן אַחַת וְהַמִּזְבֵּחַ אֲבָנִים הַרְבֵּה. וְנִרְאֶה עוֹד שֶׁהַמַּצֵּבָה תֵּעָשֶׂה לְנַסֵּךְ עָלֶיהָ נֶסֶךְ יַיִן וְלִיצוֹק עָלֶיהָ שֶׁמֶן, לֹא לְעוֹלָה וְלֹא לְזֶבַח, וְהַמִּזְבֵּחַ לְהַעֲלוֹת עָלָיו עוֹלוֹת וּשְׁלָמִים. וּבְבֹאָם לָאָרֶץ נֶאֶסְרָה עֲלֵיהֶם הַמַּצֵּבָה (דברים טז כב), מִפְּנֵי שֶׁשָּׂמוּ אוֹתָהּ הַכְּנַעֲנִים לָהֶם לְחֹק יוֹתֵר מִן הַמִּזְבְּחוֹת, אַף עַל פִּי שֶׁכָּתוּב בָּהֶם (שמות לד יג) \"אֶת מִזְבְּחוֹתָם תִּתֹּצוּן\", אוֹ שֶׁלֹּא רָצָה לֶאֱסֹר הַכֹּל וְהִשְׁאִיר הַמִּזְבֵּחַ שֶׁרָאוּי לְנֶסֶךְ וּלְקָרְבָּנוֹת:",
+    "en": "Our Rabbis have explained the difference between a pillar and an altar by saying that a pillar consists of one stone while an altar is composed of many stones. It further appears that a pillar is made for pouring libations of wine upon it and for the pouring of oil upon it, but not for sacrifices and not for offerings, whereas an altar is for bringing Burnt-offerings and Peace-offerings thereon. When Israel entered the Land, the pillar was prohibited to them because the Canaanites had established it as an ordinance of an idolatrous character to a greater extent than the altars. Even though it is written concerning the altars, Ye shall break down their altars, [since the altars were not as prevalent as pillars among the Canaanites, He did not prohibit the Israelites from making their own altars]. It may be that He did not want to prohibit all sacrifices, and so He retained the altar as fit for libations and sacrifices."
+   }
+  ],
+  "credit": "ramban"
+ },
+ "Deuteronomy 32:9": {
+  "label": "Deuteronomy 32:9",
+  "title": "Deuteronomy 32:9",
+  "kind": "Torah",
+  "verses": [
+   {
+    "n": "Deuteronomy 32:9",
+    "he": "כִּי חֵלֶק ה׳ עַמּוֹ יַעֲקֹב חֶבֶל נַחֲלָתוֹ׃",
+    "en": "For the <span class=\"sc\">Eternal</span>’s portion is this people;<br>Jacob, God’s own allotment."
+   }
+  ],
+  "credit": "tanakh"
+ },
+ "Rashi on Genesis 28:21:3": {
+  "label": "Rashi on Genesis 28:21",
+  "title": "Rashi on Genesis 28:21",
+  "kind": "Commentary · 11th century",
+  "verses": [
+   {
+    "n": "",
+    "he": "והיה ה׳ לי לאלהים. שֶׁיָּחוּל שְׁמוֹ עָלַי מִתְּחִלָּה וְעַד סוֹף, שֶׁלֹּא יִמָּצֵא פְּסוּל בְּזַרְעִי, כְּמוֹ שֶׁנֶּאֱמַר אֲשֶׁר דִּבַּרְתִּי לָךְ; וְהַבְטָחָה זוֹ הִבְטִיחַ לְאַבְרָהָם, שֶׁנֶּאֱמַר לִהְיוֹת לְךָ לֵאלֹהִים וּלְזַרְעֲךָ אַחֲרֶיךָ (בראשית י״ז:ז׳):",
+    "en": "והיה ה' לי לאלהים AND IF THE <span class=\"sc\">Lord</span> WILL BE MY <span class=\"sc\">God</span>, in that His Name shall rest upon me from the beginning to the end: that no unworthy person shall be found in my descendants (Sifré, ואתחנן 31) — just as it is said (v. 15), “I will do that which I spake concerning thee”; and this promise He made to Abraham, as it is said (17:7) “To be a God unto thee and unto thy seed after thee”,"
+   }
+  ],
+  "credit": "rashi"
+ },
+ "Vayikra Rabbah 29:2 (four kingdoms)": {
+  "label": "Vayikra Rabbah 29:2",
+  "title": "Vayikra Rabbah 29:2",
+  "kind": "Midrash · about the 5th century CE",
+  "verses": [
+   {
+    "n": "Rabbi Shmuel bar Naḥman: four empires on the ladder",
+    "he": "אָמַר רַבִּי שְׁמוּאֵל בַּר נַחְמָן אֵלּוּ שָׂרֵי אֻמּוֹת הָעוֹלָם, דְּאָמַר רַבִּי שְׁמוּאֵל בַּר נַחְמָן מְלַמֵּד שֶׁהֶרְאָה הַקָּדוֹשׁ בָּרוּךְ הוּא לְיַעֲקֹב אָבִינוּ שָׂרָהּ שֶׁל בָּבֶל עוֹלֶה שִׁבְעִים עֲוָקִים, וְשֶׁל מָדַי חֲמִשִּׁים וּשְׁנַיִם, וְשֶׁל יָוָן מֵאָה וּשְׁמוֹנִים וְשֶׁל אֱדוֹם עוֹלֶה וְלֹא יוֹדֵעַ כַּמָּה, בְּאוֹתָהּ שָׁעָה נִתְיָרֵא יַעֲקֹב אָבִינוּ, אָמַר אֶפְשָׁר שֶׁאֵין לָזֶה יְרִידָה, אָמַר לוֹ הַקָּדוֹשׁ בָּרוּךְ הוּא: וְאַתָּה אַל תִּירָא עַבְדִּי יַעֲקֹב, אֲפִלּוּ הוּא עוֹלֶה וְיוֹשֵׁב אֶצְלִי מִשָּׁם אֲנִי מוֹרִידוֹ, הֲדָא הוּא דִכְתִיב (עובדיה א, ד): אִם תַּגְבִּיהַּ כַּנֶּשֶׁר וְאִם בֵּין כּוֹכָבִים שִׂים קִנֶּךָ",
+    "en": "Rabbi Shmuel bar Naḥman said: These are the guardian angels of the nations of the world, as Rabbi Shmuel bar Naḥman said: It teaches that the Holy One blessed be He showed him the guardian angel of Babylon ascending seventy rungs, [the guardian angel] of Media [ascending] fifty–two, [the guardian angel] of Greece [ascending] one hundred and eighty, and [the guardian angel] of Edom ascending, but [Jacob] did not know how many. At that moment, Jacob our patriarch grew fearful. He said: ‘Is it possible that this one has no descent?’ The Holy One blessed be He said to him: ‘“You, have no fear, My servant Jacob,” even if it ascends and sits near Me, I will bring it down from there.’ That is what is written: “If you raise yourself like the eagle, or place your nest among the stars, [from there I will bring you down, the utterance of the Lord]” (Obadiah 1:4)."
+   }
+  ],
+  "credit": "midrash"
+ },
  "Chullin 91b (the stones)": {
   "label": "Chullin 91b",
   "title": "Chullin 91b",
@@ -1892,6 +2615,84 @@ Object.assign(VOICES.sources, {
     "n": "Rashi on his own method, at Genesis 3:8",
     "he": "וישמעו. יֵשׁ מִדְרְשֵׁי אַגָּדָה רַבִּים וּכְבָר סִדְּרוּם רַבּוֹתֵינוּ עַל מְכוֹנָם בִּבְ״רַ וּבִשְׁאָר מִדְרָשׁוֹת; וַאֲנִי לֹא בָאתִי אֶלָּא לִפְשׁוּטוֹ שֶׁל מִקְרָא וּלְאַגָּדָה הַמְיַשֶּׁבֶת דִּבְרֵי הַמִּקְרָא דָבָר דָּבוּר עַל אׇפְנָיו",
     "en": "There are many Midrashic explanations and our Teachers have already collected them in their appropriate places in Genesis Rabbah and in other Midrashim. I, however, am only concerned with the plain sense of Scripture and with such Agadoth that explain the words of Scripture in a manner that fits in with them. <i>[The comment goes on to explain the verse, where Adam and Eve hear God in the garden.]</i>"
+   }
+  ],
+  "credit": "rashi"
+ },
+ "Rashi on Genesis 28:10:2": {
+  "label": "Rashi on Genesis 28:10",
+  "title": "Rashi on Genesis 28:10",
+  "kind": "Commentary · 11th century",
+  "verses": [
+   {
+    "n": "[And Jacob] went out",
+    "he": "ויצא. לֹא הָיָה צָרִיךְ לִכְתֹּב אֶלָּא וַיֵּלֶךְ יַעֲקֹב חָרָנָה, וְלָמָּה הִזְכִּיר יְצִיאָתוֹ? אֶלָּא מַגִּיד שֶׁיְּצִיאַת צַדִּיק מִן הַמָּקוֹם עוֹשָׂה רֹשֶׁם, שֶׁבִּזְמַן שֶׁהַצַּדִּיק בָּעִיר, הוּא הוֹדָהּ הוּא זִיוָהּ הוּא הֲדָרָהּ; יָצָא מִשָּׁם, פָּנָה הוֹדָהּ פָּנָה זִיוָהּ פָּנָה הֲדָרָהּ. וְכֵן וַתֵּצֵא מִן הַמָּקוֹם הָאָמוּר בְּנָעֳמִי וְרוּת (רות א׳):",
+    "en": "It need have written simply “And Jacob went to Haran’’; why then does it mention his departure from Beersheba? But it intends to tell us that the departure of a righteous person from his city makes an impression. As long as a righteous man is in his city he is its glory and splendour and beauty; when he leaves it, there depart also its glory, its splendour and its beauty. This, too, is the meaning of (Ruth 1:7) “And she went forth out of the place”, stated in reference to Naomi and Ruth (Genesis Rabbah 68:6)."
+   }
+  ],
+  "credit": "rashi"
+ },
+ "Rashi on Genesis 28:9:1": {
+  "label": "Rashi on Genesis 28:9",
+  "title": "Rashi on Genesis 28:9",
+  "kind": "Commentary · 11th century",
+  "verses": [
+   {
+    "n": "The sister of Nebaioth: how old was Jacob?",
+    "he": "אחות נביות. מִמַּשְׁמָע שֶׁנֶּאֱמַר בַּת יִשְׁמָעֵאל אֵינִי יוֹדֵעַ שֶׁהִיא אֲחוֹת נְבָיוֹת? אֶלָּא לָמַדְנוּ שֶׁמֵּת יִשְׁמָעֵאל מִשֶּׁיְּעָדָהּ לְעֵשָׂו קֹדֶם נִשּׂוּאֶיהָ וְהִשִּׂיאָהּ נְבָיוֹת אָחִיהָ, וְלָמַדְנוּ שֶׁהָיָה יַעֲקֹב בְּאוֹתוֹ הַפֶּרֶק בֶּן ס״ג שָׁנִים, שֶׁהֲרֵי יִשְׁמָעֵאל בֶּן ע״ד שָׁנִים הָיָה כְּשֶׁנּוֹלַד יַעֲקֹב, י״ד שָׁנָה הָיָה גָדוֹל יִשְׁמָעֵאל מִיִּצְחָק, וְיִצְחָק בֶּן ס׳ שָׁנָה בְּלֶדֶת אוֹתָם הֲרֵי ע״ד, וּשְׁנוֹתָיו הָיוּ קל״ז, שֶׁנֶּאֱמַר וְאֵלֶּה שְׁנֵי חַיֵּי יִשְׁמָעֵאל וְגוֹ׳, נִמְצָא יַעֲקֹב כְּשֶׁמֵּת יִשְׁמָעֵאל בֶּן ס״ג שָׁנִים הָיָה, וְלָמַדְנוּ מִכָּאן שֶׁנִּטְמַן בְּבֵית עֵבֶר י״ד שָׁנָה וְאַחַר כָּךְ הָלַךְ לְחָרָן, שֶׁהֲרֵי לֹא שָׁהָה בְּבֵית לָבָן לִפְנֵי לֵדָתוֹ שֶׁל יוֹסֵף אֶלָּא י״ד שָׁנָה, שֶׁנֶּאֱמַר עֲבַדְתִּיךָ אַרְבַּע עֶשְׂרֵה שָׁנָה בִּשְׁתֵּי בְנֹתֶיךָ וְשֵׁשׁ שָׁנִים בְּצֹאנֶךָ, וּשְׂכַר הַצֹּאן מִשֶּׁנּוֹלַד יוֹסֵף הָיָה, שֶׁנֶּאֱמַר וַיְהִי כַּאֲשֶׁר יָלְדָה רָחֵל אֶת יוֹסֵף וְגוֹ׳; וְיוֹסֵף בֶּן ל׳ שָׁנָה הָיָה כְּשֶׁמָּלַךְ, וּמִשָּׁם עַד שֶׁיָּרַד יַעֲקֹב לְמִצְרַיִם ט׳ שָׁנִים, ז׳ שֶׁל שָׂבָע וּב׳ שֶׁל רָעָב, וְיַעֲקֹב אָמַר לְפַרְעֹה יְמֵי שְׁנֵי מְגוּרַי שְׁלֹשִׁים וּמְאַת שָׁנָה – צֵא וַחֲשֹׁב י״ד שֶׁלִּפְנֵי לֵדַת יוֹסֵף וּשְׁלֹשִׁים שֶׁל יוֹסֵף וְתֵשַׁע מִשֶּׁמָּלַךְ עַד שֶׁבָּא יַעֲקֹב, הֲרֵי נ״ג, וּכְשֶׁפֵּרֵשׁ מֵאָבִיו הָיָה בֶּן ס״ג, הֲרֵי קי״ו, וְהוּא אוֹמֵר שְׁלֹשִׁים וּמְאַת שָׁנָה, הֲרֵי חֲסֵרִים י״ד שָׁנִים, הָא לָמַדְתָּ שֶׁאַחַר שֶׁקִּבֵּל הַבְּרָכוֹת נִטְמַן בְּבֵית עֵבֶר י״ד שָׁנִים",
+    "en": "By a logical inference from what is stated that she was “the daughter of Ishmael” would I not know that she was the sister of Nebaioth? But the words are added to tell us that Ishmael died after he had betrothed her to Esau and before her marriage, and that her brother Nebaioth gave her away in marriage And we may learn, also, that Jacob was at that period sixty-three years old For Ishmael was seventy-four years old when Jacob was born — since Ishmael was fourteen years older than Isaac, and Isaac was sixty when they (Jacob and Esau) were born, making seventy-four and his (Ishmael’s) years were one hundred and thirty seven — as it is said (25:17) “And these are the years of Ishmael etc.” — consequently when Ishmael died Jacob was sixty-three years old. We learn from this that he (Jacob) concealed himself in Eber’s School for fourteen years and only after that did he proceed to Haran. For before Joseph’s birth he had stayed in Laban’s house only fourteen years, as it is said (31:41) “I served thee fourteen years for thy two daughters and six years for thy flock”, and he received the sheep as wages only after Joseph was born, for it is said (30:25) “And it came to pass when Rachel had borne Joseph etc. [that Jacob wished to leave Laban and he agreed to remain with him on condition of receiving certain sheep as wages]. Now Joseph was thirty years old when he became ruler in Egypt, and from then until the time that Jacob came down to Egypt was nine years — seven of plenty and two of famine — and Jacob then said to Pharaoh (47:9), “The days of the years of my pilgrimage are a hundred and thirty years”. Go and calculate: the fourteen years he passed with Laban before Joseph’s birth, and the thirty years of Joseph’s life before he became ruler and the nine years from when he became ruler until the time that Jacob came to Egypt make fifty three years from the time he joined Laban until the time he came to Egypt But when he parted from his father he was sixty-three years old, as shown above, so that you have 116 years as his age when he came to Egypt, on the assumption that the fifty-three years he spent with Laban etc. began immediately after he had left his father. But he (Jacob) himself said to Pharaoh, “[I am] one hundred and thirty years”. So you see that fourteen years are missing on this assumption. Thus you learn that after he had received the blessings he concealed himself in Eber’ School for fourteen years (Megillah 17a). <i>[The comment goes on: because he spent those years studying, he was not punished for being away from his father.]</i>"
+   }
+  ],
+  "credit": "rashi"
+ },
+ "Berakhot 26b (Jacob’s prayer)": {
+  "label": "Berakhot 26b",
+  "title": "Berakhot 26b",
+  "kind": "Babylonian Talmud · about the 6th century CE",
+  "verses": [
+   {
+    "n": "The patriarchs and the three daily prayers",
+    "he": "תַּנְיָא כְּווֹתֵיהּ דְּרַבִּי יוֹסֵי בְּרַבִּי חֲנִינָא, וְתַנְיָא כְּווֹתֵיהּ דְּרַבִּי יְהוֹשֻׁעַ בֶּן לֵוִי. תַּנְיָא כְּווֹתֵיהּ דְּרַבִּי יוֹסֵי בְּרַבִּי חֲנִינָא: אַבְרָהָם תִּקֵּן תְּפִלַּת שַׁחֲרִית, שֶׁנֶּאֱמַר: ״וַיַּשְׁכֵּם אַבְרָהָם בַּבֹּקֶר אֶל הַמָּקוֹם אֲשֶׁר עָמַד שָׁם״, וְאֵין ״עֲמִידָה״ אֶלָּא תְּפִלָּה, שֶׁנֶּאֱמַר: ״וַיַּעֲמֹד פִּינְחָס וַיְפַלֵּל״. יִצְחָק תִּקֵּן תְּפִלַּת מִנְחָה, שֶׁנֶּאֱמַר ״וַיֵּצֵא יִצְחָק לָשׂוּחַ בַּשָּׂדֶה לִפְנוֹת עָרֶב״, וְאֵין ״שִׂיחָה״ אֶלָּא תְּפִלָּה, שֶׁנֶּאֱמַר ״תְּפִלָּה לְעָנִי כִי יַעֲטֹף וְלִפְנֵי ה׳ יִשְׁפֹּךְ שִׂיחוֹ״. יַעֲקֹב תִּקֵּן תְּפִלַּת עַרְבִית, שֶׁנֶּאֱמַר: ״וַיִּפְגַּע בַּמָּקוֹם וַיָּלֶן שָׁם״, וְאֵין ״פְּגִיעָה״ אֶלָּא תְּפִלָּה, שֶׁנֶּאֱמַר: ״וְאַתָּה אַל תִּתְפַּלֵּל בְּעַד הָעָם הַזֶּה וְאַל תִּשָּׂא בַעֲדָם רִנָּה וּתְפִלָּה וְאַל תִּפְגַּע בִּי״",
+    "en": "The Gemara comments: <b>It was taught</b> in a <i>baraita</i> <b>in accordance with</b> the opinion of <b>Rabbi Yosei, son of Rabbi Ḥanina, and it was taught</b> in a <i>baraita</i> <b>in accordance with</b> the opinion of <b>Rabbi Yehoshua ben Levi.</b> The Gemara elaborates: <b>It was taught</b> in a <i>baraita</i> <b>in accordance with</b> the opinion of <b>Rabbi Yosei, son of Rabbi Ḥanina: Abraham instituted the morning prayer, as it is stated</b> when Abraham came to look out over Sodom the day after he had prayed on its behalf: <b>“And Abraham rose early in the morning to the place where he had stood</b> before the Lord” (Genesis 19:27), <b>and</b> from the context as well as the language utilized in the verse, the verb <b>standing</b> means <b>nothing other than prayer,</b> as this language is used to describe Pinehas’ prayer after the plague, <b>as it is stated: “And Pinehas stood up and prayed</b> and the plague ended” (Psalms 106:30). Clearly, Abraham was accustomed to stand in prayer in the morning. <b>Isaac instituted the afternoon prayer, as it is stated: “And Isaac went out to converse [<i>lasuaḥ</i>] in the field toward evening”</b> (Genesis 24:63), <b>and conversation</b> means <b>nothing other than prayer, as it is stated: “A prayer of the afflicted when he is faint and pours out his complaint [<i>siḥo</i>] before the Lord”</b> (Psalms 102:1). Obviously, Isaac was the first to pray as evening approached, at the time of the afternoon prayer. <b>Jacob instituted the evening prayer, as it is stated: “And he encountered [<i>vayifga</i>] the place and he slept there</b> for the sun had set” (Genesis 28:11). The word <b>encounter</b> means <b>nothing other than prayer, as it is stated</b> when God spoke to Jeremiah: <b>“And you, do not pray on behalf of this nation and do not raise on their behalf song and prayer, and do not encounter [<i>tifga</i>] Me</b> for I do not hear you” (Jeremiah 7:16). Jacob prayed during the evening, after the sun had set."
+   }
+  ],
+  "credit": "talmud"
+ },
+ "Rashi on Genesis 28:20:1": {
+  "label": "Rashi on Genesis 28:20",
+  "title": "Rashi on Genesis 28:20",
+  "kind": "Commentary · 11th century",
+  "verses": [
+   {
+    "n": "If God will be with me",
+    "he": "אם יהיה אלהים עמדי. אִם יִשְׁמֹר לִי הַבְטָחוֹת הַלָּלוּ שֶׁהִבְטִיחַנִי לִהְיוֹת עִמָּדִי, כְּמוֹ שֶׁאָמַר לִי וְהִנֵּה אָנֹכִי עִמָּךְ:",
+    "en": "if He will keep for me these promises which He has made me that He would be with me, even as He said to me (v. 15), “Behold, I am with thee” (Genesis Rabbah 70:4),"
+   }
+  ],
+  "credit": "rashi"
+ },
+ "Rashi on Genesis 35:8:1": {
+  "label": "Rashi on Genesis 35:8",
+  "title": "Rashi on Genesis 35:8",
+  "kind": "Commentary · 11th century",
+  "verses": [
+   {
+    "n": "And Deborah died",
+    "he": "ותמת דבורה. מָה עִנְיַן דְּבוֹרָה בְּבֵית יַעֲקֹב? אֶלָּא לְפִי שֶׁאָמְרָה רִבְקָה לְיַעֲקֹב וְשָׁלַחְתִּי וּלְקַחְתִּיךָ מִשָּׁם, שָׁלְחָה דְבוֹרָה אֶצְלוֹ לְפַדַּן אֲרָם לָצֵאת מִשָּׁם, וּמֵתָה בַדֶּרֶךְ; מִדִּבְרֵי רַבִּי מֹשֶׁה הַדַּרְשָׁן לְמַדְתִּיהָ:",
+    "en": "How came Deborah to be in Jacob’s house? But the explanation is: because Rebékah had promised Jacob (Gen. 27:45) “then I will send and fetch thee from thence”, she sent Deborah to him to Padan-aram to tell him to leave that place, and she died on the return journey. I learnt this from a comment of R. Moses Ha-darshan."
+   }
+  ],
+  "credit": "rashi"
+ },
+ "Rashi on Genesis 28:13:3": {
+  "label": "Rashi on Genesis 28:13",
+  "title": "Rashi on Genesis 28:13",
+  "kind": "Commentary · 11th century",
+  "verses": [
+   {
+    "n": "The land whereon thou liest",
+    "he": "שכב עליה. קִפֵּל הַקָּבָּ״ה כָּל אֶרֶץ יִשְׂרָאֵל תַּחְתָּיו, רָמַז לוֹ שֶׁתְּהֵא נוֹחָה לִכָּבֵשׁ לְבָנָיו כְּד׳ אַמּוֹת שֶׁזֶּה מְקוֹמוֹ שֶׁל אָדָם (חולין שם):",
+    "en": "The Holy One, blessed be He, rolled together the entire Land of Israel under him, thus intimating to him that it would be as easily conquered by his descendants (Chullin 91b) as a piece of land four cubits in length, which is the space covered by a person lying down (see Rashi, Chullin 91b, and the note of the ב\"ח thereon)."
    }
   ],
   "credit": "rashi"
@@ -2173,19 +2974,6 @@ Object.assign(VOICES.sources, {
   ],
   "credit": "tanakh"
  },
- "Genesis 25:22": {
-  "label": "Genesis 25:22",
-  "title": "Genesis 25:22",
-  "kind": "Torah",
-  "verses": [
-   {
-    "n": "25:22",
-    "he": "וַיִּתְרֹצְצוּ הַבָּנִים בְּקִרְבָּהּ וַתֹּאמֶר אִם־כֵּן לָמָּה זֶּה אָנֹכִי וַתֵּלֶךְ לִדְרֹשׁ אֶת־ה׳׃",
-    "en": "But the children struggled in her womb, and she said, “If so, why do I exist?” She went to inquire of <span class=\"sc\">God</span>,"
-   }
-  ],
-  "credit": "tanakh"
- },
  "Genesis 27:1–5": {
   "label": "Genesis 27:1–5",
   "title": "Genesis 27:1–5",
@@ -2320,15 +3108,235 @@ Object.assign(VOICES.sources, {
   ],
   "credit": "tanakh"
  },
- "Rashi on Genesis 35:8:1": {
-  "label": "Rashi on Genesis 35:8",
-  "title": "Rashi on Genesis 35:8",
+ "Genesis 27:8": {
+  "label": "Genesis 27:8",
+  "title": "Genesis 27:8",
+  "kind": "Torah",
+  "verses": [
+   {
+    "n": "27:8",
+    "he": "וְעַתָּה בְנִי שְׁמַע בְּקֹלִי לַאֲשֶׁר אֲנִי מְצַוָּה אֹתָךְ׃",
+    "en": "Now, my son, listen carefully as I instruct you."
+   }
+  ],
+  "credit": "tanakh"
+ },
+ "Genesis 27:14–17": {
+  "label": "Genesis 27:14–17",
+  "title": "Genesis 27:14–17",
+  "kind": "Torah",
+  "verses": [
+   {
+    "n": "27:14",
+    "he": "וַיֵּלֶךְ וַיִּקַּח וַיָּבֵא לְאִמּוֹ וַתַּעַשׂ אִמּוֹ מַטְעַמִּים כַּאֲשֶׁר אָהֵב אָבִיו׃",
+    "en": "He got them and brought them to his mother, and his mother prepared a dish such as his father liked."
+   },
+   {
+    "n": "27:15",
+    "he": "וַתִּקַּח רִבְקָה אֶת־בִּגְדֵי עֵשָׂו בְּנָהּ הַגָּדֹל הַחֲמֻדֹת אֲשֶׁר אִתָּהּ בַּבָּיִת וַתַּלְבֵּשׁ אֶת־יַעֲקֹב בְּנָהּ הַקָּטָן׃",
+    "en": "Rebekah then took the best clothes of her older son Esau, which were there in the house, and had her younger son Jacob put them on;"
+   },
+   {
+    "n": "27:16",
+    "he": "וְאֵת עֹרֹת גְּדָיֵי הָעִזִּים הִלְבִּישָׁה עַל־יָדָיו וְעַל חֶלְקַת צַוָּארָיו׃",
+    "en": "and she covered his hands and the hairless part of his neck with the skins of the kids."
+   },
+   {
+    "n": "27:17",
+    "he": "וַתִּתֵּן אֶת־הַמַּטְעַמִּים וְאֶת־הַלֶּחֶם אֲשֶׁר עָשָׂתָה בְּיַד יַעֲקֹב בְּנָהּ׃",
+    "en": "Then she put in the hands of her son Jacob the dish and the bread that she had prepared."
+   }
+  ],
+  "credit": "tanakh"
+ },
+ "Rashi on Genesis 27:45:2": {
+  "label": "Rashi on Genesis 27:45",
+  "title": "Rashi on Genesis 27:45",
   "kind": "Commentary · 11th century",
   "verses": [
    {
-    "n": "And Deborah died",
-    "he": "ותמת דבורה. מָה עִנְיַן דְּבוֹרָה בְּבֵית יַעֲקֹב? אֶלָּא לְפִי שֶׁאָמְרָה רִבְקָה לְיַעֲקֹב וְשָׁלַחְתִּי וּלְקַחְתִּיךָ מִשָּׁם, שָׁלְחָה דְבוֹרָה אֶצְלוֹ לְפַדַּן אֲרָם לָצֵאת מִשָּׁם, וּמֵתָה בַדֶּרֶךְ; מִדִּבְרֵי רַבִּי מֹשֶׁה הַדַּרְשָׁן לְמַדְתִּיהָ:",
-    "en": "How came Deborah to be in Jacob’s house? But the explanation is: because Rebékah had promised Jacob (Gen. 27:45) “then I will send and fetch thee from thence”, she sent Deborah to him to Padan-aram to tell him to leave that place, and she died on the return journey. I learnt this from a comment of R. Moses Ha-darshan."
+    "n": "Of you both",
+    "he": "גם שניכם. אִם יָקוּם עָלֶיךָ וְאַתָּה תַּהַרְגֶנּוּ יַעַמְדוּ בָנָיו וְיַהַרְגוּךָ; וְרוּחַ הַקֹּדֶשׁ נִזְרְקָה בָהּ וְנִתְנַבְּאָה שֶׁבְּיוֹם א׳ יָמוּתוּ, כְּמוֹ שֶׁמְּפֹרָשׁ בְּפֶרֶק הַמְקַנֵּא לְאִשְׁתּוֹ:",
+    "en": "If he attacks you and you kill him his children will rise and kill you. The Holy Spirit poured itself forth upon her and she prophesied (had a presage) that they would both die on one day just as it is stated in the Chapter המקנה לאשתו (Sotah 13a)."
+   }
+  ],
+  "credit": "rashi"
+ },
+ "Genesis 28:1–5": {
+  "label": "Genesis 28:1–5",
+  "title": "Genesis 28:1–5",
+  "kind": "Torah",
+  "verses": [
+   {
+    "n": "28:1",
+    "he": "וַיִּקְרָא יִצְחָק אֶל־יַעֲקֹב וַיְבָרֶךְ אֹתוֹ וַיְצַוֵּהוּ וַיֹּאמֶר לוֹ לֹא־תִקַּח אִשָּׁה מִבְּנוֹת כְּנָעַן׃",
+    "en": "So Isaac sent for Jacob and blessed him. He instructed him, saying, “You shall not take a wife from among the Canaanite women."
+   },
+   {
+    "n": "28:2",
+    "he": "קוּם לֵךְ פַּדֶּנָה אֲרָם בֵּיתָה בְתוּאֵל אֲבִי אִמֶּךָ וְקַח־לְךָ מִשָּׁם אִשָּׁה מִבְּנוֹת לָבָן אֲחִי אִמֶּךָ׃",
+    "en": "Up, go to Paddan-aram, to the house of Bethuel, your mother’s father, and take a wife there from among the daughters of Laban, your mother’s brother."
+   },
+   {
+    "n": "28:3",
+    "he": "וְאֵל שַׁדַּי יְבָרֵךְ אֹתְךָ וְיַפְרְךָ וְיַרְבֶּךָ וְהָיִיתָ לִקְהַל עַמִּים׃",
+    "en": "May El Shaddai bless you, make you fertile and numerous, so that you become an assembly of peoples."
+   },
+   {
+    "n": "28:4",
+    "he": "וְיִתֶּן־לְךָ אֶת־בִּרְכַּת אַבְרָהָם לְךָ וּלְזַרְעֲךָ אִתָּךְ לְרִשְׁתְּךָ אֶת־אֶרֶץ מְגֻרֶיךָ אֲשֶׁר־נָתַן אֱלֹהִים לְאַבְרָהָם׃",
+    "en": "May you and your offspring be granted the blessing of Abraham, that you may possess the land where you are sojourning, which God assigned to Abraham.”"
+   },
+   {
+    "n": "28:5",
+    "he": "וַיִּשְׁלַח יִצְחָק אֶת־יַעֲקֹב וַיֵּלֶךְ פַּדֶּנָה אֲרָם אֶל־לָבָן בֶּן־בְּתוּאֵל הָאֲרַמִּי אֲחִי רִבְקָה אֵם יַעֲקֹב וְעֵשָׂו׃",
+    "en": "Then Isaac sent Jacob off, and he went to Paddan-aram, to Laban the son of Bethuel the Aramean, the brother of Rebekah, mother of Jacob and Esau."
+   }
+  ],
+  "credit": "tanakh"
+ },
+ "Rashi on Genesis 27:42:1": {
+  "label": "Rashi on Genesis 27:42",
+  "title": "Rashi on Genesis 27:42",
+  "kind": "Commentary · 11th century",
+  "verses": [
+   {
+    "n": "Were told to Rebekah",
+    "he": "ויגד לרבקה. בְּרוּחַ הַקֹּדֶשׁ הֻגַּד לָהּ מַה שֶּׁעֵשָׂו מְהַרְהֵר בְּלִבּוֹ:",
+    "en": "It was told her by the Holy Spirit what Esau was thinking in his heart (Genesis Rabbah 67:9)."
+   }
+  ],
+  "credit": "rashi"
+ },
+ "Genesis 49:29–31": {
+  "label": "Genesis 49:29–31",
+  "title": "Genesis 49:29–31",
+  "kind": "Torah",
+  "verses": [
+   {
+    "n": "49:29",
+    "he": "וַיְצַו אוֹתָם וַיֹּאמֶר אֲלֵהֶם אֲנִי נֶאֱסָף אֶל־עַמִּי קִבְרוּ אֹתִי אֶל־אֲבֹתָי אֶל־הַמְּעָרָה אֲשֶׁר בִּשְׂדֵה עֶפְרוֹן הַחִתִּי׃",
+    "en": "Then he instructed them, saying to them, “I am about to be gathered to my kin. Bury me with my ancestors in the cave that is in the field of Ephron the Hittite,"
+   },
+   {
+    "n": "49:30",
+    "he": "בַּמְּעָרָה אֲשֶׁר בִּשְׂדֵה הַמַּכְפֵּלָה אֲשֶׁר עַל־פְּנֵי־מַמְרֵא בְּאֶרֶץ כְּנָעַן אֲשֶׁר קָנָה אַבְרָהָם אֶת־הַשָּׂדֶה מֵאֵת עֶפְרֹן הַחִתִּי לַאֲחֻזַּת־קָבֶר׃",
+    "en": "the cave that is in the field of Machpelah, facing Mamre, in the land of Canaan, the field that Abraham bought from Ephron the Hittite for a burial site—"
+   },
+   {
+    "n": "49:31",
+    "he": "שָׁמָּה קָבְרוּ אֶת־אַבְרָהָם וְאֵת שָׂרָה אִשְׁתּוֹ שָׁמָּה קָבְרוּ אֶת־יִצְחָק וְאֵת רִבְקָה אִשְׁתּוֹ וְשָׁמָּה קָבַרְתִּי אֶת־לֵאָה׃",
+    "en": "there Abraham and his wife Sarah were buried; there Isaac and his wife Rebekah were buried; and there I buried Leah—"
+   }
+  ],
+  "credit": "tanakh"
+ },
+ "Rashi on Genesis 25:22 (why do I exist)": {
+  "label": "Rashi on Genesis 25:22",
+  "title": "Rashi on Genesis 25:22",
+  "kind": "Commentary · 11th century",
+  "verses": [
+   {
+    "n": "And she said, “If so, why do I exist?”",
+    "he": "ותאמר אם כן. גָּדוֹל צַעַר הָעִבּוּר. למה זה אנכי. מִתְאַוָּה וּמִתְפַּלֶּלֶת עַל הֵרָיוֹן:",
+    "en": "And she said, “If the pain of pregnancy be so great, why is it that I longed and prayed to become pregnant?” (Genesis Rabbah 63:6)."
+   }
+  ],
+  "credit": "rashi"
+ },
+ "Genesis 27:5–12": {
+  "label": "Genesis 27:5–12",
+  "title": "Genesis 27:5–12",
+  "kind": "Torah",
+  "verses": [
+   {
+    "n": "27:5",
+    "he": "וְרִבְקָה שֹׁמַעַת בְּדַבֵּר יִצְחָק אֶל־עֵשָׂו בְּנוֹ וַיֵּלֶךְ עֵשָׂו הַשָּׂדֶה לָצוּד צַיִד לְהָבִיא׃",
+    "en": "Rebekah had been listening as Isaac spoke to his son Esau. When Esau had gone out into the open to hunt game to bring home,"
+   },
+   {
+    "n": "27:6",
+    "he": "וְרִבְקָה אָמְרָה אֶל־יַעֲקֹב בְּנָהּ לֵאמֹר הִנֵּה שָׁמַעְתִּי אֶת־אָבִיךָ מְדַבֵּר אֶל־עֵשָׂו אָחִיךָ לֵאמֹר׃",
+    "en": "Rebekah said to her son Jacob, “I overheard your father speaking to your brother Esau, saying,"
+   },
+   {
+    "n": "27:7",
+    "he": "הָבִיאָה לִּי צַיִד וַעֲשֵׂה־לִי מַטְעַמִּים וְאֹכֵלָה וַאֲבָרֶכְכָה לִפְנֵי ה׳ לִפְנֵי מוֹתִי׃",
+    "en": "‘Bring me some game and prepare a dish for me to eat, that I may bless you, with <span class=\"sc\">God</span>’s approval, before I die.’"
+   },
+   {
+    "n": "27:8",
+    "he": "וְעַתָּה בְנִי שְׁמַע בְּקֹלִי לַאֲשֶׁר אֲנִי מְצַוָּה אֹתָךְ׃",
+    "en": "Now, my son, listen carefully as I instruct you."
+   },
+   {
+    "n": "27:9",
+    "he": "לֶךְ־נָא אֶל־הַצֹּאן וְקַח־לִי מִשָּׁם שְׁנֵי גְּדָיֵי עִזִּים טֹבִים וְאֶעֱשֶׂה אֹתָם מַטְעַמִּים לְאָבִיךָ כַּאֲשֶׁר אָהֵב׃",
+    "en": "Go to the flock and fetch me two choice kids, and I will make of them a dish for your father, such as he likes."
+   },
+   {
+    "n": "27:10",
+    "he": "וְהֵבֵאתָ לְאָבִיךָ וְאָכָל בַּעֲבֻר אֲשֶׁר יְבָרֶכְךָ לִפְנֵי מוֹתוֹ׃",
+    "en": "Then take it to your father to eat, in order that he may bless you before he dies.”"
+   },
+   {
+    "n": "27:11",
+    "he": "וַיֹּאמֶר יַעֲקֹב אֶל־רִבְקָה אִמּוֹ הֵן עֵשָׂו אָחִי אִישׁ שָׂעִר וְאָנֹכִי אִישׁ חָלָק׃",
+    "en": "Jacob answered his mother Rebekah, “But my brother Esau is a hairy man and I’m a smooth-skinned one."
+   },
+   {
+    "n": "27:12",
+    "he": "אוּלַי יְמֻשֵּׁנִי אָבִי וְהָיִיתִי בְעֵינָיו כִּמְתַעְתֵּעַ וְהֵבֵאתִי עָלַי קְלָלָה וְלֹא בְרָכָה׃",
+    "en": "If my father touches me, I shall appear to him as a trickster and bring upon myself a curse, not a blessing.”"
+   }
+  ],
+  "credit": "tanakh"
+ },
+ "Genesis 27:42–44": {
+  "label": "Genesis 27:42–44",
+  "title": "Genesis 27:42–44",
+  "kind": "Torah",
+  "verses": [
+   {
+    "n": "27:42",
+    "he": "וַיֻּגַּד לְרִבְקָה אֶת־דִּבְרֵי עֵשָׂו בְּנָהּ הַגָּדֹל וַתִּשְׁלַח וַתִּקְרָא לְיַעֲקֹב בְּנָהּ הַקָּטָן וַתֹּאמֶר אֵלָיו הִנֵּה עֵשָׂו אָחִיךָ מִתְנַחֵם לְךָ לְהׇרְגֶךָ׃",
+    "en": "When the words of her older son Esau were reported to Rebekah, she sent for her younger son Jacob and said to him, “Your brother Esau is consoling himself by planning to kill you."
+   },
+   {
+    "n": "27:43",
+    "he": "וְעַתָּה בְנִי שְׁמַע בְּקֹלִי וְקוּם בְּרַח־לְךָ אֶל־לָבָן אָחִי חָרָנָה׃",
+    "en": "Now, my son, listen to me. Flee at once to Haran, to my brother Laban."
+   },
+   {
+    "n": "27:44",
+    "he": "וְיָשַׁבְתָּ עִמּוֹ יָמִים אֲחָדִים עַד אֲשֶׁר־תָּשׁוּב חֲמַת אָחִיךָ׃",
+    "en": "Stay with him awhile, until your brother’s fury subsides—"
+   }
+  ],
+  "credit": "tanakh"
+ },
+ "Genesis 29:20": {
+  "label": "Genesis 29:20",
+  "title": "Genesis 29:20",
+  "kind": "Torah",
+  "verses": [
+   {
+    "n": "29:20",
+    "he": "וַיַּעֲבֹד יַעֲקֹב בְּרָחֵל שֶׁבַע שָׁנִים וַיִּהְיוּ בְעֵינָיו כְּיָמִים אֲחָדִים בְּאַהֲבָתוֹ אֹתָהּ׃",
+    "en": "So Jacob served seven years for Rachel and they seemed to him but a few days because of his love for her."
+   }
+  ],
+  "credit": "tanakh"
+ },
+ "Rashi on Genesis 25:23:1": {
+  "label": "Rashi on Genesis 25:23",
+  "title": "Rashi on Genesis 25:23",
+  "kind": "Commentary · 11th century",
+  "verses": [
+   {
+    "n": "",
+    "he": "ויאמר ה׳ לה. עַל יְדֵי שָׁלִיחַ; לְשֵׁם נֶאֱמַר בְּרוּחַ הַקֹּדֶשׁ וְהוּא אָמַר לָהּ (בראשית רבה):",
+    "en": "And the eternal said unto her through a messenger: it was told to Shem by holy inspiration and he told it to her (Genesis Rabbah 63:7)."
    }
   ],
   "credit": "rashi"
@@ -2385,19 +3393,6 @@ Object.assign(VOICES.sources, {
   ],
   "credit": "midrash"
  },
- "Bereshit Rabbah 68:12 (his guardians)": {
-  "label": "B’reishit Rabbah 68:12",
-  "title": "B’reishit Rabbah 68:12",
-  "kind": "Midrash · about the 5th century CE",
-  "verses": [
-   {
-    "n": "The angels who went with him",
-    "he": "דָּבָר אַחֵר, עֹלִים וְיֹרְדִים בּוֹ, עֹלִים אוֹתָם שֶׁלִּוּוּ אוֹתוֹ בְּאֶרֶץ יִשְׂרָאֵל, יֹרְדִים, אֵלּוּ שֶׁלִּוּוּ אוֹתוֹ בְּחוּצָה לָאָרֶץ",
-    "en": "Another matter, “ascending and descending on it” – those who accompanied him in the Land of Israel were ascending; “descending” – those who would accompany him outside the Land of Israel."
-   }
-  ],
-  "credit": "midrash"
- },
  "Kitzur Baal HaTurim on Genesis 28:12:3": {
   "label": "Ba’al HaTurim on Genesis 28:12",
   "title": "Ba’al HaTurim on Genesis 28:12",
@@ -2410,6 +3405,45 @@ Object.assign(VOICES.sources, {
    }
   ],
   "credit": "turim"
+ },
+ "Bereshit Rabbah 68:10": {
+  "label": "B’reishit Rabbah 68:10",
+  "title": "B’reishit Rabbah 68:10",
+  "kind": "Midrash · about the 5th century CE",
+  "verses": [
+   {
+    "n": "Why the sun set early",
+    "he": "וַיִּפְגַּע בַּמָּקוֹם (בראשית כח, יא), בִּקֵּשׁ לַעֲבֹר נַעֲשָׂה הָעוֹלָם כֻּלּוֹ כְּמִין כּוֹתֶל לְפָנָיו. (בראשית כח, יא): כִּי בָא הַשֶּׁמֶשׁ, רַבָּנָן אָמְרֵי כִּיבָּא הַשֶּׁמֶשׁ, מְלַמֵּד שֶׁהִשְׁקִיעַ הַקָּדוֹשׁ בָּרוּךְ הוּא גַּלְגַּל חַמָּה שֶׁלֹא בְּעוֹנָתָהּ בִּשְׁבִיל לְדַבֵּר עִם יַעֲקֹב אָבִינוּ בְּצִנְעָה, מָשָׁל לְאוֹהֲבוֹ שֶׁל מֶלֶךְ שֶׁבָּא אֶצְלוֹ לִפְרָקִים, אָמַר הַמֶּלֶךְ כִּיבּוּ אֶת הַנֵּרוֹת כִּיבּוּ אֶת הַפָּנָסִין שֶׁאֲנִי מְבַקֵּשׁ לְדַבֵּר עִם אוֹהֲבִי בְּצִנְעָה. כָּךְ הִשְׁקִיעַ הַקָּדוֹשׁ בָּרוּךְ הוּא גַּלְגַּל חַמָּה שֶׁלֹא בְּעוֹנָתָהּ בִּשְׁבִיל לְדַבֵּר עִם יַעֲקֹב אָבִינוּ בְּצִנְעָה. רַבִּי פִּינְחָס בְּשֵׁם רַבִּי חָנִין דְּצִפּוֹרִין אָמַר שָׁמַע קוֹלָן שֶׁל מַלְאֲכֵי הַשָּׁרֵת אוֹמְרִים בָּא הַשֶּׁמֶשׁ בָּא הַשֶּׁמֶשׁ, אֲתָא שִׁמְשָׁא, אֲתָא שִׁמְשָׁא. בְּשָׁעָה שֶׁאָמַר יוֹסֵף (בראשית לז, ט): וְהִנֵּה הַשֶּׁמֶשׁ וְהַיָּרֵחַ, אָמַר יַעֲקֹב מִי גִּלָּה לוֹ שֶׁשְּׁמִי שֶׁמֶשׁ. אוֹתָן שְׁתֵּי שָׁעוֹת שֶׁהִשְׁקִיעַ לוֹ הַקָּדוֹשׁ בָּרוּךְ הוּא חַמָּה בְּצֵאתוֹ מִבֵּית אָבִיו אֵימָתַי הֶחֱזִירָן, בַּחֲזִירָתוֹ לְבֵית אָבִיו, הֲדָא הוּא דִכְתִיב (בראשית לב, לב): וַיִּזְרַח לוֹ הַשֶּׁמֶשׁ, אָמַר לוֹ הַקָּדוֹשׁ בָּרוּךְ הוּא אַתְּ סִימָן לְבָנֶיךָ, מָה אַתָּה בְּצֵאתְךָ הִשְׁקַעְתִּי חַמָּה וּבַחֲזִירָתְךָ הֶחֱזַרְתִּי לְךָ גַּלְגַּל חַמָּה, כָּךְ בָּנֶיךָ בְּצֵאתָם (ירמיה טו, ט): אֻמְלְלָה יֹלֶדֶת הַשִּׁבְעָה, וּבַחֲזִירָתָן (מלאכי ג, כ): וְזָרְחָה לָכֶם יִרְאֵי שְׁמִי וגו׳.",
+    "en": "“He encountered the place” – he sought to pass, but the entire world became a barrier of sorts before him. “Because the sun had set” – the Rabbis say: “Because the sun had set” – it teaches that the Holy One blessed be He caused the orb of the sun to set not at its proper time, in order to speak with Jacob privately. This is analogous to a king’s friend who would come to him on occasion. The king said: ‘Extinguish the lamps, extinguish the lanterns, as I wish to speak with my friend privately.’ So, the Holy One blessed be He caused the orb of the sun to set not at its proper time, in order to speak with Jacob privately. Rabbi Pinḥas said in the name of Rabbi Ḥanin of Tzippori: He heard the voices of the ministering angels saying: ‘The sun has arrived, the sun has arrived.’ When Joseph said: “Behold, the sun and the moon” (Genesis 37:9), Jacob said: ‘Who revealed to him that My name is “sun”?’ Those two hours that the Holy One blessed be He caused the orb of the sun to set when he left his father’s house, when did He restore them? It was when he returned to his father’s house. That is what is written: “The sun rose for him” (Genesis 32:32). The Holy One blessed be He said to him: ‘You are a model for your descendants; just as you, when you departed, I caused the sun to set, and upon your return, I restored the orb of the sun for you, so, your descendants, upon their departure: “The one who bore seven is miserable…[her sun set while still day]” (Jeremiah 15:9), and upon their return: “But the [sun of righteousness] will shine for those who fear My name…”’ (Malachi 3:20)."
+   }
+  ],
+  "credit": "midrash"
+ },
+ "Genesis 32:32": {
+  "label": "Genesis 32:32",
+  "title": "Genesis 32:32",
+  "kind": "Torah",
+  "verses": [
+   {
+    "n": "32:32",
+    "he": "וַיִּזְרַח־לוֹ הַשֶּׁמֶשׁ כַּאֲשֶׁר עָבַר אֶת־פְּנוּאֵל וְהוּא צֹלֵעַ עַל־יְרֵכוֹ׃",
+    "en": "The sun rose upon him as he passed Penuel, limping on his hip."
+   }
+  ],
+  "credit": "tanakh"
+ },
+ "Bereshit Rabbah 68:13": {
+  "label": "B’reishit Rabbah 68:13",
+  "title": "B’reishit Rabbah 68:13",
+  "kind": "Midrash · about the 5th century CE",
+  "verses": [
+   {
+    "n": "Rabbi Yehoshua ben Levi: the dream as exile",
+    "he": "רַבִּי יְהוֹשֻׁעַ בֶּן לֵוִי פָּתַר קְרָיָה בַּגָּלוּת, (בראשית כח, י): וַיֵּצֵא יַעֲקֹב מִבְּאֵר שָׁבַע, הֵאיךְ מָה דְאַתְּ אָמַר (ירמיה טו, א): שַׁלַּח מֵעַל פָּנַי וְיֵצֵאוּ. (בראשית כח, י): וַיֵּלֶךְ חָרָנָה, הֵאיךְ מָה דְאַתְּ אָמַר (איכה א, יב): אֲשֶׁר הוֹגָה ה׳ בְּיוֹם חֲרוֹן אַפּוֹ. (בראשית כח, יא): וַיִּפְגַּע בַּמָּקוֹם, (ישעיה ה, ח): עַד אֶפֶס מָקוֹם. (בראשית כח, יא): וַיָּלֶן שָׁם כִּי בָא הַשֶּׁמֶשׁ, (ירמיה טו, ט): אֻמְלְלָה יֹלֶדֶת הַשִּׁבְעָה וגו׳. (בראשית כח, יא): וַיִּקַּח מֵאַבְנֵי הַמָּקוֹם, (איכה ד, א): תִּשְׁתַּפֵּכְנָה אַבְנֵי קֹדֶשׁ בְּרֹאשׁ כָּל חוּצוֹת. (בראשית כח, יא): וַיָּשֶׂם מְרַאֲשֹׁתָיו, (ירמיה יג, יח): כִּי יָרַד מַרְאֲשׁוֹתֵיכֶם. (בראשית כח, יא): וַיִּשְׁכַּב בַּמָּקוֹם הַהוּא, (ירמיה ג, כה): נִשְׁכְּבָה בְּבָשְׁתֵּנוּ וּתְכַסֵּנוּ כְּלִמָּתֵנוּ. (בראשית כח, יב): וַיַּחֲלֹם וְהִנֵּה סֻלָּם, זֶה חֲלוֹמוֹ שֶׁל נְבוּכַדְנֶצַּר. וְהִנֵּה סֻלָּם, זֶה צַלְמוֹ שֶׁל נְבוּכַדְנֶצַּר, הוּא סֶמֶל הוּא סֻלָּם, אוֹתוֹי דְּדֵין הוּא אוֹתוֹי דְּדֵין. (בראשית כח, יב): מֻצָּב אַרְצָה, (דניאל ג, א): אֲקִימֵהּ בְּבִקְעַת דּוּרָא. (בראשית כח, יב): וְרֹאשׁוֹ מַגִּיעַ הַשָּׁמָיְמָה, (דניאל ג, א): רוּמֵהּ אַמִּין שִׁתִּין פְּתָיֵהּ אַמִּין שִׁת. (בראשית כח, יב): וְהִנֵּה מַלְאֲכֵי אֱלֹהִים, זֶה חֲנַנְיָה מִישָׁאֵל וַעֲזַרְיָה. (בראשית כח, יב): עֹלִים וְיֹרְדִים בּוֹ, מַעֲלִים בּוֹ וּמוֹרִידִים בּוֹ, אָפְזִים בּוֹ, קָפְזִים בּוֹ, שׂוֹנְטִים בּוֹ. (דניאל ג, יח): יְדִיעַ לֶהֱוֵא לָךְ מַלְכָּא דִּי לֵאלָהָךְ לָא אִיתַנָא פָלְחִין וּלְצֶלֶם דַּהֲבָא דִּי הֲקֵימְתָּ לָא נִסְגֻּד. (בראשית כח, יג): וְהִנֵּה ה׳ נִצָּב עָלָיו, אָמַר לָהֶם לַחֲנַנְיָה מִישָׁאֵל וַעֲזַרְיָה (דניאל ג, כו): עַבְדוֹהִי דִּי אֱלָהָא עִלָּאָה פֻּקוּ וֶאֱתוֹ",
+    "en": "Rabbi Yehoshua ben Levi interpreted the verse regarding the exile. “Jacob departed [vayetze] from Beersheba” (Genesis 28:10) – just as it says: “Send them from My presence, and let them go [veyetze’u]” (Jeremiah 15:1). “And went to Ḥaran” (Genesis 28:10) – just as it says: “With which the Lord has tormented me on the day of His enflamed wrath [ḥaron apo]” (Lamentations 1:12). “He encountered the place” (Genesis 28:11) – “until there is no more place” (Isaiah 5:8). “And stayed the night there because the sun had set” (Genesis 28:11) – “the one who bore seven is miserable…[her sun set while still day]” (Jeremiah 15:9). “He took from the stones from the place” (Genesis 28:11) – “The sacred stones are spilled at the head of every street” (Lamentations 4:1). “Which he placed beneath his head” (Genesis 28:11) – “[splendor] has come down from your heads” (Jeremiah 13:18). “And lay in that place” (Genesis 28:11) – “we will lie in our shame, and our humiliation will cover us” (Jeremiah 3:25). “He dreamed, and behold, a ladder [sulam]” (Genesis 28:12) – this is Nebuchadnezzar’s dream. “Behold, a ladder” – this is Nebuchadnezzar’s idol; it is a symbol [semel], and it is a [sulam] – The letters of this are the letters of that. “Was set on the earth” (Genesis 28:12) – “he erected it in the valley of Dura” (Daniel 3:1). “Its top was reaching the heavens” – “its height was sixty cubits, and its width six cubits. He erected it in the plain of Dura, in the province of Babylonia” (Daniel 3:1). “And behold, the angels of God” – this is Ḥananya, Mishael, and Azarya. “Were ascending and descending on it” – they were exalting his honor and denigrating his honor; dancing and leaping before him and denigrating: “Let it be known to you, king, that we will not worship your gods, and we will not prostrate ourselves to the golden image that you have erected” (Daniel 3:18). “Behold, the Lord was standing over him” (Genesis 28:13) – he said to Ḥananya, Mishael, and Azarya: “Servants of God Most High, emerge and come” (Daniel 3:26). <i>[The midrash goes on to read the angels as the prophet Daniel.]</i>"
+   }
+  ],
+  "credit": "midrash"
  },
  "Bereshit Rabbah 68:11 (the stones)": {
   "label": "B’reishit Rabbah 68:11",

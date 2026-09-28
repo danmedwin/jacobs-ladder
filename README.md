@@ -37,9 +37,8 @@ space bar or arrow keys, and any line drawn from a text opens a card with the He
 in `voices/data/`, one file per character; `voices/review/` holds readable copies for review, `voices/PLAN.md` the plan
 for the morning, and `voices/PORTRAITS.md` the prompts for the character portraits. `voices/tools/` keeps the Sefaria
 texts behind the cards, a report checking every claim the scripts make against them, and the two scripts that rebuild
-the source cards and the review copies. Jacob is written in all four versions, and Esau, Rebekah, Isaac, the angel,
-the stone, Rashi, and the Sages are written for K–2 and 3–4; the 5–7 and parents visits for the others, with Ramban
-and Rambam, come next.
+the source cards and the review copies. All thirty visits are written: every character, in every version it appears
+in.
 
 The slide and Eleven Ladders share seventy AI images in `img/` and eleven artworks in `art/`.
 

@@ -65,10 +65,28 @@ def norm_he(t):
     t = re.sub(r"([\u05D0-\u05EA][\u05B0-\u05C7]*)\"([\u05D0-\u05EA])", "\\1\u05F4\\2", t)   # gershayim: הקב"ה -> הקב״ה
     t = re.sub(r"([\u05D0-\u05EA][\u05B0-\u05C7]*)'", "\\1\u05F3", t)                        # geresh: ה' -> ה׳
     return re.sub(r"\s+", " ", t).strip()
+def strip_footnotes(t):
+    """Remove <i class="footnote">…</i>, including any <i> nested inside it."""
+    out, i = [], 0
+    while True:
+        j = t.find('<i class="footnote">', i)
+        if j < 0:
+            return "".join(out) + t[i:]
+        out.append(t[i:j])
+        depth, k = 0, j
+        for m in re.finditer(r"<i\b[^>]*>|</i>", t[j:]):
+            depth += -1 if m.group(0) == "</i>" else 1
+            if depth == 0:
+                k = j + m.end()
+                break
+        else:
+            k = len(t)
+        i = k
+
 def norm_en(t):
     t = t or ""
     t = re.sub(r"<sup[^>]*>.*?</sup>", "", t, flags=re.S)
-    t = re.sub(r'<i class="footnote">.*?</i>', "", t, flags=re.S)
+    t = strip_footnotes(t)
     t = re.sub(r'<span class="poetry[^"]*">(.*?)</span>', r"<br>\1", t, flags=re.S)
     t = re.sub(r"^(\s*<br>)+", "", t)
     t = re.sub(r"(<br>\s*){2,}", "<br>", t)
@@ -105,25 +123,42 @@ def slice_en(text, start=None, until=None):
 
 # Rashi's English (Rosenbaum and Silbermann) opens with his Hebrew heading and its translation in capitals:
 # "ויפגע במקום AND HE LIGHTED UPON THE PLACE — Scripture ...". The card shows the heading once, as its label.
-RASHI_HEAD = re.compile(r"^[\u0590-\u05FF\s\"'״׳.,()]+?\s*([A-Z][A-Z0-9\s,;’'\-]*?)\s+[—–]\s+(.*)$", re.S)
-PROPER = {"god", "jacob", "esau", "laban", "israel", "isaac", "abraham", "haran", "deborah", "beersheba", "i"}
+HEB_LEAD = r"^[\u0590-\u05FF\s\"'״׳.,()…]+?\s*"
+CAPS = r"(\[?[A-Z][A-Z0-9\s,;’'\-\[\]()…]*?)"
+RASHI_HEAD = re.compile(HEB_LEAD + CAPS + r"\s*[—–]\s*(.*)$", re.S)             # heading, dash, comment
+RASHI_RUN = re.compile(HEB_LEAD + CAPS + r"(?<=[A-Z\]])\s+(?=[a-z(“])(.*)$", re.S)  # heading runs into the comment
+PROPER = {"god", "jacob", "esau", "laban", "israel", "isaac", "abraham", "haran", "deborah", "beersheba", "rebekah", "i"}
 def heading_case(caps):
-    words = caps.lower().split()
-    return " ".join(w[:1].upper() + w[1:] if (i == 0 or w.strip(",;’'") in PROPER) else w for i, w in enumerate(words))
+    out, first = [], True
+    for w in caps.lower().split():
+        core = w.strip(",;’'[]()…")
+        if core and (first or core in PROPER):
+            k = next(i for i, ch in enumerate(w) if ch.isalpha())
+            w = w[:k] + w[k].upper() + w[k + 1:]
+        if core:
+            first = False
+        out.append(w)
+    return " ".join(out)
 def rashi_en(en):
     m = RASHI_HEAD.match(en)
-    return (heading_case(m.group(1)), m.group(2)) if m else ("", en)
+    if m:
+        return heading_case(m.group(1)), m.group(2)
+    m = RASHI_RUN.match(en)
+    if m:
+        return "", heading_case(m.group(1)) + " " + m.group(2)
+    return "", en
 
 # 3. Verse and commentary cards from the packet
 packet = {}
 packet.update(json.load(open(TEXTS, encoding="utf-8")))
 
+TORAH = ("Genesis", "Exodus", "Leviticus", "Numbers", "Deuteronomy")
 def verse_range(ref):
-    m = re.match(r"Genesis (\d+):(\d+)(?:[–-](\d+))?$", ref)
+    m = re.match(r"(" + "|".join(TORAH) + r") (\d+):(\d+)(?:[–-](\d+))?$", ref)
     if not m:
         return None
-    ch, a, b = int(m.group(1)), int(m.group(2)), int(m.group(3) or m.group(2))
-    return [f"Genesis {ch}:{v}" for v in range(a, b + 1)]
+    book, ch, a, b = m.group(1), int(m.group(2)), int(m.group(3)), int(m.group(4) or m.group(3))
+    return [f"{book} {ch}:{v}" for v in range(a, b + 1)]
 
 credits = {
     "tanakh": "English: <i>The JPS Tanakh: Gender-Sensitive Edition</i> (Revised JPS, 2023), CC BY-NC. Hebrew: <i>Miqra according to the Masorah</i>, CC BY-SA. Both via Sefaria.",
@@ -131,10 +166,14 @@ credits = {
     "midrash": "English: <i>The Sefaria Midrash Rabbah</i> (2022), CC BY. Hebrew: Midrash Rabbah, Torat Emet edition. Both via Sefaria.",
     "talmud": "The William Davidson Talmud (Koren Noé), English with the explanation of Rabbi Adin Even-Israel Steinsaltz, CC BY-NC, via Sefaria. In the English, bold type translates the Talmud’s own words; plain type is Rabbi Steinsaltz’s explanation.",
     "turim": "Hebrew: <i>Kitzur Ba’al HaTurim</i>, public domain, via Sefaria. Sefaria has no English for this comment; the translation is ours.",
+    "ramban": "English: <i>Commentary on the Torah by Ramban</i>, translated and annotated by Charles B. Chavel (1971–1976), CC BY. Hebrew: Vocalized Edition, CC BY. Both via Sefaria.",
+    "guide": "English: <i>The Guide for the Perplexed</i>, translated from Maimonides’ Arabic by M. Friedlander (1903), public domain. Hebrew: the medieval translation by Samuel ibn Tibbon, public domain. Both via Sefaria.",
 }
 MIDRASH = "Midrash · about the 5th century CE"
 TALMUD = "Babylonian Talmud · about the 6th century CE"
 TURIM = "Commentary · Rabbi Jacob ben Asher, 14th century"
+RAMBAN = "Commentary · Nachmanides, 13th century"
+GUIDE = "Philosophy · Maimonides, about 1190"
 RASHI = "Commentary · 11th century"
 COMMENTARY = {
     "Rashi on Genesis 35:8": {
@@ -194,6 +233,51 @@ COMMENTARY = {
         "from": "Rashi on Chullin 91b:11", "label": "Rashi on Chullin 91b", "kind": "Commentary on the Talmud · 11th century", "n": "Four short notes",
         "en": "<b>His image above:</b> the human face among the four living creatures [that carry God’s throne] is in Jacob’s likeness. <b>They wanted to endanger him:</b> out of jealousy. <b>Stood over him:</b> to guard him. <b>Who waves over his son:</b> with a fan, to save him from the heat.",
         "credit": "Hebrew: Rashi on Chullin, Vilna edition, public domain, via Sefaria. The translation is ours."},
+    "Rashi on Genesis 25:22 (why do I exist)": {
+        "parts": ["Rashi on Genesis 25:22:2", "Rashi on Genesis 25:22:3"], "label": "Rashi on Genesis 25:22", "kind": RASHI,
+        "n": "And she said, “If so, why do I exist?”",
+        "en": "And she said, “If the pain of pregnancy be so great, why is it that I longed and prayed to become pregnant?” (Genesis Rabbah 63:6).",
+        "credit": "rashi"},
+    "Rashi on Genesis 28:9:1": {
+        "label": "Rashi on Genesis 28:9", "kind": RASHI, "n": "The sister of Nebaioth: how old was Jacob?",
+        "he_until": "שֶׁאַחַר שֶׁקִּבֵּל הַבְּרָכוֹת נִטְמַן בְּבֵית עֵבֶר י\"ד שָׁנִים", "en_until": "concealed himself in Eber’ School for fourteen years (Megillah 17a).",
+        "add": " <i>[The comment goes on: because he spent those years studying, he was not punished for being away from his father.]</i>", "credit": "rashi"},
+    "Bereshit Rabbah 68:10": {
+        "label": "B’reishit Rabbah 68:10", "kind": MIDRASH, "n": "Why the sun set early", "credit": "midrash"},
+    "Bereshit Rabbah 68:13": {
+        "label": "B’reishit Rabbah 68:13", "kind": MIDRASH, "n": "Rabbi Yehoshua ben Levi: the dream as exile",
+        "he_until": "עבדוהי די אלהא עלאה פקו ואתו", "en_until": "(Daniel 3:26).",
+        "add": " <i>[The midrash goes on to read the angels as the prophet Daniel.]</i>", "credit": "midrash"},
+    "Vayikra Rabbah 29:2 (four kingdoms)": {
+        "from": "Vayikra Rabbah 29:2", "label": "Vayikra Rabbah 29:2", "kind": MIDRASH, "n": "Rabbi Shmuel bar Naḥman: four empires on the ladder",
+        "he_from": "אָמַר רַבִּי שְׁמוּאֵל בַּר נַחְמָן אֵלּוּ שָׂרֵי", "he_until": "וְאִם בֵּין כּוֹכָבִים שִׂים קִנֶּךָ",
+        "en_from": "Rabbi Shmuel bar Naḥman said: These are the guardian angels", "en_until": "(Obadiah 1:4).", "credit": "midrash"},
+    "Berakhot 26b (Jacob’s prayer)": {
+        "from": "Berakhot 26b", "segments": [5, 6, 7], "label": "Berakhot 26b", "kind": TALMUD, "n": "The patriarchs and the three daily prayers", "credit": "talmud"},
+    "Ramban on Genesis 28:12:1": {
+        "label": "Ramban on Genesis 28:12", "kind": RAMBAN, "n": "And behold a ladder",
+        "he_from": "הֶרְאָהוּ בַּחֲלוֹם הַנְּבוּאָה", "he_until": "לשמרך בכל דרכיך\"",
+        "en_from": "In a prophetic dream", "en_until": "to keep thee in all thy ways.",
+        "add": " <i>[Ramban then brings Rabbi Eliezer’s reading: the ladder showed Jacob four empires rising and falling.]</i>", "credit": "ramban"},
+    "Ramban on Genesis 28:17 (Rashi)": {
+        "from": "Ramban on Genesis 28:17:1", "label": "Ramban on Genesis 28:17", "kind": RAMBAN, "n": "Ramban reads Rashi, and disagrees",
+        "he_from": "וְכָתַב רַשִׁ\"י", "he_until": "והאמצע איננו מורה על דבר יותר מכלו",
+        "en_from": "Rashi comments,", "en_until": "beyond that of its whole?",
+        "add": " <i>[He goes on to offer his own reading of the midrashim, and ends: no midrash says, as Rashi did, that Mount Moriah moved.]</i>", "credit": "ramban"},
+    "Ramban on Genesis 28:18:1": {
+        "label": "Ramban on Genesis 28:18", "kind": RAMBAN, "n": "And he set it up for a pillar",
+        "he_from": "כְּבָר פֵּרְשׁוּ", "en_from": "Our Rabbis have explained", "credit": "ramban"},
+    "Ramban on Genesis 28:20:1": {
+        "label": "Ramban on Genesis 28:20", "kind": RAMBAN, "n": "If God will be with me",
+        "he_from": "לְשׁוֹן רַשִׁ\"י", "en_from": "Rashi comments:", "credit": "ramban"},
+    "Ramban on Genesis 28:21:1": {
+        "label": "Ramban on Genesis 28:21", "kind": RAMBAN, "n": "Then the Eternal shall be my God",
+        "he_from": "אֵינֶנּוּ תְּנַאי", "en_from": "This is not a condition", "credit": "ramban"},
+    "Guide 1:15": {
+        "from": "Guide for the Perplexed 1:15", "label": "Guide for the Perplexed 1:15", "kind": GUIDE, "n": "Natsav and yatsav: to stand", "credit": "guide"},
+    "Guide, Introduction": {
+        "from": "Guide for the Perplexed, Introduction (Sefaria: Prefatory Remarks 22-23)", "label": "Guide for the Perplexed, Introduction", "kind": GUIDE,
+        "n": "Two kinds of prophetic parable", "credit": "guide"},
     "Rashi on Genesis 3:8:1": {
         "label": "Rashi on Genesis 3:8", "kind": RASHI, "n": "Rashi on his own method, at Genesis 3:8",
         "he_until": "דָבָר דָּבוּר עַל אׇפְנָיו", "en_until": "in a manner that fits in with them.",
@@ -211,7 +295,7 @@ for ref in refs:
             if not e:
                 missing.append(v)
                 continue
-            verses.append({"n": v.replace("Genesis ", ""), "he": norm_he(e.get("he", "")), "en": norm_en(e.get("en", ""))})
+            verses.append({"n": v.split(" ", 1)[1] if ref.startswith("Genesis") else v, "he": norm_he(e.get("he", "")), "en": norm_en(e.get("en", ""))})
         if verses:
             cards[ref] = {"label": ref, "title": ref, "kind": "Torah", "verses": verses, "credit": "tanakh"}
         continue
@@ -220,10 +304,15 @@ for ref in refs:
     if not meta and rashi:
         meta = {"label": f"Rashi on Genesis {rashi.group(1)}:{rashi.group(2)}", "kind": RASHI, "credit": "rashi"}
     e = packet.get(meta.get("from", ref)) if meta else None
-    if not (e and meta):
+    if meta and meta.get("parts"):
+        e = {}
+    if meta is None or e is None:
         missing.append(ref)
         continue
-    if meta.get("segments"):   # Talmud: whole numbered segments, English with the translator's bold
+    if meta.get("parts"):      # several consecutive comments shown as one
+        he = " ".join(packet[k]["he"] for k in meta["parts"])
+        en = " ".join(rashi_en(packet[k]["en"])[1] if k.startswith("Rashi on") else packet[k]["en"] for k in meta["parts"])
+    elif meta.get("segments"):   # Talmud: whole numbered segments, English with the translator's bold
         segs = [e["segments"][n - 1] for n in meta["segments"]]
         he = " ".join(s["he"] for s in segs)
         en = " ".join(s.get("en_html") or s["en"] for s in segs)
@@ -232,7 +321,7 @@ for ref in refs:
         if meta.get("he_from") or meta.get("he_until"): he = slice_he(he, meta.get("he_from"), meta.get("he_until"))
         if meta.get("en_from") or meta.get("en_until"): en = slice_en(en, meta.get("en_from"), meta.get("en_until"))
     n = meta.get("n", "")
-    if ref.startswith("Rashi on"):
+    if ref.startswith("Rashi on") and not meta.get("parts"):
         head, en = rashi_en(en)
         n = n or head
     en = meta.get("en") or norm_en(en.replace("\n", " ").replace("return journey I learnt", "return journey. I learnt"))

@@ -75,3 +75,80 @@ Small gray references are the source cards a teacher can open during the visit. 
 19. **The rung:** “Sometimes loving someone means letting them go.”
    - **The secret:** In Hebrew, I told Jacob to stay away “a few days.” It became twenty years.
 20. Thank you for visiting. Isaac can tell you about the blessing, and Esau has his own side of the story. *(Suggests: Isaac, Esau, Jacob.)*
+
+## Grades 5–7
+
+*The fuller story, the sources, debate, and typed questions.*
+
+1. I’m Rebekah, Rivkah in Hebrew. In this story I’m the one who chooses. I chose to leave home. I chose which son would get the blessing. And I chose to send that son away.
+2. It started at a well. A stranger asked me for a drink, and I said, “Drink, my lord.” Then I said, “I will also draw for your camels, until they finish drinking.” He had ten camels. <sub>Genesis 24:10 · Genesis 24:17–20</sub>
+3. He had come to find a wife for Isaac. My family asked me, “Will you go with this man?” I answered with one Hebrew word: *Eilech*, “I will.” <sub>Genesis 24:14 · Genesis 24:58</sub>
+4. Years later I was carrying twins, and “the children struggled in her womb.” I said, “If so, why do I exist?” and I went to inquire of God. <sub>Genesis 25:22</sub>
+5. The answer came to me: “Two nations are in your womb… And the older shall serve the younger.” <sub>Genesis 25:23</sub>
+6. **Rebekah asks the group to discuss:** Imagine knowing something about your children’s future that no one else knows. What would you do with it?
+   - *Teacher: Take a few answers. Then tap to hear Rebekah.*
+   - Then Rebekah answers: I kept it. And when the moment came, I acted on it.
+7. The boys grew up, and the Torah says, “Isaac favored Esau because he had a taste for game; but Rebekah favored Jacob.” Notice: it gives a reason for Isaac’s love. It gives none for mine. <sub>Genesis 25:28</sub>
+8. “Rebekah had been listening as Isaac spoke to his son Esau.” He was about to bless him. So I told Jacob, “Now, my son, listen carefully as I instruct you.” <sub>Genesis 27:5 · Genesis 27:8</sub>
+9. Jacob was afraid: “If my father touches me, I shall appear to him as a trickster and bring upon myself a curse, not a blessing.” I answered, “Your curse, my son, be upon me!” <sub>Genesis 27:12 · Genesis 27:13</sub>
+10. I cooked the dish Isaac liked, dressed Jacob in Esau’s best clothes, and covered his hands and neck with the skins of the young goats. <sub>Genesis 27:14–17</sub>
+11. **Rebekah asks the group to discuss:** Was I right? Put me on trial.
+   - *Teacher: Split the group into prosecution and defense: two minutes to prepare, one minute each. Then tap to hear Rebekah.*
+   - Then Rebekah answers: My defense: God told me the older would serve the younger. I made sure it happened. <sub>Genesis 25:23</sub> / My sentence: my son had to run for his life, and the Torah never shows me with him again.
+12. When I heard that Esau planned to kill Jacob, I said, “Flee at once to Haran, to my brother Laban. Stay with him awhile, until your brother’s fury subsides.” <sub>Genesis 27:42 · Genesis 27:43 · Genesis 27:44</sub>
+13. “Awhile” in Hebrew is *yamim achadim*, “a few days.” It became twenty years. <sub>Genesis 27:44 · Genesis 31:41</sub>
+14. **Rebekah asks the group to discuss:** Then I said, “Let me not lose you both in one day!” Both? Jacob was the one in danger. Who else was I afraid to lose?
+   - *Teacher: Let the group work it out. Then tap to hear Rebekah.*
+   - Then Rebekah answers: Esau. Rashi imagines it this way: if Esau attacks Jacob and Jacob kills him, Esau’s sons will rise and kill Jacob. One fight, and I bury both of my boys. <sub>Rashi on Genesis 27:45</sub> / When your two children are at war, a parent can’t win.
+15. Then I went to Isaac. I didn’t mention Esau’s threat. I said, “I am disgusted with my life because of the Hittite women.” And Isaac called Jacob in, blessed him again, and sent him to my family. <sub>Genesis 27:46 · Genesis 28:1–5</sub>
+16. **Rebekah:** Ask me anything. Choose a question, or type your own. *(Typing is on: typed questions are matched to these.)*
+   1. *Did you ever see Jacob again?* → The Torah never tells us. It doesn’t even tell us when I died. / Rashi says I kept my promise to send for him: I sent my old nurse Deborah to tell Jacob to come home. She died on the way, near Beit El, and they named the oak where she was buried Allon-bacuth, the Oak of Weeping. <sub>Genesis 35:8 · Rashi on Genesis 35:8</sub> / And Rashi says that there, Jacob learned that I had died too. <sub>Rashi on Genesis 35:8</sub>
+   2. *How did you know what Esau was planning?* → Good question. The Torah says Esau said it “to himself.” Then it says his words “were reported to Rebekah.” Reported by whom? <sub>Genesis 27:41 · Genesis 27:42</sub> / Rashi says the holy spirit told me what Esau was thinking in his heart. <sub>Rashi on Genesis 27:42</sub>
+   3. *Did you tell Isaac what God told you?* → The Torah never says. What do you think would have happened if I had?
+   4. *Why did you love Jacob more?* → The Torah gives no reason. It says only, “but Rebekah favored Jacob.” <sub>Genesis 25:28</sub> / Maybe it was what God told me before they were born. <sub>Genesis 25:23</sub>
+   5. *Did you ever talk to Esau about it?* → The Torah never records a single word between Esau and me. Not one.
+   6. *Who was Deborah?* → My nurse. When I left home, “they sent off their sister Rebekah and her nurse.” The Torah names her only when she dies, years later, near Beit El. <sub>Genesis 24:59 · Genesis 35:8</sub>
+   7. *Where are you buried?* → In the cave of Machpelah, where Abraham and Sarah are buried. Jacob mentions it at the end of his life: “there Isaac and his wife Rebekah were buried.” <sub>Genesis 49:29–31</sub>
+17. **The rung:** “I sent him away to keep him safe.”
+   - **Ask your parents:** What’s the hardest thing you’ve ever done because you love someone?
+18. You’ve heard me. Now hear Isaac, who blessed Jacob twice, and Esau, who wept. *(Suggests: Isaac, Esau, Jacob.)*
+
+## Parents
+
+*Adult depth, with the Hebrew and the commentators.*
+
+1. I’m Rebekah. I’d like to speak with you parent to parent, about sending a child away.
+2. I left home myself. My brother and mother asked that I stay “some ten days.” When they asked me, “Will you go with this man?” I said, אֵלֵךְ  “I will.” <sub>Genesis 24:55 · Genesis 24:58</sub>
+3. My pregnancy was so hard that I said, אִם־כֵּן לָמָּה זֶּה אָנֹכִי  “If so, why do I exist?” No one is sure what the words mean. Rashi heard them as: if the pain is this great, why did I long and pray to become pregnant? <sub>Genesis 25:22 · Rashi on Genesis 25:22</sub>
+4. I went to inquire of God, and the answer came to me: “Two nations are in your womb… And the older shall serve the younger.” <sub>Genesis 25:23</sub>
+5. Then the Torah says, “Isaac favored Esau because he had a taste for game; but Rebekah favored Jacob.” In Hebrew, Isaac’s love is told in the past tense and comes with a reason. Mine is in the present tense and comes with none: וְרִבְקָה אֹהֶבֶת אֶת־יַעֲקֹב  <sub>Genesis 25:28</sub>
+6. **Rebekah asks the group to discuss:** Is a love with a reason different from a love without one? What did each of my sons hear?
+   - *Teacher: Pairs first. Then take a few answers and tap to hear Rebekah.*
+   - Then Rebekah answers: Children notice. Both of my sons knew exactly where they stood with each of us.
+7. When I heard Isaac promise Esau his blessing, I made a plan. Jacob feared he would earn a curse. I told him, עָלַי קִלְלָתְךָ בְּנִי  “Your curse, my son, be upon me!” <sub>Genesis 27:5–12 · Genesis 27:13</sub>
+8. **Rebekah asks the group to discuss:** Faith in what God told me, favoritism, or both? What would you have done?
+   - *Teacher: Let people disagree. Then tap to hear Rebekah.*
+   - Then Rebekah answers: I had God’s word, and I acted on it. <sub>Genesis 25:23</sub> / And I paid for it with my son.
+9. When I learned that Esau meant to kill his brother, I told Jacob to flee to my brother Laban and stay there יָמִים אֲחָדִים  “a few days.” The Revised JPS translates it “awhile.” <sub>Genesis 27:42–44</sub>
+10. The same two words come back later. Jacob served seven years for Rachel, “and they seemed to him but a few days.” For him, love made seven years into a few days. For me, a few days became twenty years. <sub>Genesis 29:20 · Genesis 31:41</sub>
+11. And I said, לָמָה אֶשְׁכַּל גַּם־שְׁנֵיכֶם יוֹם אֶחָד  “Let me not lose you both in one day!” Rashi explains: if Esau attacks and Jacob kills him, Esau’s sons will kill Jacob. I would bury both. <sub>Genesis 27:45 · Rashi on Genesis 27:45</sub>
+12. I went to Isaac and spoke only of the Hittite women. He blessed Jacob again, knowingly this time, and sent him off. <sub>Genesis 27:46 · Genesis 28:1–5</sub>
+13. In that verse, the Torah calls me אֵם יַעֲקֹב וְעֵשָׂו  “mother of Jacob and Esau.” Rashi wrote, “I do not know what the addition of these words is intended to tell us.” I think I know. On the day one son left because of the other, I was still the mother of both. <sub>Genesis 28:5 · Rashi on Genesis 28:5</sub>
+14. **Rebekah asks the group to discuss:** When you imagine your child leaving home someday, what do you most want them to carry with them?
+   - *Teacher: This one is for pairs, with no need to share with the room. Then tap to hear Rebekah.*
+   - Then Rebekah answers: I sent mine with a promise: “Then I will fetch you from there.” I hope he heard the love in it. <sub>Genesis 27:45</sub>
+15. The Torah never shows me with Jacob again, and never records my death. Rashi says I sent my nurse Deborah to call him home, that she died on the way, and that under the oak where they buried her, Jacob learned I had died too. <sub>Genesis 35:8 · Rashi on Genesis 35:8 · Rashi on Genesis 35:8</sub>
+16. Rashi also says why the Torah keeps quiet about my death: so that people would not curse the mother who gave birth to Esau. <sub>Rashi on Genesis 35:8</sub>
+17. **Rebekah:** Ask Rebekah anything. Choose a question, or type your own. *(Typing is on: typed questions are matched to these.)*
+   1. *Did you ever see Jacob again?* → The Torah never shows it. Rashi says my nurse Deborah died on the way to bring him home, and that at her grave Jacob learned I had died too. <sub>Genesis 35:8 · Rashi on Genesis 35:8 · Rashi on Genesis 35:8</sub>
+   2. *Why did you favor Jacob?* → The Torah gives no reason, only the present tense: I love him. And there was what God told me before my sons were born. <sub>Genesis 25:28 · Genesis 25:23</sub>
+   3. *Did you tell Isaac what God told you?* → The Torah never says. It never shows Isaac and me talking about our sons’ futures at all, until the day I sent Jacob away.
+   4. *How did you know what Esau was planning?* → The Torah says Esau said it “to himself,” and then that his words “were reported to Rebekah.” Rashi says the holy spirit told me what he was thinking in his heart. <sub>Genesis 27:41 · Genesis 27:42 · Rashi on Genesis 27:42</sub>
+   5. *Were you a prophet?* → When I went to inquire, God answered me. Rashi says the answer came through a messenger, Shem, and that later the holy spirit showed me Esau’s thoughts. <sub>Genesis 25:23 · Rashi on Genesis 25:23 · Rashi on Genesis 27:42</sub>
+   6. *Did you ever talk to Esau about it?* → The Torah never records a single word between Esau and me. Not one.
+   7. *Why did Isaac love Esau?* → The Torah says, “because he had a taste for game,” literally, because game was in his mouth. Rashi gives two readings: the Targum’s, that the game was in Isaac’s mouth, and a midrash that Esau “hunted” his father with his words. <sub>Genesis 25:28 · Rashi on Genesis 25:28</sub>
+   8. *Who was Deborah?* → My nurse. When I left home, “they sent off their sister Rebekah and her nurse.” The Torah names her only when she dies, near Beit El. <sub>Genesis 24:59 · Genesis 35:8</sub>
+   9. *Where are you buried?* → In the cave of Machpelah. Jacob says it at the end of his life: “there Isaac and his wife Rebekah were buried.” <sub>Genesis 49:29–31</sub>
+18. **The rung:** “I said “a few days.” It became twenty years.” יָמִים אֲחָדִים
+   - **Ask your child:** What do you want to take with you when you leave home someday?
+19. Now visit Isaac, who blessed our son twice, the second time knowing exactly who he was. *(Suggests: Isaac, Jacob, Esau.)*

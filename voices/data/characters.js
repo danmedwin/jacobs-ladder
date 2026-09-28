@@ -98,7 +98,7 @@ VOICES.characters.esau = {
            extra: 'Twenty years later, I ran to hug my brother, and we both cried.' },
     g57: { line: 'Have you only one blessing?',
            extra: 'Is there enough blessing in our family for everyone?' },
-    parents: { line: 'Have you but one blessing, Father?',
+    parents: { line: 'Have you but one blessing, Father?', he: 'הַבְרָכָה אַחַת הִוא־לְךָ אָבִי',
                extra: 'Do you ever feel like there isn’t enough of me to go around?' }
   }
 };
@@ -120,7 +120,7 @@ VOICES.characters.rebekah = {
            extra: 'In Hebrew, I told Jacob to stay away “a few days.” It became twenty years.' },
     g57: { line: 'I sent him away to keep him safe.',
            extra: 'What’s the hardest thing you’ve ever done because you love someone?' },
-    parents: { line: 'I said “a few days.” It became twenty years.',
+    parents: { line: 'I said “a few days.” It became twenty years.', he: 'יָמִים אֲחָדִים',
                extra: 'What do you want to take with you when you leave home someday?' }
   }
 };
@@ -139,7 +139,7 @@ VOICES.characters.isaac = {
            extra: 'I blessed Jacob twice: once when he tricked me, and once when he left home.' },
     g57: { line: 'The second blessing was the one he didn’t have to steal.',
            extra: 'What blessing would you give me as I grow up?' },
-    parents: { line: 'May God give you the blessing of Abraham.',
+    parents: { line: 'May God give you the blessing of Abraham.', he: 'וְיִתֶּן־לְךָ אֶת־בִּרְכַּת אַבְרָהָם',
                extra: 'What blessing would you want from me?' }
   }
 };
@@ -161,7 +161,7 @@ VOICES.characters.angel = {
            extra: 'The Sages said the angels went up to look at Jacob’s picture in heaven, then came down and found him sleeping.' },
     g57: { line: 'We went up and down to look at him.',
            extra: 'Where do you see a little bit of God in me?' },
-    parents: { line: 'They looked for his face in heaven and found him asleep on earth.',
+    parents: { line: 'They looked for his face in heaven and found him asleep on earth.', he: 'עֹלִים לְמַעְלָה וְרוֹאִים אִיקוֹנִין שֶׁלּוֹ, וְיֹרְדִים לְמַטָּה וּמוֹצְאִים אוֹתוֹ יָשֵׁן',
                extra: 'Where do you feel closest to God?' }
   }
 };
@@ -210,7 +210,7 @@ VOICES.characters.sages = {
            extra: 'Sulam (ladder) and Sinai add up to the same number: 130!' },
     g57: { line: 'Would you have climbed?',
            extra: 'Would you have climbed? Why or why not?' },
-    parents: { line: 'Would you have climbed?',
+    parents: { line: 'Would you have climbed?', he: 'אַף אַתָּה עוֹלֶה',
                extra: 'Would you have climbed? What would have held you back?' }
   }
 };
@@ -226,7 +226,7 @@ VOICES.characters.ramban = {
   rung: {
     g57: { line: 'You are in God’s own care.',
            extra: 'When have you felt taken care of by something bigger than you?' },
-    parents: { line: 'You will be God’s own portion.',
+    parents: { line: 'You will be God’s own portion.', he: 'כִּי חֵלֶק ה׳ עַמּוֹ, יַעֲקֹב חֶבֶל נַחֲלָתוֹ',
                extra: 'When do you feel protected?' }
   }
 };

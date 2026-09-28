@@ -66,8 +66,8 @@ for (const id of Object.keys(V.scripts)) {
   fs.writeFileSync(path.join(OUT, id + '.md'), book);
 }
 
-const rows = ['# Every rung, draft', '',
-  'Each visit ends with a rung: one line to carry back to the family, plus a motion (K–2), a secret (3–4), a question for parents (5–7), or a question for your child (parents). Rungs marked *(draft)* belong to visits that are not written yet.', ''];
+const rows = ['# Every rung', '',
+  'Each visit ends with a rung: one line to carry back to the family, plus a motion (K–2), a secret (3–4), a question for parents (5–7), or a question for your child (parents). Any rung marked *(draft)* belongs to a visit that is not written yet.', ''];
 for (const lv of ['k2', 'g34', 'g57', 'parents']) {
   const L = V.levels[lv];
   rows.push(`## ${L.label}`, '', `| Character | Rung | ${L.extraLabel} |`, '|---|---|---|');
