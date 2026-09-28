@@ -69,7 +69,7 @@ VOICES.characters.jacob = {
     g57: { line: 'God was in this place, and I didn’t know it.',
            extra: 'When have you been somewhere ordinary and only later realized it was special?' },
     parents: { line: 'Surely God is present in this place, and I did not know it!',
-               he: 'אָכֵן יֵשׁ יְהוָה בַּמָּקוֹם הַזֶּה וְאָנֹכִי לֹא יָדָעְתִּי',
+               he: 'אָכֵן יֵשׁ ה׳ בַּמָּקוֹם הַזֶּה וְאָנֹכִי לֹא יָדָעְתִּי',
                extra: 'Where is a place that feels special to you? Did you know it was special the first time you were there?' }
   }
 };

@@ -40,12 +40,21 @@ cards["kushner"] = {
 
 
 import html as _html
+
+# The divine name is shown as ה׳ (Rabbi Medwin's choice for this tool), with any prefix kept: וַיהוָה -> וַה׳.
+HE_MARKS = "\u0591-\u05BD\u05BF\u05C1\u05C2\u05C4\u05C5\u05C7"   # vowels and accents only, not maqaf or sof pasuq
+TETRA = re.compile(r"(?<![\u05D0-\u05EA" + HE_MARKS + r"])((?:[ובכלמשה][" + HE_MARKS + r"]*)?)"
+                   r"י[" + HE_MARKS + r"]*ה[" + HE_MARKS + r"]*ו[" + HE_MARKS + r"]*ה[" + HE_MARKS + r"]*(?![\u05D0-\u05EA])")
+def divine_name(t):
+    return TETRA.sub(lambda m: m.group(1) + "ה\u05F3", t)
+
 def norm_he(t):
     t = _html.unescape(t or "")
     t = re.sub(r"<[^>]+>", "", t)
     t = re.sub(r"\{[^}]*\}", "", t)                  # paragraph markers {פ} {ס}
     t = re.sub(r"\([^)]*\)\s*\[([^\]]*)\]", r"\1", t)  # ketiv (..) [qere] -> qere
     t = re.sub(r"[\u0591-\u05AF\u05BD\u05C0]", "", t)   # cantillation, meteg, paseq
+    t = divine_name(t)
     return re.sub(r"\s+", " ", t).strip()
 def norm_en(t):
     t = t or ""

@@ -142,7 +142,7 @@ Small gray references are the source cards a teacher can open during the visit. 
 9. Then the dream: a *sulam* set on the ground with its top reaching the sky, and angels of God going up and down *bo*, on it. The Hebrew can also mean “on him.” <sub>Genesis 28:12</sub>
 10. God stood *alav*, beside me or above it, and renewed Abraham’s promises to me: the land, descendants like the dust of the earth, and blessing for all the families of the earth. <sub>Genesis 28:13 · Genesis 28:14</sub>
 11. Then the words I needed most: “Remember, I am with you: I will protect you wherever you go and will bring you back to this land. I will not leave you until I have done what I have promised you.” <sub>Genesis 28:15</sub>
-12. I woke and said, אָכֵן יֵשׁ יְהוָה בַּמָּקוֹם הַזֶּה וְאָנֹכִי לֹא יָדָעְתִּי  “Surely God is present in this place, and I did not know it!” <sub>Genesis 28:16</sub>
+12. I woke and said, אָכֵן יֵשׁ ה׳ בַּמָּקוֹם הַזֶּה וְאָנֹכִי לֹא יָדָעְתִּי  “Surely God is present in this place, and I did not know it!” <sub>Genesis 28:16</sub>
 13. **Jacob asks the group to discuss:** The Hebrew has an extra “I”: *v’anochi lo yadati*, “and I, I did not know.” Why might the text need it?
    - *Teacher: Take a few ideas. Then tap to hear Jacob.*
    - Then Jacob answers: Maybe because the “I” was the problem. I was so full of myself, my fear, my guilt, my plans, that there was no room left to notice God. / Lawrence Kushner built a whole book around that extra word: *God Was in This Place & I, i Did Not Know*. <sub>Kushner</sub>
@@ -160,6 +160,6 @@ Small gray references are the source cards a teacher can open during the visit. 
    5. *What happened to your mother?* → The Torah never tells of a reunion, or even of her death. / Years later, when her nurse Deborah dies, the place is named Allon-bacuth, the Oak of Weeping. Rashi says that is where I learned my mother had died. <sub>Genesis 35:8 · Rashi on Genesis 35:8</sub>
    6. *Did you keep your vow?* → I came back to Beit El years later and built an altar there, as God told me to. There God blessed me and confirmed my name, Israel. <sub>Genesis 35:1–15</sub>
    7. *Why did you pour oil on the stone?* → To set it apart. The stone that held my head became the marker of God’s house. <sub>Genesis 28:18 · Genesis 28:22</sub>
-19. **The rung:** “Surely God is present in this place, and I did not know it!” אָכֵן יֵשׁ יְהוָה בַּמָּקוֹם הַזֶּה וְאָנֹכִי לֹא יָדָעְתִּי
+19. **The rung:** “Surely God is present in this place, and I did not know it!” אָכֵן יֵשׁ ה׳ בַּמָּקוֹם הַזֶּה וְאָנֹכִי לֹא יָדָעְתִּי
    - **Ask your child:** Where is a place that feels special to you? Did you know it was special the first time you were there?
 20. You’ve heard me as a son. Visit my mother and father to hear what it was like to send me away. *(Suggests: Rebekah, Isaac, Ramban, Rambam.)*

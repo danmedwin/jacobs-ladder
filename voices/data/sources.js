@@ -178,7 +178,7 @@ Object.assign(VOICES.sources, {
   "verses": [
    {
     "n": "28:13",
-    "he": "וְהִנֵּה יְהֹוָה נִצָּב עָלָיו וַיֹּאמַר אֲנִי יְהֹוָה אֱלֹהֵי אַבְרָהָם אָבִיךָ וֵאלֹהֵי יִצְחָק הָאָרֶץ אֲשֶׁר אַתָּה שֹׁכֵב עָלֶיהָ לְךָ אֶתְּנֶנָּה וּלְזַרְעֶךָ׃",
+    "he": "וְהִנֵּה ה׳ נִצָּב עָלָיו וַיֹּאמַר אֲנִי ה׳ אֱלֹהֵי אַבְרָהָם אָבִיךָ וֵאלֹהֵי יִצְחָק הָאָרֶץ אֲשֶׁר אַתָּה שֹׁכֵב עָלֶיהָ לְךָ אֶתְּנֶנָּה וּלְזַרְעֶךָ׃",
     "en": "And standing beside him was <span class=\"sc\">God</span>, who said, “I am the <span class=\"sc\">Eternal</span>, the God of your father Abraham and the God of Isaac: the ground on which you are lying I will assign to you and to your offspring."
    }
   ],
@@ -204,7 +204,7 @@ Object.assign(VOICES.sources, {
   "verses": [
    {
     "n": "28:16",
-    "he": "וַיִּיקַץ יַעֲקֹב מִשְּׁנָתוֹ וַיֹּאמֶר אָכֵן יֵשׁ יְהֹוָה בַּמָּקוֹם הַזֶּה וְאָנֹכִי לֹא יָדָעְתִּי׃",
+    "he": "וַיִּיקַץ יַעֲקֹב מִשְּׁנָתוֹ וַיֹּאמֶר אָכֵן יֵשׁ ה׳ בַּמָּקוֹם הַזֶּה וְאָנֹכִי לֹא יָדָעְתִּי׃",
     "en": "Jacob awoke from his sleep and said, “Surely <span class=\"sc\">God</span> is present in this place, and I did not know it!”"
    }
   ],
@@ -227,7 +227,7 @@ Object.assign(VOICES.sources, {
    },
    {
     "n": "27:20",
-    "he": "וַיֹּאמֶר יִצְחָק אֶל־בְּנוֹ מַה־זֶּה מִהַרְתָּ לִמְצֹא בְּנִי וַיֹּאמֶר כִּי הִקְרָה יְהֹוָה אֱלֹהֶיךָ לְפָנָי׃",
+    "he": "וַיֹּאמֶר יִצְחָק אֶל־בְּנוֹ מַה־זֶּה מִהַרְתָּ לִמְצֹא בְּנִי וַיֹּאמֶר כִּי הִקְרָה ה׳ אֱלֹהֶיךָ לְפָנָי׃",
     "en": "Isaac said to his son, “How did you succeed so quickly, my son?” And he said, “Because the <span class=\"sc\">Eternal</span> your God granted me good fortune.”"
    },
    {
@@ -262,7 +262,7 @@ Object.assign(VOICES.sources, {
    },
    {
     "n": "27:27",
-    "he": "וַיִּגַּשׁ וַיִּשַּׁק־לוֹ וַיָּרַח אֶת־רֵיחַ בְּגָדָיו וַיְבָרְכֵהוּ וַיֹּאמֶר רְאֵה רֵיחַ בְּנִי כְּרֵיחַ שָׂדֶה אֲשֶׁר בֵּרְכוֹ יְהֹוָה׃",
+    "he": "וַיִּגַּשׁ וַיִּשַּׁק־לוֹ וַיָּרַח אֶת־רֵיחַ בְּגָדָיו וַיְבָרְכֵהוּ וַיֹּאמֶר רְאֵה רֵיחַ בְּנִי כְּרֵיחַ שָׂדֶה אֲשֶׁר בֵּרְכוֹ ה׳׃",
     "en": "and he went up and kissed him. And he smelled his clothes and he blessed him, saying, “Ah, the smell of my son is like the smell of the fields that <span class=\"sc\">God</span> has blessed."
    },
    {
@@ -484,7 +484,7 @@ Object.assign(VOICES.sources, {
    },
    {
     "n": "28:21",
-    "he": "וְשַׁבְתִּי בְשָׁלוֹם אֶל־בֵּית אָבִי וְהָיָה יְהֹוָה לִי לֵאלֹהִים׃",
+    "he": "וְשַׁבְתִּי בְשָׁלוֹם אֶל־בֵּית אָבִי וְהָיָה ה׳ לִי לֵאלֹהִים׃",
     "en": "and I return safe to my father’s house—the <span class=\"sc\">Eternal</span> shall be my God."
    },
    {
@@ -693,7 +693,7 @@ Object.assign(VOICES.sources, {
    },
    {
     "n": "27:7",
-    "he": "הָבִיאָה לִּי צַיִד וַעֲשֵׂה־לִי מַטְעַמִּים וְאֹכֵלָה וַאֲבָרֶכְכָה לִפְנֵי יְהֹוָה לִפְנֵי מוֹתִי׃",
+    "he": "הָבִיאָה לִּי צַיִד וַעֲשֵׂה־לִי מַטְעַמִּים וְאֹכֵלָה וַאֲבָרֶכְכָה לִפְנֵי ה׳ לִפְנֵי מוֹתִי׃",
     "en": "‘Bring me some game and prepare a dish for me to eat, that I may bless you, with <span class=\"sc\">God</span>’s approval, before I die.’"
    },
    {
@@ -855,7 +855,7 @@ Object.assign(VOICES.sources, {
   "verses": [
    {
     "n": "25:23",
-    "he": "וַיֹּאמֶר יְהֹוָה לָהּ שְׁנֵי גוֹיִם בְּבִטְנֵךְ וּשְׁנֵי לְאֻמִּים מִמֵּעַיִךְ יִפָּרֵדוּ וּלְאֹם מִלְאֹם יֶאֱמָץ וְרַב יַעֲבֹד צָעִיר׃",
+    "he": "וַיֹּאמֶר ה׳ לָהּ שְׁנֵי גוֹיִם בְּבִטְנֵךְ וּשְׁנֵי לְאֻמִּים מִמֵּעַיִךְ יִפָּרֵדוּ וּלְאֹם מִלְאֹם יֶאֱמָץ וְרַב יַעֲבֹד צָעִיר׃",
     "en": "and <span class=\"sc\">God</span> answered her,<br>“Two nations are in your womb,<br>Two separate peoples shall issue from your body;<br>One people shall be mightier than the other,<br>And the older shall serve the younger.”"
    }
   ],

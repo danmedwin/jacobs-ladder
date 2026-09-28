@@ -186,7 +186,7 @@ VOICES.scripts.jacob = {
     { say: 'Then the dream: a <i>sulam</i> set on the ground with its top reaching the sky, and angels of God going up and down <i>bo</i>, on it. The Hebrew can also mean “on him.”', src: 'Genesis 28:12' },
     { say: 'God stood <i>alav</i>, beside me or above it, and renewed Abraham’s promises to me: the land, descendants like the dust of the earth, and blessing for all the families of the earth.', src: ['Genesis 28:13', 'Genesis 28:14'] },
     { say: 'Then the words I needed most: “Remember, I am with you: I will protect you wherever you go and will bring you back to this land. I will not leave you until I have done what I have promised you.”', src: 'Genesis 28:15' },
-    { say: 'I woke and said, <span class="he-inline" lang="he" dir="rtl">אָכֵן יֵשׁ יְהוָה בַּמָּקוֹם הַזֶּה וְאָנֹכִי לֹא יָדָעְתִּי</span> “Surely God is present in this place, and I did not know it!”', src: 'Genesis 28:16' },
+    { say: 'I woke and said, <span class="he-inline" lang="he" dir="rtl">אָכֵן יֵשׁ ה׳ בַּמָּקוֹם הַזֶּה וְאָנֹכִי לֹא יָדָעְתִּי</span> “Surely God is present in this place, and I did not know it!”', src: 'Genesis 28:16' },
     { ask: 'The Hebrew has an extra “I”: <i>v’anochi lo yadati</i>, “and I, I did not know.” Why might the text need it?', discuss: true,
       tip: 'Take a few ideas. Then tap to hear Jacob.',
       reveal: [

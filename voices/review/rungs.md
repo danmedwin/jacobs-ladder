@@ -42,7 +42,7 @@ Each visit ends with a rung: one line to carry back to the family, plus a motion
 
 | Character | Rung | Ask your child |
 |---|---|---|
-| Jacob | Surely God is present in this place, and I did not know it!<br>אָכֵן יֵשׁ יְהוָה בַּמָּקוֹם הַזֶּה וְאָנֹכִי לֹא יָדָעְתִּי | Where is a place that feels special to you? Did you know it was special the first time you were there? |
+| Jacob | Surely God is present in this place, and I did not know it!<br>אָכֵן יֵשׁ ה׳ בַּמָּקוֹם הַזֶּה וְאָנֹכִי לֹא יָדָעְתִּי | Where is a place that feels special to you? Did you know it was special the first time you were there? |
 | Esau *(draft)* | Have you but one blessing, Father? | Do you ever feel like there isn’t enough of me to go around? |
 | Rebekah *(draft)* | I said “a few days.” It became twenty years. | What do you want to take with you when you leave home someday? |
 | Isaac *(draft)* | May God give you the blessing of Abraham. | What blessing would you want from me? |
