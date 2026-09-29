@@ -3,3 +3,5 @@ dream-source/
 voices/ask/node_modules/
 .wrangler/
 voices/ask/.wrangler/
+portraits-source/
+__pycache__/

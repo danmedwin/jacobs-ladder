@@ -6,7 +6,8 @@
    built by voices/tools/ask_context.js), asks Claude, and returns { say, src }.
 
    Setup is in voices/ask/SETUP.md. The Anthropic key lives in this Worker's settings as the
-   secret ANTHROPIC_API_KEY; it never reaches the page. To switch Ask anything off without
+   secret ANTHROPIC_API_KEY, or in the account's Secrets Store, bound under that name; it never
+   reaches the page. To switch Ask anything off without
    deleting anything, add a variable ASK_OFF with the value 1.
 
    Edit this file, not dist/worker.js, then rebuild: cd voices/ask && npm run build */
@@ -48,10 +49,18 @@ function answerText(message) {
   return message.content.slice(start).filter(b => b.type === 'text').map(b => b.text).join('');
 }
 
+// The key: a secret saved on this Worker (a string), or a binding to the account's Secrets Store (read with get())
+async function apiKey(env) {
+  const k = env.ANTHROPIC_API_KEY;
+  if (typeof k === 'string') return k;
+  if (k && typeof k.get === 'function') { try { return (await k.get()) || ''; } catch { return ''; } }
+  return '';
+}
+
 // One question to Claude. Returns { answer } or { status, error } for the page.
-async function askClaude(env, system, question) {
+async function askClaude(env, key, system, question) {
   const client = new Anthropic({
-    apiKey: env.ANTHROPIC_API_KEY,
+    apiKey: key,
     baseURL: env.ANTHROPIC_BASE_URL || undefined,   // only for local testing
     timeout: 40 * 1000,
     maxRetries: 1
@@ -99,19 +108,20 @@ export default {
 
     if (request.method === 'OPTIONS') return new Response(null, { status: allowed ? 204 : 403, headers });
     const address = request.headers.get('CF-Connecting-IP') || 'unknown';
+    const key = await apiKey(env);
     // Opening the Worker's address in a browser shows whether the key is in place;
     // adding ?check=1 asks Claude one tiny question, to test the key, the model, and the answer format.
     if (request.method === 'GET') {
-      const status = { ok: true, ready: Boolean(env.ANTHROPIC_API_KEY), off: env.ASK_OFF === '1' };
+      const status = { ok: true, ready: Boolean(key), off: env.ASK_OFF === '1' };
       if (new URL(request.url).searchParams.get('check') !== '1' || !status.ready) return reply(200, status);
       if (tooMany(address)) return reply(429, { error: 'busy' });
-      const test = await askClaude(env, 'You are testing a connection. Reply with say set to a greeting of five words or fewer, and src empty.', 'Hello?');
+      const test = await askClaude(env, key, 'You are testing a connection. Reply with say set to a greeting of five words or fewer, and src empty.', 'Hello?');
       return reply(test.answer ? 200 : test.status, test.answer ? { ...status, check: 'passed', model: test.model, say: test.answer.say } : { ...status, check: 'failed', error: test.error, detail: test.detail });
     }
     if (request.method !== 'POST') return reply(405, { error: 'method' });
     if (!allowed) return reply(403, { error: 'origin' });
     if (env.ASK_OFF === '1') return reply(503, { error: 'off' });
-    if (!env.ANTHROPIC_API_KEY) return reply(500, { error: 'no-key' });
+    if (!key) return reply(500, { error: 'no-key' });
     if (tooMany(address)) return reply(429, { error: 'busy' });
 
     let body;
@@ -123,7 +133,7 @@ export default {
     if (!res.ok) return reply(404, { error: 'visit' });
     const visit = await res.json();
 
-    const result = await askClaude(env, visit.system, q);
+    const result = await askClaude(env, key, visit.system, q);
     if (!result.answer) return reply(result.status, { error: result.error });
     const say = String(result.answer.say || '').trim();
     if (!say) return reply(502, { error: 'empty' });
