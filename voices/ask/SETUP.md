@@ -37,6 +37,8 @@ You can create a fresh key for this at [console.anthropic.com](https://console.a
 3. Add `?check=1` to the end of the address and open it again. This asks Claude one tiny question. After a few seconds you should see `"check":"passed"`. If it says `failed`, copy what the page shows into chat; it never includes the key.
 4. Send the address to Claude in chat. The address isn’t secret; **don’t send the key**. Claude connects the page to the Worker and publishes when you say so.
 
+The page uses the Worker at `https://voices-ask.dan-medwin.workers.dev/` (set in `voices/index.html` as `window.VOICES_ASK`).
+
 ## 4. Set a spending limit
 
 At [console.anthropic.com](https://console.anthropic.com), open **Settings**, then **Limits**, and set a monthly spend limit, such as $20. A question costs about a penny or two. The first question in each visit costs a few cents more, because it loads that visit’s texts, which are then reused for five minutes. A whole morning should cost a few dollars.
