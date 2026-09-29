@@ -388,6 +388,7 @@
   window.VOICES_ASK = window.VOICES_ASK || '';
 </script>
 <script src="data/characters.js"></script>
+<script src="data/portraits.js"></script>
 <script src="data/sources.js"></script>
 <script src="data/jacob.js"></script>
 <script src="data/esau.js"></script>
@@ -405,6 +406,8 @@
   var V = window.VOICES;
   var MEDIA = window.VOICES_MEDIA || '../dream/media/';
   var ASK = window.VOICES_ASK || '';
+  /* Portraits made by tools/portraits.py; a character without one shows its Hebrew name in the medallion */
+  Object.keys(V.portraits || {}).forEach(function (id) { if (V.characters[id]) V.characters[id].portrait = V.portraits[id]; });
   var app = document.getElementById('app');
   var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 

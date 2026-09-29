@@ -18,10 +18,17 @@ Setup takes about ten minutes. You need your Cloudflare login and an Anthropic A
 
 ## 2. Give it your Anthropic key
 
+Cloudflare never shows a saved key again, so a key saved on another Worker can’t be copied over. Use either way:
+
+**Paste it (simplest).**
 1. Go back to the Worker’s own page (click `voices-ask` near the top).
 2. Open **Settings**, then **Variables and Secrets**, then **Add**.
 3. Set **Type** to **Secret**, **Variable name** to `ANTHROPIC_API_KEY`, and paste your key as the **Value**.
 4. Choose **Deploy** (or **Save**).
+
+You can create a fresh key for this at [console.anthropic.com](https://console.anthropic.com) (under API keys), named for this project. Then its spending shows on its own, and you can turn it off without touching your other projects.
+
+**Or reuse a key from your account’s Secrets Store.** If your key is stored account-wide in Cloudflare’s **Secrets Store**, open the Worker’s **Bindings**, add a **Secrets Store** binding, choose that key, and name the binding `ANTHROPIC_API_KEY`. Then deploy.
 
 ## 3. Check it and send the address
 

@@ -35,7 +35,8 @@ and ends with a rung: one line to carry back to the family. There are four versi
 `voices/#k2`, `#g34`, `#g57`, and `#parents`, plus `#opening` for the TV. The teacher moves the conversation with the
 space bar or arrow keys, and any line drawn from a text opens a card with the Hebrew and the Revised JPS. Scripts live
 in `voices/data/`, one file per character; `voices/review/` holds readable copies for review, `voices/PLAN.md` the plan
-for the morning, and `voices/PORTRAITS.md` the prompts for the character portraits. `voices/tools/` keeps the Sefaria
+for the morning, and `voices/PORTRAITS.md` the prompts for the character portraits, which
+`voices/tools/portraits.py` sends to Gemini. `voices/tools/` keeps the Sefaria
 texts behind the cards, a report checking every claim the scripts make against them, and the two scripts that rebuild
 the source cards and the review copies. All thirty visits are written: every character, in every version it appears
 in.

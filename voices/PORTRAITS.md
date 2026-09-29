@@ -4,13 +4,13 @@ Ten portraits, one style, generated with the same image pipeline as the Jacob’
 
 **Style: the gallery’s Illuminated Manuscript.** It suits everyone on the grid. Ramban and Rambam were both Sephardic, Rashi is medieval, and the style reads as clearly imagined, which matters because no one knows what Rashi, Ramban, or Rambam looked like. Jewish Papercut is the alternative if you want something folksier for the younger grades; I can rewrite the prompts for it.
 
-**Where they go:** save each as a JPG, 1200 × 1200 pixels, named by id (`jacob.jpg`, `esau.jpg`, …) in `voices/portraits/`. I’ll connect them.
+**Making them:** `voices/tools/portraits.py` sends these prompts to Gemini and saves each portrait as a 1200 × 1200 JPG in `voices/portraits/` (`jacob.jpg`, `esau.jpg`, …). It needs a Gemini API key in the environment as `GEMINI_API_KEY`. Run `python3 voices/tools/portraits.py jacob` to try one, then `python3 voices/tools/portraits.py` for the rest. The page shows each portrait as soon as it’s published; until then the medallion shows the character’s Hebrew name.
 
 ## The shared part of every prompt
 
 Put this first, then the character’s own lines:
 
-> Square 1:1 portrait. A miniature painting in the style of a 14th-century Sephardic Hebrew Bible from medieval Spain: flat jewel-toned pigments (lapis blue, vermilion, malachite green) with burnished gold leaf, fine black ink outlines, aged vellum texture. One figure, head and shoulders, with the face in the center of the picture and a comfortable margin on every side, because the picture will be cropped to a circle. Plain background: a flat field of the color named below with a few small gold stars. No frame, no border, no circle or medallion of its own. No halo and no gold disc behind anyone’s head. No crosses, no church architecture, no doves, no radiating rays. No words, letters, numbers, or writing of any kind; no signature.
+> Square 1:1 portrait. A miniature painting in the style of a 14th-century Sephardic Hebrew Bible from medieval Spain: flat jewel-toned pigments (lapis blue, vermilion, malachite green) with burnished gold leaf, fine black ink outlines, aged vellum texture. The subject described below, in the center of the picture with a comfortable margin on every side, because the picture will be cropped to a circle. A person is shown head and shoulders, with the face near the center. Plain background: a flat field of the color named below with a few small gold stars. No frame, no border, no circle or medallion of its own. No halo and no gold disc behind anyone’s head. No crosses, no church architecture, no doves, no radiating rays. No words, letters, numbers, or writing of any kind; no signature.
 
 ## The ten characters
 
