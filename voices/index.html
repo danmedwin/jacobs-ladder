@@ -384,8 +384,8 @@
 
 <script>
   window.VOICES_MEDIA = '../dream/media/';
-  /* Ask anything: the address of the Cloudflare Worker in voices/ask/. Leave it empty to turn Ask anything off. */
-  window.VOICES_ASK = window.VOICES_ASK || '';
+  /* Ask anything: the address of the Cloudflare Worker in voices/ask/. Set it to '' to turn Ask anything off. */
+  if (!('VOICES_ASK' in window)) window.VOICES_ASK = 'https://voices-ask.dan-medwin.workers.dev/';
 </script>
 <script src="data/characters.js"></script>
 <script src="data/portraits.js"></script>
