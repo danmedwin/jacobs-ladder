@@ -40,6 +40,11 @@ texts behind the cards, a report checking every claim the scripts make against t
 the source cards and the review copies. All thirty visits are written: every character, in every version it appears
 in.
 
+In the 5–7 and parents visits, a typed question with no prepared answer can go to Ask anything: a Cloudflare Worker
+in `voices/ask/` that answers in the character’s voice with Claude, working only from the texts in the program, and
+the page marks the reply as an imagined answer. The Worker reads each visit’s context from `voices/data/ask/`, which
+`voices/tools/ask_context.js` rebuilds; run it after changing a script. Setup is in `voices/ask/SETUP.md`.
+
 The slide and Eleven Ladders share seventy AI images in `img/` and eleven artworks in `art/`.
 
 The source cards’ text lives in two places, the `SRC` object in each page’s script, so a correction to a card

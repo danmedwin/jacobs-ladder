@@ -1,2 +1,5 @@
 .DS_Store
 dream-source/
+voices/ask/node_modules/
+.wrangler/
+voices/ask/.wrangler/

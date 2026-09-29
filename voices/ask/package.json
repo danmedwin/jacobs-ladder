@@ -1,0 +1,17 @@
+{
+  "name": "voices-ask",
+  "private": true,
+  "description": "Ask anything for Voices of the Ladder: a Cloudflare Worker that answers typed questions in a character's voice.",
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "dev": "wrangler dev"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.129.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.2",
+    "wrangler": "^4.143.0"
+  }
+}
