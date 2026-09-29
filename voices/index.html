@@ -211,6 +211,16 @@
   .src svg { flex: none; width: 12px; height: 12px; stroke: currentColor; }
   .src > span { text-align: left; line-height: 1.25; }
   .src .tag { white-space: nowrap; color: var(--ink-3); }
+  /* Ask anything: an imagined answer is outlined and labeled; three dots while it's on its way */
+  .b-char.live .bubble { outline: 1.5px dashed rgba(27, 24, 18, 0.3); outline-offset: -6px; }
+  .live-tag { display: block; margin-bottom: 0.4em; font: 600 0.62rem/1 var(--ui); letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-3); }
+  .bubble.wait { display: inline-flex; align-items: center; gap: 6px; min-height: 1.38em; padding-inline: 1.1em; }
+  .bubble.wait i { width: 8px; height: 8px; border-radius: 50%; background: var(--ink-3); animation: dot 1.2s ease-in-out infinite both; }
+  .bubble.wait i:nth-child(2) { animation-delay: 0.16s; }
+  .bubble.wait i:nth-child(3) { animation-delay: 0.32s; }
+  @keyframes dot { 0%, 80%, 100% { opacity: 0.25; transform: none; } 40% { opacity: 1; transform: translateY(-3px); } }
+  @media (prefers-reduced-motion: reduce) { .bubble.wait i { animation: none; opacity: 0.6; } }
+  .vh { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
   .b-group { align-self: flex-end; max-width: min(34em, 88%); text-align: right; }
   .b-group .label { font: 600 0.68rem/1 var(--ui); letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); margin-bottom: 6px; }
   .b-group .bubble { display: inline-block; text-align: left; background: rgba(11, 13, 25, 0.45); color: var(--parchment); border: 1.5px solid var(--accent); border-radius: 20px 20px 6px 20px; box-shadow: none; }
@@ -313,6 +323,8 @@
   .ask-row input::placeholder { color: var(--stone); }
   .ask-results { display: grid; gap: 10px; }
   .ask-results p { margin: 0; font: 400 0.95rem/1.45 var(--ui); color: var(--parchment-2); }
+  .chip.as-typed { grid-column: 1 / -1; justify-content: space-between; border-style: dashed; }
+  .chip.as-typed small { font: 600 0.62em/1 var(--ui); letter-spacing: 0.12em; text-transform: uppercase; color: var(--parchment-2); white-space: nowrap; }
 
   /* Coming-soon room */
   .soon-room { align-self: center; display: grid; gap: 16px; max-width: 42em; }
@@ -370,7 +382,11 @@
 <canvas id="sky" aria-hidden="true"></canvas>
 <div id="app"></div>
 
-<script>window.VOICES_MEDIA = '../dream/media/';</script>
+<script>
+  window.VOICES_MEDIA = '../dream/media/';
+  /* Ask anything: the address of the Cloudflare Worker in voices/ask/. Leave it empty to turn Ask anything off. */
+  window.VOICES_ASK = window.VOICES_ASK || '';
+</script>
 <script src="data/characters.js"></script>
 <script src="data/sources.js"></script>
 <script src="data/jacob.js"></script>
@@ -388,6 +404,7 @@
   'use strict';
   var V = window.VOICES;
   var MEDIA = window.VOICES_MEDIA || '../dream/media/';
+  var ASK = window.VOICES_ASK || '';
   var app = document.getElementById('app');
   var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
@@ -654,6 +671,9 @@
         st.used[inp.i] = true;
         st.items.push({ k: 'group', label: 'We asked', text: inp.text || q.q });
         replies(q.a);
+      } else if (inp.t === 'live' && w && w.type === 'questions' && !st.queue.length) {
+        st.items.push({ k: 'group', label: 'We asked', text: inp.q });
+        st.items.push({ k: 'char', text: inp.say, src: inp.src, live: true });
       } else if (inp.t === 'done' && w && w.type === 'questions' && !st.queue.length) {
         st.wait = null; beat();
       }
@@ -737,7 +757,10 @@
     room.appendChild(dock);
 
     var st = null;
+    var pending = [], liveSeq = 0;   // the question on its way to Ask anything, shown above the question card
+    function clearPending() { pending.forEach(function (n) { n.remove(); }); pending = []; }
     function update(animate) {
+      clearPending(); liveSeq++;
       st = play(beats, inputs, c, lv);
       session.set(key, inputs);
       drawConvo(animate);
@@ -793,11 +816,13 @@
     function renderItem(it, prev) {
       var node;
       if (it.k === 'char') {
-        var bubble = el('div', { class: 'bubble', html: it.html });
-        var srcs = it.src ? [].concat(it.src) : [];
+        var bubble = it.live
+          ? el('div', { class: 'bubble' }, el('span', { class: 'live-tag', text: 'Imagined answer', title: 'Written by AI in ' + whose(c) + ' voice, from the texts in this program. It is not part of the prepared script.' }), it.text)
+          : el('div', { class: 'bubble', html: it.html });
+        var srcs = (it.src ? [].concat(it.src) : []).filter(function (r) { return !it.live || V.sources[r]; });
         if (srcs.length) bubble.appendChild(el('div', { class: 'srcs' }, srcs.map(srcChip)));
         var ghost = prev && prev.k === 'char';
-        node = el('div', { class: 'item b-char' + (it.asking ? ' asking' : '') }, avatar(c, ghost), bubble);
+        node = el('div', { class: 'item b-char' + (it.asking ? ' asking' : '') + (it.live ? ' live' : '') }, avatar(c, ghost), bubble);
       } else if (it.k === 'group') {
         node = el('div', { class: 'item b-group' }, el('div', { class: 'label', text: it.label }), el('div', { class: 'bubble', text: it.text }));
       } else if (it.k === 'tip') {
@@ -882,28 +907,72 @@
         dock.appendChild(el('a', { class: 'btn primary', href: '#' + lv }, 'All characters'));
       }
     }
-    /* Typed questions (5–7 and parents) are matched to the prepared ones, inside the reply card */
+    /* Typed questions (5–7 and parents) are matched to the prepared ones, inside the reply card.
+       With Ask anything on, a question with no prepared answer goes to the Worker, and the reply is marked as imagined. */
     function askForm(b) {
       var results = el('div', { class: 'ask-results', hidden: true });
-      var input = el('input', { id: 'ask-' + lv + '-' + id, type: 'text', placeholder: 'Or type your own question…', autocomplete: 'off', 'aria-label': 'Type a question for ' + inText(c) });
+      var input = el('input', { id: 'ask-' + lv + '-' + id, type: 'text', maxlength: '300', placeholder: 'Or type your own question…', autocomplete: 'off', 'aria-label': 'Type a question for ' + inText(c) });
+      var send = el('button', { class: 'btn', type: 'submit' }, 'Ask');
+      function show(label, kids) {
+        results.innerHTML = '';
+        results.appendChild(el('div', { class: 'label', text: label }));
+        kids.forEach(function (k) { if (k) results.appendChild(k); });
+        results.hidden = false;
+        stick(true);
+      }
+      function askLive(text) {
+        results.hidden = true;
+        input.disabled = send.disabled = true;
+        var mine = ++liveSeq;
+        pending = [
+          renderItem({ k: 'group', label: 'We asked', text: text }),
+          el('div', { class: 'item b-char' }, avatar(c), el('div', { class: 'bubble wait', role: 'status' }, el('i'), el('i'), el('i'),
+            el('span', { class: 'vh', text: atStart(inText(c)) + (c.plural ? ' are' : ' is') + ' thinking…' })))
+        ];
+        pending.forEach(function (n) { convo.insertBefore(n, replyCard); });
+        stick(true);
+        var ctrl = window.AbortController ? new AbortController() : null;
+        var timer = setTimeout(function () { if (ctrl) ctrl.abort(); }, 45000);
+        function settle(ok, status, d) {
+          clearTimeout(timer);
+          if (mine !== liveSeq) return;   // the teacher has moved on
+          clearPending();
+          if (ok && d && d.say) {
+            act({ t: 'live', q: text, say: String(d.say), src: [].concat(d.src || []).filter(function (r) { return V.sources[r]; }) });
+            return;
+          }
+          input.disabled = send.disabled = false;
+          input.value = text;
+          var why = d && d.error;
+          show('No answer this time', [el('p', { text:
+            why === 'declined' ? 'That question is one for your teacher. Try another, or choose a prepared question.' :
+            why === 'busy' ? 'Too many questions at once. Wait a moment, then ask again.' :
+            why === 'off' ? 'Ask anything is switched off right now. Choose a prepared question.' :
+            atStart(inText(c)) + ' couldn’t answer just now. Ask again, or choose a prepared question.' })]);
+        }
+        fetch(ASK, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ lv: lv, id: id, q: text }), signal: ctrl ? ctrl.signal : undefined })
+          .then(function (r) { return r.json().then(function (d) { settle(r.ok, r.status, d); }, function () { settle(false, r.status, null); }); },
+                function () { settle(false, 0, null); });
+      }
       var form = el('form', { class: 'ask-row', onsubmit: function (e) {
         e.preventDefault();
         var text = input.value.trim();
-        if (!text) return;
+        if (!text || input.disabled) return;
         var found = matches(text, b.questions);
-        results.innerHTML = '';
-        results.appendChild(el('div', { class: 'label', text: found.length ? 'Did you mean…' : 'No prepared answer' }));
-        if (found.length) {
-          results.appendChild(el('div', { class: 'reply-grid' }, found.map(function (f) {
-            return el('button', { class: 'chip', type: 'button', onclick: function () { act({ t: 'q', i: f.i, text: text }); } }, b.questions[f.i].q);
-          })));
+        if (!found.length && ASK) { askLive(text); return; }
+        if (!found.length) {
+          show('No prepared answer', [el('p', { text: atStart(inText(c)) + (c.plural ? ' don’t' : ' doesn’t') + ' have a prepared answer for that yet.' })]);
+          return;
         }
-        results.appendChild(el('p', { text: found.length ?
-          'Choose the closest question, and ' + inText(c) + ' will answer it.' :
-          atStart(inText(c)) + (c.plural ? ' don’t' : ' doesn’t') + ' have a prepared answer for that yet. When Ask anything is set up, it will answer questions like this one, marked as an imagined answer.' }));
-        results.hidden = false;
-        stick(true);
-      } }, input, el('button', { class: 'btn', type: 'submit' }, 'Ask'));
+        show('Did you mean…', [
+          el('div', { class: 'reply-grid' }, found.map(function (f) {
+            return el('button', { class: 'chip', type: 'button', onclick: function () { act({ t: 'q', i: f.i, text: text }); } }, b.questions[f.i].q);
+          })),
+          el('p', { text: 'Choose the closest question, and ' + inText(c) + ' will answer it.' + (ASK ? ' Or ask it just as you typed it, for an imagined answer:' : '') }),
+          ASK ? el('div', { class: 'reply-grid' }, el('button', { class: 'chip as-typed', type: 'button', onclick: function () { askLive(text); } },
+            '“' + text + '”', el('small', { text: 'Imagined answer' }))) : null
+        ]);
+      } }, input, send);
       return el('div', { class: 'ask-wrap' }, form, results);
     }
 
@@ -925,6 +994,7 @@
     }
     addEventListener('keydown', onKey);
     teardown = function () {
+      liveSeq++;
       removeEventListener('keydown', onKey);
       room.querySelectorAll('video').forEach(function (v) { try { v.pause(); } catch (e) { /* ignore */ } });
     };

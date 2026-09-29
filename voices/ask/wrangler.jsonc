@@ -1,0 +1,8 @@
+// For local testing with `npm run dev`, and for anyone who later deploys with Wrangler instead of the dashboard.
+// It runs the same bundled file that gets pasted into the Cloudflare editor.
+{
+  "name": "voices-ask",
+  "main": "dist/worker.js",
+  "compatibility_date": "2026-09-01",
+  "no_bundle": true
+}
