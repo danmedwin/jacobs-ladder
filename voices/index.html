@@ -130,6 +130,8 @@
     display: grid; place-items: center; transition: transform 0.2s;
   }
   .medal img { width: 100%; height: 100%; object-fit: cover; }
+  .medal video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity 0.4s ease; }
+  .medal.alive video { opacity: 1; }
   .medal-he { font: 500 clamp(1.3rem, 2.4vw, 2.2rem)/1.15 var(--display); color: var(--accent); padding: 0 14%; text-align: center; }
   .tile-name { font: 500 1.35rem/1.1 var(--display); }
   .tile-role { font: 500 0.68rem/1.3 var(--ui); letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); }
@@ -346,15 +348,27 @@
   .rrow .ex b { font: 600 0.68rem/1 var(--ui); letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); margin-right: 8px; }
   .empty { padding: 28px; border: 1px dashed var(--line-2); border-radius: 12px; font: 400 1.1rem/1.5 var(--serif); color: var(--parchment-2); }
   .practice {
-    position: fixed; inset: 0; z-index: 40; display: grid; grid-template-rows: auto 1fr auto; gap: 16px;
-    padding: clamp(16px, 4vw, 48px); background: #080a14;
+    position: fixed; inset: 0; z-index: 40; display: grid; grid-template-rows: auto 1fr auto; gap: clamp(8px, 1.6vh, 16px);
+    padding: clamp(16px, min(4vw, 4.5vh), 48px); background: #080a14; overflow: auto;
   }
   .practice .big { align-self: center; justify-self: center; width: min(1100px, 100%); text-align: center; }
   .practice .big .nm { font: 600 0.8rem/1 var(--ui); letter-spacing: 0.16em; text-transform: uppercase; color: var(--gold); }
-  .practice .big .ln { max-width: 20ch; margin: 18px auto 0; font: 500 clamp(2rem, 5vw, 4.2rem)/1.1 var(--display); text-wrap: balance; }
+  .practice .big .ln { max-width: 20ch; margin: clamp(10px, 2vh, 18px) auto 0; font: 500 clamp(2rem, min(5vw, 7.5vh), 4.2rem)/1.1 var(--display); text-wrap: balance; }
   .practice .big .he { margin-top: 12px; font: 400 clamp(1.4rem, 3vw, 2.4rem)/1.5 var(--display); color: var(--gold); }
-  .practice .big .ex { max-width: 40ch; margin: 22px auto 0; font: 400 clamp(1.1rem, 2vw, 1.6rem)/1.45 var(--serif); color: var(--parchment-2); }
+  .practice .big .ex { max-width: 40ch; margin: clamp(12px, 2.6vh, 22px) auto 0; font: 400 clamp(1.05rem, min(2vw, 3.2vh), 1.6rem)/1.45 var(--serif); color: var(--parchment-2); }
   .practice .ctl { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+
+  /* Motion diagrams: numbered panels, like an airplane safety card */
+  .moves { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 14px; }
+  .move { margin: 0; width: 128px; }
+  .move .pic { position: relative; padding: 4px; border-radius: 10px; background: #f6efe0; box-shadow: 0 8px 18px rgba(0, 0, 0, 0.28); }
+  .move .pic svg { display: block; width: 100%; height: auto; }
+  .move .step { position: absolute; top: 6px; left: 6px; display: grid; place-items: center; width: 20px; height: 20px; border-radius: 50%; font: 700 0.7rem/1 var(--ui); color: #fff; background: #c0661a; }
+  .move figcaption { margin-top: 7px; font: 500 0.86rem/1.3 var(--ui); color: var(--parchment-2); }
+  .practice .moves { justify-content: center; gap: clamp(16px, 2.4vw, 32px); margin-top: clamp(14px, 2.6vh, 34px); }
+  .practice .move { width: clamp(120px, min(19vw, 22vh), 260px); }
+  .practice .move .step { top: 8px; left: 8px; width: clamp(22px, 2.2vw, 32px); height: clamp(22px, 2.2vw, 32px); font-size: clamp(0.75rem, 1.1vw, 1.05rem); }
+  .practice .move figcaption { text-align: center; font-size: clamp(0.95rem, 1.5vw, 1.35rem); }
 
   /* Source card */
   .sheet-back { position: fixed; inset: 0; z-index: 60; display: grid; place-items: center; padding: 16px; background: rgba(5, 6, 12, 0.72); }
@@ -392,6 +406,8 @@
 </script>
 <script src="data/characters.js"></script>
 <script src="data/portraits.js"></script>
+<script src="data/loops.js"></script>
+<script src="data/motions.js"></script>
 <script src="data/sources.js"></script>
 <script src="data/jacob.js"></script>
 <script src="data/esau.js"></script>
@@ -411,6 +427,8 @@
   var ASK = window.VOICES_ASK || '';
   /* Portraits made by tools/portraits.py; a character without one shows its Hebrew name in the medallion */
   Object.keys(V.portraits || {}).forEach(function (id) { if (V.characters[id]) V.characters[id].portrait = V.portraits[id]; });
+  /* Moving portraits made by tools/animate.py: they play in a visit, and on the character page when a tile is hovered */
+  Object.keys(V.loops || {}).forEach(function (id) { if (V.characters[id]) V.characters[id].loop = V.loops[id]; });
   var app = document.getElementById('app');
   var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
@@ -460,9 +478,39 @@
   function atStart(s) { return s.charAt(0).toUpperCase() + s.slice(1); }
   function hasScript(id, lv) { return !!(V.scripts[id] && V.scripts[id][lv]); }
 
-  function medal(c) {
-    return el('div', { class: 'medal', style: roomVars(c) },
+  function medal(c, play) {
+    var node = el('div', { class: 'medal', style: roomVars(c) },
       c.portrait ? el('img', { src: c.portrait, alt: c.name }) : el('span', { class: 'medal-he', lang: 'he', dir: 'rtl', text: c.he }));
+    if (play) wake(node, c);
+    return node;
+  }
+  // Lays the moving portrait over the still one, and fades it in once it is actually playing
+  function wake(node, c) {
+    if (!c.loop || !c.portrait || reduceMotion) return;
+    var v = node.querySelector('video');
+    if (!v) {
+      v = document.createElement('video');
+      v.muted = v.defaultMuted = v.loop = v.playsInline = true;
+      v.setAttribute('muted', ''); v.setAttribute('playsinline', ''); v.setAttribute('aria-hidden', 'true');
+      v.poster = c.portrait;
+      var clips = typeof c.loop === 'string' ? { mp4: c.loop } : c.loop;
+      [['mp4', 'video/mp4'], ['webm', 'video/webm']].forEach(function (t) {
+        if (clips[t[0]]) v.appendChild(el('source', { src: clips[t[0]], type: t[1] }));
+      });
+      v.addEventListener('playing', function () { if (node.dataset.awake) node.classList.add('alive'); });
+      node.appendChild(v);
+    }
+    node.dataset.awake = '1';
+    if (!v.paused) node.classList.add('alive');
+    var p = v.play();
+    if (p && p.catch) p.catch(function () {});
+  }
+  // Fades back to the still portrait, then rewinds, so the next wake starts from the still
+  function rest(node) {
+    var v = node.querySelector('video');
+    delete node.dataset.awake;
+    node.classList.remove('alive');
+    if (v) setTimeout(function () { if (!node.dataset.awake) { v.pause(); v.currentTime = 0; } }, 400);
   }
   function avatar(c, ghost) {
     return el('div', { class: 'av' + (ghost ? ' ghost' : ''), style: roomVars(c), 'aria-hidden': 'true' },
@@ -617,8 +665,11 @@
       el('div', { class: 'cast', style: { '--cols': cols } }, ids.map(function (id) {
         var c = V.characters[id];
         var ready = hasScript(id, lv);
-        return el('a', { class: 'tile' + (ready ? '' : ' soon'), href: '#' + lv + '.' + id, style: roomVars(c) },
-          medal(c),
+        var face = medal(c);
+        var wakeUp = function () { wake(face, c); }, settle = function () { rest(face); };
+        return el('a', { class: 'tile' + (ready ? '' : ' soon'), href: '#' + lv + '.' + id, style: roomVars(c),
+            onmouseenter: c.loop ? wakeUp : null, onmouseleave: c.loop ? settle : null, onfocus: c.loop ? wakeUp : null, onblur: c.loop ? settle : null },
+          face,
           el('div', { class: 'tile-name', text: c.name }),
           el('div', { class: 'tile-role', text: roleFor(c, lv) }),
           el('p', { class: 'tile-tease', text: '“' + (c.tease[lv] || '') + '”' }),
@@ -734,7 +785,7 @@
         el('span', { class: 'role', text: roleFor(c, lv) })),
       el('span', { class: 'spacer' }),
       el('span', { class: 'badge', text: L.short }));
-    var portrait = el('aside', { class: 'vportrait' }, medal(c), el('div', { class: 'tile-name', text: c.name }),
+    var portrait = el('aside', { class: 'vportrait' }, medal(c, true), el('div', { class: 'tile-name', text: c.name }),
       el('div', { class: 'tile-role', text: roleFor(c, lv) }));
     var room = el('div', { class: 'visit', style: roomVars(c) });
     app.appendChild(room);
@@ -1021,6 +1072,17 @@
       el('div', { class: 'rung-say', text: lv === 'parents' ? 'Say it once out loud, so you remember it word for word.' : 'Say it together three times, so everyone remembers it.' }));
   }
 
+  /* The motion that goes with a rung, drawn in numbered panels like an airplane safety card (data/motions.js) */
+  function moves(id, lv) {
+    var steps = V.motions && V.motions[id] && V.motions[id][lv];
+    if (!steps || !V.motionSvg) return null;
+    return el('div', { class: 'moves' }, steps.map(function (pose, i) {
+      return el('figure', { class: 'move' },
+        el('div', { class: 'pic' }, el('span', { class: 'step', text: String(i + 1) }), el('div', { html: V.motionSvg(pose) })),
+        el('figcaption', { text: pose.say }));
+    }));
+  }
+
   /* ---------- Our rungs ---------- */
   var practiceOpen = false;
   function showRungs(lv) {
@@ -1039,7 +1101,8 @@
       return el('div', { class: 'rrow', style: roomVars(c) }, avatar(c),
         el('div', {}, el('div', { class: 'nm', text: c.name }), el('div', { class: 'ln', text: r.line }),
           r.he ? el('div', { class: 'rung-he', lang: 'he', dir: 'rtl', text: r.he }) : null,
-          r.extra ? el('div', { class: 'ex' }, el('b', { text: L.extraLabel }), r.extra) : null));
+          r.extra ? el('div', { class: 'ex' }, el('b', { text: L.extraLabel }), r.extra) : null,
+          moves(id, lv)));
     })) : el('p', { class: 'empty', text: 'No rungs yet. Every visit ends with a rung, and it will appear here.' });
     var onKey = function (e) { if (e.key === 'Escape' && practiceOpen) closePractice(); };
     addEventListener('keydown', onKey);
@@ -1069,7 +1132,8 @@
       practiceNode.appendChild(el('div', { class: 'big' },
         el('div', { class: 'nm', text: c.name }), el('div', { class: 'ln', text: r.line }),
         r.he ? el('div', { class: 'he', lang: 'he', dir: 'rtl', text: r.he }) : null,
-        r.extra ? el('div', { class: 'ex', text: L.extraLabel + ': ' + r.extra }) : null));
+        r.extra ? el('div', { class: 'ex', text: L.extraLabel + ': ' + r.extra }) : null,
+        moves(ids[i], lv)));
       practiceNode.appendChild(el('div', { class: 'ctl' },
         el('button', { class: 'btn', type: 'button', disabled: i === 0, onclick: function () { i--; draw(); } }, '← Previous'),
         el('button', { class: 'btn primary', type: 'button', onclick: function () { if (i < ids.length - 1) { i++; draw(); } else closePractice(); } }, i < ids.length - 1 ? 'Next rung' : 'Done'),

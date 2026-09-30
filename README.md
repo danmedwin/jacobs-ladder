@@ -46,6 +46,12 @@ in `voices/ask/` that answers in the character’s voice with Claude, working on
 the page marks the reply as an imagined answer. The Worker reads each visit’s context from `voices/data/ask/`, which
 `voices/tools/ask_context.js` rebuilds; run it after changing a script. Setup is in `voices/ask/SETUP.md`.
 
+A portrait can come to life: `voices/tools/animate.py` makes a gentle eight-second loop with Google's Veo, starting and
+ending on the portrait, and `voices/data/loops.js` lists the loops. A loop plays in the character's visit and when a
+tile on the character page is hovered or focused; a computer set to reduce motion keeps the still portrait. Jacob has
+one so far. The K–2 motions are drawn as numbered figure panels, like an airplane safety card, in
+`voices/data/motions.js`; they appear on Our rungs and in Practice together.
+
 The printables for the morning are in `voices/print/`, with a print center at `voices/print/` that lists each one
 with its paper and how many to print: a guide for each group leader, the rung key, the family ladder sheet (11×17),
 rung strips, a table card, and a take-home card with the bedtime Sh’ma. Each is an HTML page sized in inches that
