@@ -1,12 +1,14 @@
 /* Voices of the Ladder: figure diagrams for the rungs' motions, drawn like an airplane safety card.
-   Each motion is two numbered panels: a simple figure, with orange arrows and marks for the movement.
+   Each motion is two numbered panels: a simple blue figure, with orange arrows and marks for the movement.
+   The figure is drawn in blues on purpose, so it reads as a sign and never as a skin tone, and its face is drawn
+   with dark lines on a light head.
    A pose gives each arm as an elbow and a hand, in a 120 x 120 box; the shoulders, head, and body are the same
    in every panel. VOICES.motionSvg(pose) draws one panel. */
 window.VOICES = window.VOICES || { characters: {}, scripts: {}, sources: {}, credits: {} };
 
 (function () {
   'use strict';
-  var INK = '#2b251b', BODY = '#8a7c66', PAPER = '#f6efe0', ACCENT = '#c0661a', RAIL = '#d9cbb0';
+  var INK = '#2d5b88', HEAD = '#dbe7f3', FACE = '#1b3a5a', BODY = '#88abcd', PAPER = '#f6efe0', ACCENT = '#c0661a', RAIL = '#d9cbb0';
   var SHOULDER = { l: [43, 62], r: [77, 62] };
 
   function f(n) { return Math.round(n * 10) / 10; }
@@ -23,16 +25,16 @@ window.VOICES = window.VOICES || { characters: {}, scripts: {}, sources: {}, cre
       '<circle cx="' + h[0] + '" cy="' + h[1] + '" r="' + r + '" fill="' + INK + '"/>' +
       (fist ? '<path d="M' + (h[0] - 3.5) + ',' + (h[1] - 1.5) + 'h7M' + (h[0] - 3.5) + ',' + (h[1] + 2) + 'h7" stroke="' + PAPER + '" stroke-width="1.2" stroke-linecap="round"/>' : '');
   }
+  // Faces are small dark lines on the light head: dots for eyes, a stroke for the mouth
+  function lines(d) { return '<path d="' + d + '" fill="none" stroke="' + FACE + '" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/>'; }
+  function eyes(y) { return '<circle cx="54.5" cy="' + y + '" r="1.8" fill="' + FACE + '"/><circle cx="65.5" cy="' + y + '" r="1.8" fill="' + FACE + '"/>'; }
   var FACES = {
-    surprised: '<circle cx="54.5" cy="30" r="1.9"/><circle cx="65.5" cy="30" r="1.9"/><ellipse cx="60" cy="39" rx="2.8" ry="3.6"/>' +
-      '<path d="M50.5,25q3.5,-3.5 7.5,-0.5M62,24.5q4,-3 7.5,0.5" fill="none" stroke="' + PAPER + '" stroke-width="1.6" stroke-linecap="round"/>',
-    angry: '<circle cx="54.5" cy="31.5" r="1.8"/><circle cx="65.5" cy="31.5" r="1.8"/>' +
-      '<path d="M50.5,25.5L58,28.5M69.5,25.5L62,28.5M54.5,41.5q5.5,-4.5 11,0" fill="none" stroke="' + PAPER + '" stroke-width="1.8" stroke-linecap="round"/>',
-    smile: '<circle cx="54.5" cy="30.5" r="1.8"/><circle cx="65.5" cy="30.5" r="1.8"/>' +
-      '<path d="M54,36.5q6,5.5 12,0" fill="none" stroke="' + PAPER + '" stroke-width="1.8" stroke-linecap="round"/>',
-    calm: '<path d="M51.5,30.5q3,2.5 6,0M62.5,30.5q3,2.5 6,0M54.5,37q5.5,4.5 11,0" fill="none" stroke="' + PAPER + '" stroke-width="1.7" stroke-linecap="round"/>',
-    neutral: '<circle cx="54.5" cy="30.5" r="1.8"/><circle cx="65.5" cy="30.5" r="1.8"/>' +
-      '<path d="M55.5,38.5h9" fill="none" stroke="' + PAPER + '" stroke-width="1.8" stroke-linecap="round"/>'
+    surprised: eyes(30.5) + lines('M51,25.5q3.5,-3 7,-0.5M62,25q3.5,-2.5 7,0.5') +
+      '<ellipse cx="60" cy="39" rx="2.2" ry="2.9" fill="none" stroke="' + FACE + '" stroke-width="1.8"/>',
+    angry: eyes(31.5) + lines('M51,26L58,28.8M69,26L62,28.8M55,40.5q5,-3.5 10,0'),
+    smile: eyes(30.5) + lines('M54.5,36.5q5.5,4.5 11,0'),
+    calm: lines('M51.5,30.5q3,2.5 6,0M62.5,30.5q3,2.5 6,0M54.5,36.5q5.5,4.5 11,0'),
+    neutral: eyes(30.5) + lines('M56,38.5h8')
   };
 
   // Orange marks for the movement, each with a paper edge so it reads over the figure
@@ -73,8 +75,8 @@ window.VOICES = window.VOICES || { characters: {}, scripts: {}, sources: {}, cre
     return '<svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">' +
       (pose.ladder ? ladder() : '') +
       '<path d="M35,66C35,57 46,52 60,52C74,52 85,57 85,66L91,121L29,121Z" fill="' + BODY + '"/>' +
-      '<circle cx="60" cy="32" r="14" fill="' + INK + '"/>' +
-      (pose.face ? '<g fill="' + PAPER + '">' + FACES[pose.face] + '</g>' : '') +
+      '<circle cx="60" cy="32" r="13.6" fill="' + HEAD + '" stroke="' + INK + '" stroke-width="2.6"/>' +
+      (pose.face ? FACES[pose.face] : '') +
       arm(back, pose[back], pose.fists) + arm(front, pose[front], pose.fists) +
       (pose.marks || []).join('') +
       '</svg>';
