@@ -30,8 +30,8 @@ VOICES.loops = {
   "webm": "portraits/loops/rashi-fast.webm?v=f22d10e5"
  },
  "rebekah": {
-  "mp4": "portraits/loops/rebekah-fast.mp4?v=2427a842",
-  "webm": "portraits/loops/rebekah-fast.webm?v=b0497844"
+  "mp4": "portraits/loops/rebekah-fast.mp4?v=8163cd1f",
+  "webm": "portraits/loops/rebekah-fast.webm?v=b4ca2606"
  },
  "sages": {
   "mp4": "portraits/loops/sages-fast.mp4?v=f0b539df",
