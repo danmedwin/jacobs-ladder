@@ -30,9 +30,9 @@ MOTION = {
              "something wonderful above him. His hands stay on the stone against his chest.",
     "esau": "Esau breathes and blinks, and his frown softens a little as his eyes move slowly to one side and back. "
             "His mouth stays closed. The bow on his shoulder stays still.",
-    "rebekah": "Rebekah breathes slowly and blinks, and her eyes drift to the side and back, as if she is watching "
-               "someone walk away. Her hands stay exactly where they are: one hand holds the jar on her shoulder, and no "
-               "other hand appears. The edge of her scarf stirs. Her mouth stays closed.",
+    "rebekah": "Rebekah breathes slowly and blinks, and her eyes look to the side and back, thoughtful and a little "
+               "sad. Her hands stay exactly where they are: one hand holds the jar on her shoulder, and no other hand "
+               "appears. The edge of her scarf stirs. Her mouth stays closed.",
     "isaac": "Isaac breathes slowly. His eyes stay closed the whole time. His two hands stay raised at the same "
              "height in blessing and tremble very slightly; they do not come together or drop. His long white beard "
              "stirs.",
@@ -51,8 +51,8 @@ SHARED = ("A living portrait with gentle, slow, subtle motion only. {motion} Hea
           "the eyes, the breath, the hands, and the cloth move a little. The small gold stars in the background "
           "twinkle softly in place; no new sparkles, glitter, smoke, or shapes appear anywhere. The camera does not move: no zoom, no pan, no tilt. Keep the exact look of the painting, "
           "a flat medieval Hebrew manuscript miniature with flat colors, fine black ink outlines, and gold leaf; it "
-          "does not become 3D or a photograph. No one speaks, and every mouth stays closed. No new people or objects, "
-          "no text, no halo, no glow. The last frame is exactly the same as the first frame.")
+          "does not become 3D or a photograph. No one speaks, and every mouth stays closed. No other people or figures "
+          "appear anywhere, not even small ones far away; no new objects, no text, no halo, no glow. The last frame is exactly the same as the first frame.")
 NEGATIVE = ("talking, open mouth, lip movement, camera movement, zoom, pan, 3D render, photorealistic, halo, glowing "
             "aura, text, letters, watermark, new people")
 
