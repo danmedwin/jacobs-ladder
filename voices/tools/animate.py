@@ -28,22 +28,28 @@ SIDE = 720
 MOTION = {
     "jacob": "Jacob breathes slowly, blinks once, and lifts his eyes a little higher, as if he has just noticed "
              "something wonderful above him. His hands stay on the stone against his chest.",
-    "esau": "Esau breathes, blinks, and his frown softens a little as his eyes move to one side. The bow on his "
-            "shoulder stays still.",
-    "rebekah": "Rebekah breathes slowly and blinks, and her eyes drift to the side as if she is watching someone walk "
-               "away. The edge of her scarf stirs.",
-    "isaac": "Isaac breathes slowly. His eyes stay closed the whole time. His raised hands tremble very slightly, "
-             "and his long white beard stirs.",
-    "angel": "The flame at the center flickers and sways. The golden wings open a little and close again, slowly.",
+    "esau": "Esau breathes and blinks, and his frown softens a little as his eyes move slowly to one side and back. "
+            "His mouth stays closed. The bow on his shoulder stays still.",
+    "rebekah": "Rebekah breathes slowly and blinks, and her eyes drift to the side and back, as if she is watching "
+               "someone walk away. Her hands stay exactly where they are: one hand holds the jar on her shoulder, and no "
+               "other hand appears. The edge of her scarf stirs. Her mouth stays closed.",
+    "isaac": "Isaac breathes slowly. His eyes stay closed the whole time. His two hands stay raised at the same "
+             "height in blessing and tremble very slightly; they do not come together or drop. His long white beard "
+             "stirs.",
+    "angel": "The flame at the center flickers and sways. The golden wings open a little and close again, slowly. "
+             "No face or figure appears in the flame or the wings.",
     "stone": "Light glints and moves slowly across the gold on the stone. The stone itself does not move.",
-    "rashi": "Rashi breathes and blinks, and turns the quill slightly as he thinks. The vine leaves stir.",
+    "rashi": "Rashi breathes and blinks, and his eyes move as he thinks. The quill stays in his hand, away from his "
+             "mouth, and turns only slightly. The vine leaves stir.",
     "sages": "The three sages breathe and lean a little closer together. The one in the middle lifts his hand "
              "slightly, and the one on the right smiles a little more.",
-    "ramban": "Ramban breathes slowly and blinks. His hand shifts a little on the closed book.",
+    "ramban": "Ramban breathes slowly and blinks. His hand shifts a little on the closed book, whose plain cover has "
+              "no letters on it.",
     "rambam": "Rambam breathes and blinks. The brass astrolabe turns slightly on its ring and catches the light.",
 }
-SHARED = ("A living portrait with gentle, slow, subtle motion only. {motion} The small gold stars in the background "
-          "twinkle softly. The camera does not move: no zoom, no pan, no tilt. Keep the exact look of the painting, "
+SHARED = ("A living portrait with gentle, slow, subtle motion only. {motion} Heads stay turned the way they are; only "
+          "the eyes, the breath, the hands, and the cloth move a little. The small gold stars in the background "
+          "twinkle softly in place; no new sparkles, glitter, smoke, or shapes appear anywhere. The camera does not move: no zoom, no pan, no tilt. Keep the exact look of the painting, "
           "a flat medieval Hebrew manuscript miniature with flat colors, fine black ink outlines, and gold leaf; it "
           "does not become 3D or a photograph. No one speaks, and every mouth stays closed. No new people or objects, "
           "no text, no halo, no glow. The last frame is exactly the same as the first frame.")
@@ -209,11 +215,18 @@ def main(args):
         sys.exit("Set GEMINI_API_KEY first.")
     from google import genai
     client = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
+    failed = []
     for cid in args:
         for model in models:
-            make(client, cid, model)
-        if cid not in read_js():
+            try:
+                make(client, cid, model)
+            except SystemExit as stop:  # one character's failure shouldn't stop the others
+                print(stop, flush=True)
+                failed.append("%s (%s)" % (cid, model))
+        if cid not in read_js() and os.path.exists(os.path.join(OUT, "%s-%s.mp4" % (cid, models[-1]))):
             use(cid, models[-1])
+    if failed:
+        sys.exit("Not made: " + ", ".join(failed))
 
 
 if __name__ == "__main__":
