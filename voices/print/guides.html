@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Leader guides · Voices of the Ladder</title>
+<link rel="stylesheet" href="print.css">
+<style>
+  @page { size: letter; margin: 0; }
+  .guide { display: grid; grid-template-rows: auto auto 1fr auto; gap: 0.15in; padding: 0.42in 0.5in 0.32in; }
+  .guide::before { content: ""; position: absolute; inset: 0 0 auto 0; height: 0.14in; background: var(--lv); }
+
+  .head { display: grid; grid-template-columns: 1fr auto; gap: 0.3in; align-items: start; }
+  .head h1 { margin: 5pt 0 0; font: 500 24pt/1 var(--display); letter-spacing: -0.005em; }
+  .head h1 b { display: block; margin-top: 3pt; font-weight: 500; color: var(--lv); }
+  .head .when { margin: 8pt 0 0; font: 500 8.6pt/1.4 var(--ui); color: var(--ink-2); }
+  .head .when .room { display: inline-block; margin-left: 10pt; }
+  .head .when .room i { display: inline-block; width: 1.1in; border-bottom: 0.75pt solid var(--ink-3); transform: translateY(-2pt); }
+  .qrbox { display: grid; justify-items: center; gap: 4pt; width: 1.62in; padding: 7pt 8pt 6pt; border: 1pt solid var(--line); border-radius: 8pt; }
+  .qrbox .qr { width: 0.94in; }
+  .qrbox .cap { font: 600 6.8pt/1 var(--ui); letter-spacing: 0.14em; text-transform: uppercase; color: var(--lv); }
+  .qrbox .url { font: 600 6.5pt/1.3 var(--ui); color: var(--ink); text-align: center; white-space: nowrap; }
+  .qrbox .how { font: 400 6.4pt/1.3 var(--ui); color: var(--ink-3); text-align: center; }
+
+  .goal { padding: 9pt 12pt 10pt; border-left: 3pt solid var(--lv); background: var(--wash); border-radius: 0 6pt 6pt 0; }
+  .goal p { margin: 0; font: 400 10.6pt/1.38 var(--serif); }
+  .goal p + p { margin-top: 3pt; font: italic 400 8.7pt/1.36 var(--serif); color: var(--ink-2); }
+
+  .cols { display: grid; grid-template-columns: 1fr 1.08fr; gap: 0.3in; align-content: start; }
+  .cols section + section { margin-top: 0.15in; }
+  ol.plan { list-style: none; margin: 0; padding: 0; border-left: 1.2pt solid var(--lv); }
+  ol.plan li { position: relative; display: grid; grid-template-columns: 0.46in 1fr; padding: 0 0 4.6pt 10pt; }
+  ol.plan li::before { content: ""; position: absolute; left: -3.6pt; top: 3.5pt; width: 6pt; height: 6pt; border-radius: 50%; background: #fff; border: 1.2pt solid var(--lv); }
+  ol.plan li.key::before { background: var(--lv); }
+  ol.plan .t { font: 600 8.4pt/1.35 var(--ui); color: var(--ink-2); font-variant-numeric: tabular-nums; }
+  ol.plan .w { font: 400 9.4pt/1.35 var(--serif); }
+  ol.plan .w b { font-weight: 600; }
+  ul.tips { margin: 0; padding: 0 0 0 11pt; }
+  ul.tips li { margin: 0 0 3pt; font: 400 9pt/1.34 var(--serif); }
+  ul.tips li::marker { color: var(--lv); }
+
+  table.keys { width: 100%; border-collapse: collapse; }
+  table.keys td { padding: 2.3pt 0; vertical-align: top; border-bottom: 0.6pt solid #eee6d6; }
+  table.keys td:first-child { width: 1.3in; padding-right: 7pt; }
+  table.keys td:last-child { font: 400 8.5pt/1.3 var(--serif); }
+  table.keys .src { display: inline-flex; align-items: center; gap: 3pt; font: 500 7.4pt/1 var(--ui); padding: 2pt 5pt; border-radius: 99px; border: 0.6pt solid #c9bea8; background: #f3eee3; color: var(--ink-2); }
+  .end p { margin: 0; font: 400 9pt/1.36 var(--serif); }
+  .end ol { margin: 4pt 0 0; padding-left: 13pt; }
+  .end ol li { font: 400 9.1pt/1.36 var(--serif); margin-bottom: 1.5pt; }
+  .end ol li::marker { font: 600 8pt var(--ui); color: var(--lv); }
+
+  .foot { display: grid; gap: 7pt; }
+  .before { display: grid; grid-template-columns: auto 1fr; gap: 10pt; align-items: start; padding: 7pt 12pt 6pt; border: 1pt solid var(--line); border-radius: 6pt; }
+  .before .label { margin-top: 2pt; }
+  .before ul { margin: 0; padding: 0; list-style: none; columns: 2; column-gap: 0.25in; }
+  .before li { position: relative; padding-left: 12pt; margin-bottom: 2pt; font: 400 8.2pt/1.3 var(--serif); break-inside: avoid; }
+  .before li::before { content: ""; position: absolute; left: 0; top: 2.5pt; width: 6pt; height: 6pt; border: 0.9pt solid var(--ink-3); border-radius: 1.5pt; }
+  .colophon { display: flex; justify-content: space-between; font: 500 7pt/1 var(--ui); color: var(--ink-3); letter-spacing: 0.02em; }
+</style>
+</head>
+<body>
+<script src="../data/characters.js"></script>
+<script src="../data/portraits.js"></script>
+<script src="qr.js"></script>
+<script src="print.js"></script>
+<script>
+(function () {
+  'use strict';
+  var el = P.el, V = P.V;
+  var book = function (text) { var s = el('span', { class: 'src' }); s.innerHTML = P.BOOK; s.appendChild(document.createTextNode(text)); return s; };
+  var kbd = function (k) { return el('span', { class: 'kbd', text: k }); };
+  var btn = function (t) { return el('span', { class: 'btn-name', text: t }); };
+
+  var GUIDES = {
+    k2: {
+      title: 'Grades K–2',
+      carry: 'one short line and a motion',
+      plan: [
+        ['9:50', 'Welcome.', ' Share the mission: each of you will bring back a rung for your family.'],
+        ['9:52', 'Jacob.', ' Everyone starts here.', true],
+        ['10:05', 'A second visit.', ' Choose Esau, Rebekah, the angel, or the stone.', true],
+        ['10:17', 'A third visit.', ' Choose another one.', true],
+        ['10:30', 'Our rungs.', ' Each child picks a rung and practices its motion.', true],
+        ['10:35', 'Family ladders.', ' Walk everyone to their families.']
+      ],
+      tips: [
+        'Read every line aloud, with feeling. Nobody needs to read.',
+        'Do every motion with them, and stand up for the big ones.',
+        'For a choice, let everyone call out, then press the number most of them chose.',
+        'The pictures and animations are part of the story. Give them a moment.',
+        'If energy dips, press Skip on a choice, or go to Our rungs a little early.'
+      ],
+      end: 'Open Our rungs and tap Practice together. Say each rung together three times, with its motion. Then each child chooses the rung they will teach.'
+    },
+    g34: {
+      title: 'Grades 3–4',
+      carry: 'a line and a secret',
+      plan: [
+        ['9:50', 'Welcome.', ' Share the mission: each of you will bring back a rung for your family.'],
+        ['9:52', 'Jacob.', ' Everyone starts here.', true],
+        ['10:05', 'Rashi.', ' He solves the puzzle Jacob leaves you with: why do the angels go up first?', true],
+        ['10:17', 'Esau or the Sages.', ' Let the group choose.', true],
+        ['10:30', 'Our rungs.', ' Each student chooses a rung, and its secret, to teach.', true],
+        ['10:35', 'Family ladders.', ' Walk everyone to their families.']
+      ],
+      tips: [
+        'Invite strong readers to read a line aloud.',
+        'Let the group argue before you choose an answer. Most choices have no wrong answer.',
+        'Make a big deal of each secret. It is the part they will love telling at home.',
+        'Tap a book button to show that an answer comes from a real text.'
+      ],
+      end: 'Open Our rungs and tap Practice together. Say each rung together three times. Then each student chooses one rung, and its secret, to teach.'
+    },
+    g57: {
+      title: 'Grades 5–7',
+      carry: 'a line and a question for their parents',
+      plan: [
+        ['9:50', 'Welcome.', ' Share the mission: each of you will bring back a rung for your family.'],
+        ['9:52', 'Jacob.', ' Everyone starts here.', true],
+        ['10:05', 'A second visit.', ' Choose the Sages, Esau, Rashi, Ramban, or Rambam.', true],
+        ['10:17', 'A third visit.', ' Choose another one.', true],
+        ['10:30', 'Our rungs.', ' Each student picks a rung and the question they will ask their parents.', true],
+        ['10:35', 'Family ladders.', ' Walk everyone to their families.']
+      ],
+      tips: [
+        'For a debate, split the room and let both sides make their case before you tap an answer.',
+        'Type the students’ own questions. If a prepared question is close, it is offered. If not, Ask anything answers live, marked “Imagined answer.”',
+        'Treat an imagined answer as a conversation starter. Ask, “How could we check that?” and open the book buttons to read the texts.',
+        'Before you leave, make sure every student has a rung and a question for their parents.'
+      ],
+      end: 'Open Our rungs and tap Practice together. Then each student chooses a rung and the question they will ask their parents.',
+      typing: true
+    },
+    parents: {
+      title: 'Parents',
+      carry: 'a line, often in Hebrew, and a question for their child',
+      plan: [
+        ['9:50', 'Welcome.', ' Your children are climbing too, and soon they will teach you.'],
+        ['9:52', 'Jacob.', ' Everyone starts here.', true],
+        ['10:02', 'Rebekah.', ' A parent who sends a child away to save him.', true],
+        ['10:12', 'Isaac.', ' A parent who sends a child away with a blessing.', true],
+        ['10:22', 'One commentator.', ' Rashi, the Sages, Ramban, or Rambam.', true],
+        ['10:30', 'Our rungs,', ' then how to receive your child’s rung.', true],
+        ['10:35', 'Family ladders.', ' Find your children.']
+      ],
+      tips: [
+        'Pairs first, then the room. The discussion questions are written for pairs.',
+        'Read the Hebrew aloud together. Many of the parents’ rungs are Hebrew lines.',
+        'Typed questions work here too, with an imagined answer when there is no prepared one.',
+        'If time runs short, visit Rebekah or Isaac, not both.'
+      ],
+      end: 'Open Our rungs and say each one aloud once. Then prepare to receive your child’s rung:',
+      receive: [
+        'Listen all the way through.',
+        'Say it back, and do the motion with them.',
+        'Ask them their question, then answer it yourself.',
+        'Only then, teach them your rung.'
+      ],
+      typing: true
+    }
+  };
+
+  var order = ['k2', 'g34', 'g57', 'parents'];
+  order.forEach(function (lv) {
+    var G = GUIDES[lv], q = window.PRINT_QR[lv];
+    var keys = [
+      [[kbd('Space'), ' or ', kbd('→')], 'The next line.'],
+      [[kbd('←'), ' ', btn('← Back')], 'Back one step. Nothing is lost.'],
+      [[kbd('1'), '–', kbd('9')], 'Choose the group’s answer, or a question to ask.'],
+      [[btn('Hear Jacob’s answer')], 'After the group has talked it over. Space works too.'],
+      [[btn('Done asking →')], 'When the group runs out of questions.'],
+      G.typing ? [[btn('Type your own…')], 'Offers the closest prepared question. With none, the character answers live, marked “Imagined answer.”'] : null,
+      [[book('Genesis 28:12')], ['Opens the source in Hebrew and English. ', kbd('Esc'), ' closes it.']],
+      [[btn('Our rungs')], 'Every rung your group heard. Practice together shows them large, one at a time.'],
+      [[btn('Clear for the next group')], 'Resets the laptop for another group. Tap it twice.']
+    ].filter(Boolean);
+
+    document.body.appendChild(el('section', { class: 'sheet guide lv-' + lv },
+      el('header', { class: 'head' },
+        el('div', {},
+          el('p', { class: 'eyebrow', text: 'Voices of the Ladder · Family learning morning' }),
+          el('h1', {}, 'Leader’s guide', el('b', { text: G.title })),
+          el('p', { class: 'when' }, 'Sunday, November 22 · Breakouts 9:50–10:35 · Forty-five minutes',
+            el('span', { class: 'room' }, 'Room ', el('i')))),
+        el('div', { class: 'qrbox' },
+          el('span', { class: 'cap', text: 'Your group’s link' }),
+          P.qr(lv),
+          el('span', { class: 'url' }, q.short.replace(/(jacobs-ladder\/)/, '$1\n').split('\n')[0], el('br'), q.short.replace(/^.*jacobs-ladder\//, '')),
+          el('span', { class: 'how', text: 'Type it on the laptop, or scan it with a phone.' }))),
+      el('div', { class: 'goal' },
+        el('p', { text: (lv === 'parents' ? 'Every parent leaves with a rung: ' : 'Every ' + (lv === 'g57' ? 'student' : 'child') + ' leaves with a rung: ') + G.carry + (lv === 'parents' ? '. They will also be ready to receive their child’s rung.' : ', to teach their family at the family ladders.') }),
+        el('p', { text: 'Rambam read the angels on Jacob’s ladder as people who climb up to learn and come back down to teach (Guide for the Perplexed 1:15). This morning follows that shape: everyone climbs in their own group, then comes down to teach their family.' })),
+      el('div', { class: 'cols' },
+        el('div', {},
+          el('section', {},
+            el('h2', { class: 'label', text: 'Your forty-five minutes' }),
+            el('ol', { class: 'plan' }, G.plan.map(function (p) {
+              return el('li', { class: p[3] ? 'key' : '' }, el('span', { class: 't', text: p[0] }), el('span', { class: 'w' }, el('b', { text: p[1] }), p[2]));
+            })),
+            el('p', { class: 'muted', style: { margin: '2pt 0 0', font: 'italic 400 8.4pt/1.35 var(--serif)' }, text: 'Each visit takes ten to twelve minutes and ends with its rung.' })),
+          el('section', {},
+            el('h2', { class: 'label', text: 'Tips for ' + (lv === 'parents' ? 'the parents’ group' : G.title) }),
+            el('ul', { class: 'tips' }, G.tips.map(function (t) { return el('li', { text: t }); }))),
+          el('section', { class: 'end' },
+            el('h2', { class: 'label', text: 'If something goes wrong' }),
+            el('p', { text: 'Reload the page: it keeps your place. Lost the page? Scan the code above or type the address. No internet? Tell the story in your own words; the rung key on every family table has each character’s rung.' }))),
+        el('div', {},
+          el('section', {},
+            el('h2', { class: 'label', text: 'Driving the laptop' }),
+            el('table', { class: 'keys' }, keys.map(function (k) {
+              return el('tr', {}, el('td', {}, k[0]), el('td', {}, k[1]));
+            }))),
+          el('section', { class: 'end' },
+            el('h2', { class: 'label', text: 'The last five minutes' }),
+            el('p', { text: G.end }),
+            G.receive ? el('ol', {}, G.receive.map(function (t) { return el('li', { text: t }); })) : null,
+            el('p', { style: { 'margin-top': '4pt' }, text: 'Send everyone to the family ladders with their rung.' })))),
+      el('footer', { class: 'foot' },
+        el('div', { class: 'before' },
+          el('h2', { class: 'label', text: 'Before the day' }),
+          el('ul', {},
+            el('li', { text: 'Charge the laptop, and bring its charger.' }),
+            el('li', { text: 'Open your link in your room ahead of time, to test the Wi-Fi.' }),
+            el('li', { text: 'Turn off sleep and the screen saver.' }),
+            el('li', { text: 'Full screen: F11 on Windows, Control-Command-F on a Mac.' }),
+            el('li', { text: 'With a TV, check the words from the back row.' }),
+            el('li', { text: 'Try a visit at the walkthrough on Sunday, November 15.' }),
+            lv === 'parents' ? el('li', { text: 'After T’filah, show the opening screen on the TV: ' + window.PRINT_QR.opening.short + '.' }) : null)),
+        el('div', { class: 'colophon' },
+          el('span', { text: 'Voices of the Ladder · ' + q.short.replace(/#.*$/, '') }),
+          el('span', { text: 'Prepared by Rabbi Dan Medwin · Parashat Vayeitzei 5787' })))));
+  });
+})();
+</script>
+</body>
+</html>

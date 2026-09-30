@@ -48,12 +48,12 @@ All the draft rungs are in `review/rungs.md`.
 
 ## Family ladders (thirty minutes)
 
-Each family table gets a ladder sheet (11×17), six to eight blank rung strips, markers, glue sticks, a rung key (one page with every character’s portrait and rung, so younger kids can point to the character they met), and a question card.
+Each family table gets a ladder sheet (11×17), a sheet of rung strips (six, plus a gold one for the top rung), markers, glue sticks, a rung key (one sheet with every character’s portrait and rung, so younger kids can point to the character they met), and a table card with the steps and questions.
 
 1. **Share (eight minutes).** Youngest first, each person says who they met and teaches their rung, motion and all. Parents ask their question.
 2. **Build (eight minutes).** Write each rung on a strip (parents help the youngest) and put it on the ladder. The family decides the order, which is its own conversation.
 3. **Top rung (ten minutes).** Together, the family writes its own rung: “If angels could carry something up to God for our family, what would it be? What would we want them to bring back down?” Families with older kids can choose a second question instead: “Where have we found something holy in a place we didn’t expect?”
-4. **Post it (four minutes).** Tape the top rung onto the community ladder: a real stepladder, or a big paper ladder on the wall.
+4. **Post it (four minutes).** Copy the top rung onto the gold strip and tape it to the community ladder: a real stepladder, or a big paper ladder on the wall. The family’s own ladder goes home.
 
 Kids whose parents couldn’t come join a teacher’s table or another family.
 
@@ -62,13 +62,13 @@ Kids whose parents couldn’t come join a teacher’s table or another family.
 - **The community ladder.** Read several top rungs aloud.
 - **A blessing.** Before Jacob left home, Isaac blessed him (Genesis 28:1–4). Parents bless their children, perhaps with the traditional blessing for children. The version for sons quotes Jacob himself (Genesis 48:20), and the version for daughters names the matriarchs, including Rebekah, Rachel, and Leah, who all appear in Vayeitzei.
 - **The Cantor’s closing song.**
-- **To take home:** the angels of the bedtime Sh’ma, for tonight.
+- **To take home:** the angels of the bedtime Sh’ma, for tonight, on a card for each child.
 
 ## Equipment and materials
 
 - The main room’s TV for the opening screen and the wrap-up.
 - One laptop for each breakout group, with a TV for 5–7 and the parents if possible. The tool needs the building’s internet; open it in each room once before the day.
-- Printables (I’ll design these once the rungs are final): the rung key, the ladder sheet, rung strips, question cards, a one-page guide for each group leader, and QR codes.
+- Printables, all at `techrabbi.org/jacobs-ladder/voices/print/` with quantities: a one-page guide for each group leader (with the group’s QR code), the rung key, the ladder sheet, rung strips, a table card with the four steps and the top-rung questions, and the bedtime card.
 - Markers, glue sticks, and tape for every table; a stepladder or a large paper ladder for the community ladder.
 
 ## Build plan

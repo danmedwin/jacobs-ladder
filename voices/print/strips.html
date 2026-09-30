@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Rung strips · Voices of the Ladder</title>
+<link rel="stylesheet" href="print.css">
+<style>
+  @page { size: letter; margin: 0; }
+  .strips { padding: 0.42in 0.5in 0.3in; display: grid; grid-template-rows: auto 1fr auto; gap: 0.16in; }
+  .head { display: grid; grid-template-columns: 1fr auto; align-items: end; gap: 0.3in; }
+  .head h1 { margin: 4pt 0 0; font: 500 17pt/1 var(--display); }
+  .head .how { margin: 5pt 0 0; font: 400 8.8pt/1.38 var(--serif); color: var(--ink-2); max-width: 5.2in; }
+  .head .avot { margin: 0; max-width: 2.3in; font: italic 400 7.8pt/1.35 var(--serif); color: var(--ink-3); text-align: right; }
+  .head .avot b { font: 600 6.6pt/1 var(--ui); letter-spacing: 0.14em; text-transform: uppercase; font-style: normal; color: var(--gold); }
+
+  /* Seven strips, each 7.5 × 1.25 in, stacked so one cut separates two strips */
+  .stack { position: relative; align-self: start; }
+  .strip { position: relative; height: 1.25in; display: grid; grid-template-columns: 1fr 1.62in; }
+  .strip + .strip { border-top: 0.9pt dashed #9f927a; }
+  .stack::before, .stack::after { content: ""; position: absolute; top: -0.12in; bottom: -0.12in; border-left: 0.9pt dashed #9f927a; }
+  .stack::before { left: 0; }
+  .stack::after { right: 0; }
+  .stack { border-top: 0.9pt dashed #9f927a; border-bottom: 0.9pt dashed #9f927a; }
+  .write { display: grid; grid-template-rows: 1fr 1fr; padding: 0.1in 0.2in 0.2in; }
+  .write .ln { border-bottom: 0.75pt solid #e3dac8; }
+  .tab { display: grid; grid-template-rows: 1fr 1fr; gap: 0.04in; padding: 0.06in 0.16in 0.1in; border-left: 0.75pt solid #e3dac8; }
+  .tab .f { display: grid; grid-template-rows: 1fr auto; }
+  .tab .f i { border-bottom: 0.75pt solid #d3c8b3; }
+  .tab .f span { padding-top: 3pt; font: 600 6.2pt/1 var(--ui); letter-spacing: 0.13em; text-transform: uppercase; color: var(--ink-3); }
+
+  .strip.gold { background: var(--gold-wash); }
+  .strip.gold .write { grid-template-rows: auto 1fr 1fr; padding-top: 0.1in; }
+  .strip.gold .write .label { display: flex; align-items: center; gap: 5pt; margin: 0; color: var(--gold); }
+  .strip.gold .write .label svg { width: 8pt; height: 8pt; }
+  .strip.gold .write .ln, .strip.gold .tab .f i { border-color: #d8bf86; }
+  .strip.gold .tab { border-left-color: #e8d3a2; grid-template-rows: 1fr auto; padding-bottom: 0.12in; }
+  .strip.gold .tab .post { margin: 5pt 0 0; font: italic 400 7.4pt/1.3 var(--serif); color: var(--ink-2); }
+
+  .scissors { position: absolute; left: -0.27in; width: 12pt; height: 12pt; color: #9f927a; }
+  .foot { display: flex; justify-content: space-between; font: 500 7pt/1 var(--ui); color: var(--ink-3); letter-spacing: 0.02em; }
+</style>
+</head>
+<body>
+<script src="../data/characters.js"></script>
+<script src="qr.js"></script>
+<script src="print.js"></script>
+<script>
+(function () {
+  'use strict';
+  var el = P.el;
+  var SPARKLE = '<svg viewBox="-1 -1 2 2" aria-hidden="true"><path fill="currentColor" d="M0-1C.08-.2.2-.08 1 0 .2.08.08.2 0 1-.08.2-.2.08-1 0-.2-.08-.08-.2 0-1z"/></svg>';
+  var SCISSORS = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M8.1 8.1 20 20M8.1 15.9 20 4"/></svg>';
+
+  function field(label) { return el('div', { class: 'f' }, el('i'), el('span', { text: label })); }
+  var strips = [el('div', { class: 'strip gold' },
+    el('div', { class: 'write' }, el('p', { class: 'label', html: SPARKLE + 'Our family’s top rung' }), el('div', { class: 'ln' }), el('div', { class: 'ln' })),
+    el('div', { class: 'tab' }, field('Family'), el('p', { class: 'post', text: 'This one goes on the community ladder.' })))];
+  for (var i = 0; i < 6; i++) {
+    strips.push(el('div', { class: 'strip' },
+      el('div', { class: 'write' }, el('div', { class: 'ln' }), el('div', { class: 'ln' })),
+      el('div', { class: 'tab' }, field('Who taught it?'), field('Who said it first?'))));
+  }
+  var stack = el('div', { class: 'stack' }, strips);
+  [0, 1.25, 2.5, 3.75, 5, 6.25, 7.5, 8.75].forEach(function (y) {
+    stack.appendChild(el('span', { class: 'scissors', html: SCISSORS, style: { top: 'calc(' + y + 'in - 6pt)' } }));
+  });
+
+  document.body.appendChild(el('section', { class: 'sheet strips' },
+    el('header', { class: 'head' },
+      el('div', {},
+        el('p', { class: 'eyebrow', text: 'Voices of the Ladder · Family ladders' }),
+        el('h1', { text: 'Rung strips' }),
+        el('p', { class: 'how', text: 'Write one rung on each strip, big enough to read across the table. Then write who taught it, and who said it first. Glue the strips onto your ladder in the order your family chooses.' })),
+      el('p', { class: 'avot' }, el('b', { text: 'Who said it first' }), el('br'),
+        '“Whoever says something in the name of the one who said it brings redemption to the world.” Pirkei Avot 6:6')),
+    stack,
+    el('footer', { class: 'foot' },
+      el('span', { text: 'Cut on the dashed lines. Each strip fits a place on the ladder sheet.' }),
+      el('span', { text: 'Prepared by Rabbi Dan Medwin · Parashat Vayeitzei 5787' }))));
+})();
+</script>
+</body>
+</html>

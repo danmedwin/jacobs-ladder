@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Printables · Voices of the Ladder</title>
+<link rel="stylesheet" href="fonts/fonts.css">
+<style>
+  :root {
+    --ink: #1b1812; --ink-2: #4a4234; --ink-3: #6b6150; --line: #ded4c0; --wash: #f7f2e7; --paper: #fbf8f1;
+    --gold: #a87a2e; --gold-2: #e2b563; --gold-wash: #f6e9c8;
+    --display: "Frank Ruhl Libre", Georgia, serif; --serif: "Source Serif 4", Georgia, serif; --ui: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--paper); color: var(--ink); font: 400 1rem/1.55 var(--serif); }
+  .page { max-width: 1080px; margin: 0 auto; padding: clamp(28px, 6vw, 64px) 16px 64px; }
+  .eyebrow { margin: 0; font: 600 0.72rem/1 var(--ui); letter-spacing: 0.16em; text-transform: uppercase; color: var(--gold); }
+  h1 { margin: 12px 0 0; font: 500 clamp(2.2rem, 5vw, 3.4rem)/1.02 var(--display); letter-spacing: -0.01em; }
+  .lede { margin: 14px 0 0; max-width: 62ch; font-size: 1.1rem; color: var(--ink-2); }
+
+  .settings { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 12px; margin: 30px 0 0; }
+  .settings > div { padding: 14px 16px; border: 1px solid var(--line); border-radius: 10px; background: #fff; }
+  .settings b { display: block; font: 600 0.72rem/1 var(--ui); letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); margin-bottom: 6px; }
+  .settings p { margin: 0; font: 400 0.95rem/1.45 var(--serif); color: var(--ink-2); }
+
+  .count { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 22px; margin: 34px 0 0; padding: 16px 18px; border-radius: 10px; background: var(--gold-wash); }
+  .count > span { font: 600 0.8rem/1 var(--ui); letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-2); }
+  .count label { display: inline-flex; align-items: center; gap: 9px; font: 500 1rem/1 var(--ui); }
+  .count input { width: 5.2em; padding: 7px 9px; border: 1px solid #cdb98f; border-radius: 7px; font: 600 1rem/1 var(--ui); color: var(--ink); background: #fff; }
+  .count input:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+  .count .note { flex-basis: 100%; margin: 0; font: italic 400 0.9rem/1.4 var(--serif); color: var(--ink-2); }
+
+  .items { display: grid; gap: 14px; margin: 18px 0 0; padding: 0; list-style: none; }
+  .item { display: grid; grid-template-columns: 150px 1fr; gap: 22px; align-items: start; padding: 18px; border: 1px solid var(--line); border-radius: 12px; background: #fff; }
+  .thumb { display: grid; place-items: center; height: 150px; border-radius: 8px; background: #efe9dc; overflow: hidden; }
+  .thumb img { display: block; max-width: 130px; max-height: 130px; box-shadow: 0 4px 14px rgba(40, 30, 10, 0.22); }
+  .item h2 { margin: 0; font: 500 1.55rem/1.1 var(--display); }
+  .item .for { margin: 6px 0 0; font-size: 1rem; color: var(--ink-2); }
+  .facts { display: flex; flex-wrap: wrap; gap: 6px 8px; margin: 12px 0 0; padding: 0; list-style: none; }
+  .facts li { padding: 4px 10px; border-radius: 99px; font: 500 0.8rem/1.3 var(--ui); background: var(--wash); border: 1px solid var(--line); color: var(--ink-2); }
+  .facts li.qty { background: var(--ink); border-color: var(--ink); color: #fff; }
+  .item .how { margin: 10px 0 0; font-size: 0.95rem; color: var(--ink-2); }
+  .links { display: flex; flex-wrap: wrap; gap: 8px 16px; margin: 14px 0 0; }
+  .links a { font: 600 0.9rem/1 var(--ui); color: var(--ink); text-decoration: none; }
+  .links a.pdf { display: inline-flex; align-items: center; gap: 8px; padding: 9px 14px; border-radius: 99px; background: var(--ink); color: #fff; }
+  .links a.pdf:hover { background: #3a3326; }
+  .links a.view { padding: 9px 0; border-bottom: 1px solid var(--line); }
+  .links a:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
+
+  .after { margin: 34px 0 0; padding-top: 22px; border-top: 1px solid var(--line); font-size: 0.95rem; color: var(--ink-3); }
+  .after p { margin: 0 0 8px; }
+  @media (max-width: 560px) {
+    .item { grid-template-columns: 1fr; }
+    .thumb { height: 180px; }
+    .thumb img { max-width: 160px; max-height: 160px; }
+  }
+</style>
+</head>
+<body>
+<main class="page">
+  <p class="eyebrow">Voices of the Ladder · Family learning morning</p>
+  <h1>Printables</h1>
+  <p class="lede">Everything to print for Sunday, November 22: the leaders’ guides, and what goes on every family table. Each one is a PDF, ready for the copier.</p>
+
+  <section class="settings" aria-label="Printing">
+    <div><b>Scale</b><p>Print at 100%, “Actual size.” Not “Fit to page,” or the strips won’t fit the ladder.</p></div>
+    <div><b>Color</b><p>Color is best, for the faces and the gold. Black and white still works.</p></div>
+    <div><b>Paper</b><p>Letter, except the ladder sheet (11×17, also called tabloid or ledger). Cardstock for the table card, if you have it.</p></div>
+  </section>
+
+  <div class="count" role="group" aria-label="How many to print">
+    <span>How many?</span>
+    <label>Families <input id="families" type="number" min="1" max="200" value="15"></label>
+    <label>Children <input id="children" type="number" min="1" max="400" value="24"></label>
+    <p class="note">Change the numbers when the educator has a count. Each family gets its own table; the quantities below include a few spares.</p>
+  </div>
+
+  <ul class="items" id="items"></ul>
+
+  <div class="after">
+    <p>Cut the strips and the bedtime cards ahead of time; a paper cutter makes it quick. Fold the table cards along the middle so they stand like tents.</p>
+    <p>Prepared by Rabbi Dan Medwin · Parashat Vayeitzei 5787</p>
+  </div>
+</main>
+<script>
+(function () {
+  'use strict';
+  var ITEMS = [
+    { file: 'guides', title: 'Leaders’ guides', for: 'One page for each group leader: the plan for the forty-five minutes, driving the laptop, and the last five minutes.',
+      paper: 'Letter · four pages, one per group', qty: function () { return 'One set, plus one for the educator'; } },
+    { file: 'rung-key', title: 'Rung key', for: 'Every character’s rung for every group, with their portraits, so younger kids can point to who they met. The teachers are on the back.',
+      paper: 'Letter · two-sided (flip on the long edge)', qty: function (f) { return (f + 6) + ' copies'; }, note: 'One per family table and one per leader, plus spares.' },
+    { file: 'ladder', title: 'Family ladder', for: 'The sheet each family builds: seven places for rung strips and a gold top rung, with Genesis 28:12 at the foot of the ladder.',
+      paper: '11×17 · one-sided', qty: function (f) { return (f + 3) + ' copies'; }, note: 'One per family, plus spares.' },
+    { file: 'strips', title: 'Rung strips', for: 'Six strips and one gold top-rung strip. Each fits a place on the ladder sheet. The gold strip goes on the community ladder.',
+      paper: 'Letter · one-sided · cut apart', qty: function (f) { return Math.ceil(f * 1.3) + 2 + ' copies'; }, note: 'One per family, and a second for big families.' },
+    { file: 'table-card', title: 'Table card', for: 'The four steps of the family ladders, with times and the top-rung questions. It folds into a tent that reads from both sides.',
+      paper: 'Letter, landscape · cardstock if you have it · fold', qty: function (f) { return (f + 2) + ' copies'; }, note: 'One per family table.' },
+    { file: 'bedtime', title: 'Bedtime card', for: 'The four angels of the bedtime Sh’ma, in Hebrew, transliteration, and English, with motions and a link to Jacob’s dream in eighteen styles.',
+      paper: 'Letter · four cards per sheet · cut apart', qty: function (f, c) { return Math.ceil((c + 4) / 4) + ' sheets'; }, note: 'One card per child, plus spares.' }
+  ];
+  var list = document.getElementById('items');
+  var families = document.getElementById('families'), children = document.getElementById('children');
+
+  function el(tag, cls, text) { var n = document.createElement(tag); if (cls) n.className = cls; if (text != null) n.textContent = text; return n; }
+  function num(input, fallback) { var v = parseInt(input.value, 10); return v > 0 ? v : fallback; }
+  function draw() {
+    var f = num(families, 15), c = num(children, 24);
+    list.innerHTML = '';
+    ITEMS.forEach(function (it) {
+      var li = el('li', 'item');
+      var thumb = el('a', 'thumb'); thumb.href = 'pdf/' + it.file + '.pdf'; thumb.setAttribute('aria-hidden', 'true'); thumb.tabIndex = -1;
+      var img = el('img'); img.src = 'pdf/previews/' + it.file + '.jpg'; img.alt = ''; img.loading = 'lazy'; thumb.appendChild(img);
+      var body = el('div');
+      body.appendChild(el('h2', null, it.title));
+      body.appendChild(el('p', 'for', it.for));
+      var facts = el('ul', 'facts');
+      facts.appendChild(el('li', 'qty', it.qty(f, c)));
+      facts.appendChild(el('li', null, it.paper));
+      body.appendChild(facts);
+      if (it.note) body.appendChild(el('p', 'how', it.note));
+      var links = el('div', 'links');
+      var pdf = el('a', 'pdf', 'Download the PDF'); pdf.href = 'pdf/' + it.file + '.pdf';
+      var view = el('a', 'view', 'Open the page'); view.href = it.file + '.html';
+      links.appendChild(pdf); links.appendChild(view);
+      body.appendChild(links);
+      li.appendChild(thumb); li.appendChild(body);
+      list.appendChild(li);
+    });
+  }
+  families.addEventListener('input', draw);
+  children.addEventListener('input', draw);
+  draw();
+})();
+</script>
+</body>
+</html>
