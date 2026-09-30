@@ -48,8 +48,8 @@ the page marks the reply as an imagined answer. The Worker reads each visit’s 
 
 A portrait can come to life: `voices/tools/animate.py` makes a gentle eight-second loop with Google's Veo, starting and
 ending on the portrait, and `voices/data/loops.js` lists the loops. A loop plays in the character's visit and when a
-tile on the character page is hovered or focused; a computer set to reduce motion keeps the still portrait. Jacob has
-one so far. The K–2 motions are drawn as numbered figure panels, like an airplane safety card, in
+tile on the character page is hovered or focused; a computer set to reduce motion keeps the still portrait. All ten
+characters have one, each checked frame by frame for halos, lettering, and faces that smear. The K–2 motions are drawn as numbered figure panels, like an airplane safety card, in
 `voices/data/motions.js`; they appear on Our rungs and in Practice together.
 
 The printables for the morning are in `voices/print/`, with a print center at `voices/print/` that lists each one
