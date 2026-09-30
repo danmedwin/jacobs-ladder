@@ -10,7 +10,7 @@ Ten portraits, one style, generated with the same image pipeline as the Jacob’
 
 Put this first, then the character’s own lines:
 
-> Square 1:1 portrait. A miniature painting in the style of a 14th-century Sephardic Hebrew Bible from medieval Spain: flat jewel-toned pigments (lapis blue, vermilion, malachite green) with burnished gold leaf, fine black ink outlines, aged vellum texture. The subject described below, in the center of the picture with a comfortable margin on every side, because the picture will be cropped to a circle. A person is shown head and shoulders, with the face near the center. Plain background: a flat field of the color named below with a few small gold stars. No frame, no border, no circle or medallion of its own. No halo and no gold disc behind anyone’s head. No crosses, no church architecture, no doves, no radiating rays. No words, letters, numbers, or writing of any kind; no signature.
+> Square 1:1 portrait. A miniature painting in the style of a 14th-century Sephardic Hebrew Bible from medieval Spain: flat jewel-toned pigments (lapis blue, vermilion, malachite green) with burnished gold leaf, fine black ink outlines. The subject described below, in the center of the picture with a comfortable margin on every side, because the picture will be cropped to a circle. A person is shown head and shoulders, with the face near the center. Plain background: a flat field of the color named below with a few small gold stars. The colored background fills the entire square edge to edge. No parchment margin, no page, no panel or inset rectangle. No frame, no border, no circle or medallion of its own. No halo and no gold disc behind anyone’s head. No crosses, no church architecture, no doves, no radiating rays. No words, letters, numbers, or writing of any kind; no signature.
 
 ## The ten characters
 
@@ -39,7 +39,7 @@ Put this first, then the character’s own lines:
 > Three rabbis of late antiquity in the Land of Israel, in tunics and draped mantles, seen head and shoulders and leaning close together over a scroll. They are mid-argument and enjoying it: one points, one raises a hand, one smiles.
 
 **Ramban** (`ramban.jpg`). Background: deep burgundy with faint gold Mudéjar geometric patterns.
-> Nachmanides: a learned Catalan Jewish physician and rabbi of about sixty-five in the 13th century, with a full gray beard and a hooded scholar’s cloak, holding an open book against his chest. Calm, serious, kind eyes.
+> Nachmanides: a learned Catalan Jewish physician and rabbi of about sixty-five in the 13th century, with a full gray beard and a hooded scholar’s cloak, holding a closed leather-bound book against his chest, its plain cover facing out, with no lettering on it. Calm, serious, kind eyes.
 
 **Rambam** (`rambam.jpg`). Background: dark olive and sand.
 > Maimonides: a Jewish philosopher and physician of about fifty in 12th-century Egypt, in a light turban and a long robe, with a dark beard. He holds a brass astrolabe up beside his face. Intelligent, patient, a teacher’s face.
