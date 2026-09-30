@@ -7,8 +7,8 @@ Run from the repository root:
   python3 voices/tools/animate.py jacob --model lite,fast   # both, to compare
   python3 voices/tools/animate.py --use jacob fast          # choose which version the page plays
   python3 voices/tools/animate.py --off jacob               # back to the still portrait
-Writes voices/portraits/loops/<id>-<model>.mp4 (720 x 720, no sound) and voices/data/loops.js, which tells the page
-which loop to play. Veo makes only wide or tall video, so the square portrait is padded with its own background
+Writes voices/portraits/loops/<id>-<model>.mp4 and .webm (720 x 720, no sound; each browser plays the one it can) and
+voices/data/loops.js, which tells the page which loop to play. Veo makes only wide or tall video, so the square portrait is padded with its own background
 color and the square is cropped back out. Raw clips and the prompts behind them go to portraits-source/loops/,
 which is not committed. An eight-second clip costs about $0.40 with Lite and $0.80 with Fast (September 2026)."""
 import hashlib, io, json, os, re, subprocess, sys, time
@@ -19,6 +19,7 @@ OUT = os.path.join(PORTRAITS, "loops")
 JS = os.path.join(REPO, "voices", "data", "loops.js")
 SOURCE = os.path.join(REPO, "portraits-source", "loops")
 MODELS = {"lite": "veo-3.1-lite-generate-preview", "fast": "veo-3.1-fast-generate-preview"}
+NEGATIVE_OK = {"fast"}  # Lite turns away a negative prompt; the main prompt already says what to avoid
 SIDE = 720
 
 # What moves, for each character. Small and slow: the portrait should feel alive, not perform.
@@ -76,6 +77,13 @@ def square(raw, out):
                     "-vf", "crop=ih:ih:(iw-ih)/2:0,scale=%d:%d:flags=lanczos,format=yuv420p" % (SIDE, SIDE),
                     "-an", "-c:v", "libx264", "-preset", "slow", "-crf", "25", "-movflags", "+faststart", out],
                    check=True)
+    webm(out)
+
+
+def webm(mp4):
+    """A WebM copy, for the few browsers that can't play MP4."""
+    subprocess.run([ffmpeg(), "-v", "error", "-y", "-i", mp4, "-an", "-c:v", "libvpx-vp9", "-b:v", "0", "-crf", "34",
+                    "-row-mt", "1", mp4[:-4] + ".webm"], check=True)
 
 
 def seam(clip):
@@ -108,9 +116,14 @@ def use(cid, model):
     path = os.path.join(OUT, "%s-%s.mp4" % (cid, model))
     if not os.path.exists(path):
         sys.exit("No %s clip for %s yet." % (model, cid))
-    tag = hashlib.sha1(open(path, "rb").read()).hexdigest()[:8]
+    if not os.path.exists(path[:-4] + ".webm"):
+        webm(path)
     loops = read_js()
-    loops[cid] = "portraits/loops/%s-%s.mp4?v=%s" % (cid, model, tag)
+    loops[cid] = {}
+    for ext in ("mp4", "webm"):
+        clip = path[:-3] + ext
+        tag = hashlib.sha1(open(clip, "rb").read()).hexdigest()[:8]
+        loops[cid][ext] = "portraits/loops/%s?v=%s" % (os.path.basename(clip), tag)
     write_js(loops)
     print("%s now plays %s" % (cid, os.path.relpath(path, REPO)))
 
@@ -126,8 +139,9 @@ def make(client, cid, model):
     op = client.models.generate_videos(
         model=MODELS[model],
         source=types.GenerateVideosSource(prompt=prompt, image=frame),
-        config=types.GenerateVideosConfig(aspect_ratio="16:9", resolution="720p", duration_seconds=8,
-                                          last_frame=frame, negative_prompt=NEGATIVE, number_of_videos=1))
+        config=types.GenerateVideosConfig(aspect_ratio="16:9", resolution="720p", duration_seconds=8, last_frame=frame,
+                                          negative_prompt=NEGATIVE if model in NEGATIVE_OK else None,
+                                          number_of_videos=1))
     started = time.time()
     while not op.done:
         time.sleep(10)
@@ -144,7 +158,8 @@ def make(client, cid, model):
     stamp = time.strftime("%Y%m%d-%H%M%S")
     raw = os.path.join(SOURCE, "%s-%s-%s.mp4" % (cid, model, stamp))
     open(raw, "wb").write(data)
-    json.dump({"model": MODELS[model], "prompt": prompt, "negative_prompt": NEGATIVE}, open(raw[:-4] + ".json", "w"), indent=1)
+    json.dump({"model": MODELS[model], "prompt": prompt, "negative_prompt": NEGATIVE if model in NEGATIVE_OK else None},
+              open(raw[:-4] + ".json", "w"), indent=1)
     os.makedirs(OUT, exist_ok=True)
     out = os.path.join(OUT, "%s-%s.mp4" % (cid, model))
     square(raw, out)
@@ -177,7 +192,7 @@ def main(args):
         for model in models:
             make(client, cid, model)
         if cid not in read_js():
-            use(cid, models[0])
+            use(cid, models[-1])
 
 
 if __name__ == "__main__":
