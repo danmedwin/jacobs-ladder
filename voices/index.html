@@ -106,8 +106,11 @@
   .vcard:hover { border-color: var(--gold); transform: translateY(-2px); }
   .vcard h2 { margin: 0; font: 500 2rem/1.05 var(--display); }
   .vcard p { margin: 0; font: 400 0.98rem/1.5 var(--ui); color: var(--parchment-2); }
-  .mini-medals { display: flex; gap: 6px; flex-wrap: wrap; padding: 4px 2px 0; }
-  .mini-medal { width: 20px; height: 20px; border-radius: 50%; background: radial-gradient(110% 90% at 50% 25%, var(--c2), var(--c1)); box-shadow: 0 0 0 1.5px var(--c3); }
+  /* The group's cast as a row of small, overlapping portraits */
+  .mini-medals { display: flex; padding: 6px 2px 2px 4px; }
+  .mini-medal { flex: 0 1 36px; min-width: 26px; aspect-ratio: 1; margin-left: -11px; border-radius: 50%; overflow: hidden; background: radial-gradient(110% 90% at 50% 25%, var(--c2), var(--c1)); box-shadow: 0 0 0 2.5px var(--night-2), 0 0 0 3.5px var(--c3); }
+  .mini-medal:first-child { margin-left: 0; }
+  .mini-medal img { display: block; width: 100%; height: 100%; object-fit: cover; }
   .aux { display: flex; flex-wrap: wrap; gap: 12px 28px; align-items: center; margin-top: 28px; padding-top: 22px; border-top: 1px solid var(--line); }
   .keys { display: flex; flex-wrap: wrap; gap: 8px 18px; font: 400 0.9rem/1.4 var(--ui); color: var(--stone); }
   .keys span { display: inline-flex; gap: 6px; align-items: center; }
@@ -560,7 +563,8 @@
         el('div', { class: 'mini-medals', 'aria-label': V.cast[lv].length + ' characters' },
           V.cast[lv].map(function (id) {
             var c = V.characters[id];
-            return el('span', { class: 'mini-medal', title: c.name, style: { '--c1': c.color.room, '--c2': c.color.room2, '--c3': c.color.accent } });
+            return el('span', { class: 'mini-medal', title: c.name, style: { '--c1': c.color.room, '--c2': c.color.room2, '--c3': c.color.accent } },
+              c.portrait ? el('img', { src: c.portrait, alt: '', decoding: 'async' }) : null);
           })),
         el('p', { class: 'muted', text: V.cast[lv].length + ' characters' }));
     });
