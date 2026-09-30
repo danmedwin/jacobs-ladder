@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Family ladder · Voices of the Ladder</title>
+<link rel="stylesheet" href="print.css">
+<style>
+  @page { size: 11in 17in; margin: 0; }
+  .ladder { padding: 0; }
+  .ladder > * { position: absolute; }
+
+  .head { top: 0.55in; left: 1in; right: 1in; text-align: center; }
+  .head .eyebrow { letter-spacing: 0.2em; }
+  .head h1 { margin: 9pt 0 0; font: 500 42pt/1 var(--display); letter-spacing: -0.01em; }
+  .head .family { margin: 17pt 0 0; font: 400 18pt/1 var(--display); color: var(--ink-2); }
+  .head .family i { display: inline-block; width: 3.9in; margin: 0 9pt; border-bottom: 1pt solid var(--ink-3); transform: translateY(-3pt); }
+  .head .when { margin: 11pt 0 0; font: 500 8pt/1 var(--ui); letter-spacing: 0.06em; color: var(--ink-3); }
+
+  .rail { top: 2.42in; height: 12.9in; width: 0.16in; border-radius: 0.08in; background: linear-gradient(90deg, #8f6727, #d9aa52 40%, #f1d493 55%, #b8893a 85%, #8f6727); }
+  .rail.l { left: 1.36in; }
+  .rail.r { left: 9.48in; }
+  .peg { height: 0.07in; background: linear-gradient(180deg, #c99a45, #e9c77e 50%, #b38433); }
+  .ground { top: 15.32in; left: 0.9in; width: 9.2in; height: 1.2pt; background: linear-gradient(90deg, transparent, var(--gold-2) 18%, var(--gold-2) 82%, transparent); }
+
+  .slot { left: 1.65in; width: 7.7in; height: 1.35in; display: grid; place-items: center; border: 1.1pt dashed #bfb39c; border-radius: 0.06in; }
+  .slot span { font: 600 7.5pt/1 var(--ui); letter-spacing: 0.2em; text-transform: uppercase; color: #c9bea8; }
+  .top-rung { left: 1.65in; width: 7.7in; top: 2.66in; height: 1.5in; padding: 0.13in 0.3in 0.16in; border: 1.6pt solid var(--gold-2); border-radius: 0.07in; background: var(--gold-wash); display: grid; grid-template-rows: auto 1fr 1fr; }
+  .top-rung .label { display: flex; align-items: center; gap: 5pt; margin: 0; color: var(--gold); }
+  .top-rung .label svg { width: 9pt; height: 9pt; }
+  .top-rung .ln { border-bottom: 0.9pt solid #d8bf86; }
+
+  .verse { top: 15.5in; left: 0.9in; width: 9.2in; text-align: center; }
+  .verse .he-v { margin: 0; font: 400 16.5pt/1.5 var(--display); direction: rtl; }
+  .verse .tr { margin: 3pt 0 0; font: italic 400 9.6pt/1.4 var(--serif); color: var(--ink-2); }
+  .verse .en { margin: 3pt 0 0; font: 400 10pt/1.4 var(--serif); }
+  .verse .cite { margin: 5pt 0 0; font: 600 7pt/1 var(--ui); letter-spacing: 0.16em; text-transform: uppercase; color: var(--gold); }
+
+  .star { width: var(--s); height: var(--s); color: var(--gold-2); }
+  .star svg { display: block; width: 100%; height: 100%; }
+  .dot { width: var(--s); height: var(--s); border-radius: 50%; background: var(--gold-2); }
+</style>
+</head>
+<body>
+<script src="../data/characters.js"></script>
+<script src="../data/sources.js"></script>
+<script src="qr.js"></script>
+<script src="print.js"></script>
+<script>
+(function () {
+  'use strict';
+  var el = P.el, V = P.V;
+  var SPARKLE = '<svg viewBox="-1 -1 2 2" aria-hidden="true"><path fill="currentColor" d="M0-1C.08-.2.2-.08 1 0 .2.08.08.2 0 1-.08.2-.2.08-1 0-.2-.08-.08-.2 0-1z"/></svg>';
+  var verse = V.sources['Genesis 28:12'].verses[0];
+  var sheet = el('section', { class: 'sheet tabloid ladder' });
+
+  // The sky: stars around the title and beside the top of the ladder, thinning out as the ladder comes down
+  var seed = 28;
+  function rand() { seed = (seed * 16807) % 2147483647; return (seed - 1) / 2147483646; }
+  function scatter(n, x0, x1, y0, y1, fade) {
+    for (var i = 0; i < n; i++) {
+      var x = x0 + rand() * (x1 - x0), t = rand(), y = y0 + (fade ? t * t : t) * (y1 - y0);
+      var big = rand() < 0.62, s = big ? 0.07 + rand() * 0.11 : 0.025 + rand() * 0.02;
+      var node = big ? el('div', { class: 'star', html: SPARKLE }) : el('div', { class: 'dot' });
+      node.style.cssText = 'left:' + (x - s / 2).toFixed(3) + 'in;top:' + (y - s / 2).toFixed(3) + 'in;--s:' + s.toFixed(3) + 'in;opacity:' + (0.55 + rand() * 0.45).toFixed(2);
+      sheet.appendChild(node);
+    }
+  }
+  scatter(12, 0.45, 2.55, 0.45, 2.25, false);
+  scatter(12, 8.45, 10.55, 0.45, 2.25, false);
+  scatter(13, 0.4, 1.12, 2.3, 10.5, true);
+  scatter(13, 9.88, 10.6, 2.3, 10.5, true);
+
+  sheet.appendChild(el('header', { class: 'head' },
+    el('p', { class: 'eyebrow', text: 'Voices of the Ladder · Family ladders' }),
+    el('h1', { text: 'Our family’s ladder' }),
+    el('p', { class: 'family' }, 'The', el('i'), 'family'),
+    el('p', { class: 'when', text: 'Family learning morning · Parashat Vayeitzei 5787 · November 22, 2026' })));
+
+  // The ladder: two rails, the family's own top rung, and seven places for rung strips
+  sheet.appendChild(el('div', { class: 'rail l' }));
+  sheet.appendChild(el('div', { class: 'rail r' }));
+  var tops = [2.66 + 1.5 / 2 - 0.035];
+  for (var i = 0; i < 7; i++) {
+    var y = 4.38 + i * 1.53;
+    tops.push(y + 1.35 / 2 - 0.035);
+    sheet.appendChild(el('div', { class: 'slot', style: { top: y + 'in' } }, el('span', { text: 'Glue a rung here' })));
+  }
+  tops.forEach(function (y) {
+    sheet.appendChild(el('div', { class: 'peg', style: { top: y + 'in', left: '1.52in', width: '0.13in' } }));
+    sheet.appendChild(el('div', { class: 'peg', style: { top: y + 'in', left: '9.35in', width: '0.13in' } }));
+  });
+  sheet.appendChild(el('div', { class: 'top-rung' },
+    el('p', { class: 'label', html: SPARKLE + 'Our top rung' }),
+    el('div', { class: 'ln' }), el('div', { class: 'ln' })));
+
+  sheet.appendChild(el('div', { class: 'ground' }));
+  sheet.appendChild(el('div', { class: 'verse' },
+    el('p', { class: 'he-v', lang: 'he', text: verse.he }),
+    el('p', { class: 'tr', text: 'Vayachalom v’hineih sulam mutzav artzah v’rosho magia hashamaymah, v’hineih malachei Elohim olim v’yordim bo.' }),
+    el('p', { class: 'en', text: verse.en }),
+    el('p', { class: 'cite', text: 'Genesis 28:12' })));
+
+  document.body.appendChild(sheet);
+})();
+</script>
+</body>
+</html>

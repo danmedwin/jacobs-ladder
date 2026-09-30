@@ -46,6 +46,14 @@ in `voices/ask/` that answers in the character’s voice with Claude, working on
 the page marks the reply as an imagined answer. The Worker reads each visit’s context from `voices/data/ask/`, which
 `voices/tools/ask_context.js` rebuilds; run it after changing a script. Setup is in `voices/ask/SETUP.md`.
 
+The printables for the morning are in `voices/print/`, with a print center at `voices/print/` that lists each one
+with its paper and how many to print: a guide for each group leader, the rung key, the family ladder sheet (11×17),
+rung strips, a table card, and a take-home card with the bedtime Sh’ma. Each is an HTML page sized in inches that
+reads the same data as the tool, so a changed rung or a new portrait shows up in print too. After a change, run
+`node voices/tools/print_pdfs.mjs` to rebuild the PDFs in `voices/print/pdf/` (it needs Playwright), and
+`python3 voices/tools/print_qr.py` if an address changes. The fonts are served from `voices/print/fonts/`, so the
+pages print the same without an internet connection.
+
 The slide and Eleven Ladders share seventy AI images in `img/` and eleven artworks in `art/`.
 
 The source cards’ text lives in two places, the `SRC` object in each page’s script, so a correction to a card
