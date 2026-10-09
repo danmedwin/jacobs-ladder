@@ -10,16 +10,16 @@ Rambam reads the angels on the ladder as prophets who climb up to learn and then
 
 | Time | Who | What |
 |---|---|---|
-| 9:00–9:45 | Everyone | T’filah with the Rabbi and Cantor. In the last few minutes, the opening screen on the TV (“Who was there that night?”) and the mission: bring back a rung for your family. |
-| 9:45–9:50 | | Move to the breakout rooms |
-| 9:50–10:35 | K–2, 3–4, 5–7, parents | Breakouts with Voices of the Ladder (forty-five minutes) |
-| 10:35–10:45 | | Snack, then families find each other |
-| 10:45–11:15 | Families | Family ladders (thirty minutes) |
-| 11:15–11:30 | Everyone | Wrap-up (fifteen minutes) |
+| 9:00–9:45 | Everyone, in the sanctuary | T’filah with Rabbi Steven and Cantor Sally Neff. At the end, Rabbi Dan introduces the program: the opening screen (“Who was there that night?”), the angels who climb up to learn and come back down to teach, and the mission: bring back a rung for your family. |
+| 9:45–9:50 | | From the sanctuary to the breakouts: students to their classrooms, parents with Rabbi Dan to the multi-purpose room |
+| 9:50–10:35 | K–2, 3–4, 5–7, parents | Breakouts with Voices of the Ladder (forty-five minutes): students in their classrooms, parents in the multi-purpose room |
+| 10:35–10:45 | | Everyone rejoins in the multi-purpose room: snack, then families find each other |
+| 10:45–11:15 | Families | Family ladders in the multi-purpose room (thirty minutes) |
+| 11:15–11:30 | Everyone | Wrap-up in the multi-purpose room (fifteen minutes) |
 
 ## Breakouts (forty-five minutes)
 
-Each group has one laptop, driven by its leader. Students watch, talk, move, and answer out loud. Each visit takes about ten to twelve minutes, and every visit ends with a rung.
+The students’ groups meet in their classrooms, and the parents in the multi-purpose room. Each group has one laptop, driven by its leader. Students watch, talk, move, and answer out loud. Each visit takes about ten to twelve minutes, and every visit ends with a rung.
 
 | Group | Link | Plan |
 |---|---|---|
@@ -27,7 +27,7 @@ Each group has one laptop, driven by its leader. Students watch, talk, move, and
 | 3–4 (about seven) | `voices/#g34` | Jacob first, then Rashi (he answers Jacob’s up-and-down puzzle), then Esau or the Sages. Last five minutes: Our rungs. |
 | 5–7 (about twelve) | `voices/#g57` | Jacob first, then two of the Sages, Esau, Rashi, Ramban, and Rambam. Typed questions are on. Last five minutes: Our rungs. |
 | Parents (led by Rabbi Dan) | `voices/#parents` | Jacob, then Rebekah and Isaac (parents who send a child away with a blessing), then one commentator. Last five minutes: how to receive your child’s rung. |
-| Opening screen | `voices/#opening` | For the TV at the end of T’filah. |
+| Opening screen | `voices/#opening` | For the sanctuary’s screen at the end of T’filah, when Rabbi Dan introduces the program. |
 
 Live addresses will be `techrabbi.org/jacobs-ladder/voices/#k2` and so on, with a QR code for each group’s printed guide.
 
@@ -48,7 +48,7 @@ All the draft rungs are in `review/rungs.md`.
 
 ## Family ladders (thirty minutes)
 
-Each family table gets a ladder sheet (11×17), a sheet of rung strips (six, plus a gold one for the top rung), markers, glue sticks, a rung key (one sheet with every character’s portrait and rung, so younger kids can point to the character they met), and a table card with the steps and questions.
+In the multi-purpose room, each family table gets a ladder sheet (11×17), a sheet of rung strips (six, plus a gold one for the top rung), markers, glue sticks, a rung key (one sheet with every character’s portrait and rung, so younger kids can point to the character they met), and a table card with the steps and questions.
 
 1. **Share (eight minutes).** Youngest first, each person says who they met and teaches their rung, motion and all. Parents ask their question.
 2. **Build (eight minutes).** Write each rung on a strip (parents help the youngest) and put it on the ladder. The family decides the order, which is its own conversation.
@@ -61,13 +61,14 @@ Kids whose parents couldn’t come join a teacher’s table or another family.
 
 - **The community ladder.** Read several top rungs aloud.
 - **A blessing.** Before Jacob left home, Isaac blessed him (Genesis 28:1–4). Parents bless their children, perhaps with the traditional blessing for children. The version for sons quotes Jacob himself (Genesis 48:20), and the version for daughters names the matriarchs, including Rebekah, Rachel, and Leah, who all appear in Vayeitzei.
-- **The Cantor’s closing song.**
+- **Cantor Sally Neff’s closing song.**
 - **To take home:** the angels of the bedtime Sh’ma, for tonight, on a card for each child.
 
 ## Equipment and materials
 
-- The main room’s TV for the opening screen and the wrap-up.
-- One laptop for each breakout group, with a TV for 5–7 and the parents if possible. The tool needs the building’s internet; open it in each room once before the day.
+- The sanctuary’s screen for the opening screen at the end of T’filah.
+- The multi-purpose room’s TV for the parents’ breakout and the wrap-up.
+- One laptop for each breakout group, with a TV for 5–7 if its classroom has one. The tool needs the building’s internet; open it in each room once before the day.
 - Printables, all at `techrabbi.org/jacobs-ladder/voices/print/` with quantities: a one-page guide for each group leader (with the group’s QR code), the rung key, the ladder sheet, rung strips, a table card with the four steps and the top-rung questions, and the bedtime card.
 - Markers, glue sticks, and tape for every table; a stepladder or a large paper ladder for the community ladder.
 
@@ -87,6 +88,6 @@ Kids whose parents couldn’t come join a teacher’s table or another family.
 ## Still open
 
 - How many families are coming (the educator is checking).
-- Which breakout rooms have a TV or a laptop.
+- Which classrooms have a TV or a laptop, and how to put the opening screen up in the sanctuary.
 - Who leads each kids’ group, and whether madrichim can help drive the laptops.
 - Character voices: try them with Jacob once his text is approved. They need to sound natural, not uncanny, and cost little.
