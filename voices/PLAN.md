@@ -89,6 +89,7 @@ Kids whose parents couldn’t come join a teacher’s table or another family.
 | Sunday, November 8 | A five-minute walkthrough video of a visit: Claude writes the script, Rabbi Dan records it, Claude hosts it | Claude, Rabbi Dan |
 | Sunday, November 15 | Send the teachers and aides the video and their guides | Rabbi Dan |
 | Sunday, November 22 | The morning | Everyone |
+| Monday, November 23 | Turn off Ask anything: add `ASK_OFF` = `1` to the voices-ask Worker (`ask/SETUP.md`). The prepared questions keep working. | Rabbi Dan |
 
 ## Still open
 
