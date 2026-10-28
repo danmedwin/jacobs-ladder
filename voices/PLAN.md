@@ -10,24 +10,28 @@ Rambam reads the angels on the ladder as prophets who climb up to learn and then
 
 | Time | Who | What |
 |---|---|---|
-| 9:00–9:45 | Everyone, in the sanctuary | T’filah with Rabbi Steven and Cantor Sally Neff. At the end, Rabbi Dan introduces the program: the opening screen (“Who was there that night?”), the angels who climb up to learn and come back down to teach, and the mission: bring back a rung for your family. |
-| 9:45–9:50 | | From the sanctuary to the breakouts: students to their classrooms, parents with Rabbi Dan to the multi-purpose room |
-| 9:50–10:35 | K–2, 3–4, 5–7, parents | Breakouts with Voices of the Ladder (forty-five minutes): students in their classrooms, parents in the multi-purpose room |
-| 10:35–10:45 | | Everyone rejoins in the multi-purpose room: snack, then families find each other |
+| 9:00–9:30 | Kids and parents, in the sanctuary | T’filah with Rabbi Steven and Cantor Sally Neff |
+| 9:00–9:30 | Teachers, aides, and staff, in the multi-purpose room | Rabbi Dan explains the program: each group’s plan, driving the laptop, and the rung |
+| 9:30–9:45 | Everyone, in the sanctuary | Rabbi Dan introduces the program, without a screen: who was there that night, the angels who climb up to learn and come back down to teach, and the mission: bring back a rung for your family. |
+| 9:45–10:00 | | To the breakouts: students to their classrooms, parents with Rabbi Dan to the multi-purpose room. Teachers start their laptops, and a group that is settled can begin early. |
+| 10:00–10:30 | K–2, 3–4, 5–7, parents | Breakouts with Voices of the Ladder (thirty minutes): students in their classrooms, parents in the multi-purpose room |
+| 10:30–10:45 | | Everyone gathers in the multi-purpose room: snack, and families find each other. The snack stays out through the family ladders. |
 | 10:45–11:15 | Families | Family ladders in the multi-purpose room (thirty minutes) |
 | 11:15–11:30 | Everyone | Wrap-up in the multi-purpose room (fifteen minutes) |
 
-## Breakouts (forty-five minutes)
+## Breakouts (thirty minutes)
 
-The students’ groups meet in their classrooms, and the parents in the multi-purpose room. Each group has one laptop, driven by its leader. Students watch, talk, move, and answer out loud. Each visit takes about ten to twelve minutes, and every visit ends with a rung.
+The students’ groups meet in their classrooms with their teachers, and the parents in the multi-purpose room with Rabbi Dan. Each group has one laptop, driven by its leader. Students watch, talk, move, and answer out loud. Each visit takes about ten to twelve minutes, and every visit ends with a rung.
+
+Thirty minutes holds two visits and five minutes on the Our rungs screen. A third visit fits only when a group is ahead of the printed times, because it began before 10:00 or its visits ran short: if the second visit ends before 10:15, add a third. Our rungs always starts by 10:25.
 
 | Group | Link | Plan |
 |---|---|---|
-| K–2 (four or five students) | `voices/#k2` | Jacob first. Then two of Esau, Rebekah, the angel, and the stone. The last five minutes on the Our rungs screen: each child picks a rung and practices its motion. |
-| 3–4 (about seven) | `voices/#g34` | Jacob first, then Rashi (he answers Jacob’s up-and-down puzzle), then Esau or the Sages. Last five minutes: Our rungs. |
-| 5–7 (about twelve) | `voices/#g57` | Jacob first, then two of the Sages, Esau, Rashi, Ramban, and Rambam. Typed questions are on. Last five minutes: Our rungs. |
-| Parents (led by Rabbi Dan) | `voices/#parents` | Jacob, then Rebekah and Isaac (parents who send a child away with a blessing), then one commentator. Last five minutes: how to receive your child’s rung. |
-| Opening screen | `voices/#opening` | For the sanctuary’s screen at the end of T’filah, when Rabbi Dan introduces the program. |
+| K–2 (four or five students) | `voices/#k2` | Jacob first, then one of Esau, Rebekah, the angel, and the stone. Ahead of time: a third. The last five minutes on the Our rungs screen: each child picks a rung and practices its motion. |
+| 3–4 (about seven) | `voices/#g34` | Jacob first, then Rashi (he answers Jacob’s up-and-down puzzle). Ahead of time: Esau or the Sages. Last five minutes: Our rungs. |
+| 5–7 (about twelve) | `voices/#g57` | Jacob first, then one of the Sages, Esau, Rashi, Ramban, and Rambam. Ahead of time: a third. Typed questions are on. Last five minutes: Our rungs. |
+| Parents (led by Rabbi Dan) | `voices/#parents` | Jacob, then Isaac, a parent who sends his child away with a blessing, which sets up the blessing at the wrap-up. Ahead of time: Rebekah. Last five minutes: how to receive your child’s rung. |
+| Opening screen | `voices/#opening` | For the multi-purpose room’s TV at the 9:00 meeting, to show the teachers the cast. The sanctuary has no screen, so the 9:30 introduction is spoken. |
 
 Live addresses will be `techrabbi.org/jacobs-ladder/voices/#k2` and so on, with a QR code for each group’s printed guide.
 
@@ -48,7 +52,7 @@ All the draft rungs are in `review/rungs.md`.
 
 ## Family ladders (thirty minutes)
 
-In the multi-purpose room, each family table gets a ladder sheet (11×17), a sheet of rung strips (six, plus a gold one for the top rung), markers, glue sticks, a rung key (one sheet with every character’s portrait and rung, so younger kids can point to the character they met), and a table card with the steps and questions.
+In the multi-purpose room, each family table gets a ladder sheet (11×17), a sheet of rung strips (six, plus a gold one for the top rung), markers, glue sticks, a rung key (one sheet with every character’s portrait and rung, so younger kids can point to the character they met), and a table card with the steps and questions. The table card’s QR code opens Voices of the Ladder, for a family that finishes early.
 
 1. **Share (eight minutes).** Youngest first, each person says who they met and teaches their rung, motion and all. Parents ask their question.
 2. **Build (eight minutes).** Write each rung on a strip (parents help the youngest) and put it on the ladder. The family decides the order, which is its own conversation.
@@ -61,14 +65,13 @@ Kids whose parents couldn’t come join a teacher’s table or another family.
 
 - **The community ladder.** Read several top rungs aloud.
 - **A blessing.** Before Jacob left home, Isaac blessed him (Genesis 28:1–4). Parents bless their children, perhaps with the traditional blessing for children. The version for sons quotes Jacob himself (Genesis 48:20), and the version for daughters names the matriarchs, including Rebekah, Rachel, and Leah, who all appear in Vayeitzei.
-- **Cantor Sally Neff’s closing song.**
-- **To take home:** the angels of the bedtime Sh’ma, for tonight, on a card for each child.
+- **A closing song,** by Cantor Sally Neff if she can stay (see Still open).
+- **To take home:** the angels of the bedtime Sh’ma, for tonight, on a card for each child. Its QR code opens Voices of the Ladder, so families can talk with the other characters at home.
 
 ## Equipment and materials
 
-- The sanctuary’s screen for the opening screen at the end of T’filah.
-- The multi-purpose room’s TV for the parents’ breakout and the wrap-up.
-- One laptop for each breakout group, with a TV for 5–7 if its classroom has one. The tool needs the building’s internet; open it in each room once before the day.
+- The multi-purpose room’s TV for the teachers’ meeting, the parents’ breakout, and the wrap-up, connected to Rabbi Dan’s laptop.
+- A laptop for each classroom, brought by the teachers and the educator, with a TV for 5–7 if its classroom has one. The tool needs the building’s internet; open it in each room once before the day.
 - Printables, all at `techrabbi.org/jacobs-ladder/voices/print/` with quantities: a one-page guide for each group leader (with the group’s QR code), the rung key, the ladder sheet, rung strips, a table card with the four steps and the top-rung questions, and the bedtime card.
 - Markers, glue sticks, and tape for every table; a stepladder or a large paper ladder for the community ladder.
 
@@ -82,12 +85,14 @@ Kids whose parents couldn’t come join a teacher’s table or another family.
 | Sunday, October 25 | 5–7 and parents scripts, including Ramban and Rambam | Claude drafts, Rabbi Dan reviews |
 | Sunday, November 1 | Ask anything: the server, the warning, and a test | Claude builds; Rabbi Dan sets up two accounts |
 | Sunday, November 8 | Printables, group leaders’ guides, QR codes; try character voices | Claude, Rabbi Dan |
-| Sunday, November 15 | Walkthrough with the teachers | Rabbi Dan and teachers |
+| Sunday, November 8 | A five-minute walkthrough video of a visit: Claude writes the script, Rabbi Dan records it, Claude hosts it | Claude, Rabbi Dan |
+| Sunday, November 15 | Send the teachers and aides the video and their guides | Rabbi Dan |
 | Sunday, November 22 | The morning | Everyone |
+| Monday, November 23 | Turn off Ask anything: add `ASK_OFF` = `1` to the voices-ask Worker (`ask/SETUP.md`). The prepared questions keep working. | Rabbi Dan |
 
 ## Still open
 
 - How many families are coming (the educator is checking).
-- Which classrooms have a TV or a laptop, and how to put the opening screen up in the sanctuary.
-- Who leads each kids’ group, and whether madrichim can help drive the laptops.
+- Which classrooms have a TV.
+- Whether Cantor Sally Neff can stay for the closing song at 11:15.
 - Character voices: try them with Jacob once his text is approved. They need to sound natural, not uncanny, and cost little.

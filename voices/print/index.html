@@ -87,7 +87,7 @@
 (function () {
   'use strict';
   var ITEMS = [
-    { file: 'guides', title: 'Leaders’ guides', for: 'One page for each group leader: the plan for the forty-five minutes, driving the laptop, and the last five minutes.',
+    { file: 'guides', title: 'Leaders’ guides', for: 'One page for each group leader: the plan for the thirty minutes, driving the laptop, and the last five minutes.',
       paper: 'Letter · four pages, one per group', qty: function () { return 'One set, plus one for the educator'; } },
     { file: 'rung-key', title: 'Rung key', for: 'Every character’s rung for every group, with their portraits, so younger kids can point to who they met. The teachers are on the back.',
       paper: 'Letter · two-sided (flip on the long edge)', qty: function (f) { return (f + 6) + ' copies'; }, note: 'One per family table and one per leader, plus spares.' },
@@ -95,9 +95,9 @@
       paper: '11×17 · one-sided', qty: function (f) { return (f + 3) + ' copies'; }, note: 'One per family, plus spares.' },
     { file: 'strips', title: 'Rung strips', for: 'Six strips and one gold top-rung strip. Each fits a place on the ladder sheet. The gold strip goes on the community ladder.',
       paper: 'Letter · one-sided · cut apart', qty: function (f) { return Math.ceil(f * 1.3) + 2 + ' copies'; }, note: 'One per family, and a second for big families.' },
-    { file: 'table-card', title: 'Table card', for: 'The four steps of the family ladders, with times and the top-rung questions. It folds into a tent that reads from both sides.',
+    { file: 'table-card', title: 'Table card', for: 'The four steps of the family ladders, with times and the top-rung questions, and a QR code back to the voices for families who finish early. It folds into a tent that reads from both sides.',
       paper: 'Letter, landscape · cardstock if you have it · fold', qty: function (f) { return (f + 2) + ' copies'; }, note: 'One per family table.' },
-    { file: 'bedtime', title: 'Bedtime card', for: 'The four angels of the bedtime Sh’ma, in Hebrew, transliteration, and English, with motions and a link to Jacob’s dream in eighteen styles.',
+    { file: 'bedtime', title: 'Bedtime card', for: 'The four angels of the bedtime Sh’ma, in Hebrew, transliteration, and English, with motions, and QR codes back to the voices and to Jacob’s dream in eighteen styles.',
       paper: 'Letter · four cards per sheet · cut apart', qty: function (f, c) { return Math.ceil((c + 4) / 4) + ' sheets'; }, note: 'One card per child, plus spares.' }
   ];
   var list = document.getElementById('items');

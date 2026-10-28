@@ -33,6 +33,8 @@
   ol.plan li { position: relative; display: grid; grid-template-columns: 0.46in 1fr; padding: 0 0 4.6pt 10pt; }
   ol.plan li::before { content: ""; position: absolute; left: -3.6pt; top: 3.5pt; width: 6pt; height: 6pt; border-radius: 50%; background: #fff; border: 1.2pt solid var(--lv); }
   ol.plan li.key::before { background: var(--lv); }
+  ol.plan li.maybe::before { border-style: dashed; }
+  ol.plan li.maybe .w { font-style: italic; }
   ol.plan .t { font: 600 8.4pt/1.35 var(--ui); color: var(--ink-2); font-variant-numeric: tabular-nums; }
   ol.plan .w { font: 400 9.4pt/1.35 var(--serif); }
   ol.plan .w b { font-weight: 600; }
@@ -77,12 +79,12 @@
       title: 'Grades K–2',
       carry: 'one short line and a motion',
       plan: [
-        ['9:50', 'Welcome.', ' Repeat the mission: each of you will bring back a rung for your family.'],
-        ['9:52', 'Jacob.', ' Everyone starts here.', true],
-        ['10:05', 'A second visit.', ' Choose Esau, Rebekah, the angel, or the stone.', true],
-        ['10:17', 'A third visit.', ' Choose another one.', true],
-        ['10:30', 'Our rungs.', ' Each child picks a rung and practices its motion.', true],
-        ['10:35', 'Family ladders.', ' Walk everyone to the multi-purpose room.']
+        ['10:00', 'Welcome.', ' Begin once everyone is settled, even before 10:00. Repeat the mission: each of you will bring back a rung for your family.'],
+        ['10:02', 'Jacob.', ' Everyone starts here.', true],
+        ['10:14', 'A second visit.', ' Choose Esau, Rebekah, the angel, or the stone.', true],
+        ['', 'Ahead of time?', ' If the second visit ends before 10:15, choose a third.', 'maybe'],
+        ['10:25', 'Our rungs.', ' Each child picks a rung and practices its motion.', true],
+        ['10:30', 'Family ladders.', ' Walk everyone to the multi-purpose room.']
       ],
       tips: [
         'Read every line aloud, with feeling. Nobody needs to read.',
@@ -97,12 +99,12 @@
       title: 'Grades 3–4',
       carry: 'a line and a secret',
       plan: [
-        ['9:50', 'Welcome.', ' Repeat the mission: each of you will bring back a rung for your family.'],
-        ['9:52', 'Jacob.', ' Everyone starts here.', true],
-        ['10:05', 'Rashi.', ' He solves the puzzle Jacob leaves you with: why do the angels go up first?', true],
-        ['10:17', 'Esau or the Sages.', ' Let the group choose.', true],
-        ['10:30', 'Our rungs.', ' Each student chooses a rung, and its secret, to teach.', true],
-        ['10:35', 'Family ladders.', ' Walk everyone to the multi-purpose room.']
+        ['10:00', 'Welcome.', ' Begin once everyone is settled, even before 10:00. Repeat the mission: each of you will bring back a rung for your family.'],
+        ['10:02', 'Jacob.', ' Everyone starts here.', true],
+        ['10:14', 'Rashi.', ' He solves the puzzle Jacob leaves you with: why do the angels go up first?', true],
+        ['', 'Ahead of time?', ' If Rashi ends before 10:15, let the group choose Esau or the Sages.', 'maybe'],
+        ['10:25', 'Our rungs.', ' Each student chooses a rung, and its secret, to teach.', true],
+        ['10:30', 'Family ladders.', ' Walk everyone to the multi-purpose room.']
       ],
       tips: [
         'Invite strong readers to read a line aloud.',
@@ -116,12 +118,12 @@
       title: 'Grades 5–7',
       carry: 'a line and a question for their parents',
       plan: [
-        ['9:50', 'Welcome.', ' Repeat the mission: each of you will bring back a rung for your family.'],
-        ['9:52', 'Jacob.', ' Everyone starts here.', true],
-        ['10:05', 'A second visit.', ' Choose the Sages, Esau, Rashi, Ramban, or Rambam.', true],
-        ['10:17', 'A third visit.', ' Choose another one.', true],
-        ['10:30', 'Our rungs.', ' Each student picks a rung and the question they will ask their parents.', true],
-        ['10:35', 'Family ladders.', ' Walk everyone to the multi-purpose room.']
+        ['10:00', 'Welcome.', ' Begin once everyone is settled, even before 10:00. Repeat the mission: each of you will bring back a rung for your family.'],
+        ['10:02', 'Jacob.', ' Everyone starts here.', true],
+        ['10:14', 'A second visit.', ' Choose the Sages, Esau, Rashi, Ramban, or Rambam.', true],
+        ['', 'Ahead of time?', ' If the second visit ends before 10:15, choose a third.', 'maybe'],
+        ['10:25', 'Our rungs.', ' Each student picks a rung and the question they will ask their parents.', true],
+        ['10:30', 'Family ladders.', ' Walk everyone to the multi-purpose room.']
       ],
       tips: [
         'For a debate, split the room and let both sides make their case before you tap an answer.',
@@ -136,19 +138,18 @@
       title: 'Parents',
       carry: 'a line, often in Hebrew, and a question for their child',
       plan: [
-        ['9:50', 'Welcome.', ' Your children are climbing too, and soon they will teach you.'],
-        ['9:52', 'Jacob.', ' Everyone starts here.', true],
-        ['10:02', 'Rebekah.', ' A parent who sends a child away to save him.', true],
-        ['10:12', 'Isaac.', ' A parent who sends a child away with a blessing.', true],
-        ['10:22', 'One commentator.', ' Rashi, the Sages, Ramban, or Rambam.', true],
-        ['10:30', 'Our rungs,', ' then how to receive your child’s rung.', true],
-        ['10:35', 'Family ladders.', ' Stay here: your children join you.']
+        ['10:00', 'Welcome.', ' Your children are climbing too, and soon they will teach you.'],
+        ['10:02', 'Jacob.', ' Everyone starts here.', true],
+        ['10:14', 'Isaac.', ' A parent who sends a child away with a blessing.', true],
+        ['', 'Ahead of time?', ' If Isaac ends before 10:15, visit Rebekah: a parent who sends a child away to save him.', 'maybe'],
+        ['10:25', 'Our rungs,', ' then how to receive your child’s rung.', true],
+        ['10:30', 'Family ladders.', ' Stay here: your children join you.']
       ],
       tips: [
         'Pairs first, then the room. The discussion questions are written for pairs.',
         'Read the Hebrew aloud together. Many of the parents’ rungs are Hebrew lines.',
         'Typed questions work here too, with an imagined answer when there is no prepared one.',
-        'If time runs short, visit Rebekah or Isaac, not both.'
+        'Isaac’s blessing sets up the one you will give your children at the wrap-up.'
       ],
       end: 'Open Our rungs and say each one aloud once. Then prepare to receive your child’s rung:',
       receive: [
@@ -181,7 +182,7 @@
         el('div', {},
           el('p', { class: 'eyebrow', text: 'Voices of the Ladder · Family learning morning' }),
           el('h1', {}, 'Leader’s guide', el('b', { text: G.title })),
-          el('p', { class: 'when' }, 'Sunday, November 22 · Breakouts 9:50–10:35 · Forty-five minutes',
+          el('p', { class: 'when' }, 'Sunday, November 22 · Breakouts 10:00–10:30 · Thirty minutes',
             el('span', { class: 'room' }, 'Room ', el('i')))),
         el('div', { class: 'qrbox' },
           el('span', { class: 'cap', text: 'Your group’s link' }),
@@ -194,9 +195,9 @@
       el('div', { class: 'cols' },
         el('div', {},
           el('section', {},
-            el('h2', { class: 'label', text: 'Your forty-five minutes' }),
+            el('h2', { class: 'label', text: 'Your thirty minutes' }),
             el('ol', { class: 'plan' }, G.plan.map(function (p) {
-              return el('li', { class: p[3] ? 'key' : '' }, el('span', { class: 't', text: p[0] }), el('span', { class: 'w' }, el('b', { text: p[1] }), p[2]));
+              return el('li', { class: p[3] === 'maybe' ? 'maybe' : p[3] ? 'key' : '' }, el('span', { class: 't', text: p[0] }), el('span', { class: 'w' }, el('b', { text: p[1] }), p[2]));
             })),
             el('p', { class: 'muted', style: { margin: '2pt 0 0', font: 'italic 400 8.4pt/1.35 var(--serif)' }, text: 'Each visit takes ten to twelve minutes and ends with its rung.' })),
           el('section', {},
@@ -225,8 +226,8 @@
             el('li', { text: 'Turn off sleep and the screen saver.' }),
             el('li', { text: 'Full screen: F11 on Windows, Control-Command-F on a Mac.' }),
             el('li', { text: 'With a TV, check the words from the back row.' }),
-            el('li', { text: 'Try a visit at the walkthrough on Sunday, November 15.' }),
-            lv === 'parents' ? el('li', { text: 'At the end of T’filah, put the opening screen up in the sanctuary: ' + window.PRINT_QR.opening.short + '.' }) : null)),
+            el('li', { text: 'Watch the five-minute walkthrough video, then try a visit.' }),
+            lv === 'parents' ? el('li', { text: 'At the 9:00 meeting, show the teachers the cast on the opening screen: ' + window.PRINT_QR.opening.short + '.' }) : null)),
         el('div', { class: 'colophon' },
           el('span', { text: 'Voices of the Ladder · ' + q.short.replace(/#.*$/, '') }),
           el('span', { text: 'Prepared by Rabbi Dan Medwin · Parashat Vayeitzei 5787' })))));
