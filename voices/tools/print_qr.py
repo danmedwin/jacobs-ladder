@@ -1,4 +1,4 @@
-"""Writes voices/print/qr.js: a QR code, as an SVG path, for each group's link and for the take-home card.
+"""Writes voices/print/qr.js: a QR code, as an SVG path, for each group's link, the home page, and the take-home card.
 Run from the repository root after changing an address: python3 voices/tools/print_qr.py (needs: pip install segno)"""
 import json, os, re
 import segno
@@ -9,6 +9,7 @@ LINKS = {
     "g34": BASE + "voices/#g34",
     "g57": BASE + "voices/#g57",
     "parents": BASE + "voices/#parents",
+    "home": BASE + "voices/",
     "opening": BASE + "voices/#opening",
     "dream": BASE + "dream/",
 }

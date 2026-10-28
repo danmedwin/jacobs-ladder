@@ -20,7 +20,11 @@
   .fold-word.l { left: 0.54in; }
   .fold-word.r { right: 0.54in; }
 
-  .top { display: grid; grid-template-columns: auto 1fr auto; gap: 0.25in; align-items: end; padding-bottom: 0.14in; border-bottom: 1.2pt solid var(--ink); }
+  .top { display: grid; grid-template-columns: auto 1fr auto auto; gap: 0.25in; align-items: end; padding-bottom: 0.14in; border-bottom: 1.2pt solid var(--ink); }
+  .top .more { display: grid; grid-template-columns: auto auto; gap: 7pt; align-items: end; padding-left: 0.25in; border-left: 0.6pt solid var(--line); }
+  .top .more p { margin: 0; max-width: 1.25in; font: 400 8.6pt/1.4 var(--serif); color: var(--ink-2); }
+  .top .more b { display: block; font: 600 6.8pt/1 var(--ui); letter-spacing: 0.15em; text-transform: uppercase; color: var(--gold); margin-bottom: 3pt; }
+  .top .more .qr { width: 0.62in; }
   .top .ladder-mark { width: 22pt; height: 38pt; color: var(--gold-2); }
   .top h1 { margin: 3pt 0 0; font: 500 25pt/1 var(--display); }
   .top .sub { margin: 4pt 0 0; font: 500 9pt/1 var(--ui); color: var(--ink-2); }
@@ -68,7 +72,10 @@
           el('p', { class: 'eyebrow', text: 'Voices of the Ladder' }),
           el('h1', { text: 'Family ladders' }),
           el('p', { class: 'sub', text: 'Thirty minutes, together' })),
-        el('p', { class: 'table' }, el('b', { text: 'On your table' }), 'A ladder sheet, rung strips, and a rung key', el('br'), 'Markers and a glue stick')),
+        el('p', { class: 'table' }, el('b', { text: 'On your table' }), 'A ladder sheet, rung strips, and a rung key', el('br'), 'Markers and a glue stick'),
+        el('div', { class: 'more' },
+          el('p', {}, el('b', { text: 'Done early?' }), 'Scan to talk with more of the voices, here or at home.'),
+          P.qr('home'))),
       el('div', { class: 'steps' }, STEPS.map(function (s, i) {
         return el('section', { class: 'step' },
           el('div', { class: 'n' }, el('i', { text: String(i + 1) }), el('h2', { text: s.name })),

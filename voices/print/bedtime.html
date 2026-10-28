@@ -45,8 +45,9 @@
   .hands .over { margin: 2pt 0 0; font: italic 400 7.8pt/1.35 var(--serif); color: var(--ink-2); text-align: center; }
   .hands .over b { font-style: normal; font-weight: 600; color: var(--ink); }
 
-  .bottom { display: grid; grid-template-columns: 1fr auto; gap: 8pt; align-items: end; }
-  .bottom p { margin: 0; font: 400 7pt/1.35 var(--ui); color: var(--ink-3); }
+  .bottom { display: grid; grid-template-columns: 1fr 1fr; gap: 12pt; padding-top: 5pt; border-top: 0.6pt solid var(--line); }
+  .bottom .link { display: grid; grid-template-columns: auto 1fr; gap: 6pt; align-items: end; }
+  .bottom p { margin: 0; font: 400 6.6pt/1.35 var(--ui); color: var(--ink-3); }
   .bottom p b { display: block; margin-bottom: 1.5pt; font: 600 7.4pt/1.2 var(--ui); color: var(--ink); }
   .bottom .qr { width: 0.56in; }
 </style>
@@ -62,7 +63,7 @@
   var el = P.el, V = P.V;
   var SPARKLE = '<svg viewBox="-1 -1 2 2" aria-hidden="true"><path fill="currentColor" d="M0-1C.08-.2.2-.08 1 0 .2.08.08.2 0 1-.08.2-.2.08-1 0-.2-.08-.08-.2 0-1z"/></svg>';
   var he = V.sources.bedtime.verses[0].he;
-  var dream = window.PRINT_QR.dream;
+  var dream = window.PRINT_QR.dream, home = window.PRINT_QR.home;
 
   function angel(cls, name, means) {
     return el('div', { class: 'a ' + cls }, el('b', { text: name }), el('em', { text: means }));
@@ -88,8 +89,10 @@
           angel('back', 'R’fael', 'God heals')),
         el('p', { class: 'over' }, 'Reach toward each angel as you say its name. Then rest both hands on your head: ', el('b', { text: 'the Sh’chinah' }), ', God’s presence, is over you.')),
       el('footer', { class: 'bottom' },
-        el('p', {}, el('b', { text: 'See Jacob’s dream in eighteen styles' }), dream.short),
-        P.qr('dream')));
+        el('div', { class: 'link' }, P.qr('home'),
+          el('p', {}, el('b', { text: 'Visit the voices again' }), 'Every character, for every age: ', home.short)),
+        el('div', { class: 'link' }, P.qr('dream'),
+          el('p', {}, el('b', { text: 'See Jacob’s dream in eighteen styles' }), dream.short))));
   }
 
   document.body.appendChild(el('section', { class: 'sheet four' }, card(), card(), card(), card()));

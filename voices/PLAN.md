@@ -52,7 +52,7 @@ All the draft rungs are in `review/rungs.md`.
 
 ## Family ladders (thirty minutes)
 
-In the multi-purpose room, each family table gets a ladder sheet (11×17), a sheet of rung strips (six, plus a gold one for the top rung), markers, glue sticks, a rung key (one sheet with every character’s portrait and rung, so younger kids can point to the character they met), and a table card with the steps and questions.
+In the multi-purpose room, each family table gets a ladder sheet (11×17), a sheet of rung strips (six, plus a gold one for the top rung), markers, glue sticks, a rung key (one sheet with every character’s portrait and rung, so younger kids can point to the character they met), and a table card with the steps and questions. The table card’s QR code opens Voices of the Ladder, for a family that finishes early.
 
 1. **Share (eight minutes).** Youngest first, each person says who they met and teaches their rung, motion and all. Parents ask their question.
 2. **Build (eight minutes).** Write each rung on a strip (parents help the youngest) and put it on the ladder. The family decides the order, which is its own conversation.
@@ -66,7 +66,7 @@ Kids whose parents couldn’t come join a teacher’s table or another family.
 - **The community ladder.** Read several top rungs aloud.
 - **A blessing.** Before Jacob left home, Isaac blessed him (Genesis 28:1–4). Parents bless their children, perhaps with the traditional blessing for children. The version for sons quotes Jacob himself (Genesis 48:20), and the version for daughters names the matriarchs, including Rebekah, Rachel, and Leah, who all appear in Vayeitzei.
 - **A closing song,** by Cantor Sally Neff if she can stay (see Still open).
-- **To take home:** the angels of the bedtime Sh’ma, for tonight, on a card for each child.
+- **To take home:** the angels of the bedtime Sh’ma, for tonight, on a card for each child. Its QR code opens Voices of the Ladder, so families can talk with the other characters at home.
 
 ## Equipment and materials
 
