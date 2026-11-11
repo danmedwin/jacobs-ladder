@@ -138,6 +138,15 @@ button{font:inherit;color:inherit}
 .ov .x{all:unset;cursor:pointer;position:absolute;right:48px;top:36px;font:600 14px/1 var(--comm);letter-spacing:.14em;text-transform:uppercase;color:#EEE9DE;border:1px solid rgba(238,233,222,.4);padding:10px 14px;border-radius:2px}
 .ov .x:hover{background:rgba(238,233,222,.12)}
 .ov .x:focus-visible{outline:2px solid var(--gold-wash);outline-offset:2px}
+.ov .nav{all:unset;cursor:pointer;position:absolute;top:515px;transform:translateY(-50%);width:84px;height:84px;display:grid;place-items:center;border-radius:50%;color:#EEE9DE;border:1px solid rgba(238,233,222,.4);transition:background-color .15s ease,border-color .15s ease}
+.ov .nav svg{width:34px;height:34px}
+.ov .nav:hover{background:rgba(238,233,222,.12);border-color:rgba(238,233,222,.75)}
+.ov .nav:focus-visible{outline:2px solid var(--gold-wash);outline-offset:3px}
+.ov .nav[hidden]{display:none}
+.ov .prev{left:62px}
+.ov .next{right:62px}
+.ov figcaption .arrow{color:var(--gold-wash);margin:0 8px}
+.ov .ct{font:600 14px/1 var(--comm);letter-spacing:.14em;color:rgba(238,233,222,.6);margin-left:14px;white-space:nowrap}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 </style>
 </head>
@@ -182,6 +191,8 @@ button{font:inherit;color:inherit}
 
   <div class="ov" id="ov" hidden role="dialog" aria-modal="true" aria-label="Enlarged image">
     <button type="button" class="x" id="ovClose">Close</button>
+    <button type="button" class="nav prev" id="ovPrev" aria-label="Previous image"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M15 5l-7 7 7 7"/></svg></button>
+    <button type="button" class="nav next" id="ovNext" aria-label="Next image"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 5l7 7-7 7"/></svg></button>
     <figure><img id="ovImg" alt=""><figcaption id="ovCap"></figcaption></figure>
   </div>
 </div>
@@ -238,14 +249,32 @@ button{font:inherit;color:inherit}
   }
   hots.forEach(function(h){ h.addEventListener('click', function(){ select(h.dataset.key); }); });
 
+  var ovPrev = document.getElementById('ovPrev'), ovNext = document.getElementById('ovNext');
+  function showOvPic(){
+    var imgs = D[cur].imgs, im = imgs[pic], n = imgs.length;
+    ovImg.src = im.src; ovImg.alt = txt(im.who) + ', ' + im.what + ': ' + im.shows;
+    ovCap.innerHTML = capHTML(im) + (n > 1 ? '<span class="ct">' + (pic + 1) + ' / ' + n + '</span>' : '');
+    ovPrev.hidden = ovNext.hidden = n < 2;
+    ovImg.classList.remove('fade'); void ovImg.offsetWidth; ovImg.classList.add('fade');
+  }
+  function stepOv(d){
+    var n = D[cur].imgs.length; pic = (pic + d + n) % n;
+    renderImg(); showOvPic();
+  }
   function openOv(from){
     opener = from;
-    var im = D[cur].imgs[pic];
-    ovImg.src = im.src; ovImg.alt = txt(im.who) + ', ' + im.what + ': ' + im.shows; ovCap.innerHTML = capHTML(im);
+    showOvPic();
     ov.hidden = false; document.getElementById('ovClose').focus();
   }
-  function closeOv(){ ov.hidden = true; if (opener && document.body.contains(opener)) opener.focus(); }
+  function closeOv(){
+    ov.hidden = true;
+    // stepping re-renders the image pane, so the original opener may be gone
+    var back = (opener && document.body.contains(opener)) ? opener : document.getElementById('mainImg');
+    if (back) back.focus();
+  }
   document.getElementById('ovClose').addEventListener('click', closeOv);
+  ovPrev.addEventListener('click', function(){ stepOv(-1); });
+  ovNext.addEventListener('click', function(){ stepOv(1); });
   var qrOv = document.getElementById('qrOv'), qrBtn = document.getElementById('qrBtn');
   function openQr(){ qrOv.hidden = false; document.getElementById('qrClose').focus(); }
   function closeQr(){ qrOv.hidden = true; qrBtn.focus(); }
@@ -322,10 +351,7 @@ button{font:inherit;color:inherit}
     if (!qrOv.hidden) { if (e.key === 'Escape' || e.key === 'q' || e.key === 'Q') closeQr(); return; }
     if (!ov.hidden) {
       if (e.key === 'Escape') closeOv();
-      else if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
-        var n = D[cur].imgs.length; pic = (pic + (e.key === 'ArrowRight' ? 1 : -1) + n) % n;
-        renderImg(); var im = D[cur].imgs[pic]; ovImg.src = im.src; ovImg.alt = txt(im.who) + ', ' + im.what + ': ' + im.shows; ovCap.innerHTML = capHTML(im);
-      }
+      else if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') { e.preventDefault(); stepOv(e.key === 'ArrowRight' ? 1 : -1); }
       return;
     }
     if (e.target && e.target.classList && e.target.classList.contains('hot') && (e.key === 'Enter' || e.key === ' ')) { e.preventDefault(); select(e.target.dataset.key); return; }
