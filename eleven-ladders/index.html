@@ -159,8 +159,8 @@ footer{border-top:1px solid var(--rule);padding-block:28px 48px;color:var(--mute
 .lb button{all:unset;cursor:pointer;color:#E7E5DD;font:500 .8rem var(--mono);letter-spacing:.08em;text-transform:uppercase;padding:10px 12px;border:1px solid rgba(231,229,221,.35);border-radius:3px}
 .lb button:hover{background:rgba(231,229,221,.12)}
 .lb button:focus-visible{outline:2px solid #E2B24E;outline-offset:2px}
-.lb-close{position:absolute;top:calc(env(safe-area-inset-top,0px) + 10px);right:12px}
-@media (max-width:600px){.lb{grid-template-columns:1fr;grid-template-rows:1fr auto}.lb figure{grid-row:1}.lb-prev,.lb-next{display:none}}
+.lb .lb-close{position:absolute;top:calc(env(safe-area-inset-top,0px) + 10px);right:12px}
+@media (max-width:600px){.lb{grid-template-columns:1fr 1fr;grid-template-rows:1fr auto}.lb figure{grid-row:1;grid-column:1 / -1}.lb .lb-prev{grid-row:2;grid-column:1;justify-self:start}.lb .lb-next{grid-row:2;grid-column:2;justify-self:end}}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 
 /* tabs, summary, new rounds */
@@ -478,17 +478,17 @@ html{-webkit-text-size-adjust:100%}
 <div class="panel" id="p-lab" data-panel="lab" role="tabpanel" aria-labelledby="t-lab" hidden>
 <section>
   <h2>Chevrutah prompt lab</h2>
-  <p class="lede">A session plan for pairs, about thirty minutes, with a prompt builder. Pairs choose a text, write the instruction, and compare what comes back with what they expected.</p>
+  <p class="lede">A plan for pairs, with a prompt builder. Pairs pick a text and a lens, predict what the image will show, and compare what comes back with what they expected.</p>
 </section>
 <section class="lab">
   <div class="lab-plan">
     <h3>The plan</h3>
     <ol class="steps">
-      <li><b>Read, five minutes.</b> Each pair reads verses 12–13 in two translations and lists what a painter would have to decide: how many stones, ladder or stairs, who climbs, where God stands.</li>
-      <li><b>Predict, three minutes.</b> Before generating anything, write down what you expect the image to show.</li>
-      <li><b>Write, seven minutes.</b> Pick one text and one reading, from the translation, a commentator, a midrash, or your own, and build the prompt.</li>
-      <li><b>Generate, five minutes.</b> Run it twice and keep both images.</li>
-      <li><b>Compare, ten minutes.</b> Set the images beside your prediction. What did the words control? What did the machine add that the text never says?</li>
+      <li><b>Pick a text.</b> Start building your prompt in the <a href="#builder">prompt builder</a> by picking a text. You can pick one of the translations, a midrash, or paste in your own text.</li>
+      <li><b>Pick a lens.</b> Choose one under Lenses. If you like, add your own words for style or substance.</li>
+      <li><b>Pause to predict.</b> Read through the prompt the builder has created, and write down a list of what you expect to see in the image.</li>
+      <li><b>Prompt.</b> Copy the prompt and head to an image-generating AI: <a href="https://gemini.google.com/" target="_blank" rel="noopener">Gemini</a>, <a href="https://chatgpt.com/" target="_blank" rel="noopener">ChatGPT</a>, or <a href="https://copilot.microsoft.com/" target="_blank" rel="noopener">Microsoft Copilot</a>. A Gemini model made the images on this page, so its results compare most directly. Run it twice and keep both images.</li>
+      <li><b>Compare.</b> Set the images beside your prediction. What did the words control? What did the machine add that the text never says?</li>
     </ol>
     <h3>For the whole room</h3>
     <ul class="asks">
@@ -499,7 +499,7 @@ html{-webkit-text-size-adjust:100%}
     </ul>
     <h3>Practical notes</h3>
     <ul class="asks">
-      <li>Any image generator will do, such as the Gemini app. Each image takes under a minute.</li>
+      <li>Any image generator will do. Each image takes under a minute.</li>
       <li>Two images per prompt shows which details come from the words and which are luck.</li>
       <li>Keep prompts to text, and don’t upload photos of real people.</li>
     </ul>
@@ -509,7 +509,7 @@ html{-webkit-text-size-adjust:100%}
     <div class="field"><label for="bText">Text</label>
       <select id="bText"><optgroup label="Verses 12–13"><option value="rjps">Revised JPS, 2023 (JPS, CC BY-NC)</option><option value="jps1917">JPS 1917</option><option value="kjv">King James Version</option><option value="ylt">Young’s Literal Translation</option><option value="bbe">Bible in Basic English</option><option value="hebrew">Hebrew (Masoretic text)</option></optgroup><optgroup label="Midrash"><option value="m_altar">The ladder is the altar ramp (B’reishit Rabbah 68:12)</option><option value="m_sinai">The ladder is Sinai (B’reishit Rabbah 68:12)</option><option value="m_likeness">Angels comparing Jacob with his likeness (B’reishit Rabbah 68:12)</option><option value="m_kingdoms">The guardian angels of four kingdoms (Vayikra Rabbah 29:2)</option><option value="m_nursemaid">A nursemaid over a cradle (B’reishit Rabbah 69:3)</option></optgroup><option value="own">Paste your own text…</option></select></div>
     <div class="field" id="bPasteWrap" hidden><label for="bPaste">Your text</label><textarea id="bPaste" rows="4" placeholder="Paste verses 12–13 from any translation"></textarea></div>
-    <div class="field"><label for="bLens">Instruction</label>
+    <div class="field"><label for="bLens">Lenses</label>
       <select id="bLens"><option value="none">Text only</option><option value="noGod">Do not depict God as a person</option><option value="medieval">Medieval Hebrew manuscript</option><option value="rashi">Follow Rashi’s interpretation</option><option value="jacob">Through Jacob’s eyes</option><option value="jewish">Reflect Jewish tradition</option></select></div>
     <div class="field"><label for="bOwn">Your own words (optional)</label><input id="bOwn" type="text" placeholder="For example: as a mosaic floor"></div>
     <div class="field"><label for="bOut">Prompt to paste</label><textarea id="bOut" rows="10" readonly></textarea></div>
