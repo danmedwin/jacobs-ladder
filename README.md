@@ -60,6 +60,13 @@ reads the same data as the tool, so a changed rung or a new portrait shows up in
 `python3 voices/tools/print_qr.py` if an address changes. The fonts are served from `voices/print/fonts/`, so the
 pages print the same without an internet connection.
 
+The slide opens on one phrase from a link: `#place`, `#stones`, `#stairway`, `#angels`, `#beside`, or `#ground`.
+The word cards for the Saturday Torah study are in `print/word-cards.html`: three tent cards, for the place, the stones, and
+the ground, each with the path through the slide, questions for chevrutah, and two QR codes, one opening the slide on that
+word (for an iPad) and one opening its section of Eleven Ladders (for a phone). They share type and fonts with the Sunday
+printables. `python3 print/print_qr.py` rewrites the QR codes after an address changes; `print/word-cards.pdf` is printed
+from the page in Chrome (landscape Letter, no headers or footers).
+
 The slide and Eleven Ladders share seventy AI images in `img/` and eleven artworks in `art/`.
 
 The source cards’ text lives in two places, the `SRC` object in each page’s script, so a correction to a card

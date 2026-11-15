@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Word cards · Jacob's Ladder Torah study</title>
+<!-- Type, color, sheet sizes, and offline fonts are shared with the Sunday printables -->
+<link rel="stylesheet" href="../voices/print/print.css">
+<style>
+  @page { size: 11in 8.5in; margin: 0; }
+
+  .intro { max-width: 11in; margin: 0 auto 0.3in; padding: 0 0.2in; font: 400 11pt/1.5 var(--ui); color: var(--ink); }
+  .intro h1 { margin: 0 0 4pt; font: 500 20pt/1.1 var(--display); }
+  .intro p { margin: 0 0 4pt; }
+
+  .tent { padding: 0; }
+  /* Two identical panels; the top one is upside down, so after folding each side reads right way up */
+  .panel { position: absolute; left: 0; width: 11in; height: 4.25in; padding: 0.32in 0.5in 0.3in; display: grid; grid-template-rows: auto 1fr; gap: 0.17in; }
+  .panel.upper { top: 0; transform: rotate(180deg); }
+  .panel.lower { top: 4.25in; }
+  .fold { position: absolute; top: 4.25in; width: 0.22in; border-top: 0.75pt solid #b3a78f; }
+  .fold.l { left: 0.26in; }
+  .fold.r { right: 0.26in; }
+  .fold-word { position: absolute; top: calc(4.25in - 4pt); font: 600 5.5pt/1 var(--ui); letter-spacing: 0.14em; text-transform: uppercase; color: #b3a78f; }
+  .fold-word.l { left: 0.54in; }
+  .fold-word.r { right: 0.54in; }
+
+  .w-place { --lv: #2b4778; }
+  .w-stones { --lv: #5a564d; }
+  .w-ground { --lv: #7a5226; }
+
+  .top { display: grid; grid-template-columns: auto 1fr auto; gap: 0.22in; align-items: end; padding-bottom: 0.12in; border-bottom: 1.2pt solid var(--ink); }
+  .badge { display: grid; justify-items: center; gap: 5pt; }
+  .badge .letter { display: grid; place-items: center; width: 0.66in; height: 0.66in; border-radius: 50%; background: var(--lv); color: #fff; font: 500 25pt/1 var(--display); padding-top: 3pt; }
+  .badge .key { font: 600 6.6pt/1 var(--ui); letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-3); white-space: nowrap; }
+  .titles .eyebrow { color: var(--lv); }
+  .titles h1 { margin: 4pt 0 0; font: 500 26pt/1 var(--display); }
+  .titles .sub { margin: 6pt 0 0; font: 400 10pt/1.2 var(--serif); color: var(--ink-2); }
+  .titles .sub .he { font-size: 13pt; color: var(--ink); }
+  .titles .sub i { font-style: italic; }
+  .codes { display: flex; gap: 0.18in; }
+  .code { display: grid; grid-template-columns: 0.62in 0.95in; gap: 7pt; align-items: end; }
+  .code .qr { width: 0.62in; }
+  .code p { margin: 0; font: 400 8pt/1.35 var(--serif); color: var(--ink-2); }
+  .code b { display: block; margin-bottom: 2pt; font: 600 6.8pt/1 var(--ui); letter-spacing: 0.15em; text-transform: uppercase; color: var(--lv); }
+
+  .cols { display: grid; grid-template-columns: 2.85in 1fr 2.2in; gap: 0.26in; align-items: start; }
+  .cols h2 { margin: 0 0 6pt; font: 600 7.2pt/1 var(--ui); letter-spacing: 0.15em; text-transform: uppercase; color: var(--lv); }
+  .path { margin: 0; padding-left: 1.25em; display: grid; gap: 3.5pt; font: 400 9.4pt/1.32 var(--serif); }
+  .path li::marker { font: 600 8pt var(--ui); color: var(--lv); }
+  .path .addr { font: 600 8.6pt/1 var(--ui); white-space: nowrap; }
+  .path .he-l { font-family: var(--display); font-size: 10.5pt; }
+  .qs { margin: 0; padding: 0; list-style: none; display: grid; gap: 5pt; }
+  .qs li { position: relative; padding-left: 11pt; font: 400 10pt/1.34 var(--serif); }
+  .qs li::before { content: ""; position: absolute; left: 0; top: 0.5em; width: 4pt; height: 4pt; border-radius: 50%; background: var(--lv); }
+  .big { margin: 8pt 0 0; padding: 6pt 10pt 7pt; border-left: 2.5pt solid var(--lv); background: var(--wash); border-radius: 0 5pt 5pt 0; font: italic 500 10.8pt/1.32 var(--serif); }
+  .side p { margin: 0; font: 400 9.4pt/1.34 var(--serif); }
+  .side .steps5 { margin: 4pt 0 0; font: 600 7.6pt/1.5 var(--ui); color: var(--ink-2); }
+  .side .back { margin-top: 10pt; padding: 7pt 10pt 8pt; border: 0.75pt solid var(--line); border-radius: 5pt; }
+</style>
+</head>
+<body>
+<div class="intro no-print">
+  <h1>Word cards for Torah study</h1>
+  <p>Saturday, November 21, 2026, Social Hall. One tent card for each of the three chevrutah words: the place, the stones, and the ground.</p>
+  <p>Print landscape on Letter at 100% (“Actual size”), fold along the marks, and set one on each table, going around the room in order: place, stones, ground. The PDF is <a href="word-cards.pdf">word-cards.pdf</a>.</p>
+</div>
+<script src="qr.js"></script>
+<script>
+(function () {
+  'use strict';
+  function add(node, kid) {
+    if (kid == null || kid === false) return;
+    if (Array.isArray(kid)) { kid.forEach(function (k) { add(node, k); }); return; }
+    node.appendChild(typeof kid === 'string' ? document.createTextNode(kid) : kid);
+  }
+  function el(tag, props) {
+    var node = document.createElement(tag);
+    Object.keys(props || {}).forEach(function (k) {
+      var v = props[k];
+      if (v == null || v === false) return;
+      if (k === 'class') node.className = v;
+      else if (k === 'text') node.textContent = v;
+      else node.setAttribute(k, v === true ? '' : v);
+    });
+    for (var i = 2; i < arguments.length; i++) add(node, arguments[i]);
+    return node;
+  }
+  function qr(key) {
+    var box = el('div', { class: 'qr' });
+    box.innerHTML = window.WORD_QR[key].svg;
+    return box;
+  }
+  var WORDS = [
+    { id: 'place', en: 'The place', letter: 'א', key: '1', he: 'בַּמָּקוֹם', tr: 'bamakom', ref: 'Genesis 28:11', phrase: 'a certain place',
+      qs: ['The Hebrew says “the place,” as if we already know which one. Which translations tell you, and what did naming it do to the picture?',
+           'Find Torah Yesharah’s stone altar. Why would a translator write the Binding of Isaac into this verse?',
+           'Alter counts “place” six times in the story. How many can you find, and what happens to the place along the way?'],
+      big: 'What turns an ordinary place into a holy one?' },
+    { id: 'stones', en: 'The stones', letter: 'ב', key: '2', he: 'מֵאַבְנֵי הַמָּקוֹם', tr: 'mei’avnei hamakom', ref: 'Genesis 28:11', phrase: 'one of the stones',
+      qs: ['One stone or many? Find the single rock, the King James heap, and Kehot’s ring of stones.',
+           'Verse 11 says “one of the stones,” and verse 18 says “the stone.” Rashi has the stones quarrel over which would pillow the righteous man, until God makes them one (Talmud Chullin 91b). What problem in the text is Rashi solving?',
+           'Alter says stones follow Jacob through his whole story. Where else does Jacob meet a stone?'],
+      big: 'Why would the Rabbis want the stones to argue over Jacob?' },
+    { id: 'ground', en: 'The ground', letter: 'ו', key: '6', he: 'הָאָרֶץ אֲשֶׁר אַתָּה שֹׁכֵב עָלֶיהָ', tr: 'ha’aretz asher atah shocheiv aleha', ref: 'Genesis 28:13', phrase: 'the ground on which you are lying',
+      qs: ['“The ground on which you are lying”: how big is that? Rashi says God folded the whole Land of Israel up beneath Jacob (Rashi on Genesis 28:13). Find Kehot’s slab of land, and the unrolled map on the Lenses tab.',
+           'Which translations make the promise sound small, and which make it sound huge?'],
+      big: 'What would it mean to be promised the ground you are lying on, right now?' }
+  ];
+
+  function panel(w, cls) {
+    return el('div', { class: 'panel ' + cls },
+      el('header', { class: 'top' },
+        el('div', { class: 'badge' },
+          el('span', { class: 'letter', lang: 'he', text: w.letter }),
+          el('span', { class: 'key' }, 'Press ', el('span', { class: 'kbd', text: w.key }))),
+        el('div', { class: 'titles' },
+          el('p', { class: 'eyebrow', text: 'Torah study · Jacob’s dream · chevrutah' }),
+          el('h1', { text: w.en }),
+          el('p', { class: 'sub' }, el('span', { class: 'he', lang: 'he', dir: 'rtl', text: w.he }), ' · ', el('i', { text: w.tr }), ' · ' + w.ref)),
+        el('div', { class: 'codes' },
+          el('div', { class: 'code' }, qr(w.id + '-slide'), el('p', {}, el('b', { text: 'iPad' }), 'Opens the slide on this word')),
+          el('div', { class: 'code' }, qr(w.id + '-phone'), el('p', {}, el('b', { text: 'Phone' }), 'Opens this word in Eleven Ladders')))),
+      el('div', { class: 'cols' },
+        el('section', {},
+          el('h2', { text: 'Find it on the slide' }),
+          el('ol', { class: 'path' },
+            el('li', {}, 'On a laptop, open ', el('span', { class: 'addr', text: 'techrabbi.org/jacobs-ladder' }), '.'),
+            el('li', {}, 'Tap or click ', el('span', { class: 'he-l', lang: 'he', text: w.letter }), ', “' + w.phrase + ',” in the verses, or press ' + w.key + '.'),
+            el('li', { text: 'Read how each translation renders it. Tap a name for its card.' }),
+            el('li', { text: 'Tap the big image to enlarge it, and use the arrows to step through.' }),
+            el('li', { text: 'Follow “Explore this phrase in Eleven Ladders →” to go deeper.' }))),
+        el('section', {},
+          el('h2', { text: 'Talk it over' }),
+          el('ul', { class: 'qs' }, w.qs.map(function (q) { return el('li', { text: q }); })),
+          el('p', { class: 'big', text: w.big })),
+        el('section', { class: 'side' },
+          el('h2', { text: 'Done early?' }),
+          el('p', { text: 'Make your own image of this word with the Chevrutah lab tab in Eleven Ladders.' }),
+          el('p', { class: 'steps5' }, 'Pick a text · Pick a lens · Predict', el('br'), 'Prompt · Compare'),
+          el('div', { class: 'back' },
+            el('h2', { text: 'Bring back' }),
+            el('p', { text: 'One image to show the room, and what it taught you about the words.' })))));
+  }
+
+  WORDS.forEach(function (w) {
+    document.body.appendChild(el('section', { class: 'sheet landscape tent w-' + w.id },
+      panel(w, 'upper'), panel(w, 'lower'),
+      el('i', { class: 'fold l' }), el('i', { class: 'fold r' }),
+      el('span', { class: 'fold-word l', text: 'Fold' }), el('span', { class: 'fold-word r', text: 'Fold' })));
+  });
+})();
+</script>
+</body>
+</html>

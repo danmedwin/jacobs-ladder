@@ -373,7 +373,10 @@ button{font:inherit;color:inherit}
     } catch (err) { fs.hidden = true; }
   });
 
-  select(cur);
+  // A link can open the slide on one phrase: #place, #stones, #stairway, #angels, #beside, or #ground
+  function hashKey(){ var h = location.hash.slice(1); return ORDER.indexOf(h) >= 0 ? h : null; }
+  select(hashKey() || cur);
+  window.addEventListener('hashchange', function(){ var k = hashKey(); if (k && k !== cur) select(k); });
 })();
 </script>
 </body>
