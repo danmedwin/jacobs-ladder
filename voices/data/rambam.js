@@ -26,7 +26,8 @@ VOICES.scripts.rambam = {
     { say: 'In my words: “This ladder all may climb up who wish to do so.”', src: 'Guide 1:15' },
     { ask: 'What would climbing that ladder look like for you?', discuss: true,
       tip: 'Take a few answers. Then tap to hear Rambam.',
-      reveal: ['Today you climbed in your group. When you go back to your family, you come down and teach. That’s the whole ladder.'] },
+      reveal: [{ say: 'For me, climbing was study, every day of my life. Coming down was teaching.',
+        teacher: 'Today you climbed in your group. When you go back to your family, you come down and teach. That’s the whole ladder.' }] },
     { prompt: 'Ask me anything. Choose a question, or type your own.', typing: true, questions: [
       { q: 'Did Jacob really see a ladder?', keys: 'real really see ladder dream vision parable parables kinds', a: [
         { say: 'He saw a prophetic vision, and I read it as a parable, where each part stands for an idea.', src: 'Guide, Introduction' } ] },
@@ -46,30 +47,34 @@ VOICES.scripts.rambam = {
         { say: 'In my words: “This ladder all may climb up who wish to do so, and they must ultimately attain to a knowledge of Him who is above the summit of the ladder.”', src: 'Guide 1:15' } ] }
     ] },
     { rung: true },
-    { next: { say: 'For another great reading of the angels, visit Ramban. Or hear the Sages, who read the ladder many ways at once.', ids: ['ramban', 'sages', 'jacob'] } }
+    { next: { say: 'Go and hear the Sages, who read the ladder many ways at once.', teacher: 'Or, for another great reading of the angels, visit Ramban.', ids: ['ramban', 'sages', 'jacob'] } }
   ] },
 
   parents: { beats: [
     { say: 'I am Maimonides. I was born in Córdoba around 1138. My family fled when I was a boy, and after years of wandering I settled in Egypt, as a physician and a leader of the Jewish community. I wrote the Guide for the Perplexed in Arabic.' },
     { say: 'The Guide was written for a reader who takes both Torah and philosophy seriously and feels torn between them. Its first part goes word by word through the Bible’s language about God, so that no one imagines God with a body.' },
     { say: 'Take <i>nitzav</i>, “stood.” In my words: “Whenever this term is applied to God it must be understood in the latter sense,” that is, continuance and permanence. God does not stand anywhere.', src: 'Guide 1:15' },
-    { ask: 'The Revised JPS reads, “standing beside him was God.” I read God as permanent, above the ladder. What is gained, and what is lost, with each?', discuss: true,
+    { ask: 'Some read that God stood beside Jacob. I read God as permanent, above the ladder. What is gained, and what is lost, with each?', discuss: true,
+      teacher: 'The Revised JPS reads, “standing beside him was God.”',
       tip: 'Pairs first. Then tap to hear Rambam.',
       reveal: ['A God beside you is close, and a God who never changes is reliable. Jacob needed both that night, and so do most of us.'] },
     { picture: { style: 'classical' } },
     { say: 'Then the angels: “Angels of God” who were going up represent the prophets. They go up first, because “the ‘ascending’ and arriving at a certain height of the ladder precedes the ‘descending,’ i.e., the application of the knowledge acquired in the ascent for the training and instruction of mankind.”', src: 'Guide 1:15' },
-    { say: 'Samuel ibn Tibbon’s Hebrew translation of my Arabic puts it plainly: <span class="he-inline" lang="he" dir="rtl">ובו יעלה כל מי שיעלה</span> “on it will climb whoever climbs.” In Friedlander’s English: “This ladder all may climb up who wish to do so.”', src: 'Guide 1:15' },
+    { say: 'Samuel ibn Tibbon’s Hebrew translation of my Arabic puts it plainly: <span class="he-inline" lang="he" dir="rtl">ובו יעלה כל מי שיעלה</span> “on it will climb whoever climbs.”', src: 'Guide 1:15',
+      teacher: 'In Friedlander’s English: “This ladder all may climb up who wish to do so.”' },
     { ask: 'What does climbing look like for an adult: study, practice, character? And who has come down the ladder for you, to teach you what they learned?', discuss: true,
       tip: 'Pairs, then a few for the room. Then tap to hear Rambam.',
-      reveal: ['This morning is built on that reading. Your children climbed in their groups. At the family tables, they come down and teach you. Let them.'] },
+      reveal: [{ say: 'A teacher is someone who came back down. I tried to be one.',
+        teacher: 'This morning is built on that reading. Your children climbed in their groups. At the family tables, they come down and teach you. Let them.' }] },
     { say: 'One more thing, about how I read. In the Guide’s introduction I describe two kinds of prophetic parable. In one, every word carries an idea. In the other, only the whole carries the idea, and many details are there to shape the story, “or better to conceal the idea.” I added, “Consider this well.” Then I gave Jacob’s ladder as the first kind: seven parts, seven ideas.', src: 'Guide, Introduction' },
-    { prompt: 'Ask Rambam anything. Choose a question, or type your own.', typing: true, questions: [
+    { prompt: 'Ask me anything. Choose a question, or type your own.', typing: true, questions: [
       { q: 'What are the seven parts?', keys: 'seven parts ideas elements list', a: [
         { say: 'The ladder; set on the ground; its top reaching the sky; angels of God; going up; going down; and God standing above it.', src: 'Guide, Introduction' } ] },
       { q: 'Did Jacob see a real ladder?', keys: 'real really see ladder dream vision parable', a: [
         { say: 'He saw a prophetic vision. I read it as a parable in which every word carries an idea.', src: 'Guide, Introduction' } ] },
       { q: 'How is your reading different from Ramban’s?', keys: 'ramban different nachmanides compare disagree', a: [
-        { say: 'Ramban reads the angels as God’s messengers, who carry out God’s decrees in the world. I read them, in this dream, as prophets: human beings who climb in understanding and come down to teach.', src: ['Ramban on Genesis 28:12:1', 'Guide 1:15'] } ] },
+        { say: 'I never read him: he wrote after my time. I can tell you my reading. In this dream, the angels are prophets: human beings who climb in understanding and come down to teach.', src: 'Guide 1:15',
+          teacher: { say: 'Ramban reads the angels as God’s messengers, who carry out God’s decrees in the world.', src: 'Ramban on Genesis 28:12:1' } } ] },
       { q: 'Why did you write in Arabic?', keys: 'arabic language write wrote hebrew translation', a: [
         'It was the language of my world and of my readers. Samuel ibn Tibbon translated the Guide into Hebrew, and we wrote to each other about the translation.' ] },
       { q: 'Can anyone climb the ladder?', keys: 'anyone climb prophet who can everyone', a: [
@@ -82,6 +87,6 @@ VOICES.scripts.rambam = {
         'I was born in Córdoba. After we fled, my family wandered in Spain for years. In my twenties we moved to Fez, in Morocco. Then came a short stay in the Land of Israel, and then Egypt: Alexandria first, then Fustat, near Cairo, for the rest of my life.' ] }
     ] },
     { rung: true },
-    { next: { say: 'For a reading of the same angels as God’s messengers, visit Ramban. For many readings at once, the Sages.', ids: ['ramban', 'sages', 'jacob'] } }
+    { next: { say: 'For many readings at once, visit the Sages.', teacher: 'For a reading of the same angels as God’s messengers, visit Ramban.', ids: ['ramban', 'sages', 'jacob'] } }
   ] }
 };

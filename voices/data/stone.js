@@ -28,13 +28,17 @@ VOICES.scripts.stone = {
       reveal: [{ say: 'For Jacob, it was me! And God, who told him, “I am with you.”', src: 'Genesis 28:15' }] },
     { prompt: 'What would you like to ask me?', questions: [
       { q: 'Were you comfy?', a: [
-        { say: 'Yes! The Sages said that under Jacob, we stones became as soft as a bed and a feather pillow.', src: 'Bereshit Rabbah 68:11 (the stones)' } ] },
+        { say: 'Yes! Under Jacob, we stones became as soft as a bed and a feather pillow.', src: 'Bereshit Rabbah 68:11 (the stones)',
+          teacher: 'That’s what the Sages said.' } ] },
       { q: 'Can stones really talk?', a: [
-        { say: 'Not really! This is a midrash, a story our teachers told about the Torah. It shows that everything wanted to help Jacob, even the stones.', src: 'Rashi on Genesis 28:11:4' } ] },
+        { say: 'I’m talking to you right now, aren’t I?',
+          teacher: { say: 'Not really! This is a midrash, a story our teachers told about the Torah. It shows that everything wanted to help Jacob, even the stones.', src: 'Rashi on Genesis 28:11:4' } } ] },
       { q: 'Who told your story?', a: [
-        { say: 'A teacher named Rashi wrote it down, about a thousand years ago. He learned it from even older books: the Talmud and the midrash.', src: ['Rashi on Genesis 28:11:4', 'Chullin 91b (the stones)', 'Bereshit Rabbah 68:11 (the stones)'] } ] },
+        { say: 'I don’t know! I’m a stone. I just held his head.',
+          teacher: { say: 'A teacher named Rashi wrote it down, about a thousand years ago. He learned it from even older books: the Talmud and the midrash.', src: ['Rashi on Genesis 28:11:4', 'Chullin 91b (the stones)', 'Bereshit Rabbah 68:11 (the stones)'] } } ] },
       { q: 'Where are you now?', a: [
-        { say: 'Nobody knows! But many years later, Jacob came back to Beit El and set up a stone there again.', src: 'Genesis 35:14' } ] }
+        { say: 'That’s a secret I’m keeping! But many years later, Jacob came back to Beit El and set up a stone there again.', src: 'Genesis 35:14',
+          teacher: 'Nobody knows where the stone is now.' } ] }
     ] },
     { rung: true },
     { next: { say: 'Thanks for visiting me! Who do you want to meet next?', ids: ['jacob', 'angel', 'esau'] } }

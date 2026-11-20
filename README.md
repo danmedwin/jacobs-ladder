@@ -33,7 +33,10 @@ morning. A group chooses a character (Jacob, Esau, Rebekah, Isaac, an angel, the
 or Rambam), who tells their side of the night at Bethel, answers the group’s questions, asks the group questions,
 and ends with a rung: one line to carry back to the family. There are four versions, each at its own link:
 `voices/#k2`, `#g34`, `#g57`, and `#parents`, plus `#opening` for the TV. The teacher moves the conversation with the
-space bar or arrow keys, and any line drawn from a text opens a card with the Hebrew and the Revised JPS. Scripts live
+space bar or arrow keys, and any line drawn from a text opens a card with the Hebrew and the Revised JPS. Each character
+speaks only from their own life and what they could know: what the Torah says or leaves out, a translation, or a later
+teacher appears under the character’s line as a Teacher says line, read by the teacher, and a detail no text gives is
+labeled Imagined (the fields are described at the top of `voices/data/jacob.js`). Scripts live
 in `voices/data/`, one file per character; `voices/review/` holds readable copies for review, `voices/PLAN.md` the plan
 for the morning, and `voices/PORTRAITS.md` the prompts for the character portraits, which
 `voices/tools/portraits.py` sends to Gemini. `voices/tools/` keeps the Sefaria

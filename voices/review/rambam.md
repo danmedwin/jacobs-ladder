@@ -4,6 +4,8 @@ A readable copy of what the tool says, for review. It is generated from `voices/
 
 Small gray references are the source cards a teacher can open during the visit. Numbered lines are the steps the teacher moves through with Next.
 
+A character speaks only from their own life and what they could know. Anything else is marked **Teacher says:** and is read by the teacher in their own voice; it appears on screen under the character’s line. *(imagined)* marks a line that fits the story and its world but that no text says; the screen labels it “Imagined.”
+
 ## Grades 5–7
 
 *The fuller story, the sources, debate, and typed questions.*
@@ -26,7 +28,7 @@ Small gray references are the source cards a teacher can open during the visit. 
 10. In my words: “This ladder all may climb up who wish to do so.” <sub>Guide for the Perplexed 1:15</sub>
 11. **Rambam asks the group to discuss:** What would climbing that ladder look like for you?
    - *Teacher: Take a few answers. Then tap to hear Rambam.*
-   - Then Rambam answers: Today you climbed in your group. When you go back to your family, you come down and teach. That’s the whole ladder.
+   - Then Rambam answers: For me, climbing was study, every day of my life. Coming down was teaching. **Teacher says:** Today you climbed in your group. When you go back to your family, you come down and teach. That’s the whole ladder.
 12. **Rambam:** Ask me anything. Choose a question, or type your own. *(Typing is on: typed questions are matched to these.)*
    1. *Did Jacob really see a ladder?* → He saw a prophetic vision, and I read it as a parable, where each part stands for an idea. <sub>Guide for the Perplexed, Introduction</sub>
    2. *What are the seven parts?* → The ladder; set on the ground; its top reaching the sky; angels of God; going up; going down; and God standing above it. <sub>Guide for the Perplexed, Introduction</sub>
@@ -38,7 +40,8 @@ Small gray references are the source cards a teacher can open during the visit. 
    8. *Can anyone climb the ladder?* → In my words: “This ladder all may climb up who wish to do so, and they must ultimately attain to a knowledge of Him who is above the summit of the ladder.” <sub>Guide for the Perplexed 1:15</sub>
 13. **The rung:** “Climb up to learn, then come back down to teach.”
    - **Ask your parents:** What’s something you learned today that you could teach me?
-14. For another great reading of the angels, visit Ramban. Or hear the Sages, who read the ladder many ways at once. *(Suggests: Ramban, The Sages, Jacob.)*
+14. Go and hear the Sages, who read the ladder many ways at once. *(Suggests: Ramban, The Sages, Jacob.)*
+   - **Teacher says:** Or, for another great reading of the angels, visit Ramban.
 
 ## Parents
 
@@ -47,20 +50,22 @@ Small gray references are the source cards a teacher can open during the visit. 
 1. I am Maimonides. I was born in Córdoba around 1138. My family fled when I was a boy, and after years of wandering I settled in Egypt, as a physician and a leader of the Jewish community. I wrote the Guide for the Perplexed in Arabic.
 2. The Guide was written for a reader who takes both Torah and philosophy seriously and feels torn between them. Its first part goes word by word through the Bible’s language about God, so that no one imagines God with a body.
 3. Take *nitzav*, “stood.” In my words: “Whenever this term is applied to God it must be understood in the latter sense,” that is, continuance and permanence. God does not stand anywhere. <sub>Guide for the Perplexed 1:15</sub>
-4. **Rambam asks the group to discuss:** The Revised JPS reads, “standing beside him was God.” I read God as permanent, above the ladder. What is gained, and what is lost, with each?
+4. **Rambam asks the group to discuss:** Some read that God stood beside Jacob. I read God as permanent, above the ladder. What is gained, and what is lost, with each?
+   - **Teacher says:** The Revised JPS reads, “standing beside him was God.”
    - *Teacher: Pairs first. Then tap to hear Rambam.*
    - Then Rambam answers: A God beside you is close, and a God who never changes is reliable. Jacob needed both that night, and so do most of us.
 5. *[Animation: Classical Painting, from the Jacob’s Dream gallery.]*
 6. Then the angels: “Angels of God” who were going up represent the prophets. They go up first, because “the ‘ascending’ and arriving at a certain height of the ladder precedes the ‘descending,’ i.e., the application of the knowledge acquired in the ascent for the training and instruction of mankind.” <sub>Guide for the Perplexed 1:15</sub>
-7. Samuel ibn Tibbon’s Hebrew translation of my Arabic puts it plainly: ובו יעלה כל מי שיעלה  “on it will climb whoever climbs.” In Friedlander’s English: “This ladder all may climb up who wish to do so.” <sub>Guide for the Perplexed 1:15</sub>
+7. Samuel ibn Tibbon’s Hebrew translation of my Arabic puts it plainly: ובו יעלה כל מי שיעלה  “on it will climb whoever climbs.” <sub>Guide for the Perplexed 1:15</sub>
+   - **Teacher says:** In Friedlander’s English: “This ladder all may climb up who wish to do so.”
 8. **Rambam asks the group to discuss:** What does climbing look like for an adult: study, practice, character? And who has come down the ladder for you, to teach you what they learned?
    - *Teacher: Pairs, then a few for the room. Then tap to hear Rambam.*
-   - Then Rambam answers: This morning is built on that reading. Your children climbed in their groups. At the family tables, they come down and teach you. Let them.
+   - Then Rambam answers: A teacher is someone who came back down. I tried to be one. **Teacher says:** This morning is built on that reading. Your children climbed in their groups. At the family tables, they come down and teach you. Let them.
 9. One more thing, about how I read. In the Guide’s introduction I describe two kinds of prophetic parable. In one, every word carries an idea. In the other, only the whole carries the idea, and many details are there to shape the story, “or better to conceal the idea.” I added, “Consider this well.” Then I gave Jacob’s ladder as the first kind: seven parts, seven ideas. <sub>Guide for the Perplexed, Introduction</sub>
-10. **Rambam:** Ask Rambam anything. Choose a question, or type your own. *(Typing is on: typed questions are matched to these.)*
+10. **Rambam:** Ask me anything. Choose a question, or type your own. *(Typing is on: typed questions are matched to these.)*
    1. *What are the seven parts?* → The ladder; set on the ground; its top reaching the sky; angels of God; going up; going down; and God standing above it. <sub>Guide for the Perplexed, Introduction</sub>
    2. *Did Jacob see a real ladder?* → He saw a prophetic vision. I read it as a parable in which every word carries an idea. <sub>Guide for the Perplexed, Introduction</sub>
-   3. *How is your reading different from Ramban’s?* → Ramban reads the angels as God’s messengers, who carry out God’s decrees in the world. I read them, in this dream, as prophets: human beings who climb in understanding and come down to teach. <sub>Ramban on Genesis 28:12; Guide for the Perplexed 1:15</sub>
+   3. *How is your reading different from Ramban’s?* → I never read him: he wrote after my time. I can tell you my reading. In this dream, the angels are prophets: human beings who climb in understanding and come down to teach. <sub>Guide for the Perplexed 1:15</sub> **Teacher says:** Ramban reads the angels as God’s messengers, who carry out God’s decrees in the world. <sub>Ramban on Genesis 28:12</sub>
    4. *Why did you write in Arabic?* → It was the language of my world and of my readers. Samuel ibn Tibbon translated the Guide into Hebrew, and we wrote to each other about the translation.
    5. *Can anyone climb the ladder?* → In my words: “This ladder all may climb up who wish to do so, and they must ultimately attain to a knowledge of Him who is above the summit of the ladder.” <sub>Guide for the Perplexed 1:15</sub>
    6. *Is God far away, then?* → Unchanging is not the same as far. The ladder is there for anyone who wants to climb. <sub>Guide for the Perplexed 1:15</sub>
@@ -68,4 +73,5 @@ Small gray references are the source cards a teacher can open during the visit. 
    8. *Where did you live?* → I was born in Córdoba. After we fled, my family wandered in Spain for years. In my twenties we moved to Fez, in Morocco. Then came a short stay in the Land of Israel, and then Egypt: Alexandria first, then Fustat, near Cairo, for the rest of my life.
 11. **The rung:** “Climb up to learn, then come back down to teach.”
    - **Ask your child:** Teach me something you learned today.
-12. For a reading of the same angels as God’s messengers, visit Ramban. For many readings at once, the Sages. *(Suggests: Ramban, The Sages, Jacob.)*
+12. For many readings at once, visit the Sages. *(Suggests: Ramban, The Sages, Jacob.)*
+   - **Teacher says:** For a reading of the same angels as God’s messengers, visit Ramban.

@@ -61,10 +61,10 @@ VOICES.scripts.ramban = {
       tip: 'Let people answer for themselves. Then tap to hear Ramban.',
       reveal: ['I held both. I wrote a commentary full of God’s promises, and I lived through a disputation and an exile.'] },
     { say: '“Then the Eternal shall be my God,” Rashi read as part of the condition. I read it as a vow: to serve God in the Land, at the stone of Beit El.', src: ['Genesis 28:21', 'Rashi on Genesis 28:21:3', 'Rashi on Genesis 28:22:1', 'Ramban on Genesis 28:21:1'] },
-    { ask: 'Ramban read Jacob’s vow as a promise to serve God in the Land, and near the end of his life he went there himself. Is God more present in some places than in others? What is the relationship between a place and faith?', discuss: true,
+    { ask: 'I read Jacob’s vow as a promise to serve God in the Land, and near the end of my life I went there myself. Is God more present in some places than in others? What is the relationship between a place and faith?', discuss: true,
       tip: 'Take a few answers. Then tap to hear Ramban.',
       reveal: [{ say: 'Jacob’s own words may be the best answer: “Surely God is present in this place, and I did not know it!” And God had just told him, “I will protect you wherever you go.” This place, and wherever you go: Jacob heard both that night.', src: ['Genesis 28:16', 'Genesis 28:15'] }] },
-    { prompt: 'Ask Ramban anything. Choose a question, or type your own.', typing: true, questions: [
+    { prompt: 'Ask me anything. Choose a question, or type your own.', typing: true, questions: [
       { q: 'What happened at the disputation?', keys: 'disputation debate barcelona king 1263 christian church move moved israel leave spain', a: [
         'In 1263, in Barcelona, King James I of Aragon ordered me to debate a convert from Judaism, before the court, about whether the Messiah had come. The king allowed me to speak freely. Afterward I was prosecuted for publishing my account of it, and I left Spain.' ] },
       { q: 'What is providence?', keys: 'providence care god watch world run angels', a: [

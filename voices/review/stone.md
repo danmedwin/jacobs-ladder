@@ -4,6 +4,8 @@ A readable copy of what the tool says, for review. It is generated from `voices/
 
 Small gray references are the source cards a teacher can open during the visit. Numbered lines are the steps the teacher moves through with Next.
 
+A character speaks only from their own life and what they could know. Anything else is marked **Teacher says:** and is read by the teacher in their own voice; it appears on screen under the character’s line. *(imagined)* marks a line that fits the story and its world but that no text says; the screen labels it “Imagined.”
+
 ## Grades K–2
 
 *Short lines, pictures, and moving around. The teacher reads aloud.*
@@ -29,10 +31,10 @@ Small gray references are the source cards a teacher can open during the visit. 
    - *Teacher: Take a few answers out loud. Then tap to hear the stone.*
    - Then the stone answers: For Jacob, it was me! And God, who told him, “I am with you.” <sub>Genesis 28:15</sub>
 15. **The stone:** What would you like to ask me?
-   1. *Were you comfy?* → Yes! The Sages said that under Jacob, we stones became as soft as a bed and a feather pillow. <sub>B’reishit Rabbah 68:11</sub>
-   2. *Can stones really talk?* → Not really! This is a midrash, a story our teachers told about the Torah. It shows that everything wanted to help Jacob, even the stones. <sub>Rashi on Genesis 28:11 · the stones</sub>
-   3. *Who told your story?* → A teacher named Rashi wrote it down, about a thousand years ago. He learned it from even older books: the Talmud and the midrash. <sub>Rashi on Genesis 28:11 · the stones; Chullin 91b · the stones; B’reishit Rabbah 68:11</sub>
-   4. *Where are you now?* → Nobody knows! But many years later, Jacob came back to Beit El and set up a stone there again. <sub>Genesis 35:14</sub>
+   1. *Were you comfy?* → Yes! Under Jacob, we stones became as soft as a bed and a feather pillow. <sub>B’reishit Rabbah 68:11</sub> **Teacher says:** That’s what the Sages said.
+   2. *Can stones really talk?* → I’m talking to you right now, aren’t I? **Teacher says:** Not really! This is a midrash, a story our teachers told about the Torah. It shows that everything wanted to help Jacob, even the stones. <sub>Rashi on Genesis 28:11 · the stones</sub>
+   3. *Who told your story?* → I don’t know! I’m a stone. I just held his head. **Teacher says:** A teacher named Rashi wrote it down, about a thousand years ago. He learned it from even older books: the Talmud and the midrash. <sub>Rashi on Genesis 28:11 · the stones; Chullin 91b · the stones; B’reishit Rabbah 68:11</sub>
+   4. *Where are you now?* → That’s a secret I’m keeping! But many years later, Jacob came back to Beit El and set up a stone there again. <sub>Genesis 35:14</sub> **Teacher says:** Nobody knows where the stone is now.
 16. **The rung:** “We all wanted to help Jacob, so God made us one.”
    - **The motion:** Make two fists and press them together into one.
 17. Thanks for visiting me! Who do you want to meet next? *(Suggests: Jacob, An angel, Esau.)*

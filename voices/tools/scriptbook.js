@@ -12,9 +12,12 @@ const md = h => String(h)
 const inText = c => c.ref || c.name, whose = c => inText(c) + (c.plural ? '’' : '’s');
 const atStart = t => t.charAt(0).toUpperCase() + t.slice(1), verb = (c, v) => c.plural ? v : v + 's';
 const refs = src => src ? ' <sub>' + [].concat(src).map(r => (V.sources[r] && V.sources[r].label) || r).join('; ') + '</sub>' : '';
+// A teacher's line (a string, or { say, src }), and a mark for an imagined line
+const teach = t => '**Teacher says:** ' + md(typeof t === 'string' ? t : t.say) + refs(typeof t === 'string' ? null : t.src);
+const imagined = x => x.imagined ? '*(imagined)* ' : '';
 const reply = (x, who) => typeof x === 'string' ? md(x)
   : x.gallery ? '*[Pictures: ' + x.gallery.map(s => V.styles[s] || s).join(', ') + '.]* ' + md(x.caption || '')
-  : md(x.say) + refs(x.src);
+  : [x.say ? imagined(x) + md(x.say) + refs(x.src) : '', x.teacher ? teach(x.teacher) : ''].filter(Boolean).join(' ');
 
 function level(id, lv) {
   const c = V.characters[id], L = V.levels[lv], beats = V.scripts[id][lv].beats, out = [];
@@ -22,7 +25,10 @@ function level(id, lv) {
   let n = 0;
   for (const b of beats) {
     n++;
-    if (b.say) out.push(`${n}. ${md(b.say)}${refs(b.src)}`);
+    if (b.say) {
+      out.push(`${n}. ${imagined(b)}${md(b.say)}${refs(b.src)}`);
+      if (b.teacher) out.push(`   - ${teach(b.teacher)}`);
+    }
     else if (b.picture) out.push(`${n}. *[Animation: ${V.styles[b.picture.style]}, from the Jacob’s Dream gallery.]*`);
     else if (b.motion) out.push(`${n}. **Everybody moves: ${b.motion.title}** ${b.motion.text}`);
     else if (b.count) {
@@ -31,10 +37,12 @@ function level(id, lv) {
     }
     else if (b.ask && b.choices) {
       out.push(`${n}. **${atStart(inText(c))} ${verb(c, 'ask')}:** ${md(b.ask)}`);
+      if (b.teacher) out.push(`   - ${teach(b.teacher)}`);
       b.choices.forEach(ch => out.push(`   - Button **“${ch.label}”** → ${ch.reply.map(r => reply(r)).join(' / ')}`));
       if (b.tip) out.push(`   - *Teacher: ${b.tip}*`);
     } else if (b.ask) {
       out.push(`${n}. **${atStart(inText(c))} ${verb(c, 'ask')} the group to discuss:** ${md(b.ask)}`);
+      if (b.teacher) out.push(`   - ${teach(b.teacher)}`);
       if (b.tip) out.push(`   - *Teacher: ${b.tip}*`);
       out.push(`   - Then ${inText(c)} ${verb(c, 'answer')}: ${b.reveal.map(r => reply(r)).join(' / ')}`);
     } else if (b.questions) {
@@ -45,6 +53,9 @@ function level(id, lv) {
       out.push(`${n}. **The rung:** “${r.line}”${r.he ? ' ' + r.he : ''}`, `   - **${L.extraLabel}:** ${r.extra}`);
     } else if (b.next) {
       out.push(`${n}. ${md(b.next.say)} *(Suggests: ${b.next.ids.map(i => V.characters[i].name).join(', ')}.)*`);
+      if (b.next.teacher) out.push(`   - ${teach(b.next.teacher)}`);
+    } else if (b.teacher) {
+      out.push(`${n}. ${teach(b.teacher)}`);
     }
   }
   return out.join('\n');
@@ -60,6 +71,8 @@ for (const id of Object.keys(V.scripts)) {
     `A readable copy of what the tool says, for review. It is generated from \`voices/data/${id}.js\`, so mark changes here and they will be carried into the data.`,
     '',
     'Small gray references are the source cards a teacher can open during the visit. Numbered lines are the steps the teacher moves through with Next.',
+    '',
+    'A character speaks only from their own life and what they could know. Anything else is marked **Teacher says:** and is read by the teacher in their own voice; it appears on screen under the character’s line. *(imagined)* marks a line that fits the story and its world but that no text says; the screen labels it “Imagined.”',
     '',
     ...lvs.map(lv => level(id, lv) + '\n')
   ].join('\n');

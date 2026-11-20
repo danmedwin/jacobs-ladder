@@ -25,7 +25,8 @@ VOICES.scripts.sages = {
       { he: 'סִינַי', en: 'Sinai', letters: [['ס', 60], ['י', 10], ['נ', 50], ['י', 10]] } ] } },
     { ask: 'What did you get?', discuss: true,
       tip: 'Give the group a minute to add. Then tap to hear the Sages.',
-      reveal: [{ say: 'Both come to 130! A later teacher, the Ba’al HaTurim, spelled it out: <i>sulam</i> equals <i>Sinai</i>.', src: 'Kitzur Baal HaTurim on Genesis 28:12:6' }] },
+      reveal: [{ say: 'Both come to 130!',
+        teacher: { say: 'A later teacher, the Ba’al HaTurim, spelled it out: <i>sulam</i> equals <i>Sinai</i>.', src: 'Kitzur Baal HaTurim on Genesis 28:12:6' } }] },
     { ask: 'We could have picked one answer and thrown out the rest. Why do you think we kept them all?', discuss: true,
       tip: 'Take a few answers. Then tap to hear the Sages.',
       reveal: [
@@ -42,14 +43,15 @@ VOICES.scripts.sages = {
         { say: 'In Hebrew, <i>malach</i> means “messenger.” We taught that prophets are called <i>malachim</i>, because they bring God’s message.', src: 'Bereshit Rabbah 68:12 (Sinai)' },
         'Who has been a messenger of something good for you?' ] },
       { q: 'Why did the angels go up first?', keys: 'up first down order why', a: [
-        { say: 'We had an answer for that too. The angels who went with Jacob in the Land of Israel went up, and the angels who would go with him outside the Land came down.', src: 'Bereshit Rabbah 68:12 (his guardians)' },
-        'Rashi learned that from us!' ] },
+        { say: 'We had an answer for that too. The angels who went with Jacob in the Land of Israel went up, and the angels who would go with him outside the Land came down.', src: 'Bereshit Rabbah 68:12 (his guardians)',
+          teacher: 'Rashi learned that from the Sages!' } ] },
       { q: 'Is there a ladder today?', keys: 'ladder climb us today now prayer pray voice', a: [
-        { say: 'The Ba’al HaTurim counted letters, too. He spelled <i>sulam</i> with a vav, סולם, and got 136. That’s the same as <i>kol</i>, קול, “voice.”', src: 'Kitzur Baal HaTurim on Genesis 28:12:3' },
-        'He said that when good people pray, their voices make a ladder for the angels to climb. When you pray with all your heart, every rung is there.' ] }
+        { say: 'Good question! Your teacher has an answer from someone who came long after us.',
+          teacher: { say: 'A later teacher, the Ba’al HaTurim, counted letters, too. He spelled <i>sulam</i> with a vav, סולם, and got 136. That’s the same as <i>kol</i>, קול, “voice.”', src: 'Kitzur Baal HaTurim on Genesis 28:12:3' } },
+        { teacher: 'He said that when good people pray, their voices make a ladder for the angels to climb. When you pray with all your heart, every rung is there.' } ] }
     ] },
     { rung: true },
-    { next: { say: '<i>Davar acher</i>: another visit! Rashi learned from us, and the angel has a story about Jacob’s picture in heaven.', ids: ['rashi', 'angel', 'jacob'] } }
+    { next: { say: '<i>Davar acher</i>: another visit! The angel has a story about Jacob’s picture in heaven.', teacher: 'And Rashi learned from the Sages.', ids: ['rashi', 'angel', 'jacob'] } }
   ] },
 
   g57: { beats: [
@@ -70,7 +72,8 @@ VOICES.scripts.sages = {
       { he: 'סִינַי', en: 'Sinai', letters: [['ס', 60], ['י', 10], ['נ', 50], ['י', 10]] } ] } },
     { ask: 'What did you get?', discuss: true,
       tip: 'Give the group a minute to add. Then tap to hear the Sages.',
-      reveal: [{ say: 'Both come to 130. A later teacher, the Ba’al HaTurim, spelled it out: <i>sulam</i> equals <i>Sinai</i>.', src: 'Kitzur Baal HaTurim on Genesis 28:12:6' }] },
+      reveal: [{ say: 'Both come to 130.',
+        teacher: { say: 'A later teacher, the Ba’al HaTurim, spelled it out: <i>sulam</i> equals <i>Sinai</i>.', src: 'Kitzur Baal HaTurim on Genesis 28:12:6' } }] },
     { say: 'We never chose one answer. In the midrash, a new reading is often introduced with <i>davar acher</i>, “another matter,” and all of them stay on the page.' },
     { say: 'Why did the sun set early that night? We said God darkened it to speak with Jacob privately, like a king who tells his servants, “Extinguish the lamps… as I wish to speak with my friend privately.”', src: 'Bereshit Rabbah 68:10' },
     { say: 'Rabbi Meir taught that God showed Jacob the guardian angels of four empires, Babylon, Media, Greece, and Edom, each climbing the ladder and coming back down. Then God said to Jacob, “You, too, will ascend.”', src: 'Vayikra Rabbah 29:2 (Rabbi Meir)' },
@@ -93,12 +96,13 @@ VOICES.scripts.sages = {
       { q: 'Can people be angels?', keys: 'people angels messenger malach person prophets human', a: [
         { say: 'We taught that prophets are called <i>malachim</i>, because they carry God’s message. That’s how the angels on the ladder can be Moses and Aaron.', src: 'Bereshit Rabbah 68:12 (Sinai)' } ] },
       { q: 'Is there a ladder today?', keys: 'ladder today now prayer pray voice', a: [
-        { say: 'The Ba’al HaTurim counted again. Spelled with a vav, סולם comes to 136, the same as קול, “voice.” He said the voice of the prayer of good people is a ladder for the angels to climb.', src: 'Kitzur Baal HaTurim on Genesis 28:12:3' } ] },
+        { say: 'Your teacher has an answer from someone who came long after us.',
+          teacher: { say: 'The Ba’al HaTurim counted again. Spelled with a vav, סולם comes to 136, the same as קול, “voice.” He said the voice of the prayer of good people is a ladder for the angels to climb.', src: 'Kitzur Baal HaTurim on Genesis 28:12:3' } } ] },
       { q: 'Who were the Sages?', keys: 'who sages rabbis names when', a: [
         'Rabbis of the Land of Israel in the centuries after the Temple fell: Bar Kappara, Rabbi Meir, Rabbi Shimon ben Lakish, and many more. Our teachings were collected in books of midrash like B’reishit Rabbah.' ] }
     ] },
     { rung: true },
-    { next: { say: '<i>Davar acher</i>: another visit. Rashi built on our answers, and Rambam has a reading all his own.', ids: ['rashi', 'rambam', 'jacob'] } }
+    { next: { say: '<i>Davar acher</i>: another visit.', teacher: 'Rashi built on the Sages’ answers, and Rambam has a reading all his own.', ids: ['rashi', 'rambam', 'jacob'] } }
   ] },
 
   parents: { beats: [
@@ -116,24 +120,26 @@ VOICES.scripts.sages = {
     { ask: 'Would you have climbed? What would have held you back?', discuss: true,
       tip: 'Give pairs a few minutes, then hear from the room. Then tap to hear the Sages.',
       reveal: ['Rabbi Meir blames Jacob for not believing. But Jacob had just watched four empires rise and fall. Most of us fear the fall more than we want the height.'] },
-    { prompt: 'Ask the Sages anything. Choose a question, or type your own.', typing: true, questions: [
+    { prompt: 'Ask us anything. Choose a question, or type your own.', typing: true, questions: [
       { q: 'Which reading do you prefer?', keys: 'prefer best right which reading answer', a: [
         'We never ruled. Which one speaks to you, and why?' ] },
       { q: 'What do the rung numbers mean?', keys: 'rungs numbers seventy 70 fifty-two 52 hundred eighty 180 count empires kingdoms four babylon media greece', a: [
         { say: 'They measure each empire’s rise before its fall: seventy for Babylon, fifty-two for Media, a hundred and eighty for Greece. Edom’s number was hidden, even from Jacob.', src: 'Vayikra Rabbah 29:2 (four kingdoms)' } ] },
       { q: 'Why is Edom Rome?', keys: 'edom rome esau empire why roman', a: [
-        { say: 'We lived under Rome, the empire that destroyed the Temple, and Esau’s other name became our name for it. Rashi, following an old midrash, says of one of Esau’s descendants, “Magdiel: this is Rome.”', src: 'Rashi on Genesis 36:43:1' },
-        'Esau’s own visit takes this up, if you have time.' ] },
+        { say: 'We lived under Rome, the empire that destroyed the Temple, and Esau’s other name became our name for it.',
+          teacher: { say: 'Rashi, following an old midrash, says of one of Esau’s descendants, “Magdiel: this is Rome.” Esau’s own visit takes this up, if you have time.', src: 'Rashi on Genesis 36:43:1' } } ] },
       { q: 'Did Jacob institute the evening prayer?', keys: 'pray prayer evening maariv arvit institute', a: [
         { say: 'The Talmud says so: Abraham the morning prayer, Isaac the afternoon, and Jacob the evening, from “he encountered the place.”', src: 'Berakhot 26b (Jacob’s prayer)' } ] },
       { q: 'What does it mean that God is “the Place”?', keys: 'place hamakom name god makom', a: [
         { say: 'That God contains the world, and the world does not contain God.', src: 'Bereshit Rabbah 68:9' } ] },
       { q: 'Is prayer a ladder?', keys: 'prayer ladder voice kol pray climb', a: [
-        { say: 'A later teacher, the Ba’al HaTurim, counted it: סולם, ladder, spelled with a vav, equals קול, voice. The voice of the prayer of the righteous is a ladder for the angels to go up on.', src: 'Kitzur Baal HaTurim on Genesis 28:12:3' } ] },
+        { say: 'Your teacher has an answer from someone who came long after us.',
+          teacher: { say: 'A later teacher, the Ba’al HaTurim, counted it: סולם, ladder, spelled with a vav, equals קול, voice. The voice of the prayer of the righteous is a ladder for the angels to go up on.', src: 'Kitzur Baal HaTurim on Genesis 28:12:3' } } ] },
       { q: 'Why do sulam and Sinai match?', keys: 'sulam sinai letters gematria numbers match 130', a: [
-        { say: 'We said, “The letters of this equals the letters of that.” Later teachers did the arithmetic: both come to 130.', src: ['Bereshit Rabbah 68:12 (Sinai)', 'Kitzur Baal HaTurim on Genesis 28:12:6'] } ] }
+        { say: 'We said, “The letters of this equals the letters of that.”', src: 'Bereshit Rabbah 68:12 (Sinai)',
+          teacher: { say: 'Later teachers did the arithmetic: both come to 130.', src: 'Kitzur Baal HaTurim on Genesis 28:12:6' } } ] }
     ] },
     { rung: true },
-    { next: { say: '<i>Davar acher</i>: two more readers of the ladder, Rambam and Ramban, and Rashi, who built on us.', ids: ['rambam', 'ramban', 'rashi'] } }
+    { next: { say: '<i>Davar acher</i>: there are more readers of the ladder to hear.', teacher: 'Rambam and Ramban each read the ladder their own way, and Rashi built on the Sages.', ids: ['rambam', 'ramban', 'rashi'] } }
   ] }
 };

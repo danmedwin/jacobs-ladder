@@ -54,7 +54,7 @@ VOICES.scripts.rebekah = {
       tip: 'Hear a few answers. Then choose one.' },
     { say: 'I married Isaac. For years we had no children. Then I was expecting twins, and they struggled inside me so much that I said, “If so, why do I exist?”', src: ['Genesis 25:21', 'Genesis 25:22'] },
     { say: 'I went to ask God. God told me that two nations were inside me, and “the older shall serve the younger.”', src: 'Genesis 25:23' },
-    { say: 'My boys grew up very different. And the Torah says it plainly: “Isaac favored Esau because he had a taste for game; but Rebekah favored Jacob.”', src: 'Genesis 25:28' },
+    { say: 'My boys grew up very different. And I’ll say it plainly: Isaac favored Esau, because he had a taste for game, and I favored Jacob.', src: 'Genesis 25:28' },
     { say: 'When Isaac was old and blind, I heard him tell Esau to hunt and cook for him, so that he could bless him.', src: 'Genesis 27:1–5' },
     { say: 'I told Jacob to bring me two young goats. I cooked them the way Isaac liked, dressed Jacob in Esau’s best clothes, and covered his arms and neck with the goatskins.', src: ['Genesis 27:9', 'Genesis 27:14–16'] },
     { say: 'Jacob was afraid he’d be caught and get a curse instead of a blessing. I said, “Your curse, my son, be upon me!”', src: ['Genesis 27:12', 'Genesis 27:13'] },
@@ -76,66 +76,72 @@ VOICES.scripts.rebekah = {
     { say: 'It wasn’t a few days. Jacob stayed away for twenty years.', src: 'Genesis 31:41' },
     { prompt: 'What do you want to ask me?', questions: [
       { q: 'Did you ever see Jacob again?', keys: 'see again jacob come back return home reunion', a: [
-        'The Torah never tells us. It doesn’t even tell us when I died.',
-        { say: 'But Rashi noticed something. When Jacob was on his way home, my old nurse Deborah was with him. Why? Rashi says I kept my promise: I sent Deborah to tell Jacob it was time to come home.', src: ['Genesis 35:8', 'Rashi on Genesis 35:8:1'] },
-        { say: 'Deborah died on the way, near Beit El. They buried her under an oak and named it Allon-bacuth, the Oak of Weeping. Rashi says that there, Jacob also learned that I had died.', src: ['Genesis 35:8', 'Rashi on Genesis 35:8'] } ] },
+        { say: 'When he left, I promised him, “Then I will fetch you from there.”', src: 'Genesis 27:45',
+          teacher: 'The Torah never tells us whether Rebekah saw Jacob again. It doesn’t even tell us when she died.' },
+        { teacher: { say: 'But Rashi noticed something. When Jacob was on his way home, Rebekah’s old nurse Deborah was with him. Why? Rashi says Rebekah kept her promise: she sent Deborah to tell Jacob it was time to come home.', src: ['Genesis 35:8', 'Rashi on Genesis 35:8:1'] } },
+        { teacher: { say: 'Deborah died on the way, near Beit El. They buried her under an oak and named it Allon-bacuth, the Oak of Weeping. Rashi says that there, Jacob also learned that his mother had died.', src: ['Genesis 35:8', 'Rashi on Genesis 35:8'] } } ] },
       { q: 'Why did you love Jacob more?', keys: 'love loved favorite favor more why pick picked choose chose', a: [
-        { say: 'The Torah doesn’t say why. It tells us that Isaac favored Esau because of the game Esau hunted, and that I favored Jacob.', src: 'Genesis 25:28' },
-        { say: 'Maybe it was because of what God told me before my boys were born.', src: 'Genesis 25:23' } ] },
+        { say: 'Isaac favored Esau because of the game Esau hunted. I favored Jacob. Maybe it was because of what God told me before my boys were born.', src: ['Genesis 25:28', 'Genesis 25:23'],
+          teacher: 'The Torah gives a reason for Isaac’s love. It doesn’t give one for Rebekah’s.' } ] },
       { q: 'Was it hard to leave home?', keys: 'leave home hard scared brave family', a: [
         { say: 'My family wanted me to wait about ten days. When they asked me, I said I would go right away.', src: ['Genesis 24:55', 'Genesis 24:58'] } ] },
       { q: 'What was Jacob like?', keys: 'jacob like boy kid young quiet', a: [
-        { say: 'The Torah says Jacob was “a mild man who stayed in camp,” and Esau was “a skillful hunter, a man of the outdoors.”', src: 'Genesis 25:27' } ] }
+        { say: 'Jacob was a mild man who stayed in camp. Esau was a skillful hunter, a man of the outdoors.', src: 'Genesis 25:27' } ] }
     ] },
     { rung: true },
     { next: { say: 'Thank you for visiting. Isaac can tell you about the blessing, and Esau has his own side of the story.', ids: ['isaac', 'esau', 'jacob'] } }
   ] },
 
   g57: { beats: [
-    { say: 'I’m Rebekah, Rivkah in Hebrew. In this story I’m the one who chooses. I chose to leave home. I chose which son would get the blessing. And I chose to send that son away.' },
+    { say: 'I’m Rebekah, Rivkah in Hebrew. In my family, I’m the one who chooses. I chose to leave home. I chose which son would get the blessing. And I chose to send that son away.' },
     { say: 'It started at a well. A stranger asked me for a drink, and I said, “Drink, my lord.” Then I said, “I will also draw for your camels, until they finish drinking.” He had ten camels.', src: ['Genesis 24:10', 'Genesis 24:17–20'] },
-    { say: 'He had come to find a wife for Isaac. My family asked me, “Will you go with this man?” I answered with one Hebrew word: <i>Eilech</i>, “I will.”', src: ['Genesis 24:14', 'Genesis 24:58'] },
-    { say: 'Years later I was carrying twins, and “the children struggled in her womb.” I said, “If so, why do I exist?” and I went to inquire of God.', src: 'Genesis 25:22' },
+    { say: 'He had come to find a wife for Isaac. My family asked me, “Will you go with this man?” I answered with one word: <i>Eilech</i>, “I will.”', src: ['Genesis 24:14', 'Genesis 24:58'] },
+    { say: 'Years later I was carrying twins, and the children struggled in my womb. I said, “If so, why do I exist?” and I went to inquire of God.', src: 'Genesis 25:22' },
     { say: 'The answer came to me: “Two nations are in your womb… And the older shall serve the younger.”', src: 'Genesis 25:23' },
     { ask: 'Imagine knowing something about your children’s future that no one else knows. What would you do with it?', discuss: true,
       tip: 'Take a few answers. Then tap to hear Rebekah.',
       reveal: ['I kept it. And when the moment came, I acted on it.'] },
-    { say: 'The boys grew up, and the Torah says, “Isaac favored Esau because he had a taste for game; but Rebekah favored Jacob.” Notice: it gives a reason for Isaac’s love. It gives none for mine.', src: 'Genesis 25:28' },
-    { say: '“Rebekah had been listening as Isaac spoke to his son Esau.” He was about to bless him. So I told Jacob, “Now, my son, listen carefully as I instruct you.”', src: ['Genesis 27:5', 'Genesis 27:8'] },
+    { say: 'The boys grew up. Isaac favored Esau, because he had a taste for game. I favored Jacob.', src: 'Genesis 25:28',
+      teacher: 'Notice: the Torah gives a reason for Isaac’s love. It gives none for Rebekah’s.' },
+    { say: 'I had been listening as Isaac spoke to his son Esau. He was about to bless him. So I told Jacob, “Now, my son, listen carefully as I instruct you.”', src: ['Genesis 27:5', 'Genesis 27:8'] },
     { say: 'Jacob was afraid: “If my father touches me, I shall appear to him as a trickster and bring upon myself a curse, not a blessing.” I answered, “Your curse, my son, be upon me!”', src: ['Genesis 27:12', 'Genesis 27:13'] },
     { say: 'I cooked the dish Isaac liked, dressed Jacob in Esau’s best clothes, and covered his hands and neck with the skins of the young goats.', src: 'Genesis 27:14–17' },
     { ask: 'Was I right? Put me on trial.', discuss: true,
       tip: 'Split the group into prosecution and defense: two minutes to prepare, one minute each. Then tap to hear Rebekah.',
       reveal: [
         { say: 'My defense: God told me the older would serve the younger. I made sure it happened.', src: 'Genesis 25:23' },
-        'My sentence: my son had to run for his life, and the Torah never shows me with him again.' ] },
+        { say: 'My sentence: my son had to run for his life. He was gone for twenty years.',
+          teacher: 'The Torah never shows Rebekah with Jacob again.' } ] },
     { say: 'When I heard that Esau planned to kill Jacob, I said, “Flee at once to Haran, to my brother Laban. Stay with him awhile, until your brother’s fury subsides.”', src: ['Genesis 27:42', 'Genesis 27:43', 'Genesis 27:44'] },
-    { say: '“Awhile” in Hebrew is <i>yamim achadim</i>, “a few days.” It became twenty years.', src: ['Genesis 27:44', 'Genesis 31:41'] },
+    { say: 'My words for “awhile” were <i>yamim achadim</i>, “a few days.” It became twenty years.', src: ['Genesis 27:44', 'Genesis 31:41'] },
     { ask: 'Then I said, “Let me not lose you both in one day!” Both? Jacob was the one in danger. Who else was I afraid to lose?', discuss: true,
       tip: 'Let the group work it out. Then tap to hear Rebekah.',
       reveal: [
-        { say: 'Esau. Rashi imagines it this way: if Esau attacks Jacob and Jacob kills him, Esau’s sons will rise and kill Jacob. One fight, and I bury both of my boys.', src: 'Rashi on Genesis 27:45:2' },
+        { say: 'Esau. He is my son too. One fight, and I could bury both of my boys.',
+          teacher: { say: 'Rashi imagines it this way: if Esau attacks Jacob and Jacob kills him, Esau’s sons will rise and kill Jacob.', src: 'Rashi on Genesis 27:45:2' } },
         'When your two children are at war, a parent can’t win.' ] },
     { say: 'Then I went to Isaac. I didn’t mention Esau’s threat. I said, “I am disgusted with my life because of the Hittite women.” And Isaac called Jacob in, blessed him again, and sent him to my family.', src: ['Genesis 27:46', 'Genesis 28:1–5'] },
     { prompt: 'Ask me anything. Choose a question, or type your own.', typing: true, questions: [
       { q: 'Did you ever see Jacob again?', keys: 'see again jacob come back return home reunion', a: [
-        'The Torah never tells us. It doesn’t even tell us when I died.',
-        { say: 'Rashi says I kept my promise to send for him: I sent my old nurse Deborah to tell Jacob to come home. She died on the way, near Beit El, and they named the oak where she was buried Allon-bacuth, the Oak of Weeping.', src: ['Genesis 35:8', 'Rashi on Genesis 35:8:1'] },
-        { say: 'And Rashi says that there, Jacob learned that I had died too.', src: 'Rashi on Genesis 35:8' } ] },
+        { say: 'When he left, I promised him, “Then I will fetch you from there.”', src: 'Genesis 27:45',
+          teacher: 'The Torah never tells us whether Rebekah saw Jacob again. It doesn’t even tell us when she died.' },
+        { teacher: { say: 'Rashi says Rebekah kept her promise to send for him: she sent her old nurse Deborah to tell Jacob to come home. Deborah died on the way, near Beit El, and they named the oak where she was buried Allon-bacuth, the Oak of Weeping. And Rashi says that there, Jacob learned that his mother had died too.', src: ['Genesis 35:8', 'Rashi on Genesis 35:8:1', 'Rashi on Genesis 35:8'] } } ] },
       { q: 'How did you know what Esau was planning?', keys: 'know knew esau plan planning kill heard reported how', a: [
-        { say: 'Good question. The Torah says Esau said it “to himself.” Then it says his words “were reported to Rebekah.” Reported by whom?', src: ['Genesis 27:41', 'Genesis 27:42'] },
-        { say: 'Rashi says the holy spirit told me what Esau was thinking in his heart.', src: 'Rashi on Genesis 27:42:1' } ] },
+        { say: 'Good question. Esau said it only to himself. And still, his words reached me.', src: ['Genesis 27:41', 'Genesis 27:42'],
+          teacher: { say: 'The Torah says his words “were reported to Rebekah.” Reported by whom? Rashi says the holy spirit told her what Esau was thinking in his heart.', src: 'Rashi on Genesis 27:42:1' } } ] },
       { q: 'Did you tell Isaac what God told you?', keys: 'tell told isaac prophecy oracle secret older younger god', a: [
-        'The Torah never says. What do you think would have happened if I had?' ] },
+        { say: 'That stays between Isaac and me. What do you think would have happened if I had?', teacher: 'The Torah never says.' } ] },
       { q: 'Why did you love Jacob more?', keys: 'love loved favorite favor more why pick picked choose chose', a: [
-        { say: 'The Torah gives no reason. It says only, “but Rebekah favored Jacob.”', src: 'Genesis 25:28' },
-        { say: 'Maybe it was what God told me before they were born.', src: 'Genesis 25:23' } ] },
+        { say: 'I never gave a reason. Maybe it was what God told me before they were born.', src: ['Genesis 25:28', 'Genesis 25:23'],
+          teacher: 'The Torah gives no reason either. It says only, “but Rebekah favored Jacob.”' } ] },
       { q: 'Did you ever talk to Esau about it?', keys: 'esau talk talked say said speak tell', a: [
-        'The Torah never records a single word between Esau and me. Not one.' ] },
+        { say: 'What could I have said to him?', teacher: 'The Torah never records a single word between Rebekah and Esau. Not one.' } ] },
       { q: 'Who was Deborah?', keys: 'deborah nurse who', a: [
-        { say: 'My nurse. When I left home, “they sent off their sister Rebekah and her nurse.” The Torah names her only when she dies, years later, near Beit El.', src: ['Genesis 24:59', 'Genesis 35:8'] } ] },
+        { say: 'My nurse. When I left home, my family sent her with me.', src: 'Genesis 24:59',
+          teacher: { say: 'The Torah names her only when she dies, years later, near Beit El.', src: 'Genesis 35:8' } } ] },
       { q: 'Where are you buried?', keys: 'buried bury grave cave machpelah where die died', a: [
-        { say: 'In the cave of Machpelah, where Abraham and Sarah are buried. Jacob mentions it at the end of his life: “there Isaac and his wife Rebekah were buried.”', src: 'Genesis 49:29–31' } ] }
+        { say: 'In the cave of Machpelah, where Abraham and Sarah are buried, and Isaac beside me.',
+          teacher: { say: 'Jacob says so at the end of his life: “there Isaac and his wife Rebekah were buried.”', src: 'Genesis 49:29–31' } } ] }
     ] },
     { rung: true },
     { next: { say: 'You’ve heard me. Now hear Isaac, who blessed Jacob twice, and Esau, who wept.', ids: ['isaac', 'esau', 'jacob'] } }
@@ -144,9 +150,11 @@ VOICES.scripts.rebekah = {
   parents: { beats: [
     { say: 'I’m Rebekah. I’d like to speak with you parent to parent, about sending a child away.' },
     { say: 'I left home myself. My brother and mother asked that I stay “some ten days.” When they asked me, “Will you go with this man?” I said, <span class="he-inline" lang="he" dir="rtl">אֵלֵךְ</span> “I will.”', src: ['Genesis 24:55', 'Genesis 24:58'] },
-    { say: 'My pregnancy was so hard that I said, <span class="he-inline" lang="he" dir="rtl">אִם־כֵּן לָמָּה זֶּה אָנֹכִי</span> “If so, why do I exist?” No one is sure what the words mean. Rashi heard them as: if the pain is this great, why did I long and pray to become pregnant?', src: ['Genesis 25:22', 'Rashi on Genesis 25:22 (why do I exist)'] },
+    { say: 'My pregnancy was so hard that I said, <span class="he-inline" lang="he" dir="rtl">אִם־כֵּן לָמָּה זֶּה אָנֹכִי</span> “If so, why do I exist?”', src: 'Genesis 25:22',
+      teacher: { say: 'No one is sure what the words mean. Rashi heard them as: if the pain is this great, why did I long and pray to become pregnant?', src: 'Rashi on Genesis 25:22 (why do I exist)' } },
     { say: 'I went to inquire of God, and the answer came to me: “Two nations are in your womb… And the older shall serve the younger.”', src: 'Genesis 25:23' },
-    { say: 'Then the Torah says, “Isaac favored Esau because he had a taste for game; but Rebekah favored Jacob.” In Hebrew, Isaac’s love is told in the past tense and comes with a reason. Mine is in the present tense and comes with none: <span class="he-inline" lang="he" dir="rtl">וְרִבְקָה אֹהֶבֶת אֶת־יַעֲקֹב</span>', src: 'Genesis 25:28' },
+    { say: 'Isaac favored Esau, because he had a taste for game. I favored Jacob.', src: 'Genesis 25:28',
+      teacher: 'In the Hebrew, Isaac’s love is told in the past tense and comes with a reason. Rebekah’s is in the present tense and comes with none: <span class="he-inline" lang="he" dir="rtl">וְרִבְקָה אֹהֶבֶת אֶת־יַעֲקֹב</span>' },
     { ask: 'Is a love with a reason different from a love without one? What did each of my sons hear?', discuss: true,
       tip: 'Pairs first. Then take a few answers and tap to hear Rebekah.',
       reveal: ['Children notice. Both of my sons knew exactly where they stood with each of us.'] },
@@ -156,34 +164,45 @@ VOICES.scripts.rebekah = {
       reveal: [
         { say: 'I had God’s word, and I acted on it.', src: 'Genesis 25:23' },
         'And I paid for it with my son.' ] },
-    { say: 'When I learned that Esau meant to kill his brother, I told Jacob to flee to my brother Laban and stay there <span class="he-inline" lang="he" dir="rtl">יָמִים אֲחָדִים</span> “a few days.” The Revised JPS translates it “awhile.”', src: ['Genesis 27:42–44'] },
-    { say: 'The same two words come back later. Jacob served seven years for Rachel, “and they seemed to him but a few days.” For him, love made seven years into a few days. For me, a few days became twenty years.', src: ['Genesis 29:20', 'Genesis 31:41'] },
-    { say: 'And I said, <span class="he-inline" lang="he" dir="rtl">לָמָה אֶשְׁכַּל גַּם־שְׁנֵיכֶם יוֹם אֶחָד</span> “Let me not lose you both in one day!” Rashi explains: if Esau attacks and Jacob kills him, Esau’s sons will kill Jacob. I would bury both.', src: ['Genesis 27:45', 'Rashi on Genesis 27:45:2'] },
+    { say: 'When I learned that Esau meant to kill his brother, I told Jacob to flee to my brother Laban and stay there <span class="he-inline" lang="he" dir="rtl">יָמִים אֲחָדִים</span> “a few days.”', src: ['Genesis 27:42–44'],
+      teacher: 'The Revised JPS translates it “awhile.”' },
+    { say: 'For me, a few days became twenty years.', src: 'Genesis 31:41',
+      teacher: { say: 'The same two words come back later. Jacob served seven years for Rachel, “and they seemed to him but a few days.” For him, love made seven years into a few days.', src: 'Genesis 29:20' } },
+    { say: 'And I said, <span class="he-inline" lang="he" dir="rtl">לָמָה אֶשְׁכַּל גַּם־שְׁנֵיכֶם יוֹם אֶחָד</span> “Let me not lose you both in one day!” I was afraid I would bury both of my sons.', src: 'Genesis 27:45',
+      teacher: { say: 'Rashi explains: if Esau attacks and Jacob kills him, Esau’s sons will kill Jacob.', src: 'Rashi on Genesis 27:45:2' } },
     { say: 'I went to Isaac and spoke only of the Hittite women. He blessed Jacob again, knowingly this time, and sent him off.', src: ['Genesis 27:46', 'Genesis 28:1–5'] },
-    { say: 'In that verse, the Torah calls me <span class="he-inline" lang="he" dir="rtl">אֵם יַעֲקֹב וְעֵשָׂו</span> “mother of Jacob and Esau.” Rashi wrote, “I do not know what the addition of these words is intended to tell us.” I think I know. On the day one son left because of the other, I was still the mother of both.', src: ['Genesis 28:5', 'Rashi on Genesis 28:5:1'] },
+    { teacher: { say: 'In that verse, the Torah calls Rebekah <span class="he-inline" lang="he" dir="rtl">אֵם יַעֲקֹב וְעֵשָׂו</span> “mother of Jacob and Esau.” Rashi wrote, “I do not know what the addition of these words is intended to tell us.”', src: ['Genesis 28:5', 'Rashi on Genesis 28:5:1'] } },
+    { say: 'I think I know. On the day one son left because of the other, I was still the mother of both.' },
     { ask: 'When you imagine your child leaving home someday, what do you most want them to carry with them?', discuss: true,
       tip: 'This one is for pairs, with no need to share with the room. Then tap to hear Rebekah.',
       reveal: [{ say: 'I sent mine with a promise: “Then I will fetch you from there.” I hope he heard the love in it.', src: 'Genesis 27:45' }] },
-    { say: 'The Torah never shows me with Jacob again, and never records my death. Rashi says I sent my nurse Deborah to call him home, that she died on the way, and that under the oak where they buried her, Jacob learned I had died too.', src: ['Genesis 35:8', 'Rashi on Genesis 35:8:1', 'Rashi on Genesis 35:8'] },
-    { prompt: 'Ask Rebekah anything. Choose a question, or type your own.', typing: true, questions: [
+    { teacher: { say: 'The Torah never shows Rebekah with Jacob again, and never records her death. Rashi says she sent her nurse Deborah to call him home, that Deborah died on the way, and that under the oak where they buried her, Jacob learned his mother had died too.', src: ['Genesis 35:8', 'Rashi on Genesis 35:8:1', 'Rashi on Genesis 35:8'] } },
+    { prompt: 'Ask me anything. Choose a question, or type your own.', typing: true, questions: [
       { q: 'Did you ever see Jacob again?', keys: 'see again jacob come back return home reunion saw', a: [
-        { say: 'The Torah never shows it. Rashi says my nurse Deborah died on the way to bring him home, and that at her grave Jacob learned I had died too.', src: ['Genesis 35:8', 'Rashi on Genesis 35:8:1', 'Rashi on Genesis 35:8'] } ] },
+        { say: 'I promised I would send for him.', src: 'Genesis 27:45',
+          teacher: { say: 'The Torah never shows a reunion. Rashi says her nurse Deborah died on the way to bring him home, and that at her grave Jacob learned his mother had died too.', src: ['Genesis 35:8', 'Rashi on Genesis 35:8:1', 'Rashi on Genesis 35:8'] } } ] },
       { q: 'Why did you favor Jacob?', keys: 'favor favored favorite love loved pick picked choose chose why', a: [
-        { say: 'The Torah gives no reason, only the present tense: I love him. And there was what God told me before my sons were born.', src: ['Genesis 25:28', 'Genesis 25:23'] } ] },
+        { say: 'I never gave a reason. I love him: that is all. And there was what God told me before my sons were born.', src: ['Genesis 25:28', 'Genesis 25:23'] } ] },
       { q: 'Did you tell Isaac what God told you?', keys: 'tell told isaac prophecy oracle secret older younger god', a: [
-        'The Torah never says. It never shows Isaac and me talking about our sons’ futures at all, until the day I sent Jacob away.' ] },
+        { say: 'That stays between Isaac and me.',
+          teacher: 'The Torah never says. It never shows Rebekah and Isaac talking about their sons’ futures at all, until the day she sent Jacob away.' } ] },
       { q: 'How did you know what Esau was planning?', keys: 'know knew esau plan planning kill heard reported how', a: [
-        { say: 'The Torah says Esau said it “to himself,” and then that his words “were reported to Rebekah.” Rashi says the holy spirit told me what he was thinking in his heart.', src: ['Genesis 27:41', 'Genesis 27:42', 'Rashi on Genesis 27:42:1'] } ] },
+        { say: 'Esau said it only to himself. And still, his words reached me.', src: ['Genesis 27:41', 'Genesis 27:42'],
+          teacher: { say: 'The Torah says his words “were reported to Rebekah,” and not by whom. Rashi says the holy spirit told her what he was thinking in his heart.', src: 'Rashi on Genesis 27:42:1' } } ] },
       { q: 'Were you a prophet?', keys: 'prophet prophetess prophecy holy spirit oracle', a: [
-        { say: 'When I went to inquire, God answered me. Rashi says the answer came through a messenger, Shem, and that later the holy spirit showed me Esau’s thoughts.', src: ['Genesis 25:23', 'Rashi on Genesis 25:23:1', 'Rashi on Genesis 27:42:1'] } ] },
+        { say: 'When I went to inquire, God answered me.', src: 'Genesis 25:23',
+          teacher: { say: 'Rashi says the answer came through a messenger, Shem, and that later the holy spirit showed her Esau’s thoughts.', src: ['Rashi on Genesis 25:23:1', 'Rashi on Genesis 27:42:1'] } } ] },
       { q: 'Did you ever talk to Esau about it?', keys: 'esau talk talked say said speak tell', a: [
-        'The Torah never records a single word between Esau and me. Not one.' ] },
+        { say: 'What could I have said to him?', teacher: 'The Torah never records a single word between Rebekah and Esau. Not one.' } ] },
       { q: 'Why did Isaac love Esau?', keys: 'isaac love loved esau why game taste', a: [
-        { say: 'The Torah says, “because he had a taste for game,” literally, because game was in his mouth. Rashi gives two readings: the Targum’s, that the game was in Isaac’s mouth, and a midrash: there was “hunting in Esau’s mouth,” words he used “to entrap and deceive” his father.', src: ['Genesis 25:28', 'Rashi on Genesis 25:28:1'] } ] },
+        { say: 'Isaac had a taste for game, and Esau brought it to him.', src: 'Genesis 25:28',
+          teacher: { say: 'The Hebrew says, literally, because game was in his mouth. Rashi gives two readings: the Targum’s, that the game was in Isaac’s mouth, and a midrash: there was “hunting in Esau’s mouth,” words he used “to entrap and deceive” his father.', src: 'Rashi on Genesis 25:28:1' } } ] },
       { q: 'Who was Deborah?', keys: 'deborah nurse who', a: [
-        { say: 'My nurse. When I left home, “they sent off their sister Rebekah and her nurse.” The Torah names her only when she dies, near Beit El.', src: ['Genesis 24:59', 'Genesis 35:8'] } ] },
+        { say: 'My nurse. When I left home, my family sent her with me.', src: 'Genesis 24:59',
+          teacher: { say: 'The Torah names her only when she dies, near Beit El.', src: 'Genesis 35:8' } } ] },
       { q: 'Where are you buried?', keys: 'buried bury grave cave machpelah where die died', a: [
-        { say: 'In the cave of Machpelah. Jacob says it at the end of his life: “there Isaac and his wife Rebekah were buried.”', src: 'Genesis 49:29–31' } ] }
+        { say: 'In the cave of Machpelah, with Isaac.',
+          teacher: { say: 'Jacob says it at the end of his life: “there Isaac and his wife Rebekah were buried.”', src: 'Genesis 49:29–31' } } ] }
     ] },
     { rung: true },
     { next: { say: 'Now visit Isaac, who blessed our son twice, the second time knowing exactly who he was.', ids: ['isaac', 'jacob', 'esau'] } }

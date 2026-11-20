@@ -4,6 +4,8 @@ A readable copy of what the tool says, for review. It is generated from `voices/
 
 Small gray references are the source cards a teacher can open during the visit. Numbered lines are the steps the teacher moves through with Next.
 
+A character speaks only from their own life and what they could know. Anything else is marked **Teacher says:** and is read by the teacher in their own voice; it appears on screen under the character’s line. *(imagined)* marks a line that fits the story and its world but that no text says; the screen labels it “Imagined.”
+
 ## Grades 3–4
 
 *Short lines, choices, and puzzles. Students read along.*
@@ -26,7 +28,7 @@ Small gray references are the source cards a teacher can open during the visit. 
    - סִינַי (Sinai): ס 60 + י 10 + נ 50 + י 10 = ?
 11. **The Sages ask the group to discuss:** What did you get?
    - *Teacher: Give the group a minute to add. Then tap to hear the Sages.*
-   - Then the Sages answer: Both come to 130! A later teacher, the Ba’al HaTurim, spelled it out: *sulam* equals *Sinai*. <sub>Ba’al HaTurim on Genesis 28:12 · ladder and Sinai</sub>
+   - Then the Sages answer: Both come to 130! **Teacher says:** A later teacher, the Ba’al HaTurim, spelled it out: *sulam* equals *Sinai*. <sub>Ba’al HaTurim on Genesis 28:12 · ladder and Sinai</sub>
 12. **The Sages ask the group to discuss:** We could have picked one answer and thrown out the rest. Why do you think we kept them all?
    - *Teacher: Take a few answers. Then tap to hear the Sages.*
    - Then the Sages answer: Because one verse of Torah is big enough to hold more than one good answer. / And because arguing respectfully is one of the best ways to learn. We call it an argument for the sake of heaven.
@@ -34,11 +36,12 @@ Small gray references are the source cards a teacher can open during the visit. 
    1. *Which answer is right?* → We never decided! In the midrash, our answers sit side by side. Which one do you like best?
    2. *Did Jacob climb the ladder?* → Rabbi Meir taught that God invited Jacob to climb. But Jacob had just watched angels go up and come back down, and he was afraid he would come down too. <sub>Vayikra Rabbah 29:2 · Rabbi Meir</sub> / God promised him: if you go up, you will never come down. But Jacob didn’t believe it, and he didn’t climb. <sub>Vayikra Rabbah 29:2 · Rabbi Meir</sub> / What would you have done?
    3. *Can people be angels?* → In Hebrew, *malach* means “messenger.” We taught that prophets are called *malachim*, because they bring God’s message. <sub>B’reishit Rabbah 68:12 · Sinai</sub> / Who has been a messenger of something good for you?
-   4. *Why did the angels go up first?* → We had an answer for that too. The angels who went with Jacob in the Land of Israel went up, and the angels who would go with him outside the Land came down. <sub>B’reishit Rabbah 68:12 · his guardians</sub> / Rashi learned that from us!
-   5. *Is there a ladder today?* → The Ba’al HaTurim counted letters, too. He spelled *sulam* with a vav, סולם, and got 136. That’s the same as *kol*, קול, “voice.” <sub>Ba’al HaTurim on Genesis 28:12 · ladder and voice</sub> / He said that when good people pray, their voices make a ladder for the angels to climb. When you pray with all your heart, every rung is there.
+   4. *Why did the angels go up first?* → We had an answer for that too. The angels who went with Jacob in the Land of Israel went up, and the angels who would go with him outside the Land came down. <sub>B’reishit Rabbah 68:12 · his guardians</sub> **Teacher says:** Rashi learned that from the Sages!
+   5. *Is there a ladder today?* → Good question! Your teacher has an answer from someone who came long after us. **Teacher says:** A later teacher, the Ba’al HaTurim, counted letters, too. He spelled *sulam* with a vav, סולם, and got 136. That’s the same as *kol*, קול, “voice.” <sub>Ba’al HaTurim on Genesis 28:12 · ladder and voice</sub> / **Teacher says:** He said that when good people pray, their voices make a ladder for the angels to climb. When you pray with all your heart, every rung is there.
 14. **The rung:** “The ladder could be many things.”
    - **The secret:** Sulam (ladder) and Sinai add up to the same number: 130!
-15. *Davar acher*: another visit! Rashi learned from us, and the angel has a story about Jacob’s picture in heaven. *(Suggests: Rashi, An angel, Jacob.)*
+15. *Davar acher*: another visit! The angel has a story about Jacob’s picture in heaven. *(Suggests: Rashi, An angel, Jacob.)*
+   - **Teacher says:** And Rashi learned from the Sages.
 
 ## Grades 5–7
 
@@ -59,7 +62,7 @@ Small gray references are the source cards a teacher can open during the visit. 
    - סִינַי (Sinai): ס 60 + י 10 + נ 50 + י 10 = ?
 8. **The Sages ask the group to discuss:** What did you get?
    - *Teacher: Give the group a minute to add. Then tap to hear the Sages.*
-   - Then the Sages answer: Both come to 130. A later teacher, the Ba’al HaTurim, spelled it out: *sulam* equals *Sinai*. <sub>Ba’al HaTurim on Genesis 28:12 · ladder and Sinai</sub>
+   - Then the Sages answer: Both come to 130. **Teacher says:** A later teacher, the Ba’al HaTurim, spelled it out: *sulam* equals *Sinai*. <sub>Ba’al HaTurim on Genesis 28:12 · ladder and Sinai</sub>
 9. We never chose one answer. In the midrash, a new reading is often introduced with *davar acher*, “another matter,” and all of them stay on the page.
 10. Why did the sun set early that night? We said God darkened it to speak with Jacob privately, like a king who tells his servants, “Extinguish the lamps… as I wish to speak with my friend privately.” <sub>B’reishit Rabbah 68:10</sub>
 11. Rabbi Meir taught that God showed Jacob the guardian angels of four empires, Babylon, Media, Greece, and Edom, each climbing the ladder and coming back down. Then God said to Jacob, “You, too, will ascend.” <sub>Vayikra Rabbah 29:2 · Rabbi Meir</sub>
@@ -73,11 +76,12 @@ Small gray references are the source cards a teacher can open during the visit. 
    3. *Why is God called “the Place”?* → The Torah says Jacob came upon “the place.” One of God’s names is HaMakom, the Place, because God is the place of the world, and the world is not God’s place. <sub>B’reishit Rabbah 68:9</sub>
    4. *Did Jacob pray there?* → The Talmud says Jacob instituted the evening prayer: “he encountered the place” means he prayed. <sub>Berakhot 26b</sub>
    5. *Can people be angels?* → We taught that prophets are called *malachim*, because they carry God’s message. That’s how the angels on the ladder can be Moses and Aaron. <sub>B’reishit Rabbah 68:12 · Sinai</sub>
-   6. *Is there a ladder today?* → The Ba’al HaTurim counted again. Spelled with a vav, סולם comes to 136, the same as קול, “voice.” He said the voice of the prayer of good people is a ladder for the angels to climb. <sub>Ba’al HaTurim on Genesis 28:12 · ladder and voice</sub>
+   6. *Is there a ladder today?* → Your teacher has an answer from someone who came long after us. **Teacher says:** The Ba’al HaTurim counted again. Spelled with a vav, סולם comes to 136, the same as קול, “voice.” He said the voice of the prayer of good people is a ladder for the angels to climb. <sub>Ba’al HaTurim on Genesis 28:12 · ladder and voice</sub>
    7. *Who were the Sages?* → Rabbis of the Land of Israel in the centuries after the Temple fell: Bar Kappara, Rabbi Meir, Rabbi Shimon ben Lakish, and many more. Our teachings were collected in books of midrash like B’reishit Rabbah.
 15. **The rung:** “Would you have climbed?”
    - **Ask your parents:** Would you have climbed? Why or why not?
-16. *Davar acher*: another visit. Rashi built on our answers, and Rambam has a reading all his own. *(Suggests: Rashi, Rambam, Jacob.)*
+16. *Davar acher*: another visit. *(Suggests: Rashi, Rambam, Jacob.)*
+   - **Teacher says:** Rashi built on the Sages’ answers, and Rambam has a reading all his own.
 
 ## Parents
 
@@ -97,14 +101,15 @@ Small gray references are the source cards a teacher can open during the visit. 
 10. **The Sages ask the group to discuss:** Would you have climbed? What would have held you back?
    - *Teacher: Give pairs a few minutes, then hear from the room. Then tap to hear the Sages.*
    - Then the Sages answer: Rabbi Meir blames Jacob for not believing. But Jacob had just watched four empires rise and fall. Most of us fear the fall more than we want the height.
-11. **The Sages:** Ask the Sages anything. Choose a question, or type your own. *(Typing is on: typed questions are matched to these.)*
+11. **The Sages:** Ask us anything. Choose a question, or type your own. *(Typing is on: typed questions are matched to these.)*
    1. *Which reading do you prefer?* → We never ruled. Which one speaks to you, and why?
    2. *What do the rung numbers mean?* → They measure each empire’s rise before its fall: seventy for Babylon, fifty-two for Media, a hundred and eighty for Greece. Edom’s number was hidden, even from Jacob. <sub>Vayikra Rabbah 29:2 · four kingdoms</sub>
-   3. *Why is Edom Rome?* → We lived under Rome, the empire that destroyed the Temple, and Esau’s other name became our name for it. Rashi, following an old midrash, says of one of Esau’s descendants, “Magdiel: this is Rome.” <sub>Rashi on Genesis 36:43</sub> / Esau’s own visit takes this up, if you have time.
+   3. *Why is Edom Rome?* → We lived under Rome, the empire that destroyed the Temple, and Esau’s other name became our name for it. **Teacher says:** Rashi, following an old midrash, says of one of Esau’s descendants, “Magdiel: this is Rome.” Esau’s own visit takes this up, if you have time. <sub>Rashi on Genesis 36:43</sub>
    4. *Did Jacob institute the evening prayer?* → The Talmud says so: Abraham the morning prayer, Isaac the afternoon, and Jacob the evening, from “he encountered the place.” <sub>Berakhot 26b</sub>
    5. *What does it mean that God is “the Place”?* → That God contains the world, and the world does not contain God. <sub>B’reishit Rabbah 68:9</sub>
-   6. *Is prayer a ladder?* → A later teacher, the Ba’al HaTurim, counted it: סולם, ladder, spelled with a vav, equals קול, voice. The voice of the prayer of the righteous is a ladder for the angels to go up on. <sub>Ba’al HaTurim on Genesis 28:12 · ladder and voice</sub>
-   7. *Why do sulam and Sinai match?* → We said, “The letters of this equals the letters of that.” Later teachers did the arithmetic: both come to 130. <sub>B’reishit Rabbah 68:12 · Sinai; Ba’al HaTurim on Genesis 28:12 · ladder and Sinai</sub>
+   6. *Is prayer a ladder?* → Your teacher has an answer from someone who came long after us. **Teacher says:** A later teacher, the Ba’al HaTurim, counted it: סולם, ladder, spelled with a vav, equals קול, voice. The voice of the prayer of the righteous is a ladder for the angels to go up on. <sub>Ba’al HaTurim on Genesis 28:12 · ladder and voice</sub>
+   7. *Why do sulam and Sinai match?* → We said, “The letters of this equals the letters of that.” <sub>B’reishit Rabbah 68:12 · Sinai</sub> **Teacher says:** Later teachers did the arithmetic: both come to 130. <sub>Ba’al HaTurim on Genesis 28:12 · ladder and Sinai</sub>
 12. **The rung:** “Would you have climbed?”
    - **Ask your child:** Would you have climbed? What would have held you back?
-13. *Davar acher*: two more readers of the ladder, Rambam and Ramban, and Rashi, who built on us. *(Suggests: Rambam, Ramban, Rashi.)*
+13. *Davar acher*: there are more readers of the ladder to hear. *(Suggests: Rambam, Ramban, Rashi.)*
+   - **Teacher says:** Rambam and Ramban each read the ladder their own way, and Rashi built on the Sages.

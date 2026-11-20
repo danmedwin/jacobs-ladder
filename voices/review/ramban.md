@@ -4,6 +4,8 @@ A readable copy of what the tool says, for review. It is generated from `voices/
 
 Small gray references are the source cards a teacher can open during the visit. Numbered lines are the steps the teacher moves through with Next.
 
+A character speaks only from their own life and what they could know. Anything else is marked **Teacher says:** and is read by the teacher in their own voice; it appears on screen under the character’s line. *(imagined)* marks a line that fits the story and its world but that no text says; the screen labels it “Imagined.”
+
 ## Grades 5–7
 
 *The fuller story, the sources, debate, and typed questions.*
@@ -58,10 +60,10 @@ Small gray references are the source cards a teacher can open during the visit. 
    - *Teacher: Let people answer for themselves. Then tap to hear Ramban.*
    - Then Ramban answers: I held both. I wrote a commentary full of God’s promises, and I lived through a disputation and an exile.
 11. “Then the Eternal shall be my God,” Rashi read as part of the condition. I read it as a vow: to serve God in the Land, at the stone of Beit El. <sub>Genesis 28:21; Rashi on Genesis 28:21; Rashi on Genesis 28:22; Ramban on Genesis 28:21</sub>
-12. **Ramban asks the group to discuss:** Ramban read Jacob’s vow as a promise to serve God in the Land, and near the end of his life he went there himself. Is God more present in some places than in others? What is the relationship between a place and faith?
+12. **Ramban asks the group to discuss:** I read Jacob’s vow as a promise to serve God in the Land, and near the end of my life I went there myself. Is God more present in some places than in others? What is the relationship between a place and faith?
    - *Teacher: Take a few answers. Then tap to hear Ramban.*
    - Then Ramban answers: Jacob’s own words may be the best answer: “Surely God is present in this place, and I did not know it!” And God had just told him, “I will protect you wherever you go.” This place, and wherever you go: Jacob heard both that night. <sub>Genesis 28:16; Genesis 28:15</sub>
-13. **Ramban:** Ask Ramban anything. Choose a question, or type your own. *(Typing is on: typed questions are matched to these.)*
+13. **Ramban:** Ask me anything. Choose a question, or type your own. *(Typing is on: typed questions are matched to these.)*
    1. *What happened at the disputation?* → In 1263, in Barcelona, King James I of Aragon ordered me to debate a convert from Judaism, before the court, about whether the Messiah had come. The king allowed me to speak freely. Afterward I was prosecuted for publishing my account of it, and I left Spain.
    2. *What is providence?* → God’s care for the world. Most of it, I believe, comes through God’s messengers. For Jacob, God promised to watch directly. <sub>Ramban on Genesis 28:12</sub>
    3. *Why did you disagree with Rashi?* → Because no midrash says Mount Moriah moved. The land contracted for Jacob, as it did for Abraham’s servant. And Beit El isn’t at the edge of the Land on the Haran side, for Haran is to the east. <sub>Ramban on Genesis 28:17</sub>
