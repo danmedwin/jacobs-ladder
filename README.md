@@ -12,6 +12,14 @@ Hover over or click any source’s name (a translation, Rashi, or a midrash) for
 its approach, and its worldview.
 Live at techrabbi.org/jacobs-ladder.
 
+For a projector, add `?project` (short address: techrabbi.org/jacobs-ladder/project). It is the same page set for a
+large screen: the passage and the renderings are larger, the images shrink to thumbnails that open full screen, and the
+tallies under the images and the glosses along the bottom are left out. The passage opens at a size that shows verses
+10–14 and scrolls for the rest (↓ ↑, the space bar, or the button under it). The A− and A+ buttons, or the − and + keys,
+change its size, and the smallest shows all nine verses at once. Two QR codes sit under the thumbnails, one for the slide on
+a person’s own device and one for Eleven Ladders; Q enlarges both, and F is full screen. All of it lives in `index.html`
+under the `.proj` class, so the text and the source cards are not copied, and without `?project` the page is unchanged.
+
 The companion page, `eleven-ladders/`, holds the full experiment behind the slide: the Hebrew and eleven
 translations sent word for word to the image model, without footnotes, verse numbers, or source citations;
 the dream verses alone; instruction lenses; midrash as the prompt; eleven public-domain artworks from

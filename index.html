@@ -147,6 +147,85 @@ button{font:inherit;color:inherit}
 .ov .next{right:62px}
 .ov figcaption .arrow{color:var(--gold-wash);margin:0 8px}
 .ov .ct{font:600 14px/1 var(--comm);letter-spacing:.14em;color:rgba(238,233,222,.6);margin-left:14px;white-space:nowrap}
+
+/* the projector view, at ?project: larger text, the images as thumbnails, no glosses.
+   Every rule here is under .proj, which the script sets only for that address. */
+.proj .head{left:44px;right:44px;top:14px;height:80px;grid-template-columns:420px 1fr 420px;column-gap:32px;padding-bottom:8px}
+.proj .big{font-size:32px}
+.proj .title{font-size:44px}
+.proj .body{left:44px;right:44px;top:108px;height:954px;grid-template-columns:188px 1fr 600px;grid-template-rows:minmax(0,1fr);column-gap:32px}
+.proj .body>*{min-height:0}
+.proj .foot{display:none}
+.proj .col-label{font-size:12px;letter-spacing:.1em;gap:8px}
+.proj .col-label .heb{font-size:20px}
+
+.proj .col-text{position:relative;padding:2px 28px 0;overflow-y:auto;overscroll-behavior:contain;scrollbar-width:none}
+.proj .col-text::-webkit-scrollbar{display:none}
+.proj .gemara{font-size:var(--gs,40px);line-height:1.42}
+.proj .opener{margin:.2em .6em .16em 0;padding:.3em .5em .28em;border-width:4px;gap:.14em;font-size:var(--gs,40px)}
+.proj .opener span{font-size:2.3em}
+.proj .opener small{font-size:.36em;letter-spacing:.14em}
+.proj .vn{font-size:.52em;margin:0 .22em 0 .3em}
+.proj .mk{font-size:.6em}
+.proj .hot{border-bottom-width:3px}
+.pmore{position:sticky;bottom:0;display:flex;justify-content:center;margin-top:-34px;padding:48px 0 10px;background:linear-gradient(rgba(238,233,222,0),var(--paper) 58%);pointer-events:none}
+.pmore[hidden]{display:none}
+.pmore button{all:unset;pointer-events:auto;cursor:pointer;font:600 15px/1 var(--comm);letter-spacing:.14em;text-transform:uppercase;color:var(--gold-deep);background:#FBF8F1;border:1px solid var(--gold);padding:9px 14px;border-radius:2px}
+.pmore button:hover{background:var(--gold-wash)}
+.pmore button:focus-visible{outline:2px solid var(--gold-deep);outline-offset:2px}
+
+.proj .col-img{gap:12px}
+.proj #imgPane{flex:1;gap:12px}
+.proj .main,.proj .cap,.proj .res{display:none}
+.proj .strip{grid-template-columns:1fr!important;gap:12px}
+.proj .strip button{cursor:zoom-in;gap:4px}
+.proj .strip img{opacity:1}
+.proj .strip button[aria-pressed="true"] img{outline-color:transparent}
+.proj .strip button:hover img,.proj .strip button:focus-visible img{outline-color:var(--gold)}
+.proj .strip span{font-size:12.5px}
+.proj .strip i{font:italic 400 16px/1.2 var(--comm);color:var(--ink-2);display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden}
+.proj .more{font-size:12px;line-height:1.35;letter-spacing:.1em;padding-bottom:3px}
+.pfoot{display:grid;gap:12px;margin-top:auto}
+.pqr{display:grid;grid-template-columns:1fr 1fr;gap:6px 12px;justify-items:center}
+.pqr .qr{width:88px;height:88px}
+.pqr span{font:600 11px/1.25 var(--comm);letter-spacing:.1em;text-transform:uppercase;color:var(--muted);text-align:center}
+.pbtn{display:flex;flex-wrap:wrap;gap:6px}
+.pbtn .fsb{margin:0}
+:fullscreen .pbtn .pfs{visibility:hidden}
+
+.proj #rendPane{flex:1;min-height:0;gap:calc(15px*var(--rs,1))}
+.proj .dh{column-gap:16px}
+.proj .dh .l{font-size:calc(58px*var(--rs,1))}
+.proj .dh .h{font-size:calc(36px*var(--rs,1))}
+.proj .dh .r{font-size:calc(17px*var(--rs,1))}
+.proj .dh .e{font-size:calc(28px*var(--rs,1))}
+.proj .rend{gap:calc(10px*var(--rs,1))}
+.proj .rend li{padding-left:16px;border-left-width:4px}
+.proj .rend q{font-size:calc(28.5px*var(--rs,1))}
+.proj .rend .who{font-size:calc(21.5px*var(--rs,1))}
+.proj .note{padding-top:calc(12px*var(--rs,1));font-size:calc(25px*var(--rs,1))}
+
+.proj .pop{width:820px;padding:24px 30px 24px;gap:10px}
+.proj .pop .k{font-size:15px}
+.proj .pop h4{font-size:36px}
+.proj .pop dl{grid-template-columns:150px 1fr;gap:11px 18px}
+.proj .pop dt{font-size:14.5px;padding-top:5px}
+.proj .pop dd{font-size:23.5px;line-height:1.4}
+.proj .pop .px{font-size:14px}
+
+.proj .ov figure{gap:14px}
+.proj .ov img{width:1680px;max-height:938px}
+.proj .ov figcaption{font-size:32px}
+.proj .ov .ct{font-size:17px}
+.proj .ov .x{right:22px;top:18px}
+.proj .ov .nav{top:510px;width:68px;height:68px}
+.proj .ov .prev{left:26px}
+.proj .ov .next{right:26px}
+.qpair{display:grid;grid-template-columns:1fr 1fr;gap:56px}
+.qpair .qcard{width:660px;align-content:start}
+.qpair .qcard svg{width:540px;height:540px}
+.qpair .qurl{font-size:26px;text-align:center}
+.qpair .qsub{font-size:22px;text-align:center;max-width:560px}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 </style>
 </head>
@@ -207,6 +286,9 @@ button{font:inherit;color:inherit}
   var ov = document.getElementById('ov'), ovImg = document.getElementById('ovImg'), ovCap = document.getElementById('ovCap');
   var hots = Array.prototype.slice.call(document.querySelectorAll('.hot'));
   var cur = 'stairway', pic = 0, opener = null;
+  // ?project is the projector view: the same page with larger text, thumbnails for the images, and no glosses
+  var PROJ = /(^|&)project(or)?(=|&|$)/.test(location.search.slice(1));
+  if (PROJ) { document.documentElement.classList.add('proj'); document.title += ' · projector'; }
 
   function fit(){
     var vw = view.clientWidth, vh = view.clientHeight;
@@ -223,22 +305,27 @@ button{font:inherit;color:inherit}
   function renderRend(){
     rendPane.innerHTML = D[cur].rend;
     rendPane.classList.remove('fade'); void rendPane.offsetWidth; rendPane.classList.add('fade');
+    if (PROJ) fitRend();
   }
   function renderImg(){
     var d = D[cur], im = d.imgs[pic];
     var strip = d.imgs.map(function(x, i){
-      return '<button type="button" data-i="' + i + '" aria-pressed="' + (i === pic) + '" aria-label="Show ' + esc(txt(x.who) + ', ' + x.what) + '"><img src="' + x.src + '" alt=""><span>' + esc(txt(x.who)) + '</span></button>';
+      return '<button type="button" data-i="' + i + '" aria-pressed="' + (i === pic) + '" aria-label="' + (PROJ ? 'Enlarge ' : 'Show ') + esc(txt(x.who) + ', ' + x.what) + '"><img src="' + x.src + '" alt=""><span>' + esc(txt(x.who)) + '</span>' + (PROJ ? '<i>' + esc(x.what) + '</i>' : '') + '</button>';
     }).join('');
     imgPane.innerHTML =
       '<button type="button" class="main" id="mainImg" aria-label="Enlarge: ' + esc(txt(im.who) + ', ' + im.what + '. ' + im.shows) + '"><img src="' + im.src + '" alt="' + esc(txt(im.who) + ', ' + im.what + ': ' + im.shows) + '"></button>' +
       '<p class="cap">' + capHTML(im) + '</p>' +
       '<div class="strip" style="grid-template-columns:repeat(' + d.imgs.length + ',minmax(0,1fr))">' + strip + '</div>' +
       '<p class="res"><span class="lab">What the images did</span>' + d.res + '</p>' +
-      '<a class="more" href="eleven-ladders/#' + d.more + '" target="_blank" rel="noopener">Explore this phrase in Eleven Ladders →</a>';
+      '<a class="more" href="eleven-ladders/#' + d.more + '" target="_blank" rel="noopener">' + (PROJ ? 'More in Eleven Ladders →' : 'Explore this phrase in Eleven Ladders →') + '</a>';
     imgPane.classList.remove('fade'); void imgPane.offsetWidth; imgPane.classList.add('fade');
     document.getElementById('mainImg').addEventListener('click', function(e){ openOv(e.currentTarget); });
     Array.prototype.forEach.call(imgPane.querySelectorAll('.strip button'), function(b){
-      b.addEventListener('click', function(){ pic = +b.dataset.i; renderImg(); var nb = imgPane.querySelector('.strip button[data-i="' + pic + '"]'); if (nb) nb.focus(); });
+      b.addEventListener('click', function(){
+        pic = +b.dataset.i; renderImg();
+        var nb = imgPane.querySelector('.strip button[data-i="' + pic + '"]'); if (nb) nb.focus();
+        if (PROJ && nb) openOv(nb);  // a thumbnail in the projector view opens straight to the large image
+      });
     });
   }
   function select(key){
@@ -246,6 +333,7 @@ button{font:inherit;color:inherit}
     cur = key; pic = 0;
     hots.forEach(function(h){ h.setAttribute('aria-pressed', h.dataset.key === key ? 'true' : 'false'); });
     renderRend(); renderImg();
+    if (PROJ) reveal();
   }
   hots.forEach(function(h){ h.addEventListener('click', function(){ select(h.dataset.key); }); });
 
@@ -270,15 +358,16 @@ button{font:inherit;color:inherit}
   function closeOv(){
     ov.hidden = true;
     // stepping re-renders the image pane, so the original opener may be gone
-    var back = (opener && document.body.contains(opener)) ? opener : document.getElementById('mainImg');
+    var back = (opener && document.body.contains(opener)) ? opener : (PROJ ? imgPane.querySelector('.strip button[aria-pressed="true"]') : document.getElementById('mainImg'));
     if (back) back.focus();
   }
   document.getElementById('ovClose').addEventListener('click', closeOv);
   ovPrev.addEventListener('click', function(){ stepOv(-1); });
   ovNext.addEventListener('click', function(){ stepOv(1); });
   var qrOv = document.getElementById('qrOv'), qrBtn = document.getElementById('qrBtn');
-  function openQr(){ qrOv.hidden = false; document.getElementById('qrClose').focus(); }
-  function closeQr(){ qrOv.hidden = true; qrBtn.focus(); }
+  var qrFrom = null;
+  function openQr(){ qrFrom = document.activeElement; qrOv.hidden = false; document.getElementById('qrClose').focus(); }
+  function closeQr(){ qrOv.hidden = true; if (PROJ) { if (qrFrom && document.body.contains(qrFrom)) qrFrom.focus(); } else qrBtn.focus(); }
   qrBtn.addEventListener('click', openQr);
   document.getElementById('qrClose').addEventListener('click', closeQr);
   qrOv.addEventListener('click', function(e){ if (e.target === qrOv) closeQr(); });
@@ -295,7 +384,7 @@ button{font:inherit;color:inherit}
   }
   function placePop(btn){
     var sr = stage.getBoundingClientRect(), s = sr.width / 1920, r = btn.getBoundingClientRect();
-    var W = 600, H = pop.offsetHeight;
+    var W = pop.offsetWidth, H = pop.offsetHeight;
     var cx = (r.left + r.width / 2 - sr.left) / s, cy = (r.top + r.height / 2 - sr.top) / s;
     var left = Math.max(24, Math.min(1920 - 24 - W, cx - W / 2));
     var below = (r.bottom - sr.top) / s + 12, above = (r.top - sr.top) / s - 12 - H, top;
@@ -357,6 +446,7 @@ button{font:inherit;color:inherit}
     }
     if (e.target && e.target.classList && e.target.classList.contains('hot') && (e.key === 'Enter' || e.key === ' ')) { e.preventDefault(); select(e.target.dataset.key); return; }
     if (e.target && /^(INPUT|TEXTAREA|SELECT)$/.test(e.target.tagName)) return;
+    if (PROJ && projKey(e)) return;
     var i = ORDER.indexOf(cur);
     if (e.key === 'ArrowRight' || e.key === 'ArrowDown' || e.key === 'PageDown') { e.preventDefault(); select(ORDER[(i + 1) % ORDER.length]); }
     else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp' || e.key === 'PageUp') { e.preventDefault(); select(ORDER[(i - 1 + ORDER.length) % ORDER.length]); }
@@ -372,6 +462,90 @@ button{font:inherit;color:inherit}
       else { var p = document.documentElement.requestFullscreen(); if (p && p.catch) p.catch(function(){ fs.hidden = true; }); }
     } catch (err) { fs.hidden = true; }
   });
+
+  // The projector view (?project). + and − change the size of the passage, ↓ ↑ or the space bar scroll it, F is full screen.
+  var colText = document.querySelector('.col-text'), gem = colText.querySelector('.gemara');
+  var calm = !!(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches);
+  var SIZES = [30, 35, 40, 45], sizeAt = 2, more = null;
+  function toggleFs(){
+    try {
+      if (document.fullscreenElement) document.exitFullscreen();
+      else { var p = document.documentElement.requestFullscreen(); if (p && p.catch) p.catch(function(){}); }
+    } catch (err) {}
+  }
+  // the renderings fill their column: a short list (four for “a stairway”) is set larger than a long one (eight for “beside him”)
+  function fitRend(){
+    var s = 1.2; rendPane.style.setProperty('--rs', s);
+    while (s > .7 && rendPane.scrollHeight > rendPane.clientHeight + 1) { s -= .02; rendPane.style.setProperty('--rs', s.toFixed(2)); }
+  }
+  function scrollText(top){ colText.scrollTo({top: Math.max(0, top), behavior: calm ? 'auto' : 'smooth'}); }
+  function textEnd(){ return colText.scrollTop + colText.clientHeight >= colText.scrollHeight - 4; }
+  function pageText(dir){ scrollText(colText.scrollTop + dir * (colText.clientHeight - 120)); }
+  function updMore(){
+    if (!more) return;
+    more.hidden = gem.offsetTop + gem.offsetHeight <= colText.clientHeight;
+    more.firstChild.textContent = textEnd() ? '▴ Back to verse 10' : '▾ Continues through verse 18';
+  }
+  // bring the chosen phrase back into view if the passage has been scrolled past it
+  function reveal(){
+    var h = document.querySelector('.hot[aria-pressed="true"]'); if (!h) return;
+    var top = h.offsetTop, bot = top + h.offsetHeight, st = colText.scrollTop, ch = colText.clientHeight;
+    if (top >= st && bot <= st + ch - 70) return;
+    scrollText(bot <= ch - 70 ? 0 : top - ch / 2);
+  }
+  function setSize(i){
+    sizeAt = Math.max(0, Math.min(SIZES.length - 1, i));
+    stage.style.setProperty('--gs', SIZES[sizeAt] + 'px');
+    try { localStorage.setItem('jl-project-size', SIZES[sizeAt]); } catch (err) {}
+    updMore();
+  }
+  function projKey(e){
+    if (e.metaKey || e.ctrlKey || e.altKey) return false;
+    if (e.key === 'f' || e.key === 'F') { toggleFs(); return true; }
+    if (e.key === '+' || e.key === '=') { setSize(sizeAt + 1); return true; }
+    if (e.key === '-' || e.key === '_') { setSize(sizeAt - 1); return true; }
+    if (more && !more.hidden) {
+      if (e.key === 'ArrowDown' || e.key === 'ArrowUp') { e.preventDefault(); pageText(e.key === 'ArrowDown' ? 1 : -1); return true; }
+      if (e.key === ' ' && !(e.target && /^(BUTTON|A)$/.test(e.target.tagName))) { e.preventDefault(); if (textEnd()) scrollText(0); else pageText(1); return true; }
+    }
+    return false;
+  }
+  if (PROJ) {
+    try { var saved = SIZES.indexOf(+localStorage.getItem('jl-project-size')); if (saved >= 0) sizeAt = saved; } catch (err) {}
+    more = document.createElement('div'); more.className = 'pmore'; more.innerHTML = '<button type="button"></button>';
+    colText.appendChild(more);
+    more.firstChild.addEventListener('click', function(){ if (textEnd()) scrollText(0); else pageText(1); });
+    colText.addEventListener('scroll', updMore, {passive: true});
+    setSize(sizeAt);
+
+    // the glosses are gone here, so their QR code moves under the thumbnails, beside one for this page on a person's own device
+    var QR_HERE = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 33" aria-hidden="true" focusable="false" shape-rendering="crispEdges"><path class="qrline" stroke="#1d1a15" d="M2 2.5h7m1 0h3m1 0h1m2 0h1m1 0h4m1 0h7m-29 1h1m5 0h1m1 0h2m4 0h1m1 0h1m5 0h1m5 0h1m-29 1h1m1 0h3m1 0h1m2 0h1m1 0h1m1 0h1m1 0h1m4 0h1m1 0h1m1 0h3m1 0h1m-29 1h1m1 0h3m1 0h1m1 0h1m2 0h1m5 0h1m1 0h1m2 0h1m1 0h3m1 0h1m-29 1h1m1 0h3m1 0h1m3 0h1m1 0h4m1 0h1m1 0h2m1 0h1m1 0h3m1 0h1m-29 1h1m5 0h1m2 0h3m2 0h1m1 0h1m2 0h2m1 0h1m5 0h1m-29 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-21 1h2m2 0h4m1 0h3m-20 1h1m1 0h2m1 0h3m1 0h1m1 0h4m2 0h3m2 0h1m2 0h1m1 0h2m-29 1h1m4 0h1m1 0h6m3 0h1m1 0h3m1 0h3m3 0h1m-29 1h2m2 0h1m1 0h1m1 0h3m1 0h1m1 0h1m1 0h1m3 0h1m2 0h1m2 0h2m-28 1h3m2 0h1m2 0h2m1 0h4m3 0h1m5 0h1m3 0h1m-27 1h1m1 0h1m1 0h1m1 0h1m1 0h2m3 0h1m1 0h1m2 0h1m4 0h2m-27 1h2m3 0h1m2 0h3m2 0h1m1 0h2m2 0h1m2 0h1m3 0h3m-29 1h1m2 0h1m1 0h2m1 0h1m1 0h3m1 0h1m1 0h5m1 0h3m1 0h3m-29 1h2m3 0h1m1 0h1m5 0h1m1 0h2m2 0h2m3 0h1m2 0h1m-27 1h1m1 0h2m1 0h7m5 0h4m1 0h3m1 0h1m-26 1h3m2 0h1m2 0h4m1 0h1m4 0h1m2 0h1m1 0h3m-28 1h1m1 0h1m3 0h3m3 0h1m2 0h1m1 0h2m2 0h1m1 0h2m1 0h1m-24 1h2m5 0h1m5 0h2m1 0h1m2 0h1m3 0h1m-26 1h3m1 0h3m2 0h1m1 0h2m2 0h3m1 0h7m-19 1h4m1 0h2m1 0h1m3 0h1m3 0h5m-29 1h7m1 0h1m2 0h1m1 0h1m2 0h1m2 0h2m1 0h1m1 0h2m1 0h1m-28 1h1m5 0h1m1 0h1m1 0h2m4 0h1m1 0h3m3 0h2m2 0h1m-29 1h1m1 0h3m1 0h1m3 0h3m1 0h2m1 0h2m1 0h5m1 0h1m-27 1h1m1 0h3m1 0h1m1 0h2m1 0h1m1 0h4m2 0h3m1 0h3m2 0h1m-29 1h1m1 0h3m1 0h1m1 0h2m1 0h1m4 0h1m1 0h3m2 0h1m2 0h1m1 0h1m-29 1h1m5 0h1m7 0h3m3 0h2m2 0h2m1 0h1m-28 1h7m1 0h3m1 0h4m2 0h3m1 0h1m2 0h1m1 0h1"/></svg>';
+    var QR_MORE = qrBtn.innerHTML;
+    var pfoot = document.createElement('div'); pfoot.className = 'pfoot';
+    pfoot.innerHTML = '<div class="pqr">' +
+      '<button type="button" class="qr" aria-label="Show large QR codes for this page and for Eleven Ladders">' + QR_HERE + '</button>' +
+      '<button type="button" class="qr" aria-label="Show large QR codes for this page and for Eleven Ladders">' + QR_MORE + '</button>' +
+      '<span>This page</span><span>Eleven Ladders</span></div>' +
+      '<div class="pbtn"><button type="button" class="fsb" data-size="-1" aria-label="Smaller passage text" title="Smaller passage text (−)">A−</button>' +
+      '<button type="button" class="fsb" data-size="1" aria-label="Larger passage text" title="Larger passage text (+)">A+</button>' +
+      '<button type="button" class="fsb pfs" title="Keys: ← → change the phrase · ↓ ↑ scroll the passage · + − resize it · Q shows the codes · F is full screen">Full screen</button></div>';
+    imgPane.parentNode.appendChild(pfoot);
+    Array.prototype.forEach.call(pfoot.querySelectorAll('.qr'), function(b){ b.addEventListener('click', openQr); });
+    Array.prototype.forEach.call(pfoot.querySelectorAll('[data-size]'), function(b){ b.addEventListener('click', function(){ setSize(sizeAt + (+b.dataset.size)); }); });
+    var pfs = pfoot.querySelector('.pfs');
+    if (document.fullscreenEnabled) pfs.addEventListener('click', toggleFs); else pfs.remove();
+    qrOv.setAttribute('aria-label', 'QR codes for this page and for Eleven Ladders');
+    qrOv.querySelector('.qcard').outerHTML = '<div class="qpair">' +
+      '<div class="qcard">' + QR_HERE + '<p class="qurl">techrabbi.org/jacobs-ladder</p><p class="qsub">This page, on your own phone or tablet</p></div>' +
+      '<div class="qcard">' + QR_MORE + '<p class="qurl">techrabbi.org/jacobs-ladder/eleven-ladders</p><p class="qsub">Every image, all twelve texts, the midrash, real art, and a prompt builder</p></div></div>';
+    // measure again once the web fonts are in, since they set how much fits
+    var refit = function(){ fitRend(); updMore(); };
+    window.addEventListener('load', refit);
+    if (document.fonts) {
+      if (document.fonts.ready) document.fonts.ready.then(refit);
+      if (document.fonts.addEventListener) document.fonts.addEventListener('loadingdone', refit);
+    }
+  }
 
   // A link can open the slide on one phrase: #place, #stones, #stairway, #angels, #beside, or #ground
   function hashKey(){ var h = location.hash.slice(1); return ORDER.indexOf(h) >= 0 ? h : null; }
