@@ -859,12 +859,22 @@
       if (replyCard) { replyCard.remove(); replyCard = null; }
       if (!animate || items.length < shown) { convo.innerHTML = ''; shown = 0; convo.classList.add('still'); }
       else convo.classList.remove('still');
+      var first = shown;
       for (var i = shown; i < items.length; i++) convo.appendChild(renderItem(items[i], items[i - 1]));
       shown = items.length;
       var nodes = convo.children, lastGroup = nodes.length - 1;
       while (lastGroup > 0 && (nodes[lastGroup].dataset.k === 'tip' || nodes[lastGroup].dataset.k === 'teach')) lastGroup--;
       for (var j = 0; j < nodes.length; j++) nodes[j].classList.toggle('old', j < lastGroup - 2);
       var m = mode(st, beats);
+      anchor = keep = null;
+      if (m === 'questions') {
+        for (var k = items.length - 1; k >= 0 && !items[k].asking; k--) {
+          if (items[k].k !== 'group') continue;
+          anchor = nodes[k];
+          if (k < first) keep = nodes[items.length - 1];
+          break;
+        }
+      }
       if (m === 'choice' || m === 'questions') { replyCard = renderReply(m); convo.appendChild(replyCard); }
       stick(animate);
     }
@@ -888,11 +898,24 @@
       if (b.typing) card.appendChild(askForm(b));
       return card;
     }
+    /* Where the view rests: usually the end of the conversation. After a question, the bank of questions comes back
+       under the answer, so the view holds the asked question at the top instead (anchor). When a later part of a
+       long answer arrives, that part stays in view (keep), even if the question has to leave it. */
+    var anchor = null, keep = null;
+    function place(node) { return node.offsetParent === convo ? node.offsetTop : node.offsetTop - convo.offsetTop; }
     function stick(smooth) {
       requestAnimationFrame(function () {
-        var gap = convo.scrollHeight - convo.clientHeight - convo.scrollTop;
-        var glide = smooth && !reduceMotion && gap < convo.clientHeight * 0.8;
-        convo.scrollTo({ top: convo.scrollHeight, behavior: glide ? 'smooth' : 'auto' });
+        var to = convo.scrollHeight;
+        if (anchor && anchor.parentNode === convo) {
+          to = place(anchor) - 12;
+          if (keep && keep.parentNode === convo) {
+            var end = place(keep) + keep.offsetHeight + 12;
+            if (end - to > convo.clientHeight) to = Math.min(place(keep) - 12, end - convo.clientHeight);
+          }
+        }
+        to = Math.max(0, Math.min(to, convo.scrollHeight - convo.clientHeight));
+        var glide = smooth && !reduceMotion && Math.abs(to - convo.scrollTop) < convo.clientHeight * 0.8;
+        convo.scrollTo({ top: to, behavior: glide ? 'smooth' : 'auto' });
       });
     }
     function renderItem(it, prev) {
@@ -1005,6 +1028,7 @@
         results.appendChild(el('div', { class: 'label', text: label }));
         kids.forEach(function (k) { if (k) results.appendChild(k); });
         results.hidden = false;
+        anchor = keep = null;   // these results sit at the end of the question card
         stick(true);
       }
       function askLive(text) {
@@ -1017,6 +1041,7 @@
             el('span', { class: 'vh', text: atStart(inText(c)) + (c.plural ? ' are' : ' is') + ' thinking…' })))
         ];
         pending.forEach(function (n) { convo.insertBefore(n, replyCard); });
+        anchor = pending[0]; keep = null;
         stick(true);
         var ctrl = window.AbortController ? new AbortController() : null;
         var timer = setTimeout(function () { if (ctrl) ctrl.abort(); }, 45000);
