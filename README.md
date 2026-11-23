@@ -56,6 +56,9 @@ In the 5–7 and parents visits, a typed question with no prepared answer can go
 in `voices/ask/` that answers in the character’s voice with Claude, working only from the texts in the program, and
 the page marks the reply as an imagined answer. The Worker reads each visit’s context from `voices/data/ask/`, which
 `voices/tools/ask_context.js` rebuilds; run it after changing a script. Setup is in `voices/ask/SETUP.md`.
+Ask anything was switched off on November 23, 2026, after the family learning morning: `window.VOICES_ASK` in
+`voices/index.html` is now empty, so typed questions match only the prepared ones. Setting it back to the Worker's
+address turns it on again.
 
 A portrait can come to life: `voices/tools/animate.py` makes a gentle eight-second loop with Google's Veo, starting and
 ending on the portrait, and `voices/data/loops.js` lists the loops. A loop plays in the character's visit and when a
